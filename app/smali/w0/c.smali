@@ -1,18 +1,32 @@
-.class public abstract synthetic LW0/c;
+.class public abstract Lw0/C;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public a:LY/o0;
 
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 3
+# virtual methods
+.method public abstract a(Lt0/d;)V
+.end method
+
+.method public b()Lp9/d;
+    .locals 1
 
     .line 1
-    invoke-static {}, Landroid/text/Layout$Alignment;->values()[Landroid/text/Layout$Alignment;
+    iget-object v0, p0, Lw0/C;->a:LY/o0;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final c()V
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lw0/C;->b()Lp9/d;
 
     .line 2
     .line 3
@@ -20,39 +34,26 @@
     move-result-object v0
 
     .line 5
-    array-length v0, v0
+    if-eqz v0, :cond_0
 
     .line 6
-    new-array v0, v0, [I
-
     .line 7
-    .line 8
-    :try_start_0
-    sget-object v1, Landroid/text/Layout$Alignment;->ALIGN_CENTER:Landroid/text/Layout$Alignment;
+    invoke-interface {v0, p0}, Lp9/d;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 8
     .line 9
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    :cond_0
+    return-void
+.end method
 
-    .line 11
-    .line 12
-    .line 13
-    move-result v1
+.method public d(LY/o0;)V
+    .locals 0
 
-    .line 14
-    const/4 v2, 0x1
+    .line 1
+    iput-object p1, p0, Lw0/C;->a:LY/o0;
 
-    .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 16
-    .line 17
-    :catch_0
-    sput-object v0, LW0/c;->a:[I
-
-    .line 18
-    .line 19
+    .line 2
+    .line 3
     return-void
 .end method

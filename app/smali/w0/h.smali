@@ -1,24 +1,158 @@
-.class public final LW0/h;
-.super Landroid/text/style/ReplacementSpan;
+.class public final Lw0/h;
+.super Lw0/C;
 .source "SourceFile"
 
 
 # instance fields
-.field public a:Landroid/graphics/Paint$FontMetricsInt;
+.field public b:Lr0/l;
 
-.field public b:I
+.field public c:F
 
-.field public c:I
+.field public d:Ljava/lang/Object;
 
-.field public d:Z
+.field public e:F
+
+.field public f:F
+
+.field public g:Lr0/l;
+
+.field public h:I
+
+.field public i:I
+
+.field public j:F
+
+.field public k:F
+
+.field public l:F
+
+.field public m:F
+
+.field public n:Z
+
+.field public o:Z
+
+.field public p:Z
+
+.field public q:Lt0/h;
+
+.field public final r:Lr0/g;
+
+.field public s:Lr0/g;
+
+.field public final t:Ljava/lang/Object;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    .line 5
+    .line 6
+    iput v0, p0, Lw0/h;->c:F
+
+    .line 7
+    .line 8
+    sget v1, Lw0/G;->a:I
+
+    .line 9
+    .line 10
+    sget-object v1, Lc9/v;->q:Lc9/v;
+
+    .line 11
+    .line 12
+    iput-object v1, p0, Lw0/h;->d:Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    iput v0, p0, Lw0/h;->e:F
+
+    .line 15
+    .line 16
+    const/4 v1, 0x0
+
+    .line 17
+    iput v1, p0, Lw0/h;->h:I
+
+    .line 18
+    .line 19
+    iput v1, p0, Lw0/h;->i:I
+
+    .line 20
+    .line 21
+    const/high16 v1, 0x40800000    # 4.0f
+
+    .line 22
+    .line 23
+    iput v1, p0, Lw0/h;->j:F
+
+    .line 24
+    .line 25
+    iput v0, p0, Lw0/h;->l:F
+
+    .line 26
+    .line 27
+    const/4 v0, 0x1
+
+    .line 28
+    iput-boolean v0, p0, Lw0/h;->n:Z
+
+    .line 29
+    .line 30
+    iput-boolean v0, p0, Lw0/h;->o:Z
+
+    .line 31
+    .line 32
+    invoke-static {}, Lr0/i;->a()Lr0/g;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v0
+
+    .line 36
+    iput-object v0, p0, Lw0/h;->r:Lr0/g;
+
+    .line 37
+    .line 38
+    iput-object v0, p0, Lw0/h;->s:Lr0/g;
+
+    .line 39
+    .line 40
+    sget-object v0, Lw0/g;->r:Lw0/g;
+
+    .line 41
+    .line 42
+    invoke-static {v0}, LN3/G;->w(Lp9/a;)Lb9/f;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object v0
+
+    .line 46
+    iput-object v0, p0, Lw0/h;->t:Ljava/lang/Object;
+
+    .line 47
+    .line 48
+    return-void
+.end method
 
 
 # virtual methods
-.method public final a()Landroid/graphics/Paint$FontMetricsInt;
-    .locals 1
+.method public final a(Lt0/d;)V
+    .locals 13
 
     .line 1
-    iget-object v0, p0, LW0/h;->a:Landroid/graphics/Paint$FontMetricsInt;
+    iget-boolean v0, p0, Lw0/h;->n:Z
 
     .line 2
     .line 3
@@ -26,341 +160,526 @@
 
     .line 4
     .line 5
-    return-object v0
-
-    .line 6
-    :cond_0
-    const-string v0, "fontMetrics"
-
-    .line 7
-    .line 8
-    invoke-static {v0}, Lq9/i;->l(Ljava/lang/String;)V
-
-    .line 9
-    .line 10
-    .line 11
-    const/4 v0, 0x0
-
-    .line 12
-    throw v0
-.end method
-
-.method public final b()I
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, LW0/h;->d:Z
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
-
-    .line 4
-    .line 5
-    const-string v0, "PlaceholderSpan is not laid out yet."
+    iget-object v0, p0, Lw0/h;->d:Ljava/lang/Object;
 
     .line 6
     .line 7
-    invoke-static {v0}, LZ0/a;->b(Ljava/lang/String;)V
+    iget-object v1, p0, Lw0/h;->r:Lr0/g;
 
     .line 8
     .line 9
-    .line 10
-    :cond_0
-    iget v0, p0, LW0/h;->c:I
+    invoke-static {v0, v1}, Lw0/b;->d(Ljava/util/List;Lr0/D;)V
 
+    .line 10
     .line 11
     .line 12
-    return v0
-.end method
+    invoke-virtual {p0}, Lw0/h;->e()V
 
-.method public final draw(Landroid/graphics/Canvas;Ljava/lang/CharSequence;IIFIIILandroid/graphics/Paint;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final getSize(Landroid/graphics/Paint;Ljava/lang/CharSequence;IILandroid/graphics/Paint$FontMetricsInt;)I
-    .locals 0
-
-    .line 1
-    const/4 p2, 0x1
-
-    .line 2
-    iput-boolean p2, p0, LW0/h;->d:Z
-
-    .line 3
-    .line 4
-    invoke-virtual {p1}, Landroid/graphics/Paint;->getTextSize()F
-
-    .line 5
-    .line 6
-    .line 7
-    invoke-virtual {p1}, Landroid/graphics/Paint;->getFontMetricsInt()Landroid/graphics/Paint$FontMetricsInt;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object p1
-
-    .line 11
-    iput-object p1, p0, LW0/h;->a:Landroid/graphics/Paint$FontMetricsInt;
-
-    .line 12
     .line 13
-    invoke-virtual {p0}, LW0/h;->a()Landroid/graphics/Paint$FontMetricsInt;
-
     .line 14
     .line 15
-    .line 16
-    move-result-object p1
-
-    .line 17
-    iget p1, p1, Landroid/graphics/Paint$FontMetricsInt;->descent:I
-
-    .line 18
-    .line 19
-    invoke-virtual {p0}, LW0/h;->a()Landroid/graphics/Paint$FontMetricsInt;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object p2
-
-    .line 23
-    iget p2, p2, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
-
-    .line 24
-    .line 25
-    if-le p1, p2, :cond_0
-
-    .line 26
-    .line 27
     goto :goto_0
 
-    .line 28
+    .line 16
     :cond_0
-    const-string p1, "Invalid fontMetrics: line height can not be negative."
+    iget-boolean v0, p0, Lw0/h;->p:Z
+
+    .line 17
+    .line 18
+    if-eqz v0, :cond_1
+
+    .line 19
+    .line 20
+    invoke-virtual {p0}, Lw0/h;->e()V
+
+    .line 21
+    .line 22
+    .line 23
+    :cond_1
+    :goto_0
+    const/4 v0, 0x0
+
+    .line 24
+    iput-boolean v0, p0, Lw0/h;->n:Z
+
+    .line 25
+    .line 26
+    iput-boolean v0, p0, Lw0/h;->p:Z
+
+    .line 27
+    .line 28
+    iget-object v3, p0, Lw0/h;->b:Lr0/l;
 
     .line 29
     .line 30
-    invoke-static {p1}, LZ0/a;->a(Ljava/lang/String;)V
+    if-eqz v3, :cond_2
 
     .line 31
     .line 32
-    .line 33
-    :goto_0
-    const/4 p1, 0x0
+    iget-object v2, p0, Lw0/h;->s:Lr0/g;
 
+    .line 33
     .line 34
-    float-to-double p2, p1
+    iget v4, p0, Lw0/h;->c:F
 
     .line 35
-    invoke-static {p2, p3}, Ljava/lang/Math;->ceil(D)D
-
     .line 36
+    const/16 v6, 0x38
+
     .line 37
     .line 38
-    move-result-wide p2
+    const/4 v5, 0x0
 
     .line 39
-    double-to-float p2, p2
+    move-object v1, p1
 
     .line 40
-    float-to-int p2, p2
+    invoke-static/range {v1 .. v6}, Lj6/d;->l(Lt0/d;Lr0/D;Lr0/l;FLt0/h;I)V
 
     .line 41
-    iput p2, p0, LW0/h;->b:I
-
     .line 42
     .line 43
-    float-to-double p1, p1
+    :cond_2
+    iget-object v9, p0, Lw0/h;->g:Lr0/l;
 
     .line 44
-    invoke-static {p1, p2}, Ljava/lang/Math;->ceil(D)D
-
     .line 45
+    if-eqz v9, :cond_5
+
     .line 46
     .line 47
-    move-result-wide p1
+    iget-object v1, p0, Lw0/h;->q:Lt0/h;
 
     .line 48
-    double-to-float p1, p1
-
     .line 49
-    float-to-int p1, p1
+    iget-boolean v2, p0, Lw0/h;->o:Z
 
     .line 50
-    iput p1, p0, LW0/h;->c:I
-
     .line 51
+    if-nez v2, :cond_4
+
     .line 52
-    if-eqz p5, :cond_2
-
     .line 53
-    .line 54
-    invoke-virtual {p0}, LW0/h;->a()Landroid/graphics/Paint$FontMetricsInt;
+    if-nez v1, :cond_3
 
+    .line 54
     .line 55
+    goto :goto_2
+
     .line 56
+    :cond_3
+    :goto_1
+    move-object v11, v1
+
     .line 57
-    move-result-object p1
+    goto :goto_3
 
     .line 58
-    iget p1, p1, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
+    :cond_4
+    :goto_2
+    new-instance v1, Lt0/h;
 
     .line 59
     .line 60
-    iput p1, p5, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
+    iget v4, p0, Lw0/h;->f:F
 
     .line 61
     .line 62
-    invoke-virtual {p0}, LW0/h;->a()Landroid/graphics/Paint$FontMetricsInt;
+    iget v5, p0, Lw0/h;->j:F
+
+    .line 63
+    .line 64
+    iget v6, p0, Lw0/h;->h:I
+
+    .line 65
+    .line 66
+    iget v7, p0, Lw0/h;->i:I
+
+    .line 67
+    .line 68
+    const/16 v8, 0x10
+
+    .line 69
+    .line 70
+    move-object v3, v1
+
+    .line 71
+    invoke-direct/range {v3 .. v8}, Lt0/h;-><init>(FFIII)V
+
+    .line 72
+    .line 73
+    .line 74
+    iput-object v1, p0, Lw0/h;->q:Lt0/h;
+
+    .line 75
+    .line 76
+    iput-boolean v0, p0, Lw0/h;->o:Z
+
+    .line 77
+    .line 78
+    goto :goto_1
+
+    .line 79
+    :goto_3
+    iget-object v8, p0, Lw0/h;->s:Lr0/g;
+
+    .line 80
+    .line 81
+    iget v10, p0, Lw0/h;->e:F
+
+    .line 82
+    .line 83
+    const/16 v12, 0x30
+
+    .line 84
+    .line 85
+    move-object v7, p1
+
+    .line 86
+    invoke-static/range {v7 .. v12}, Lj6/d;->l(Lt0/d;Lr0/D;Lr0/l;FLt0/h;I)V
+
+    .line 87
+    .line 88
+    .line 89
+    :cond_5
+    return-void
+.end method
+
+.method public final e()V
+    .locals 7
+
+    .line 1
+    iget v0, p0, Lw0/h;->k:F
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    cmpg-float v0, v0, v1
+
+    .line 5
+    .line 6
+    iget-object v2, p0, Lw0/h;->r:Lr0/g;
+
+    .line 7
+    .line 8
+    const/high16 v3, 0x3f800000    # 1.0f
+
+    .line 9
+    .line 10
+    if-nez v0, :cond_0
+
+    .line 11
+    .line 12
+    iget v0, p0, Lw0/h;->l:F
+
+    .line 13
+    .line 14
+    cmpg-float v0, v0, v3
+
+    .line 15
+    .line 16
+    if-nez v0, :cond_0
+
+    .line 17
+    .line 18
+    iput-object v2, p0, Lw0/h;->s:Lr0/g;
+
+    .line 19
+    .line 20
+    goto/16 :goto_3
+
+    .line 21
+    .line 22
+    :cond_0
+    iget-object v0, p0, Lw0/h;->s:Lr0/g;
+
+    .line 23
+    .line 24
+    invoke-static {v0, v2}, Lq9/i;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 25
+    .line 26
+    .line 27
+    move-result v0
+
+    .line 28
+    const/4 v4, 0x0
+
+    .line 29
+    if-eqz v0, :cond_1
+
+    .line 30
+    .line 31
+    invoke-static {}, Lr0/i;->a()Lr0/g;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v0
+
+    .line 35
+    iput-object v0, p0, Lw0/h;->s:Lr0/g;
+
+    .line 36
+    .line 37
+    goto :goto_1
+
+    .line 38
+    :cond_1
+    iget-object v0, p0, Lw0/h;->s:Lr0/g;
+
+    .line 39
+    .line 40
+    iget-object v0, v0, Lr0/g;->a:Landroid/graphics/Path;
+
+    .line 41
+    .line 42
+    invoke-virtual {v0}, Landroid/graphics/Path;->getFillType()Landroid/graphics/Path$FillType;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object v0
+
+    .line 46
+    sget-object v5, Landroid/graphics/Path$FillType;->EVEN_ODD:Landroid/graphics/Path$FillType;
+
+    .line 47
+    .line 48
+    if-ne v0, v5, :cond_2
+
+    .line 49
+    .line 50
+    const/4 v0, 0x1
+
+    .line 51
+    goto :goto_0
+
+    .line 52
+    :cond_2
+    move v0, v4
+
+    .line 53
+    :goto_0
+    iget-object v5, p0, Lw0/h;->s:Lr0/g;
+
+    .line 54
+    .line 55
+    iget-object v5, v5, Lr0/g;->a:Landroid/graphics/Path;
+
+    .line 56
+    .line 57
+    invoke-virtual {v5}, Landroid/graphics/Path;->rewind()V
+
+    .line 58
+    .line 59
+    .line 60
+    iget-object v5, p0, Lw0/h;->s:Lr0/g;
+
+    .line 61
+    .line 62
+    invoke-virtual {v5, v0}, Lr0/g;->d(I)V
 
     .line 63
     .line 64
     .line 65
-    move-result-object p1
+    :goto_1
+    iget-object v0, p0, Lw0/h;->t:Ljava/lang/Object;
 
     .line 66
-    iget p1, p1, Landroid/graphics/Paint$FontMetricsInt;->descent:I
-
     .line 67
-    .line 68
-    iput p1, p5, Landroid/graphics/Paint$FontMetricsInt;->descent:I
+    invoke-interface {v0}, Lb9/f;->getValue()Ljava/lang/Object;
 
+    .line 68
     .line 69
     .line 70
-    invoke-virtual {p0}, LW0/h;->a()Landroid/graphics/Paint$FontMetricsInt;
+    move-result-object v5
 
     .line 71
+    check-cast v5, Lr0/h;
+
     .line 72
     .line 73
-    move-result-object p1
+    if-eqz v2, :cond_3
 
     .line 74
-    iget p1, p1, Landroid/graphics/Paint$FontMetricsInt;->leading:I
-
     .line 75
-    .line 76
-    iput p1, p5, Landroid/graphics/Paint$FontMetricsInt;->leading:I
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 76
     .line 77
     .line 78
-    iget p1, p5, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
+    iget-object v2, v2, Lr0/g;->a:Landroid/graphics/Path;
 
     .line 79
     .line 80
-    invoke-virtual {p0}, LW0/h;->b()I
+    goto :goto_2
 
     .line 81
-    .line 82
-    .line 83
-    move-result p2
+    :cond_3
+    const/4 v2, 0x0
 
+    .line 82
+    :goto_2
+    iget-object v5, v5, Lr0/h;->a:Landroid/graphics/PathMeasure;
+
+    .line 83
     .line 84
-    neg-int p2, p2
+    invoke-virtual {v5, v2, v4}, Landroid/graphics/PathMeasure;->setPath(Landroid/graphics/Path;Z)V
 
     .line 85
-    if-le p1, p2, :cond_1
-
     .line 86
     .line 87
-    invoke-virtual {p0}, LW0/h;->b()I
+    invoke-interface {v0}, Lb9/f;->getValue()Ljava/lang/Object;
 
     .line 88
     .line 89
     .line 90
-    move-result p1
+    move-result-object v2
 
     .line 91
-    neg-int p1, p1
+    check-cast v2, Lr0/h;
 
     .line 92
-    iput p1, p5, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
-
     .line 93
-    .line 94
-    :cond_1
-    invoke-virtual {p0}, LW0/h;->a()Landroid/graphics/Paint$FontMetricsInt;
+    iget-object v2, v2, Lr0/h;->a:Landroid/graphics/PathMeasure;
 
+    .line 94
     .line 95
+    invoke-virtual {v2}, Landroid/graphics/PathMeasure;->getLength()F
+
     .line 96
     .line 97
-    move-result-object p1
-
     .line 98
-    iget p1, p1, Landroid/graphics/Paint$FontMetricsInt;->top:I
+    move-result v2
 
     .line 99
+    iget v4, p0, Lw0/h;->k:F
+
     .line 100
-    iget p2, p5, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
-
     .line 101
-    .line 102
-    invoke-static {p1, p2}, Ljava/lang/Math;->min(II)I
+    iget v5, p0, Lw0/h;->m:F
 
+    .line 102
     .line 103
+    add-float/2addr v4, v5
+
     .line 104
+    rem-float/2addr v4, v3
+
     .line 105
-    move-result p1
+    mul-float/2addr v4, v2
 
     .line 106
-    iput p1, p5, Landroid/graphics/Paint$FontMetricsInt;->top:I
+    iget v6, p0, Lw0/h;->l:F
 
     .line 107
     .line 108
-    invoke-virtual {p0}, LW0/h;->a()Landroid/graphics/Paint$FontMetricsInt;
+    add-float/2addr v6, v5
 
     .line 109
+    rem-float/2addr v6, v3
+
     .line 110
+    mul-float/2addr v6, v2
+
     .line 111
-    move-result-object p1
+    cmpl-float v3, v4, v6
 
     .line 112
-    iget p1, p1, Landroid/graphics/Paint$FontMetricsInt;->bottom:I
-
     .line 113
+    if-lez v3, :cond_4
+
     .line 114
-    iget p2, p5, Landroid/graphics/Paint$FontMetricsInt;->descent:I
-
     .line 115
-    .line 116
-    invoke-static {p1, p2}, Ljava/lang/Math;->max(II)I
+    invoke-interface {v0}, Lb9/f;->getValue()Ljava/lang/Object;
 
+    .line 116
     .line 117
     .line 118
+    move-result-object v3
+
     .line 119
-    move-result p1
+    check-cast v3, Lr0/h;
 
     .line 120
-    iput p1, p5, Landroid/graphics/Paint$FontMetricsInt;->bottom:I
-
     .line 121
+    iget-object v5, p0, Lw0/h;->s:Lr0/g;
+
     .line 122
-    :cond_2
-    iget-boolean p1, p0, LW0/h;->d:Z
-
     .line 123
-    .line 124
-    if-nez p1, :cond_3
+    invoke-virtual {v3, v4, v2, v5}, Lr0/h;->a(FFLr0/g;)V
 
+    .line 124
     .line 125
     .line 126
-    const-string p1, "PlaceholderSpan is not laid out yet."
+    invoke-interface {v0}, Lb9/f;->getValue()Ljava/lang/Object;
 
     .line 127
     .line 128
-    invoke-static {p1}, LZ0/a;->b(Ljava/lang/String;)V
-
     .line 129
-    .line 130
-    .line 131
-    :cond_3
-    iget p1, p0, LW0/h;->b:I
+    move-result-object v0
 
+    .line 130
+    check-cast v0, Lr0/h;
+
+    .line 131
     .line 132
+    iget-object v2, p0, Lw0/h;->s:Lr0/g;
+
     .line 133
-    return p1
+    .line 134
+    invoke-virtual {v0, v1, v6, v2}, Lr0/h;->a(FFLr0/g;)V
+
+    .line 135
+    .line 136
+    .line 137
+    goto :goto_3
+
+    .line 138
+    :cond_4
+    invoke-interface {v0}, Lb9/f;->getValue()Ljava/lang/Object;
+
+    .line 139
+    .line 140
+    .line 141
+    move-result-object v0
+
+    .line 142
+    check-cast v0, Lr0/h;
+
+    .line 143
+    .line 144
+    iget-object v1, p0, Lw0/h;->s:Lr0/g;
+
+    .line 145
+    .line 146
+    invoke-virtual {v0, v4, v6, v1}, Lr0/h;->a(FFLr0/g;)V
+
+    .line 147
+    .line 148
+    .line 149
+    :goto_3
+    return-void
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lw0/h;->r:Lr0/g;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
 .end method

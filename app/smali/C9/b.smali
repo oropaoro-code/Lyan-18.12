@@ -1,230 +1,138 @@
-.class public final Lc9/b;
-.super LH1/Y;
+.class public final synthetic LC9/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/util/ListIterator;
+.implements Lp9/g;
 
 
 # instance fields
-.field public final synthetic t:Lc9/d;
+.field public final synthetic q:I
+
+.field public final synthetic r:Ljava/lang/Object;
+
+.field public final synthetic s:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lc9/d;I)V
-    .locals 3
+.method public synthetic constructor <init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    .locals 0
 
     .line 1
-    iput-object p1, p0, Lc9/b;->t:Lc9/d;
+    iput p1, p0, LC9/b;->q:I
 
-    .line 2
-    .line 3
-    const/4 v0, 0x1
+    iput-object p2, p0, LC9/b;->r:Ljava/lang/Object;
 
-    .line 4
-    invoke-direct {p0, v0, p1}, LH1/Y;-><init>(ILjava/lang/Object;)V
+    iput-object p3, p0, LC9/b;->s:Ljava/lang/Object;
 
-    .line 5
-    .line 6
-    .line 7
-    invoke-virtual {p1}, Lc9/a;->c()I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 8
-    .line 9
-    .line 10
-    move-result p1
-
-    .line 11
-    if-ltz p2, :cond_0
-
-    .line 12
-    .line 13
-    if-gt p2, p1, :cond_0
-
-    .line 14
-    .line 15
-    iput p2, p0, LH1/Y;->r:I
-
-    .line 16
-    .line 17
     return-void
-
-    .line 18
-    :cond_0
-    new-instance v0, Ljava/lang/IndexOutOfBoundsException;
-
-    .line 19
-    .line 20
-    const-string v1, "index: "
-
-    .line 21
-    .line 22
-    const-string v2, ", size: "
-
-    .line 23
-    .line 24
-    invoke-static {p2, p1, v1, v2}, LU3/c;->o(IILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-object p1
-
-    .line 28
-    invoke-direct {v0, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
-
-    .line 29
-    .line 30
-    .line 31
-    throw v0
 .end method
 
 
 # virtual methods
-.method public final add(Ljava/lang/Object;)V
+.method public final c(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    iget v0, p0, LC9/b;->q:I
 
     .line 2
     .line 3
-    const-string v0, "Operation is not supported for read-only collection"
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 4
     .line 5
-    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    packed-switch v0, :pswitch_data_0
 
     .line 6
     .line 7
     .line 8
-    throw p1
-.end method
+    check-cast p2, Lb9/n;
 
-.method public final hasPrevious()Z
-    .locals 1
-
-    .line 1
-    iget v0, p0, LH1/Y;->r:I
-
-    .line 2
-    .line 3
-    if-lez v0, :cond_0
-
-    .line 4
-    .line 5
-    const/4 v0, 0x1
-
-    .line 6
-    goto :goto_0
-
-    .line 7
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 8
-    :goto_0
-    return v0
-.end method
-
-.method public final nextIndex()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, LH1/Y;->r:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final previous()Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    invoke-virtual {p0}, Lc9/b;->hasPrevious()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    iget v0, p0, LH1/Y;->r:I
-
-    .line 8
     .line 9
-    add-int/lit8 v0, v0, -0x1
-
     .line 10
+    check-cast p3, Lg9/j;
+
     .line 11
-    iput v0, p0, LH1/Y;->r:I
-
     .line 12
+    sget-object p1, LI9/c;->g:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+
     .line 13
-    iget-object v1, p0, Lc9/b;->t:Lc9/d;
-
     .line 14
-    .line 15
-    invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    iget-object p2, p0, LC9/b;->s:Ljava/lang/Object;
 
+    .line 15
     .line 16
+    check-cast p2, LI9/b;
+
     .line 17
     .line 18
-    move-result-object v0
+    iget-object p3, p2, LI9/b;->r:Ljava/lang/Object;
 
     .line 19
-    return-object v0
-
     .line 20
-    :cond_0
-    new-instance v0, Ljava/util/NoSuchElementException;
+    iget-object v0, p0, LC9/b;->r:Ljava/lang/Object;
 
     .line 21
     .line 22
-    invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
+    check-cast v0, LI9/c;
 
     .line 23
     .line 24
+    invoke-virtual {p1, v0, p3}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->set(Ljava/lang/Object;Ljava/lang/Object;)V
+
     .line 25
-    throw v0
-.end method
+    .line 26
+    .line 27
+    iget-object p1, p2, LI9/b;->r:Ljava/lang/Object;
 
-.method public final previousIndex()I
-    .locals 1
+    .line 28
+    .line 29
+    invoke-virtual {v0, p1}, LI9/c;->f(Ljava/lang/Object;)V
 
-    .line 1
-    iget v0, p0, LH1/Y;->r:I
+    .line 30
+    .line 31
+    .line 32
+    sget-object p1, Lb9/n;->a:Lb9/n;
 
-    .line 2
-    .line 3
-    add-int/lit8 v0, v0, -0x1
+    .line 33
+    .line 34
+    return-object p1
 
-    .line 4
-    .line 5
-    return v0
-.end method
+    .line 35
+    :pswitch_0
+    check-cast p3, Lg9/j;
 
-.method public final set(Ljava/lang/Object;)V
-    .locals 1
+    .line 36
+    .line 37
+    iget-object p1, p0, LC9/b;->r:Ljava/lang/Object;
 
-    .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    .line 38
+    .line 39
+    check-cast p1, Lp9/d;
 
-    .line 2
-    .line 3
-    const-string v0, "Operation is not supported for read-only collection"
+    .line 40
+    .line 41
+    iget-object p2, p0, LC9/b;->s:Ljava/lang/Object;
 
-    .line 4
-    .line 5
-    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    .line 42
+    .line 43
+    invoke-static {p1, p2, p3}, LF9/a;->a(Lp9/d;Ljava/lang/Object;Lg9/j;)V
 
-    .line 6
-    .line 7
-    .line 8
-    throw p1
+    .line 44
+    .line 45
+    .line 46
+    sget-object p1, Lb9/n;->a:Lb9/n;
+
+    .line 47
+    .line 48
+    return-object p1
+
+    .line 49
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

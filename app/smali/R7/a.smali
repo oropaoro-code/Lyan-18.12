@@ -1,44 +1,32 @@
-.class public interface abstract Lr7/a;
+.class public interface abstract LR7/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # virtual methods
-.method public abstract cleanCachedInAppMessages(Lg9/e;)Ljava/lang/Object;
+.method public abstract canOpenNotification(Landroid/app/Activity;Lorg/json/JSONObject;Lg9/e;)Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
+            "Landroid/app/Activity;",
+            "Lorg/json/JSONObject;",
             "Lg9/e<",
             "-",
-            "Lb9/n;",
+            "Ljava/lang/Boolean;",
             ">;)",
             "Ljava/lang/Object;"
         }
     .end annotation
 .end method
 
-.method public abstract listInAppMessages(Lg9/e;)Ljava/lang/Object;
+.method public abstract canReceiveNotification(Lorg/json/JSONObject;Lg9/e;)Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
+            "Lorg/json/JSONObject;",
             "Lg9/e<",
             "-",
-            "Ljava/util/List<",
-            "Lcom/onesignal/inAppMessages/internal/b;",
-            ">;>;)",
-            "Ljava/lang/Object;"
-        }
-    .end annotation
-.end method
-
-.method public abstract saveInAppMessage(Lcom/onesignal/inAppMessages/internal/b;Lg9/e;)Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/onesignal/inAppMessages/internal/b;",
-            "Lg9/e<",
-            "-",
-            "Lb9/n;",
+            "Ljava/lang/Boolean;",
             ">;)",
             "Ljava/lang/Object;"
         }

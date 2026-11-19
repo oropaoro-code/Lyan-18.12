@@ -1,32 +1,37 @@
-.class public final LY/k;
+.class public final LY/K;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:LY/Q;
+# instance fields
+.field public final a:LY/m0;
+
+.field public final b:I
+
+.field public c:Ljava/lang/Object;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(LY/m0;ILjava/lang/Object;)V
+    .locals 0
 
     .line 1
-    new-instance v0, LY/Q;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const/4 v1, 0x6
-
     .line 4
-    invoke-direct {v0, v1}, LY/Q;-><init>(I)V
+    iput-object p1, p0, LY/K;->a:LY/m0;
 
     .line 5
     .line 6
-    .line 7
-    sput-object v0, LY/k;->a:LY/Q;
+    iput p2, p0, LY/K;->b:I
 
+    .line 7
     .line 8
+    iput-object p3, p0, LY/K;->c:Ljava/lang/Object;
+
     .line 9
+    .line 10
     return-void
 .end method

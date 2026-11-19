@@ -1,8 +1,6 @@
-.class public interface abstract LA9/M;
+.class public interface abstract LA9/m;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# virtual methods
-.method public abstract b()V
-.end method
+# interfaces
+.implements LA9/D;

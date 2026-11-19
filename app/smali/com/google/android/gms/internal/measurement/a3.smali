@@ -1,91 +1,121 @@
-.class public final Lcom/google/android/gms/internal/measurement/a3;
+.class public final Lcom/google/android/gms/internal/measurement/A3;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Ly5/d;
+.implements Lcom/google/android/gms/internal/measurement/x3;
 
 
 # static fields
-.field public static final r:Lcom/google/android/gms/internal/measurement/a3;
+.field public static final a:Lcom/google/android/gms/internal/measurement/N1;
 
+.field public static final b:Lcom/google/android/gms/internal/measurement/N1;
 
-# instance fields
-.field public final q:Ly5/g;
+.field public static final c:Lcom/google/android/gms/internal/measurement/N1;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 7
 
     .line 1
-    new-instance v0, Lcom/google/android/gms/internal/measurement/a3;
+    const-string v0, "com.google.android.gms.measurement"
 
     .line 2
     .line 3
-    invoke-direct {v0}, Lcom/google/android/gms/internal/measurement/a3;-><init>()V
+    invoke-static {v0}, Lcom/google/android/gms/internal/measurement/L1;->a(Ljava/lang/String;)Landroid/net/Uri;
 
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/google/android/gms/internal/measurement/a3;->r:Lcom/google/android/gms/internal/measurement/a3;
+    move-result-object v2
 
     .line 7
-    .line 8
-    return-void
-.end method
+    new-instance v0, LB3/P;
 
-.method public constructor <init>()V
-    .locals 2
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    new-instance v0, Lcom/google/android/gms/internal/measurement/c3;
-
-    .line 5
-    .line 6
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 7
     .line 8
     .line 9
-    new-instance v1, Ly5/g;
+    const/4 v6, 0x1
 
     .line 10
-    .line 11
-    invoke-direct {v1, v0}, Ly5/g;-><init>(Ljava/lang/Object;)V
+    const-string v3, ""
 
+    .line 11
     .line 12
+    const-string v4, ""
+
     .line 13
     .line 14
-    iput-object v1, p0, Lcom/google/android/gms/internal/measurement/a3;->q:Ly5/g;
+    const/4 v5, 0x1
 
     .line 15
+    move-object v1, v0
+
     .line 16
+    invoke-direct/range {v1 .. v6}, LB3/P;-><init>(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;ZZ)V
+
+    .line 17
+    .line 18
+    .line 19
+    const-string v1, "measurement.client.ad_id_consent_fix"
+
+    .line 20
+    .line 21
+    const/4 v2, 0x1
+
+    .line 22
+    invoke-virtual {v0, v1, v2}, LB3/P;->o(Ljava/lang/String;Z)Lcom/google/android/gms/internal/measurement/N1;
+
+    .line 23
+    .line 24
+    .line 25
+    const-string v1, "measurement.service.consent.aiid_reset_fix"
+
+    .line 26
+    .line 27
+    invoke-virtual {v0, v1, v2}, LB3/P;->o(Ljava/lang/String;Z)Lcom/google/android/gms/internal/measurement/N1;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v1
+
+    .line 31
+    sput-object v1, Lcom/google/android/gms/internal/measurement/A3;->a:Lcom/google/android/gms/internal/measurement/N1;
+
+    .line 32
+    .line 33
+    const-string v1, "measurement.service.consent.app_start_fix"
+
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1, v2}, LB3/P;->o(Ljava/lang/String;Z)Lcom/google/android/gms/internal/measurement/N1;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object v1
+
+    .line 39
+    sput-object v1, Lcom/google/android/gms/internal/measurement/A3;->b:Lcom/google/android/gms/internal/measurement/N1;
+
+    .line 40
+    .line 41
+    const-string v1, "measurement.service.consent.pfo_on_fx"
+
+    .line 42
+    .line 43
+    invoke-virtual {v0, v1, v2}, LB3/P;->o(Ljava/lang/String;Z)Lcom/google/android/gms/internal/measurement/N1;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object v0
+
+    .line 47
+    sput-object v0, Lcom/google/android/gms/internal/measurement/A3;->c:Lcom/google/android/gms/internal/measurement/N1;
+
+    .line 48
+    .line 49
     return-void
-.end method
-
-
-# virtual methods
-.method public final get()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/measurement/a3;->q:Ly5/g;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, Ly5/g;->q:Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    check-cast v0, Lcom/google/android/gms/internal/measurement/Z2;
-
-    .line 6
-    .line 7
-    return-object v0
 .end method

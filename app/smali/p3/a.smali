@@ -1,202 +1,196 @@
-.class public final enum LP3/a;
-.super Ljava/lang/Enum;
+.class public final Lp3/a;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# static fields
-.field public static final enum s:LP3/a;
-
-.field public static final enum t:LP3/a;
-
-.field public static final u:LP3/a;
-
-.field public static final synthetic v:[LP3/a;
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final q:Ljava/lang/String;
+.field public final synthetic q:I
 
-.field public final r:I
+.field public final synthetic r:Ljava/lang/String;
+
+.field public final synthetic s:Landroid/os/Bundle;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 8
-
-    .line 1
-    new-instance v0, LP3/a;
-
-    .line 2
-    .line 3
-    const-string v1, "bottom"
-
-    .line 4
-    .line 5
-    const-string v2, "BOTTOM"
-
-    .line 6
-    .line 7
-    const/4 v3, 0x0
-
-    .line 8
-    invoke-direct {v0, v3, v3, v2, v1}, LP3/a;-><init>(IILjava/lang/String;Ljava/lang/String;)V
-
-    .line 9
-    .line 10
-    .line 11
-    new-instance v1, LP3/a;
-
-    .line 12
-    .line 13
-    const-string v2, "inline"
-
-    .line 14
-    .line 15
-    const-string v4, "INLINE"
-
-    .line 16
-    .line 17
-    const/4 v5, 0x1
-
-    .line 18
-    invoke-direct {v1, v5, v5, v4, v2}, LP3/a;-><init>(IILjava/lang/String;Ljava/lang/String;)V
-
-    .line 19
-    .line 20
-    .line 21
-    sput-object v1, LP3/a;->s:LP3/a;
-
-    .line 22
-    .line 23
-    new-instance v2, LP3/a;
-
-    .line 24
-    .line 25
-    const-string v4, "top"
-
-    .line 26
-    .line 27
-    const-string v6, "TOP"
-
-    .line 28
-    .line 29
-    const/4 v7, 0x2
-
-    .line 30
-    invoke-direct {v2, v7, v7, v6, v4}, LP3/a;-><init>(IILjava/lang/String;Ljava/lang/String;)V
-
-    .line 31
-    .line 32
-    .line 33
-    sput-object v2, LP3/a;->t:LP3/a;
-
-    .line 34
-    .line 35
-    const/4 v4, 0x3
-
-    .line 36
-    new-array v4, v4, [LP3/a;
-
-    .line 37
-    .line 38
-    aput-object v0, v4, v3
-
-    .line 39
-    .line 40
-    aput-object v1, v4, v5
-
-    .line 41
-    .line 42
-    aput-object v2, v4, v7
-
-    .line 43
-    .line 44
-    sput-object v4, LP3/a;->v:[LP3/a;
-
-    .line 45
-    .line 46
-    sput-object v0, LP3/a;->u:LP3/a;
-
-    .line 47
-    .line 48
-    return-void
-.end method
-
-.method public constructor <init>(IILjava/lang/String;Ljava/lang/String;)V
+.method public synthetic constructor <init>(Ljava/lang/String;ILandroid/os/Bundle;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p3, p1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iput p2, p0, Lp3/a;->q:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p4, p0, LP3/a;->q:Ljava/lang/String;
+    iput-object p1, p0, Lp3/a;->r:Ljava/lang/String;
 
-    .line 5
-    .line 6
-    iput p2, p0, LP3/a;->r:I
+    iput-object p3, p0, Lp3/a;->s:Landroid/os/Bundle;
 
-    .line 7
-    .line 8
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LP3/a;
-    .locals 1
-
-    .line 1
-    const-class v0, LP3/a;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LP3/a;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LP3/a;
-    .locals 1
-
-    .line 1
-    sget-object v0, LP3/a;->v:[LP3/a;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [LP3/a;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LP3/a;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final toString()Ljava/lang/String;
-    .locals 1
+.method public final run()V
+    .locals 5
 
     .line 1
-    iget-object v0, p0, LP3/a;->q:Ljava/lang/String;
+    iget-object v0, p0, Lp3/a;->s:Landroid/os/Bundle;
 
     .line 2
     .line 3
-    return-object v0
+    iget-object v1, p0, Lp3/a;->r:Ljava/lang/String;
+
+    .line 4
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    iget v3, p0, Lp3/a;->q:I
+
+    .line 7
+    .line 8
+    packed-switch v3, :pswitch_data_0
+
+    .line 9
+    .line 10
+    .line 11
+    sget-object v3, LE3/a;->a:Ljava/util/Set;
+
+    .line 12
+    .line 13
+    invoke-interface {v3, p0}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v3
+
+    .line 17
+    if-eqz v3, :cond_0
+
+    .line 18
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :cond_0
+    :try_start_0
+    sget-object v3, Lcom/facebook/j;->a:Ljava/util/HashSet;
+
+    .line 21
+    .line 22
+    invoke-static {}, LB3/X;->k()V
+
+    .line 23
+    .line 24
+    .line 25
+    sget-object v3, Lcom/facebook/j;->i:Landroid/content/Context;
+
+    .line 26
+    .line 27
+    new-instance v4, Ln3/m;
+
+    .line 28
+    .line 29
+    invoke-direct {v4, v3, v2}, Ln3/m;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-virtual {v4, v1, v0}, Ln3/m;->d(Ljava/lang/String;Landroid/os/Bundle;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 33
+    .line 34
+    .line 35
+    goto :goto_0
+
+    .line 36
+    :catchall_0
+    move-exception v0
+
+    .line 37
+    invoke-static {v0, p0}, LE3/a;->a(Ljava/lang/Throwable;Ljava/lang/Object;)V
+
+    .line 38
+    .line 39
+    .line 40
+    :goto_0
+    return-void
+
+    .line 41
+    :pswitch_0
+    sget-object v3, LE3/a;->a:Ljava/util/Set;
+
+    .line 42
+    .line 43
+    invoke-interface {v3, p0}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    .line 44
+    .line 45
+    .line 46
+    move-result v3
+
+    .line 47
+    if-eqz v3, :cond_1
+
+    .line 48
+    .line 49
+    goto :goto_1
+
+    .line 50
+    :cond_1
+    :try_start_1
+    sget-object v3, Lcom/facebook/j;->a:Ljava/util/HashSet;
+
+    .line 51
+    .line 52
+    invoke-static {}, LB3/X;->k()V
+
+    .line 53
+    .line 54
+    .line 55
+    sget-object v3, Lcom/facebook/j;->i:Landroid/content/Context;
+
+    .line 56
+    .line 57
+    new-instance v4, Ln3/m;
+
+    .line 58
+    .line 59
+    invoke-direct {v4, v3, v2}, Ln3/m;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+
+    .line 60
+    .line 61
+    .line 62
+    invoke-virtual {v4, v1, v0}, Ln3/m;->d(Ljava/lang/String;Landroid/os/Bundle;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 63
+    .line 64
+    .line 65
+    goto :goto_1
+
+    .line 66
+    :catchall_1
+    move-exception v0
+
+    .line 67
+    invoke-static {v0, p0}, LE3/a;->a(Ljava/lang/Throwable;Ljava/lang/Object;)V
+
+    .line 68
+    .line 69
+    .line 70
+    :goto_1
+    return-void
+
+    .line 71
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

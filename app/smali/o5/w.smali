@@ -1,115 +1,147 @@
-.class public final LO5/w;
-.super Ljava/lang/Object;
+.class public final LO5/W;
+.super LO5/x0;
 .source "SourceFile"
 
-# interfaces
-.implements LY5/c;
 
-
-# static fields
-.field public static final a:LO5/w;
-
-.field public static final b:LY5/b;
-
-.field public static final c:LY5/b;
+# instance fields
+.field public final a:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    new-instance v0, LO5/w;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    iput-object p1, p0, LO5/W;->a:Ljava/lang/String;
+
     .line 5
     .line 6
-    sput-object v0, LO5/w;->a:LO5/w;
-
-    .line 7
-    .line 8
-    const-string v0, "rolloutId"
-
-    .line 9
-    .line 10
-    invoke-static {v0}, LY5/b;->a(Ljava/lang/String;)LY5/b;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object v0
-
-    .line 14
-    sput-object v0, LO5/w;->b:LY5/b;
-
-    .line 15
-    .line 16
-    const-string v0, "variantId"
-
-    .line 17
-    .line 18
-    invoke-static {v0}, LY5/b;->a(Ljava/lang/String;)LY5/b;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v0
-
-    .line 22
-    sput-object v0, LO5/w;->c:LY5/b;
-
-    .line 23
-    .line 24
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 2
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
 
     .line 1
-    check-cast p1, LO5/y0;
+    if-ne p1, p0, :cond_0
 
     .line 2
     .line 3
-    check-cast p2, LY5/d;
+    const/4 p1, 0x1
 
     .line 4
+    return p1
+
     .line 5
-    check-cast p1, LO5/Y;
+    :cond_0
+    instance-of v0, p1, LO5/x0;
 
     .line 6
     .line 7
-    iget-object v0, p1, LO5/Y;->a:Ljava/lang/String;
+    if-eqz v0, :cond_1
 
     .line 8
     .line 9
-    sget-object v1, LO5/w;->b:LY5/b;
+    check-cast p1, LO5/x0;
 
     .line 10
     .line 11
-    invoke-interface {p2, v1, v0}, LY5/d;->f(LY5/b;Ljava/lang/Object;)LY5/d;
+    check-cast p1, LO5/W;
 
     .line 12
     .line 13
+    iget-object p1, p1, LO5/W;->a:Ljava/lang/String;
+
     .line 14
-    sget-object v0, LO5/w;->c:LY5/b;
-
     .line 15
+    iget-object v0, p0, LO5/W;->a:Ljava/lang/String;
+
     .line 16
-    iget-object p1, p1, LO5/Y;->b:Ljava/lang/String;
-
     .line 17
-    .line 18
-    invoke-interface {p2, v0, p1}, LY5/d;->f(LY5/b;Ljava/lang/Object;)LY5/d;
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
+    .line 18
     .line 19
     .line 20
+    move-result p1
+
     .line 21
-    return-void
+    return p1
+
+    .line 22
+    :cond_1
+    const/4 p1, 0x0
+
+    .line 23
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, LO5/W;->a:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    const v1, 0xf4243
+
+    .line 8
+    .line 9
+    .line 10
+    xor-int/2addr v0, v1
+
+    .line 11
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "Log{content="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LO5/W;->a:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    const-string v2, "}"
+
+    .line 11
+    .line 12
+    invoke-static {v0, v1, v2}, Lj6/d;->x(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    return-object v0
 .end method

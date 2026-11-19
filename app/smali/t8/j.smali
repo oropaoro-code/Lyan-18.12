@@ -1,128 +1,87 @@
-.class public final LT8/j;
-.super LH8/i;
+.class public final Lt8/j;
+.super Lf3/f;
 .source "SourceFile"
 
 
-# static fields
-.field public static final b:LT8/m;
-
-
-# instance fields
-.field public final a:LT8/m;
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 4
+# virtual methods
+.method public o(Ljava/util/Collection;)V
+    .locals 3
 
     .line 1
-    const-string v0, "rx3.newthread-priority"
+    invoke-interface {p1}, Ljava/util/Collection;->size()I
 
     .line 2
     .line 3
-    const/4 v1, 0x5
-
     .line 4
-    invoke-static {v0, v1}, Ljava/lang/Integer;->getInteger(Ljava/lang/String;I)Ljava/lang/Integer;
+    move-result v0
 
     .line 5
+    invoke-static {v0}, LE4/u0;->d(I)Ljava/lang/String;
+
     .line 6
     .line 7
+    .line 8
     move-result-object v0
 
-    .line 8
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
-
     .line 9
+    const-string v1, "DELETE FROM bookmark_tag WHERE bookmark_id IN "
+
     .line 10
     .line 11
-    move-result v0
+    invoke-virtual {v1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 12
-    const/16 v1, 0xa
-
     .line 13
     .line 14
-    invoke-static {v1, v0}, Ljava/lang/Math;->min(II)I
+    move-result-object v0
 
     .line 15
+    invoke-interface {p1}, Ljava/util/Collection;->size()I
+
     .line 16
     .line 17
-    move-result v0
-
     .line 18
-    const/4 v1, 0x1
+    new-instance v1, Lc0/b;
 
     .line 19
-    invoke-static {v1, v0}, Ljava/lang/Math;->max(II)I
-
     .line 20
+    const/4 v2, 0x4
+
     .line 21
+    invoke-direct {v1, v2, p1}, Lc0/b;-><init>(ILjava/util/Collection;)V
+
     .line 22
-    move-result v0
-
     .line 23
-    new-instance v1, LT8/m;
-
     .line 24
-    .line 25
-    const/4 v2, 0x0
+    iget-object p1, p0, LE4/u0;->a:Ljava/lang/Object;
 
+    .line 25
     .line 26
-    const-string v3, "RxNewThreadScheduler"
+    check-cast p1, Lk3/i;
 
     .line 27
     .line 28
-    invoke-direct {v1, v0, v3, v2}, LT8/m;-><init>(ILjava/lang/String;Z)V
+    const/4 v2, 0x0
 
     .line 29
+    invoke-virtual {p1, v2, v0, v1}, Lk3/i;->e(Ljava/lang/Integer;Ljava/lang/String;Lp9/d;)Lj3/d;
+
     .line 30
     .line 31
-    sput-object v1, LT8/j;->b:LT8/m;
-
     .line 32
+    sget-object p1, Lt8/c;->A:Lt8/c;
+
     .line 33
+    .line 34
+    const v0, -0x5294c4da
+
+    .line 35
+    .line 36
+    .line 37
+    invoke-virtual {p0, v0, p1}, LE4/u0;->f(ILp9/d;)V
+
+    .line 38
+    .line 39
+    .line 40
     return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    sget-object v0, LT8/j;->b:LT8/m;
-
-    .line 5
-    .line 6
-    iput-object v0, p0, LT8/j;->a:LT8/m;
-
-    .line 7
-    .line 8
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a()LH8/h;
-    .locals 2
-
-    .line 1
-    new-instance v0, LT8/k;
-
-    .line 2
-    .line 3
-    iget-object v1, p0, LT8/j;->a:LT8/m;
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, LT8/k;-><init>(LT8/m;)V
-
-    .line 6
-    .line 7
-    .line 8
-    return-object v0
 .end method

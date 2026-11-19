@@ -1,105 +1,41 @@
-.class public abstract Lc2/I;
-.super Ljava/lang/Object;
+.class public final LC2/i;
+.super Landroid/view/ViewGroup$MarginLayoutParams;
 .source "SourceFile"
 
 
-# virtual methods
-.method public onFragmentActivityCreated(Lc2/N;Lc2/u;Landroid/os/Bundle;)V
-    .locals 0
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
+# static fields
+.field public static final d:[I
+
+
+# instance fields
+.field public a:F
+
+.field public b:Z
+
+.field public c:Z
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    return-void
-.end method
+    const v0, 0x1010181
 
-.method public onFragmentAttached(Lc2/N;Lc2/u;Landroid/content/Context;)V
-    .locals 0
+    .line 2
+    .line 3
+    .line 4
+    filled-new-array {v0}, [I
 
-    .line 1
-    return-void
-.end method
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
 
-.method public onFragmentCreated(Lc2/N;Lc2/u;Landroid/os/Bundle;)V
-    .locals 0
+    .line 8
+    sput-object v0, LC2/i;->d:[I
 
-    .line 1
-    return-void
-.end method
-
-.method public onFragmentDestroyed(Lc2/N;Lc2/u;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public onFragmentDetached(Lc2/N;Lc2/u;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public onFragmentPaused(Lc2/N;Lc2/u;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public onFragmentPreAttached(Lc2/N;Lc2/u;Landroid/content/Context;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public onFragmentPreCreated(Lc2/N;Lc2/u;Landroid/os/Bundle;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public onFragmentResumed(Lc2/N;Lc2/u;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public onFragmentSaveInstanceState(Lc2/N;Lc2/u;Landroid/os/Bundle;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public onFragmentStarted(Lc2/N;Lc2/u;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public onFragmentStopped(Lc2/N;Lc2/u;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public onFragmentViewCreated(Lc2/N;Lc2/u;Landroid/view/View;Landroid/os/Bundle;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public onFragmentViewDestroyed(Lc2/N;Lc2/u;)V
-    .locals 0
-
-    .line 1
+    .line 9
+    .line 10
     return-void
 .end method

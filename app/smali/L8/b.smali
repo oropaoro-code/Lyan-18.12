@@ -1,246 +1,188 @@
-.class public final Ll8/b;
-.super La7/b;
+.class public final enum LL8/b;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
+# interfaces
+.implements LW8/a;
 
-# instance fields
-.field private final _configModelStore:Lcom/onesignal/core/internal/config/D;
+
+# static fields
+.field public static final enum q:LL8/b;
+
+.field public static final synthetic r:[LL8/b;
 
 
 # direct methods
-.method public constructor <init>(Lcom/onesignal/user/internal/properties/e;LZ6/f;Lcom/onesignal/core/internal/config/D;)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    const-string v0, "store"
+    const/4 v0, 0x1
 
     .line 2
+    const/4 v1, 0x0
+
     .line 3
-    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    new-instance v2, LL8/b;
 
     .line 4
     .line 5
+    const-string v3, "INSTANCE"
+
     .line 6
-    const-string v0, "opRepo"
-
     .line 7
-    .line 8
-    invoke-static {p2, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {v2, v3, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 8
     .line 9
     .line 10
+    sput-object v2, LL8/b;->q:LL8/b;
+
     .line 11
-    const-string v0, "_configModelStore"
-
     .line 12
-    .line 13
-    invoke-static {p3, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    new-instance v3, LL8/b;
 
+    .line 13
     .line 14
+    const-string v4, "NEVER"
+
     .line 15
     .line 16
-    invoke-direct {p0, p1, p2}, La7/b;-><init>(Lcom/onesignal/common/modeling/f;LZ6/f;)V
+    invoke-direct {v3, v4, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 17
     .line 18
     .line 19
-    iput-object p3, p0, Ll8/b;->_configModelStore:Lcom/onesignal/core/internal/config/D;
+    const/4 v4, 0x2
 
     .line 20
+    new-array v4, v4, [LL8/b;
+
     .line 21
+    .line 22
+    aput-object v2, v4, v1
+
+    .line 23
+    .line 24
+    aput-object v3, v4, v0
+
+    .line 25
+    .line 26
+    sput-object v4, LL8/b;->r:[LL8/b;
+
+    .line 27
+    .line 28
     return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)LL8/b;
+    .locals 1
+
+    .line 1
+    const-class v0, LL8/b;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, LL8/b;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[LL8/b;
+    .locals 1
+
+    .line 1
+    sget-object v0, LL8/b;->r:[LL8/b;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, [LL8/b;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [LL8/b;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public bridge synthetic getReplaceOperation(Lcom/onesignal/common/modeling/j;)LZ6/g;
-    .locals 0
-
-    .line 2
-    check-cast p1, Lcom/onesignal/user/internal/properties/c;
-
-    invoke-virtual {p0, p1}, Ll8/b;->getReplaceOperation(Lcom/onesignal/user/internal/properties/c;)LZ6/g;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public getReplaceOperation(Lcom/onesignal/user/internal/properties/c;)LZ6/g;
-    .locals 1
-
-    .line 1
-    const-string v0, "model"
-
-    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    return-object p1
-.end method
-
-.method public bridge synthetic getUpdateOperation(Lcom/onesignal/common/modeling/j;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)LZ6/g;
+.method public final b()V
     .locals 0
 
     .line 1
-    check-cast p1, Lcom/onesignal/user/internal/properties/c;
-
-    invoke-virtual/range {p0 .. p5}, Ll8/b;->getUpdateOperation(Lcom/onesignal/user/internal/properties/c;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)LZ6/g;
-
-    move-result-object p1
-
-    return-object p1
+    return-void
 .end method
 
-.method public getUpdateOperation(Lcom/onesignal/user/internal/properties/c;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)LZ6/g;
+.method public final clear()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final d(Ljava/lang/Object;)Z
     .locals 1
 
-    const-string p4, "model"
-
-    invoke-static {p1, p4}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p4, "path"
-
-    invoke-static {p2, p4}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p4, "property"
-
-    invoke-static {p3, p4}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     .line 2
-    const-string p4, "locationTimestamp"
-
-    const/4 v0, 0x0
-
-    invoke-static {p2, p4, v0}, Ly9/o;->D(Ljava/lang/String;Ljava/lang/String;Z)Z
-
-    move-result p4
-
-    if-nez p4, :cond_3
-
     .line 3
-    const-string p4, "locationBackground"
-
-    invoke-static {p2, p4, v0}, Ly9/o;->D(Ljava/lang/String;Ljava/lang/String;Z)Z
-
-    move-result p4
-
-    if-nez p4, :cond_3
+    const-string v0, "Should not be called!"
 
     .line 4
-    const-string p4, "locationType"
-
-    invoke-static {p2, p4, v0}, Ly9/o;->D(Ljava/lang/String;Ljava/lang/String;Z)Z
-
-    move-result p4
-
-    if-nez p4, :cond_3
-
     .line 5
-    const-string p4, "locationAccuracy"
-
-    invoke-static {p2, p4, v0}, Ly9/o;->D(Ljava/lang/String;Ljava/lang/String;Z)Z
-
-    move-result p4
-
-    if-eqz p4, :cond_0
-
-    goto :goto_1
+    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     .line 6
-    :cond_0
-    const-string p4, "tags"
-
-    invoke-static {p2, p4, v0}, Ly9/o;->D(Ljava/lang/String;Ljava/lang/String;Z)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_2
-
-    if-eqz p5, :cond_1
-
     .line 7
-    instance-of p2, p5, Ljava/lang/String;
-
-    if-eqz p2, :cond_1
-
     .line 8
-    new-instance p2, Lk8/k;
+    throw p1
+.end method
 
-    iget-object p4, p0, Ll8/b;->_configModelStore:Lcom/onesignal/core/internal/config/D;
+.method public final e()Ljava/lang/Object;
+    .locals 1
 
-    invoke-virtual {p4}, Lcom/onesignal/common/modeling/t;->getModel()Lcom/onesignal/common/modeling/j;
+    .line 1
+    const/4 v0, 0x0
 
-    move-result-object p4
+    .line 2
+    return-object v0
+.end method
 
-    check-cast p4, Lcom/onesignal/core/internal/config/B;
+.method public final f()I
+    .locals 1
 
-    invoke-virtual {p4}, Lcom/onesignal/core/internal/config/B;->getAppId()Ljava/lang/String;
+    .line 1
+    const/4 v0, 0x2
 
-    move-result-object p4
+    .line 2
+    return v0
+.end method
 
-    invoke-virtual {p1}, Lcom/onesignal/user/internal/properties/c;->getOnesignalId()Ljava/lang/String;
+.method public final isEmpty()Z
+    .locals 1
 
-    move-result-object p1
+    .line 1
+    const/4 v0, 0x1
 
-    check-cast p5, Ljava/lang/String;
-
-    invoke-direct {p2, p4, p1, p3, p5}, Lk8/k;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    goto :goto_0
-
-    .line 9
-    :cond_1
-    new-instance p2, Lk8/d;
-
-    iget-object p4, p0, Ll8/b;->_configModelStore:Lcom/onesignal/core/internal/config/D;
-
-    invoke-virtual {p4}, Lcom/onesignal/common/modeling/t;->getModel()Lcom/onesignal/common/modeling/j;
-
-    move-result-object p4
-
-    check-cast p4, Lcom/onesignal/core/internal/config/B;
-
-    invoke-virtual {p4}, Lcom/onesignal/core/internal/config/B;->getAppId()Ljava/lang/String;
-
-    move-result-object p4
-
-    invoke-virtual {p1}, Lcom/onesignal/user/internal/properties/c;->getOnesignalId()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p2, p4, p1, p3}, Lk8/d;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    :goto_0
-    return-object p2
-
-    .line 10
-    :cond_2
-    new-instance p2, Lk8/j;
-
-    iget-object p4, p0, Ll8/b;->_configModelStore:Lcom/onesignal/core/internal/config/D;
-
-    invoke-virtual {p4}, Lcom/onesignal/common/modeling/t;->getModel()Lcom/onesignal/common/modeling/j;
-
-    move-result-object p4
-
-    check-cast p4, Lcom/onesignal/core/internal/config/B;
-
-    invoke-virtual {p4}, Lcom/onesignal/core/internal/config/B;->getAppId()Ljava/lang/String;
-
-    move-result-object p4
-
-    invoke-virtual {p1}, Lcom/onesignal/user/internal/properties/c;->getOnesignalId()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p2, p4, p1, p3, p5}, Lk8/j;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
-
-    return-object p2
-
-    :cond_3
-    :goto_1
-    const/4 p1, 0x0
-
-    return-object p1
+    .line 2
+    return v0
 .end method

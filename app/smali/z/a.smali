@@ -1,52 +1,68 @@
-.class public final LZ/a;
-.super Ls3/a;
+.class public final LZ/A;
+.super LZ/I;
 .source "SourceFile"
 
 
-# instance fields
-.field public final c:LZ/J;
+# static fields
+.field public static final c:LZ/A;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LZ/A;
 
     .line 2
     .line 3
+    const/4 v1, 0x0
+
     .line 4
-    new-instance v0, LZ/J;
+    const/4 v2, 0x1
 
     .line 5
-    .line 6
-    invoke-direct {v0}, LZ/J;-><init>()V
+    invoke-direct {v0, v1, v2, v2}, LZ/I;-><init>(III)V
 
+    .line 6
     .line 7
     .line 8
-    .line 9
-    iput-object v0, p0, LZ/a;->c:LZ/J;
+    sput-object v0, LZ/A;->c:LZ/A;
 
+    .line 9
     .line 10
-    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final p(LY/d;LY/C0;Lg0/i;)V
-    .locals 1
+.method public final a(LB8/x;LY/d;LY/C0;Lg0/i;)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, LZ/a;->c:LZ/J;
+    const/4 p2, 0x0
 
     .line 2
-    .line 3
-    invoke-virtual {v0, p1, p2, p3}, LZ/J;->q(LY/d;LY/C0;Lg0/i;)V
+    invoke-virtual {p1, p2}, LB8/x;->i(I)Ljava/lang/Object;
 
+    .line 3
     .line 4
     .line 5
+    move-result-object p1
+
     .line 6
+    check-cast p1, Lp9/a;
+
+    .line 7
+    .line 8
+    iget-object p2, p4, Lg0/i;->e:La0/e;
+
+    .line 9
+    .line 10
+    invoke-virtual {p2, p1}, La0/e;->c(Ljava/lang/Object;)V
+
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method

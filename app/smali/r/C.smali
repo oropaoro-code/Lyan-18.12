@@ -1,193 +1,104 @@
-.class public final LR/C;
-.super Lq9/j;
+.class public final Lr/C;
+.super Lr/r0;
 .source "SourceFile"
-
-# interfaces
-.implements Lp9/f;
 
 
 # instance fields
-.field public final synthetic A:I
+.field public final synthetic A:Landroidx/appcompat/widget/AppCompatSpinner;
 
-.field public final synthetic q:Lq9/g;
-
-.field public final synthetic r:Lg0/c;
-
-.field public final synthetic s:Lk0/r;
-
-.field public final synthetic t:Lp9/f;
-
-.field public final synthetic u:Lp9/f;
-
-.field public final synthetic v:Lp9/f;
-
-.field public final synthetic w:Lr0/H;
-
-.field public final synthetic x:J
-
-.field public final synthetic y:J
-
-.field public final synthetic z:Lj1/p;
+.field public final synthetic z:Lr/I;
 
 
 # direct methods
-.method public constructor <init>(Lp9/a;Lg0/c;Lk0/r;Lp9/f;Lp9/f;Lp9/f;Lr0/H;JJLj1/p;I)V
+.method public constructor <init>(Landroidx/appcompat/widget/AppCompatSpinner;Landroidx/appcompat/widget/AppCompatSpinner;Lr/I;)V
     .locals 0
 
     .line 1
-    check-cast p1, Lq9/g;
+    iput-object p1, p0, Lr/C;->A:Landroidx/appcompat/widget/AppCompatSpinner;
 
     .line 2
     .line 3
-    iput-object p1, p0, LR/C;->q:Lq9/g;
+    iput-object p3, p0, Lr/C;->z:Lr/I;
 
     .line 4
     .line 5
-    iput-object p2, p0, LR/C;->r:Lg0/c;
+    invoke-direct {p0, p2}, Lr/r0;-><init>(Landroid/view/View;)V
 
     .line 6
     .line 7
-    iput-object p3, p0, LR/C;->s:Lk0/r;
-
     .line 8
-    .line 9
-    iput-object p4, p0, LR/C;->t:Lp9/f;
-
-    .line 10
-    .line 11
-    iput-object p5, p0, LR/C;->u:Lp9/f;
-
-    .line 12
-    .line 13
-    iput-object p6, p0, LR/C;->v:Lp9/f;
-
-    .line 14
-    .line 15
-    iput-object p7, p0, LR/C;->w:Lr0/H;
-
-    .line 16
-    .line 17
-    iput-wide p8, p0, LR/C;->x:J
-
-    .line 18
-    .line 19
-    iput-wide p10, p0, LR/C;->y:J
-
-    .line 20
-    .line 21
-    iput-object p12, p0, LR/C;->z:Lj1/p;
-
-    .line 22
-    .line 23
-    iput p13, p0, LR/C;->A:I
-
-    .line 24
-    .line 25
-    const/4 p1, 0x2
-
-    .line 26
-    invoke-direct {p0, p1}, Lq9/j;-><init>(I)V
-
-    .line 27
-    .line 28
-    .line 29
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 15
+.method public final b()Lq/A;
+    .locals 1
 
     .line 1
-    move-object v0, p0
+    iget-object v0, p0, Lr/C;->z:Lr/I;
 
     .line 2
-    move-object/from16 v13, p1
-
     .line 3
-    .line 4
-    check-cast v13, LY/o;
+    return-object v0
+.end method
 
+.method public final c()Z
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lr/C;->A:Landroidx/appcompat/widget/AppCompatSpinner;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroidx/appcompat/widget/AppCompatSpinner;->getInternalPopup()Lr/L;
+
+    .line 4
     .line 5
     .line 6
-    move-object/from16 v1, p2
+    move-result-object v1
 
     .line 7
-    .line 8
-    check-cast v1, Ljava/lang/Number;
+    invoke-interface {v1}, Lr/L;->a()Z
 
+    .line 8
     .line 9
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
+    move-result v1
 
     .line 11
+    if-nez v1, :cond_0
+
     .line 12
     .line 13
-    iget v1, v0, LR/C;->A:I
+    invoke-virtual {v0}, Landroid/view/View;->getTextDirection()I
 
     .line 14
     .line 15
-    or-int/lit8 v1, v1, 0x1
-
     .line 16
+    move-result v1
+
     .line 17
-    invoke-static {v1}, LY/c;->x(I)I
+    invoke-virtual {v0}, Landroid/view/View;->getTextAlignment()I
 
     .line 18
     .line 19
     .line 20
-    move-result v14
+    move-result v2
 
     .line 21
-    iget-object v1, v0, LR/C;->q:Lq9/g;
+    iget-object v0, v0, Landroidx/appcompat/widget/AppCompatSpinner;->v:Lr/L;
 
     .line 22
     .line 23
-    iget-object v2, v0, LR/C;->r:Lg0/c;
+    invoke-interface {v0, v1, v2}, Lr/L;->k(II)V
 
     .line 24
     .line 25
-    iget-object v7, v0, LR/C;->w:Lr0/H;
-
     .line 26
+    :cond_0
+    const/4 v0, 0x1
+
     .line 27
-    iget-wide v8, v0, LR/C;->x:J
-
-    .line 28
-    .line 29
-    iget-object v3, v0, LR/C;->s:Lk0/r;
-
-    .line 30
-    .line 31
-    iget-object v4, v0, LR/C;->t:Lp9/f;
-
-    .line 32
-    .line 33
-    iget-object v5, v0, LR/C;->u:Lp9/f;
-
-    .line 34
-    .line 35
-    iget-object v6, v0, LR/C;->v:Lp9/f;
-
-    .line 36
-    .line 37
-    iget-wide v10, v0, LR/C;->y:J
-
-    .line 38
-    .line 39
-    iget-object v12, v0, LR/C;->z:Lj1/p;
-
-    .line 40
-    .line 41
-    invoke-static/range {v1 .. v14}, LO5/l0;->a(Lp9/a;Lg0/c;Lk0/r;Lp9/f;Lp9/f;Lp9/f;Lr0/H;JJLj1/p;LY/o;I)V
-
-    .line 42
-    .line 43
-    .line 44
-    sget-object v1, Lb9/n;->a:Lb9/n;
-
-    .line 45
-    .line 46
-    return-object v1
+    return v0
 .end method

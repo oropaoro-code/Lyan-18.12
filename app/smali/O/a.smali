@@ -1,58 +1,164 @@
-.class public final Lo/a;
-.super Ljava/lang/Object;
+.class public final LO/a;
+.super Lq9/j;
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/text/method/TransformationMethod;
+.implements Lp9/d;
+
+
+# static fields
+.field public static final r:LO/a;
+
+.field public static final s:LO/a;
+
+.field public static final t:LO/a;
 
 
 # instance fields
-.field public a:Ljava/util/Locale;
+.field public final synthetic q:I
 
 
-# virtual methods
-.method public final getTransformation(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;
-    .locals 0
+# direct methods
+.method static synthetic constructor <clinit>()V
+    .locals 3
 
     .line 1
-    if-eqz p1, :cond_0
+    new-instance v0, LO/a;
 
     .line 2
     .line 3
-    invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+    const/4 v1, 0x1
+
+    .line 4
+    const/4 v2, 0x0
+
+    .line 5
+    invoke-direct {v0, v1, v2}, LO/a;-><init>(II)V
+
+    .line 6
+    .line 7
+    .line 8
+    sput-object v0, LO/a;->r:LO/a;
+
+    .line 9
+    .line 10
+    new-instance v0, LO/a;
+
+    .line 11
+    .line 12
+    const/4 v1, 0x1
+
+    .line 13
+    const/4 v2, 0x1
+
+    .line 14
+    invoke-direct {v0, v1, v2}, LO/a;-><init>(II)V
+
+    .line 15
+    .line 16
+    .line 17
+    sput-object v0, LO/a;->s:LO/a;
+
+    .line 18
+    .line 19
+    new-instance v0, LO/a;
+
+    .line 20
+    .line 21
+    const/4 v1, 0x1
+
+    .line 22
+    const/4 v2, 0x2
+
+    .line 23
+    invoke-direct {v0, v1, v2}, LO/a;-><init>(II)V
+
+    .line 24
+    .line 25
+    .line 26
+    sput-object v0, LO/a;->t:LO/a;
+
+    .line 27
+    .line 28
+    return-void
+.end method
+
+.method public synthetic constructor <init>(II)V
+    .locals 0
+
+    .line 1
+    iput p2, p0, LO/a;->q:I
+
+    invoke-direct {p0, p1}, Lq9/j;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget v0, p0, LO/a;->q:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    move-result-object p1
+    check-cast p1, LY0/j;
 
     .line 7
-    iget-object p2, p0, Lo/a;->a:Ljava/util/Locale;
-
     .line 8
-    .line 9
-    invoke-virtual {p1, p2}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
+    iget p1, p1, LY0/j;->a:I
 
+    .line 9
     .line 10
+    sget-object p1, Lb9/n;->a:Lb9/n;
+
     .line 11
     .line 12
-    move-result-object p1
+    return-object p1
 
     .line 13
-    goto :goto_0
+    :pswitch_0
+    check-cast p1, Ljava/util/List;
 
     .line 14
-    :cond_0
-    const/4 p1, 0x0
-
     .line 15
-    :goto_0
+    sget-object p1, Lb9/n;->a:Lb9/n;
+
+    .line 16
+    .line 17
     return-object p1
-.end method
 
-.method public final onFocusChanged(Landroid/view/View;Ljava/lang/CharSequence;ZILandroid/graphics/Rect;)V
-    .locals 0
+    .line 18
+    :pswitch_1
+    check-cast p1, Ljava/lang/Number;
 
-    .line 1
-    return-void
+    .line 19
+    .line 20
+    invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
+
+    .line 21
+    .line 22
+    .line 23
+    sget-object p1, Lb9/n;->a:Lb9/n;
+
+    .line 24
+    .line 25
+    return-object p1
+
+    .line 26
+    nop
+
+    .line 27
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

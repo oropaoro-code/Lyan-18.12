@@ -1,211 +1,56 @@
-.class public final Lcom/onesignal/core/internal/config/H;
-.super Lcom/onesignal/common/modeling/j;
+.class public final Lcom/onesignal/core/internal/config/h;
+.super Lq9/j;
 .source "SourceFile"
+
+# interfaces
+.implements Lp9/a;
+
+
+# static fields
+.field public static final INSTANCE:Lcom/onesignal/core/internal/config/h;
 
 
 # direct methods
-.method public constructor <init>(Lcom/onesignal/common/modeling/j;Ljava/lang/String;)V
+.method static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    const-string v0, "parentModel"
+    new-instance v0, Lcom/onesignal/core/internal/config/h;
 
-    .line 2
-    .line 3
-    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {v0}, Lcom/onesignal/core/internal/config/h;-><init>()V
 
-    .line 4
-    .line 5
-    .line 6
-    const-string v0, "parentProperty"
+    sput-object v0, Lcom/onesignal/core/internal/config/h;->INSTANCE:Lcom/onesignal/core/internal/config/h;
 
-    .line 7
-    .line 8
-    invoke-static {p2, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    return-void
+.end method
 
-    .line 9
-    .line 10
-    .line 11
-    invoke-direct {p0, p1, p2}, Lcom/onesignal/common/modeling/j;-><init>(Lcom/onesignal/common/modeling/j;Ljava/lang/String;)V
+.method public constructor <init>()V
+    .locals 1
 
-    .line 12
-    .line 13
-    .line 14
+    const/4 v0, 0x0
+
+    invoke-direct {p0, v0}, Lq9/j;-><init>(I)V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final getApiKey()Ljava/lang/String;
-    .locals 2
+.method public final invoke()Ljava/lang/Boolean;
+    .locals 1
 
     .line 1
-    const-string v0, "apiKey"
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    .line 2
-    .line 3
-    sget-object v1, Lcom/onesignal/core/internal/config/E;->INSTANCE:Lcom/onesignal/core/internal/config/E;
-
-    .line 4
-    .line 5
-    invoke-virtual {p0, v0, v1}, Lcom/onesignal/common/modeling/j;->getOptStringProperty(Ljava/lang/String;Lp9/a;)Ljava/lang/String;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v0
-
-    .line 9
     return-object v0
 .end method
 
-.method public final getAppId()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    const-string v0, "appId"
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .locals 1
 
     .line 2
-    .line 3
-    sget-object v1, Lcom/onesignal/core/internal/config/F;->INSTANCE:Lcom/onesignal/core/internal/config/F;
+    invoke-virtual {p0}, Lcom/onesignal/core/internal/config/h;->invoke()Ljava/lang/Boolean;
 
-    .line 4
-    .line 5
-    invoke-virtual {p0, v0, v1}, Lcom/onesignal/common/modeling/j;->getOptStringProperty(Ljava/lang/String;Lp9/a;)Ljava/lang/String;
-
-    .line 6
-    .line 7
-    .line 8
     move-result-object v0
 
-    .line 9
     return-object v0
-.end method
-
-.method public final getProjectId()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    const-string v0, "projectId"
-
-    .line 2
-    .line 3
-    sget-object v1, Lcom/onesignal/core/internal/config/G;->INSTANCE:Lcom/onesignal/core/internal/config/G;
-
-    .line 4
-    .line 5
-    invoke-virtual {p0, v0, v1}, Lcom/onesignal/common/modeling/j;->getOptStringProperty(Ljava/lang/String;Lp9/a;)Ljava/lang/String;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v0
-
-    .line 9
-    return-object v0
-.end method
-
-.method public final setApiKey(Ljava/lang/String;)V
-    .locals 7
-
-    .line 1
-    const/16 v5, 0xc
-
-    .line 2
-    .line 3
-    const/4 v6, 0x0
-
-    .line 4
-    const-string v1, "apiKey"
-
-    .line 5
-    .line 6
-    const/4 v3, 0x0
-
-    .line 7
-    const/4 v4, 0x0
-
-    .line 8
-    move-object v0, p0
-
-    .line 9
-    move-object v2, p1
-
-    .line 10
-    invoke-static/range {v0 .. v6}, Lcom/onesignal/common/modeling/j;->setOptStringProperty$default(Lcom/onesignal/common/modeling/j;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-void
-.end method
-
-.method public final setAppId(Ljava/lang/String;)V
-    .locals 7
-
-    .line 1
-    const/16 v5, 0xc
-
-    .line 2
-    .line 3
-    const/4 v6, 0x0
-
-    .line 4
-    const-string v1, "appId"
-
-    .line 5
-    .line 6
-    const/4 v3, 0x0
-
-    .line 7
-    const/4 v4, 0x0
-
-    .line 8
-    move-object v0, p0
-
-    .line 9
-    move-object v2, p1
-
-    .line 10
-    invoke-static/range {v0 .. v6}, Lcom/onesignal/common/modeling/j;->setOptStringProperty$default(Lcom/onesignal/common/modeling/j;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-void
-.end method
-
-.method public final setProjectId(Ljava/lang/String;)V
-    .locals 7
-
-    .line 1
-    const/16 v5, 0xc
-
-    .line 2
-    .line 3
-    const/4 v6, 0x0
-
-    .line 4
-    const-string v1, "projectId"
-
-    .line 5
-    .line 6
-    const/4 v3, 0x0
-
-    .line 7
-    const/4 v4, 0x0
-
-    .line 8
-    move-object v0, p0
-
-    .line 9
-    move-object v2, p1
-
-    .line 10
-    invoke-static/range {v0 .. v6}, Lcom/onesignal/common/modeling/j;->setOptStringProperty$default(Lcom/onesignal/common/modeling/j;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-void
 .end method

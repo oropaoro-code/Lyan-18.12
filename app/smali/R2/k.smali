@@ -1,4 +1,4 @@
-.class public abstract LR2/k;
+.class public abstract LR2/K;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -12,7 +12,7 @@
     .locals 2
 
     .line 1
-    const-string v0, "Data"
+    const-string v0, "WorkerFactory"
 
     .line 2
     .line 3
@@ -24,7 +24,7 @@
     move-result-object v0
 
     .line 7
-    const-string v1, "tagWithPrefix(\"Data\")"
+    const-string v1, "tagWithPrefix(\"WorkerFactory\")"
 
     .line 8
     .line 9
@@ -33,7 +33,7 @@
     .line 10
     .line 11
     .line 12
-    sput-object v0, LR2/k;->a:Ljava/lang/String;
+    sput-object v0, LR2/K;->a:Ljava/lang/String;
 
     .line 13
     .line 14

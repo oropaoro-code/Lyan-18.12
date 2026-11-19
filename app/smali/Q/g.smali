@@ -1,579 +1,148 @@
-.class public final Lq/g;
-.super Ljava/lang/Object;
+.class public final LQ/g;
+.super Lq9/j;
 .source "SourceFile"
 
 # interfaces
-.implements Lq/w;
-.implements Landroid/widget/AdapterView$OnItemClickListener;
+.implements Lp9/d;
 
 
 # instance fields
-.field public q:Landroid/content/Context;
+.field public final synthetic q:J
 
-.field public r:Landroid/view/LayoutInflater;
+.field public final synthetic r:Lp9/a;
 
-.field public s:Lq/k;
-
-.field public t:Landroidx/appcompat/view/menu/ExpandedMenuView;
-
-.field public u:Lq/v;
-
-.field public v:Lq/f;
+.field public final synthetic s:Z
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/ContextWrapper;)V
+.method public constructor <init>(JLp9/a;Z)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-wide p1, p0, LQ/g;->q:J
 
     .line 2
     .line 3
+    iput-object p3, p0, LQ/g;->r:Lp9/a;
+
     .line 4
-    iput-object p1, p0, Lq/g;->q:Landroid/content/Context;
-
     .line 5
+    iput-boolean p4, p0, LQ/g;->s:Z
+
     .line 6
-    invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
-
     .line 7
+    const/4 p1, 0x1
+
     .line 8
+    invoke-direct {p0, p1}, Lq9/j;-><init>(I)V
+
     .line 9
-    move-result-object p1
-
     .line 10
-    iput-object p1, p0, Lq/g;->r:Landroid/view/LayoutInflater;
-
     .line 11
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Lq/k;Z)V
-    .locals 1
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 7
 
     .line 1
-    iget-object v0, p0, Lq/g;->u:Lq/v;
+    check-cast p1, Lo0/d;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    iget-object v0, p1, Lo0/d;->q:Lo0/a;
 
     .line 4
     .line 5
-    invoke-interface {v0, p1, p2}, Lq/v;->b(Lq/k;Z)V
+    invoke-interface {v0}, Lo0/a;->c()J
 
     .line 6
     .line 7
     .line 8
-    :cond_0
-    return-void
-.end method
-
-.method public final c(Lq/C;)Z
-    .locals 6
-
-    .line 1
-    invoke-virtual {p1}, Lq/k;->hasVisibleItems()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-nez v0, :cond_0
-
-    .line 6
-    .line 7
-    const/4 p1, 0x0
-
-    .line 8
-    return p1
+    move-result-wide v0
 
     .line 9
-    :cond_0
-    new-instance v0, Lq/l;
+    const/16 v2, 0x20
 
     .line 10
     .line 11
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    shr-long/2addr v0, v2
 
     .line 12
-    .line 13
-    .line 14
-    iput-object p1, v0, Lq/l;->q:Lq/C;
+    long-to-int v0, v0
 
+    .line 13
+    invoke-static {v0}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    .line 14
     .line 15
     .line 16
-    new-instance v1, LA/S;
+    move-result v0
 
     .line 17
-    .line 18
-    iget-object v2, p1, Lq/k;->a:Landroid/content/Context;
+    const/high16 v1, 0x40000000    # 2.0f
 
+    .line 18
     .line 19
+    div-float/2addr v0, v1
+
     .line 20
-    invoke-direct {v1, v2}, LA/S;-><init>(Landroid/content/Context;)V
+    invoke-static {p1, v0}, Lt4/a;->i(Lo0/d;F)Lr0/e;
 
     .line 21
     .line 22
     .line 23
-    new-instance v3, Lq/g;
+    move-result-object v4
 
     .line 24
+    new-instance v5, Lr0/j;
+
     .line 25
-    iget-object v4, v1, LA/S;->r:Ljava/lang/Object;
-
     .line 26
-    .line 27
-    check-cast v4, Lk/d;
+    iget-wide v0, p0, LQ/g;->q:J
 
+    .line 27
     .line 28
+    const/4 v2, 0x5
+
     .line 29
-    iget-object v5, v4, Lk/d;->a:Landroid/view/ContextThemeWrapper;
+    invoke-direct {v5, v2, v0, v1}, Lr0/j;-><init>(IJ)V
 
     .line 30
     .line 31
-    invoke-direct {v3, v5}, Lq/g;-><init>(Landroid/content/ContextWrapper;)V
-
     .line 32
+    new-instance v0, LI/p;
+
     .line 33
     .line 34
-    iput-object v3, v0, Lq/l;->s:Lq/g;
+    iget-object v2, p0, LQ/g;->r:Lp9/a;
 
     .line 35
     .line 36
-    iput-object v0, v3, Lq/g;->u:Lq/v;
+    iget-boolean v3, p0, LQ/g;->s:Z
 
     .line 37
     .line 38
-    invoke-virtual {p1, v3, v2}, Lq/k;->b(Lq/w;Landroid/content/Context;)V
+    const/4 v6, 0x1
 
     .line 39
-    .line 40
-    .line 41
-    iget-object v2, v0, Lq/l;->s:Lq/g;
+    move-object v1, v0
 
+    .line 40
+    invoke-direct/range {v1 .. v6}, LI/p;-><init>(Ljava/lang/Object;ZLjava/lang/Object;Ljava/lang/Object;I)V
+
+    .line 41
     .line 42
     .line 43
-    iget-object v3, v2, Lq/g;->v:Lq/f;
+    invoke-virtual {p1, v0}, Lo0/d;->a(Lp9/d;)Lo0/f;
 
     .line 44
     .line 45
-    if-nez v3, :cond_1
-
     .line 46
+    move-result-object p1
+
     .line 47
-    new-instance v3, Lq/f;
-
-    .line 48
-    .line 49
-    invoke-direct {v3, v2}, Lq/f;-><init>(Lq/g;)V
-
-    .line 50
-    .line 51
-    .line 52
-    iput-object v3, v2, Lq/g;->v:Lq/f;
-
-    .line 53
-    .line 54
-    :cond_1
-    iget-object v2, v2, Lq/g;->v:Lq/f;
-
-    .line 55
-    .line 56
-    iput-object v2, v4, Lk/d;->o:Ljava/lang/Object;
-
-    .line 57
-    .line 58
-    iput-object v0, v4, Lk/d;->p:Landroid/content/DialogInterface$OnClickListener;
-
-    .line 59
-    .line 60
-    iget-object v2, p1, Lq/k;->o:Landroid/view/View;
-
-    .line 61
-    .line 62
-    if-eqz v2, :cond_2
-
-    .line 63
-    .line 64
-    iput-object v2, v4, Lk/d;->e:Landroid/view/View;
-
-    .line 65
-    .line 66
-    goto :goto_0
-
-    .line 67
-    :cond_2
-    iget-object v2, p1, Lq/k;->n:Landroid/graphics/drawable/Drawable;
-
-    .line 68
-    .line 69
-    iput-object v2, v4, Lk/d;->c:Landroid/graphics/drawable/Drawable;
-
-    .line 70
-    .line 71
-    iget-object v2, p1, Lq/k;->m:Ljava/lang/CharSequence;
-
-    .line 72
-    .line 73
-    iput-object v2, v4, Lk/d;->d:Ljava/lang/CharSequence;
-
-    .line 74
-    .line 75
-    :goto_0
-    iput-object v0, v4, Lk/d;->m:Lq/l;
-
-    .line 76
-    .line 77
-    invoke-virtual {v1}, LA/S;->d()Lk/g;
-
-    .line 78
-    .line 79
-    .line 80
-    move-result-object v1
-
-    .line 81
-    iput-object v1, v0, Lq/l;->r:Lk/g;
-
-    .line 82
-    .line 83
-    invoke-virtual {v1, v0}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
-
-    .line 84
-    .line 85
-    .line 86
-    iget-object v1, v0, Lq/l;->r:Lk/g;
-
-    .line 87
-    .line 88
-    invoke-virtual {v1}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
-
-    .line 89
-    .line 90
-    .line 91
-    move-result-object v1
-
-    .line 92
-    invoke-virtual {v1}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
-
-    .line 93
-    .line 94
-    .line 95
-    move-result-object v1
-
-    .line 96
-    const/16 v2, 0x3eb
-
-    .line 97
-    .line 98
-    iput v2, v1, Landroid/view/WindowManager$LayoutParams;->type:I
-
-    .line 99
-    .line 100
-    iget v2, v1, Landroid/view/WindowManager$LayoutParams;->flags:I
-
-    .line 101
-    .line 102
-    const/high16 v3, 0x20000
-
-    .line 103
-    .line 104
-    or-int/2addr v2, v3
-
-    .line 105
-    iput v2, v1, Landroid/view/WindowManager$LayoutParams;->flags:I
-
-    .line 106
-    .line 107
-    iget-object v0, v0, Lq/l;->r:Lk/g;
-
-    .line 108
-    .line 109
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
-
-    .line 110
-    .line 111
-    .line 112
-    iget-object v0, p0, Lq/g;->u:Lq/v;
-
-    .line 113
-    .line 114
-    if-eqz v0, :cond_3
-
-    .line 115
-    .line 116
-    invoke-interface {v0, p1}, Lq/v;->t(Lq/k;)Z
-
-    .line 117
-    .line 118
-    .line 119
-    :cond_3
-    const/4 p1, 0x1
-
-    .line 120
-    return p1
-.end method
-
-.method public final e(Landroid/os/Parcelable;)V
-    .locals 1
-
-    .line 1
-    check-cast p1, Landroid/os/Bundle;
-
-    .line 2
-    .line 3
-    const-string v0, "android:menu:list"
-
-    .line 4
-    .line 5
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getSparseParcelableArray(Ljava/lang/String;)Landroid/util/SparseArray;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object p1
-
-    .line 9
-    if-eqz p1, :cond_0
-
-    .line 10
-    .line 11
-    iget-object v0, p0, Lq/g;->t:Landroidx/appcompat/view/menu/ExpandedMenuView;
-
-    .line 12
-    .line 13
-    invoke-virtual {v0, p1}, Landroid/view/View;->restoreHierarchyState(Landroid/util/SparseArray;)V
-
-    .line 14
-    .line 15
-    .line 16
-    :cond_0
-    return-void
-.end method
-
-.method public final g(Z)V
-    .locals 0
-
-    .line 1
-    iget-object p1, p0, Lq/g;->v:Lq/f;
-
-    .line 2
-    .line 3
-    if-eqz p1, :cond_0
-
-    .line 4
-    .line 5
-    invoke-virtual {p1}, Lq/f;->notifyDataSetChanged()V
-
-    .line 6
-    .line 7
-    .line 8
-    :cond_0
-    return-void
-.end method
-
-.method public final getId()I
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return v0
-.end method
-
-.method public final h(Lq/m;)Z
-    .locals 0
-
-    .line 1
-    const/4 p1, 0x0
-
-    .line 2
-    return p1
-.end method
-
-.method public final i()Z
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return v0
-.end method
-
-.method public final j(Landroid/content/Context;Lq/k;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lq/g;->q:Landroid/content/Context;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    iput-object p1, p0, Lq/g;->q:Landroid/content/Context;
-
-    .line 6
-    .line 7
-    iget-object v0, p0, Lq/g;->r:Landroid/view/LayoutInflater;
-
-    .line 8
-    .line 9
-    if-nez v0, :cond_0
-
-    .line 10
-    .line 11
-    invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object p1
-
-    .line 15
-    iput-object p1, p0, Lq/g;->r:Landroid/view/LayoutInflater;
-
-    .line 16
-    .line 17
-    :cond_0
-    iput-object p2, p0, Lq/g;->s:Lq/k;
-
-    .line 18
-    .line 19
-    iget-object p1, p0, Lq/g;->v:Lq/f;
-
-    .line 20
-    .line 21
-    if-eqz p1, :cond_1
-
-    .line 22
-    .line 23
-    invoke-virtual {p1}, Lq/f;->notifyDataSetChanged()V
-
-    .line 24
-    .line 25
-    .line 26
-    :cond_1
-    return-void
-.end method
-
-.method public final k()Landroid/os/Parcelable;
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lq/g;->t:Landroidx/appcompat/view/menu/ExpandedMenuView;
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
-
-    .line 4
-    .line 5
-    const/4 v0, 0x0
-
-    .line 6
-    return-object v0
-
-    .line 7
-    :cond_0
-    new-instance v0, Landroid/os/Bundle;
-
-    .line 8
-    .line 9
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
-
-    .line 10
-    .line 11
-    .line 12
-    new-instance v1, Landroid/util/SparseArray;
-
-    .line 13
-    .line 14
-    invoke-direct {v1}, Landroid/util/SparseArray;-><init>()V
-
-    .line 15
-    .line 16
-    .line 17
-    iget-object v2, p0, Lq/g;->t:Landroidx/appcompat/view/menu/ExpandedMenuView;
-
-    .line 18
-    .line 19
-    if-eqz v2, :cond_1
-
-    .line 20
-    .line 21
-    invoke-virtual {v2, v1}, Landroid/view/View;->saveHierarchyState(Landroid/util/SparseArray;)V
-
-    .line 22
-    .line 23
-    .line 24
-    :cond_1
-    const-string v2, "android:menu:list"
-
-    .line 25
-    .line 26
-    invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putSparseParcelableArray(Ljava/lang/String;Landroid/util/SparseArray;)V
-
-    .line 27
-    .line 28
-    .line 29
-    return-object v0
-.end method
-
-.method public final l(Lq/v;)V
-    .locals 0
-
-    const/4 p0, 0x0
-
-    throw p0
-.end method
-
-.method public final m(Lq/m;)Z
-    .locals 0
-
-    .line 1
-    const/4 p1, 0x0
-
-    .line 2
-    return p1
-.end method
-
-.method public final onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
-    .locals 0
-
-    .line 1
-    iget-object p1, p0, Lq/g;->s:Lq/k;
-
-    .line 2
-    .line 3
-    iget-object p2, p0, Lq/g;->v:Lq/f;
-
-    .line 4
-    .line 5
-    invoke-virtual {p2, p3}, Lq/f;->b(I)Lq/m;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object p2
-
-    .line 9
-    const/4 p3, 0x0
-
-    .line 10
-    invoke-virtual {p1, p2, p0, p3}, Lq/k;->q(Landroid/view/MenuItem;Lq/w;I)Z
-
-    .line 11
-    .line 12
-    .line 13
-    return-void
+    return-object p1
 .end method

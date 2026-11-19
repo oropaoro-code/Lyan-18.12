@@ -1,206 +1,125 @@
-.class public final Ld0/b;
-.super Ld0/a;
+.class public final enum LD0/b;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
-# interfaces
-.implements Lr9/d;
 
+# static fields
+.field public static final enum q:LD0/b;
 
-# instance fields
-.field public final t:Ld0/h;
+.field public static final enum r:LD0/b;
 
-.field public u:Ljava/lang/Object;
+.field public static final synthetic s:[LD0/b;
 
 
 # direct methods
-.method public constructor <init>(Ld0/h;Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     .line 2
-    invoke-direct {p0, v0, p2, p3}, Ld0/a;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    const/4 v1, 0x0
 
     .line 3
-    .line 4
-    .line 5
-    iput-object p1, p0, Ld0/b;->t:Ld0/h;
-
-    .line 6
-    .line 7
-    iput-object p3, p0, Ld0/b;->u:Ljava/lang/Object;
-
-    .line 8
-    .line 9
-    return-void
-.end method
-
-
-# virtual methods
-.method public final getValue()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Ld0/b;->u:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final setValue(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 6
-
-    .line 1
-    iget-object v0, p0, Ld0/b;->u:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    iput-object p1, p0, Ld0/b;->u:Ljava/lang/Object;
+    new-instance v2, LD0/b;
 
     .line 4
     .line 5
-    iget-object v1, p0, Ld0/b;->t:Ld0/h;
+    const-string v3, "Lsq2"
 
     .line 6
     .line 7
-    iget-object v1, v1, Ld0/h;->r:Ljava/util/Iterator;
+    invoke-direct {v2, v3, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 8
     .line 9
-    check-cast v1, Ld0/f;
-
     .line 10
+    sput-object v2, LD0/b;->q:LD0/b;
+
     .line 11
-    iget-object v2, v1, Ld0/f;->t:Ld0/e;
-
     .line 12
+    new-instance v3, LD0/b;
+
     .line 13
-    iget-object v3, p0, Ld0/a;->r:Ljava/lang/Object;
-
     .line 14
-    .line 15
-    invoke-virtual {v2, v3}, Ld0/e;->containsKey(Ljava/lang/Object;)Z
+    const-string v4, "Impulse"
 
+    .line 15
     .line 16
+    invoke-direct {v3, v4, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 17
     .line 18
-    move-result v4
-
     .line 19
-    if-nez v4, :cond_0
+    sput-object v3, LD0/b;->r:LD0/b;
 
     .line 20
     .line 21
-    goto :goto_2
+    const/4 v4, 0x2
 
     .line 22
-    :cond_0
-    iget-boolean v4, v1, Ld0/d;->s:Z
+    new-array v4, v4, [LD0/b;
 
     .line 23
     .line 24
-    if-eqz v4, :cond_3
+    aput-object v2, v4, v1
 
     .line 25
     .line 26
-    if-eqz v4, :cond_2
+    aput-object v3, v4, v0
 
     .line 27
     .line 28
-    iget-object v4, v1, Ld0/d;->q:[Ld0/o;
+    sput-object v4, LD0/b;->s:[LD0/b;
 
     .line 29
     .line 30
-    iget v5, v1, Ld0/d;->r:I
+    return-void
+.end method
 
-    .line 31
-    .line 32
-    aget-object v4, v4, v5
+.method public static valueOf(Ljava/lang/String;)LD0/b;
+    .locals 1
 
-    .line 33
-    .line 34
-    iget-object v5, v4, Ld0/o;->q:[Ljava/lang/Object;
+    .line 1
+    const-class v0, LD0/b;
 
-    .line 35
-    .line 36
-    iget v4, v4, Ld0/o;->s:I
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
-    .line 37
-    .line 38
-    aget-object v4, v5, v4
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
 
-    .line 39
-    .line 40
-    invoke-virtual {v2, v3, p1}, Ld0/e;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 7
+    check-cast p0, LD0/b;
 
-    .line 41
-    .line 42
-    .line 43
-    const/4 p1, 0x0
+    .line 8
+    .line 9
+    return-object p0
+.end method
 
-    .line 44
-    if-eqz v4, :cond_1
+.method public static values()[LD0/b;
+    .locals 1
 
-    .line 45
-    .line 46
-    invoke-virtual {v4}, Ljava/lang/Object;->hashCode()I
+    .line 1
+    sget-object v0, LD0/b;->s:[LD0/b;
 
-    .line 47
-    .line 48
-    .line 49
-    move-result v3
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
-    .line 50
-    goto :goto_0
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
 
-    .line 51
-    :cond_1
-    move v3, p1
+    .line 7
+    check-cast v0, [LD0/b;
 
-    .line 52
-    :goto_0
-    iget-object v5, v2, Ld0/e;->r:Ld0/n;
-
-    .line 53
-    .line 54
-    invoke-virtual {v1, v3, v5, v4, p1}, Ld0/f;->c(ILd0/n;Ljava/lang/Object;I)V
-
-    .line 55
-    .line 56
-    .line 57
-    goto :goto_1
-
-    .line 58
-    :cond_2
-    new-instance p1, Ljava/util/NoSuchElementException;
-
-    .line 59
-    .line 60
-    invoke-direct {p1}, Ljava/util/NoSuchElementException;-><init>()V
-
-    .line 61
-    .line 62
-    .line 63
-    throw p1
-
-    .line 64
-    :cond_3
-    invoke-virtual {v2, v3, p1}, Ld0/e;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 65
-    .line 66
-    .line 67
-    :goto_1
-    iget p1, v2, Ld0/e;->t:I
-
-    .line 68
-    .line 69
-    iput p1, v1, Ld0/f;->w:I
-
-    .line 70
-    .line 71
-    :goto_2
+    .line 8
+    .line 9
     return-object v0
 .end method

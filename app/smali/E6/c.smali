@@ -1,1243 +1,1424 @@
-.class public final Le6/c;
+.class public abstract LE6/c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final synthetic a:I
+# static fields
+.field public static final a:[B
 
-.field public final b:Landroid/content/Context;
+.field public static final b:[B
 
-.field public c:Ljava/lang/String;
+.field public static final c:[B
 
-.field public d:Ljava/lang/String;
+.field public static final d:[B
 
-.field public e:I
-
-.field public f:I
+.field public static final e:Ljava/nio/charset/Charset;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroid/content/Context;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 6
 
     .line 1
-    iput p2, p0, Le6/c;->a:I
-
-    const/4 p2, 0x0
-
-    iput p2, p0, Le6/c;->f:I
-
-    iput-object p1, p0, Le6/c;->b:Landroid/content/Context;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method private final declared-synchronized b()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    monitor-enter p0
+    const/4 v0, 0x0
 
     .line 2
-    :try_start_0
-    iget-object v0, p0, Le6/c;->c:Ljava/lang/String;
+    const/16 v1, 0x1e
 
     .line 3
     .line 4
-    if-nez v0, :cond_0
+    new-array v2, v1, [B
 
     .line 5
     .line 6
-    invoke-virtual {p0}, Le6/c;->k()V
+    fill-array-data v2, :array_0
 
     .line 7
     .line 8
     .line 9
-    goto :goto_0
+    sput-object v2, LE6/c;->a:[B
 
     .line 10
-    :catchall_0
-    move-exception v0
-
     .line 11
-    goto :goto_1
-
-    .line 12
-    :cond_0
-    :goto_0
-    iget-object v0, p0, Le6/c;->c:Ljava/lang/String;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 13
-    .line 14
-    monitor-exit p0
-
-    .line 15
-    return-object v0
-
-    .line 16
-    :goto_1
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 17
-    throw v0
-.end method
-
-.method private final declared-synchronized c()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    iget-object v0, p0, Le6/c;->c:Ljava/lang/String;
-
-    .line 3
-    .line 4
-    if-nez v0, :cond_0
-
-    .line 5
-    .line 6
-    invoke-virtual {p0}, Le6/c;->k()V
-
-    .line 7
-    .line 8
-    .line 9
-    goto :goto_0
-
-    .line 10
-    :catchall_0
-    move-exception v0
-
-    .line 11
-    goto :goto_1
-
-    .line 12
-    :cond_0
-    :goto_0
-    iget-object v0, p0, Le6/c;->c:Ljava/lang/String;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 13
-    .line 14
-    monitor-exit p0
-
-    .line 15
-    return-object v0
-
-    .line 16
-    :goto_1
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 17
-    throw v0
-.end method
-
-.method private final declared-synchronized e()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    iget-object v0, p0, Le6/c;->d:Ljava/lang/String;
-
-    .line 3
-    .line 4
-    if-nez v0, :cond_0
-
-    .line 5
-    .line 6
-    invoke-virtual {p0}, Le6/c;->k()V
-
-    .line 7
-    .line 8
-    .line 9
-    goto :goto_0
-
-    .line 10
-    :catchall_0
-    move-exception v0
-
-    .line 11
-    goto :goto_1
-
-    .line 12
-    :cond_0
-    :goto_0
-    iget-object v0, p0, Le6/c;->d:Ljava/lang/String;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 13
-    .line 14
-    monitor-exit p0
-
-    .line 15
-    return-object v0
-
-    .line 16
-    :goto_1
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 17
-    throw v0
-.end method
-
-.method private final declared-synchronized f()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    iget-object v0, p0, Le6/c;->d:Ljava/lang/String;
-
-    .line 3
-    .line 4
-    if-nez v0, :cond_0
-
-    .line 5
-    .line 6
-    invoke-virtual {p0}, Le6/c;->k()V
-
-    .line 7
-    .line 8
-    .line 9
-    goto :goto_0
-
-    .line 10
-    :catchall_0
-    move-exception v0
-
-    .line 11
-    goto :goto_1
-
-    .line 12
-    :cond_0
-    :goto_0
-    iget-object v0, p0, Le6/c;->d:Ljava/lang/String;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 13
-    .line 14
-    monitor-exit p0
-
-    .line 15
-    return-object v0
-
-    .line 16
-    :goto_1
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 17
-    throw v0
-.end method
-
-.method public static g(LB5/g;)Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    invoke-virtual {p0}, LB5/g;->a()V
-
-    .line 2
-    .line 3
-    .line 4
-    iget-object v0, p0, LB5/g;->c:LB5/j;
-
-    .line 5
-    .line 6
-    iget-object v1, v0, LB5/j;->e:Ljava/lang/String;
-
-    .line 7
-    .line 8
-    if-eqz v1, :cond_0
-
-    .line 9
-    .line 10
-    return-object v1
-
-    .line 11
-    :cond_0
-    invoke-virtual {p0}, LB5/g;->a()V
+    new-array v1, v1, [B
 
     .line 12
     .line 13
-    .line 14
-    iget-object p0, v0, LB5/j;->b:Ljava/lang/String;
+    fill-array-data v1, :array_1
 
+    .line 14
     .line 15
     .line 16
-    const-string v0, "1:"
+    sput-object v1, LE6/c;->b:[B
 
     .line 17
     .line 18
-    invoke-virtual {p0, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    const/16 v1, 0x80
 
     .line 19
     .line 20
-    .line 21
-    move-result v0
+    new-array v2, v1, [B
 
+    .line 21
     .line 22
-    if-nez v0, :cond_1
+    sput-object v2, LE6/c;->c:[B
 
     .line 23
     .line 24
-    return-object p0
+    new-array v1, v1, [B
 
     .line 25
-    :cond_1
-    const-string v0, ":"
-
     .line 26
-    .line 27
-    invoke-virtual {p0, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+    sput-object v1, LE6/c;->d:[B
 
+    .line 27
     .line 28
+    sget-object v1, Ljava/nio/charset/StandardCharsets;->ISO_8859_1:Ljava/nio/charset/Charset;
+
     .line 29
     .line 30
-    move-result-object p0
+    sput-object v1, LE6/c;->e:Ljava/nio/charset/Charset;
 
     .line 31
-    array-length v0, p0
-
     .line 32
-    const/4 v1, 0x2
+    const/4 v1, -0x1
 
     .line 33
-    const/4 v2, 0x0
-
-    .line 34
-    if-ge v0, v1, :cond_2
-
-    .line 35
-    .line 36
-    return-object v2
-
-    .line 37
-    :cond_2
-    const/4 v0, 0x1
-
-    .line 38
-    aget-object p0, p0, v0
-
-    .line 39
-    .line 40
-    invoke-virtual {p0}, Ljava/lang/String;->isEmpty()Z
-
-    .line 41
-    .line 42
-    .line 43
-    move-result v0
-
-    .line 44
-    if-eqz v0, :cond_3
-
-    .line 45
-    .line 46
-    return-object v2
-
-    .line 47
-    :cond_3
-    return-object p0
-.end method
-
-.method public static h(LB5/g;)Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    invoke-virtual {p0}, LB5/g;->a()V
-
-    .line 2
-    .line 3
-    .line 4
-    iget-object v0, p0, LB5/g;->c:LB5/j;
-
-    .line 5
-    .line 6
-    iget-object v1, v0, LB5/j;->e:Ljava/lang/String;
-
-    .line 7
-    .line 8
-    if-eqz v1, :cond_0
-
-    .line 9
-    .line 10
-    return-object v1
-
-    .line 11
-    :cond_0
-    invoke-virtual {p0}, LB5/g;->a()V
-
-    .line 12
-    .line 13
-    .line 14
-    iget-object p0, v0, LB5/j;->b:Ljava/lang/String;
-
-    .line 15
-    .line 16
-    const-string v0, "1:"
-
-    .line 17
-    .line 18
-    invoke-virtual {p0, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    .line 19
-    .line 20
-    .line 21
-    move-result v0
-
-    .line 22
-    if-nez v0, :cond_1
-
-    .line 23
-    .line 24
-    return-object p0
-
-    .line 25
-    :cond_1
-    const-string v0, ":"
-
-    .line 26
-    .line 27
-    invoke-virtual {p0, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
-
-    .line 28
-    .line 29
-    .line 30
-    move-result-object p0
-
-    .line 31
-    array-length v0, p0
-
-    .line 32
-    const/4 v1, 0x2
-
-    .line 33
-    const/4 v2, 0x0
-
-    .line 34
-    if-ge v0, v1, :cond_2
-
-    .line 35
-    .line 36
-    return-object v2
-
-    .line 37
-    :cond_2
-    const/4 v0, 0x1
-
-    .line 38
-    aget-object p0, p0, v0
-
-    .line 39
-    .line 40
-    invoke-virtual {p0}, Ljava/lang/String;->isEmpty()Z
-
-    .line 41
-    .line 42
-    .line 43
-    move-result v0
-
-    .line 44
-    if-eqz v0, :cond_3
-
-    .line 45
-    .line 46
-    return-object v2
-
-    .line 47
-    :cond_3
-    return-object p0
-.end method
-
-.method private final declared-synchronized l()V
-    .locals 2
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    iget-object v0, p0, Le6/c;->b:Landroid/content/Context;
-
-    .line 3
-    .line 4
-    invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object v0
-
-    .line 8
-    invoke-virtual {p0, v0}, Le6/c;->i(Ljava/lang/String;)Landroid/content/pm/PackageInfo;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v0
-
-    .line 12
-    if-eqz v0, :cond_0
-
-    .line 13
-    .line 14
-    iget v1, v0, Landroid/content/pm/PackageInfo;->versionCode:I
-
-    .line 15
-    .line 16
-    invoke-static {v1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v1
-
-    .line 20
-    iput-object v1, p0, Le6/c;->c:Ljava/lang/String;
-
-    .line 21
-    .line 22
-    iget-object v0, v0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
-
-    .line 23
-    .line 24
-    iput-object v0, p0, Le6/c;->d:Ljava/lang/String;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 25
-    .line 26
-    monitor-exit p0
-
-    .line 27
-    return-void
-
-    .line 28
-    :catchall_0
-    move-exception v0
-
-    .line 29
-    goto :goto_0
-
-    .line 30
-    :cond_0
-    monitor-exit p0
-
-    .line 31
-    return-void
-
-    .line 32
-    :goto_0
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 33
-    throw v0
-.end method
-
-.method private final declared-synchronized m()V
-    .locals 2
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    iget-object v0, p0, Le6/c;->b:Landroid/content/Context;
-
-    .line 3
-    .line 4
-    invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object v0
-
-    .line 8
-    invoke-virtual {p0, v0}, Le6/c;->i(Ljava/lang/String;)Landroid/content/pm/PackageInfo;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v0
-
-    .line 12
-    if-eqz v0, :cond_0
-
-    .line 13
-    .line 14
-    iget v1, v0, Landroid/content/pm/PackageInfo;->versionCode:I
-
-    .line 15
-    .line 16
-    invoke-static {v1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v1
-
-    .line 20
-    iput-object v1, p0, Le6/c;->c:Ljava/lang/String;
-
-    .line 21
-    .line 22
-    iget-object v0, v0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
-
-    .line 23
-    .line 24
-    iput-object v0, p0, Le6/c;->d:Ljava/lang/String;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 25
-    .line 26
-    goto :goto_0
-
-    .line 27
-    :catchall_0
-    move-exception v0
-
-    .line 28
-    goto :goto_1
-
-    .line 29
-    :cond_0
-    :goto_0
-    monitor-exit p0
-
-    .line 30
-    return-void
-
-    .line 31
-    :goto_1
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 32
-    throw v0
-.end method
-
-
-# virtual methods
-.method public final declared-synchronized a()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget v0, p0, Le6/c;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    invoke-direct {p0}, Le6/c;->c()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-
-    :pswitch_0
-    invoke-direct {p0}, Le6/c;->b()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final declared-synchronized d()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget v0, p0, Le6/c;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    invoke-direct {p0}, Le6/c;->f()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-
-    :pswitch_0
-    invoke-direct {p0}, Le6/c;->e()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final i(Ljava/lang/String;)Landroid/content/pm/PackageInfo;
-    .locals 2
-
-    .line 1
-    iget v0, p0, Le6/c;->a:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    :try_start_0
-    iget-object v0, p0, Le6/c;->b:Landroid/content/Context;
-
-    .line 7
-    .line 8
-    invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v0
-
-    .line 12
-    const/4 v1, 0x0
-
-    .line 13
-    invoke-virtual {v0, p1, v1}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object p1
-    :try_end_0
-    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 17
-    goto :goto_0
-
-    .line 18
-    :catch_0
-    move-exception p1
-
-    .line 19
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 20
-    .line 21
-    const-string v1, "Failed to find package "
-
-    .line 22
-    .line 23
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 24
-    .line 25
-    .line 26
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 27
-    .line 28
-    .line 29
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object p1
-
-    .line 33
-    const-string v0, "FirebaseMessaging"
+    invoke-static {v2, v1}, Ljava/util/Arrays;->fill([BB)V
 
     .line 34
     .line 35
-    invoke-static {v0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
     .line 36
-    .line 37
-    .line 38
-    const/4 p1, 0x0
+    move v2, v0
 
-    .line 39
+    .line 37
     :goto_0
-    return-object p1
-
-    .line 40
-    :pswitch_0
-    :try_start_1
-    iget-object v0, p0, Le6/c;->b:Landroid/content/Context;
-
-    .line 41
-    .line 42
-    invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    .line 43
-    .line 44
-    .line 45
-    move-result-object v0
-
-    .line 46
-    const/4 v1, 0x0
-
-    .line 47
-    invoke-virtual {v0, p1, v1}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
-
-    .line 48
-    .line 49
-    .line 50
-    move-result-object p1
-    :try_end_1
-    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 51
-    goto :goto_1
-
-    .line 52
-    :catch_1
-    move-exception p1
-
-    .line 53
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 54
-    .line 55
-    .line 56
-    move-result-object p1
-
-    .line 57
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
-
-    .line 58
-    .line 59
-    .line 60
-    move-result v0
-
-    .line 61
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    .line 62
-    .line 63
-    add-int/lit8 v0, v0, 0x17
-
-    .line 64
-    .line 65
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    .line 66
-    .line 67
-    .line 68
-    const-string v0, "Failed to find package "
-
-    .line 69
-    .line 70
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 71
-    .line 72
-    .line 73
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 74
-    .line 75
-    .line 76
-    const-string p1, "FirebaseInstanceId"
-
-    .line 77
-    .line 78
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 79
-    .line 80
-    .line 81
-    move-result-object v0
-
-    .line 82
-    invoke-static {p1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 83
-    .line 84
-    .line 85
-    const/4 p1, 0x0
-
-    .line 86
-    :goto_1
-    return-object p1
-
-    .line 87
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public j()Z
-    .locals 5
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    iget v0, p0, Le6/c;->f:I
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 3
-    .line 4
-    const/4 v1, 0x1
-
-    .line 5
-    const/4 v2, 0x0
-
-    .line 6
-    if-eqz v0, :cond_0
-
-    .line 7
-    .line 8
-    monitor-exit p0
-
-    .line 9
-    goto/16 :goto_1
-
-    .line 10
-    .line 11
-    :cond_0
-    :try_start_1
-    iget-object v0, p0, Le6/c;->b:Landroid/content/Context;
-
-    .line 12
-    .line 13
-    invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v0
-
-    .line 17
-    const-string v3, "com.google.android.c2dm.permission.SEND"
-
-    .line 18
-    .line 19
-    const-string v4, "com.google.android.gms"
-
-    .line 20
-    .line 21
-    invoke-virtual {v0, v3, v4}, Landroid/content/pm/PackageManager;->checkPermission(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 22
-    .line 23
-    .line 24
-    move-result v3
-
-    .line 25
-    const/4 v4, -0x1
-
-    .line 26
-    if-ne v3, v4, :cond_1
-
-    .line 27
-    .line 28
-    const-string v0, "FirebaseMessaging"
-
-    .line 29
-    .line 30
-    const-string v3, "Google Play services missing or without correct permission."
-
-    .line 31
-    .line 32
-    invoke-static {v0, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 33
-    .line 34
-    .line 35
-    monitor-exit p0
-
-    .line 36
-    move v0, v2
-
-    .line 37
-    goto :goto_1
+    sget-object v3, LE6/c;->a:[B
 
     .line 38
-    :catchall_0
-    move-exception v0
-
     .line 39
-    goto :goto_3
+    array-length v4, v3
 
     .line 40
-    :cond_1
-    :try_start_2
-    invoke-static {}, Lr4/b;->b()Z
+    if-ge v2, v4, :cond_1
 
     .line 41
     .line 42
-    .line 43
-    move-result v3
+    aget-byte v3, v3, v2
 
+    .line 43
     .line 44
-    if-nez v3, :cond_2
+    if-lez v3, :cond_0
 
     .line 45
     .line 46
-    new-instance v3, Landroid/content/Intent;
+    sget-object v4, LE6/c;->c:[B
 
     .line 47
     .line 48
-    const-string v4, "com.google.android.c2dm.intent.REGISTER"
+    int-to-byte v5, v2
 
     .line 49
-    .line 50
-    invoke-direct {v3, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    aput-byte v5, v4, v3
 
+    .line 50
     .line 51
+    :cond_0
+    add-int/lit8 v2, v2, 0x1
+
     .line 52
     .line 53
-    const-string v4, "com.google.android.gms"
+    goto :goto_0
 
     .line 54
-    .line 55
-    invoke-virtual {v3, v4}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+    :cond_1
+    sget-object v2, LE6/c;->d:[B
 
+    .line 55
     .line 56
+    invoke-static {v2, v1}, Ljava/util/Arrays;->fill([BB)V
+
     .line 57
     .line 58
-    invoke-virtual {v0, v3, v2}, Landroid/content/pm/PackageManager;->queryIntentServices(Landroid/content/Intent;I)Ljava/util/List;
-
     .line 59
+    :goto_1
+    sget-object v1, LE6/c;->b:[B
+
     .line 60
     .line 61
-    move-result-object v3
+    array-length v2, v1
 
     .line 62
-    if-eqz v3, :cond_2
+    if-ge v0, v2, :cond_3
 
     .line 63
     .line 64
-    invoke-interface {v3}, Ljava/util/List;->size()I
+    aget-byte v1, v1, v0
 
     .line 65
     .line 66
-    .line 67
-    move-result v3
+    if-lez v1, :cond_2
 
+    .line 67
     .line 68
-    if-lez v3, :cond_2
+    sget-object v2, LE6/c;->d:[B
 
     .line 69
     .line 70
-    iput v1, p0, Le6/c;->f:I
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    int-to-byte v3, v0
 
     .line 71
-    .line 72
-    monitor-exit p0
+    aput-byte v3, v2, v1
 
+    .line 72
     .line 73
-    move v0, v1
+    :cond_2
+    add-int/lit8 v0, v0, 0x1
 
     .line 74
+    .line 75
     goto :goto_1
 
-    .line 75
-    :cond_2
-    :try_start_3
-    new-instance v3, Landroid/content/Intent;
-
     .line 76
+    :cond_3
+    return-void
+
     .line 77
-    const-string v4, "com.google.iid.TOKEN_REQUEST"
+    :array_0
+    .array-data 1
+        0x30t
+        0x31t
+        0x32t
+        0x33t
+        0x34t
+        0x35t
+        0x36t
+        0x37t
+        0x38t
+        0x39t
+        0x26t
+        0xdt
+        0x9t
+        0x2ct
+        0x3at
+        0x23t
+        0x2dt
+        0x2et
+        0x24t
+        0x2ft
+        0x2bt
+        0x25t
+        0x2at
+        0x3dt
+        0x5et
+        0x0t
+        0x20t
+        0x0t
+        0x0t
+        0x0t
+    .end array-data
 
     .line 78
     .line 79
-    invoke-direct {v3, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
     .line 80
     .line 81
     .line 82
-    const-string v4, "com.google.android.gms"
-
     .line 83
     .line 84
-    invoke-virtual {v3, v4}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
-
     .line 85
     .line 86
     .line 87
-    invoke-virtual {v0, v3, v2}, Landroid/content/pm/PackageManager;->queryBroadcastReceivers(Landroid/content/Intent;I)Ljava/util/List;
-
     .line 88
     .line 89
     .line 90
-    move-result-object v0
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    nop
+
+    .line 97
+    :array_1
+    .array-data 1
+        0x3bt
+        0x3ct
+        0x3et
+        0x40t
+        0x5bt
+        0x5ct
+        0x5dt
+        0x5ft
+        0x60t
+        0x7et
+        0x21t
+        0xdt
+        0x9t
+        0x2ct
+        0x3at
+        0xat
+        0x2dt
+        0x2et
+        0x24t
+        0x2ft
+        0x22t
+        0x7ct
+        0x2at
+        0x28t
+        0x29t
+        0x3ft
+        0x7bt
+        0x7dt
+        0x27t
+        0x0t
+    .end array-data
+.end method
+
+.method public static a([BIILjava/lang/StringBuilder;)V
+    .locals 11
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p1, v0, :cond_0
+
+    .line 3
+    .line 4
+    if-nez p2, :cond_0
+
+    .line 5
+    .line 6
+    const/16 p2, 0x391
+
+    .line 7
+    .line 8
+    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 9
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    rem-int/lit8 p2, p1, 0x6
+
+    .line 13
+    .line 14
+    if-nez p2, :cond_1
+
+    .line 15
+    .line 16
+    const/16 p2, 0x39c
+
+    .line 17
+    .line 18
+    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 19
+    .line 20
+    .line 21
+    goto :goto_0
+
+    .line 22
+    :cond_1
+    const/16 p2, 0x385
+
+    .line 23
+    .line 24
+    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 25
+    .line 26
+    .line 27
+    :goto_0
+    const/4 p2, 0x6
+
+    .line 28
+    const/4 v0, 0x0
+
+    .line 29
+    if-lt p1, p2, :cond_6
+
+    .line 30
+    .line 31
+    const/4 v1, 0x5
+
+    .line 32
+    new-array v2, v1, [C
+
+    .line 33
+    .line 34
+    move v3, v0
+
+    .line 35
+    :goto_1
+    sub-int v4, p1, v3
+
+    .line 36
+    .line 37
+    if-lt v4, p2, :cond_5
+
+    .line 38
+    .line 39
+    const-wide/16 v4, 0x0
+
+    .line 40
+    .line 41
+    move v6, v0
+
+    .line 42
+    :goto_2
+    if-ge v6, p2, :cond_2
+
+    .line 43
+    .line 44
+    const/16 v7, 0x8
+
+    .line 45
+    .line 46
+    shl-long/2addr v4, v7
+
+    .line 47
+    add-int v7, v3, v6
+
+    .line 48
+    .line 49
+    aget-byte v7, p0, v7
+
+    .line 50
+    .line 51
+    and-int/lit16 v7, v7, 0xff
+
+    .line 52
+    .line 53
+    int-to-long v7, v7
+
+    .line 54
+    add-long/2addr v4, v7
+
+    .line 55
+    add-int/lit8 v6, v6, 0x1
+
+    .line 56
+    .line 57
+    goto :goto_2
+
+    .line 58
+    :cond_2
+    move v6, v0
+
+    .line 59
+    :goto_3
+    if-ge v6, v1, :cond_3
+
+    .line 60
+    .line 61
+    const-wide/16 v7, 0x384
+
+    .line 62
+    .line 63
+    rem-long v9, v4, v7
+
+    .line 64
+    .line 65
+    long-to-int v9, v9
+
+    .line 66
+    int-to-char v9, v9
+
+    .line 67
+    aput-char v9, v2, v6
+
+    .line 68
+    .line 69
+    div-long/2addr v4, v7
+
+    .line 70
+    add-int/lit8 v6, v6, 0x1
+
+    .line 71
+    .line 72
+    goto :goto_3
+
+    .line 73
+    :cond_3
+    const/4 v4, 0x4
+
+    .line 74
+    :goto_4
+    if-ltz v4, :cond_4
+
+    .line 75
+    .line 76
+    aget-char v5, v2, v4
+
+    .line 77
+    .line 78
+    invoke-virtual {p3, v5}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 79
+    .line 80
+    .line 81
+    add-int/lit8 v4, v4, -0x1
+
+    .line 82
+    .line 83
+    goto :goto_4
+
+    .line 84
+    :cond_4
+    add-int/lit8 v3, v3, 0x6
+
+    .line 85
+    .line 86
+    goto :goto_1
+
+    .line 87
+    :cond_5
+    move v0, v3
+
+    .line 88
+    :cond_6
+    :goto_5
+    if-ge v0, p1, :cond_7
+
+    .line 89
+    .line 90
+    aget-byte p2, p0, v0
 
     .line 91
-    const/4 v3, 0x2
-
     .line 92
-    if-eqz v0, :cond_3
+    and-int/lit16 p2, p2, 0xff
 
     .line 93
     .line 94
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    int-to-char p2, p2
+
+    .line 95
+    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 96
+    .line 97
+    .line 98
+    add-int/lit8 v0, v0, 0x1
+
+    .line 99
+    .line 100
+    goto :goto_5
+
+    .line 101
+    :cond_7
+    return-void
+.end method
+
+.method public static b(IILjava/lang/String;Ljava/lang/StringBuilder;)V
+    .locals 9
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    div-int/lit8 v1, p1, 0x3
+
+    .line 4
+    .line 5
+    add-int/lit8 v1, v1, 0x1
+
+    .line 6
+    .line 7
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    .line 8
+    .line 9
+    .line 10
+    const-wide/16 v1, 0x384
+
+    .line 11
+    .line 12
+    invoke-static {v1, v2}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v1
+
+    .line 16
+    const-wide/16 v2, 0x0
+
+    .line 17
+    .line 18
+    invoke-static {v2, v3}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v2
+
+    .line 22
+    const/4 v3, 0x0
+
+    .line 23
+    move v4, v3
+
+    .line 24
+    :goto_0
+    if-ge v4, p1, :cond_2
+
+    .line 25
+    .line 26
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->setLength(I)V
+
+    .line 27
+    .line 28
+    .line 29
+    const/16 v5, 0x2c
+
+    .line 30
+    .line 31
+    sub-int v6, p1, v4
+
+    .line 32
+    .line 33
+    invoke-static {v5, v6}, Ljava/lang/Math;->min(II)I
+
+    .line 34
+    .line 35
+    .line 36
+    move-result v5
+
+    .line 37
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    .line 38
+    .line 39
+    const-string v7, "1"
+
+    .line 40
+    .line 41
+    invoke-direct {v6, v7}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 42
+    .line 43
+    .line 44
+    add-int v7, p0, v4
+
+    .line 45
+    .line 46
+    add-int v8, v7, v5
+
+    .line 47
+    .line 48
+    invoke-virtual {p2, v7, v8}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v7
+
+    .line 52
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 53
+    .line 54
+    .line 55
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 56
+    .line 57
+    .line 58
+    move-result-object v6
+
+    .line 59
+    new-instance v7, Ljava/math/BigInteger;
+
+    .line 60
+    .line 61
+    invoke-direct {v7, v6}, Ljava/math/BigInteger;-><init>(Ljava/lang/String;)V
+
+    .line 62
+    .line 63
+    .line 64
+    :cond_0
+    invoke-virtual {v7, v1}, Ljava/math/BigInteger;->mod(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-object v6
+
+    .line 68
+    invoke-virtual {v6}, Ljava/math/BigInteger;->intValue()I
+
+    .line 69
+    .line 70
+    .line 71
+    move-result v6
+
+    .line 72
+    int-to-char v6, v6
+
+    .line 73
+    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 74
+    .line 75
+    .line 76
+    invoke-virtual {v7, v1}, Ljava/math/BigInteger;->divide(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    .line 77
+    .line 78
+    .line 79
+    move-result-object v7
+
+    .line 80
+    invoke-virtual {v7, v2}, Ljava/math/BigInteger;->equals(Ljava/lang/Object;)Z
+
+    .line 81
+    .line 82
+    .line 83
+    move-result v6
+
+    .line 84
+    if-eqz v6, :cond_0
+
+    .line 85
+    .line 86
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
+
+    .line 87
+    .line 88
+    .line 89
+    move-result v6
+
+    .line 90
+    add-int/lit8 v6, v6, -0x1
+
+    .line 91
+    .line 92
+    :goto_1
+    if-ltz v6, :cond_1
+
+    .line 93
+    .line 94
+    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->charAt(I)C
 
     .line 95
     .line 96
     .line 97
-    move-result v0
+    move-result v7
 
     .line 98
-    if-lez v0, :cond_3
+    invoke-virtual {p3, v7}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 99
     .line 100
-    iput v3, p0, Le6/c;->f:I
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+    .line 101
+    add-int/lit8 v6, v6, -0x1
+
+    .line 102
+    .line 103
+    goto :goto_1
+
+    .line 104
+    :cond_1
+    add-int/2addr v4, v5
+
+    .line 105
+    goto :goto_0
+
+    .line 106
+    :cond_2
+    return-void
+.end method
+
+.method public static c(IIILjava/lang/String;Ljava/lang/StringBuilder;)I
+    .locals 17
+
+    .line 1
+    move/from16 v0, p1
+
+    .line 2
+    .line 3
+    move-object/from16 v1, p3
+
+    .line 4
+    .line 5
+    move-object/from16 v2, p4
+
+    .line 6
+    .line 7
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    .line 8
+    .line 9
+    invoke-direct {v3, v0}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    .line 10
+    .line 11
+    .line 12
+    move/from16 v5, p2
+
+    .line 13
+    .line 14
+    const/4 v6, 0x0
+
+    .line 15
+    :cond_0
+    :goto_0
+    add-int v7, p0, v6
+
+    .line 16
+    .line 17
+    invoke-virtual {v1, v7}, Ljava/lang/String;->charAt(I)C
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v8
+
+    .line 21
+    sget-object v9, LE6/c;->d:[B
+
+    .line 22
+    .line 23
+    const/4 v10, 0x2
+
+    .line 24
+    sget-object v11, LE6/c;->c:[B
+
+    .line 25
+    .line 26
+    const/4 v12, 0x1
+
+    .line 27
+    const/4 v13, -0x1
+
+    .line 28
+    const/16 v4, 0x1b
+
+    .line 29
+    .line 30
+    const/16 v14, 0x1c
+
+    .line 31
+    .line 32
+    const/16 v15, 0x1d
+
+    .line 33
+    .line 34
+    if-eqz v5, :cond_c
+
+    .line 35
+    .line 36
+    if-eq v5, v12, :cond_7
+
+    .line 37
+    .line 38
+    if-eq v5, v10, :cond_2
+
+    .line 39
+    .line 40
+    aget-byte v4, v9, v8
+
+    .line 41
+    .line 42
+    if-eq v4, v13, :cond_1
+
+    .line 43
+    .line 44
+    int-to-char v4, v4
+
+    .line 45
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 46
+    .line 47
+    .line 48
+    goto/16 :goto_4
+
+    .line 49
+    .line 50
+    :cond_1
+    invoke-virtual {v3, v15}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 51
+    .line 52
+    .line 53
+    :goto_1
+    const/4 v5, 0x0
+
+    .line 54
+    goto :goto_0
+
+    .line 55
+    :cond_2
+    aget-byte v11, v11, v8
+
+    .line 56
+    .line 57
+    if-eq v11, v13, :cond_3
+
+    .line 58
+    .line 59
+    int-to-char v4, v11
+
+    .line 60
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 61
+    .line 62
+    .line 63
+    goto/16 :goto_4
+
+    .line 64
+    .line 65
+    :cond_3
+    invoke-static {v8}, LE6/c;->e(C)Z
+
+    .line 66
+    .line 67
+    .line 68
+    move-result v11
+
+    .line 69
+    if-eqz v11, :cond_4
+
+    .line 70
+    .line 71
+    invoke-virtual {v3, v14}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 72
+    .line 73
+    .line 74
+    goto :goto_1
+
+    .line 75
+    :cond_4
+    invoke-static {v8}, LE6/c;->d(C)Z
+
+    .line 76
+    .line 77
+    .line 78
+    move-result v11
+
+    .line 79
+    if-eqz v11, :cond_5
+
+    .line 80
+    .line 81
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 82
+    .line 83
+    .line 84
+    :goto_2
+    move v5, v12
+
+    .line 85
+    goto :goto_0
+
+    .line 86
+    :cond_5
+    add-int/lit8 v7, v7, 0x1
+
+    .line 87
+    .line 88
+    if-ge v7, v0, :cond_6
+
+    .line 89
+    .line 90
+    invoke-virtual {v1, v7}, Ljava/lang/String;->charAt(I)C
+
+    .line 91
+    .line 92
+    .line 93
+    move-result v4
+
+    .line 94
+    aget-byte v4, v9, v4
+
+    .line 95
+    .line 96
+    if-eq v4, v13, :cond_6
+
+    .line 97
+    .line 98
+    const/16 v4, 0x19
+
+    .line 99
+    .line 100
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 101
     .line 102
-    monitor-exit p0
-
     .line 103
-    move v0, v3
+    const/4 v5, 0x3
 
     .line 104
-    goto :goto_1
+    goto :goto_0
 
     .line 105
-    :cond_3
-    :try_start_4
-    const-string v0, "FirebaseMessaging"
+    :cond_6
+    invoke-virtual {v3, v15}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 106
     .line 107
-    const-string v4, "Failed to resolve IID implementation package, falling back"
-
     .line 108
+    aget-byte v4, v9, v8
+
     .line 109
-    invoke-static {v0, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
     .line 110
-    .line 111
-    .line 112
-    invoke-static {}, Lr4/b;->b()Z
+    int-to-char v4, v4
 
+    .line 111
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 112
     .line 113
     .line 114
-    .line 115
-    move-result v0
+    goto/16 :goto_4
 
+    .line 115
     .line 116
-    if-eqz v0, :cond_4
+    :cond_7
+    invoke-static {v8}, LE6/c;->d(C)Z
 
     .line 117
     .line 118
-    iput v3, p0, Le6/c;->f:I
-
     .line 119
+    move-result v7
+
     .line 120
-    goto :goto_0
+    if-eqz v7, :cond_9
 
     .line 121
-    :cond_4
-    iput v1, p0, Le6/c;->f:I
-
     .line 122
+    const/16 v7, 0x20
+
     .line 123
-    :goto_0
-    iget v0, p0, Le6/c;->f:I
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
-
     .line 124
-    .line 125
-    monitor-exit p0
+    if-ne v8, v7, :cond_8
 
+    .line 125
     .line 126
-    :goto_1
-    if-eqz v0, :cond_5
+    const/16 v4, 0x1a
 
     .line 127
     .line 128
-    goto :goto_2
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 129
-    :cond_5
-    move v1, v2
-
     .line 130
-    :goto_2
-    return v1
-
     .line 131
-    :goto_3
-    :try_start_5
-    monitor-exit p0
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_0
+    goto :goto_4
 
     .line 132
-    throw v0
+    :cond_8
+    add-int/lit8 v8, v8, -0x61
+
+    .line 133
+    .line 134
+    int-to-char v4, v8
+
+    .line 135
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 136
+    .line 137
+    .line 138
+    goto :goto_4
+
+    .line 139
+    :cond_9
+    invoke-static {v8}, LE6/c;->e(C)Z
+
+    .line 140
+    .line 141
+    .line 142
+    move-result v7
+
+    .line 143
+    if-eqz v7, :cond_a
+
+    .line 144
+    .line 145
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 146
+    .line 147
+    .line 148
+    add-int/lit8 v8, v8, -0x41
+
+    .line 149
+    .line 150
+    int-to-char v4, v8
+
+    .line 151
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 152
+    .line 153
+    .line 154
+    goto :goto_4
+
+    .line 155
+    :cond_a
+    aget-byte v4, v11, v8
+
+    .line 156
+    .line 157
+    if-eq v4, v13, :cond_b
+
+    .line 158
+    .line 159
+    invoke-virtual {v3, v14}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 160
+    .line 161
+    .line 162
+    :goto_3
+    move v5, v10
+
+    .line 163
+    goto/16 :goto_0
+
+    .line 164
+    .line 165
+    :cond_b
+    invoke-virtual {v3, v15}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 166
+    .line 167
+    .line 168
+    aget-byte v4, v9, v8
+
+    .line 169
+    .line 170
+    int-to-char v4, v4
+
+    .line 171
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 172
+    .line 173
+    .line 174
+    goto :goto_4
+
+    .line 175
+    :cond_c
+    invoke-static {v8}, LE6/c;->e(C)Z
+
+    .line 176
+    .line 177
+    .line 178
+    move-result v7
+
+    .line 179
+    if-eqz v7, :cond_e
+
+    .line 180
+    .line 181
+    const/16 v7, 0x20
+
+    .line 182
+    .line 183
+    if-ne v8, v7, :cond_d
+
+    .line 184
+    .line 185
+    const/16 v4, 0x1a
+
+    .line 186
+    .line 187
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 188
+    .line 189
+    .line 190
+    goto :goto_4
+
+    .line 191
+    :cond_d
+    add-int/lit8 v8, v8, -0x41
+
+    .line 192
+    .line 193
+    int-to-char v4, v8
+
+    .line 194
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 195
+    .line 196
+    .line 197
+    goto :goto_4
+
+    .line 198
+    :cond_e
+    invoke-static {v8}, LE6/c;->d(C)Z
+
+    .line 199
+    .line 200
+    .line 201
+    move-result v7
+
+    .line 202
+    if-eqz v7, :cond_f
+
+    .line 203
+    .line 204
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 205
+    .line 206
+    .line 207
+    goto :goto_2
+
+    .line 208
+    :cond_f
+    aget-byte v4, v11, v8
+
+    .line 209
+    .line 210
+    if-eq v4, v13, :cond_10
+
+    .line 211
+    .line 212
+    invoke-virtual {v3, v14}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 213
+    .line 214
+    .line 215
+    goto :goto_3
+
+    .line 216
+    :cond_10
+    invoke-virtual {v3, v15}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 217
+    .line 218
+    .line 219
+    aget-byte v4, v9, v8
+
+    .line 220
+    .line 221
+    int-to-char v4, v4
+
+    .line 222
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 223
+    .line 224
+    .line 225
+    :goto_4
+    add-int/lit8 v6, v6, 0x1
+
+    .line 226
+    .line 227
+    if-lt v6, v0, :cond_0
+
+    .line 228
+    .line 229
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->length()I
+
+    .line 230
+    .line 231
+    .line 232
+    move-result v0
+
+    .line 233
+    const/4 v4, 0x0
+
+    .line 234
+    const/16 v16, 0x0
+
+    .line 235
+    .line 236
+    :goto_5
+    if-ge v4, v0, :cond_12
+
+    .line 237
+    .line 238
+    rem-int/lit8 v1, v4, 0x2
+
+    .line 239
+    .line 240
+    if-eqz v1, :cond_11
+
+    .line 241
+    .line 242
+    mul-int/lit8 v16, v16, 0x1e
+
+    .line 243
+    .line 244
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->charAt(I)C
+
+    .line 245
+    .line 246
+    .line 247
+    move-result v1
+
+    .line 248
+    add-int v1, v1, v16
+
+    .line 249
+    .line 250
+    int-to-char v1, v1
+
+    .line 251
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 252
+    .line 253
+    .line 254
+    :goto_6
+    move/from16 v16, v1
+
+    .line 255
+    .line 256
+    goto :goto_7
+
+    .line 257
+    :cond_11
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->charAt(I)C
+
+    .line 258
+    .line 259
+    .line 260
+    move-result v1
+
+    .line 261
+    goto :goto_6
+
+    .line 262
+    :goto_7
+    add-int/lit8 v4, v4, 0x1
+
+    .line 263
+    .line 264
+    goto :goto_5
+
+    .line 265
+    :cond_12
+    rem-int/2addr v0, v10
+
+    .line 266
+    if-eqz v0, :cond_13
+
+    .line 267
+    .line 268
+    mul-int/lit8 v16, v16, 0x1e
+
+    .line 269
+    .line 270
+    add-int/lit8 v0, v16, 0x1d
+
+    .line 271
+    .line 272
+    int-to-char v0, v0
+
+    .line 273
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 274
+    .line 275
+    .line 276
+    :cond_13
+    return v5
 .end method
 
-.method public final declared-synchronized k()V
+.method public static d(C)Z
     .locals 1
 
     .line 1
-    iget v0, p0, Le6/c;->a:I
+    const/16 v0, 0x20
 
-    packed-switch v0, :pswitch_data_0
+    .line 2
+    .line 3
+    if-eq p0, v0, :cond_1
 
-    invoke-direct {p0}, Le6/c;->m()V
+    .line 4
+    .line 5
+    const/16 v0, 0x61
 
-    return-void
+    .line 6
+    .line 7
+    if-lt p0, v0, :cond_0
 
-    :pswitch_0
-    invoke-direct {p0}, Le6/c;->l()V
+    .line 8
+    .line 9
+    const/16 v0, 0x7a
 
-    return-void
+    .line 10
+    .line 11
+    if-gt p0, v0, :cond_0
 
-    nop
+    .line 12
+    .line 13
+    goto :goto_0
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 14
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 15
+    return p0
+
+    .line 16
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    .line 17
+    return p0
+.end method
+
+.method public static e(C)Z
+    .locals 1
+
+    .line 1
+    const/16 v0, 0x20
+
+    .line 2
+    .line 3
+    if-eq p0, v0, :cond_1
+
+    .line 4
+    .line 5
+    const/16 v0, 0x41
+
+    .line 6
+    .line 7
+    if-lt p0, v0, :cond_0
+
+    .line 8
+    .line 9
+    const/16 v0, 0x5a
+
+    .line 10
+    .line 11
+    if-gt p0, v0, :cond_0
+
+    .line 12
+    .line 13
+    goto :goto_0
+
+    .line 14
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 15
+    return p0
+
+    .line 16
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    .line 17
+    return p0
 .end method

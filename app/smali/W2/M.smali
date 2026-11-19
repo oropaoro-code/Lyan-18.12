@@ -1,59 +1,37 @@
-.class public final Lw2/M;
-.super Ljava/lang/Object;
+.class public final Lw2/m;
+.super Lw2/J;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Ljava/util/ArrayList;
+.field public e:I
 
-.field public final b:I
-
-.field public c:J
-
-.field public d:J
+.field public f:I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
+.method public constructor <init>(II)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1, p2}, Lw2/J;-><init>(II)V
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, Ljava/util/ArrayList;
+    const/4 p1, -0x1
 
     .line 5
+    iput p1, p0, Lw2/m;->e:I
+
     .line 6
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
     .line 7
+    const/4 p1, 0x0
+
     .line 8
+    iput p1, p0, Lw2/m;->f:I
+
     .line 9
-    iput-object v0, p0, Lw2/M;->a:Ljava/util/ArrayList;
-
     .line 10
-    .line 11
-    const/4 v0, 0x5
-
-    .line 12
-    iput v0, p0, Lw2/M;->b:I
-
-    .line 13
-    .line 14
-    const-wide/16 v0, 0x0
-
-    .line 15
-    .line 16
-    iput-wide v0, p0, Lw2/M;->c:J
-
-    .line 17
-    .line 18
-    iput-wide v0, p0, Lw2/M;->d:J
-
-    .line 19
-    .line 20
     return-void
 .end method

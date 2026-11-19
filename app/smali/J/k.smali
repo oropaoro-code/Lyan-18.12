@@ -1,18 +1,76 @@
-.class public final LJ/k;
-.super Ljava/lang/Object;
+.class public final LJ/K;
+.super Lq9/j;
 .source "SourceFile"
 
 # interfaces
-.implements LG0/d;
+.implements Lp9/f;
+
+
+# static fields
+.field public static final q:LJ/K;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, LJ/K;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x2
+
+    .line 4
+    invoke-direct {v0, v1}, Lq9/j;-><init>(I)V
+
+    .line 5
+    .line 6
+    .line 7
+    sput-object v0, LJ/K;->q:LJ/K;
+
+    .line 8
+    .line 9
+    return-void
+.end method
 
 
 # virtual methods
-.method public final a()Z
-    .locals 1
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    check-cast p1, Lh0/b;
 
     .line 2
-    return v0
+    .line 3
+    check-cast p2, LJ/L;
+
+    .line 4
+    .line 5
+    invoke-virtual {p2}, LJ/L;->c()Ljava/util/Map;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    invoke-interface {p1}, Ljava/util/Map;->isEmpty()Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result p2
+
+    .line 13
+    if-eqz p2, :cond_0
+
+    .line 14
+    .line 15
+    const/4 p1, 0x0
+
+    .line 16
+    :cond_0
+    return-object p1
 .end method

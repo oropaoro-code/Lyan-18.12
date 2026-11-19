@@ -1,72 +1,123 @@
-.class public final Lpb/a;
-.super Li9/c;
+.class public final LPb/a;
+.super Lq9/j;
 .source "SourceFile"
 
+# interfaces
+.implements Lp9/f;
 
-# instance fields
-.field public synthetic q:Ljava/lang/Object;
 
-.field public r:I
-
-.field public final synthetic s:Lpb/b;
+# static fields
+.field public static final q:LPb/a;
 
 
 # direct methods
-.method public constructor <init>(Lpb/b;Lg9/e;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    iput-object p1, p0, Lpb/a;->s:Lpb/b;
+    new-instance v0, LPb/a;
 
     .line 2
     .line 3
-    invoke-direct {p0, p2}, Li9/c;-><init>(Lg9/e;)V
+    const/4 v1, 0x2
 
     .line 4
+    invoke-direct {v0, v1}, Lq9/j;-><init>(I)V
+
     .line 5
     .line 6
+    .line 7
+    sput-object v0, LPb/a;->q:LPb/a;
+
+    .line 8
+    .line 9
     return-void
 .end method
 
 
 # virtual methods
-.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    iput-object p1, p0, Lpb/a;->q:Ljava/lang/Object;
+    check-cast p1, Lja/a;
 
     .line 2
     .line 3
-    iget p1, p0, Lpb/a;->r:I
+    check-cast p2, Lja/a;
 
     .line 4
     .line 5
-    const/high16 v0, -0x80000000
+    invoke-virtual {p1}, Lja/a;->a()Z
 
     .line 6
     .line 7
-    or-int/2addr p1, v0
-
     .line 8
-    iput p1, p0, Lpb/a;->r:I
+    move-result v0
 
     .line 9
-    .line 10
-    iget-object p1, p0, Lpb/a;->s:Lpb/b;
+    invoke-virtual {p2}, Lja/a;->a()Z
 
+    .line 10
     .line 11
     .line 12
-    const/4 v0, 0x0
+    move-result v1
 
     .line 13
-    invoke-virtual {p1, v0, p0}, Lpb/b;->i(Ljava/lang/Object;Lg9/e;)Ljava/lang/Object;
+    if-eq v0, v1, :cond_1
 
     .line 14
     .line 15
+    invoke-virtual {p1}, Lja/a;->a()Z
+
     .line 16
+    .line 17
+    .line 18
+    move-result p1
+
+    .line 19
+    if-eqz p1, :cond_0
+
+    .line 20
+    .line 21
+    const/4 p1, -0x1
+
+    .line 22
+    goto :goto_0
+
+    .line 23
+    :cond_0
+    const/4 p1, 0x1
+
+    .line 24
+    goto :goto_0
+
+    .line 25
+    :cond_1
+    iget-object p1, p1, Lja/a;->r:Ljava/lang/String;
+
+    .line 26
+    .line 27
+    iget-object p2, p2, Lja/a;->r:Ljava/lang/String;
+
+    .line 28
+    .line 29
+    invoke-virtual {p1, p2}, Ljava/lang/String;->compareTo(Ljava/lang/String;)I
+
+    .line 30
+    .line 31
+    .line 32
+    move-result p1
+
+    .line 33
+    :goto_0
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 34
+    .line 35
+    .line 36
     move-result-object p1
 
-    .line 17
+    .line 37
     return-object p1
 .end method

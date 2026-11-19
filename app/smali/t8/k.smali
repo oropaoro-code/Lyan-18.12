@@ -1,255 +1,314 @@
-.class public LT8/k;
-.super LH8/h;
+.class public final Lt8/k;
+.super Lq9/j;
 .source "SourceFile"
+
+# interfaces
+.implements Lp9/d;
 
 
 # instance fields
-.field public final q:Ljava/util/concurrent/ScheduledThreadPoolExecutor;
+.field public final synthetic q:I
 
-.field public volatile r:Z
+.field public final synthetic r:Lt8/g;
+
+.field public final synthetic s:I
 
 
 # direct methods
-.method public constructor <init>(LT8/m;)V
-    .locals 2
+.method public synthetic constructor <init>(Lt8/g;II)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p3, p0, Lt8/k;->q:I
 
-    .line 2
-    .line 3
-    .line 4
-    sget-boolean v0, LT8/p;->a:Z
+    iput-object p1, p0, Lt8/k;->r:Lt8/g;
 
-    .line 5
-    .line 6
-    new-instance v0, Ljava/util/concurrent/ScheduledThreadPoolExecutor;
+    iput p2, p0, Lt8/k;->s:I
 
-    .line 7
-    .line 8
-    const/4 v1, 0x1
+    const/4 p1, 0x1
 
-    .line 9
-    invoke-direct {v0, v1, p1}, Ljava/util/concurrent/ScheduledThreadPoolExecutor;-><init>(ILjava/util/concurrent/ThreadFactory;)V
+    invoke-direct {p0, p1}, Lq9/j;-><init>(I)V
 
-    .line 10
-    .line 11
-    .line 12
-    sget-boolean p1, LT8/p;->a:Z
-
-    .line 13
-    .line 14
-    invoke-virtual {v0, p1}, Ljava/util/concurrent/ScheduledThreadPoolExecutor;->setRemoveOnCancelPolicy(Z)V
-
-    .line 15
-    .line 16
-    .line 17
-    iput-object v0, p0, LT8/k;->q:Ljava/util/concurrent/ScheduledThreadPoolExecutor;
-
-    .line 18
-    .line 19
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)LI8/b;
-    .locals 6
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    iget-boolean v0, p0, LT8/k;->r:Z
+    iget v0, p0, Lt8/k;->q:I
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    sget-object p1, LL8/b;->q:LL8/b;
-
     .line 6
-    .line 7
-    return-object p1
+    check-cast p1, Lk3/j;
 
+    .line 7
     .line 8
-    :cond_0
-    const/4 v5, 0x0
+    const-string v0, "$this$execute"
 
     .line 9
-    move-object v0, p0
-
     .line 10
-    move-object v1, p1
+    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 11
-    move-wide v2, p2
-
     .line 12
-    move-object v4, p4
-
     .line 13
-    invoke-virtual/range {v0 .. v5}, LT8/k;->d(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;LI8/a;)LT8/o;
+    iget-object v0, p0, Lt8/k;->r:Lt8/g;
 
     .line 14
     .line 15
-    .line 16
-    move-result-object p1
-
-    .line 17
-    return-object p1
-.end method
-
-.method public final b()V
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, LT8/k;->r:Z
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
-
-    .line 4
-    .line 5
-    const/4 v0, 0x1
-
-    .line 6
-    iput-boolean v0, p0, LT8/k;->r:Z
-
-    .line 7
-    .line 8
-    iget-object v0, p0, LT8/k;->q:Ljava/util/concurrent/ScheduledThreadPoolExecutor;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0}, Ljava/util/concurrent/ScheduledThreadPoolExecutor;->shutdownNow()Ljava/util/List;
-
-    .line 11
-    .line 12
-    .line 13
-    :cond_0
-    return-void
-.end method
-
-.method public final c(LR8/q;)V
-    .locals 3
-
-    .line 1
-    const-wide/16 v0, 0x0
-
-    .line 2
-    .line 3
-    const/4 v2, 0x0
-
-    .line 4
-    invoke-virtual {p0, p1, v0, v1, v2}, LT8/k;->a(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)LI8/b;
-
-    .line 5
-    .line 6
-    .line 7
-    return-void
-.end method
-
-.method public final d(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;LI8/a;)LT8/o;
-    .locals 3
-
-    .line 1
-    new-instance v0, LT8/o;
-
-    .line 2
-    .line 3
-    invoke-direct {v0, p1, p5}, LT8/o;-><init>(Ljava/lang/Runnable;LI8/a;)V
-
-    .line 4
-    .line 5
-    .line 6
-    if-eqz p5, :cond_0
-
-    .line 7
-    .line 8
-    invoke-virtual {p5, v0}, LI8/a;->a(LI8/b;)Z
-
-    .line 9
-    .line 10
-    .line 11
-    move-result p1
-
-    .line 12
-    if-nez p1, :cond_0
-
-    .line 13
-    .line 14
-    return-object v0
-
-    .line 15
-    :cond_0
-    const-wide/16 v1, 0x0
+    iget-object v0, v0, Lt8/g;->b:Ljava/lang/Object;
 
     .line 16
     .line 17
-    cmp-long p1, p2, v1
+    check-cast v0, LG3/a;
 
     .line 18
     .line 19
-    iget-object v1, p0, LT8/k;->q:Ljava/util/concurrent/ScheduledThreadPoolExecutor;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 20
     .line 21
-    if-gtz p1, :cond_1
-
     .line 22
-    .line 23
-    :try_start_0
-    invoke-virtual {v1, v0}, Ljava/util/concurrent/ScheduledThreadPoolExecutor;->submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;
+    sget-object v0, Lg3/a;->a:Lg3/a;
 
+    .line 23
     .line 24
+    iget v1, p0, Lt8/k;->s:I
+
     .line 25
     .line 26
-    move-result-object p1
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 27
-    goto :goto_0
-
     .line 28
-    :cond_1
-    invoke-virtual {v1, v0, p2, p3, p4}, Ljava/util/concurrent/ScheduledThreadPoolExecutor;->schedule(Ljava/util/concurrent/Callable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
-
     .line 29
+    move-result-object v1
+
     .line 30
+    invoke-virtual {v0, v1}, Lg3/a;->a(Ljava/lang/Integer;)Ljava/lang/Long;
+
     .line 31
-    move-result-object p1
-
     .line 32
-    :goto_0
-    invoke-virtual {v0, p1}, LT8/o;->a(Ljava/util/concurrent/Future;)V
-    :try_end_0
-    .catch Ljava/util/concurrent/RejectedExecutionException; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 33
+    move-result-object v0
+
     .line 34
+    const/4 v1, 0x0
+
     .line 35
-    goto :goto_1
+    invoke-interface {p1, v1, v0}, Lk3/j;->c(ILjava/lang/Long;)V
 
     .line 36
-    :catch_0
-    move-exception p1
-
     .line 37
-    if-eqz p5, :cond_2
-
     .line 38
+    sget-object p1, Lb9/n;->a:Lb9/n;
+
     .line 39
-    invoke-virtual {p5, v0}, LI8/a;->j(LI8/b;)Z
-
     .line 40
-    .line 41
-    .line 42
-    :cond_2
-    invoke-static {p1}, LM2/a;->v(Ljava/lang/Throwable;)V
+    return-object p1
 
+    .line 41
+    :pswitch_0
+    check-cast p1, Lf3/i;
+
+    .line 42
     .line 43
+    const-string v0, "$this$transaction"
+
     .line 44
     .line 45
-    :goto_1
-    return-object v0
+    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 46
+    .line 47
+    .line 48
+    iget-object p1, p0, Lt8/k;->r:Lt8/g;
+
+    .line 49
+    .line 50
+    iget-object v0, p1, LE4/u0;->a:Ljava/lang/Object;
+
+    .line 51
+    .line 52
+    check-cast v0, Lk3/i;
+
+    .line 53
+    .line 54
+    const v1, -0x2ac5ad14
+
+    .line 55
+    .line 56
+    .line 57
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object v1
+
+    .line 61
+    new-instance v2, Lt8/k;
+
+    .line 62
+    .line 63
+    iget v3, p0, Lt8/k;->s:I
+
+    .line 64
+    .line 65
+    const/4 v4, 0x0
+
+    .line 66
+    invoke-direct {v2, p1, v3, v4}, Lt8/k;-><init>(Lt8/g;II)V
+
+    .line 67
+    .line 68
+    .line 69
+    const-string v3, "REPLACE INTO last_pages(page) VALUES(?)"
+
+    .line 70
+    .line 71
+    invoke-virtual {v0, v1, v3, v2}, Lk3/i;->e(Ljava/lang/Integer;Ljava/lang/String;Lp9/d;)Lj3/d;
+
+    .line 72
+    .line 73
+    .line 74
+    const v0, -0x2ac5ad13
+
+    .line 75
+    .line 76
+    .line 77
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object v0
+
+    .line 81
+    new-instance v1, Lt8/c;
+
+    .line 82
+    .line 83
+    const/4 v2, 0x1
+
+    .line 84
+    const/16 v3, 0x16
+
+    .line 85
+    .line 86
+    invoke-direct {v1, v2, v3}, Lt8/c;-><init>(II)V
+
+    .line 87
+    .line 88
+    .line 89
+    iget-object p1, p1, LE4/u0;->a:Ljava/lang/Object;
+
+    .line 90
+    .line 91
+    check-cast p1, Lk3/i;
+
+    .line 92
+    .line 93
+    const-string v2, "DELETE FROM last_pages WHERE _ID NOT IN(\n    SELECT last_pages._ID FROM last_pages ORDER BY added_date DESC LIMIT ?\n  )"
+
+    .line 94
+    .line 95
+    invoke-virtual {p1, v0, v2, v1}, Lk3/i;->e(Ljava/lang/Integer;Ljava/lang/String;Lp9/d;)Lj3/d;
+
+    .line 96
+    .line 97
+    .line 98
+    sget-object p1, Lb9/n;->a:Lb9/n;
+
+    .line 99
+    .line 100
+    return-object p1
+
+    .line 101
+    :pswitch_1
+    check-cast p1, Lk3/j;
+
+    .line 102
+    .line 103
+    const-string v0, "$this$execute"
+
+    .line 104
+    .line 105
+    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 106
+    .line 107
+    .line 108
+    iget-object v0, p0, Lt8/k;->r:Lt8/g;
+
+    .line 109
+    .line 110
+    iget-object v0, v0, Lt8/g;->b:Ljava/lang/Object;
+
+    .line 111
+    .line 112
+    check-cast v0, LG3/a;
+
+    .line 113
+    .line 114
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 115
+    .line 116
+    .line 117
+    sget-object v0, Lg3/a;->a:Lg3/a;
+
+    .line 118
+    .line 119
+    iget v1, p0, Lt8/k;->s:I
+
+    .line 120
+    .line 121
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 122
+    .line 123
+    .line 124
+    move-result-object v1
+
+    .line 125
+    invoke-virtual {v0, v1}, Lg3/a;->a(Ljava/lang/Integer;)Ljava/lang/Long;
+
+    .line 126
+    .line 127
+    .line 128
+    move-result-object v0
+
+    .line 129
+    const/4 v1, 0x0
+
+    .line 130
+    invoke-interface {p1, v1, v0}, Lk3/j;->c(ILjava/lang/Long;)V
+
+    .line 131
+    .line 132
+    .line 133
+    sget-object p1, Lb9/n;->a:Lb9/n;
+
+    .line 134
+    .line 135
+    return-object p1
+
+    .line 136
+    nop
+
+    .line 137
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

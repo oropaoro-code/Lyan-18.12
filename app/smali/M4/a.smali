@@ -1,19 +1,17 @@
-.class public final Lm4/a;
+.class public final Lm4/A;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:I
+.field public final a:Lm4/a;
 
-.field public final b:Ll4/c;
-
-.field public final c:Ljava/lang/String;
+.field public final b:Lk4/d;
 
 
 # direct methods
-.method public constructor <init>(Ll4/c;Ljava/lang/String;)V
-    .locals 2
+.method public synthetic constructor <init>(Lm4/a;Lk4/d;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -21,175 +19,182 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lm4/a;->b:Ll4/c;
+    iput-object p1, p0, Lm4/A;->a:Lm4/a;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lm4/a;->c:Ljava/lang/String;
+    iput-object p2, p0, Lm4/A;->b:Lk4/d;
 
     .line 7
     .line 8
-    const/4 v0, 0x3
-
-    .line 9
-    new-array v0, v0, [Ljava/lang/Object;
-
-    .line 10
-    .line 11
-    const/4 v1, 0x0
-
-    .line 12
-    aput-object p1, v0, v1
-
-    .line 13
-    .line 14
-    sget-object p1, Ln4/o;->a:Ln4/o;
-
-    .line 15
-    .line 16
-    const/4 v1, 0x1
-
-    .line 17
-    aput-object p1, v0, v1
-
-    .line 18
-    .line 19
-    const/4 p1, 0x2
-
-    .line 20
-    aput-object p2, v0, p1
-
-    .line 21
-    .line 22
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
-
-    .line 23
-    .line 24
-    .line 25
-    move-result p1
-
-    .line 26
-    iput p1, p0, Lm4/a;->a:I
-
-    .line 27
-    .line 28
     return-void
 .end method
 
 
 # virtual methods
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+    .locals 3
 
     .line 1
     const/4 v0, 0x0
 
     .line 2
-    if-nez p1, :cond_0
+    if-eqz p1, :cond_0
 
     .line 3
     .line 4
-    return v0
+    instance-of v1, p1, Lm4/A;
 
     .line 5
-    :cond_0
-    const/4 v1, 0x1
-
     .line 6
-    if-ne p1, p0, :cond_1
+    if-eqz v1, :cond_0
 
     .line 7
     .line 8
-    return v1
+    check-cast p1, Lm4/A;
 
     .line 9
-    :cond_1
-    instance-of v2, p1, Lm4/a;
-
     .line 10
+    iget-object v1, p0, Lm4/A;->a:Lm4/a;
+
     .line 11
-    if-nez v2, :cond_2
-
     .line 12
-    .line 13
-    return v0
+    iget-object v2, p1, Lm4/A;->a:Lm4/a;
 
+    .line 13
     .line 14
-    :cond_2
-    check-cast p1, Lm4/a;
+    invoke-static {v1, v2}, Ln4/D;->m(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 15
     .line 16
-    iget-object v2, p0, Lm4/a;->b:Ll4/c;
-
     .line 17
+    move-result v1
+
     .line 18
-    iget-object v3, p1, Lm4/a;->b:Ll4/c;
+    if-eqz v1, :cond_0
 
     .line 19
     .line 20
-    invoke-static {v2, v3}, Ln4/D;->m(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-object v1, p0, Lm4/A;->b:Lk4/d;
 
     .line 21
     .line 22
-    .line 23
-    move-result v2
+    iget-object p1, p1, Lm4/A;->b:Lk4/d;
 
+    .line 23
     .line 24
-    if-eqz v2, :cond_3
+    invoke-static {v1, p1}, Ln4/D;->m(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 25
     .line 26
-    sget-object v2, Ln4/o;->a:Ln4/o;
-
     .line 27
+    move-result p1
+
     .line 28
-    invoke-static {v2, v2}, Ln4/D;->m(Ljava/lang/Object;Ljava/lang/Object;)Z
+    if-eqz p1, :cond_0
 
     .line 29
     .line 30
+    const/4 p1, 0x1
+
     .line 31
-    move-result v2
+    return p1
 
     .line 32
-    if-eqz v2, :cond_3
-
-    .line 33
-    .line 34
-    iget-object v2, p0, Lm4/a;->c:Ljava/lang/String;
-
-    .line 35
-    .line 36
-    iget-object p1, p1, Lm4/a;->c:Ljava/lang/String;
-
-    .line 37
-    .line 38
-    invoke-static {v2, p1}, Ln4/D;->m(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 39
-    .line 40
-    .line 41
-    move-result p1
-
-    .line 42
-    if-eqz p1, :cond_3
-
-    .line 43
-    .line 44
-    return v1
-
-    .line 45
-    :cond_3
+    :cond_0
     return v0
 .end method
 
 .method public final hashCode()I
-    .locals 1
+    .locals 4
 
     .line 1
-    iget v0, p0, Lm4/a;->a:I
+    iget-object v0, p0, Lm4/A;->a:Lm4/a;
 
     .line 2
     .line 3
+    iget-object v1, p0, Lm4/A;->b:Lk4/d;
+
+    .line 4
+    .line 5
+    const/4 v2, 0x2
+
+    .line 6
+    new-array v2, v2, [Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    const/4 v3, 0x0
+
+    .line 9
+    aput-object v0, v2, v3
+
+    .line 10
+    .line 11
+    const/4 v0, 0x1
+
+    .line 12
+    aput-object v1, v2, v0
+
+    .line 13
+    .line 14
+    invoke-static {v2}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v0
+
+    .line 18
     return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, La3/e;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, La3/e;-><init>(Ljava/lang/Object;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v1, "key"
+
+    .line 7
+    .line 8
+    iget-object v2, p0, Lm4/A;->a:Lm4/a;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v2, v1}, La3/e;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 11
+    .line 12
+    .line 13
+    iget-object v1, p0, Lm4/A;->b:Lk4/d;
+
+    .line 14
+    .line 15
+    const-string v2, "feature"
+
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1, v2}, La3/e;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-virtual {v0}, La3/e;->toString()Ljava/lang/String;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v0
+
+    .line 24
+    return-object v0
 .end method

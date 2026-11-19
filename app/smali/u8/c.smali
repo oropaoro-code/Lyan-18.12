@@ -1,16 +1,8 @@
-.class public final LU8/c;
-.super Ljava/lang/Throwable;
+.class public abstract Lu8/c;
+.super Lu8/h;
 .source "SourceFile"
 
 
-# static fields
-.field private static final serialVersionUID:J = -0x408710da7251bc1cL
-
-
 # virtual methods
-.method public final fillInStackTrace()Ljava/lang/Throwable;
-    .locals 0
-
-    .line 1
-    return-object p0
+.method public abstract a()Landroid/os/Parcelable;
 .end method

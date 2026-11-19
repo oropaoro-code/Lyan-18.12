@@ -1,441 +1,168 @@
-.class public final Lz6/a;
+.class public final LZ6/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final g:Lz6/a;
-
-.field public static final h:Lz6/a;
-
-.field public static final i:Lz6/a;
-
-.field public static final j:Lz6/a;
-
-.field public static final k:Lz6/a;
-
-.field public static final l:Lz6/a;
-
-
 # instance fields
-.field public final a:[I
+.field private final idTranslations:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final b:[I
+.field private final operations:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "LZ6/g;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final c:Lz6/b;
+.field private final result:LZ6/b;
 
-.field public final d:I
-
-.field public final e:I
-
-.field public final f:I
+.field private final retryAfterSeconds:Ljava/lang/Integer;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>(LZ6/b;Ljava/util/Map;Ljava/util/List;Ljava/lang/Integer;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "LZ6/b;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;",
+            "Ljava/util/List<",
+            "+",
+            "LZ6/g;",
+            ">;",
+            "Ljava/lang/Integer;",
+            ")V"
+        }
+    .end annotation
 
-    .line 1
-    new-instance v0, Lz6/a;
+    const-string v0, "result"
 
-    .line 2
-    .line 3
-    const/16 v1, 0x1069
-
-    .line 4
-    .line 5
-    const/16 v2, 0x1000
-
-    .line 6
-    .line 7
-    const/4 v3, 0x1
-
-    .line 8
-    invoke-direct {v0, v1, v2, v3}, Lz6/a;-><init>(III)V
-
-    .line 9
-    .line 10
-    .line 11
-    sput-object v0, Lz6/a;->g:Lz6/a;
-
-    .line 12
-    .line 13
-    new-instance v0, Lz6/a;
-
-    .line 14
-    .line 15
-    const/16 v1, 0x409
-
-    .line 16
-    .line 17
-    const/16 v2, 0x400
-
-    .line 18
-    .line 19
-    invoke-direct {v0, v1, v2, v3}, Lz6/a;-><init>(III)V
-
-    .line 20
-    .line 21
-    .line 22
-    sput-object v0, Lz6/a;->h:Lz6/a;
-
-    .line 23
-    .line 24
-    new-instance v0, Lz6/a;
-
-    .line 25
-    .line 26
-    const/16 v1, 0x43
-
-    .line 27
-    .line 28
-    const/16 v2, 0x40
-
-    .line 29
-    .line 30
-    invoke-direct {v0, v1, v2, v3}, Lz6/a;-><init>(III)V
-
-    .line 31
-    .line 32
-    .line 33
-    sput-object v0, Lz6/a;->i:Lz6/a;
-
-    .line 34
-    .line 35
-    new-instance v0, Lz6/a;
-
-    .line 36
-    .line 37
-    const/16 v1, 0x13
-
-    .line 38
-    .line 39
-    const/16 v2, 0x10
-
-    .line 40
-    .line 41
-    invoke-direct {v0, v1, v2, v3}, Lz6/a;-><init>(III)V
-
-    .line 42
-    .line 43
-    .line 44
-    sput-object v0, Lz6/a;->j:Lz6/a;
-
-    .line 45
-    .line 46
-    new-instance v0, Lz6/a;
-
-    .line 47
-    .line 48
-    const/4 v1, 0x0
-
-    .line 49
-    const/16 v2, 0x11d
-
-    .line 50
-    .line 51
-    const/16 v4, 0x100
-
-    .line 52
-    .line 53
-    invoke-direct {v0, v2, v4, v1}, Lz6/a;-><init>(III)V
-
-    .line 54
-    .line 55
-    .line 56
-    sput-object v0, Lz6/a;->k:Lz6/a;
-
-    .line 57
-    .line 58
-    new-instance v0, Lz6/a;
-
-    .line 59
-    .line 60
-    const/16 v1, 0x12d
-
-    .line 61
-    .line 62
-    invoke-direct {v0, v1, v4, v3}, Lz6/a;-><init>(III)V
-
-    .line 63
-    .line 64
-    .line 65
-    sput-object v0, Lz6/a;->l:Lz6/a;
-
-    .line 66
-    .line 67
-    return-void
-.end method
-
-.method public constructor <init>(III)V
-    .locals 4
+    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    iput-object p1, p0, LZ6/a;->result:LZ6/b;
+
     .line 3
+    iput-object p2, p0, LZ6/a;->idTranslations:Ljava/util/Map;
+
     .line 4
-    iput p1, p0, Lz6/a;->e:I
+    iput-object p3, p0, LZ6/a;->operations:Ljava/util/List;
 
     .line 5
-    .line 6
-    iput p2, p0, Lz6/a;->d:I
+    iput-object p4, p0, LZ6/a;->retryAfterSeconds:Ljava/lang/Integer;
 
-    .line 7
-    .line 8
-    iput p3, p0, Lz6/a;->f:I
+    return-void
+.end method
 
-    .line 9
-    .line 10
-    new-array p3, p2, [I
+.method public synthetic constructor <init>(LZ6/b;Ljava/util/Map;Ljava/util/List;Ljava/lang/Integer;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 1
 
-    .line 11
-    .line 12
-    iput-object p3, p0, Lz6/a;->a:[I
+    and-int/lit8 p6, p5, 0x2
 
-    .line 13
-    .line 14
-    new-array p3, p2, [I
-
-    .line 15
-    .line 16
-    iput-object p3, p0, Lz6/a;->b:[I
-
-    .line 17
-    .line 18
-    const/4 p3, 0x1
-
-    .line 19
     const/4 v0, 0x0
 
-    .line 20
-    move v2, p3
+    if-eqz p6, :cond_0
 
-    .line 21
-    move v1, v0
+    move-object p2, v0
 
-    .line 22
-    :goto_0
-    if-ge v1, p2, :cond_1
-
-    .line 23
-    .line 24
-    iget-object v3, p0, Lz6/a;->a:[I
-
-    .line 25
-    .line 26
-    aput v2, v3, v1
-
-    .line 27
-    .line 28
-    shl-int/2addr v2, p3
-
-    .line 29
-    if-lt v2, p2, :cond_0
-
-    .line 30
-    .line 31
-    xor-int/2addr v2, p1
-
-    .line 32
-    add-int/lit8 v3, p2, -0x1
-
-    .line 33
-    .line 34
-    and-int/2addr v2, v3
-
-    .line 35
     :cond_0
-    add-int/lit8 v1, v1, 0x1
+    and-int/lit8 p6, p5, 0x4
 
-    .line 36
-    .line 37
-    goto :goto_0
+    if-eqz p6, :cond_1
 
-    .line 38
+    move-object p3, v0
+
     :cond_1
-    move p1, v0
+    and-int/lit8 p5, p5, 0x8
 
-    .line 39
-    :goto_1
-    add-int/lit8 v1, p2, -0x1
+    if-eqz p5, :cond_2
 
-    .line 40
-    .line 41
-    if-ge p1, v1, :cond_2
+    move-object p4, v0
 
-    .line 42
-    .line 43
-    iget-object v1, p0, Lz6/a;->b:[I
-
-    .line 44
-    .line 45
-    iget-object v2, p0, Lz6/a;->a:[I
-
-    .line 46
-    .line 47
-    aget v2, v2, p1
-
-    .line 48
-    .line 49
-    aput p1, v1, v2
-
-    .line 50
-    .line 51
-    add-int/lit8 p1, p1, 0x1
-
-    .line 52
-    .line 53
-    goto :goto_1
-
-    .line 54
+    .line 6
     :cond_2
-    new-instance p1, Lz6/b;
+    invoke-direct {p0, p1, p2, p3, p4}, LZ6/a;-><init>(LZ6/b;Ljava/util/Map;Ljava/util/List;Ljava/lang/Integer;)V
 
-    .line 55
-    .line 56
-    filled-new-array {v0}, [I
-
-    .line 57
-    .line 58
-    .line 59
-    move-result-object p2
-
-    .line 60
-    invoke-direct {p1, p0, p2}, Lz6/b;-><init>(Lz6/a;[I)V
-
-    .line 61
-    .line 62
-    .line 63
-    iput-object p1, p0, Lz6/a;->c:Lz6/b;
-
-    .line 64
-    .line 65
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(II)I
+.method public final getIdTranslations()Ljava/util/Map;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, LZ6/a;->idTranslations:Ljava/util/Map;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final getOperations()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "LZ6/g;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, LZ6/a;->operations:Ljava/util/List;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final getResult()LZ6/b;
     .locals 1
 
     .line 1
-    if-eqz p1, :cond_1
+    iget-object v0, p0, LZ6/a;->result:LZ6/b;
 
     .line 2
     .line 3
-    if-nez p2, :cond_0
-
-    .line 4
-    .line 5
-    goto :goto_0
-
-    .line 6
-    :cond_0
-    iget-object v0, p0, Lz6/a;->b:[I
-
-    .line 7
-    .line 8
-    aget p1, v0, p1
-
-    .line 9
-    .line 10
-    aget p2, v0, p2
-
-    .line 11
-    .line 12
-    add-int/2addr p1, p2
-
-    .line 13
-    iget p2, p0, Lz6/a;->d:I
-
-    .line 14
-    .line 15
-    add-int/lit8 p2, p2, -0x1
-
-    .line 16
-    .line 17
-    rem-int/2addr p1, p2
-
-    .line 18
-    iget-object p2, p0, Lz6/a;->a:[I
-
-    .line 19
-    .line 20
-    aget p1, p2, p1
-
-    .line 21
-    .line 22
-    return p1
-
-    .line 23
-    :cond_1
-    :goto_0
-    const/4 p1, 0x0
-
-    .line 24
-    return p1
+    return-object v0
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 3
+.method public final getRetryAfterSeconds()Ljava/lang/Integer;
+    .locals 1
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget-object v0, p0, LZ6/a;->retryAfterSeconds:Ljava/lang/Integer;
 
     .line 2
     .line 3
-    const-string v1, "GF(0x"
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget v1, p0, Lz6/a;->e:I
-
-    .line 9
-    .line 10
-    invoke-static {v1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object v1
-
-    .line 14
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 15
-    .line 16
-    .line 17
-    const/16 v1, 0x2c
-
-    .line 18
-    .line 19
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    .line 20
-    .line 21
-    .line 22
-    iget v1, p0, Lz6/a;->d:I
-
-    .line 23
-    .line 24
-    const/16 v2, 0x29
-
-    .line 25
-    .line 26
-    invoke-static {v0, v1, v2}, LU3/c;->s(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-object v0
-
-    .line 30
     return-object v0
 .end method

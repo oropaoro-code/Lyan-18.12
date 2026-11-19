@@ -1,20 +1,74 @@
-.class public interface abstract LD/L0;
-.super Ljava/lang/Object;
+.class public final LD/l0;
+.super Li9/c;
 .source "SourceFile"
 
 
+# instance fields
+.field public q:LD/n0;
+
+.field public synthetic r:Ljava/lang/Object;
+
+.field public final synthetic s:LD/n0;
+
+.field public t:I
+
+
+# direct methods
+.method public constructor <init>(LD/n0;Li9/c;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, LD/l0;->s:LD/n0;
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p2}, Li9/c;-><init>(Lg9/e;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
 # virtual methods
-.method public abstract a()Z
-.end method
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
-.method public abstract b()Z
-.end method
+    .line 1
+    iput-object p1, p0, LD/l0;->r:Ljava/lang/Object;
 
-.method public abstract c()Z
-.end method
+    .line 2
+    .line 3
+    iget p1, p0, LD/l0;->t:I
 
-.method public abstract d(F)F
-.end method
+    .line 4
+    .line 5
+    const/high16 v0, -0x80000000
 
-.method public abstract e(LB/n0;Lp9/f;Li9/c;)Ljava/lang/Object;
+    .line 6
+    .line 7
+    or-int/2addr p1, v0
+
+    .line 8
+    iput p1, p0, LD/l0;->t:I
+
+    .line 9
+    .line 10
+    iget-object p1, p0, LD/l0;->s:LD/n0;
+
+    .line 11
+    .line 12
+    const/4 v0, 0x0
+
+    .line 13
+    invoke-virtual {p1, v0, v0, p0}, LD/n0;->h(LD/U0;LD/g0;Li9/c;)Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p1
+
+    .line 17
+    return-object p1
 .end method

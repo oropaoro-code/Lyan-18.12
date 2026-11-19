@@ -1,114 +1,127 @@
-.class public abstract Lcom/google/android/gms/internal/measurement/M;
+.class public final Lcom/google/android/gms/internal/measurement/m;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lcom/google/android/gms/internal/measurement/o;
 
-# static fields
-.field public static final synthetic a:I
 
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 3
+# virtual methods
+.method public final a()Ljava/lang/Boolean;
+    .locals 1
 
     .line 1
-    const/4 v0, 0x1
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     .line 2
-    int-to-byte v0, v0
-
     .line 3
-    or-int/lit8 v0, v0, 0x2
+    return-object v0
+.end method
+
+.method public final e()Ljava/util/Iterator;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 1
+    if-ne p1, p0, :cond_0
+
+    .line 2
+    .line 3
+    const/4 p1, 0x1
+
+    .line 4
+    return p1
+
+    .line 5
+    :cond_0
+    instance-of p1, p1, Lcom/google/android/gms/internal/measurement/m;
+
+    .line 6
+    .line 7
+    return p1
+.end method
+
+.method public final f()Ljava/lang/Double;
+    .locals 2
+
+    .line 1
+    const-wide/16 v0, 0x0
+
+    .line 2
+    .line 3
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     .line 4
     .line 5
-    int-to-byte v0, v0
-
     .line 6
-    const/4 v1, 0x3
+    move-result-object v0
 
     .line 7
-    if-ne v0, v1, :cond_0
+    return-object v0
+.end method
 
+.method public final g()Lcom/google/android/gms/internal/measurement/o;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/google/android/gms/internal/measurement/o;->j:Lcom/google/android/gms/internal/measurement/m;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final h()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "null"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public final n(Ljava/lang/String;Ln6/n;Ljava/util/ArrayList;)Lcom/google/android/gms/internal/measurement/o;
+    .locals 0
+
+    .line 1
+    new-instance p2, Ljava/lang/IllegalStateException;
+
+    .line 2
+    .line 3
+    const-string p3, "null has no function "
+
+    .line 4
+    .line 5
+    invoke-virtual {p3, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 6
+    .line 7
     .line 8
+    move-result-object p1
+
     .line 9
-    return-void
+    invoke-direct {p2, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 10
-    :cond_0
-    new-instance v1, Ljava/lang/StringBuilder;
-
     .line 11
     .line 12
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 13
-    .line 14
-    .line 15
-    and-int/lit8 v2, v0, 0x1
-
-    .line 16
-    .line 17
-    if-nez v2, :cond_1
-
-    .line 18
-    .line 19
-    const-string v2, " hasDifferentDmaOwner"
-
-    .line 20
-    .line 21
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 22
-    .line 23
-    .line 24
-    :cond_1
-    and-int/lit8 v0, v0, 0x2
-
-    .line 25
-    .line 26
-    if-nez v0, :cond_2
-
-    .line 27
-    .line 28
-    const-string v0, " skipChecks"
-
-    .line 29
-    .line 30
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 31
-    .line 32
-    .line 33
-    :cond_2
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    .line 34
-    .line 35
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 36
-    .line 37
-    .line 38
-    move-result-object v1
-
-    .line 39
-    const-string v2, "Missing required properties:"
-
-    .line 40
-    .line 41
-    invoke-virtual {v2, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 42
-    .line 43
-    .line 44
-    move-result-object v1
-
-    .line 45
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 46
-    .line 47
-    .line 48
-    throw v0
+    throw p2
 .end method

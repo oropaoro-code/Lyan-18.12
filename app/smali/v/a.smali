@@ -1,26 +1,51 @@
-.class public abstract LV/a;
+.class public abstract Lv/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final a:F
+.field public static final a:[I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 1
-    const/4 v0, 0x0
+    const/16 v0, 0xd
 
     .line 2
-    int-to-float v0, v0
-
     .line 3
-    sput v0, LV/a;->a:F
+    new-array v0, v0, [I
 
     .line 4
     .line 5
+    fill-array-data v0, :array_0
+
+    .line 6
+    .line 7
+    .line 8
+    sput-object v0, Lv/a;->a:[I
+
+    .line 9
+    .line 10
     return-void
+
+    .line 11
+    :array_0
+    .array-data 4
+        0x101013f
+        0x1010140
+        0x7f04009c
+        0x7f04009d
+        0x7f04009e
+        0x7f0400a0
+        0x7f0400a1
+        0x7f0400a2
+        0x7f040140
+        0x7f040141
+        0x7f040143
+        0x7f040144
+        0x7f040146
+    .end array-data
 .end method

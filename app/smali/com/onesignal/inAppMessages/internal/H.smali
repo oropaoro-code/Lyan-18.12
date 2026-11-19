@@ -1,60 +1,53 @@
-.class public final Lcom/onesignal/inAppMessages/internal/H;
-.super Lq9/j;
+.class public final Lcom/onesignal/inAppMessages/internal/h;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lp9/d;
+.implements Li7/i;
+.implements Li7/h;
+.implements Li7/f;
+.implements Li7/e;
 
 
 # instance fields
-.field final synthetic $message:Lcom/onesignal/inAppMessages/internal/b;
+.field private final message:Li7/a;
 
 
 # direct methods
-.method public constructor <init>(Lcom/onesignal/inAppMessages/internal/b;)V
-    .locals 0
+.method public constructor <init>(Li7/a;)V
+    .locals 1
 
-    iput-object p1, p0, Lcom/onesignal/inAppMessages/internal/H;->$message:Lcom/onesignal/inAppMessages/internal/b;
+    .line 1
+    const-string v0, "message"
 
-    const/4 p1, 0x1
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-direct {p0, p1}, Lq9/j;-><init>(I)V
+    .line 4
+    .line 5
+    .line 6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 7
+    .line 8
+    .line 9
+    iput-object p1, p0, Lcom/onesignal/inAppMessages/internal/h;->message:Li7/a;
+
+    .line 10
+    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public getMessage()Li7/a;
+    .locals 1
 
     .line 1
-    invoke-static {p1}, LU3/c;->y(Ljava/lang/Object;)V
-
-    const/4 p1, 0x0
-
-    invoke-virtual {p0, p1}, Lcom/onesignal/inAppMessages/internal/H;->invoke(Li7/g;)V
-
-    sget-object p1, Lb9/n;->a:Lb9/n;
-
-    return-object p1
-.end method
-
-.method public final invoke(Li7/g;)V
-    .locals 2
-
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    iget-object v0, p0, Lcom/onesignal/inAppMessages/internal/h;->message:Li7/a;
 
     .line 2
-    new-instance v0, Lcom/onesignal/inAppMessages/internal/h;
-
-    iget-object v1, p0, Lcom/onesignal/inAppMessages/internal/H;->$message:Lcom/onesignal/inAppMessages/internal/b;
-
-    invoke-direct {v0, v1}, Lcom/onesignal/inAppMessages/internal/h;-><init>(Li7/a;)V
-
-    invoke-interface {p1}, Li7/g;->b()V
-
-    return-void
+    .line 3
+    return-object v0
 .end method

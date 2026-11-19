@@ -1,589 +1,523 @@
-.class public abstract LJ1/d;
+.class public final Lj1/d;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LG0/I;
+
 
 # static fields
-.field public static final a:[Ljava/lang/String;
+.field public static final b:Lj1/d;
+
+.field public static final c:Lj1/d;
+
+
+# instance fields
+.field public final synthetic a:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method static synthetic constructor <clinit>()V
+    .locals 2
 
     .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    new-array v0, v0, [Ljava/lang/String;
-
-    .line 3
-    .line 4
-    sput-object v0, LJ1/d;->a:[Ljava/lang/String;
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public static a(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;)V
-    .locals 12
-
-    .line 1
-    const/16 v0, 0x800
+    new-instance v0, Lj1/d;
 
     .line 2
     .line 3
     const/4 v1, 0x0
 
     .line 4
-    const/4 v2, 0x1
+    invoke-direct {v0, v1}, Lj1/d;-><init>(I)V
 
     .line 5
-    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
-
     .line 6
     .line 7
-    const/16 v4, 0x1e
+    sput-object v0, Lj1/d;->b:Lj1/d;
 
     .line 8
     .line 9
-    if-lt v3, v4, :cond_0
+    new-instance v0, Lj1/d;
 
     .line 10
     .line 11
-    invoke-static {p0, p1}, LJ1/b;->a(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;)V
+    const/4 v1, 0x1
 
     .line 12
+    invoke-direct {v0, v1}, Lj1/d;-><init>(I)V
+
     .line 13
     .line 14
-    goto/16 :goto_6
-
     .line 15
+    sput-object v0, Lj1/d;->c:Lj1/d;
+
     .line 16
-    :cond_0
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 17
+    return-void
+.end method
+
+.method public synthetic constructor <init>(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lj1/d;->a:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic a(LG0/n;Ljava/util/List;I)I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lj1/d;->a:I
+
+    invoke-static {p0, p1, p2, p3}, LA/j;->j(LG0/I;LG0/n;Ljava/util/List;I)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final synthetic d(LG0/n;Ljava/util/List;I)I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lj1/d;->a:I
+
+    invoke-static {p0, p1, p2, p3}, LA/j;->d(LG0/I;LG0/n;Ljava/util/List;I)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final synthetic f(LG0/n;Ljava/util/List;I)I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lj1/d;->a:I
+
+    invoke-static {p0, p1, p2, p3}, LA/j;->g(LG0/I;LG0/n;Ljava/util/List;I)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final g(LG0/K;Ljava/util/List;J)LG0/J;
+    .locals 8
+
+    .line 1
+    iget v0, p0, Lj1/d;->a:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-interface {p2}, Ljava/util/List;->size()I
+
+    .line 7
+    .line 8
+    .line 9
+    move-result v0
+
+    .line 10
+    sget-object v1, Lc9/w;->q:Lc9/w;
+
+    .line 11
+    .line 12
+    const/4 v2, 0x0
+
+    .line 13
+    if-eqz v0, :cond_2
+
+    .line 14
+    .line 15
+    const/4 v3, 0x1
+
+    .line 16
+    if-eq v0, v3, :cond_1
 
     .line 17
     .line 18
+    new-instance v0, Ljava/util/ArrayList;
+
     .line 19
-    if-lt v3, v4, :cond_1
-
     .line 20
-    .line 21
-    invoke-static {p0, p1}, LJ1/b;->a(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;)V
+    invoke-interface {p2}, Ljava/util/List;->size()I
 
+    .line 21
     .line 22
     .line 23
+    move-result v3
+
     .line 24
-    goto/16 :goto_6
+    invoke-direct {v0, v3}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 25
     .line 26
-    :cond_1
-    iget v3, p0, Landroid/view/inputmethod/EditorInfo;->initialSelStart:I
-
     .line 27
+    move-object v3, p2
+
     .line 28
-    iget v4, p0, Landroid/view/inputmethod/EditorInfo;->initialSelEnd:I
+    check-cast v3, Ljava/util/Collection;
 
     .line 29
     .line 30
-    if-le v3, v4, :cond_2
+    invoke-interface {v3}, Ljava/util/Collection;->size()I
 
     .line 31
     .line 32
-    move v5, v4
-
     .line 33
-    goto :goto_0
+    move-result v3
 
     .line 34
-    :cond_2
-    move v5, v3
+    move v4, v2
 
     .line 35
-    :goto_0
-    if-le v3, v4, :cond_3
+    move v5, v4
 
     .line 36
-    .line 37
-    goto :goto_1
+    :goto_0
+    if-ge v2, v3, :cond_0
 
+    .line 37
     .line 38
-    :cond_3
-    move v3, v4
+    invoke-interface {p2, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 39
-    :goto_1
-    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
-
     .line 40
     .line 41
+    move-result-object v6
+
     .line 42
-    move-result v4
+    check-cast v6, LG0/H;
 
     .line 43
-    const/4 v6, 0x0
-
     .line 44
-    if-ltz v5, :cond_c
+    invoke-interface {v6, p3, p4}, LG0/H;->a(J)LG0/S;
 
     .line 45
     .line 46
-    if-le v3, v4, :cond_4
-
     .line 47
+    move-result-object v6
+
     .line 48
-    goto/16 :goto_5
+    iget v7, v6, LG0/S;->q:I
 
     .line 49
     .line 50
-    :cond_4
-    iget v7, p0, Landroid/view/inputmethod/EditorInfo;->inputType:I
+    invoke-static {v4, v7}, Ljava/lang/Math;->max(II)I
 
     .line 51
     .line 52
-    and-int/lit16 v7, v7, 0xfff
-
     .line 53
+    move-result v4
+
     .line 54
-    const/16 v8, 0x81
+    iget v7, v6, LG0/S;->r:I
 
     .line 55
     .line 56
-    if-eq v7, v8, :cond_b
+    invoke-static {v5, v7}, Ljava/lang/Math;->max(II)I
 
     .line 57
     .line 58
-    const/16 v8, 0xe1
-
     .line 59
+    move-result v5
+
     .line 60
-    if-eq v7, v8, :cond_b
+    invoke-virtual {v0, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 61
     .line 62
-    const/16 v8, 0x12
-
     .line 63
-    .line 64
-    if-ne v7, v8, :cond_5
+    add-int/lit8 v2, v2, 0x1
 
+    .line 64
     .line 65
+    goto :goto_0
+
     .line 66
-    goto/16 :goto_4
+    :cond_0
+    new-instance p2, LG0/V;
 
     .line 67
     .line 68
-    :cond_5
-    if-gt v4, v0, :cond_6
+    const/4 p3, 0x3
 
     .line 69
-    .line 70
-    invoke-static {p0, p1, v5, v3}, LJ1/d;->c(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;II)V
+    invoke-direct {p2, p3, v0}, LG0/V;-><init>(ILjava/util/ArrayList;)V
 
+    .line 70
     .line 71
     .line 72
-    .line 73
-    goto/16 :goto_6
+    invoke-interface {p1, v4, v5, v1, p2}, LG0/K;->t(IILjava/util/Map;Lp9/d;)LG0/J;
 
+    .line 73
     .line 74
     .line 75
-    :cond_6
-    sub-int v4, v3, v5
+    move-result-object p1
 
     .line 76
+    goto :goto_1
+
     .line 77
-    const/16 v6, 0x400
+    :cond_1
+    invoke-interface {p2, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 78
     .line 79
-    if-le v4, v6, :cond_7
-
     .line 80
+    move-result-object p2
+
     .line 81
-    move v6, v1
+    check-cast p2, LG0/H;
 
     .line 82
-    goto :goto_2
-
     .line 83
-    :cond_7
-    move v6, v4
+    invoke-interface {p2, p3, p4}, LG0/H;->a(J)LG0/S;
 
     .line 84
-    :goto_2
-    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
-
     .line 85
     .line 86
+    move-result-object p2
+
     .line 87
-    move-result v7
+    iget p3, p2, LG0/S;->q:I
 
     .line 88
-    sub-int/2addr v7, v3
-
     .line 89
-    sub-int/2addr v0, v6
+    iget p4, p2, LG0/S;->r:I
 
     .line 90
-    const-wide v8, 0x3fe999999999999aL    # 0.8
-
     .line 91
+    new-instance v0, LG/y;
+
     .line 92
     .line 93
+    const/16 v2, 0xa
+
     .line 94
     .line 95
-    int-to-double v10, v0
+    invoke-direct {v0, p2, v2}, LG/y;-><init>(LG0/S;I)V
 
     .line 96
-    mul-double/2addr v10, v8
-
     .line 97
-    double-to-int v8, v10
-
     .line 98
-    invoke-static {v5, v8}, Ljava/lang/Math;->min(II)I
+    invoke-interface {p1, p3, p4, v1, v0}, LG0/K;->t(IILjava/util/Map;Lp9/d;)LG0/J;
 
     .line 99
     .line 100
     .line 101
-    move-result v8
+    move-result-object p1
 
     .line 102
-    sub-int v8, v0, v8
+    goto :goto_1
 
     .line 103
-    .line 104
-    invoke-static {v7, v8}, Ljava/lang/Math;->min(II)I
+    :cond_2
+    sget-object p2, Lj1/b;->v:Lj1/b;
 
+    .line 104
     .line 105
+    invoke-interface {p1, v2, v2, v1, p2}, LG0/K;->t(IILjava/util/Map;Lp9/d;)LG0/J;
+
     .line 106
     .line 107
-    move-result v7
-
     .line 108
-    sub-int/2addr v0, v7
+    move-result-object p1
 
     .line 109
-    invoke-static {v5, v0}, Ljava/lang/Math;->min(II)I
+    :goto_1
+    return-object p1
 
     .line 110
+    :pswitch_0
+    new-instance v0, Ljava/util/ArrayList;
+
     .line 111
     .line 112
-    move-result v0
+    invoke-interface {p2}, Ljava/util/List;->size()I
 
     .line 113
-    sub-int/2addr v5, v0
-
     .line 114
-    invoke-interface {p1, v5}, Ljava/lang/CharSequence;->charAt(I)C
-
     .line 115
+    move-result v1
+
     .line 116
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
+
     .line 117
-    move-result v8
-
     .line 118
-    invoke-static {v8}, Ljava/lang/Character;->isLowSurrogate(C)Z
-
     .line 119
-    .line 120
-    .line 121
-    move-result v8
+    move-object v1, p2
 
+    .line 120
+    check-cast v1, Ljava/util/Collection;
+
+    .line 121
     .line 122
-    if-eqz v8, :cond_8
+    invoke-interface {v1}, Ljava/util/Collection;->size()I
 
     .line 123
     .line 124
-    add-int/2addr v5, v2
-
     .line 125
-    sub-int/2addr v0, v2
+    move-result v1
 
     .line 126
-    :cond_8
-    add-int v8, v3, v7
+    const/4 v2, 0x0
 
     .line 127
+    move v3, v2
+
     .line 128
-    sub-int/2addr v8, v2
+    move v4, v3
 
     .line 129
-    invoke-interface {p1, v8}, Ljava/lang/CharSequence;->charAt(I)C
+    :goto_2
+    if-ge v2, v1, :cond_3
 
     .line 130
     .line 131
+    invoke-interface {p2, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
     .line 132
-    move-result v8
-
     .line 133
-    invoke-static {v8}, Ljava/lang/Character;->isHighSurrogate(C)Z
-
     .line 134
-    .line 135
-    .line 136
-    move-result v8
+    move-result-object v5
 
+    .line 135
+    check-cast v5, LG0/H;
+
+    .line 136
     .line 137
-    if-eqz v8, :cond_9
+    invoke-interface {v5, p3, p4}, LG0/H;->a(J)LG0/S;
 
     .line 138
     .line 139
-    sub-int/2addr v7, v2
-
     .line 140
-    :cond_9
-    add-int v8, v0, v6
+    move-result-object v5
 
     .line 141
+    iget v6, v5, LG0/S;->q:I
+
     .line 142
-    add-int v9, v8, v7
-
     .line 143
-    .line 144
-    if-eq v6, v4, :cond_a
+    invoke-static {v3, v6}, Ljava/lang/Math;->max(II)I
 
+    .line 144
     .line 145
     .line 146
-    add-int v4, v5, v0
+    move-result v3
 
     .line 147
-    .line 148
-    invoke-interface {p1, v5, v4}, Ljava/lang/CharSequence;->subSequence(II)Ljava/lang/CharSequence;
+    iget v6, v5, LG0/S;->r:I
 
+    .line 148
     .line 149
+    invoke-static {v4, v6}, Ljava/lang/Math;->max(II)I
+
     .line 150
     .line 151
-    move-result-object v4
-
     .line 152
-    add-int/2addr v7, v3
+    move-result v4
 
     .line 153
-    invoke-interface {p1, v3, v7}, Ljava/lang/CharSequence;->subSequence(II)Ljava/lang/CharSequence;
+    invoke-virtual {v0, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 154
     .line 155
     .line 156
-    move-result-object p1
+    add-int/lit8 v2, v2, 0x1
 
     .line 157
-    const/4 v3, 0x2
-
     .line 158
-    new-array v3, v3, [Ljava/lang/CharSequence;
+    goto :goto_2
 
     .line 159
-    .line 160
-    aput-object v4, v3, v1
+    :cond_3
+    invoke-interface {p2}, Ljava/util/List;->isEmpty()Z
 
+    .line 160
     .line 161
     .line 162
-    aput-object p1, v3, v2
+    move-result p2
 
     .line 163
-    .line 164
-    invoke-static {v3}, Landroid/text/TextUtils;->concat([Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    if-eqz p2, :cond_4
 
+    .line 164
     .line 165
+    invoke-static {p3, p4}, Lf1/a;->j(J)I
+
     .line 166
     .line 167
-    move-result-object p1
-
     .line 168
-    goto :goto_3
+    move-result v3
 
     .line 169
-    :cond_a
-    add-int/2addr v9, v5
+    invoke-static {p3, p4}, Lf1/a;->i(J)I
 
     .line 170
-    invoke-interface {p1, v5, v9}, Ljava/lang/CharSequence;->subSequence(II)Ljava/lang/CharSequence;
-
     .line 171
     .line 172
+    move-result v4
+
     .line 173
-    move-result-object p1
+    :cond_4
+    new-instance p2, LG0/V;
 
     .line 174
-    :goto_3
-    invoke-static {p0, p1, v0, v8}, LJ1/d;->c(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;II)V
-
     .line 175
+    const/4 p3, 0x2
+
     .line 176
+    invoke-direct {p2, p3, v0}, LG0/V;-><init>(ILjava/util/ArrayList;)V
+
     .line 177
-    goto :goto_6
-
     .line 178
-    :cond_b
-    :goto_4
-    invoke-static {p0, v6, v1, v1}, LJ1/d;->c(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;II)V
-
     .line 179
+    sget-object p3, Lc9/w;->q:Lc9/w;
+
     .line 180
     .line 181
-    goto :goto_6
+    invoke-interface {p1, v3, v4, p3, p2}, LG0/K;->t(IILjava/util/Map;Lp9/d;)LG0/J;
 
     .line 182
-    :cond_c
-    :goto_5
-    invoke-static {p0, v6, v1, v1}, LJ1/d;->c(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;II)V
-
     .line 183
     .line 184
+    move-result-object p1
+
     .line 185
-    :goto_6
-    return-void
+    return-object p1
+
+    .line 186
+    nop
+
+    .line 187
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method
 
-.method public static b(Landroid/view/inputmethod/EditorInfo;Z)V
-    .locals 2
+.method public final synthetic h(LG0/n;Ljava/util/List;I)I
+    .locals 1
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    iget v0, p0, Lj1/d;->a:I
 
-    .line 2
-    .line 3
-    const/16 v1, 0x23
+    invoke-static {p0, p1, p2, p3}, LA/j;->m(LG0/I;LG0/n;Ljava/util/List;I)I
 
-    .line 4
-    .line 5
-    if-lt v0, v1, :cond_0
+    move-result p1
 
-    .line 6
-    .line 7
-    invoke-static {p0, p1}, LJ1/c;->a(Landroid/view/inputmethod/EditorInfo;Z)V
-
-    .line 8
-    .line 9
-    .line 10
-    :cond_0
-    iget-object v0, p0, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
-
-    .line 11
-    .line 12
-    if-nez v0, :cond_1
-
-    .line 13
-    .line 14
-    new-instance v0, Landroid/os/Bundle;
-
-    .line 15
-    .line 16
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
-
-    .line 17
-    .line 18
-    .line 19
-    iput-object v0, p0, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
-
-    .line 20
-    .line 21
-    :cond_1
-    iget-object p0, p0, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
-
-    .line 22
-    .line 23
-    const-string v0, "androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED"
-
-    .line 24
-    .line 25
-    invoke-virtual {p0, v0, p1}, Landroid/os/BaseBundle;->putBoolean(Ljava/lang/String;Z)V
-
-    .line 26
-    .line 27
-    .line 28
-    return-void
-.end method
-
-.method public static c(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;II)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
-
-    .line 4
-    .line 5
-    new-instance v0, Landroid/os/Bundle;
-
-    .line 6
-    .line 7
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
-
-    .line 8
-    .line 9
-    .line 10
-    iput-object v0, p0, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
-
-    .line 11
-    .line 12
-    :cond_0
-    if-eqz p1, :cond_1
-
-    .line 13
-    .line 14
-    new-instance v0, Landroid/text/SpannableStringBuilder;
-
-    .line 15
-    .line 16
-    invoke-direct {v0, p1}, Landroid/text/SpannableStringBuilder;-><init>(Ljava/lang/CharSequence;)V
-
-    .line 17
-    .line 18
-    .line 19
-    goto :goto_0
-
-    .line 20
-    :cond_1
-    const/4 v0, 0x0
-
-    .line 21
-    :goto_0
-    iget-object p1, p0, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
-
-    .line 22
-    .line 23
-    const-string v1, "androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_SURROUNDING_TEXT"
-
-    .line 24
-    .line 25
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putCharSequence(Ljava/lang/String;Ljava/lang/CharSequence;)V
-
-    .line 26
-    .line 27
-    .line 28
-    iget-object p1, p0, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
-
-    .line 29
-    .line 30
-    const-string v0, "androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_SELECTION_HEAD"
-
-    .line 31
-    .line 32
-    invoke-virtual {p1, v0, p2}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
-
-    .line 33
-    .line 34
-    .line 35
-    iget-object p0, p0, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
-
-    .line 36
-    .line 37
-    const-string p1, "androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_SELECTION_END"
-
-    .line 38
-    .line 39
-    invoke-virtual {p0, p1, p3}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
-
-    .line 40
-    .line 41
-    .line 42
-    return-void
+    return p1
 .end method

@@ -1,23 +1,55 @@
-.class public final Lcom/onesignal/user/internal/operations/impl/executors/a;
+.class public abstract synthetic Lcom/onesignal/user/internal/operations/impl/executors/A;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
+# static fields
+.field public static final synthetic $EnumSwitchMapping$0:[I
+
+
 # direct methods
-.method private constructor <init>()V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {}, Lcom/onesignal/common/j;->values()[Lcom/onesignal/common/j;
 
-    return-void
-.end method
+    move-result-object v0
 
-.method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-    .locals 0
+    array-length v0, v0
 
-    .line 1
-    invoke-direct {p0}, Lcom/onesignal/user/internal/operations/impl/executors/a;-><init>()V
+    new-array v0, v0, [I
+
+    sget-object v1, Lcom/onesignal/common/j;->RETRYABLE:Lcom/onesignal/common/j;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    aput v2, v0, v1
+
+    sget-object v1, Lcom/onesignal/common/j;->UNAUTHORIZED:Lcom/onesignal/common/j;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x2
+
+    aput v2, v0, v1
+
+    sget-object v1, Lcom/onesignal/common/j;->MISSING:Lcom/onesignal/common/j;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x3
+
+    aput v2, v0, v1
+
+    sput-object v0, Lcom/onesignal/user/internal/operations/impl/executors/A;->$EnumSwitchMapping$0:[I
 
     return-void
 .end method

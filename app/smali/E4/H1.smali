@@ -1,189 +1,167 @@
-.class public abstract synthetic LE4/H1;
+.class public final LE4/h1;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
 
-# static fields
-.field public static final synthetic a:[I
 
-.field public static final synthetic b:[I
+# instance fields
+.field public final synthetic q:I
+
+.field public final synthetic r:LE4/g1;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public synthetic constructor <init>(LE4/g1;I)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x5
+    iput p2, p0, LE4/h1;->q:I
+
+    iput-object p1, p0, LE4/h1;->r:LE4/g1;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 4
+
+    .line 1
+    iget v0, p0, LE4/h1;->q:I
 
     .line 2
-    invoke-static {v0}, LX/c;->c(I)[I
-
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
     .line 5
-    move-result-object v1
-
     .line 6
-    array-length v1, v1
+    iget-object v0, p0, LE4/h1;->r:LE4/g1;
 
     .line 7
-    new-array v1, v1, [I
-
     .line 8
+    iget-object v1, v0, LE4/g1;->c:LE4/Z0;
+
     .line 9
-    sput-object v1, LE4/H1;->b:[I
-
     .line 10
-    .line 11
-    const/4 v2, 0x1
+    new-instance v2, Landroid/content/ComponentName;
 
+    .line 11
     .line 12
-    :try_start_0
-    aput v2, v1, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    iget-object v0, v0, LE4/g1;->c:LE4/Z0;
 
     .line 13
     .line 14
-    :catch_0
-    const/4 v1, 0x2
+    iget-object v0, v0, LE4/u0;->a:Ljava/lang/Object;
 
     .line 15
-    :try_start_1
-    sget-object v3, LE4/H1;->b:[I
-
     .line 16
+    check-cast v0, LE4/m0;
+
     .line 17
-    aput v1, v3, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
     .line 18
-    .line 19
-    :catch_1
-    const/4 v3, 0x3
+    iget-object v0, v0, LE4/m0;->a:Landroid/content/Context;
 
+    .line 19
     .line 20
-    :try_start_2
-    sget-object v4, LE4/H1;->b:[I
+    const-string v3, "com.google.android.gms.measurement.AppMeasurementService"
 
     .line 21
     .line 22
-    aput v3, v4, v3
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    invoke-direct {v2, v0, v3}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 23
     .line 24
-    :catch_2
-    const/4 v4, 0x4
-
     .line 25
-    :try_start_3
-    sget-object v5, LE4/H1;->b:[I
+    invoke-virtual {v1}, LE4/A;->m()V
 
     .line 26
     .line 27
-    aput v4, v5, v4
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
     .line 28
-    .line 29
-    :catch_3
-    const/4 v5, 0x7
+    iget-object v0, v1, LE4/Z0;->d:LE4/H;
 
+    .line 29
     .line 30
-    invoke-static {v5}, LX/c;->c(I)[I
+    if-eqz v0, :cond_0
 
     .line 31
     .line 32
+    const/4 v0, 0x0
+
     .line 33
-    move-result-object v5
+    iput-object v0, v1, LE4/Z0;->d:LE4/H;
 
     .line 34
-    array-length v5, v5
-
     .line 35
-    new-array v5, v5, [I
+    invoke-virtual {v1}, LE4/u0;->g()LE4/P;
 
     .line 36
     .line 37
-    sput-object v5, LE4/H1;->a:[I
-
     .line 38
+    move-result-object v0
+
     .line 39
-    :try_start_4
-    aput v2, v5, v2
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+    const-string v3, "Disconnected from device MeasurementService"
 
     .line 40
     .line 41
-    :catch_4
-    :try_start_5
-    sget-object v2, LE4/H1;->a:[I
+    iget-object v0, v0, LE4/P;->n:LE4/S;
 
     .line 42
     .line 43
-    aput v1, v2, v1
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+    invoke-virtual {v0, v2, v3}, LE4/S;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 44
     .line 45
-    :catch_5
-    :try_start_6
-    sget-object v1, LE4/H1;->a:[I
-
     .line 46
-    .line 47
-    aput v3, v1, v3
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+    invoke-virtual {v1}, LE4/A;->m()V
 
+    .line 47
     .line 48
     .line 49
-    :catch_6
-    :try_start_7
-    sget-object v1, LE4/H1;->a:[I
+    invoke-virtual {v1}, LE4/Z0;->y()V
 
     .line 50
     .line 51
-    aput v4, v1, v4
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
-
     .line 52
+    :cond_0
+    return-void
+
     .line 53
-    :catch_7
-    :try_start_8
-    sget-object v1, LE4/H1;->a:[I
+    :pswitch_0
+    iget-object v0, p0, LE4/h1;->r:LE4/g1;
 
     .line 54
     .line 55
-    aput v0, v1, v0
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
+    iget-object v0, v0, LE4/g1;->c:LE4/Z0;
 
     .line 56
     .line 57
-    :catch_8
-    :try_start_9
-    sget-object v0, LE4/H1;->a:[I
+    const/4 v1, 0x0
 
     .line 58
-    .line 59
-    const/4 v1, 0x6
+    iput-object v1, v0, LE4/Z0;->d:LE4/H;
 
+    .line 59
     .line 60
-    aput v1, v0, v1
-    :try_end_9
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
+    invoke-virtual {v0}, LE4/Z0;->D()V
 
     .line 61
     .line 62
-    :catch_9
+    .line 63
     return-void
+
+    .line 64
+    nop
+
+    .line 65
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

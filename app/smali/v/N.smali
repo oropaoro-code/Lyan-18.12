@@ -1,252 +1,180 @@
-.class public final LV/N;
-.super Ljava/lang/Object;
+.class public final LV/n;
+.super Lq9/j;
 .source "SourceFile"
+
+# interfaces
+.implements Lp9/d;
+
+
+# static fields
+.field public static final r:LV/n;
+
+.field public static final s:LV/n;
+
+.field public static final t:LV/n;
 
 
 # instance fields
-.field public final a:J
-
-.field public final b:J
-
-.field public final c:J
-
-.field public final d:J
+.field public final synthetic q:I
 
 
 # direct methods
-.method public constructor <init>(JJJJ)V
-    .locals 0
+.method static synthetic constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LV/n;
 
     .line 2
     .line 3
+    const/4 v1, 0x1
+
     .line 4
-    iput-wide p1, p0, LV/N;->a:J
+    const/4 v2, 0x0
 
     .line 5
-    .line 6
-    iput-wide p3, p0, LV/N;->b:J
+    invoke-direct {v0, v1, v2}, LV/n;-><init>(II)V
 
+    .line 6
     .line 7
     .line 8
-    iput-wide p5, p0, LV/N;->c:J
+    sput-object v0, LV/n;->r:LV/n;
 
     .line 9
     .line 10
-    iput-wide p7, p0, LV/N;->d:J
+    new-instance v0, LV/n;
 
     .line 11
     .line 12
+    const/4 v1, 0x1
+
+    .line 13
+    const/4 v2, 0x1
+
+    .line 14
+    invoke-direct {v0, v1, v2}, LV/n;-><init>(II)V
+
+    .line 15
+    .line 16
+    .line 17
+    sput-object v0, LV/n;->s:LV/n;
+
+    .line 18
+    .line 19
+    new-instance v0, LV/n;
+
+    .line 20
+    .line 21
+    const/4 v1, 0x1
+
+    .line 22
+    const/4 v2, 0x2
+
+    .line 23
+    invoke-direct {v0, v1, v2}, LV/n;-><init>(II)V
+
+    .line 24
+    .line 25
+    .line 26
+    sput-object v0, LV/n;->t:LV/n;
+
+    .line 27
+    .line 28
+    return-void
+.end method
+
+.method public synthetic constructor <init>(II)V
+    .locals 0
+
+    .line 1
+    iput p2, p0, LV/n;->q:I
+
+    invoke-direct {p0, p1}, Lq9/j;-><init>(I)V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 6
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 6
-    if-eqz p1, :cond_6
-
-    .line 7
-    .line 8
-    instance-of v2, p1, LV/N;
-
-    .line 9
-    .line 10
-    if-nez v2, :cond_1
-
-    .line 11
-    .line 12
-    goto :goto_0
-
-    .line 13
-    :cond_1
-    check-cast p1, LV/N;
-
-    .line 14
-    .line 15
-    iget-wide v2, p1, LV/N;->a:J
-
-    .line 16
-    .line 17
-    iget-wide v4, p0, LV/N;->a:J
-
-    .line 18
-    .line 19
-    invoke-static {v4, v5, v2, v3}, Lr0/p;->c(JJ)Z
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v2
-
-    .line 23
-    if-nez v2, :cond_2
-
-    .line 24
-    .line 25
-    return v1
-
-    .line 26
-    :cond_2
-    iget-wide v2, p0, LV/N;->b:J
-
-    .line 27
-    .line 28
-    iget-wide v4, p1, LV/N;->b:J
-
-    .line 29
-    .line 30
-    invoke-static {v2, v3, v4, v5}, Lr0/p;->c(JJ)Z
-
-    .line 31
-    .line 32
-    .line 33
-    move-result v2
-
-    .line 34
-    if-nez v2, :cond_3
-
-    .line 35
-    .line 36
-    return v1
-
-    .line 37
-    :cond_3
-    iget-wide v2, p0, LV/N;->c:J
-
-    .line 38
-    .line 39
-    iget-wide v4, p1, LV/N;->c:J
-
-    .line 40
-    .line 41
-    invoke-static {v2, v3, v4, v5}, Lr0/p;->c(JJ)Z
-
-    .line 42
-    .line 43
-    .line 44
-    move-result v2
-
-    .line 45
-    if-nez v2, :cond_4
-
-    .line 46
-    .line 47
-    return v1
-
-    .line 48
-    :cond_4
-    iget-wide v2, p0, LV/N;->d:J
-
-    .line 49
-    .line 50
-    iget-wide v4, p1, LV/N;->d:J
-
-    .line 51
-    .line 52
-    invoke-static {v2, v3, v4, v5}, Lr0/p;->c(JJ)Z
-
-    .line 53
-    .line 54
-    .line 55
-    move-result p1
-
-    .line 56
-    if-nez p1, :cond_5
-
-    .line 57
-    .line 58
-    return v1
-
-    .line 59
-    :cond_5
-    return v0
-
-    .line 60
-    :cond_6
-    :goto_0
-    return v1
-.end method
-
-.method public final hashCode()I
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
 
     .line 1
-    iget-wide v0, p0, LV/N;->a:J
+    sget-object v0, Lb9/n;->a:Lb9/n;
 
     .line 2
     .line 3
-    invoke-static {v0, v1}, Lr0/p;->i(J)I
+    iget v1, p0, LV/n;->q:I
 
     .line 4
     .line 5
+    packed-switch v1, :pswitch_data_0
+
     .line 6
-    move-result v0
-
     .line 7
-    const/16 v1, 0x1f
-
     .line 8
-    .line 9
-    mul-int/2addr v0, v1
+    check-cast p1, LQ0/i;
 
+    .line 9
     .line 10
-    iget-wide v2, p0, LV/N;->b:J
+    sget-object v1, LQ0/q;->a:[Lw9/d;
 
     .line 11
     .line 12
-    invoke-static {v0, v1, v2, v3}, LA/j;->t(IIJ)I
+    sget-object v1, LQ0/o;->l:LQ0/r;
 
     .line 13
     .line 14
-    .line 15
-    move-result v0
+    sget-object v2, LQ0/q;->a:[Lw9/d;
 
+    .line 15
     .line 16
-    iget-wide v2, p0, LV/N;->c:J
+    const/4 v3, 0x5
 
     .line 17
-    .line 18
-    invoke-static {v0, v1, v2, v3}, LA/j;->t(IIJ)I
+    aget-object v2, v2, v3
 
+    .line 18
     .line 19
+    sget-object v2, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
     .line 20
     .line 21
-    move-result v0
+    invoke-virtual {v1, p1, v2}, LQ0/r;->a(LQ0/i;Ljava/lang/Object;)V
 
     .line 22
-    iget-wide v1, p0, LV/N;->d:J
-
     .line 23
     .line 24
-    invoke-static {v1, v2}, Lr0/p;->i(J)I
+    return-object v0
 
     .line 25
+    :pswitch_0
+    check-cast p1, LQ0/i;
+
     .line 26
     .line 27
-    move-result v1
+    return-object v0
 
     .line 28
-    add-int/2addr v1, v0
+    :pswitch_1
+    check-cast p1, LQ0/i;
 
     .line 29
-    return v1
+    .line 30
+    const/4 v1, 0x0
+
+    .line 31
+    invoke-static {p1, v1}, LQ0/q;->e(LQ0/i;I)V
+
+    .line 32
+    .line 33
+    .line 34
+    return-object v0
+
+    .line 35
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

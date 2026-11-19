@@ -1,248 +1,201 @@
-.class public final LG/l;
-.super Ljava/lang/Object;
+.class public final LG/L;
+.super Lk0/q;
 .source "SourceFile"
 
 # interfaces
-.implements LG0/I;
-
-
-# static fields
-.field public static final b:LG/l;
-
-.field public static final c:LG/l;
+.implements LI0/x;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public E:F
 
+.field public F:F
 
-# direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 2
+.field public G:F
 
-    .line 1
-    new-instance v0, LG/l;
+.field public H:F
 
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    invoke-direct {v0, v1}, LG/l;-><init>(I)V
-
-    .line 5
-    .line 6
-    .line 7
-    sput-object v0, LG/l;->b:LG/l;
-
-    .line 8
-    .line 9
-    new-instance v0, LG/l;
-
-    .line 10
-    .line 11
-    const/4 v1, 0x1
-
-    .line 12
-    invoke-direct {v0, v1}, LG/l;-><init>(I)V
-
-    .line 13
-    .line 14
-    .line 15
-    sput-object v0, LG/l;->c:LG/l;
-
-    .line 16
-    .line 17
-    return-void
-.end method
-
-.method public synthetic constructor <init>(I)V
-    .locals 0
-
-    .line 1
-    iput p1, p0, LG/l;->a:I
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
+.field public I:Z
 
 
 # virtual methods
-.method public final synthetic a(LG0/n;Ljava/util/List;I)I
-    .locals 1
+.method public final synthetic a(LI0/O;LG0/H;I)I
+    .locals 0
 
     .line 1
-    iget v0, p0, LG/l;->a:I
-
-    invoke-static {p0, p1, p2, p3}, LA/j;->j(LG0/I;LG0/n;Ljava/util/List;I)I
+    invoke-static {p0, p1, p2, p3}, LA/j;->h(LI0/x;LG0/n;LG0/H;I)I
 
     move-result p1
 
     return p1
 .end method
 
-.method public final synthetic d(LG0/n;Ljava/util/List;I)I
-    .locals 1
+.method public final synthetic b(LI0/O;LG0/H;I)I
+    .locals 0
 
     .line 1
-    iget v0, p0, LG/l;->a:I
-
-    invoke-static {p0, p1, p2, p3}, LA/j;->d(LG0/I;LG0/n;Ljava/util/List;I)I
+    invoke-static {p0, p1, p2, p3}, LA/j;->n(LI0/x;LG0/n;LG0/H;I)I
 
     move-result p1
 
     return p1
 .end method
 
-.method public final synthetic f(LG0/n;Ljava/util/List;I)I
-    .locals 1
+.method public final synthetic d(LI0/O;LG0/H;I)I
+    .locals 0
 
     .line 1
-    iget v0, p0, LG/l;->a:I
-
-    invoke-static {p0, p1, p2, p3}, LA/j;->g(LG0/I;LG0/n;Ljava/util/List;I)I
+    invoke-static {p0, p1, p2, p3}, LA/j;->k(LI0/x;LG0/n;LG0/H;I)I
 
     move-result p1
 
     return p1
 .end method
 
-.method public final g(LG0/K;Ljava/util/List;J)LG0/J;
-    .locals 2
+.method public final synthetic e(LI0/O;LG0/H;I)I
+    .locals 0
 
     .line 1
-    iget p2, p0, LG/l;->a:I
+    invoke-static {p0, p1, p2, p3}, LA/j;->e(LI0/x;LG0/n;LG0/H;I)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final f(LG0/K;LG0/H;J)LG0/J;
+    .locals 5
+
+    .line 1
+    iget v0, p0, LG/L;->E:F
 
     .line 2
     .line 3
-    packed-switch p2, :pswitch_data_0
+    invoke-interface {p1, v0}, Lf1/c;->C(F)I
 
     .line 4
     .line 5
     .line 6
-    invoke-static {p3, p4}, Lf1/a;->f(J)Z
-
-    .line 7
-    .line 8
-    .line 9
-    move-result p2
-
-    .line 10
-    const/4 v0, 0x0
-
-    .line 11
-    if-eqz p2, :cond_0
-
-    .line 12
-    .line 13
-    invoke-static {p3, p4}, Lf1/a;->h(J)I
-
-    .line 14
-    .line 15
-    .line 16
-    move-result p2
-
-    .line 17
-    goto :goto_0
-
-    .line 18
-    :cond_0
-    move p2, v0
-
-    .line 19
-    :goto_0
-    invoke-static {p3, p4}, Lf1/a;->e(J)Z
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v1
-
-    .line 23
-    if-eqz v1, :cond_1
-
-    .line 24
-    .line 25
-    invoke-static {p3, p4}, Lf1/a;->g(J)I
-
-    .line 26
-    .line 27
-    .line 28
     move-result v0
 
+    .line 7
+    iget v1, p0, LG/L;->G:F
+
+    .line 8
+    .line 9
+    invoke-interface {p1, v1}, Lf1/c;->C(F)I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v1
+
+    .line 13
+    add-int/2addr v1, v0
+
+    .line 14
+    iget v0, p0, LG/L;->F:F
+
+    .line 15
+    .line 16
+    invoke-interface {p1, v0}, Lf1/c;->C(F)I
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v0
+
+    .line 20
+    iget v2, p0, LG/L;->H:F
+
+    .line 21
+    .line 22
+    invoke-interface {p1, v2}, Lf1/c;->C(F)I
+
+    .line 23
+    .line 24
+    .line 25
+    move-result v2
+
+    .line 26
+    add-int/2addr v2, v0
+
+    .line 27
+    neg-int v0, v1
+
+    .line 28
+    neg-int v3, v2
+
     .line 29
-    :cond_1
-    sget-object p3, LG/k;->t:LG/k;
+    invoke-static {v0, v3, p3, p4}, Lf1/b;->i(IIJ)J
 
     .line 30
     .line 31
-    sget-object p4, Lc9/w;->q:Lc9/w;
-
     .line 32
+    move-result-wide v3
+
     .line 33
-    invoke-interface {p1, p2, v0, p4, p3}, LG0/K;->t(IILjava/util/Map;Lp9/d;)LG0/J;
+    invoke-interface {p2, v3, v4}, LG0/H;->a(J)LG0/S;
 
     .line 34
     .line 35
     .line 36
-    move-result-object p1
+    move-result-object p2
 
     .line 37
-    return-object p1
+    iget v0, p2, LG0/S;->q:I
 
     .line 38
-    :pswitch_0
-    invoke-static {p3, p4}, Lf1/a;->j(J)I
-
     .line 39
+    add-int/2addr v0, v1
+
     .line 40
+    invoke-static {v0, p3, p4}, Lf1/b;->g(IJ)I
+
     .line 41
-    move-result p2
-
     .line 42
-    invoke-static {p3, p4}, Lf1/a;->i(J)I
-
     .line 43
-    .line 44
-    .line 45
-    move-result p3
+    move-result v0
 
+    .line 44
+    iget v1, p2, LG0/S;->r:I
+
+    .line 45
     .line 46
-    sget-object p4, LG/k;->r:LG/k;
+    add-int/2addr v1, v2
 
     .line 47
-    .line 48
-    sget-object v0, Lc9/w;->q:Lc9/w;
+    invoke-static {v1, p3, p4}, Lf1/b;->f(IJ)I
 
+    .line 48
     .line 49
     .line 50
-    invoke-interface {p1, p2, p3, v0, p4}, LG0/K;->t(IILjava/util/Map;Lp9/d;)LG0/J;
+    move-result p3
 
     .line 51
+    new-instance p4, LD/g;
+
     .line 52
     .line 53
-    move-result-object p1
+    const/4 v1, 0x2
 
     .line 54
-    return-object p1
+    invoke-direct {p4, p0, p2, p1, v1}, LD/g;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 55
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
+    .line 56
+    .line 57
+    sget-object p2, Lc9/w;->q:Lc9/w;
 
-.method public final synthetic h(LG0/n;Ljava/util/List;I)I
-    .locals 1
+    .line 58
+    .line 59
+    invoke-interface {p1, v0, p3, p2, p4}, LG0/K;->t(IILjava/util/Map;Lp9/d;)LG0/J;
 
-    .line 1
-    iget v0, p0, LG/l;->a:I
+    .line 60
+    .line 61
+    .line 62
+    move-result-object p1
 
-    invoke-static {p0, p1, p2, p3}, LA/j;->m(LG0/I;LG0/n;Ljava/util/List;I)I
-
-    move-result p1
-
-    return p1
+    .line 63
+    return-object p1
 .end method

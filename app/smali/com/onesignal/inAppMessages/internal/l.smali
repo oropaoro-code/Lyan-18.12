@@ -1,193 +1,183 @@
-.class public final Lcom/onesignal/inAppMessages/internal/l;
-.super Ljava/lang/Object;
+.class public final Lcom/onesignal/inAppMessages/internal/L;
+.super Li9/i;
 .source "SourceFile"
 
-
-# static fields
-.field public static final Companion:Lcom/onesignal/inAppMessages/internal/k;
-
-.field public static final PAGE_ID:Ljava/lang/String; = "pageId"
-
-.field public static final PAGE_INDEX:Ljava/lang/String; = "pageIndex"
+# interfaces
+.implements Lp9/f;
 
 
 # instance fields
-.field private pageId:Ljava/lang/String;
+.field label:I
 
-.field private pageIndex:Ljava/lang/String;
+.field final synthetic this$0:Lcom/onesignal/inAppMessages/internal/T;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    new-instance v0, Lcom/onesignal/inAppMessages/internal/k;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1}, Lcom/onesignal/inAppMessages/internal/k;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    sput-object v0, Lcom/onesignal/inAppMessages/internal/l;->Companion:Lcom/onesignal/inAppMessages/internal/k;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lorg/json/JSONObject;)V
-    .locals 2
+.method public constructor <init>(Lcom/onesignal/inAppMessages/internal/T;Lg9/e;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/onesignal/inAppMessages/internal/T;",
+            "Lg9/e<",
+            "-",
+            "Lcom/onesignal/inAppMessages/internal/L;",
+            ">;)V"
+        }
+    .end annotation
 
     .line 1
-    const-string v0, "jsonObject"
+    iput-object p1, p0, Lcom/onesignal/inAppMessages/internal/L;->this$0:Lcom/onesignal/inAppMessages/internal/T;
 
     .line 2
     .line 3
-    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 p1, 0x2
 
     .line 4
+    invoke-direct {p0, p1, p2}, Li9/i;-><init>(ILg9/e;)V
+
     .line 5
     .line 6
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 7
-    .line 8
-    .line 9
-    const-string v0, "pageId"
-
-    .line 10
-    .line 11
-    const/4 v1, 0x0
-
-    .line 12
-    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object v0
-
-    .line 16
-    iput-object v0, p0, Lcom/onesignal/inAppMessages/internal/l;->pageId:Ljava/lang/String;
-
-    .line 17
-    .line 18
-    const-string v0, "pageIndex"
-
-    .line 19
-    .line 20
-    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object p1
-
-    .line 24
-    iput-object p1, p0, Lcom/onesignal/inAppMessages/internal/l;->pageIndex:Ljava/lang/String;
-
-    .line 25
-    .line 26
     return-void
 .end method
 
 
 # virtual methods
-.method public final getPageId()Ljava/lang/String;
+.method public final create(Ljava/lang/Object;Lg9/e;)Lg9/e;
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Lg9/e<",
+            "*>;)",
+            "Lg9/e<",
+            "Lb9/n;",
+            ">;"
+        }
+    .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/onesignal/inAppMessages/internal/l;->pageId:Ljava/lang/String;
+    new-instance p1, Lcom/onesignal/inAppMessages/internal/L;
 
     .line 2
     .line 3
-    return-object v0
-.end method
-
-.method public final getPageIndex()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/onesignal/inAppMessages/internal/l;->pageIndex:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final setPageId(Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lcom/onesignal/inAppMessages/internal/l;->pageId:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final setPageIndex(Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lcom/onesignal/inAppMessages/internal/l;->pageIndex:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final toJSONObject()Lorg/json/JSONObject;
-    .locals 3
-
-    .line 1
-    new-instance v0, Lorg/json/JSONObject;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
+    iget-object v0, p0, Lcom/onesignal/inAppMessages/internal/L;->this$0:Lcom/onesignal/inAppMessages/internal/T;
 
     .line 4
     .line 5
-    .line 6
-    :try_start_0
-    const-string v1, "pageId"
+    invoke-direct {p1, v0, p2}, Lcom/onesignal/inAppMessages/internal/L;-><init>(Lcom/onesignal/inAppMessages/internal/T;Lg9/e;)V
 
+    .line 6
     .line 7
     .line 8
-    iget-object v2, p0, Lcom/onesignal/inAppMessages/internal/l;->pageId:Ljava/lang/String;
+    return-object p1
+.end method
+
+.method public final invoke(LA9/x;Lg9/e;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "LA9/x;",
+            "Lg9/e<",
+            "-",
+            "Lb9/n;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, Lcom/onesignal/inAppMessages/internal/L;->create(Ljava/lang/Object;Lg9/e;)Lg9/e;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/onesignal/inAppMessages/internal/L;
+
+    sget-object p2, Lb9/n;->a:Lb9/n;
+
+    invoke-virtual {p1, p2}, Lcom/onesignal/inAppMessages/internal/L;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 2
+    check-cast p1, LA9/x;
+
+    check-cast p2, Lg9/e;
+
+    invoke-virtual {p0, p1, p2}, Lcom/onesignal/inAppMessages/internal/L;->invoke(LA9/x;Lg9/e;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/onesignal/inAppMessages/internal/L;->label:I
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {p1}, LO5/l0;->V(Ljava/lang/Object;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object p1, p0, Lcom/onesignal/inAppMessages/internal/L;->this$0:Lcom/onesignal/inAppMessages/internal/T;
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+    invoke-static {p1}, Lcom/onesignal/inAppMessages/internal/T;->access$get_displayer$p(Lcom/onesignal/inAppMessages/internal/T;)Ll7/a;
 
     .line 11
     .line 12
     .line 13
-    const-string v1, "pageIndex"
+    move-result-object p1
 
     .line 14
+    check-cast p1, Lcom/onesignal/inAppMessages/internal/display/impl/l;
+
     .line 15
-    iget-object v2, p0, Lcom/onesignal/inAppMessages/internal/l;->pageIndex:Ljava/lang/String;
-
     .line 16
-    .line 17
-    invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-    :try_end_0
-    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {p1}, Lcom/onesignal/inAppMessages/internal/display/impl/l;->dismissCurrentInAppMessage()V
 
+    .line 17
     .line 18
     .line 19
-    .line 20
-    goto :goto_0
+    sget-object p1, Lb9/n;->a:Lb9/n;
 
+    .line 20
     .line 21
-    :catch_0
-    move-exception v1
+    return-object p1
 
     .line 22
-    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
 
     .line 23
     .line 24
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
     .line 25
-    :goto_0
-    return-object v0
+    .line 26
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 27
+    .line 28
+    .line 29
+    throw p1
 .end method

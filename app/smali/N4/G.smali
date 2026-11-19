@@ -1,19 +1,60 @@
-.class public final Ln4/G;
-.super Ljava/lang/Object;
+.class public final Ln4/g;
+.super Lo4/a;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/content/ServiceConnection;
+
+# static fields
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/os/Parcelable$Creator<",
+            "Ln4/g;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # instance fields
-.field public final a:I
+.field public final q:Ln4/m;
 
-.field public final synthetic b:Ln4/f;
+.field public final r:Z
+
+.field public final s:Z
+
+.field public final t:[I
+
+.field public final u:I
+
+.field public final v:[I
 
 
 # direct methods
-.method public constructor <init>(Ln4/f;I)V
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lh/i;
+
+    .line 2
+    .line 3
+    const/16 v1, 0x12
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Lh/i;-><init>(I)V
+
+    .line 6
+    .line 7
+    .line 8
+    sput-object v0, Ln4/g;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method public constructor <init>(Ln4/m;ZZ[II[I)V
     .locals 0
 
     .line 1
@@ -22,242 +63,186 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Ln4/G;->b:Ln4/f;
+    iput-object p1, p0, Ln4/g;->q:Ln4/m;
 
     .line 5
     .line 6
-    iput p2, p0, Ln4/G;->a:I
+    iput-boolean p2, p0, Ln4/g;->r:Z
 
     .line 7
     .line 8
+    iput-boolean p3, p0, Ln4/g;->s:Z
+
+    .line 9
+    .line 10
+    iput-object p4, p0, Ln4/g;->t:[I
+
+    .line 11
+    .line 12
+    iput p5, p0, Ln4/g;->u:I
+
+    .line 13
+    .line 14
+    iput-object p6, p0, Ln4/g;->v:[I
+
+    .line 15
+    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
 
     .line 1
-    iget-object p1, p0, Ln4/G;->b:Ln4/f;
+    const/16 v0, 0x4f45
 
     .line 2
     .line 3
-    if-nez p2, :cond_0
+    invoke-static {p1, v0}, LI3/w;->H(Landroid/os/Parcel;I)I
 
     .line 4
     .line 5
-    invoke-static {p1}, Ln4/f;->y(Ln4/f;)V
-
     .line 6
+    move-result v0
+
     .line 7
+    const/4 v1, 0x1
+
     .line 8
-    return-void
+    iget-object v2, p0, Ln4/g;->q:Ln4/m;
 
     .line 9
-    :cond_0
-    iget-object p1, p1, Ln4/f;->m:Ljava/lang/Object;
-
     .line 10
+    invoke-static {p1, v1, v2, p2}, LI3/w;->D(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
+
     .line 11
-    monitor-enter p1
-
     .line 12
-    :try_start_0
-    iget-object v0, p0, Ln4/G;->b:Ln4/f;
-
     .line 13
+    const/4 p2, 0x2
+
     .line 14
-    const-string v1, "com.google.android.gms.common.internal.IGmsServiceBroker"
+    const/4 v1, 0x4
 
     .line 15
-    .line 16
-    invoke-interface {p2, v1}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+    invoke-static {p1, p2, v1}, LI3/w;->J(Landroid/os/Parcel;II)V
 
+    .line 16
     .line 17
     .line 18
-    .line 19
-    move-result-object v1
+    iget-boolean p2, p0, Ln4/g;->r:Z
 
+    .line 19
     .line 20
-    if-eqz v1, :cond_1
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 21
     .line 22
-    instance-of v2, v1, Ln4/z;
-
     .line 23
+    const/4 p2, 0x3
+
     .line 24
-    if-eqz v2, :cond_1
+    invoke-static {p1, p2, v1}, LI3/w;->J(Landroid/os/Parcel;II)V
 
     .line 25
     .line 26
-    check-cast v1, Ln4/z;
-
     .line 27
-    .line 28
-    goto :goto_0
+    iget-boolean p2, p0, Ln4/g;->s:Z
 
+    .line 28
     .line 29
-    :catchall_0
-    move-exception p2
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 30
-    goto :goto_1
-
     .line 31
-    :cond_1
-    new-instance v1, Ln4/z;
-
     .line 32
-    .line 33
-    invoke-direct {v1, p2}, Ln4/z;-><init>(Landroid/os/IBinder;)V
+    iget-object p2, p0, Ln4/g;->t:[I
 
+    .line 33
     .line 34
+    if-nez p2, :cond_0
+
     .line 35
     .line 36
-    :goto_0
-    iput-object v1, v0, Ln4/f;->n:Ln4/z;
+    goto :goto_0
 
     .line 37
+    :cond_0
+    invoke-static {p1, v1}, LI3/w;->H(Landroid/os/Parcel;I)I
+
     .line 38
-    monitor-exit p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
     .line 39
-    iget-object p1, p0, Ln4/G;->b:Ln4/f;
-
     .line 40
+    move-result v2
+
     .line 41
-    iget p2, p0, Ln4/G;->a:I
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeIntArray([I)V
 
     .line 42
     .line 43
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 44
+    invoke-static {p1, v2}, LI3/w;->I(Landroid/os/Parcel;I)V
+
     .line 45
     .line 46
-    new-instance v0, Ln4/I;
-
     .line 47
+    :goto_0
+    const/4 p2, 0x5
+
     .line 48
-    const/4 v1, 0x0
+    invoke-static {p1, p2, v1}, LI3/w;->J(Landroid/os/Parcel;II)V
 
     .line 49
-    invoke-direct {v0, p1, v1}, Ln4/I;-><init>(Ln4/f;I)V
-
     .line 50
     .line 51
+    iget p2, p0, Ln4/g;->u:I
+
     .line 52
-    iget-object p1, p1, Ln4/f;->k:Ln4/E;
-
     .line 53
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
+
     .line 54
-    const/4 v1, 0x7
-
     .line 55
-    const/4 v2, -0x1
-
     .line 56
-    invoke-virtual {p1, v1, p2, v2, v0}, Landroid/os/Handler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
+    iget-object p2, p0, Ln4/g;->v:[I
 
     .line 57
     .line 58
-    .line 59
-    move-result-object p2
+    if-nez p2, :cond_1
 
+    .line 59
     .line 60
-    invoke-virtual {p1, p2}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+    goto :goto_1
 
     .line 61
-    .line 62
-    .line 63
-    return-void
-
-    .line 64
-    :goto_1
-    :try_start_1
-    monitor-exit p1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 65
-    throw p2
-.end method
-
-.method public final onServiceDisconnected(Landroid/content/ComponentName;)V
-    .locals 3
-
-    .line 1
-    iget-object p1, p0, Ln4/G;->b:Ln4/f;
-
-    .line 2
-    .line 3
-    iget-object p1, p1, Ln4/f;->m:Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    monitor-enter p1
-
-    .line 6
-    :try_start_0
-    iget-object v0, p0, Ln4/G;->b:Ln4/f;
-
-    .line 7
-    .line 8
-    const/4 v1, 0x0
-
-    .line 9
-    iput-object v1, v0, Ln4/f;->n:Ln4/z;
-
-    .line 10
-    .line 11
-    monitor-exit p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 12
-    iget p1, p0, Ln4/G;->a:I
-
-    .line 13
-    .line 14
-    iget-object v0, v0, Ln4/f;->k:Ln4/E;
-
-    .line 15
-    .line 16
+    :cond_1
     const/4 v1, 0x6
 
-    .line 17
-    const/4 v2, 0x1
+    .line 62
+    invoke-static {p1, v1}, LI3/w;->H(Landroid/os/Parcel;I)I
 
-    .line 18
-    invoke-virtual {v0, v1, p1, v2}, Landroid/os/Handler;->obtainMessage(III)Landroid/os/Message;
+    .line 63
+    .line 64
+    .line 65
+    move-result v1
 
-    .line 19
-    .line 20
-    .line 21
-    move-result-object p1
+    .line 66
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeIntArray([I)V
 
-    .line 22
-    invoke-virtual {v0, p1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+    .line 67
+    .line 68
+    .line 69
+    invoke-static {p1, v1}, LI3/w;->I(Landroid/os/Parcel;I)V
 
-    .line 23
-    .line 24
-    .line 25
+    .line 70
+    .line 71
+    .line 72
+    :goto_1
+    invoke-static {p1, v0}, LI3/w;->I(Landroid/os/Parcel;I)V
+
+    .line 73
+    .line 74
+    .line 75
     return-void
-
-    .line 26
-    :catchall_0
-    move-exception v0
-
-    .line 27
-    :try_start_1
-    monitor-exit p1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 28
-    throw v0
 .end method

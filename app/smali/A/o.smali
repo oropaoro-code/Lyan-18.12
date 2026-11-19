@@ -1,269 +1,281 @@
-.class public final LA/o;
+.class public final LA/O;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements LY/Q0;
+.implements LY/D;
 
 
 # instance fields
-.field public final q:LA/z0;
+.field public final synthetic a:I
 
-.field public final r:LY/e0;
+.field public final synthetic b:Ljava/lang/Object;
 
-.field public s:LA/t;
-
-.field public t:J
-
-.field public u:J
-
-.field public v:Z
+.field public final synthetic c:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(LA/z0;Ljava/lang/Object;LA/t;I)V
-    .locals 9
-
-    and-int/lit8 p4, p4, 0x4
-
-    if-eqz p4, :cond_0
-
-    const/4 p3, 0x0
-
-    :cond_0
-    move-object v3, p3
-
-    const/4 v8, 0x0
-
-    const-wide/high16 v4, -0x8000000000000000L
-
-    const-wide/high16 v6, -0x8000000000000000L
-
-    move-object v0, p0
-
-    move-object v1, p1
-
-    move-object v2, p2
+.method public synthetic constructor <init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    .locals 0
 
     .line 1
-    invoke-direct/range {v0 .. v8}, LA/o;-><init>(LA/z0;Ljava/lang/Object;LA/t;JJZ)V
+    iput p1, p0, LA/O;->a:I
 
-    return-void
-.end method
+    iput-object p2, p0, LA/O;->b:Ljava/lang/Object;
 
-.method public constructor <init>(LA/z0;Ljava/lang/Object;LA/t;JJZ)V
-    .locals 1
+    iput-object p3, p0, LA/O;->c:Ljava/lang/Object;
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 3
-    iput-object p1, p0, LA/o;->q:LA/z0;
-
-    .line 4
-    invoke-static {p2}, LY/c;->r(Ljava/lang/Object;)LY/e0;
-
-    move-result-object v0
-
-    iput-object v0, p0, LA/o;->r:LY/e0;
-
-    if-eqz p3, :cond_0
-
-    .line 5
-    invoke-static {p3}, LA/e;->h(LA/t;)LA/t;
-
-    move-result-object p1
-
-    goto :goto_0
-
-    .line 6
-    :cond_0
-    iget-object p1, p1, LA/z0;->a:Lp9/d;
-
-    .line 7
-    invoke-interface {p1, p2}, Lp9/d;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, LA/t;
-
-    invoke-virtual {p1}, LA/t;->d()V
-
-    .line 8
-    :goto_0
-    iput-object p1, p0, LA/o;->s:LA/t;
-
-    .line 9
-    iput-wide p4, p0, LA/o;->t:J
-
-    .line 10
-    iput-wide p6, p0, LA/o;->u:J
-
-    .line 11
-    iput-boolean p8, p0, LA/o;->v:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final getValue()Ljava/lang/Object;
-    .locals 1
+.method public final b()V
+    .locals 5
 
     .line 1
-    iget-object v0, p0, LA/o;->r:LY/e0;
+    const/4 v0, 0x0
 
     .line 2
-    .line 3
-    invoke-virtual {v0}, LY/e0;->getValue()Ljava/lang/Object;
+    iget-object v1, p0, LA/O;->c:Ljava/lang/Object;
 
+    .line 3
     .line 4
+    iget-object v2, p0, LA/O;->b:Ljava/lang/Object;
+
     .line 5
     .line 6
-    move-result-object v0
+    iget v3, p0, LA/O;->a:I
 
-    .line 7
-    return-object v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "AnimationState(value="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
     .line 7
     .line 8
-    iget-object v1, p0, LA/o;->r:LY/e0;
+    packed-switch v3, :pswitch_data_0
 
     .line 9
     .line 10
-    invoke-virtual {v1}, LY/e0;->getValue()Ljava/lang/Object;
-
     .line 11
+    check-cast v2, LY/V;
+
     .line 12
     .line 13
-    move-result-object v1
+    invoke-interface {v2}, LY/Q0;->getValue()Ljava/lang/Object;
 
     .line 14
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
     .line 15
     .line 16
+    move-result-object v3
+
     .line 17
-    const-string v1, ", velocity="
+    check-cast v3, LE/l;
 
     .line 18
     .line 19
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-eqz v3, :cond_1
 
     .line 20
     .line 21
+    new-instance v4, LE/k;
+
     .line 22
-    iget-object v1, p0, LA/o;->q:LA/z0;
-
     .line 23
-    .line 24
-    iget-object v1, v1, LA/z0;->b:Lp9/d;
+    invoke-direct {v4, v3}, LE/k;-><init>(LE/l;)V
 
+    .line 24
     .line 25
     .line 26
-    iget-object v2, p0, LA/o;->s:LA/t;
+    check-cast v1, LE/j;
 
     .line 27
     .line 28
-    invoke-interface {v1, v2}, Lp9/d;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    if-eqz v1, :cond_0
 
     .line 29
     .line 30
+    invoke-virtual {v1, v4}, LE/j;->b(LE/i;)V
+
     .line 31
-    move-result-object v1
-
     .line 32
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
     .line 33
+    :cond_0
+    invoke-interface {v2, v0}, LY/V;->setValue(Ljava/lang/Object;)V
+
     .line 34
     .line 35
-    const-string v1, ", isRunning="
-
     .line 36
+    :cond_1
+    return-void
+
     .line 37
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :pswitch_0
+    check-cast v2, Landroid/content/Context;
 
     .line 38
     .line 39
-    .line 40
-    iget-boolean v1, p0, LA/o;->v:Z
+    invoke-virtual {v2}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
+    .line 40
     .line 41
     .line 42
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    move-result-object v0
 
     .line 43
+    check-cast v1, LJ0/T;
+
     .line 44
     .line 45
-    const-string v1, ", lastFrameTimeNanos="
+    invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterComponentCallbacks(Landroid/content/ComponentCallbacks;)V
 
     .line 46
     .line 47
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 48
+    return-void
+
     .line 49
+    :pswitch_1
+    check-cast v2, Landroid/content/Context;
+
     .line 50
-    iget-wide v1, p0, LA/o;->t:J
-
     .line 51
-    .line 52
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v2}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
+    .line 52
     .line 53
     .line 54
+    move-result-object v0
+
     .line 55
-    const-string v1, ", finishedTimeNanos="
+    check-cast v1, LJ0/S;
 
     .line 56
     .line 57
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterComponentCallbacks(Landroid/content/ComponentCallbacks;)V
 
     .line 58
     .line 59
     .line 60
-    iget-wide v1, p0, LA/o;->u:J
+    return-void
 
     .line 61
-    .line 62
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    :pswitch_2
+    check-cast v2, LJ/L;
 
+    .line 62
     .line 63
+    iget-object v0, v2, LJ/L;->c:Lx/H;
+
     .line 64
     .line 65
-    const/16 v1, 0x29
+    invoke-virtual {v0, v1}, Lx/H;->j(Ljava/lang/Object;)V
 
     .line 66
     .line 67
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
     .line 68
-    .line 69
-    .line 70
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    return-void
 
+    .line 69
+    :pswitch_3
+    check-cast v2, LG/b0;
+
+    .line 70
     .line 71
+    iget v3, v2, LG/b0;->s:I
+
     .line 72
     .line 73
-    move-result-object v0
+    add-int/lit8 v3, v3, -0x1
 
     .line 74
-    return-object v0
+    .line 75
+    iput v3, v2, LG/b0;->s:I
+
+    .line 76
+    .line 77
+    if-nez v3, :cond_2
+
+    .line 78
+    .line 79
+    sget-object v3, LH1/U;->a:Ljava/util/WeakHashMap;
+
+    .line 80
+    .line 81
+    check-cast v1, Landroid/view/View;
+
+    .line 82
+    .line 83
+    invoke-static {v1, v0}, LH1/K;->l(Landroid/view/View;LH1/r;)V
+
+    .line 84
+    .line 85
+    .line 86
+    invoke-static {v1, v0}, LH1/U;->r(Landroid/view/View;LH1/f0;)V
+
+    .line 87
+    .line 88
+    .line 89
+    iget-object v0, v2, LG/b0;->t:LG/D;
+
+    .line 90
+    .line 91
+    invoke-virtual {v1, v0}, Landroid/view/View;->removeOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
+
+    .line 92
+    .line 93
+    .line 94
+    :cond_2
+    return-void
+
+    .line 95
+    :pswitch_4
+    check-cast v2, LA/s0;
+
+    .line 96
+    .line 97
+    iget-object v0, v2, LA/s0;->g:Li0/q;
+
+    .line 98
+    .line 99
+    check-cast v1, LA/n0;
+
+    .line 100
+    .line 101
+    invoke-virtual {v0, v1}, Li0/q;->remove(Ljava/lang/Object;)Z
+
+    .line 102
+    .line 103
+    .line 104
+    return-void
+
+    .line 105
+    :pswitch_5
+    check-cast v2, LA/M;
+
+    .line 106
+    .line 107
+    iget-object v0, v2, LA/M;->a:La0/e;
+
+    .line 108
+    .line 109
+    check-cast v1, LA/H;
+
+    .line 110
+    .line 111
+    invoke-virtual {v0, v1}, La0/e;->l(Ljava/lang/Object;)Z
+
+    .line 112
+    .line 113
+    .line 114
+    return-void
+
+    .line 115
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

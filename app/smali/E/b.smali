@@ -1,8 +1,6 @@
-.class public interface abstract Le/b;
+.class public final LE/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# virtual methods
-.method public abstract cancel()V
-.end method
+# interfaces
+.implements LE/i;

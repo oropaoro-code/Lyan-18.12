@@ -1,4 +1,4 @@
-.class public final Lcom/onesignal/core/internal/config/M;
+.class public final Lcom/onesignal/core/internal/config/m;
 .super Lq9/j;
 .source "SourceFile"
 
@@ -6,51 +6,45 @@
 .implements Lp9/a;
 
 
-# static fields
-.field public static final INSTANCE:Lcom/onesignal/core/internal/config/M;
+# instance fields
+.field final synthetic this$0:Lcom/onesignal/core/internal/config/B;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lcom/onesignal/core/internal/config/B;)V
+    .locals 0
 
-    new-instance v0, Lcom/onesignal/core/internal/config/M;
+    iput-object p1, p0, Lcom/onesignal/core/internal/config/m;->this$0:Lcom/onesignal/core/internal/config/B;
 
-    invoke-direct {v0}, Lcom/onesignal/core/internal/config/M;-><init>()V
+    const/4 p1, 0x0
 
-    sput-object v0, Lcom/onesignal/core/internal/config/M;->INSTANCE:Lcom/onesignal/core/internal/config/M;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    invoke-direct {p0, v0}, Lq9/j;-><init>(I)V
+    invoke-direct {p0, p1}, Lq9/j;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Boolean;
-    .locals 1
+.method public final invoke()Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
-    return-object v0
-.end method
-
-.method public bridge synthetic invoke()Ljava/lang/Object;
-    .locals 1
+    new-instance v0, Lcom/onesignal/core/internal/config/Q;
 
     .line 2
-    invoke-virtual {p0}, Lcom/onesignal/core/internal/config/M;->invoke()Ljava/lang/Boolean;
+    .line 3
+    iget-object v1, p0, Lcom/onesignal/core/internal/config/m;->this$0:Lcom/onesignal/core/internal/config/B;
 
-    move-result-object v0
+    .line 4
+    .line 5
+    const-string v2, "influenceParams"
 
+    .line 6
+    .line 7
+    invoke-direct {v0, v1, v2}, Lcom/onesignal/core/internal/config/Q;-><init>(Lcom/onesignal/common/modeling/j;Ljava/lang/String;)V
+
+    .line 8
+    .line 9
+    .line 10
     return-object v0
 .end method

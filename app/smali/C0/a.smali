@@ -1,179 +1,201 @@
-.class public abstract Lc0/a;
-.super Ljava/lang/Object;
+.class public final LC0/A;
+.super Li9/i;
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/util/ListIterator;
-.implements Lr9/a;
+.implements Lp9/f;
 
 
 # instance fields
 .field public q:I
 
-.field public r:I
+.field public final synthetic r:LC0/B;
 
 
 # direct methods
-.method public constructor <init>(II)V
+.method public constructor <init>(LC0/B;Lg9/e;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, LC0/A;->r:LC0/B;
 
     .line 2
     .line 3
+    const/4 p1, 0x2
+
     .line 4
-    iput p1, p0, Lc0/a;->q:I
+    invoke-direct {p0, p1, p2}, Li9/i;-><init>(ILg9/e;)V
 
     .line 5
     .line 6
-    iput p2, p0, Lc0/a;->r:I
-
     .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public add(Ljava/lang/Object;)V
+.method public final create(Ljava/lang/Object;Lg9/e;)Lg9/e;
     .locals 1
 
     .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    new-instance p1, LC0/A;
 
     .line 2
     .line 3
-    const-string v0, "Operation is not supported for read-only collection"
+    iget-object v0, p0, LC0/A;->r:LC0/B;
 
     .line 4
     .line 5
-    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, v0, p2}, LC0/A;-><init>(LC0/B;Lg9/e;)V
 
     .line 6
     .line 7
     .line 8
-    throw p1
+    return-object p1
 .end method
 
-.method public final hasNext()Z
-    .locals 2
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    iget v0, p0, Lc0/a;->q:I
+    check-cast p1, LA9/x;
 
     .line 2
     .line 3
-    iget v1, p0, Lc0/a;->r:I
+    check-cast p2, Lg9/e;
 
     .line 4
     .line 5
-    if-ge v0, v1, :cond_0
+    invoke-virtual {p0, p1, p2}, LC0/A;->create(Ljava/lang/Object;Lg9/e;)Lg9/e;
 
     .line 6
     .line 7
-    const/4 v0, 0x1
-
     .line 8
-    goto :goto_0
+    move-result-object p1
 
     .line 9
-    :cond_0
-    const/4 v0, 0x0
+    check-cast p1, LC0/A;
 
     .line 10
-    :goto_0
-    return v0
+    .line 11
+    sget-object p2, Lb9/n;->a:Lb9/n;
+
+    .line 12
+    .line 13
+    invoke-virtual {p1, p2}, LC0/A;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p1
+
+    .line 17
+    return-object p1
 .end method
 
-.method public final hasPrevious()Z
-    .locals 1
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    iget v0, p0, Lc0/a;->q:I
+    sget-object v0, Lh9/a;->q:Lh9/a;
 
     .line 2
     .line 3
-    if-lez v0, :cond_0
+    iget v1, p0, LC0/A;->q:I
 
     .line 4
     .line 5
+    const/4 v2, 0x2
+
+    .line 6
+    if-eqz v1, :cond_2
+
+    .line 7
+    .line 8
     const/4 v0, 0x1
 
-    .line 6
+    .line 9
+    if-eq v1, v0, :cond_1
+
+    .line 10
+    .line 11
+    if-ne v1, v2, :cond_0
+
+    .line 12
+    .line 13
     goto :goto_0
 
-    .line 7
+    .line 14
     :cond_0
-    const/4 v0, 0x0
+    new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 8
-    :goto_0
-    return v0
-.end method
+    .line 15
+    .line 16
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
 
-.method public final nextIndex()I
-    .locals 1
+    .line 17
+    .line 18
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    .line 1
-    iget v0, p0, Lc0/a;->q:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final previousIndex()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lc0/a;->q:I
-
-    .line 2
-    .line 3
-    add-int/lit8 v0, v0, -0x1
-
-    .line 4
-    .line 5
-    return v0
-.end method
-
-.method public remove()V
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
-
-    .line 2
-    .line 3
-    const-string v1, "Operation is not supported for read-only collection"
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    throw v0
-.end method
-
-.method public set(Ljava/lang/Object;)V
-    .locals 1
-
-    .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    .line 2
-    .line 3
-    const-string v0, "Operation is not supported for read-only collection"
-
-    .line 4
-    .line 5
-    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
+    .line 19
+    .line 20
+    .line 21
     throw p1
+
+    .line 22
+    :cond_1
+    :goto_0
+    invoke-static {p1}, LO5/l0;->V(Ljava/lang/Object;)V
+
+    .line 23
+    .line 24
+    .line 25
+    goto :goto_1
+
+    .line 26
+    :cond_2
+    invoke-static {p1}, LO5/l0;->V(Ljava/lang/Object;)V
+
+    .line 27
+    .line 28
+    .line 29
+    iget-object p1, p0, LC0/A;->r:LC0/B;
+
+    .line 30
+    .line 31
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 32
+    .line 33
+    .line 34
+    iget-object v1, p1, LC0/B;->H:Landroidx/compose/ui/input/pointer/PointerInputEventHandler;
+
+    .line 35
+    .line 36
+    iput v2, p0, LC0/A;->q:I
+
+    .line 37
+    .line 38
+    invoke-interface {v1, p1, p0}, Landroidx/compose/ui/input/pointer/PointerInputEventHandler;->invoke(LC0/r;Lg9/e;)Ljava/lang/Object;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object p1
+
+    .line 42
+    if-ne p1, v0, :cond_3
+
+    .line 43
+    .line 44
+    return-object v0
+
+    .line 45
+    :cond_3
+    :goto_1
+    sget-object p1, Lb9/n;->a:Lb9/n;
+
+    .line 46
+    .line 47
+    return-object p1
 .end method

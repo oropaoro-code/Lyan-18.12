@@ -1,32 +1,20 @@
-.class public abstract LH1/P;
+.class public interface abstract LH1/p;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# direct methods
-.method public static a(Landroid/view/View;)Landroid/view/View$AccessibilityDelegate;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/View;->getAccessibilityDelegate()Landroid/view/View$AccessibilityDelegate;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
+# virtual methods
+.method public abstract a(Landroid/view/View;Landroid/view/View;II)V
 .end method
 
-.method public static b(Landroid/view/View;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
-    .locals 0
+.method public abstract b(Landroid/view/View;II[II)V
+.end method
 
-    .line 1
-    invoke-virtual/range {p0 .. p6}, Landroid/view/View;->saveAttributeDataForStyleable(Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
+.method public abstract f(ILandroid/view/View;)V
+.end method
 
-    .line 2
-    .line 3
-    .line 4
-    return-void
+.method public abstract i(Landroid/view/View;IIIII)V
+.end method
+
+.method public abstract j(Landroid/view/View;Landroid/view/View;II)Z
 .end method

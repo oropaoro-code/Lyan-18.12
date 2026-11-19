@@ -1,256 +1,137 @@
-.class public final LU0/d;
+.class public interface abstract Lu0/d;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:I
-
-.field public final b:I
-
-.field public final c:Z
+# static fields
+.field public static final a:Lu0/c;
 
 
 # direct methods
-.method public constructor <init>(IIZ)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v0, Lu0/c;->a:Lu0/c;
 
     .line 2
     .line 3
+    sput-object v0, Lu0/d;->a:Lu0/c;
+
     .line 4
-    iput p1, p0, LU0/d;->a:I
-
     .line 5
-    .line 6
-    iput p2, p0, LU0/d;->b:I
-
-    .line 7
-    .line 8
-    iput-boolean p3, p0, LU0/d;->c:Z
-
-    .line 9
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, LU0/d;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, LU0/d;
-
-    .line 12
-    .line 13
-    iget v1, p1, LU0/d;->a:I
-
-    .line 14
-    .line 15
-    iget v3, p0, LU0/d;->a:I
-
-    .line 16
-    .line 17
-    if-eq v3, v1, :cond_2
-
-    .line 18
-    .line 19
-    return v2
-
-    .line 20
-    :cond_2
-    iget v1, p0, LU0/d;->b:I
-
-    .line 21
-    .line 22
-    iget v3, p1, LU0/d;->b:I
-
-    .line 23
-    .line 24
-    if-eq v1, v3, :cond_3
-
-    .line 25
-    .line 26
-    return v2
-
-    .line 27
-    :cond_3
-    iget-boolean v1, p0, LU0/d;->c:Z
-
-    .line 28
-    .line 29
-    iget-boolean p1, p1, LU0/d;->c:Z
-
-    .line 30
-    .line 31
-    if-eq v1, p1, :cond_4
-
-    .line 32
-    .line 33
-    return v2
-
-    .line 34
-    :cond_4
-    return v0
+.method public abstract A(IIJ)V
 .end method
 
-.method public final hashCode()I
-    .locals 2
-
-    .line 1
-    iget v0, p0, LU0/d;->a:I
-
-    .line 2
-    .line 3
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 4
-    .line 5
-    iget v1, p0, LU0/d;->b:I
-
-    .line 6
-    .line 7
-    add-int/2addr v0, v1
-
-    .line 8
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 9
-    .line 10
-    iget-boolean v1, p0, LU0/d;->c:Z
-
-    .line 11
-    .line 12
-    if-eqz v1, :cond_0
-
-    .line 13
-    .line 14
-    const/16 v1, 0x4cf
-
-    .line 15
-    .line 16
-    goto :goto_0
-
-    .line 17
-    :cond_0
-    const/16 v1, 0x4d5
-
-    .line 18
-    .line 19
-    :goto_0
-    add-int/2addr v0, v1
-
-    .line 20
-    return v0
+.method public abstract B()F
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 2
+.method public abstract C(F)V
+.end method
 
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+.method public abstract D()F
+.end method
 
-    .line 2
-    .line 3
-    const-string v1, "BidiRun(start="
+.method public abstract E()Z
+.end method
 
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+.method public abstract F()F
+.end method
 
-    .line 6
-    .line 7
-    .line 8
-    iget v1, p0, LU0/d;->a:I
+.method public abstract G(F)V
+.end method
 
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+.method public abstract H()F
+.end method
 
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", end="
+.method public abstract I()I
+.end method
 
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+.method public abstract J(J)V
+.end method
 
-    .line 16
-    .line 17
-    .line 18
-    iget v1, p0, LU0/d;->b:I
+.method public abstract K()J
+.end method
 
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+.method public abstract a()F
+.end method
 
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ", isRtl="
+.method public abstract b(F)V
+.end method
 
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+.method public abstract c(F)V
+.end method
 
-    .line 26
-    .line 27
-    .line 28
-    iget-boolean v1, p0, LU0/d;->c:Z
+.method public abstract d()F
+.end method
 
-    .line 29
-    .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+.method public abstract e(F)V
+.end method
 
-    .line 31
-    .line 32
-    .line 33
-    const/16 v1, 0x29
+.method public abstract f()F
+.end method
 
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+.method public abstract g()V
+.end method
 
-    .line 36
-    .line 37
-    .line 38
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+.method public abstract h(F)V
+.end method
 
-    .line 39
-    .line 40
-    .line 41
-    move-result-object v0
+.method public abstract i(F)V
+.end method
 
-    .line 42
-    return-object v0
+.method public abstract j()J
+.end method
+
+.method public abstract k(J)V
+.end method
+
+.method public abstract l(Landroid/graphics/Outline;J)V
+.end method
+
+.method public abstract m(F)V
+.end method
+
+.method public abstract n()F
+.end method
+
+.method public abstract o()V
+.end method
+
+.method public abstract p()F
+.end method
+
+.method public abstract q(Z)V
+.end method
+
+.method public abstract r()I
+.end method
+
+.method public abstract s()F
+.end method
+
+.method public abstract t(Lf1/c;Lf1/m;Lu0/b;LY/o0;)V
+.end method
+
+.method public abstract u(I)V
+.end method
+
+.method public abstract v(F)V
+.end method
+
+.method public abstract w(J)V
+.end method
+
+.method public abstract x(F)V
+.end method
+
+.method public abstract y()Landroid/graphics/Matrix;
+.end method
+
+.method public abstract z(Lr0/n;)V
 .end method

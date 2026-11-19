@@ -1,134 +1,375 @@
-.class public final LT0/f;
+.class public final Lt0/f;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Lr0/n;
 
 
-# instance fields
-.field public final synthetic a:I
+# static fields
+.field public static final a:Lt0/f;
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    iput p1, p0, LT0/f;->a:I
+    new-instance v0, Lt0/f;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lt0/f;->a:Lt0/f;
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 1
+.method public final a(FF)V
+    .locals 0
 
     .line 1
-    iget v0, p0, LT0/f;->a:I
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    check-cast p1, LT0/e;
+    throw p1
+.end method
 
+.method public final b(Lr0/D;Lj4/l;)V
+    .locals 0
+
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    throw p1
+.end method
+
+.method public final c(Lq0/c;Lj4/l;)V
+    .locals 0
+
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    throw p1
+.end method
+
+.method public final d(Lr0/e;JLj4/l;)V
+    .locals 0
+
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    throw p1
+.end method
+
+.method public final e(FJLj4/l;)V
+    .locals 0
+
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    throw p1
+.end method
+
+.method public final f(FFFFI)V
+    .locals 0
+
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    throw p1
+.end method
+
+.method public final g(FF)V
+    .locals 0
+
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    throw p1
+.end method
+
+.method public final h()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    throw v0
+.end method
+
+.method public final i()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    throw v0
+.end method
+
+.method public final j(Lr0/D;I)V
+    .locals 0
+
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    throw p1
+.end method
+
+.method public final k()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    throw v0
+.end method
+
+.method public final l(Lr0/e;JJJJLj4/l;)V
+    .locals 0
+
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    throw p1
+.end method
+
+.method public final m()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    throw v0
+.end method
+
+.method public final n(FFFFLj4/l;)V
+    .locals 0
+
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    throw p1
+.end method
+
+.method public final o(Lq0/c;I)V
+    .locals 6
+
+    .line 1
+    iget v1, p1, Lq0/c;->a:F
+
+    .line 2
+    .line 3
+    iget v4, p1, Lq0/c;->d:F
+
+    .line 4
+    .line 5
+    iget v2, p1, Lq0/c;->b:F
+
+    .line 6
     .line 7
-    .line 8
-    iget p1, p1, LT0/e;->b:I
+    iget v3, p1, Lq0/c;->c:F
 
+    .line 8
     .line 9
+    move-object v0, p0
+
     .line 10
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move v5, p2
 
     .line 11
+    invoke-virtual/range {v0 .. v5}, Lt0/f;->f(FFFFI)V
+
     .line 12
     .line 13
-    move-result-object p1
-
     .line 14
-    check-cast p2, LT0/e;
+    const/4 p1, 0x0
 
     .line 15
-    .line 16
-    iget p2, p2, LT0/e;->b:I
+    throw p1
+.end method
 
-    .line 17
-    .line 18
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+.method public final p(JJLj4/l;)V
+    .locals 0
 
-    .line 19
-    .line 20
-    .line 21
-    move-result-object p2
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    .line 22
-    invoke-static {p1, p2}, LA5/b;->e(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
+    .line 2
+    .line 3
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
-    .line 23
-    .line 24
-    .line 25
-    move-result p1
+    .line 4
+    .line 5
+    .line 6
+    throw p1
+.end method
 
-    .line 26
-    return p1
+.method public final q([F)V
+    .locals 0
 
-    .line 27
-    :pswitch_0
-    check-cast p1, LT0/e;
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    .line 28
-    .line 29
-    iget p1, p1, LT0/e;->b:I
+    .line 2
+    .line 3
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
-    .line 30
-    .line 31
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    .line 4
+    .line 5
+    .line 6
+    throw p1
+.end method
 
-    .line 32
-    .line 33
-    .line 34
-    move-result-object p1
+.method public final r(FFFFFFLj4/l;)V
+    .locals 0
 
-    .line 35
-    check-cast p2, LT0/e;
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    .line 36
-    .line 37
-    iget p2, p2, LT0/e;->b:I
+    .line 2
+    .line 3
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
-    .line 38
-    .line 39
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    .line 4
+    .line 5
+    .line 6
+    throw p1
+.end method
 
-    .line 40
-    .line 41
-    .line 42
-    move-result-object p2
+.method public final s()V
+    .locals 1
 
-    .line 43
-    invoke-static {p1, p2}, LA5/b;->e(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
+    .line 1
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    .line 44
-    .line 45
-    .line 46
-    move-result p1
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
-    .line 47
-    return p1
+    .line 4
+    .line 5
+    .line 6
+    throw v0
+.end method
 
-    .line 48
-    nop
+.method public final t(FFFFFFLj4/l;)V
+    .locals 0
 
-    .line 49
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    throw p1
 .end method

@@ -1,178 +1,91 @@
-.class public final Lcom/onesignal/inAppMessages/internal/w;
-.super Li9/i;
+.class public final Lcom/onesignal/inAppMessages/internal/W;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Lp9/f;
-
-
-# instance fields
-.field final synthetic $result:Lcom/onesignal/inAppMessages/internal/c;
-
-.field synthetic L$0:Ljava/lang/Object;
-
-.field label:I
 
 
 # direct methods
-.method public constructor <init>(Lcom/onesignal/inAppMessages/internal/c;Lg9/e;)V
+.method private constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/onesignal/inAppMessages/internal/c;",
-            "Lg9/e<",
-            "-",
-            "Lcom/onesignal/inAppMessages/internal/w;",
-            ">;)V"
-        }
-    .end annotation
-
-    .line 1
-    iput-object p1, p0, Lcom/onesignal/inAppMessages/internal/w;->$result:Lcom/onesignal/inAppMessages/internal/c;
 
     .line 2
-    .line 3
-    const/4 p1, 0x2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
-    invoke-direct {p0, p1, p2}, Li9/i;-><init>(ILg9/e;)V
+    return-void
+.end method
 
-    .line 5
-    .line 6
-    .line 7
+.method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/onesignal/inAppMessages/internal/W;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final create(Ljava/lang/Object;Lg9/e;)Lg9/e;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Object;",
-            "Lg9/e<",
-            "*>;)",
-            "Lg9/e<",
-            "Lb9/n;",
-            ">;"
-        }
-    .end annotation
+.method public final fromString(Ljava/lang/String;)Lcom/onesignal/inAppMessages/internal/X;
+    .locals 5
 
     .line 1
-    new-instance v0, Lcom/onesignal/inAppMessages/internal/w;
+    invoke-static {}, Lcom/onesignal/inAppMessages/internal/X;->values()[Lcom/onesignal/inAppMessages/internal/X;
 
     .line 2
     .line 3
-    iget-object v1, p0, Lcom/onesignal/inAppMessages/internal/w;->$result:Lcom/onesignal/inAppMessages/internal/c;
-
     .line 4
+    move-result-object v0
+
     .line 5
-    invoke-direct {v0, v1, p2}, Lcom/onesignal/inAppMessages/internal/w;-><init>(Lcom/onesignal/inAppMessages/internal/c;Lg9/e;)V
+    array-length v1, v0
 
     .line 6
+    const/4 v2, 0x0
+
     .line 7
-    .line 8
-    iput-object p1, v0, Lcom/onesignal/inAppMessages/internal/w;->L$0:Ljava/lang/Object;
-
-    .line 9
-    .line 10
-    return-object v0
-.end method
-
-.method public final invoke(Li7/c;Lg9/e;)Ljava/lang/Object;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Li7/c;",
-            "Lg9/e<",
-            "-",
-            "Lb9/n;",
-            ">;)",
-            "Ljava/lang/Object;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/onesignal/inAppMessages/internal/w;->create(Ljava/lang/Object;Lg9/e;)Lg9/e;
-
-    move-result-object p1
-
-    check-cast p1, Lcom/onesignal/inAppMessages/internal/w;
-
-    sget-object p2, Lb9/n;->a:Lb9/n;
-
-    invoke-virtual {p1, p2}, Lcom/onesignal/inAppMessages/internal/w;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    .line 2
-    invoke-static {p1}, LU3/c;->y(Ljava/lang/Object;)V
-
-    check-cast p2, Lg9/e;
-
-    const/4 p1, 0x0
-
-    invoke-virtual {p0, p1, p2}, Lcom/onesignal/inAppMessages/internal/w;->invoke(Li7/c;Lg9/e;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/onesignal/inAppMessages/internal/w;->label:I
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    .line 6
-    .line 7
-    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+    :goto_0
+    if-ge v2, v1, :cond_1
 
     .line 8
     .line 9
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    aget-object v3, v0, v2
 
     .line 10
     .line 11
+    invoke-static {v3}, Lcom/onesignal/inAppMessages/internal/X;->access$getValue$p(Lcom/onesignal/inAppMessages/internal/X;)Ljava/lang/String;
+
     .line 12
-    throw p1
-
     .line 13
-    :cond_0
-    invoke-static {p1}, LO5/l0;->V(Ljava/lang/Object;)V
-
     .line 14
-    .line 15
-    .line 16
-    iget-object p1, p0, Lcom/onesignal/inAppMessages/internal/w;->L$0:Ljava/lang/Object;
+    move-result-object v4
 
+    .line 15
+    invoke-static {v4, p1}, Ly9/o;->y(Ljava/lang/String;Ljava/lang/String;)Z
+
+    .line 16
     .line 17
     .line 18
-    invoke-static {p1}, LU3/c;->y(Ljava/lang/Object;)V
+    move-result v4
 
     .line 19
+    if-eqz v4, :cond_0
+
     .line 20
     .line 21
-    const/4 p1, 0x0
+    return-object v3
 
     .line 22
-    throw p1
+    :cond_0
+    add-int/lit8 v2, v2, 0x1
+
+    .line 23
+    .line 24
+    goto :goto_0
+
+    .line 25
+    :cond_1
+    sget-object p1, Lcom/onesignal/inAppMessages/internal/X;->UNKNOWN:Lcom/onesignal/inAppMessages/internal/X;
+
+    .line 26
+    .line 27
+    return-object p1
 .end method

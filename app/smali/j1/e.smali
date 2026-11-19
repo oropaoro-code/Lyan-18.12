@@ -1,118 +1,93 @@
-.class public final LJ1/e;
-.super Landroid/view/inputmethod/InputConnectionWrapper;
+.class public final Lj1/e;
+.super Lq9/j;
 .source "SourceFile"
+
+# interfaces
+.implements Lp9/a;
 
 
 # instance fields
-.field public final synthetic a:LG5/a;
+.field public final synthetic q:Landroidx/compose/ui/window/PopupLayout;
+
+.field public final synthetic r:Lp9/a;
+
+.field public final synthetic s:Lj1/v;
+
+.field public final synthetic t:Ljava/lang/String;
+
+.field public final synthetic u:Lf1/m;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/inputmethod/InputConnection;LG5/a;)V
+.method public constructor <init>(Landroidx/compose/ui/window/PopupLayout;Lp9/a;Lj1/v;Ljava/lang/String;Lf1/m;)V
     .locals 0
 
     .line 1
-    iput-object p2, p0, LJ1/e;->a:LG5/a;
+    iput-object p1, p0, Lj1/e;->q:Landroidx/compose/ui/window/PopupLayout;
 
     .line 2
     .line 3
-    const/4 p2, 0x0
+    iput-object p2, p0, Lj1/e;->r:Lp9/a;
 
     .line 4
-    invoke-direct {p0, p1, p2}, Landroid/view/inputmethod/InputConnectionWrapper;-><init>(Landroid/view/inputmethod/InputConnection;Z)V
-
     .line 5
+    iput-object p3, p0, Lj1/e;->s:Lj1/v;
+
     .line 6
     .line 7
+    iput-object p4, p0, Lj1/e;->t:Ljava/lang/String;
+
+    .line 8
+    .line 9
+    iput-object p5, p0, Lj1/e;->u:Lf1/m;
+
+    .line 10
+    .line 11
+    const/4 p1, 0x0
+
+    .line 12
+    invoke-direct {p0, p1}, Lq9/j;-><init>(I)V
+
+    .line 13
+    .line 14
+    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final commitContent(Landroid/view/inputmethod/InputContentInfo;ILandroid/os/Bundle;)Z
-    .locals 3
+.method public final invoke()Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    const/4 v0, 0x0
+    iget-object v0, p0, Lj1/e;->r:Lp9/a;
 
     .line 2
-    if-nez p1, :cond_0
-
     .line 3
-    .line 4
-    goto :goto_0
+    iget-object v1, p0, Lj1/e;->s:Lj1/v;
 
+    .line 4
     .line 5
-    :cond_0
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    iget-object v2, p0, Lj1/e;->q:Landroidx/compose/ui/window/PopupLayout;
 
     .line 6
     .line 7
-    const/16 v2, 0x19
+    iget-object v3, p0, Lj1/e;->t:Ljava/lang/String;
 
     .line 8
     .line 9
-    if-ge v1, v2, :cond_1
+    iget-object v4, p0, Lj1/e;->u:Lf1/m;
 
     .line 10
     .line 11
-    goto :goto_0
+    invoke-virtual {v2, v0, v1, v3, v4}, Landroidx/compose/ui/window/PopupLayout;->i(Lp9/a;Lj1/v;Ljava/lang/String;Lf1/m;)V
 
     .line 12
-    :cond_1
-    new-instance v0, Lp6/c;
-
     .line 13
     .line 14
-    new-instance v1, LJ1/g;
+    sget-object v0, Lb9/n;->a:Lb9/n;
 
     .line 15
     .line 16
-    invoke-direct {v1, p1}, LJ1/g;-><init>(Ljava/lang/Object;)V
-
-    .line 17
-    .line 18
-    .line 19
-    const/16 v2, 0x11
-
-    .line 20
-    .line 21
-    invoke-direct {v0, v2, v1}, Lp6/c;-><init>(ILjava/lang/Object;)V
-
-    .line 22
-    .line 23
-    .line 24
-    :goto_0
-    iget-object v1, p0, LJ1/e;->a:LG5/a;
-
-    .line 25
-    .line 26
-    invoke-virtual {v1, v0, p2, p3}, LG5/a;->j(Lp6/c;ILandroid/os/Bundle;)Z
-
-    .line 27
-    .line 28
-    .line 29
-    move-result v0
-
-    .line 30
-    if-eqz v0, :cond_2
-
-    .line 31
-    .line 32
-    const/4 p1, 0x1
-
-    .line 33
-    return p1
-
-    .line 34
-    :cond_2
-    invoke-super {p0, p1, p2, p3}, Landroid/view/inputmethod/InputConnectionWrapper;->commitContent(Landroid/view/inputmethod/InputContentInfo;ILandroid/os/Bundle;)Z
-
-    .line 35
-    .line 36
-    .line 37
-    move-result p1
-
-    .line 38
-    return p1
+    return-object v0
 .end method

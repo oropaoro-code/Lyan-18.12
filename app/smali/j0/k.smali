@@ -1,78 +1,43 @@
-.class public final synthetic LJ0/k;
+.class public final LJ0/K;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/view/ViewTreeObserver$OnTouchModeChangeListener;
 
-
-# instance fields
-.field public final synthetic q:Landroidx/compose/ui/platform/AndroidComposeView;
+# static fields
+.field public static final a:LJ0/K;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/compose/ui/platform/AndroidComposeView;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LJ0/K;
 
-    iput-object p1, p0, LJ0/k;->q:Landroidx/compose/ui/platform/AndroidComposeView;
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, LJ0/K;->a:LJ0/K;
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final onTouchModeChanged(Z)V
-    .locals 2
+.method public final a(Landroid/view/View;)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, LJ0/k;->q:Landroidx/compose/ui/platform/AndroidComposeView;
+    invoke-static {p1}, LB/J0;->p(Landroid/view/View;)V
 
     .line 2
     .line 3
-    iget-object v0, v0, Landroidx/compose/ui/platform/AndroidComposeView;->B0:Lz0/c;
-
     .line 4
-    .line 5
-    if-eqz p1, :cond_0
-
-    .line 6
-    .line 7
-    const/4 p1, 0x1
-
-    .line 8
-    goto :goto_0
-
-    .line 9
-    :cond_0
-    const/4 p1, 0x2
-
-    .line 10
-    :goto_0
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 11
-    .line 12
-    .line 13
-    new-instance v1, Lz0/a;
-
-    .line 14
-    .line 15
-    invoke-direct {v1, p1}, Lz0/a;-><init>(I)V
-
-    .line 16
-    .line 17
-    .line 18
-    iget-object p1, v0, Lz0/c;->a:LY/e0;
-
-    .line 19
-    .line 20
-    invoke-virtual {p1, v1}, LY/e0;->setValue(Ljava/lang/Object;)V
-
-    .line 21
-    .line 22
-    .line 23
     return-void
 .end method

@@ -1,10 +1,10 @@
-.class public abstract LU0/c;
+.class public final Lu0/c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final a:Landroid/text/Layout$Alignment;
+.field public static final synthetic a:Lu0/c;
 
 
 # direct methods
@@ -12,17 +12,18 @@
     .locals 1
 
     .line 1
-    sget-object v0, Landroid/text/Layout$Alignment;->ALIGN_NORMAL:Landroid/text/Layout$Alignment;
+    new-instance v0, Lu0/c;
 
     .line 2
     .line 3
-    sput-object v0, LU0/c;->a:Landroid/text/Layout$Alignment;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
-    sget-object v0, Landroid/text/TextDirectionHeuristics;->FIRSTSTRONG_LTR:Landroid/text/TextDirectionHeuristic;
-
     .line 6
+    sput-object v0, Lu0/c;->a:Lu0/c;
+
     .line 7
+    .line 8
     return-void
 .end method

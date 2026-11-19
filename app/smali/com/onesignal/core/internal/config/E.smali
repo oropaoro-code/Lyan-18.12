@@ -1,4 +1,4 @@
-.class public final Lcom/onesignal/core/internal/config/E;
+.class public final Lcom/onesignal/core/internal/config/e;
 .super Lq9/j;
 .source "SourceFile"
 
@@ -7,18 +7,18 @@
 
 
 # static fields
-.field public static final INSTANCE:Lcom/onesignal/core/internal/config/E;
+.field public static final INSTANCE:Lcom/onesignal/core/internal/config/e;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lcom/onesignal/core/internal/config/E;
+    new-instance v0, Lcom/onesignal/core/internal/config/e;
 
-    invoke-direct {v0}, Lcom/onesignal/core/internal/config/E;-><init>()V
+    invoke-direct {v0}, Lcom/onesignal/core/internal/config/e;-><init>()V
 
-    sput-object v0, Lcom/onesignal/core/internal/config/E;->INSTANCE:Lcom/onesignal/core/internal/config/E;
+    sput-object v0, Lcom/onesignal/core/internal/config/e;->INSTANCE:Lcom/onesignal/core/internal/config/e;
 
     return-void
 .end method
@@ -35,22 +35,22 @@
 
 
 # virtual methods
-.method public bridge synthetic invoke()Ljava/lang/Object;
+.method public final invoke()Ljava/lang/Boolean;
     .locals 1
 
-    .line 2
-    invoke-virtual {p0}, Lcom/onesignal/core/internal/config/E;->invoke()Ljava/lang/String;
-
-    move-result-object v0
+    .line 1
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     return-object v0
 .end method
 
-.method public final invoke()Ljava/lang/String;
+.method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 1
-    const/4 v0, 0x0
+    .line 2
+    invoke-virtual {p0}, Lcom/onesignal/core/internal/config/e;->invoke()Ljava/lang/Boolean;
+
+    move-result-object v0
 
     return-object v0
 .end method

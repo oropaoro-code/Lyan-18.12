@@ -1,28 +1,28 @@
-.class public abstract LA9/w;
-.super Lg9/a;
+.class public abstract LA9/W;
+.super LA9/t;
 .source "SourceFile"
 
-
-# static fields
-.field public static final r:LA9/u;
+# interfaces
+.implements Ljava/io/Closeable;
+.implements Ljava/lang/AutoCloseable;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 2
 
     .line 1
-    new-instance v0, LA9/u;
+    const-string v0, "baseKey"
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    sget-object v1, LA9/t;->r:LA9/s;
 
     .line 4
     .line 5
-    .line 6
-    sput-object v0, LA9/w;->r:LA9/u;
+    invoke-static {v1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
+    .line 6
     .line 7
     .line 8
     return-void

@@ -1,29 +1,60 @@
-.class public final LA9/P;
-.super LA9/S;
+.class public LA9/p;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final s:LA9/h;
+# static fields
+.field public static final synthetic b:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-.field public final synthetic t:LA9/U;
+
+# instance fields
+.field private volatile synthetic _handled$volatile:I
+
+.field public final a:Ljava/lang/Throwable;
 
 
 # direct methods
-.method public constructor <init>(LA9/U;JLA9/h;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    iput-object p1, p0, LA9/P;->t:LA9/U;
+    const-class v0, LA9/p;
 
     .line 2
     .line 3
-    invoke-direct {p0, p2, p3}, LA9/S;-><init>(J)V
+    const-string v1, "_handled$volatile"
 
     .line 4
     .line 5
+    invoke-static {v0, v1}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+
     .line 6
-    iput-object p4, p0, LA9/P;->s:LA9/h;
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    sput-object v0, LA9/p;->b:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/Throwable;Z)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LA9/p;->a:Ljava/lang/Throwable;
+
+    .line 5
+    .line 6
+    iput p2, p0, LA9/p;->_handled$volatile:I
 
     .line 7
     .line 8
@@ -32,26 +63,6 @@
 
 
 # virtual methods
-.method public final run()V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LA9/P;->s:LA9/h;
-
-    .line 2
-    .line 3
-    iget-object v1, p0, LA9/P;->t:LA9/U;
-
-    .line 4
-    .line 5
-    invoke-virtual {v0, v1}, LA9/h;->B(LA9/t;)V
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
 .method public final toString()Ljava/lang/String;
     .locals 2
 
@@ -65,7 +76,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-super {p0}, LA9/S;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 7
     .line 8
@@ -73,27 +84,53 @@
     move-result-object v1
 
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     .line 11
     .line 12
     .line 13
-    iget-object v1, p0, LA9/P;->s:LA9/h;
+    move-result-object v1
 
     .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 15
     .line 16
     .line 17
-    .line 18
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/16 v1, 0x5b
 
+    .line 18
     .line 19
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
     .line 20
     .line 21
+    .line 22
+    iget-object v1, p0, LA9/p;->a:Ljava/lang/Throwable;
+
+    .line 23
+    .line 24
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 25
+    .line 26
+    .line 27
+    const/16 v1, 0x5d
+
+    .line 28
+    .line 29
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 33
+    .line 34
+    .line 35
     move-result-object v0
 
-    .line 22
+    .line 36
     return-object v0
 .end method

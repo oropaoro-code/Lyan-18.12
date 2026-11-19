@@ -1,268 +1,225 @@
-.class public final LR6/c;
+.class public final Lr6/C;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lr6/u;
+
+
+# static fields
+.field public static final e:Lr6/x;
+
+.field public static final f:LT1/b;
+
 
 # instance fields
-.field private final iamLimit:Ljava/lang/Integer;
+.field public final a:Landroid/content/Context;
 
-.field private final indirectIAMAttributionWindow:Ljava/lang/Integer;
+.field public final b:Lg9/j;
 
-.field private final indirectNotificationAttributionWindow:Ljava/lang/Integer;
+.field public final c:Ljava/util/concurrent/atomic/AtomicReference;
 
-.field private final isDirectEnabled:Ljava/lang/Boolean;
-
-.field private final isIndirectEnabled:Ljava/lang/Boolean;
-
-.field private final isUnattributedEnabled:Ljava/lang/Boolean;
-
-.field private final notificationLimit:Ljava/lang/Integer;
+.field public final d:LC2/d;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 10
-
-    const/16 v8, 0x7f
-
-    const/4 v9, 0x0
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
-
-    move-object v0, p0
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct/range {v0 .. v9}, LR6/c;-><init>(Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;)V
-    .locals 0
+    new-instance v0, Lr6/x;
 
     .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 3
-    iput-object p1, p0, LR6/c;->indirectNotificationAttributionWindow:Ljava/lang/Integer;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
-    iput-object p2, p0, LR6/c;->notificationLimit:Ljava/lang/Integer;
-
     .line 5
-    iput-object p3, p0, LR6/c;->indirectIAMAttributionWindow:Ljava/lang/Integer;
-
     .line 6
-    iput-object p4, p0, LR6/c;->iamLimit:Ljava/lang/Integer;
+    sput-object v0, Lr6/C;->e:Lr6/x;
 
     .line 7
-    iput-object p5, p0, LR6/c;->isDirectEnabled:Ljava/lang/Boolean;
-
     .line 8
-    iput-object p6, p0, LR6/c;->isIndirectEnabled:Ljava/lang/Boolean;
+    sget-object v0, Lr6/t;->a:Ljava/lang/String;
 
     .line 9
-    iput-object p7, p0, LR6/c;->isUnattributedEnabled:Ljava/lang/Boolean;
+    .line 10
+    new-instance v1, LQb/o;
 
+    .line 11
+    .line 12
+    sget-object v2, Lr6/w;->q:Lr6/w;
+
+    .line 13
+    .line 14
+    invoke-direct {v1, v2}, LQb/o;-><init>(Lp9/d;)V
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-static {v0, v1}, Lp3/d;->r(Ljava/lang/String;LQb/o;)LT1/b;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v0
+
+    .line 21
+    sput-object v0, Lr6/C;->f:LT1/b;
+
+    .line 22
+    .line 23
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-    .locals 6
+.method public constructor <init>(Landroid/content/Context;Lg9/j;)V
+    .locals 4
 
-    and-int/lit8 p9, p8, 0x1
+    .line 1
+    const-string v0, "context"
 
-    const/4 v0, 0x0
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz p9, :cond_0
+    .line 4
+    .line 5
+    .line 6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-object p9, v0
-
-    goto :goto_0
-
-    :cond_0
-    move-object p9, p1
-
-    :goto_0
-    and-int/lit8 p1, p8, 0x2
-
-    if-eqz p1, :cond_1
-
-    move-object v1, v0
-
-    goto :goto_1
-
-    :cond_1
-    move-object v1, p2
-
-    :goto_1
-    and-int/lit8 p1, p8, 0x4
-
-    if-eqz p1, :cond_2
-
-    move-object v2, v0
-
-    goto :goto_2
-
-    :cond_2
-    move-object v2, p3
-
-    :goto_2
-    and-int/lit8 p1, p8, 0x8
-
-    if-eqz p1, :cond_3
-
-    move-object v3, v0
-
-    goto :goto_3
-
-    :cond_3
-    move-object v3, p4
-
-    :goto_3
-    and-int/lit8 p1, p8, 0x10
-
-    if-eqz p1, :cond_4
-
-    move-object v4, v0
-
-    goto :goto_4
-
-    :cond_4
-    move-object v4, p5
-
-    :goto_4
-    and-int/lit8 p1, p8, 0x20
-
-    if-eqz p1, :cond_5
-
-    move-object v5, v0
-
-    goto :goto_5
-
-    :cond_5
-    move-object v5, p6
-
-    :goto_5
-    and-int/lit8 p1, p8, 0x40
-
-    if-eqz p1, :cond_6
-
-    move-object p8, v0
-
-    goto :goto_6
-
-    :cond_6
-    move-object p8, p7
-
-    :goto_6
-    move-object p1, p0
-
-    move-object p2, p9
-
-    move-object p3, v1
-
-    move-object p4, v2
-
-    move-object p5, v3
-
-    move-object p6, v4
-
-    move-object p7, v5
+    .line 7
+    .line 8
+    .line 9
+    iput-object p1, p0, Lr6/C;->a:Landroid/content/Context;
 
     .line 10
-    invoke-direct/range {p1 .. p8}, LR6/c;-><init>(Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;)V
+    .line 11
+    iput-object p2, p0, Lr6/C;->b:Lg9/j;
 
+    .line 12
+    .line 13
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 14
+    .line 15
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    .line 16
+    .line 17
+    .line 18
+    iput-object v0, p0, Lr6/C;->c:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 19
+    .line 20
+    sget-object v0, Lr6/C;->e:Lr6/x;
+
+    .line 21
+    .line 22
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 23
+    .line 24
+    .line 25
+    sget-object v0, Lr6/x;->a:[Lw9/d;
+
+    .line 26
+    .line 27
+    const/4 v1, 0x0
+
+    .line 28
+    aget-object v0, v0, v1
+
+    .line 29
+    .line 30
+    sget-object v1, Lr6/C;->f:LT1/b;
+
+    .line 31
+    .line 32
+    invoke-virtual {v1, p1, v0}, LT1/b;->a(Ljava/lang/Object;Lw9/d;)LP2/j;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p1
+
+    .line 36
+    iget-object p1, p1, LP2/j;->r:Ljava/lang/Object;
+
+    .line 37
+    .line 38
+    check-cast p1, LR1/F;
+
+    .line 39
+    .line 40
+    new-instance v0, LR/z;
+
+    .line 41
+    .line 42
+    const/4 v1, 0x3
+
+    .line 43
+    const/4 v2, 0x0
+
+    .line 44
+    const/4 v3, 0x2
+
+    .line 45
+    invoke-direct {v0, v1, v3, v2}, LR/z;-><init>(IILg9/e;)V
+
+    .line 46
+    .line 47
+    .line 48
+    new-instance v3, LD9/r;
+
+    .line 49
+    .line 50
+    iget-object p1, p1, LR1/F;->s:LD9/k;
+
+    .line 51
+    .line 52
+    invoke-direct {v3, p1, v0}, LD9/r;-><init>(LD9/h;Lp9/g;)V
+
+    .line 53
+    .line 54
+    .line 55
+    new-instance p1, LC2/d;
+
+    .line 56
+    .line 57
+    const/16 v0, 0xf
+
+    .line 58
+    .line 59
+    invoke-direct {p1, v0, v3, p0}, LC2/d;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+
+    .line 60
+    .line 61
+    .line 62
+    iput-object p1, p0, Lr6/C;->d:LC2/d;
+
+    .line 63
+    .line 64
+    invoke-static {p2}, LA9/A;->b(Lg9/j;)LF9/c;
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-object p1
+
+    .line 68
+    new-instance p2, Lr6/v;
+
+    .line 69
+    .line 70
+    invoke-direct {p2, p0, v2}, Lr6/v;-><init>(Lr6/C;Lg9/e;)V
+
+    .line 71
+    .line 72
+    .line 73
+    invoke-static {p1, v2, v2, p2, v1}, LA9/A;->z(LA9/x;Lg9/j;LA9/y;Lp9/f;I)LA9/r0;
+
+    .line 74
+    .line 75
+    .line 76
     return-void
-.end method
-
-
-# virtual methods
-.method public final getIamLimit()Ljava/lang/Integer;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LR6/c;->iamLimit:Ljava/lang/Integer;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final getIndirectIAMAttributionWindow()Ljava/lang/Integer;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LR6/c;->indirectIAMAttributionWindow:Ljava/lang/Integer;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final getIndirectNotificationAttributionWindow()Ljava/lang/Integer;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LR6/c;->indirectNotificationAttributionWindow:Ljava/lang/Integer;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final getNotificationLimit()Ljava/lang/Integer;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LR6/c;->notificationLimit:Ljava/lang/Integer;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final isDirectEnabled()Ljava/lang/Boolean;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LR6/c;->isDirectEnabled:Ljava/lang/Boolean;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final isIndirectEnabled()Ljava/lang/Boolean;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LR6/c;->isIndirectEnabled:Ljava/lang/Boolean;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final isUnattributedEnabled()Ljava/lang/Boolean;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LR6/c;->isUnattributedEnabled:Ljava/lang/Boolean;
-
-    .line 2
-    .line 3
-    return-object v0
 .end method

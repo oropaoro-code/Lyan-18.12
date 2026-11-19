@@ -1,3 +1,17 @@
-.class public final LT1/c;
-.super Landroidx/datastore/preferences/protobuf/t;
+.class public interface abstract annotation Lt1/c;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/annotation/Annotation;
+
+
+# annotations
+.annotation runtime Ljava/lang/annotation/Retention;
+    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
+.end annotation
+
+
+# virtual methods
+.method public abstract value()Ljava/lang/Class;
+.end method

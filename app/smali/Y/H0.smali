@@ -1,8 +1,8 @@
-.class public interface abstract LY/H0;
+.class public interface abstract LY/h0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# virtual methods
-.method public abstract a(Ljava/lang/Object;Ljava/lang/Object;)Z
-.end method
+# interfaces
+.implements Ljava/util/Map;
+.implements Lr9/a;
+.implements LY/w;

@@ -1,51 +1,50 @@
-.class public abstract Lc9/r;
-.super Lc9/q;
+.class public final LC9/r;
+.super Li9/c;
 .source "SourceFile"
 
 
-# direct methods
-.method public static F(Ljava/util/List;Ljava/util/Comparator;)V
-    .locals 2
+# instance fields
+.field public q:Lp9/a;
+
+.field public synthetic r:Ljava/lang/Object;
+
+.field public s:I
+
+
+# virtual methods
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    const-string v0, "<this>"
+    iput-object p1, p0, LC9/r;->r:Ljava/lang/Object;
 
     .line 2
     .line 3
-    invoke-static {p0, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    iget p1, p0, LC9/r;->s:I
 
     .line 4
     .line 5
-    .line 6
-    const-string v0, "comparator"
+    const/high16 v0, -0x80000000
 
+    .line 6
     .line 7
+    or-int/2addr p1, v0
+
     .line 8
-    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    iput p1, p0, LC9/r;->s:I
 
     .line 9
     .line 10
+    const/4 p1, 0x0
+
     .line 11
-    invoke-interface {p0}, Ljava/util/List;->size()I
+    invoke-static {p1, p1, p0}, Lv3/b;->g(LC9/u;Lp9/a;Li9/c;)Ljava/lang/Object;
 
     .line 12
     .line 13
     .line 14
-    move-result v0
+    move-result-object p1
 
     .line 15
-    const/4 v1, 0x1
-
-    .line 16
-    if-le v0, v1, :cond_0
-
-    .line 17
-    .line 18
-    invoke-static {p0, p1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
-
-    .line 19
-    .line 20
-    .line 21
-    :cond_0
-    return-void
+    return-object p1
 .end method

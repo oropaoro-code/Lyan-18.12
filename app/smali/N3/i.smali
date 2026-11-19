@@ -1,240 +1,318 @@
-.class public final Ln3/i;
+.class public final LN3/i;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/facebook/l;
+.implements Lcom/facebook/r;
 
 
 # instance fields
-.field public final synthetic a:Ln3/b;
+.field public final synthetic a:I
 
-.field public final synthetic b:Ln3/s;
+.field public final synthetic b:LN3/j;
 
-.field public final synthetic c:LA/S;
+.field public final synthetic c:Ljava/lang/Object;
+
+.field public final synthetic d:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Ln3/b;Lcom/facebook/p;Ln3/s;LA/S;)V
-    .locals 0
+.method public constructor <init>(LA/C0;LN3/o;LN3/k;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    iput v0, p0, LN3/i;->a:I
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, LN3/i;->d:Ljava/lang/Object;
+
+    check-cast p2, LN3/j;
+
+    iput-object p2, p0, LN3/i;->b:LN3/j;
+
+    iput-object p3, p0, LN3/i;->c:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public constructor <init>(LN3/t;LN3/l;Landroid/os/Bundle;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    iput v0, p0, LN3/i;->a:I
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Ln3/i;->a:Ln3/b;
+    iput-object p1, p0, LN3/i;->d:Ljava/lang/Object;
 
-    .line 5
-    .line 6
-    iput-object p3, p0, Ln3/i;->b:Ln3/s;
+    iput-object p2, p0, LN3/i;->b:LN3/j;
 
-    .line 7
-    .line 8
-    iput-object p4, p0, Ln3/i;->c:LA/S;
+    iput-object p3, p0, LN3/i;->c:Ljava/lang/Object;
 
-    .line 9
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lcom/facebook/t;)V
-    .locals 9
+.method public final a()V
+    .locals 10
 
     .line 1
-    iget-object v0, p0, Ln3/i;->a:Ln3/b;
+    iget-object v0, p0, LN3/i;->c:Ljava/lang/Object;
 
     .line 2
     .line 3
-    iget-object v1, p0, Ln3/i;->b:Ln3/s;
+    iget-object v1, p0, LN3/i;->d:Ljava/lang/Object;
 
     .line 4
     .line 5
-    iget-object v2, p0, Ln3/i;->c:LA/S;
+    iget-object v2, p0, LN3/i;->b:LN3/j;
 
     .line 6
     .line 7
-    sget-object v3, LE3/a;->a:Ljava/util/Set;
+    iget v3, p0, LN3/i;->a:I
 
     .line 8
     .line 9
-    const-class v4, Ln3/j;
+    packed-switch v3, :pswitch_data_0
 
     .line 10
     .line 11
-    invoke-interface {v3, v4}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
-
     .line 12
+    iget-object v3, v2, LN3/j;->c:Ljava/lang/Object;
+
     .line 13
     .line 14
-    move-result v3
+    check-cast v3, Lcom/facebook/g;
 
     .line 15
-    if-eqz v3, :cond_0
-
     .line 16
-    .line 17
-    goto :goto_3
+    check-cast v1, LA/C0;
 
+    .line 17
     .line 18
-    :cond_0
-    :try_start_0
-    iget-object v3, p1, Lcom/facebook/t;->c:Lcom/facebook/g;
+    if-nez v3, :cond_1
 
     .line 19
     .line 20
-    sget-object v5, Ln3/p;->q:Ln3/p;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    check-cast v0, LN3/k;
 
     .line 21
     .line 22
-    sget-object v6, Ln3/p;->s:Ln3/p;
+    iget-object v3, v0, LN3/j;->c:Ljava/lang/Object;
 
     .line 23
     .line 24
-    if-eqz v3, :cond_2
+    check-cast v3, Lcom/facebook/g;
 
     .line 25
     .line 26
-    :try_start_1
-    iget v7, v3, Lcom/facebook/g;->r:I
+    if-eqz v3, :cond_0
 
     .line 27
     .line 28
-    const/4 v8, -0x1
+    goto :goto_0
 
     .line 29
-    if-ne v7, v8, :cond_1
+    :cond_0
+    iget-object v1, v1, LA/C0;->r:Ljava/lang/Object;
 
     .line 30
     .line 31
-    move-object p1, v6
+    move-object v3, v1
 
     .line 32
-    goto :goto_0
+    check-cast v3, LN3/t;
 
     .line 33
-    :cond_1
-    invoke-virtual {p1}, Lcom/facebook/t;->toString()Ljava/lang/String;
-
     .line 34
+    invoke-interface {v2}, LN3/o;->a()Z
+
     .line 35
     .line 36
-    invoke-virtual {v3}, Lcom/facebook/g;->toString()Ljava/lang/String;
-
     .line 37
+    move-result v4
+
     .line 38
+    iget-object v5, v0, LN3/k;->d:Ljava/lang/String;
+
     .line 39
-    sget-object p1, Ln3/p;->r:Ln3/p;
-
     .line 40
-    .line 41
-    goto :goto_0
+    iget-object v6, v0, LN3/k;->e:Ljava/lang/String;
 
+    .line 41
     .line 42
-    :catchall_0
-    move-exception p1
+    iget-object v7, v0, LN3/k;->f:Ljava/lang/String;
 
     .line 43
-    goto :goto_2
-
     .line 44
-    :cond_2
-    move-object p1, v5
+    iget-object v8, v0, LN3/k;->g:Ljava/lang/String;
 
     .line 45
-    :goto_0
-    invoke-static {}, Lcom/facebook/j;->f()V
-
     .line 46
+    invoke-interface {v2}, LN3/o;->b()Ljava/lang/String;
+
     .line 47
     .line 48
-    if-eqz v3, :cond_3
-
     .line 49
+    move-result-object v9
+
     .line 50
-    const/4 v3, 0x1
+    sget-object v0, LN3/t;->o:LB3/J;
 
     .line 51
-    goto :goto_1
-
     .line 52
-    :cond_3
-    const/4 v3, 0x0
+    invoke-virtual/range {v3 .. v9}, LN3/t;->n(ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 53
-    :goto_1
-    invoke-virtual {v1, v3}, Ln3/s;->b(Z)V
-
     .line 54
     .line 55
+    goto :goto_1
+
     .line 56
-    if-ne p1, v6, :cond_4
+    :cond_1
+    :goto_0
+    sget-object v0, LN3/t;->o:LB3/J;
 
     .line 57
     .line 58
-    invoke-static {}, Lcom/facebook/j;->a()Ljava/util/concurrent/Executor;
+    iget-object v0, v1, LA/C0;->r:Ljava/lang/Object;
 
     .line 59
     .line 60
-    .line 61
-    move-result-object v3
+    sget-object v0, LB3/V;->b:Ljava/util/HashMap;
 
+    .line 61
     .line 62
-    new-instance v7, Ln3/h;
+    invoke-static {}, Lcom/facebook/j;->f()V
 
     .line 63
     .line 64
-    const/4 v8, 0x1
-
     .line 65
-    invoke-direct {v7, v8, v0, v1}, Ln3/h;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    :goto_1
+    return-void
 
     .line 66
+    :pswitch_0
+    check-cast v1, LN3/t;
+
     .line 67
     .line 68
-    invoke-interface {v3, v7}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+    const/4 v3, 0x0
 
     .line 69
+    iput-boolean v3, v1, LN3/t;->l:Z
+
     .line 70
     .line 71
-    :cond_4
-    if-eq p1, v5, :cond_5
+    check-cast v2, LN3/l;
 
     .line 72
     .line 73
-    iget-object v0, v2, LA/S;->r:Ljava/lang/Object;
+    iget-object v2, v2, LN3/j;->c:Ljava/lang/Object;
 
     .line 74
     .line 75
-    check-cast v0, Ln3/p;
+    check-cast v2, Lcom/facebook/g;
 
     .line 76
     .line 77
-    if-eq v0, v6, :cond_5
+    const/4 v4, 0x1
 
     .line 78
+    if-eqz v2, :cond_2
+
     .line 79
-    iput-object p1, v2, LA/S;->r:Ljava/lang/Object;
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
     .line 80
+    invoke-virtual {v1, v4}, LN3/t;->k(Z)V
+
     .line 81
-    goto :goto_3
-
     .line 82
-    :goto_2
-    invoke-static {p1, v4}, LE3/a;->a(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
     .line 83
+    goto :goto_2
+
     .line 84
+    :cond_2
+    const/4 v2, 0x0
+
     .line 85
-    :cond_5
-    :goto_3
+    iput-object v2, v1, LN3/t;->h:Ljava/lang/String;
+
+    .line 86
+    .line 87
+    iput-boolean v3, v1, LN3/t;->k:Z
+
+    .line 88
+    .line 89
+    invoke-virtual {v1}, LN3/t;->h()LT5/d;
+
+    .line 90
+    .line 91
+    .line 92
+    move-result-object v2
+
+    .line 93
+    const-string v3, "fb_like_control_did_unlike"
+
+    .line 94
+    .line 95
+    check-cast v0, Landroid/os/Bundle;
+
+    .line 96
+    .line 97
+    invoke-virtual {v2, v3, v0}, LT5/d;->z(Ljava/lang/String;Landroid/os/Bundle;)V
+
+    .line 98
+    .line 99
+    .line 100
+    iget-boolean v2, v1, LN3/t;->c:Z
+
+    .line 101
+    .line 102
+    iget-boolean v3, v1, LN3/t;->k:Z
+
+    .line 103
+    .line 104
+    if-eq v2, v3, :cond_3
+
+    .line 105
+    .line 106
+    invoke-virtual {v1, v0, v2}, LN3/t;->l(Landroid/os/Bundle;Z)Z
+
+    .line 107
+    .line 108
+    .line 109
+    move-result v0
+
+    .line 110
+    if-nez v0, :cond_3
+
+    .line 111
+    .line 112
+    iget-boolean v0, v1, LN3/t;->c:Z
+
+    .line 113
+    .line 114
+    xor-int/2addr v0, v4
+
+    .line 115
+    invoke-virtual {v1, v0}, LN3/t;->k(Z)V
+
+    .line 116
+    .line 117
+    .line 118
+    :cond_3
+    :goto_2
     return-void
+
+    .line 119
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

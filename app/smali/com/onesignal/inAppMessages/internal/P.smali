@@ -1,244 +1,308 @@
-.class public final Lcom/onesignal/inAppMessages/internal/P;
-.super Li9/i;
+.class public final Lcom/onesignal/inAppMessages/internal/p;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lp9/d;
+
+# static fields
+.field private static final ADD_TAGS:Ljava/lang/String; = "adds"
+
+.field public static final Companion:Lcom/onesignal/inAppMessages/internal/o;
+
+.field private static final REMOVE_TAGS:Ljava/lang/String; = "removes"
 
 
 # instance fields
-.field final synthetic $inAppMessage:Lcom/onesignal/inAppMessages/internal/b;
+.field private tagsToAdd:Lorg/json/JSONObject;
 
-.field final synthetic $prompts:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Lcom/onesignal/inAppMessages/internal/prompt/impl/d;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field label:I
-
-.field final synthetic this$0:Lcom/onesignal/inAppMessages/internal/T;
+.field private tagsToRemove:Lorg/json/JSONArray;
 
 
 # direct methods
-.method public constructor <init>(Lcom/onesignal/inAppMessages/internal/T;Lcom/onesignal/inAppMessages/internal/b;Ljava/util/List;Lg9/e;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/onesignal/inAppMessages/internal/T;",
-            "Lcom/onesignal/inAppMessages/internal/b;",
-            "Ljava/util/List<",
-            "+",
-            "Lcom/onesignal/inAppMessages/internal/prompt/impl/d;",
-            ">;",
-            "Lg9/e<",
-            "-",
-            "Lcom/onesignal/inAppMessages/internal/P;",
-            ">;)V"
-        }
-    .end annotation
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Lcom/onesignal/inAppMessages/internal/o;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lcom/onesignal/inAppMessages/internal/o;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    sput-object v0, Lcom/onesignal/inAppMessages/internal/p;->Companion:Lcom/onesignal/inAppMessages/internal/o;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lorg/json/JSONObject;)V
+    .locals 3
 
     .line 1
-    iput-object p1, p0, Lcom/onesignal/inAppMessages/internal/P;->this$0:Lcom/onesignal/inAppMessages/internal/T;
+    const-string v0, "json"
 
     .line 2
     .line 3
-    iput-object p2, p0, Lcom/onesignal/inAppMessages/internal/P;->$inAppMessage:Lcom/onesignal/inAppMessages/internal/b;
+    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 4
     .line 5
-    iput-object p3, p0, Lcom/onesignal/inAppMessages/internal/P;->$prompts:Ljava/util/List;
-
     .line 6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 7
-    const/4 p1, 0x1
-
     .line 8
-    invoke-direct {p0, p1, p4}, Li9/i;-><init>(ILg9/e;)V
-
     .line 9
+    const-string v0, "adds"
+
     .line 10
     .line 11
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v1
+
+    .line 15
+    const/4 v2, 0x0
+
+    .line 16
+    if-eqz v1, :cond_0
+
+    .line 17
+    .line 18
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v0
+
+    .line 22
+    goto :goto_0
+
+    .line 23
+    :cond_0
+    move-object v0, v2
+
+    .line 24
+    :goto_0
+    iput-object v0, p0, Lcom/onesignal/inAppMessages/internal/p;->tagsToAdd:Lorg/json/JSONObject;
+
+    .line 25
+    .line 26
+    const-string v0, "removes"
+
+    .line 27
+    .line 28
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v1
+
+    .line 32
+    if-eqz v1, :cond_1
+
+    .line 33
+    .line 34
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v2
+
+    .line 38
+    :cond_1
+    iput-object v2, p0, Lcom/onesignal/inAppMessages/internal/p;->tagsToRemove:Lorg/json/JSONArray;
+
+    .line 39
+    .line 40
     return-void
 .end method
 
 
 # virtual methods
-.method public final create(Lg9/e;)Lg9/e;
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lg9/e<",
-            "*>;)",
-            "Lg9/e<",
-            "Lb9/n;",
-            ">;"
-        }
-    .end annotation
+.method public final getTagsToAdd()Lorg/json/JSONObject;
+    .locals 1
 
     .line 1
-    new-instance v0, Lcom/onesignal/inAppMessages/internal/P;
+    iget-object v0, p0, Lcom/onesignal/inAppMessages/internal/p;->tagsToAdd:Lorg/json/JSONObject;
 
     .line 2
     .line 3
-    iget-object v1, p0, Lcom/onesignal/inAppMessages/internal/P;->this$0:Lcom/onesignal/inAppMessages/internal/T;
-
-    .line 4
-    .line 5
-    iget-object v2, p0, Lcom/onesignal/inAppMessages/internal/P;->$inAppMessage:Lcom/onesignal/inAppMessages/internal/b;
-
-    .line 6
-    .line 7
-    iget-object v3, p0, Lcom/onesignal/inAppMessages/internal/P;->$prompts:Ljava/util/List;
-
-    .line 8
-    .line 9
-    invoke-direct {v0, v1, v2, v3, p1}, Lcom/onesignal/inAppMessages/internal/P;-><init>(Lcom/onesignal/inAppMessages/internal/T;Lcom/onesignal/inAppMessages/internal/b;Ljava/util/List;Lg9/e;)V
-
-    .line 10
-    .line 11
-    .line 12
     return-object v0
 .end method
 
-.method public final invoke(Lg9/e;)Ljava/lang/Object;
+.method public final getTagsToRemove()Lorg/json/JSONArray;
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lg9/e<",
-            "-",
-            "Lb9/n;",
-            ">;)",
-            "Ljava/lang/Object;"
-        }
-    .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/onesignal/inAppMessages/internal/P;->create(Lg9/e;)Lg9/e;
-
-    move-result-object p1
-
-    check-cast p1, Lcom/onesignal/inAppMessages/internal/P;
-
-    sget-object v0, Lb9/n;->a:Lb9/n;
-
-    invoke-virtual {p1, v0}, Lcom/onesignal/inAppMessages/internal/P;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    .line 2
-    check-cast p1, Lg9/e;
-
-    invoke-virtual {p0, p1}, Lcom/onesignal/inAppMessages/internal/P;->invoke(Lg9/e;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
-
-    .line 1
-    sget-object v0, Lh9/a;->q:Lh9/a;
+    iget-object v0, p0, Lcom/onesignal/inAppMessages/internal/p;->tagsToRemove:Lorg/json/JSONArray;
 
     .line 2
     .line 3
-    iget v1, p0, Lcom/onesignal/inAppMessages/internal/P;->label:I
+    return-object v0
+.end method
+
+.method public final setTagsToAdd(Lorg/json/JSONObject;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/onesignal/inAppMessages/internal/p;->tagsToAdd:Lorg/json/JSONObject;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final setTagsToRemove(Lorg/json/JSONArray;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/onesignal/inAppMessages/internal/p;->tagsToRemove:Lorg/json/JSONArray;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final toJSONObject()Lorg/json/JSONObject;
+    .locals 3
+
+    .line 1
+    new-instance v0, Lorg/json/JSONObject;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
     .line 4
     .line 5
-    const/4 v2, 0x1
-
     .line 6
-    if-eqz v1, :cond_1
+    :try_start_0
+    iget-object v1, p0, Lcom/onesignal/inAppMessages/internal/p;->tagsToAdd:Lorg/json/JSONObject;
 
     .line 7
     .line 8
-    if-ne v1, v2, :cond_0
+    if-eqz v1, :cond_0
 
     .line 9
     .line 10
-    invoke-static {p1}, LO5/l0;->V(Ljava/lang/Object;)V
+    const-string v2, "adds"
+
+    .line 11
+    .line 12
+    invoke-virtual {v0, v2, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 13
+    .line 14
+    .line 15
+    goto :goto_0
+
+    .line 16
+    :catch_0
+    move-exception v1
+
+    .line 17
+    goto :goto_1
+
+    .line 18
+    :cond_0
+    :goto_0
+    iget-object v1, p0, Lcom/onesignal/inAppMessages/internal/p;->tagsToRemove:Lorg/json/JSONArray;
+
+    .line 19
+    .line 20
+    if-eqz v1, :cond_1
+
+    .line 21
+    .line 22
+    const-string v2, "removes"
+
+    .line 23
+    .line 24
+    invoke-virtual {v0, v2, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 25
+    .line 26
+    .line 27
+    goto :goto_2
+
+    .line 28
+    :goto_1
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 29
+    .line 30
+    .line 31
+    :cond_1
+    :goto_2
+    return-object v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "OSInAppMessageTag{adds="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Lcom/onesignal/inAppMessages/internal/p;->tagsToAdd:Lorg/json/JSONObject;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
     .line 13
-    goto :goto_0
+    const-string v1, ", removes="
 
     .line 14
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalStateException;
-
     .line 15
-    .line 16
-    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 16
     .line 17
     .line 18
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    iget-object v1, p0, Lcom/onesignal/inAppMessages/internal/p;->tagsToRemove:Lorg/json/JSONArray;
 
     .line 19
     .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
     .line 21
-    throw p1
-
     .line 22
-    :cond_1
-    invoke-static {p1}, LO5/l0;->V(Ljava/lang/Object;)V
-
     .line 23
+    const/16 v1, 0x7d
+
     .line 24
     .line 25
-    iget-object p1, p0, Lcom/onesignal/inAppMessages/internal/P;->this$0:Lcom/onesignal/inAppMessages/internal/T;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 26
     .line 27
-    iget-object v1, p0, Lcom/onesignal/inAppMessages/internal/P;->$inAppMessage:Lcom/onesignal/inAppMessages/internal/b;
-
     .line 28
-    .line 29
-    iget-object v3, p0, Lcom/onesignal/inAppMessages/internal/P;->$prompts:Ljava/util/List;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 29
     .line 30
     .line 31
-    iput v2, p0, Lcom/onesignal/inAppMessages/internal/P;->label:I
+    move-result-object v0
 
     .line 32
-    .line 33
-    invoke-static {p1, v1, v3, p0}, Lcom/onesignal/inAppMessages/internal/T;->access$showMultiplePrompts(Lcom/onesignal/inAppMessages/internal/T;Lcom/onesignal/inAppMessages/internal/b;Ljava/util/List;Lg9/e;)Ljava/lang/Object;
-
-    .line 34
-    .line 35
-    .line 36
-    move-result-object p1
-
-    .line 37
-    if-ne p1, v0, :cond_2
-
-    .line 38
-    .line 39
     return-object v0
-
-    .line 40
-    :cond_2
-    :goto_0
-    sget-object p1, Lb9/n;->a:Lb9/n;
-
-    .line 41
-    .line 42
-    return-object p1
 .end method

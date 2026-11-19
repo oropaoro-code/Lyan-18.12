@@ -1,860 +1,184 @@
-.class public final Ln3/h;
+.class public final LN3/h;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/facebook/r;
 
 
 # instance fields
-.field public final synthetic q:I
+.field public final synthetic a:LN3/q;
 
-.field public final synthetic r:Ljava/lang/Object;
-
-.field public final synthetic s:Ljava/lang/Object;
+.field public final synthetic b:LO/q;
 
 
 # direct methods
-.method public synthetic constructor <init>(ILjava/lang/Object;Ljava/lang/Object;)V
+.method public constructor <init>(LO/q;LN3/q;)V
     .locals 0
 
     .line 1
-    iput p1, p0, Ln3/h;->q:I
-
-    iput-object p2, p0, Ln3/h;->r:Ljava/lang/Object;
-
-    iput-object p3, p0, Ln3/h;->s:Ljava/lang/Object;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LN3/h;->b:LO/q;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, LN3/h;->a:LN3/q;
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 14
+.method public final a()V
+    .locals 5
 
     .line 1
-    iget v0, p0, Ln3/h;->q:I
+    iget-object v0, p0, LN3/h;->b:LO/q;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    iget-object v1, v0, LO/q;->r:Ljava/lang/Object;
 
     .line 4
     .line 5
-    .line 6
-    const-string v0, "kitsBitmask"
+    check-cast v1, LN3/t;
 
+    .line 6
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    sget-object v1, LE3/a;->a:Ljava/util/Set;
+    iput-boolean v2, v1, LN3/t;->l:Z
 
     .line 9
     .line 10
-    invoke-interface {v1, p0}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+    iget-object v3, p0, LN3/h;->a:LN3/q;
 
     .line 11
     .line 12
-    .line 13
-    move-result v1
+    iget-object v4, v3, LN3/j;->c:Ljava/lang/Object;
 
+    .line 13
     .line 14
-    if-eqz v1, :cond_0
+    check-cast v4, Lcom/facebook/g;
 
     .line 15
     .line 16
-    goto/16 :goto_3
+    if-eqz v4, :cond_0
 
     .line 17
     .line 18
-    :cond_0
-    :try_start_0
-    new-instance v1, Landroid/os/Bundle;
+    invoke-virtual {v1, v2}, LN3/t;->k(Z)V
 
     .line 19
     .line 20
-    invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
-
     .line 21
-    .line 22
-    .line 23
-    const-string v2, "com.facebook.core.Core"
+    goto :goto_0
 
+    .line 22
+    :cond_0
+    iget-object v2, v3, LN3/q;->d:Ljava/lang/String;
+
+    .line 23
     .line 24
+    const/4 v3, 0x0
+
     .line 25
-    const-string v3, "com.facebook.login.Login"
+    invoke-static {v2, v3}, LB3/l0;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 26
     .line 27
-    const-string v4, "com.facebook.share.Share"
-
     .line 28
+    move-result-object v2
+
     .line 29
-    const-string v5, "com.facebook.places.Places"
+    iput-object v2, v1, LN3/t;->h:Ljava/lang/String;
 
     .line 30
     .line 31
-    const-string v6, "com.facebook.messenger.Messenger"
+    iget-object v1, v0, LO/q;->r:Ljava/lang/Object;
 
     .line 32
     .line 33
-    const-string v7, "com.facebook.applinks.AppLinks"
+    check-cast v1, LN3/t;
 
     .line 34
     .line 35
-    const-string v8, "com.facebook.marketing.Marketing"
+    const/4 v2, 0x1
 
     .line 36
+    iput-boolean v2, v1, LN3/t;->k:Z
+
     .line 37
-    const-string v9, "com.facebook.gamingservices.GamingServices"
-
     .line 38
-    .line 39
-    const-string v10, "com.facebook.all.All"
+    invoke-virtual {v1}, LN3/t;->h()LT5/d;
 
+    .line 39
     .line 40
     .line 41
-    const-string v11, "com.android.billingclient.api.BillingClient"
+    move-result-object v3
 
     .line 42
+    const-string v4, "fb_like_control_did_like"
+
     .line 43
-    const-string v12, "com.android.vending.billing.IInAppBillingService"
-
     .line 44
-    .line 45
-    filled-new-array/range {v2 .. v12}, [Ljava/lang/String;
+    iget-object v0, v0, LO/q;->q:Ljava/lang/Object;
 
+    .line 45
     .line 46
+    check-cast v0, Landroid/os/Bundle;
+
     .line 47
     .line 48
-    move-result-object v2
+    invoke-virtual {v3, v4, v0}, LT5/d;->z(Ljava/lang/String;Landroid/os/Bundle;)V
 
     .line 49
-    const-string v3, "core_lib_included"
-
     .line 50
     .line 51
-    const-string v4, "login_lib_included"
+    iget-boolean v3, v1, LN3/t;->c:Z
 
     .line 52
     .line 53
-    const-string v5, "share_lib_included"
+    iget-boolean v4, v1, LN3/t;->k:Z
 
     .line 54
     .line 55
-    const-string v6, "places_lib_included"
+    if-eq v3, v4, :cond_1
 
     .line 56
     .line 57
-    const-string v7, "messenger_lib_included"
+    invoke-virtual {v1, v0, v3}, LN3/t;->l(Landroid/os/Bundle;Z)Z
 
     .line 58
     .line 59
-    const-string v8, "applinks_lib_included"
-
     .line 60
+    move-result v0
+
     .line 61
-    const-string v9, "marketing_lib_included"
+    if-nez v0, :cond_1
 
     .line 62
     .line 63
-    const-string v10, "gamingservices_lib_included"
+    iget-boolean v0, v1, LN3/t;->c:Z
 
     .line 64
     .line 65
-    const-string v11, "all_lib_included"
+    xor-int/2addr v0, v2
 
     .line 66
-    .line 67
-    const-string v12, "billing_client_lib_included"
+    invoke-virtual {v1, v0}, LN3/t;->k(Z)V
 
+    .line 67
     .line 68
     .line 69
-    const-string v13, "billing_service_lib_included"
-
-    .line 70
-    .line 71
-    filled-new-array/range {v3 .. v13}, [Ljava/lang/String;
-
-    .line 72
-    .line 73
-    .line 74
-    move-result-object v3
-
-    .line 75
-    const/4 v4, 0x0
-
-    .line 76
-    move v5, v4
-
-    .line 77
-    move v6, v5
-
-    .line 78
-    :goto_0
-    const/16 v7, 0xb
-
-    .line 79
-    .line 80
-    if-ge v5, v7, :cond_1
-
-    .line 81
-    .line 82
-    aget-object v7, v2, v5
-
-    .line 83
-    .line 84
-    aget-object v8, v3, v5
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 85
-    .line 86
-    :try_start_1
-    invoke-static {v7}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    .line 87
-    .line 88
-    .line 89
-    const/4 v7, 0x1
-
-    .line 90
-    invoke-virtual {v1, v8, v7}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
-    :try_end_1
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 91
-    .line 92
-    .line 93
-    shl-int/2addr v7, v5
-
-    .line 94
-    or-int/2addr v6, v7
-
-    .line 95
-    goto :goto_1
-
-    .line 96
-    :catchall_0
-    move-exception v0
-
-    .line 97
-    goto :goto_2
-
-    .line 98
-    :catch_0
-    :goto_1
-    add-int/lit8 v5, v5, 0x1
-
-    .line 99
-    .line 100
-    goto :goto_0
-
-    .line 101
     :cond_1
-    :try_start_2
-    iget-object v2, p0, Ln3/h;->r:Ljava/lang/Object;
-
-    .line 102
-    .line 103
-    check-cast v2, Landroid/content/Context;
-
-    .line 104
-    .line 105
-    const-string v3, "com.facebook.sdk.appEventPreferences"
-
-    .line 106
-    .line 107
-    invoke-virtual {v2, v3, v4}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
-
-    .line 108
-    .line 109
-    .line 110
-    move-result-object v2
-
-    .line 111
-    invoke-interface {v2, v0, v4}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
-
-    .line 112
-    .line 113
-    .line 114
-    move-result v3
-
-    .line 115
-    if-eq v3, v6, :cond_2
-
-    .line 116
-    .line 117
-    invoke-interface {v2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
-    .line 118
-    .line 119
-    .line 120
-    move-result-object v2
-
-    .line 121
-    invoke-interface {v2, v0, v6}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
-
-    .line 122
-    .line 123
-    .line 124
-    move-result-object v0
-
-    .line 125
-    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
-
-    .line 126
-    .line 127
-    .line 128
-    iget-object v0, p0, Ln3/h;->s:Ljava/lang/Object;
-
-    .line 129
-    .line 130
-    check-cast v0, Ln3/m;
-
-    .line 131
-    .line 132
-    const-string v2, "fb_sdk_initialize"
-
-    .line 133
-    .line 134
-    invoke-virtual {v0, v2, v1}, Ln3/m;->g(Ljava/lang/String;Landroid/os/Bundle;)V
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    .line 135
-    .line 136
-    .line 137
-    goto :goto_3
-
-    .line 138
-    :goto_2
-    invoke-static {v0, p0}, LE3/a;->a(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    .line 139
-    .line 140
-    .line 141
-    :cond_2
-    :goto_3
+    :goto_0
     return-void
-
-    .line 142
-    :pswitch_0
-    sget-object v0, LE3/a;->a:Ljava/util/Set;
-
-    .line 143
-    .line 144
-    invoke-interface {v0, p0}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
-
-    .line 145
-    .line 146
-    .line 147
-    move-result v0
-
-    .line 148
-    if-eqz v0, :cond_3
-
-    .line 149
-    .line 150
-    goto :goto_4
-
-    .line 151
-    :cond_3
-    :try_start_3
-    iget-object v0, p0, Ln3/h;->r:Ljava/lang/Object;
-
-    .line 152
-    .line 153
-    check-cast v0, Ln3/b;
-
-    .line 154
-    .line 155
-    iget-object v1, p0, Ln3/h;->s:Ljava/lang/Object;
-
-    .line 156
-    .line 157
-    check-cast v1, Ln3/s;
-
-    .line 158
-    .line 159
-    invoke-static {v0, v1}, Ln3/l;->x(Ln3/b;Ln3/s;)V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
-
-    .line 160
-    .line 161
-    .line 162
-    goto :goto_4
-
-    .line 163
-    :catchall_1
-    move-exception v0
-
-    .line 164
-    invoke-static {v0, p0}, LE3/a;->a(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    .line 165
-    .line 166
-    .line 167
-    :goto_4
-    return-void
-
-    .line 168
-    :pswitch_1
-    sget-object v0, LE3/a;->a:Ljava/util/Set;
-
-    .line 169
-    .line 170
-    invoke-interface {v0, p0}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
-
-    .line 171
-    .line 172
-    .line 173
-    move-result v1
-
-    .line 174
-    if-eqz v1, :cond_4
-
-    .line 175
-    .line 176
-    goto/16 :goto_d
-
-    .line 177
-    .line 178
-    :cond_4
-    :try_start_4
-    invoke-static {}, Ln3/j;->a()LP2/j;
-
-    .line 179
-    .line 180
-    .line 181
-    move-result-object v1
-
-    .line 182
-    iget-object v2, p0, Ln3/h;->r:Ljava/lang/Object;
-
-    .line 183
-    .line 184
-    check-cast v2, Ln3/b;
-
-    .line 185
-    .line 186
-    iget-object v3, p0, Ln3/h;->s:Ljava/lang/Object;
-
-    .line 187
-    .line 188
-    check-cast v3, Ln3/f;
-
-    .line 189
-    .line 190
-    monitor-enter v1
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_3
-
-    .line 191
-    :try_start_5
-    invoke-virtual {v1, v2}, LP2/j;->r(Ln3/b;)Ln3/s;
-
-    .line 192
-    .line 193
-    .line 194
-    move-result-object v2
-
-    .line 195
-    invoke-virtual {v2, v3}, Ln3/s;->a(Ln3/f;)V
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_8
-
-    .line 196
-    .line 197
-    .line 198
-    :try_start_6
-    monitor-exit v1
-
-    .line 199
-    invoke-static {}, Ln3/m;->a()I
-
-    .line 200
-    .line 201
-    .line 202
-    move-result v1
-
-    .line 203
-    const/4 v2, 0x2
-
-    .line 204
-    const/4 v3, 0x0
-
-    .line 205
-    if-eq v1, v2, :cond_6
-
-    .line 206
-    .line 207
-    invoke-static {}, Ln3/j;->a()LP2/j;
-
-    .line 208
-    .line 209
-    .line 210
-    move-result-object v1
-
-    .line 211
-    invoke-virtual {v1}, LP2/j;->p()I
-
-    .line 212
-    .line 213
-    .line 214
-    move-result v1
-
-    .line 215
-    const-class v2, Ln3/j;
-
-    .line 216
-    .line 217
-    invoke-interface {v0, v2}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
-
-    .line 218
-    .line 219
-    .line 220
-    move-result v0
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_3
-
-    .line 221
-    if-eqz v0, :cond_5
-
-    .line 222
-    .line 223
-    :goto_5
-    move-object v0, v3
-
-    .line 224
-    goto :goto_6
-
-    .line 225
-    :cond_5
-    const/16 v0, 0x64
-
-    .line 226
-    .line 227
-    :try_start_7
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 228
-    .line 229
-    .line 230
-    move-result-object v0
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_2
-
-    .line 231
-    goto :goto_6
-
-    .line 232
-    :catchall_2
-    move-exception v0
-
-    .line 233
-    :try_start_8
-    invoke-static {v0, v2}, LE3/a;->a(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    .line 234
-    .line 235
-    .line 236
-    goto :goto_5
-
-    .line 237
-    :goto_6
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
-
-    .line 238
-    .line 239
-    .line 240
-    move-result v0
-
-    .line 241
-    if-le v1, v0, :cond_6
-
-    .line 242
-    .line 243
-    const/4 v0, 0x5
-
-    .line 244
-    invoke-static {v0}, Ln3/j;->e(I)V
-
-    .line 245
-    .line 246
-    .line 247
-    goto/16 :goto_d
-
-    .line 248
-    .line 249
-    :catchall_3
-    move-exception v0
-
-    .line 250
-    goto :goto_c
-
-    .line 251
-    :cond_6
-    sget-object v0, LE3/a;->a:Ljava/util/Set;
-
-    .line 252
-    .line 253
-    const-class v1, Ln3/j;
-
-    .line 254
-    .line 255
-    invoke-interface {v0, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
-
-    .line 256
-    .line 257
-    .line 258
-    move-result v0
-    :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_3
-
-    .line 259
-    if-eqz v0, :cond_7
-
-    .line 260
-    .line 261
-    :goto_7
-    move-object v0, v3
-
-    .line 262
-    goto :goto_8
-
-    .line 263
-    :cond_7
-    :try_start_9
-    sget-object v0, Ln3/j;->c:Ljava/util/concurrent/ScheduledFuture;
-    :try_end_9
-    .catchall {:try_start_9 .. :try_end_9} :catchall_4
-
-    .line 264
-    .line 265
-    goto :goto_8
-
-    .line 266
-    :catchall_4
-    move-exception v0
-
-    .line 267
-    :try_start_a
-    invoke-static {v0, v1}, LE3/a;->a(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    .line 268
-    .line 269
-    .line 270
-    goto :goto_7
-
-    .line 271
-    :goto_8
-    if-nez v0, :cond_b
-
-    .line 272
-    .line 273
-    sget-object v0, LE3/a;->a:Ljava/util/Set;
-
-    .line 274
-    .line 275
-    const-class v1, Ln3/j;
-
-    .line 276
-    .line 277
-    invoke-interface {v0, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
-
-    .line 278
-    .line 279
-    .line 280
-    move-result v0
-    :try_end_a
-    .catchall {:try_start_a .. :try_end_a} :catchall_3
-
-    .line 281
-    if-eqz v0, :cond_8
-
-    .line 282
-    .line 283
-    :goto_9
-    move-object v0, v3
-
-    .line 284
-    goto :goto_a
-
-    .line 285
-    :cond_8
-    :try_start_b
-    sget-object v0, Ln3/j;->b:Ljava/util/concurrent/ScheduledExecutorService;
-    :try_end_b
-    .catchall {:try_start_b .. :try_end_b} :catchall_5
-
-    .line 286
-    .line 287
-    goto :goto_a
-
-    .line 288
-    :catchall_5
-    move-exception v0
-
-    .line 289
-    :try_start_c
-    invoke-static {v0, v1}, LE3/a;->a(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    .line 290
-    .line 291
-    .line 292
-    goto :goto_9
-
-    .line 293
-    :goto_a
-    sget-object v1, LE3/a;->a:Ljava/util/Set;
-
-    .line 294
-    .line 295
-    const-class v2, Ln3/j;
-
-    .line 296
-    .line 297
-    invoke-interface {v1, v2}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
-
-    .line 298
-    .line 299
-    .line 300
-    move-result v1
-    :try_end_c
-    .catchall {:try_start_c .. :try_end_c} :catchall_3
-
-    .line 301
-    if-eqz v1, :cond_9
-
-    .line 302
-    .line 303
-    goto :goto_b
-
-    .line 304
-    :cond_9
-    :try_start_d
-    sget-object v3, Ln3/j;->d:LB3/Y;
-    :try_end_d
-    .catchall {:try_start_d .. :try_end_d} :catchall_6
-
-    .line 305
-    .line 306
-    goto :goto_b
-
-    .line 307
-    :catchall_6
-    move-exception v1
-
-    .line 308
-    :try_start_e
-    invoke-static {v1, v2}, LE3/a;->a(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    .line 309
-    .line 310
-    .line 311
-    :goto_b
-    sget-object v1, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
-
-    .line 312
-    .line 313
-    const-wide/16 v4, 0xf
-
-    .line 314
-    .line 315
-    invoke-interface {v0, v3, v4, v5, v1}, Ljava/util/concurrent/ScheduledExecutorService;->schedule(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
-
-    .line 316
-    .line 317
-    .line 318
-    move-result-object v0
-
-    .line 319
-    sget-object v1, LE3/a;->a:Ljava/util/Set;
-
-    .line 320
-    .line 321
-    const-class v2, Ln3/j;
-
-    .line 322
-    .line 323
-    invoke-interface {v1, v2}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
-
-    .line 324
-    .line 325
-    .line 326
-    move-result v1
-    :try_end_e
-    .catchall {:try_start_e .. :try_end_e} :catchall_3
-
-    .line 327
-    if-eqz v1, :cond_a
-
-    .line 328
-    .line 329
-    goto :goto_d
-
-    .line 330
-    :cond_a
-    :try_start_f
-    sput-object v0, Ln3/j;->c:Ljava/util/concurrent/ScheduledFuture;
-    :try_end_f
-    .catchall {:try_start_f .. :try_end_f} :catchall_7
-
-    .line 331
-    .line 332
-    goto :goto_d
-
-    .line 333
-    :catchall_7
-    move-exception v0
-
-    .line 334
-    :try_start_10
-    invoke-static {v0, v2}, LE3/a;->a(Ljava/lang/Throwable;Ljava/lang/Object;)V
-    :try_end_10
-    .catchall {:try_start_10 .. :try_end_10} :catchall_3
-
-    .line 335
-    .line 336
-    .line 337
-    goto :goto_d
-
-    .line 338
-    :catchall_8
-    move-exception v0
-
-    .line 339
-    :try_start_11
-    monitor-exit v1
-    :try_end_11
-    .catchall {:try_start_11 .. :try_end_11} :catchall_8
-
-    .line 340
-    :try_start_12
-    throw v0
-    :try_end_12
-    .catchall {:try_start_12 .. :try_end_12} :catchall_3
-
-    .line 341
-    :goto_c
-    invoke-static {v0, p0}, LE3/a;->a(Ljava/lang/Throwable;Ljava/lang/Object;)V
-
-    .line 342
-    .line 343
-    .line 344
-    :cond_b
-    :goto_d
-    return-void
-
-    .line 345
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

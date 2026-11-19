@@ -1,28 +1,26 @@
-.class public final LD/x0;
+.class public final LD/X0;
 .super Li9/c;
 .source "SourceFile"
 
 
 # instance fields
-.field public q:LD/U0;
+.field public q:LC0/z;
 
-.field public r:Lq9/r;
+.field public synthetic r:Ljava/lang/Object;
 
-.field public synthetic s:Ljava/lang/Object;
-
-.field public t:I
+.field public s:I
 
 
 # virtual methods
 .method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+    .locals 1
 
     .line 1
-    iput-object p1, p0, LD/x0;->s:Ljava/lang/Object;
+    iput-object p1, p0, LD/X0;->r:Ljava/lang/Object;
 
     .line 2
     .line 3
-    iget p1, p0, LD/x0;->t:I
+    iget p1, p0, LD/X0;->s:I
 
     .line 4
     .line 5
@@ -33,24 +31,20 @@
     or-int/2addr p1, v0
 
     .line 8
-    iput p1, p0, LD/x0;->t:I
+    iput p1, p0, LD/X0;->s:I
 
     .line 9
     .line 10
     const/4 p1, 0x0
 
     .line 11
-    const-wide/16 v0, 0x0
+    invoke-static {p1, p0}, LD/u1;->a(LC0/z;Li9/a;)Ljava/lang/Object;
 
     .line 12
     .line 13
-    invoke-static {p1, v0, v1, p0}, Landroidx/compose/foundation/gestures/a;->a(LD/U0;JLi9/c;)Ljava/lang/Object;
-
     .line 14
-    .line 15
-    .line 16
     move-result-object p1
 
-    .line 17
+    .line 15
     return-object p1
 .end method

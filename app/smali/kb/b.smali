@@ -1,208 +1,258 @@
-.class public final synthetic LKb/b;
-.super Ljava/lang/Object;
+.class public final Lkb/b;
+.super Lq9/j;
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/view/View$OnLongClickListener;
+.implements Lp9/g;
 
 
 # instance fields
-.field public final synthetic q:LKb/c;
+.field public final synthetic q:J
 
-.field public final synthetic r:LKb/d;
+.field public final synthetic r:J
 
 
 # direct methods
-.method public synthetic constructor <init>(LKb/c;LKb/d;)V
+.method public constructor <init>(JJ)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-wide p1, p0, Lkb/b;->q:J
 
-    iput-object p1, p0, LKb/b;->q:LKb/c;
+    .line 2
+    .line 3
+    iput-wide p3, p0, Lkb/b;->r:J
 
-    iput-object p2, p0, LKb/b;->r:LKb/d;
+    .line 4
+    .line 5
+    const/4 p1, 0x3
 
+    .line 6
+    invoke-direct {p0, p1}, Lq9/j;-><init>(I)V
+
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method
 
 
 # virtual methods
-.method public final onLongClick(Landroid/view/View;)Z
-    .locals 4
+.method public final c(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 10
 
     .line 1
-    iget-object p1, p0, LKb/b;->q:LKb/c;
+    check-cast p1, LG/U;
 
     .line 2
     .line 3
-    const-string v0, "this$0"
+    move-object v7, p2
 
     .line 4
-    .line 5
-    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    check-cast v7, LY/o;
 
+    .line 5
     .line 6
+    check-cast p3, Ljava/lang/Number;
+
     .line 7
     .line 8
-    iget-object v0, p0, LKb/b;->r:LKb/d;
+    invoke-virtual {p3}, Ljava/lang/Number;->intValue()I
 
     .line 9
     .line 10
-    const-string v1, "this$1"
-
     .line 11
+    move-result p2
+
     .line 12
-    invoke-static {v0, v1}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string p3, "$this$DownloadCommonRow"
 
     .line 13
     .line 14
-    .line 15
-    iget-object p1, p1, LKb/c;->z:LTa/b;
+    invoke-static {p1, p3}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
+    .line 15
     .line 16
     .line 17
-    if-eqz p1, :cond_3
+    and-int/lit8 p3, p2, 0xe
 
     .line 18
     .line 19
-    iget-object v1, v0, LKb/d;->t:Lapp/layan/quran/ui/TranslationManagerActivity;
+    if-nez p3, :cond_1
 
     .line 20
     .line 21
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v7, p1}, LY/o;->g(Ljava/lang/Object;)Z
 
     .line 22
     .line 23
     .line 24
-    iget-object v0, v0, LKb/d;->u:LJb/z;
+    move-result p1
 
     .line 25
-    .line 26
-    iput-object v0, v1, Lapp/layan/quran/ui/TranslationManagerActivity;->Y:LJb/z;
+    if-eqz p1, :cond_0
 
+    .line 26
     .line 27
+    const/4 p1, 0x4
+
     .line 28
-    iget-object v0, v1, Lapp/layan/quran/ui/TranslationManagerActivity;->X:Lp/b;
+    goto :goto_0
 
     .line 29
+    :cond_0
+    const/4 p1, 0x2
+
     .line 30
-    const/4 v2, 0x0
+    :goto_0
+    or-int/2addr p2, p1
 
     .line 31
-    const-string v3, "selectionListener"
+    :cond_1
+    and-int/lit8 p1, p2, 0x5b
 
     .line 32
     .line 33
-    if-eqz v0, :cond_1
+    const/16 p2, 0x12
 
     .line 34
     .line 35
-    invoke-virtual {v0}, Lp/b;->a()V
+    if-ne p1, p2, :cond_3
 
     .line 36
     .line 37
-    .line 38
-    iget-object p1, v1, Lapp/layan/quran/ui/TranslationManagerActivity;->d0:LJb/z;
+    invoke-virtual {v7}, LY/o;->x()Z
 
+    .line 38
     .line 39
     .line 40
-    if-eqz p1, :cond_0
+    move-result p1
 
     .line 41
-    .line 42
-    iget-object p1, p1, LJb/z;->a:LKb/d;
+    if-nez p1, :cond_2
 
+    .line 42
     .line 43
+    goto :goto_1
+
     .line 44
-    iput-object v2, p1, LKb/d;->A:LTa/b;
+    :cond_2
+    invoke-virtual {v7}, LY/o;->N()V
 
     .line 45
     .line 46
-    invoke-virtual {p1}, Lw2/y;->d()V
-
     .line 47
+    goto :goto_2
+
     .line 48
+    :cond_3
+    :goto_1
+    invoke-static {v7}, LO5/l0;->H(LY/o;)Lv0/b;
+
     .line 49
-    goto :goto_0
-
     .line 50
-    :cond_0
-    invoke-static {v3}, Lq9/i;->l(Ljava/lang/String;)V
-
     .line 51
-    .line 52
-    .line 53
-    throw v2
+    move-result-object v0
 
+    .line 52
+    new-instance v6, Lr0/j;
+
+    .line 53
     .line 54
-    :cond_1
-    iget-object v0, v1, Lapp/layan/quran/ui/TranslationManagerActivity;->d0:LJb/z;
+    iget-wide p1, p0, Lkb/b;->q:J
 
     .line 55
     .line 56
-    if-eqz v0, :cond_2
+    const/4 p3, 0x5
 
     .line 57
-    .line 58
-    iget-object v0, v0, LJb/z;->a:LKb/d;
+    invoke-direct {v6, p3, p1, p2}, Lr0/j;-><init>(IJ)V
 
+    .line 58
     .line 59
     .line 60
-    iput-object p1, v0, LKb/d;->A:LTa/b;
+    new-instance p1, Landroidx/compose/foundation/layout/VerticalAlignElement;
 
     .line 61
     .line 62
-    invoke-virtual {v0}, Lw2/y;->d()V
+    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
     .line 63
     .line 64
     .line 65
-    new-instance p1, LJb/y;
+    sget-object p2, LL/f;->a:LL/e;
 
     .line 66
     .line 67
-    invoke-direct {p1, v1}, LJb/y;-><init>(Lapp/layan/quran/ui/TranslationManagerActivity;)V
+    invoke-static {p1, p2}, LA5/a;->c(Lk0/r;Lr0/H;)Lk0/r;
 
     .line 68
     .line 69
     .line 70
-    invoke-virtual {v1}, Landroidx/appcompat/app/AppCompatActivity;->t()Lk/m;
-
-    .line 71
-    .line 72
-    .line 73
-    move-result-object v0
-
-    .line 74
-    invoke-virtual {v0, p1}, Lk/m;->n(Lp/a;)Lp/b;
-
-    .line 75
-    .line 76
-    .line 77
     move-result-object p1
 
+    .line 71
+    sget-object p2, Lr0/E;->a:Ld6/d;
+
+    .line 72
+    .line 73
+    iget-wide v1, p0, Lkb/b;->r:J
+
+    .line 74
+    .line 75
+    invoke-static {p1, v1, v2, p2}, Landroidx/compose/foundation/a;->a(Lk0/r;JLr0/H;)Lk0/r;
+
+    .line 76
+    .line 77
     .line 78
-    iput-object p1, v1, Lapp/layan/quran/ui/TranslationManagerActivity;->X:Lp/b;
+    move-result-object p1
 
     .line 79
-    .line 80
-    goto :goto_0
+    const/16 p2, 0x8
 
+    .line 80
     .line 81
-    :cond_2
-    invoke-static {v3}, Lq9/i;->l(Ljava/lang/String;)V
+    int-to-float p2, p2
 
     .line 82
+    invoke-static {p1, p2}, Landroidx/compose/foundation/layout/b;->i(Lk0/r;F)Lk0/r;
+
     .line 83
     .line 84
-    throw v2
-
     .line 85
-    :cond_3
-    :goto_0
-    const/4 p1, 0x1
+    move-result-object v2
 
     .line 86
-    return p1
+    const/16 v8, 0x38
+
+    .line 87
+    .line 88
+    const/16 v9, 0x38
+
+    .line 89
+    .line 90
+    const-string v1, ""
+
+    .line 91
+    .line 92
+    const/4 v3, 0x0
+
+    .line 93
+    const/4 v4, 0x0
+
+    .line 94
+    const/4 v5, 0x0
+
+    .line 95
+    invoke-static/range {v0 .. v9}, LU9/d;->b(Lv0/b;Ljava/lang/String;Lk0/r;Lk0/e;LG0/i;FLr0/j;LY/o;II)V
+
+    .line 96
+    .line 97
+    .line 98
+    :goto_2
+    sget-object p1, Lb9/n;->a:Lb9/n;
+
+    .line 99
+    .line 100
+    return-object p1
 .end method

@@ -1,59 +1,206 @@
-.class public final LW0/d;
-.super Landroid/text/style/MetricAffectingSpan;
+.class public final Lw0/D;
+.super Lq9/j;
 .source "SourceFile"
+
+# interfaces
+.implements Lp9/d;
 
 
 # instance fields
-.field public final a:F
+.field public final synthetic q:I
+
+.field public final synthetic r:Lw0/E;
 
 
 # direct methods
-.method public constructor <init>(F)V
+.method public synthetic constructor <init>(Lw0/E;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Landroid/text/style/MetricAffectingSpan;-><init>()V
+    iput p2, p0, Lw0/D;->q:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput p1, p0, LW0/d;->a:F
+    iput-object p1, p0, Lw0/D;->r:Lw0/E;
 
-    .line 5
-    .line 6
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lq9/j;-><init>(I)V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final updateDrawState(Landroid/text/TextPaint;)V
-    .locals 1
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 9
 
     .line 1
-    iget v0, p0, LW0/d;->a:F
+    iget v0, p0, Lw0/D;->q:I
 
     .line 2
     .line 3
-    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setLetterSpacing(F)V
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    return-void
-.end method
+    check-cast p1, Lt0/d;
 
-.method public final updateMeasureState(Landroid/text/TextPaint;)V
-    .locals 1
+    .line 7
+    .line 8
+    iget-object v0, p0, Lw0/D;->r:Lw0/E;
 
-    .line 1
-    iget v0, p0, LW0/d;->a:F
+    .line 9
+    .line 10
+    iget-object v1, v0, Lw0/E;->b:Lw0/c;
 
-    .line 2
-    .line 3
-    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setLetterSpacing(F)V
+    .line 11
+    .line 12
+    iget v2, v0, Lw0/E;->k:F
 
-    .line 4
-    .line 5
-    .line 6
-    return-void
+    .line 13
+    .line 14
+    iget v0, v0, Lw0/E;->l:F
+
+    .line 15
+    .line 16
+    invoke-interface {p1}, Lt0/d;->u()Lcom/facebook/x;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v3
+
+    .line 20
+    invoke-virtual {v3}, Lcom/facebook/x;->u()J
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-wide v4
+
+    .line 24
+    invoke-virtual {v3}, Lcom/facebook/x;->n()Lr0/n;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v6
+
+    .line 28
+    invoke-interface {v6}, Lr0/n;->k()V
+
+    .line 29
+    .line 30
+    .line 31
+    :try_start_0
+    iget-object v6, v3, Lcom/facebook/x;->r:Ljava/lang/Object;
+
+    .line 32
+    .line 33
+    check-cast v6, Ln0/b;
+
+    .line 34
+    .line 35
+    const-wide/16 v7, 0x0
+
+    .line 36
+    .line 37
+    invoke-virtual {v6, v2, v0, v7, v8}, Ln0/b;->m(FFJ)V
+
+    .line 38
+    .line 39
+    .line 40
+    invoke-virtual {v1, p1}, Lw0/c;->a(Lt0/d;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 41
+    .line 42
+    .line 43
+    invoke-virtual {v3}, Lcom/facebook/x;->n()Lr0/n;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object p1
+
+    .line 47
+    invoke-interface {p1}, Lr0/n;->i()V
+
+    .line 48
+    .line 49
+    .line 50
+    invoke-virtual {v3, v4, v5}, Lcom/facebook/x;->I(J)V
+
+    .line 51
+    .line 52
+    .line 53
+    sget-object p1, Lb9/n;->a:Lb9/n;
+
+    .line 54
+    .line 55
+    return-object p1
+
+    .line 56
+    :catchall_0
+    move-exception p1
+
+    .line 57
+    invoke-virtual {v3}, Lcom/facebook/x;->n()Lr0/n;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object v0
+
+    .line 61
+    invoke-interface {v0}, Lr0/n;->i()V
+
+    .line 62
+    .line 63
+    .line 64
+    invoke-virtual {v3, v4, v5}, Lcom/facebook/x;->I(J)V
+
+    .line 65
+    .line 66
+    .line 67
+    throw p1
+
+    .line 68
+    :pswitch_0
+    check-cast p1, Lw0/C;
+
+    .line 69
+    .line 70
+    const/4 p1, 0x1
+
+    .line 71
+    iget-object v0, p0, Lw0/D;->r:Lw0/E;
+
+    .line 72
+    .line 73
+    iput-boolean p1, v0, Lw0/E;->d:Z
+
+    .line 74
+    .line 75
+    iget-object p1, v0, Lw0/E;->f:Lq9/j;
+
+    .line 76
+    .line 77
+    invoke-interface {p1}, Lp9/a;->invoke()Ljava/lang/Object;
+
+    .line 78
+    .line 79
+    .line 80
+    sget-object p1, Lb9/n;->a:Lb9/n;
+
+    .line 81
+    .line 82
+    return-object p1
+
+    .line 83
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

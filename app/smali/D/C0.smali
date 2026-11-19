@@ -1,5 +1,5 @@
-.class public final synthetic LD/C0;
-.super Lq9/a;
+.class public final LD/c0;
+.super Li9/i;
 .source "SourceFile"
 
 # interfaces
@@ -7,177 +7,216 @@
 
 
 # instance fields
-.field public final synthetic x:I
+.field public q:I
 
-
-# direct methods
-.method public synthetic constructor <init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
-    .locals 7
-
-    .line 1
-    iput p7, p0, LD/C0;->x:I
-
-    move-object v0, p0
-
-    move v1, p1
-
-    move v2, p6
-
-    move-object v3, p3
-
-    move-object v4, p2
-
-    move-object v5, p4
-
-    move-object v6, p5
-
-    invoke-direct/range {v0 .. v6}, Lq9/a;-><init>(IILjava/lang/Class;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V
-
-    return-void
-.end method
+.field public synthetic r:Ljava/lang/Object;
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+.method public final create(Ljava/lang/Object;Lg9/e;)Lg9/e;
+    .locals 2
 
     .line 1
-    iget v0, p0, LD/C0;->x:I
+    new-instance v0, LD/c0;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    const/4 v1, 0x2
+
+    .line 4
+    invoke-direct {v0, v1, p2}, Li9/i;-><init>(ILg9/e;)V
+
+    .line 5
+    .line 6
+    .line 7
+    iput-object p1, v0, LD/c0;->r:Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, LA9/x;
+
+    .line 2
+    .line 3
+    check-cast p2, Lg9/e;
 
     .line 4
     .line 5
+    invoke-virtual {p0, p1, p2}, LD/c0;->create(Ljava/lang/Object;Lg9/e;)Lg9/e;
+
     .line 6
-    check-cast p1, LY/o;
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    check-cast p1, LD/c0;
+
+    .line 10
+    .line 11
+    sget-object p2, Lb9/n;->a:Lb9/n;
+
+    .line 12
+    .line 13
+    invoke-virtual {p1, p2}, LD/c0;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p1
+
+    .line 17
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
+
+    .line 1
+    sget-object v0, Lh9/a;->q:Lh9/a;
+
+    .line 2
+    .line 3
+    iget v1, p0, LD/c0;->q:I
+
+    .line 4
+    .line 5
+    const/4 v2, 0x1
+
+    .line 6
+    if-eqz v1, :cond_1
 
     .line 7
     .line 8
-    check-cast p2, Ljava/lang/Number;
+    if-ne v1, v2, :cond_0
 
     .line 9
     .line 10
-    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+    iget-object v1, p0, LD/c0;->r:Ljava/lang/Object;
 
     .line 11
     .line 12
-    .line 13
-    move-result p2
+    check-cast v1, LA9/x;
 
+    .line 13
     .line 14
-    iget-object v0, p0, Lq9/a;->q:Ljava/lang/Object;
+    invoke-static {p1}, LO5/l0;->V(Ljava/lang/Object;)V
 
     .line 15
     .line 16
-    check-cast v0, Lg0/c;
-
     .line 17
+    goto :goto_0
+
     .line 18
-    invoke-virtual {v0, p2, p1}, Lg0/c;->b(ILY/o;)Ljava/lang/Object;
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
 
     .line 19
     .line 20
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
     .line 21
-    sget-object p1, Lb9/n;->a:Lb9/n;
-
     .line 22
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
     .line 23
-    return-object p1
-
     .line 24
-    :pswitch_0
-    check-cast p1, Lf1/q;
-
     .line 25
+    throw p1
+
     .line 26
-    iget-wide v0, p1, Lf1/q;->a:J
+    :cond_1
+    invoke-static {p1}, LO5/l0;->V(Ljava/lang/Object;)V
 
     .line 27
     .line 28
-    check-cast p2, Lg9/e;
-
     .line 29
+    iget-object p1, p0, LD/c0;->r:Ljava/lang/Object;
+
     .line 30
-    iget-object p1, p0, Lq9/a;->q:Ljava/lang/Object;
-
     .line 31
-    .line 32
-    check-cast p1, LD/K0;
+    check-cast p1, LA9/x;
 
+    .line 32
     .line 33
+    move-object v1, p1
+
     .line 34
-    iget-object p2, p1, LD/K0;->Q:LB0/d;
+    :cond_2
+    :goto_0
+    invoke-interface {v1}, LA9/x;->getCoroutineContext()Lg9/j;
 
     .line 35
     .line 36
-    iget-object p2, p2, LB0/d;->c:Lq9/j;
-
     .line 37
+    move-result-object p1
+
     .line 38
-    invoke-interface {p2}, Lp9/a;->invoke()Ljava/lang/Object;
+    invoke-static {p1}, LA9/A;->w(Lg9/j;)Z
 
     .line 39
     .line 40
     .line 41
-    move-result-object p2
+    move-result p1
 
     .line 42
-    check-cast p2, LA9/x;
+    if-eqz p1, :cond_3
 
     .line 43
     .line 44
-    if-eqz p2, :cond_0
+    sget-object p1, LD/d;->t:LD/d;
 
     .line 45
     .line 46
-    new-instance v2, LD/G0;
+    iput-object v1, p0, LD/c0;->r:Ljava/lang/Object;
 
     .line 47
     .line 48
-    const/4 v3, 0x0
+    iput v2, p0, LD/c0;->q:I
 
     .line 49
-    invoke-direct {v2, p1, v0, v1, v3}, LD/G0;-><init>(LD/K0;JLg9/e;)V
-
     .line 50
+    invoke-interface {p0}, Lg9/e;->getContext()Lg9/j;
+
     .line 51
     .line 52
-    const/4 p1, 0x3
-
     .line 53
-    invoke-static {p2, v3, v3, v2, p1}, LA9/A;->z(LA9/x;Lg9/j;LA9/y;Lp9/f;I)LA9/r0;
+    move-result-object v3
 
     .line 54
+    invoke-static {v3}, LY/c;->o(Lg9/j;)LY/S;
+
     .line 55
     .line 56
-    sget-object p1, Lb9/n;->a:Lb9/n;
-
     .line 57
+    move-result-object v3
+
     .line 58
-    return-object p1
+    invoke-interface {v3, p1, p0}, LY/S;->s(Lp9/d;Lg9/e;)Ljava/lang/Object;
 
     .line 59
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalStateException;
-
     .line 60
     .line 61
-    const-string p2, "in order to access nested coroutine scope you need to attach dispatcher to the `Modifier.nestedScroll` first."
+    move-result-object p1
 
     .line 62
+    if-ne p1, v0, :cond_2
+
     .line 63
-    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
     .line 64
-    .line 65
-    .line 66
-    throw p1
+    return-object v0
 
+    .line 65
+    :cond_3
+    sget-object p1, Lb9/n;->a:Lb9/n;
+
+    .line 66
     .line 67
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object p1
 .end method

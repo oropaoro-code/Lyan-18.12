@@ -1,4 +1,4 @@
-.class public abstract Lx/o;
+.class public abstract Lx/O;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -12,14 +12,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lx/y;
+    new-instance v0, Lx/H;
 
     .line 2
     .line 3
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lx/y;-><init>(I)V
+    invoke-direct {v0, v1}, Lx/H;-><init>(I)V
 
     .line 5
     .line 6

@@ -1,142 +1,532 @@
-.class public final LH1/J0;
-.super Ljava/lang/Object;
+.class public final LH1/j0;
+.super LH1/m0;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Ls9/a;
+# static fields
+.field public static final e:Landroid/view/animation/PathInterpolator;
+
+.field public static final f:Le2/a;
+
+.field public static final g:Landroid/view/animation/DecelerateInterpolator;
+
+.field public static final h:Landroid/view/animation/AccelerateInterpolator;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/Window;Landroid/view/View;)V
-    .locals 2
+.method static constructor <clinit>()V
+    .locals 4
+
+    .line 1
+    new-instance v0, Landroid/view/animation/PathInterpolator;
+
+    .line 2
+    .line 3
+    const/high16 v1, 0x3f800000    # 1.0f
+
+    .line 4
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    const v3, 0x3f8ccccd    # 1.1f
 
     .line 7
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 8
-    new-instance v0, LA/C0;
-
-    invoke-direct {v0, p2}, LA/C0;-><init>(Landroid/view/View;)V
-
     .line 9
-    sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x23
-
-    if-lt p2, v1, :cond_0
+    invoke-direct {v0, v2, v3, v2, v1}, Landroid/view/animation/PathInterpolator;-><init>(FFFF)V
 
     .line 10
-    new-instance p2, LH1/I0;
-
     .line 11
-    invoke-static {p1}, LH1/A0;->f(Landroid/view/Window;)Landroid/view/WindowInsetsController;
-
-    move-result-object v1
-
-    invoke-direct {p2, v1, v0}, LH1/H0;-><init>(Landroid/view/WindowInsetsController;LA/C0;)V
-
     .line 12
-    iput-object p1, p2, LH1/H0;->s:Landroid/view/Window;
+    sput-object v0, LH1/j0;->e:Landroid/view/animation/PathInterpolator;
 
     .line 13
-    iput-object p2, p0, LH1/J0;->a:Ls9/a;
-
-    goto :goto_0
-
-    :cond_0
-    const/16 v1, 0x1e
-
-    if-lt p2, v1, :cond_1
-
     .line 14
-    new-instance p2, LH1/H0;
+    new-instance v0, Le2/a;
 
     .line 15
-    invoke-static {p1}, LH1/A0;->f(Landroid/view/Window;)Landroid/view/WindowInsetsController;
-
-    move-result-object v1
-
-    invoke-direct {p2, v1, v0}, LH1/H0;-><init>(Landroid/view/WindowInsetsController;LA/C0;)V
-
     .line 16
-    iput-object p1, p2, LH1/H0;->s:Landroid/view/Window;
+    const/4 v1, 0x0
 
     .line 17
-    iput-object p2, p0, LH1/J0;->a:Ls9/a;
-
-    goto :goto_0
-
-    :cond_1
-    const/16 v1, 0x1a
-
-    if-lt p2, v1, :cond_2
+    invoke-direct {v0, v1}, Le2/a;-><init>(I)V
 
     .line 18
-    new-instance p2, LH1/G0;
-
     .line 19
-    invoke-direct {p2, p1, v0}, LH1/F0;-><init>(Landroid/view/Window;LA/C0;)V
-
     .line 20
-    iput-object p2, p0, LH1/J0;->a:Ls9/a;
-
-    goto :goto_0
+    sput-object v0, LH1/j0;->f:Le2/a;
 
     .line 21
-    :cond_2
-    new-instance p2, LH1/F0;
-
     .line 22
-    invoke-direct {p2, p1, v0}, LH1/F0;-><init>(Landroid/view/Window;LA/C0;)V
+    new-instance v0, Landroid/view/animation/DecelerateInterpolator;
 
     .line 23
-    iput-object p2, p0, LH1/J0;->a:Ls9/a;
+    .line 24
+    const/high16 v1, 0x3fc00000    # 1.5f
 
-    :goto_0
+    .line 25
+    .line 26
+    invoke-direct {v0, v1}, Landroid/view/animation/DecelerateInterpolator;-><init>(F)V
+
+    .line 27
+    .line 28
+    .line 29
+    sput-object v0, LH1/j0;->g:Landroid/view/animation/DecelerateInterpolator;
+
+    .line 30
+    .line 31
+    new-instance v0, Landroid/view/animation/AccelerateInterpolator;
+
+    .line 32
+    .line 33
+    invoke-direct {v0, v1}, Landroid/view/animation/AccelerateInterpolator;-><init>(F)V
+
+    .line 34
+    .line 35
+    .line 36
+    sput-object v0, LH1/j0;->h:Landroid/view/animation/AccelerateInterpolator;
+
+    .line 37
+    .line 38
     return-void
 .end method
 
-.method public constructor <init>(Landroid/view/WindowInsetsController;)V
+.method public static f(Landroid/view/View;LH1/n0;)V
     .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {p0}, LH1/j0;->k(Landroid/view/View;)LH1/f0;
 
     .line 2
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x23
-
-    if-lt v0, v1, :cond_0
-
     .line 3
-    new-instance v0, LH1/I0;
-
-    new-instance v1, LA/C0;
-
-    invoke-direct {v1, p1}, LA/C0;-><init>(Landroid/view/WindowInsetsController;)V
-
     .line 4
-    invoke-direct {v0, p1, v1}, LH1/H0;-><init>(Landroid/view/WindowInsetsController;LA/C0;)V
+    move-result-object v0
 
     .line 5
-    iput-object v0, p0, LH1/J0;->a:Ls9/a;
-
-    goto :goto_0
+    if-eqz v0, :cond_0
 
     .line 6
-    :cond_0
-    new-instance v0, LH1/H0;
+    .line 7
+    invoke-virtual {v0, p1}, LH1/f0;->d(LH1/n0;)V
 
-    new-instance v1, LA/C0;
+    .line 8
+    .line 9
+    .line 10
+    iget v0, v0, LH1/f0;->q:I
 
-    invoke-direct {v1, p1}, LA/C0;-><init>(Landroid/view/WindowInsetsController;)V
+    .line 11
+    .line 12
+    if-nez v0, :cond_0
 
-    invoke-direct {v0, p1, v1}, LH1/H0;-><init>(Landroid/view/WindowInsetsController;LA/C0;)V
-
-    iput-object v0, p0, LH1/J0;->a:Ls9/a;
-
-    :goto_0
+    .line 13
+    .line 14
     return-void
+
+    .line 15
+    :cond_0
+    instance-of v0, p0, Landroid/view/ViewGroup;
+
+    .line 16
+    .line 17
+    if-eqz v0, :cond_1
+
+    .line 18
+    .line 19
+    check-cast p0, Landroid/view/ViewGroup;
+
+    .line 20
+    .line 21
+    const/4 v0, 0x0
+
+    .line 22
+    :goto_0
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
+
+    .line 23
+    .line 24
+    .line 25
+    move-result v1
+
+    .line 26
+    if-ge v0, v1, :cond_1
+
+    .line 27
+    .line 28
+    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v1
+
+    .line 32
+    invoke-static {v1, p1}, LH1/j0;->f(Landroid/view/View;LH1/n0;)V
+
+    .line 33
+    .line 34
+    .line 35
+    add-int/lit8 v0, v0, 0x1
+
+    .line 36
+    .line 37
+    goto :goto_0
+
+    .line 38
+    :cond_1
+    return-void
+.end method
+
+.method public static g(Landroid/view/View;LH1/n0;LH1/E0;Z)V
+    .locals 2
+
+    .line 1
+    invoke-static {p0}, LH1/j0;->k(Landroid/view/View;)LH1/f0;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    if-eqz v0, :cond_1
+
+    .line 7
+    .line 8
+    iput-object p2, v0, LH1/f0;->r:Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    if-nez p3, :cond_1
+
+    .line 11
+    .line 12
+    invoke-virtual {v0, p1}, LH1/f0;->e(LH1/n0;)V
+
+    .line 13
+    .line 14
+    .line 15
+    iget p3, v0, LH1/f0;->q:I
+
+    .line 16
+    .line 17
+    if-nez p3, :cond_0
+
+    .line 18
+    .line 19
+    const/4 p3, 0x1
+
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :cond_0
+    move p3, v1
+
+    .line 22
+    :cond_1
+    :goto_0
+    instance-of v0, p0, Landroid/view/ViewGroup;
+
+    .line 23
+    .line 24
+    if-eqz v0, :cond_2
+
+    .line 25
+    .line 26
+    check-cast p0, Landroid/view/ViewGroup;
+
+    .line 27
+    .line 28
+    :goto_1
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v0
+
+    .line 32
+    if-ge v1, v0, :cond_2
+
+    .line 33
+    .line 34
+    invoke-virtual {p0, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v0
+
+    .line 38
+    invoke-static {v0, p1, p2, p3}, LH1/j0;->g(Landroid/view/View;LH1/n0;LH1/E0;Z)V
+
+    .line 39
+    .line 40
+    .line 41
+    add-int/lit8 v1, v1, 0x1
+
+    .line 42
+    .line 43
+    goto :goto_1
+
+    .line 44
+    :cond_2
+    return-void
+.end method
+
+.method public static h(Landroid/view/View;LH1/E0;Ljava/util/List;)V
+    .locals 2
+
+    .line 1
+    invoke-static {p0}, LH1/j0;->k(Landroid/view/View;)LH1/f0;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    invoke-virtual {v0, p1, p2}, LH1/f0;->f(LH1/E0;Ljava/util/List;)LH1/E0;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    iget v0, v0, LH1/f0;->q:I
+
+    .line 12
+    .line 13
+    if-nez v0, :cond_0
+
+    .line 14
+    .line 15
+    return-void
+
+    .line 16
+    :cond_0
+    instance-of v0, p0, Landroid/view/ViewGroup;
+
+    .line 17
+    .line 18
+    if-eqz v0, :cond_1
+
+    .line 19
+    .line 20
+    check-cast p0, Landroid/view/ViewGroup;
+
+    .line 21
+    .line 22
+    const/4 v0, 0x0
+
+    .line 23
+    :goto_0
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v1
+
+    .line 27
+    if-ge v0, v1, :cond_1
+
+    .line 28
+    .line 29
+    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v1
+
+    .line 33
+    invoke-static {v1, p1, p2}, LH1/j0;->h(Landroid/view/View;LH1/E0;Ljava/util/List;)V
+
+    .line 34
+    .line 35
+    .line 36
+    add-int/lit8 v0, v0, 0x1
+
+    .line 37
+    .line 38
+    goto :goto_0
+
+    .line 39
+    :cond_1
+    return-void
+.end method
+
+.method public static i(Landroid/view/View;LH1/n0;La3/e;)V
+    .locals 2
+
+    .line 1
+    invoke-static {p0}, LH1/j0;->k(Landroid/view/View;)LH1/f0;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    invoke-virtual {v0, p1, p2}, LH1/f0;->g(LH1/n0;La3/e;)La3/e;
+
+    .line 8
+    .line 9
+    .line 10
+    iget v0, v0, LH1/f0;->q:I
+
+    .line 11
+    .line 12
+    if-nez v0, :cond_0
+
+    .line 13
+    .line 14
+    return-void
+
+    .line 15
+    :cond_0
+    instance-of v0, p0, Landroid/view/ViewGroup;
+
+    .line 16
+    .line 17
+    if-eqz v0, :cond_1
+
+    .line 18
+    .line 19
+    check-cast p0, Landroid/view/ViewGroup;
+
+    .line 20
+    .line 21
+    const/4 v0, 0x0
+
+    .line 22
+    :goto_0
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
+
+    .line 23
+    .line 24
+    .line 25
+    move-result v1
+
+    .line 26
+    if-ge v0, v1, :cond_1
+
+    .line 27
+    .line 28
+    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v1
+
+    .line 32
+    invoke-static {v1, p1, p2}, LH1/j0;->i(Landroid/view/View;LH1/n0;La3/e;)V
+
+    .line 33
+    .line 34
+    .line 35
+    add-int/lit8 v0, v0, 0x1
+
+    .line 36
+    .line 37
+    goto :goto_0
+
+    .line 38
+    :cond_1
+    return-void
+.end method
+
+.method public static j(Landroid/view/View;Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
+    .locals 1
+
+    .line 1
+    const v0, 0x7f090249
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    if-eqz v0, :cond_0
+
+    .line 9
+    .line 10
+    return-object p1
+
+    .line 11
+    :cond_0
+    invoke-virtual {p0, p1}, Landroid/view/View;->onApplyWindowInsets(Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p0
+
+    .line 15
+    return-object p0
+.end method
+
+.method public static k(Landroid/view/View;)LH1/f0;
+    .locals 1
+
+    .line 1
+    const v0, 0x7f090252
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p0
+
+    .line 8
+    instance-of v0, p0, LH1/i0;
+
+    .line 9
+    .line 10
+    if-eqz v0, :cond_0
+
+    .line 11
+    .line 12
+    check-cast p0, LH1/i0;
+
+    .line 13
+    .line 14
+    iget-object p0, p0, LH1/i0;->a:LH1/f0;
+
+    .line 15
+    .line 16
+    goto :goto_0
+
+    .line 17
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 18
+    :goto_0
+    return-object p0
 .end method

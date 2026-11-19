@@ -1,141 +1,512 @@
-.class public Lg5/c;
+.class public final LG5/c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public a:Landroid/window/OnBackInvokedCallback;
+.field public final a:Ljava/lang/String;
+
+.field public final b:Ljava/util/Set;
+
+.field public final c:Ljava/util/Set;
+
+.field public final d:I
+
+.field public final e:I
+
+.field public final f:LG5/f;
+
+.field public final g:Ljava/util/Set;
 
 
-# virtual methods
-.method public a(Lg5/b;)Landroid/window/OnBackInvokedCallback;
-    .locals 2
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Ljava/util/Set;Ljava/util/Set;IILG5/f;Ljava/util/Set;)V
+    .locals 0
 
     .line 1
-    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, Le/u;
+    iput-object p1, p0, LG5/c;->a:Ljava/lang/String;
 
     .line 5
     .line 6
-    const/4 v1, 0x1
-
-    .line 7
-    invoke-direct {v0, v1, p1}, Le/u;-><init>(ILjava/lang/Object;)V
-
-    .line 8
-    .line 9
-    .line 10
-    return-object v0
-.end method
-
-.method public b(Lg5/b;Landroid/view/View;Z)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lg5/c;->a:Landroid/window/OnBackInvokedCallback;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    return-void
-
-    .line 6
-    :cond_0
-    invoke-static {p2}, LI1/d;->m(Landroid/view/View;)Landroid/window/OnBackInvokedDispatcher;
+    invoke-static {p2}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
 
     .line 7
     .line 8
     .line 9
-    move-result-object p2
+    move-result-object p1
 
     .line 10
-    if-nez p2, :cond_1
+    iput-object p1, p0, LG5/c;->b:Ljava/util/Set;
 
     .line 11
     .line 12
-    return-void
+    invoke-static {p3}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
 
     .line 13
-    :cond_1
-    invoke-virtual {p0, p1}, Lg5/c;->a(Lg5/b;)Landroid/window/OnBackInvokedCallback;
-
     .line 14
     .line 15
-    .line 16
     move-result-object p1
 
+    .line 16
+    iput-object p1, p0, LG5/c;->c:Ljava/util/Set;
+
     .line 17
-    iput-object p1, p0, Lg5/c;->a:Landroid/window/OnBackInvokedCallback;
+    .line 18
+    iput p4, p0, LG5/c;->d:I
+
+    .line 19
+    .line 20
+    iput p5, p0, LG5/c;->e:I
+
+    .line 21
+    .line 22
+    iput-object p6, p0, LG5/c;->f:LG5/f;
+
+    .line 23
+    .line 24
+    invoke-static {p7}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p1
+
+    .line 28
+    iput-object p1, p0, LG5/c;->g:Ljava/util/Set;
+
+    .line 29
+    .line 30
+    return-void
+.end method
+
+.method public static a(LG5/r;)LG5/b;
+    .locals 5
+
+    .line 1
+    new-instance v0, LG5/b;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    new-array v1, v1, [LG5/r;
+
+    .line 5
+    .line 6
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    const/4 v2, 0x0
+
+    .line 10
+    iput-object v2, v0, LG5/b;->c:Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    new-instance v2, Ljava/util/HashSet;
+
+    .line 13
+    .line 14
+    invoke-direct {v2}, Ljava/util/HashSet;-><init>()V
+
+    .line 15
+    .line 16
+    .line 17
+    iput-object v2, v0, LG5/b;->d:Ljava/lang/Object;
 
     .line 18
     .line 19
-    if-eqz p3, :cond_2
+    new-instance v3, Ljava/util/HashSet;
 
     .line 20
     .line 21
-    const p3, 0xf4240
+    invoke-direct {v3}, Ljava/util/HashSet;-><init>()V
 
     .line 22
     .line 23
     .line 24
-    goto :goto_0
+    iput-object v3, v0, LG5/b;->e:Ljava/lang/Object;
 
     .line 25
-    :cond_2
-    const/4 p3, 0x0
-
     .line 26
-    :goto_0
-    invoke-static {p2, p3, p1}, LI1/d;->t(Landroid/window/OnBackInvokedDispatcher;ILandroid/window/OnBackInvokedCallback;)V
+    const/4 v3, 0x0
 
     .line 27
+    iput v3, v0, LG5/b;->a:I
+
     .line 28
     .line 29
-    return-void
+    iput v3, v0, LG5/b;->b:I
+
+    .line 30
+    .line 31
+    new-instance v4, Ljava/util/HashSet;
+
+    .line 32
+    .line 33
+    invoke-direct {v4}, Ljava/util/HashSet;-><init>()V
+
+    .line 34
+    .line 35
+    .line 36
+    iput-object v4, v0, LG5/b;->f:Ljava/lang/Object;
+
+    .line 37
+    .line 38
+    invoke-virtual {v2, p0}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 39
+    .line 40
+    .line 41
+    array-length p0, v1
+
+    .line 42
+    :goto_0
+    if-ge v3, p0, :cond_0
+
+    .line 43
+    .line 44
+    aget-object v2, v1, v3
+
+    .line 45
+    .line 46
+    const-string v4, "Null interface"
+
+    .line 47
+    .line 48
+    invoke-static {v2, v4}, La/a;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 49
+    .line 50
+    .line 51
+    add-int/lit8 v3, v3, 0x1
+
+    .line 52
+    .line 53
+    goto :goto_0
+
+    .line 54
+    :cond_0
+    iget-object p0, v0, LG5/b;->d:Ljava/lang/Object;
+
+    .line 55
+    .line 56
+    check-cast p0, Ljava/util/HashSet;
+
+    .line 57
+    .line 58
+    invoke-static {p0, v1}, Ljava/util/Collections;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
+
+    .line 59
+    .line 60
+    .line 61
+    return-object v0
 .end method
 
-.method public c(Landroid/view/View;)V
-    .locals 1
+.method public static b(Ljava/lang/Class;)LG5/b;
+    .locals 2
 
     .line 1
-    invoke-static {p1}, LI1/d;->m(Landroid/view/View;)Landroid/window/OnBackInvokedDispatcher;
+    new-instance v0, LG5/b;
 
     .line 2
     .line 3
+    const/4 v1, 0x0
+
     .line 4
-    move-result-object p1
+    new-array v1, v1, [Ljava/lang/Class;
 
     .line 5
-    if-nez p1, :cond_0
-
     .line 6
-    .line 7
-    return-void
+    invoke-direct {v0, p0, v1}, LG5/b;-><init>(Ljava/lang/Class;[Ljava/lang/Class;)V
 
+    .line 7
     .line 8
-    :cond_0
-    iget-object v0, p0, Lg5/c;->a:Landroid/window/OnBackInvokedCallback;
+    .line 9
+    return-object v0
+.end method
+
+.method public static varargs c(Ljava/lang/Object;Ljava/lang/Class;[Ljava/lang/Class;)LG5/c;
+    .locals 10
+
+    .line 1
+    new-instance v0, Ljava/util/HashSet;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v1, Ljava/util/HashSet;
+
+    .line 7
+    .line 8
+    invoke-direct {v1}, Ljava/util/HashSet;-><init>()V
 
     .line 9
     .line 10
-    invoke-static {p1, v0}, LI1/d;->u(Landroid/window/OnBackInvokedDispatcher;Landroid/window/OnBackInvokedCallback;)V
+    .line 11
+    new-instance v9, Ljava/util/HashSet;
+
+    .line 12
+    .line 13
+    invoke-direct {v9}, Ljava/util/HashSet;-><init>()V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-static {p1}, LG5/r;->a(Ljava/lang/Class;)LG5/r;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p1
+
+    .line 20
+    invoke-virtual {v0, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 21
+    .line 22
+    .line 23
+    array-length p1, p2
+
+    .line 24
+    const/4 v7, 0x0
+
+    .line 25
+    move v2, v7
+
+    .line 26
+    :goto_0
+    if-ge v2, p1, :cond_0
+
+    .line 27
+    .line 28
+    aget-object v3, p2, v2
+
+    .line 29
+    .line 30
+    const-string v4, "Null interface"
+
+    .line 31
+    .line 32
+    invoke-static {v3, v4}, La/a;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-static {v3}, LG5/r;->a(Ljava/lang/Class;)LG5/r;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object v3
+
+    .line 39
+    invoke-virtual {v0, v3}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 40
+    .line 41
+    .line 42
+    add-int/lit8 v2, v2, 0x1
+
+    .line 43
+    .line 44
+    goto :goto_0
+
+    .line 45
+    :cond_0
+    new-instance v8, LG5/a;
+
+    .line 46
+    .line 47
+    const/4 p1, 0x0
+
+    .line 48
+    invoke-direct {v8, p1, p0}, LG5/a;-><init>(ILjava/lang/Object;)V
+
+    .line 49
+    .line 50
+    .line 51
+    new-instance p0, LG5/c;
+
+    .line 52
+    .line 53
+    new-instance v4, Ljava/util/HashSet;
+
+    .line 54
+    .line 55
+    invoke-direct {v4, v0}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+
+    .line 56
+    .line 57
+    .line 58
+    new-instance v5, Ljava/util/HashSet;
+
+    .line 59
+    .line 60
+    invoke-direct {v5, v1}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+
+    .line 61
+    .line 62
+    .line 63
+    const/4 v3, 0x0
+
+    .line 64
+    move-object v2, p0
+
+    .line 65
+    move v6, v7
+
+    .line 66
+    invoke-direct/range {v2 .. v9}, LG5/c;-><init>(Ljava/lang/String;Ljava/util/Set;Ljava/util/Set;IILG5/f;Ljava/util/Set;)V
+
+    .line 67
+    .line 68
+    .line 69
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "Component<"
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LG5/c;->b:Ljava/util/Set;
+
+    .line 9
+    .line 10
+    invoke-interface {v1}, Ljava/util/Set;->toArray()[Ljava/lang/Object;
 
     .line 11
     .line 12
     .line 13
-    const/4 p1, 0x0
+    move-result-object v1
 
     .line 14
-    iput-object p1, p0, Lg5/c;->a:Landroid/window/OnBackInvokedCallback;
+    invoke-static {v1}, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
 
     .line 15
     .line 16
-    return-void
+    .line 17
+    move-result-object v1
+
+    .line 18
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 19
+    .line 20
+    .line 21
+    const-string v1, ">{"
+
+    .line 22
+    .line 23
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 24
+    .line 25
+    .line 26
+    iget v1, p0, LG5/c;->d:I
+
+    .line 27
+    .line 28
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 29
+    .line 30
+    .line 31
+    const-string v1, ", type="
+
+    .line 32
+    .line 33
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 34
+    .line 35
+    .line 36
+    iget v1, p0, LG5/c;->e:I
+
+    .line 37
+    .line 38
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 39
+    .line 40
+    .line 41
+    const-string v1, ", deps="
+
+    .line 42
+    .line 43
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 44
+    .line 45
+    .line 46
+    iget-object v1, p0, LG5/c;->c:Ljava/util/Set;
+
+    .line 47
+    .line 48
+    invoke-interface {v1}, Ljava/util/Set;->toArray()[Ljava/lang/Object;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v1
+
+    .line 52
+    invoke-static {v1}, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object v1
+
+    .line 56
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 57
+    .line 58
+    .line 59
+    const-string v1, "}"
+
+    .line 60
+    .line 61
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 62
+    .line 63
+    .line 64
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-object v0
+
+    .line 68
+    return-object v0
 .end method

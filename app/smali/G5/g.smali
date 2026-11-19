@@ -1,444 +1,213 @@
-.class public final Lg5/g;
-.super Lg5/a;
+.class public final synthetic LG5/g;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lg6/b;
 
 
 # instance fields
-.field public final g:F
-
-.field public final h:F
-
-.field public i:F
-
-.field public j:Landroid/graphics/Rect;
-
-.field public k:Landroid/graphics/Rect;
-
-.field public l:Ljava/lang/Integer;
+.field public final synthetic a:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;)V
-    .locals 1
+.method public synthetic constructor <init>(I)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Lg5/a;-><init>(Landroid/view/View;)V
+    iput p1, p0, LG5/g;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p1}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    const v0, 0x7f0700ce
-
-    .line 9
-    .line 10
-    .line 11
-    invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getDimension(I)F
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v0
-
-    .line 15
-    iput v0, p0, Lg5/g;->g:F
-
-    .line 16
-    .line 17
-    const v0, 0x7f0700cd
-
-    .line 18
-    .line 19
-    .line 20
-    invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getDimension(I)F
-
-    .line 21
-    .line 22
-    .line 23
-    move-result p1
-
-    .line 24
-    iput p1, p0, Lg5/g;->h:F
-
-    .line 25
-    .line 26
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Lcom/google/android/material/search/SearchBar;)Landroid/animation/AnimatorSet;
-    .locals 10
+.method public final get()Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    new-instance v0, Landroid/animation/AnimatorSet;
+    const/4 v0, 0x0
 
     .line 2
+    const/4 v1, 0x0
+
     .line 3
-    invoke-direct {v0}, Landroid/animation/AnimatorSet;-><init>()V
+    iget v2, p0, LG5/g;->a:I
 
     .line 4
     .line 5
-    .line 6
-    sget-object v1, Landroid/view/View;->SCALE_X:Landroid/util/Property;
+    packed-switch v2, :pswitch_data_0
 
+    .line 6
     .line 7
     .line 8
-    const/high16 v2, 0x3f800000    # 1.0f
+    sget-object v2, Lcom/google/firebase/concurrent/ExecutorsRegistrar;->a:LG5/n;
 
     .line 9
     .line 10
-    const/4 v3, 0x1
-
-    .line 11
-    new-array v4, v3, [F
-
-    .line 12
-    .line 13
-    const/4 v5, 0x0
-
-    .line 14
-    aput v2, v4, v5
-
-    .line 15
-    .line 16
-    iget-object v6, p0, Lg5/a;->b:Landroid/view/View;
-
-    .line 17
-    .line 18
-    invoke-static {v6, v1, v4}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v1
-
-    .line 22
-    sget-object v4, Landroid/view/View;->SCALE_Y:Landroid/util/Property;
-
-    .line 23
-    .line 24
-    new-array v7, v3, [F
-
-    .line 25
-    .line 26
-    aput v2, v7, v5
-
-    .line 27
-    .line 28
-    invoke-static {v6, v4, v7}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
-
-    .line 29
-    .line 30
-    .line 31
-    move-result-object v2
-
-    .line 32
-    sget-object v4, Landroid/view/View;->TRANSLATION_X:Landroid/util/Property;
-
-    .line 33
-    .line 34
-    const/4 v7, 0x0
-
-    .line 35
-    new-array v8, v3, [F
-
-    .line 36
-    .line 37
-    aput v7, v8, v5
-
-    .line 38
-    .line 39
-    invoke-static {v6, v4, v8}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-object v4
-
-    .line 43
-    sget-object v8, Landroid/view/View;->TRANSLATION_Y:Landroid/util/Property;
-
-    .line 44
-    .line 45
-    new-array v9, v3, [F
-
-    .line 46
-    .line 47
-    aput v7, v9, v5
-
-    .line 48
-    .line 49
-    invoke-static {v6, v8, v9}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
-
-    .line 50
-    .line 51
-    .line 52
-    move-result-object v6
-
-    .line 53
-    const/4 v7, 0x4
-
-    .line 54
-    new-array v7, v7, [Landroid/animation/Animator;
-
-    .line 55
-    .line 56
-    aput-object v1, v7, v5
-
-    .line 57
-    .line 58
-    aput-object v2, v7, v3
-
-    .line 59
-    .line 60
-    const/4 v1, 0x2
-
-    .line 61
-    aput-object v4, v7, v1
-
-    .line 62
-    .line 63
-    const/4 v1, 0x3
-
-    .line 64
-    aput-object v6, v7, v1
-
-    .line 65
-    .line 66
-    invoke-virtual {v0, v7}, Landroid/animation/AnimatorSet;->playTogether([Landroid/animation/Animator;)V
-
-    .line 67
-    .line 68
-    .line 69
-    new-instance v1, LH1/c0;
-
-    .line 70
-    .line 71
-    const/16 v2, 0x8
-
-    .line 72
-    .line 73
-    invoke-direct {v1, v2, p1}, LH1/c0;-><init>(ILjava/lang/Object;)V
-
-    .line 74
-    .line 75
-    .line 76
-    invoke-virtual {v0, v1}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
-
-    .line 77
-    .line 78
-    .line 79
-    return-object v0
-.end method
-
-.method public final c()I
-    .locals 6
-
-    .line 1
-    iget-object v0, p0, Lg5/g;->l:Ljava/lang/Integer;
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_5
-
-    .line 4
-    .line 5
-    const/4 v0, 0x2
-
-    .line 6
-    new-array v1, v0, [I
-
-    .line 7
-    .line 8
-    iget-object v2, p0, Lg5/a;->b:Landroid/view/View;
-
-    .line 9
-    .line 10
-    invoke-virtual {v2, v1}, Landroid/view/View;->getLocationOnScreen([I)V
+    new-instance v2, LH5/a;
 
     .line 11
     .line 12
-    .line 13
-    const/4 v3, 0x1
+    const-string v3, "Firebase Scheduler"
 
+    .line 13
     .line 14
-    aget v1, v1, v3
+    invoke-direct {v2, v3, v0, v1}, LH5/a;-><init>(Ljava/lang/String;ILandroid/os/StrictMode$ThreadPolicy;)V
 
     .line 15
     .line 16
-    const/4 v4, 0x0
-
     .line 17
-    if-nez v1, :cond_4
+    invoke-static {v2}, Ljava/util/concurrent/Executors;->newSingleThreadScheduledExecutor(Ljava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ScheduledExecutorService;
 
     .line 18
     .line 19
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
     .line 20
-    .line 21
-    const/16 v5, 0x1f
-
-    .line 22
-    .line 23
-    if-lt v1, v5, :cond_4
-
-    .line 24
-    .line 25
-    invoke-virtual {v2}, Landroid/view/View;->getRootWindowInsets()Landroid/view/WindowInsets;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v1
-
-    .line 29
-    if-eqz v1, :cond_4
-
-    .line 30
-    .line 31
-    invoke-static {v1, v4}, LH1/d;->i(Landroid/view/WindowInsets;I)Landroid/view/RoundedCorner;
-
-    .line 32
-    .line 33
-    .line 34
-    move-result-object v2
-
-    .line 35
-    if-eqz v2, :cond_0
-
-    .line 36
-    .line 37
-    invoke-static {v2}, LH1/d;->c(Landroid/view/RoundedCorner;)I
-
-    .line 38
-    .line 39
-    .line 40
-    move-result v2
-
-    .line 41
-    goto :goto_0
-
-    .line 42
-    :cond_0
-    move v2, v4
-
-    .line 43
-    :goto_0
-    invoke-static {v1, v3}, LH1/d;->i(Landroid/view/WindowInsets;I)Landroid/view/RoundedCorner;
-
-    .line 44
-    .line 45
-    .line 46
-    move-result-object v3
-
-    .line 47
-    if-eqz v3, :cond_1
-
-    .line 48
-    .line 49
-    invoke-static {v3}, LH1/d;->c(Landroid/view/RoundedCorner;)I
-
-    .line 50
-    .line 51
-    .line 52
-    move-result v3
-
-    .line 53
-    goto :goto_1
-
-    .line 54
-    :cond_1
-    move v3, v4
-
-    .line 55
-    :goto_1
-    invoke-static {v2, v3}, Ljava/lang/Math;->max(II)I
-
-    .line 56
-    .line 57
-    .line 58
-    move-result v2
-
-    .line 59
-    const/4 v3, 0x3
-
-    .line 60
-    invoke-static {v1, v3}, LH1/d;->i(Landroid/view/WindowInsets;I)Landroid/view/RoundedCorner;
-
-    .line 61
-    .line 62
-    .line 63
-    move-result-object v3
-
-    .line 64
-    if-eqz v3, :cond_2
-
-    .line 65
-    .line 66
-    invoke-static {v3}, LH1/d;->c(Landroid/view/RoundedCorner;)I
-
-    .line 67
-    .line 68
-    .line 69
-    move-result v3
-
-    .line 70
-    goto :goto_2
-
-    .line 71
-    :cond_2
-    move v3, v4
-
-    .line 72
-    :goto_2
-    invoke-static {v1, v0}, LH1/d;->i(Landroid/view/WindowInsets;I)Landroid/view/RoundedCorner;
-
-    .line 73
-    .line 74
-    .line 75
     move-result-object v0
 
-    .line 76
-    if-eqz v0, :cond_3
+    .line 21
+    return-object v0
 
+    .line 22
+    :pswitch_0
+    sget-object v0, Lcom/google/firebase/concurrent/ExecutorsRegistrar;->a:LG5/n;
+
+    .line 23
+    .line 24
+    new-instance v0, LH5/a;
+
+    .line 25
+    .line 26
+    const-string v2, "Firebase Blocking"
+
+    .line 27
+    .line 28
+    const/16 v3, 0xb
+
+    .line 29
+    .line 30
+    invoke-direct {v0, v2, v3, v1}, LH5/a;-><init>(Ljava/lang/String;ILandroid/os/StrictMode$ThreadPolicy;)V
+
+    .line 31
+    .line 32
+    .line 33
+    invoke-static {v0}, Ljava/util/concurrent/Executors;->newCachedThreadPool(Ljava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ExecutorService;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v0
+
+    .line 37
+    new-instance v1, LH5/g;
+
+    .line 38
+    .line 39
+    sget-object v2, Lcom/google/firebase/concurrent/ExecutorsRegistrar;->d:LG5/n;
+
+    .line 40
+    .line 41
+    invoke-virtual {v2}, LG5/n;->get()Ljava/lang/Object;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v2
+
+    .line 45
+    check-cast v2, Ljava/util/concurrent/ScheduledExecutorService;
+
+    .line 46
+    .line 47
+    invoke-direct {v1, v0, v2}, LH5/g;-><init>(Ljava/util/concurrent/ExecutorService;Ljava/util/concurrent/ScheduledExecutorService;)V
+
+    .line 48
+    .line 49
+    .line 50
+    return-object v1
+
+    .line 51
+    :pswitch_1
+    sget-object v1, Lcom/google/firebase/concurrent/ExecutorsRegistrar;->a:LG5/n;
+
+    .line 52
+    .line 53
+    invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object v1
+
+    .line 57
+    invoke-virtual {v1}, Ljava/lang/Runtime;->availableProcessors()I
+
+    .line 58
+    .line 59
+    .line 60
+    move-result v1
+
+    .line 61
+    const/4 v2, 0x2
+
+    .line 62
+    invoke-static {v2, v1}, Ljava/lang/Math;->max(II)I
+
+    .line 63
+    .line 64
+    .line 65
+    move-result v1
+
+    .line 66
+    new-instance v2, Landroid/os/StrictMode$ThreadPolicy$Builder;
+
+    .line 67
+    .line 68
+    invoke-direct {v2}, Landroid/os/StrictMode$ThreadPolicy$Builder;-><init>()V
+
+    .line 69
+    .line 70
+    .line 71
+    invoke-virtual {v2}, Landroid/os/StrictMode$ThreadPolicy$Builder;->detectAll()Landroid/os/StrictMode$ThreadPolicy$Builder;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object v2
+
+    .line 75
+    invoke-virtual {v2}, Landroid/os/StrictMode$ThreadPolicy$Builder;->penaltyLog()Landroid/os/StrictMode$ThreadPolicy$Builder;
+
+    .line 76
     .line 77
     .line 78
-    invoke-static {v0}, LH1/d;->c(Landroid/view/RoundedCorner;)I
+    move-result-object v2
 
     .line 79
+    invoke-virtual {v2}, Landroid/os/StrictMode$ThreadPolicy$Builder;->build()Landroid/os/StrictMode$ThreadPolicy;
+
     .line 80
     .line 81
-    move-result v4
-
     .line 82
-    :cond_3
-    invoke-static {v3, v4}, Ljava/lang/Math;->max(II)I
+    move-result-object v2
 
     .line 83
+    new-instance v3, LH5/a;
+
     .line 84
     .line 85
-    move-result v0
+    const-string v4, "Firebase Lite"
 
     .line 86
-    invoke-static {v2, v0}, Ljava/lang/Math;->max(II)I
-
     .line 87
+    invoke-direct {v3, v4, v0, v2}, LH5/a;-><init>(Ljava/lang/String;ILandroid/os/StrictMode$ThreadPolicy;)V
+
     .line 88
     .line 89
-    move-result v4
-
     .line 90
-    :cond_4
-    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v1, v3}, Ljava/util/concurrent/Executors;->newFixedThreadPool(ILjava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ExecutorService;
 
     .line 91
     .line 92
@@ -446,22 +215,173 @@
     move-result-object v0
 
     .line 94
-    iput-object v0, p0, Lg5/g;->l:Ljava/lang/Integer;
+    new-instance v1, LH5/g;
 
     .line 95
     .line 96
-    :cond_5
-    iget-object v0, p0, Lg5/g;->l:Ljava/lang/Integer;
+    sget-object v2, Lcom/google/firebase/concurrent/ExecutorsRegistrar;->d:LG5/n;
 
     .line 97
     .line 98
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {v2}, LG5/n;->get()Ljava/lang/Object;
 
     .line 99
     .line 100
     .line 101
-    move-result v0
+    move-result-object v2
 
     .line 102
-    return v0
+    check-cast v2, Ljava/util/concurrent/ScheduledExecutorService;
+
+    .line 103
+    .line 104
+    invoke-direct {v1, v0, v2}, LH5/g;-><init>(Ljava/util/concurrent/ExecutorService;Ljava/util/concurrent/ScheduledExecutorService;)V
+
+    .line 105
+    .line 106
+    .line 107
+    return-object v1
+
+    .line 108
+    :pswitch_2
+    sget-object v0, Lcom/google/firebase/concurrent/ExecutorsRegistrar;->a:LG5/n;
+
+    .line 109
+    .line 110
+    new-instance v0, Landroid/os/StrictMode$ThreadPolicy$Builder;
+
+    .line 111
+    .line 112
+    invoke-direct {v0}, Landroid/os/StrictMode$ThreadPolicy$Builder;-><init>()V
+
+    .line 113
+    .line 114
+    .line 115
+    invoke-virtual {v0}, Landroid/os/StrictMode$ThreadPolicy$Builder;->detectNetwork()Landroid/os/StrictMode$ThreadPolicy$Builder;
+
+    .line 116
+    .line 117
+    .line 118
+    move-result-object v0
+
+    .line 119
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 120
+    .line 121
+    invoke-virtual {v0}, Landroid/os/StrictMode$ThreadPolicy$Builder;->detectResourceMismatches()Landroid/os/StrictMode$ThreadPolicy$Builder;
+
+    .line 122
+    .line 123
+    .line 124
+    const/16 v2, 0x1a
+
+    .line 125
+    .line 126
+    if-lt v1, v2, :cond_0
+
+    .line 127
+    .line 128
+    invoke-static {v0}, LA8/a;->q(Landroid/os/StrictMode$ThreadPolicy$Builder;)V
+
+    .line 129
+    .line 130
+    .line 131
+    :cond_0
+    invoke-virtual {v0}, Landroid/os/StrictMode$ThreadPolicy$Builder;->penaltyLog()Landroid/os/StrictMode$ThreadPolicy$Builder;
+
+    .line 132
+    .line 133
+    .line 134
+    move-result-object v0
+
+    .line 135
+    invoke-virtual {v0}, Landroid/os/StrictMode$ThreadPolicy$Builder;->build()Landroid/os/StrictMode$ThreadPolicy;
+
+    .line 136
+    .line 137
+    .line 138
+    move-result-object v0
+
+    .line 139
+    new-instance v1, LH5/a;
+
+    .line 140
+    .line 141
+    const-string v2, "Firebase Background"
+
+    .line 142
+    .line 143
+    const/16 v3, 0xa
+
+    .line 144
+    .line 145
+    invoke-direct {v1, v2, v3, v0}, LH5/a;-><init>(Ljava/lang/String;ILandroid/os/StrictMode$ThreadPolicy;)V
+
+    .line 146
+    .line 147
+    .line 148
+    const/4 v0, 0x4
+
+    .line 149
+    invoke-static {v0, v1}, Ljava/util/concurrent/Executors;->newFixedThreadPool(ILjava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ExecutorService;
+
+    .line 150
+    .line 151
+    .line 152
+    move-result-object v0
+
+    .line 153
+    new-instance v1, LH5/g;
+
+    .line 154
+    .line 155
+    sget-object v2, Lcom/google/firebase/concurrent/ExecutorsRegistrar;->d:LG5/n;
+
+    .line 156
+    .line 157
+    invoke-virtual {v2}, LG5/n;->get()Ljava/lang/Object;
+
+    .line 158
+    .line 159
+    .line 160
+    move-result-object v2
+
+    .line 161
+    check-cast v2, Ljava/util/concurrent/ScheduledExecutorService;
+
+    .line 162
+    .line 163
+    invoke-direct {v1, v0, v2}, LH5/g;-><init>(Ljava/util/concurrent/ExecutorService;Ljava/util/concurrent/ScheduledExecutorService;)V
+
+    .line 164
+    .line 165
+    .line 166
+    :pswitch_3
+    return-object v1
+
+    .line 167
+    :pswitch_4
+    invoke-static {}, Ljava/util/Collections;->emptySet()Ljava/util/Set;
+
+    .line 168
+    .line 169
+    .line 170
+    move-result-object v0
+
+    .line 171
+    return-object v0
+
+    .line 172
+    nop
+
+    .line 173
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

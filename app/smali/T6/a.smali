@@ -1,73 +1,38 @@
-.class public final Lt6/a;
-.super Li9/c;
+.class public interface abstract LT6/a;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public q:Ljava/lang/Object;
-
-.field public r:LI9/a;
-
-.field public synthetic s:Ljava/lang/Object;
-
-.field public final synthetic t:Lt6/d;
-
-.field public u:I
-
-
-# direct methods
-.method public constructor <init>(Lt6/d;Li9/c;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lt6/a;->t:Lt6/d;
-
-    .line 2
-    .line 3
-    invoke-direct {p0, p2}, Li9/c;-><init>(Lg9/e;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
+# virtual methods
+.method public abstract getCount()I
 .end method
 
+.method public abstract getFloat(Ljava/lang/String;)F
+.end method
 
-# virtual methods
-.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public abstract getInt(Ljava/lang/String;)I
+.end method
 
-    .line 1
-    iput-object p1, p0, Lt6/a;->s:Ljava/lang/Object;
+.method public abstract getLong(Ljava/lang/String;)J
+.end method
 
-    .line 2
-    .line 3
-    iget p1, p0, Lt6/a;->u:I
+.method public abstract getOptFloat(Ljava/lang/String;)Ljava/lang/Float;
+.end method
 
-    .line 4
-    .line 5
-    const/high16 v0, -0x80000000
+.method public abstract getOptInt(Ljava/lang/String;)Ljava/lang/Integer;
+.end method
 
-    .line 6
-    .line 7
-    or-int/2addr p1, v0
+.method public abstract getOptLong(Ljava/lang/String;)Ljava/lang/Long;
+.end method
 
-    .line 8
-    iput p1, p0, Lt6/a;->u:I
+.method public abstract getOptString(Ljava/lang/String;)Ljava/lang/String;
+.end method
 
-    .line 9
-    .line 10
-    iget-object p1, p0, Lt6/a;->t:Lt6/d;
+.method public abstract getString(Ljava/lang/String;)Ljava/lang/String;
+.end method
 
-    .line 11
-    .line 12
-    invoke-virtual {p1, p0}, Lt6/d;->c(Lg9/e;)Ljava/lang/Object;
+.method public abstract moveToFirst()Z
+.end method
 
-    .line 13
-    .line 14
-    .line 15
-    move-result-object p1
-
-    .line 16
-    return-object p1
+.method public abstract moveToNext()Z
 .end method

@@ -1,408 +1,375 @@
-.class public final Lcom/onesignal/inAppMessages/internal/G;
-.super Li9/i;
+.class public final Lcom/onesignal/inAppMessages/internal/g;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lp9/d;
+
+# static fields
+.field public static final Companion:Lcom/onesignal/inAppMessages/internal/f;
+
+.field public static final DISPLAY_DURATION:Ljava/lang/String; = "display_duration"
+
+.field public static final HTML:Ljava/lang/String; = "html"
+
+.field public static final REMOVE_HEIGHT_MARGIN:Ljava/lang/String; = "remove_height_margin"
+
+.field public static final REMOVE_WIDTH_MARGIN:Ljava/lang/String; = "remove_width_margin"
+
+.field public static final STYLES:Ljava/lang/String; = "styles"
 
 
 # instance fields
-.field final synthetic $message:Lcom/onesignal/inAppMessages/internal/b;
+.field private contentHtml:Ljava/lang/String;
 
-.field final synthetic $variantId:Ljava/lang/String;
+.field private displayDuration:Ljava/lang/Double;
 
-.field label:I
+.field private displayLocation:Lcom/onesignal/inAppMessages/internal/display/impl/F;
 
-.field final synthetic this$0:Lcom/onesignal/inAppMessages/internal/T;
+.field private isFullBleed:Z
+
+.field private pageHeight:I
+
+.field private useHeightMargin:Z
+
+.field private useWidthMargin:Z
 
 
 # direct methods
-.method public constructor <init>(Lcom/onesignal/inAppMessages/internal/T;Ljava/lang/String;Lcom/onesignal/inAppMessages/internal/b;Lg9/e;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/onesignal/inAppMessages/internal/T;",
-            "Ljava/lang/String;",
-            "Lcom/onesignal/inAppMessages/internal/b;",
-            "Lg9/e<",
-            "-",
-            "Lcom/onesignal/inAppMessages/internal/G;",
-            ">;)V"
-        }
-    .end annotation
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Lcom/onesignal/inAppMessages/internal/f;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lcom/onesignal/inAppMessages/internal/f;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    sput-object v0, Lcom/onesignal/inAppMessages/internal/g;->Companion:Lcom/onesignal/inAppMessages/internal/f;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lorg/json/JSONObject;)V
+    .locals 3
 
     .line 1
-    iput-object p1, p0, Lcom/onesignal/inAppMessages/internal/G;->this$0:Lcom/onesignal/inAppMessages/internal/T;
+    const-string v0, "jsonObject"
 
     .line 2
     .line 3
-    iput-object p2, p0, Lcom/onesignal/inAppMessages/internal/G;->$variantId:Ljava/lang/String;
+    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 4
     .line 5
-    iput-object p3, p0, Lcom/onesignal/inAppMessages/internal/G;->$message:Lcom/onesignal/inAppMessages/internal/b;
-
     .line 6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 7
-    const/4 p1, 0x1
-
     .line 8
-    invoke-direct {p0, p1, p4}, Li9/i;-><init>(ILg9/e;)V
-
     .line 9
+    const/4 v0, 0x1
+
     .line 10
+    iput-boolean v0, p0, Lcom/onesignal/inAppMessages/internal/g;->useHeightMargin:Z
+
     .line 11
+    .line 12
+    iput-boolean v0, p0, Lcom/onesignal/inAppMessages/internal/g;->useWidthMargin:Z
+
+    .line 13
+    .line 14
+    const-string v1, "html"
+
+    .line 15
+    .line 16
+    invoke-static {p1, v1}, Lcom/onesignal/common/h;->safeString(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v1
+
+    .line 20
+    iput-object v1, p0, Lcom/onesignal/inAppMessages/internal/g;->contentHtml:Ljava/lang/String;
+
+    .line 21
+    .line 22
+    const-string v1, "display_duration"
+
+    .line 23
+    .line 24
+    invoke-static {p1, v1}, Lcom/onesignal/common/h;->safeDouble(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/lang/Double;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v1
+
+    .line 28
+    iput-object v1, p0, Lcom/onesignal/inAppMessages/internal/g;->displayDuration:Ljava/lang/Double;
+
+    .line 29
+    .line 30
+    const-string v1, "styles"
+
+    .line 31
+    .line 32
+    invoke-static {p1, v1}, Lcom/onesignal/common/h;->safeJSONObject(Lorg/json/JSONObject;Ljava/lang/String;)Lorg/json/JSONObject;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p1
+
+    .line 36
+    const/4 v1, 0x0
+
+    .line 37
+    if-eqz p1, :cond_0
+
+    .line 38
+    .line 39
+    const-string v2, "remove_height_margin"
+
+    .line 40
+    .line 41
+    invoke-static {p1, v2}, Lcom/onesignal/common/h;->safeBool(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/lang/Boolean;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v2
+
+    .line 45
+    if-eqz v2, :cond_0
+
+    .line 46
+    .line 47
+    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 48
+    .line 49
+    .line 50
+    move-result v2
+
+    .line 51
+    goto :goto_0
+
+    .line 52
+    :cond_0
+    move v2, v1
+
+    .line 53
+    :goto_0
+    xor-int/2addr v2, v0
+
+    .line 54
+    iput-boolean v2, p0, Lcom/onesignal/inAppMessages/internal/g;->useHeightMargin:Z
+
+    .line 55
+    .line 56
+    if-eqz p1, :cond_1
+
+    .line 57
+    .line 58
+    const-string v2, "remove_width_margin"
+
+    .line 59
+    .line 60
+    invoke-static {p1, v2}, Lcom/onesignal/common/h;->safeBool(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/lang/Boolean;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object p1
+
+    .line 64
+    if-eqz p1, :cond_1
+
+    .line 65
+    .line 66
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 67
+    .line 68
+    .line 69
+    move-result v1
+
+    .line 70
+    :cond_1
+    xor-int/lit8 p1, v1, 0x1
+
+    .line 71
+    .line 72
+    iput-boolean p1, p0, Lcom/onesignal/inAppMessages/internal/g;->useWidthMargin:Z
+
+    .line 73
+    .line 74
+    iget-boolean p1, p0, Lcom/onesignal/inAppMessages/internal/g;->useHeightMargin:Z
+
+    .line 75
+    .line 76
+    xor-int/2addr p1, v0
+
+    .line 77
+    iput-boolean p1, p0, Lcom/onesignal/inAppMessages/internal/g;->isFullBleed:Z
+
+    .line 78
+    .line 79
     return-void
 .end method
 
 
 # virtual methods
-.method public final create(Lg9/e;)Lg9/e;
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lg9/e<",
-            "*>;)",
-            "Lg9/e<",
-            "Lb9/n;",
-            ">;"
-        }
-    .end annotation
+.method public final getContentHtml()Ljava/lang/String;
+    .locals 1
 
     .line 1
-    new-instance v0, Lcom/onesignal/inAppMessages/internal/G;
+    iget-object v0, p0, Lcom/onesignal/inAppMessages/internal/g;->contentHtml:Ljava/lang/String;
 
     .line 2
     .line 3
-    iget-object v1, p0, Lcom/onesignal/inAppMessages/internal/G;->this$0:Lcom/onesignal/inAppMessages/internal/T;
-
-    .line 4
-    .line 5
-    iget-object v2, p0, Lcom/onesignal/inAppMessages/internal/G;->$variantId:Ljava/lang/String;
-
-    .line 6
-    .line 7
-    iget-object v3, p0, Lcom/onesignal/inAppMessages/internal/G;->$message:Lcom/onesignal/inAppMessages/internal/b;
-
-    .line 8
-    .line 9
-    invoke-direct {v0, v1, v2, v3, p1}, Lcom/onesignal/inAppMessages/internal/G;-><init>(Lcom/onesignal/inAppMessages/internal/T;Ljava/lang/String;Lcom/onesignal/inAppMessages/internal/b;Lg9/e;)V
-
-    .line 10
-    .line 11
-    .line 12
     return-object v0
 .end method
 
-.method public final invoke(Lg9/e;)Ljava/lang/Object;
+.method public final getDisplayDuration()Ljava/lang/Double;
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lg9/e<",
-            "-",
-            "Lb9/n;",
-            ">;)",
-            "Ljava/lang/Object;"
-        }
-    .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/onesignal/inAppMessages/internal/G;->create(Lg9/e;)Lg9/e;
+    iget-object v0, p0, Lcom/onesignal/inAppMessages/internal/g;->displayDuration:Ljava/lang/Double;
 
-    move-result-object p1
-
-    check-cast p1, Lcom/onesignal/inAppMessages/internal/G;
-
-    sget-object v0, Lb9/n;->a:Lb9/n;
-
-    invoke-virtual {p1, v0}, Lcom/onesignal/inAppMessages/internal/G;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
+    .line 2
+    .line 3
+    return-object v0
 .end method
 
-.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final getDisplayLocation()Lcom/onesignal/inAppMessages/internal/display/impl/F;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/onesignal/inAppMessages/internal/g;->displayLocation:Lcom/onesignal/inAppMessages/internal/display/impl/F;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final getPageHeight()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/onesignal/inAppMessages/internal/g;->pageHeight:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final getUseHeightMargin()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/onesignal/inAppMessages/internal/g;->useHeightMargin:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final getUseWidthMargin()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/onesignal/inAppMessages/internal/g;->useWidthMargin:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final isFullBleed()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/onesignal/inAppMessages/internal/g;->isFullBleed:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final setContentHtml(Ljava/lang/String;)V
     .locals 0
 
-    .line 2
-    check-cast p1, Lg9/e;
-
-    invoke-virtual {p0, p1}, Lcom/onesignal/inAppMessages/internal/G;->invoke(Lg9/e;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 9
-
     .line 1
-    sget-object v0, Lh9/a;->q:Lh9/a;
+    iput-object p1, p0, Lcom/onesignal/inAppMessages/internal/g;->contentHtml:Ljava/lang/String;
 
     .line 2
     .line 3
-    iget v1, p0, Lcom/onesignal/inAppMessages/internal/G;->label:I
+    return-void
+.end method
 
-    .line 4
-    .line 5
-    const/4 v2, 0x1
+.method public final setDisplayDuration(Ljava/lang/Double;)V
+    .locals 0
 
-    .line 6
-    if-eqz v1, :cond_1
+    .line 1
+    iput-object p1, p0, Lcom/onesignal/inAppMessages/internal/g;->displayDuration:Ljava/lang/Double;
 
-    .line 7
-    .line 8
-    if-ne v1, v2, :cond_0
+    .line 2
+    .line 3
+    return-void
+.end method
 
-    .line 9
-    .line 10
-    :try_start_0
-    invoke-static {p1}, LO5/l0;->V(Ljava/lang/Object;)V
-    :try_end_0
-    .catch Lcom/onesignal/common/exceptions/BackendException; {:try_start_0 .. :try_end_0} :catch_0
+.method public final setDisplayLocation(Lcom/onesignal/inAppMessages/internal/display/impl/F;)V
+    .locals 0
 
-    .line 11
-    .line 12
-    .line 13
-    goto :goto_0
+    .line 1
+    iput-object p1, p0, Lcom/onesignal/inAppMessages/internal/g;->displayLocation:Lcom/onesignal/inAppMessages/internal/display/impl/F;
 
-    .line 14
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalStateException;
+    .line 2
+    .line 3
+    return-void
+.end method
 
-    .line 15
-    .line 16
-    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+.method public final setFullBleed(Z)V
+    .locals 0
 
-    .line 17
-    .line 18
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    .line 1
+    iput-boolean p1, p0, Lcom/onesignal/inAppMessages/internal/g;->isFullBleed:Z
 
-    .line 19
-    .line 20
-    .line 21
-    throw p1
+    .line 2
+    .line 3
+    return-void
+.end method
 
-    .line 22
-    :cond_1
-    invoke-static {p1}, LO5/l0;->V(Ljava/lang/Object;)V
+.method public final setPageHeight(I)V
+    .locals 0
 
-    .line 23
-    .line 24
-    .line 25
-    :try_start_1
-    iget-object p1, p0, Lcom/onesignal/inAppMessages/internal/G;->this$0:Lcom/onesignal/inAppMessages/internal/T;
+    .line 1
+    iput p1, p0, Lcom/onesignal/inAppMessages/internal/g;->pageHeight:I
 
-    .line 26
-    .line 27
-    invoke-static {p1}, Lcom/onesignal/inAppMessages/internal/T;->access$get_backend$p(Lcom/onesignal/inAppMessages/internal/T;)Lj7/b;
+    .line 2
+    .line 3
+    return-void
+.end method
 
-    .line 28
-    .line 29
-    .line 30
-    move-result-object p1
+.method public final setUseHeightMargin(Z)V
+    .locals 0
 
-    .line 31
-    iget-object v1, p0, Lcom/onesignal/inAppMessages/internal/G;->this$0:Lcom/onesignal/inAppMessages/internal/T;
+    .line 1
+    iput-boolean p1, p0, Lcom/onesignal/inAppMessages/internal/g;->useHeightMargin:Z
 
-    .line 32
-    .line 33
-    invoke-static {v1}, Lcom/onesignal/inAppMessages/internal/T;->access$get_configModelStore$p(Lcom/onesignal/inAppMessages/internal/T;)Lcom/onesignal/core/internal/config/D;
+    .line 2
+    .line 3
+    return-void
+.end method
 
-    .line 34
-    .line 35
-    .line 36
-    move-result-object v1
+.method public final setUseWidthMargin(Z)V
+    .locals 0
 
-    .line 37
-    invoke-virtual {v1}, Lcom/onesignal/common/modeling/t;->getModel()Lcom/onesignal/common/modeling/j;
+    .line 1
+    iput-boolean p1, p0, Lcom/onesignal/inAppMessages/internal/g;->useWidthMargin:Z
 
-    .line 38
-    .line 39
-    .line 40
-    move-result-object v1
-
-    .line 41
-    check-cast v1, Lcom/onesignal/core/internal/config/B;
-
-    .line 42
-    .line 43
-    invoke-virtual {v1}, Lcom/onesignal/core/internal/config/B;->getAppId()Ljava/lang/String;
-
-    .line 44
-    .line 45
-    .line 46
-    move-result-object v4
-
-    .line 47
-    iget-object v1, p0, Lcom/onesignal/inAppMessages/internal/G;->this$0:Lcom/onesignal/inAppMessages/internal/T;
-
-    .line 48
-    .line 49
-    invoke-static {v1}, Lcom/onesignal/inAppMessages/internal/T;->access$get_subscriptionManager$p(Lcom/onesignal/inAppMessages/internal/T;)Lo8/b;
-
-    .line 50
-    .line 51
-    .line 52
-    move-result-object v1
-
-    .line 53
-    check-cast v1, Lcom/onesignal/user/internal/subscriptions/impl/f;
-
-    .line 54
-    .line 55
-    invoke-virtual {v1}, Lcom/onesignal/user/internal/subscriptions/impl/f;->getSubscriptions()Lo8/c;
-
-    .line 56
-    .line 57
-    .line 58
-    move-result-object v1
-
-    .line 59
-    invoke-virtual {v1}, Lo8/c;->getPush()Lq8/b;
-
-    .line 60
-    .line 61
-    .line 62
-    move-result-object v1
-
-    .line 63
-    check-cast v1, Lcom/onesignal/user/internal/d;
-
-    .line 64
-    .line 65
-    invoke-virtual {v1}, Lcom/onesignal/user/internal/d;->getId()Ljava/lang/String;
-
-    .line 66
-    .line 67
-    .line 68
-    move-result-object v5
-
-    .line 69
-    iget-object v6, p0, Lcom/onesignal/inAppMessages/internal/G;->$variantId:Ljava/lang/String;
-
-    .line 70
-    .line 71
-    iget-object v1, p0, Lcom/onesignal/inAppMessages/internal/G;->$message:Lcom/onesignal/inAppMessages/internal/b;
-
-    .line 72
-    .line 73
-    invoke-virtual {v1}, Lcom/onesignal/inAppMessages/internal/b;->getMessageId()Ljava/lang/String;
-
-    .line 74
-    .line 75
-    .line 76
-    move-result-object v7
-
-    .line 77
-    iput v2, p0, Lcom/onesignal/inAppMessages/internal/G;->label:I
-
-    .line 78
-    .line 79
-    move-object v3, p1
-
-    .line 80
-    check-cast v3, Lcom/onesignal/inAppMessages/internal/backend/impl/l;
-
-    .line 81
-    .line 82
-    move-object v8, p0
-
-    .line 83
-    invoke-virtual/range {v3 .. v8}, Lcom/onesignal/inAppMessages/internal/backend/impl/l;->sendIAMImpression(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lg9/e;)Ljava/lang/Object;
-
-    .line 84
-    .line 85
-    .line 86
-    move-result-object p1
-
-    .line 87
-    if-ne p1, v0, :cond_2
-
-    .line 88
-    .line 89
-    return-object v0
-
-    .line 90
-    :cond_2
-    :goto_0
-    iget-object p1, p0, Lcom/onesignal/inAppMessages/internal/G;->this$0:Lcom/onesignal/inAppMessages/internal/T;
-
-    .line 91
-    .line 92
-    invoke-static {p1}, Lcom/onesignal/inAppMessages/internal/T;->access$get_prefs$p(Lcom/onesignal/inAppMessages/internal/T;)Lo7/a;
-
-    .line 93
-    .line 94
-    .line 95
-    move-result-object p1
-
-    .line 96
-    iget-object v0, p0, Lcom/onesignal/inAppMessages/internal/G;->this$0:Lcom/onesignal/inAppMessages/internal/T;
-
-    .line 97
-    .line 98
-    invoke-static {v0}, Lcom/onesignal/inAppMessages/internal/T;->access$getImpressionedMessages$p(Lcom/onesignal/inAppMessages/internal/T;)Ljava/util/Set;
-
-    .line 99
-    .line 100
-    .line 101
-    move-result-object v0
-
-    .line 102
-    check-cast p1, Lp7/a;
-
-    .line 103
-    .line 104
-    invoke-virtual {p1, v0}, Lp7/a;->setImpressionesMessagesId(Ljava/util/Set;)V
-    :try_end_1
-    .catch Lcom/onesignal/common/exceptions/BackendException; {:try_start_1 .. :try_end_1} :catch_0
-
-    .line 105
-    .line 106
-    .line 107
-    goto :goto_1
-
-    .line 108
-    :catch_0
-    iget-object p1, p0, Lcom/onesignal/inAppMessages/internal/G;->this$0:Lcom/onesignal/inAppMessages/internal/T;
-
-    .line 109
-    .line 110
-    invoke-static {p1}, Lcom/onesignal/inAppMessages/internal/T;->access$getImpressionedMessages$p(Lcom/onesignal/inAppMessages/internal/T;)Ljava/util/Set;
-
-    .line 111
-    .line 112
-    .line 113
-    move-result-object p1
-
-    .line 114
-    iget-object v0, p0, Lcom/onesignal/inAppMessages/internal/G;->$message:Lcom/onesignal/inAppMessages/internal/b;
-
-    .line 115
-    .line 116
-    invoke-virtual {v0}, Lcom/onesignal/inAppMessages/internal/b;->getMessageId()Ljava/lang/String;
-
-    .line 117
-    .line 118
-    .line 119
-    move-result-object v0
-
-    .line 120
-    invoke-interface {p1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
-
-    .line 121
-    .line 122
-    .line 123
-    :goto_1
-    sget-object p1, Lb9/n;->a:Lb9/n;
-
-    .line 124
-    .line 125
-    return-object p1
+    .line 2
+    .line 3
+    return-void
 .end method

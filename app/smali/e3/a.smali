@@ -1,142 +1,86 @@
-.class public abstract LE3/a;
-.super Ljava/lang/Object;
+.class public final Le3/a;
+.super Li9/i;
 .source "SourceFile"
 
-
-# static fields
-.field public static final a:Ljava/util/Set;
-
-.field public static b:Z
+# interfaces
+.implements Lp9/f;
 
 
-# direct methods
-.method static constructor <clinit>()V
+# virtual methods
+.method public final create(Ljava/lang/Object;Lg9/e;)Lg9/e;
     .locals 1
 
     .line 1
-    new-instance v0, Ljava/util/WeakHashMap;
+    new-instance p1, Le3/a;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
+    const/4 v0, 0x2
 
     .line 4
+    invoke-direct {p1, v0, p2}, Li9/i;-><init>(ILg9/e;)V
+
     .line 5
     .line 6
-    invoke-static {v0}, Ljava/util/Collections;->newSetFromMap(Ljava/util/Map;)Ljava/util/Set;
-
     .line 7
-    .line 8
-    .line 9
-    move-result-object v0
-
-    .line 10
-    sput-object v0, LE3/a;->a:Ljava/util/Set;
-
-    .line 11
-    .line 12
-    const/4 v0, 0x0
-
-    .line 13
-    sput-boolean v0, LE3/a;->b:Z
-
-    .line 14
-    .line 15
-    return-void
+    return-object p1
 .end method
 
-.method public static a(Ljava/lang/Throwable;Ljava/lang/Object;)V
-    .locals 1
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    sget-boolean v0, LE3/a;->b:Z
+    check-cast p1, LA9/x;
 
     .line 2
     .line 3
-    if-nez v0, :cond_0
+    check-cast p2, Lg9/e;
 
     .line 4
     .line 5
-    return-void
+    invoke-virtual {p0, p1, p2}, Le3/a;->create(Ljava/lang/Object;Lg9/e;)Lg9/e;
 
     .line 6
-    :cond_0
-    sget-object v0, LE3/a;->a:Ljava/util/Set;
-
     .line 7
     .line 8
-    invoke-interface {v0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
+    move-result-object p1
 
     .line 9
+    check-cast p1, Le3/a;
+
     .line 10
     .line 11
-    sget-object p1, Lcom/facebook/j;->a:Ljava/util/HashSet;
+    sget-object p2, Lb9/n;->a:Lb9/n;
 
     .line 12
     .line 13
-    invoke-static {}, Lcom/facebook/A;->c()Z
+    invoke-virtual {p1, p2}, Le3/a;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 14
     .line 15
     .line 16
-    move-result p1
+    move-result-object p1
 
     .line 17
-    if-eqz p1, :cond_2
+    return-object p1
+.end method
 
-    .line 18
-    .line 19
-    invoke-static {p0}, Lc9/B;->f(Ljava/lang/Throwable;)V
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
-    .line 20
-    .line 21
-    .line 22
-    sget-object p1, LC3/b;->t:LC3/b;
+    .line 1
+    invoke-static {p1}, LO5/l0;->V(Ljava/lang/Object;)V
 
-    .line 23
-    .line 24
-    invoke-static {p0, p1}, Ls3/a;->c(Ljava/lang/Throwable;LC3/b;)LC3/c;
+    .line 2
+    .line 3
+    .line 4
+    invoke-static {}, Landroid/view/Choreographer;->getInstance()Landroid/view/Choreographer;
 
-    .line 25
-    .line 26
-    .line 27
-    move-result-object p0
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
 
-    .line 28
-    invoke-virtual {p0}, LC3/c;->a()Z
-
-    .line 29
-    .line 30
-    .line 31
-    move-result p1
-
-    .line 32
-    if-nez p1, :cond_1
-
-    .line 33
-    .line 34
-    goto :goto_0
-
-    .line 35
-    :cond_1
-    iget-object p1, p0, LC3/c;->a:Ljava/lang/String;
-
-    .line 36
-    .line 37
-    invoke-virtual {p0}, LC3/c;->toString()Ljava/lang/String;
-
-    .line 38
-    .line 39
-    .line 40
-    move-result-object p0
-
-    .line 41
-    invoke-static {p1, p0}, Ls9/a;->H(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 42
-    .line 43
-    .line 44
-    :cond_2
-    :goto_0
-    return-void
+    .line 8
+    return-object p1
 .end method

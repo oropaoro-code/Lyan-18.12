@@ -1,171 +1,205 @@
-.class public final enum Ln3/p;
-.super Ljava/lang/Enum;
+.class public final LN3/p;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # static fields
-.field public static final enum q:Ln3/p;
+.field public static final s:Ljava/util/ArrayList;
 
-.field public static final enum r:Ln3/p;
 
-.field public static final enum s:Ln3/p;
+# instance fields
+.field public final q:Ljava/lang/String;
 
-.field public static final synthetic t:[Ln3/p;
+.field public final r:Z
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 9
+    .locals 1
 
     .line 1
-    const/4 v0, 0x3
+    new-instance v0, Ljava/util/ArrayList;
 
     .line 2
-    const/4 v1, 0x2
-
     .line 3
-    const/4 v2, 0x1
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 4
-    const/4 v3, 0x0
+    .line 5
+    .line 6
+    sput-object v0, LN3/p;->s:Ljava/util/ArrayList;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Z)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LN3/p;->q:Ljava/lang/String;
 
     .line 5
-    new-instance v4, Ln3/p;
-
     .line 6
+    iput-boolean p2, p0, LN3/p;->r:Z
+
     .line 7
-    const-string v5, "SUCCESS"
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 3
+
+    .line 1
+    sget-object v0, LE3/a;->a:Ljava/util/Set;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p0}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-eqz v0, :cond_0
 
     .line 8
     .line 9
-    invoke-direct {v4, v5, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    return-void
 
     .line 10
+    :cond_0
+    iget-object v0, p0, LN3/p;->q:Ljava/lang/String;
+
     .line 11
     .line 12
-    sput-object v4, Ln3/p;->q:Ln3/p;
+    sget-object v1, LN3/p;->s:Ljava/util/ArrayList;
 
     .line 13
     .line 14
-    new-instance v5, Ln3/p;
+    :try_start_0
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
     .line 15
     .line 16
-    const-string v6, "SERVER_ERROR"
-
     .line 17
+    const/4 v2, 0x0
+
     .line 18
-    invoke-direct {v5, v6, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {v1, v2, v0}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
     .line 19
     .line 20
     .line 21
-    sput-object v5, Ln3/p;->r:Ln3/p;
+    iget-boolean v0, p0, LN3/p;->r:Z
 
     .line 22
     .line 23
-    new-instance v6, Ln3/p;
+    if-eqz v0, :cond_1
 
     .line 24
     .line 25
-    const-string v7, "NO_CONNECTIVITY"
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
     .line 26
     .line 27
-    invoke-direct {v6, v7, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 28
+    move-result v0
+
     .line 29
+    const/16 v2, 0x80
+
     .line 30
-    sput-object v6, Ln3/p;->s:Ln3/p;
-
     .line 31
+    if-lt v0, v2, :cond_1
+
     .line 32
-    new-instance v7, Ln3/p;
-
     .line 33
-    .line 34
-    const-string v8, "UNKNOWN_ERROR"
+    :goto_0
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
+    .line 34
     .line 35
     .line 36
-    invoke-direct {v7, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    move-result v0
 
     .line 37
+    const/16 v2, 0x40
+
     .line 38
     .line 39
-    const/4 v8, 0x4
+    if-ge v2, v0, :cond_1
 
     .line 40
-    new-array v8, v8, [Ln3/p;
-
     .line 41
-    .line 42
-    aput-object v4, v8, v3
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
+    .line 42
     .line 43
     .line 44
-    aput-object v5, v8, v2
+    move-result v0
 
     .line 45
+    add-int/lit8 v0, v0, -0x1
+
     .line 46
-    aput-object v6, v8, v1
-
     .line 47
-    .line 48
-    aput-object v7, v8, v0
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
+    .line 48
     .line 49
     .line 50
-    sput-object v8, Ln3/p;->t:[Ln3/p;
-
-    .line 51
-    .line 52
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Ln3/p;
-    .locals 1
-
-    .line 1
-    const-class v0, Ln3/p;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, Ln3/p;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[Ln3/p;
-    .locals 1
-
-    .line 1
-    sget-object v0, Ln3/p;->t:[Ln3/p;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [Ln3/p;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
     move-result-object v0
 
-    .line 7
-    check-cast v0, [Ln3/p;
+    .line 51
+    check-cast v0, Ljava/lang/String;
 
-    .line 8
-    .line 9
-    return-object v0
+    .line 52
+    .line 53
+    sget-object v2, LN3/t;->p:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 54
+    .line 55
+    invoke-virtual {v2, v0}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 56
+    .line 57
+    .line 58
+    goto :goto_0
+
+    .line 59
+    :catchall_0
+    move-exception v0
+
+    .line 60
+    goto :goto_1
+
+    .line 61
+    :cond_1
+    return-void
+
+    .line 62
+    :goto_1
+    invoke-static {v0, p0}, LE3/a;->a(Ljava/lang/Throwable;Ljava/lang/Object;)V
+
+    .line 63
+    .line 64
+    .line 65
+    return-void
 .end method

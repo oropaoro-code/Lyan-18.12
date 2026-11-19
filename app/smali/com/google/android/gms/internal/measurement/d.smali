@@ -1,572 +1,304 @@
-.class public final Lcom/google/android/gms/internal/measurement/d;
+.class public abstract synthetic Lcom/google/android/gms/internal/measurement/D;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final d:Lz5/j;
-
-
-# instance fields
-.field public a:Ljava/lang/String;
-
-.field public final b:J
-
-.field public final c:Ljava/util/HashMap;
+.field public static final synthetic a:[I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 3
 
     .line 1
-    const/4 v0, 0x3
+    invoke-static {}, Lcom/google/android/gms/internal/measurement/G;->values()[Lcom/google/android/gms/internal/measurement/G;
 
     .line 2
-    new-array v1, v0, [Ljava/lang/Object;
-
     .line 3
     .line 4
-    const-string v2, "_syn"
-
-    .line 5
-    .line 6
-    const/4 v3, 0x0
-
-    .line 7
-    aput-object v2, v1, v3
-
-    .line 8
-    .line 9
-    const-string v2, "_err"
-
-    .line 10
-    .line 11
-    const/4 v3, 0x1
-
-    .line 12
-    aput-object v2, v1, v3
-
-    .line 13
-    .line 14
-    const-string v2, "_el"
-
-    .line 15
-    .line 16
-    const/4 v3, 0x2
-
-    .line 17
-    aput-object v2, v1, v3
-
-    .line 18
-    .line 19
-    invoke-static {v0, v1}, Lz5/j;->r(I[Ljava/lang/Object;)Lz5/j;
-
-    .line 20
-    .line 21
-    .line 22
     move-result-object v0
 
-    .line 23
-    sput-object v0, Lcom/google/android/gms/internal/measurement/d;->d:Lz5/j;
-
-    .line 24
-    .line 25
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;JLjava/util/HashMap;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lcom/google/android/gms/internal/measurement/d;->a:Ljava/lang/String;
-
     .line 5
+    array-length v0, v0
+
     .line 6
-    iput-wide p2, p0, Lcom/google/android/gms/internal/measurement/d;->b:J
+    new-array v0, v0, [I
 
     .line 7
     .line 8
-    new-instance p1, Ljava/util/HashMap;
+    sput-object v0, Lcom/google/android/gms/internal/measurement/D;->a:[I
 
     .line 9
     .line 10
-    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
+    :try_start_0
+    sget-object v1, Lcom/google/android/gms/internal/measurement/G;->r:Lcom/google/android/gms/internal/measurement/G;
 
     .line 11
     .line 12
-    .line 13
-    iput-object p1, p0, Lcom/google/android/gms/internal/measurement/d;->c:Ljava/util/HashMap;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 13
     .line 14
     .line 15
-    if-eqz p4, :cond_0
+    move-result v1
 
     .line 16
+    const/4 v2, 0x1
+
     .line 17
-    invoke-virtual {p1, p4}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 18
     .line 19
-    .line 20
-    :cond_0
-    return-void
-.end method
-
-.method public static a(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lcom/google/android/gms/internal/measurement/d;->d:Lz5/j;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p2}, Lz5/a;->contains(Ljava/lang/Object;)Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    if-eqz v0, :cond_0
-
-    .line 8
-    .line 9
-    instance-of v0, p1, Ljava/lang/Double;
-
-    .line 10
-    .line 11
-    if-eqz v0, :cond_0
-
-    .line 12
-    .line 13
-    check-cast p1, Ljava/lang/Double;
-
-    .line 14
-    .line 15
-    invoke-virtual {p1}, Ljava/lang/Double;->doubleValue()D
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-wide p0
-
-    .line 19
-    invoke-static {p0, p1}, Ljava/lang/Math;->round(D)J
+    :catch_0
+    :try_start_1
+    sget-object v0, Lcom/google/android/gms/internal/measurement/D;->a:[I
 
     .line 20
     .line 21
-    .line 22
-    move-result-wide p0
+    sget-object v1, Lcom/google/android/gms/internal/measurement/G;->L:Lcom/google/android/gms/internal/measurement/G;
 
+    .line 22
     .line 23
-    invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 24
     .line 25
     .line 26
-    move-result-object p0
+    move-result v1
 
     .line 27
-    return-object p0
+    const/4 v2, 0x2
 
     .line 28
-    :cond_0
-    const-string v0, "_"
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 29
     .line 30
-    invoke-virtual {p2, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    :catch_1
+    :try_start_2
+    sget-object v0, Lcom/google/android/gms/internal/measurement/D;->a:[I
 
     .line 31
     .line 32
-    .line 33
-    move-result p2
+    sget-object v1, Lcom/google/android/gms/internal/measurement/G;->g0:Lcom/google/android/gms/internal/measurement/G;
 
+    .line 33
     .line 34
-    if-eqz p2, :cond_3
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 35
     .line 36
-    instance-of p2, p0, Ljava/lang/String;
-
     .line 37
+    move-result v1
+
     .line 38
-    if-eqz p2, :cond_1
+    const/4 v2, 0x3
 
     .line 39
-    .line 40
-    return-object p1
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
+    .line 40
     .line 41
-    :cond_1
-    if-eqz p0, :cond_2
+    :catch_2
+    :try_start_3
+    sget-object v0, Lcom/google/android/gms/internal/measurement/D;->a:[I
 
     .line 42
     .line 43
-    return-object p0
+    sget-object v1, Lcom/google/android/gms/internal/measurement/G;->h0:Lcom/google/android/gms/internal/measurement/G;
 
     .line 44
-    :cond_2
-    return-object p1
-
     .line 45
-    :cond_3
-    instance-of p2, p0, Ljava/lang/Double;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 46
     .line 47
-    if-eqz p2, :cond_4
-
     .line 48
+    move-result v1
+
     .line 49
-    return-object p1
+    const/4 v2, 0x4
 
     .line 50
-    :cond_4
-    instance-of p2, p0, Ljava/lang/Long;
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
 
     .line 51
     .line 52
-    if-eqz p2, :cond_5
+    :catch_3
+    :try_start_4
+    sget-object v0, Lcom/google/android/gms/internal/measurement/D;->a:[I
 
     .line 53
     .line 54
-    check-cast p1, Ljava/lang/Double;
+    sget-object v1, Lcom/google/android/gms/internal/measurement/G;->i0:Lcom/google/android/gms/internal/measurement/G;
 
     .line 55
     .line 56
-    invoke-virtual {p1}, Ljava/lang/Double;->doubleValue()D
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 57
     .line 58
     .line 59
-    move-result-wide p0
-
-    .line 60
-    invoke-static {p0, p1}, Ljava/lang/Math;->round(D)J
-
-    .line 61
-    .line 62
-    .line 63
-    move-result-wide p0
-
-    .line 64
-    invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 65
-    .line 66
-    .line 67
-    move-result-object p0
-
-    .line 68
-    return-object p0
-
-    .line 69
-    :cond_5
-    instance-of p0, p0, Ljava/lang/String;
-
-    .line 70
-    .line 71
-    if-eqz p0, :cond_6
-
-    .line 72
-    .line 73
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    .line 74
-    .line 75
-    .line 76
-    move-result-object p0
-
-    .line 77
-    return-object p0
-
-    .line 78
-    :cond_6
-    return-object p1
-.end method
-
-
-# virtual methods
-.method public final synthetic clone()Ljava/lang/Object;
-    .locals 5
-
-    .line 1
-    new-instance v0, Lcom/google/android/gms/internal/measurement/d;
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lcom/google/android/gms/internal/measurement/d;->a:Ljava/lang/String;
-
-    .line 4
-    .line 5
-    new-instance v2, Ljava/util/HashMap;
-
-    .line 6
-    .line 7
-    iget-object v3, p0, Lcom/google/android/gms/internal/measurement/d;->c:Ljava/util/HashMap;
-
-    .line 8
-    .line 9
-    invoke-direct {v2, v3}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
-
-    .line 10
-    .line 11
-    .line 12
-    iget-wide v3, p0, Lcom/google/android/gms/internal/measurement/d;->b:J
-
-    .line 13
-    .line 14
-    invoke-direct {v0, v1, v3, v4, v2}, Lcom/google/android/gms/internal/measurement/d;-><init>(Ljava/lang/String;JLjava/util/HashMap;)V
-
-    .line 15
-    .line 16
-    .line 17
-    return-object v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 6
-
-    .line 1
-    if-ne p0, p1, :cond_0
-
-    .line 2
-    .line 3
-    const/4 p1, 0x1
-
-    .line 4
-    return p1
-
-    .line 5
-    :cond_0
-    instance-of v0, p1, Lcom/google/android/gms/internal/measurement/d;
-
-    .line 6
-    .line 7
-    const/4 v1, 0x0
-
-    .line 8
-    if-nez v0, :cond_1
-
-    .line 9
-    .line 10
-    return v1
-
-    .line 11
-    :cond_1
-    check-cast p1, Lcom/google/android/gms/internal/measurement/d;
-
-    .line 12
-    .line 13
-    iget-wide v2, p1, Lcom/google/android/gms/internal/measurement/d;->b:J
-
-    .line 14
-    .line 15
-    iget-wide v4, p0, Lcom/google/android/gms/internal/measurement/d;->b:J
-
-    .line 16
-    .line 17
-    cmp-long v0, v4, v2
-
-    .line 18
-    .line 19
-    if-eqz v0, :cond_2
-
-    .line 20
-    .line 21
-    return v1
-
-    .line 22
-    :cond_2
-    iget-object v0, p0, Lcom/google/android/gms/internal/measurement/d;->a:Ljava/lang/String;
-
-    .line 23
-    .line 24
-    iget-object v2, p1, Lcom/google/android/gms/internal/measurement/d;->a:Ljava/lang/String;
-
-    .line 25
-    .line 26
-    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 27
-    .line 28
-    .line 29
-    move-result v0
-
-    .line 30
-    if-nez v0, :cond_3
-
-    .line 31
-    .line 32
-    return v1
-
-    .line 33
-    :cond_3
-    iget-object v0, p0, Lcom/google/android/gms/internal/measurement/d;->c:Ljava/util/HashMap;
-
-    .line 34
-    .line 35
-    iget-object p1, p1, Lcom/google/android/gms/internal/measurement/d;->c:Ljava/util/HashMap;
-
-    .line 36
-    .line 37
-    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    .line 38
-    .line 39
-    .line 40
-    move-result p1
-
-    .line 41
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 5
-
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/measurement/d;->a:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 8
-    .line 9
-    iget-wide v1, p0, Lcom/google/android/gms/internal/measurement/d;->b:J
-
-    .line 10
-    .line 11
-    const/16 v3, 0x20
-
-    .line 12
-    .line 13
-    ushr-long v3, v1, v3
-
-    .line 14
-    .line 15
-    xor-long/2addr v1, v3
-
-    .line 16
-    long-to-int v1, v1
-
-    .line 17
-    add-int/2addr v0, v1
-
-    .line 18
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 19
-    .line 20
-    iget-object v1, p0, Lcom/google/android/gms/internal/measurement/d;->c:Ljava/util/HashMap;
-
-    .line 21
-    .line 22
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
-
-    .line 23
-    .line 24
-    .line 25
     move-result v1
 
-    .line 26
-    add-int/2addr v1, v0
+    .line 60
+    const/4 v2, 0x5
 
-    .line 27
-    return v1
-.end method
+    .line 61
+    aput v2, v0, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
 
-.method public final toString()Ljava/lang/String;
-    .locals 4
+    .line 62
+    .line 63
+    :catch_4
+    :try_start_5
+    sget-object v0, Lcom/google/android/gms/internal/measurement/D;->a:[I
 
-    .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/measurement/d;->a:Ljava/lang/String;
+    .line 64
+    .line 65
+    sget-object v1, Lcom/google/android/gms/internal/measurement/G;->n0:Lcom/google/android/gms/internal/measurement/G;
 
-    .line 2
-    .line 3
-    iget-object v1, p0, Lcom/google/android/gms/internal/measurement/d;->c:Ljava/util/HashMap;
+    .line 66
+    .line 67
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
-    .line 4
-    .line 5
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    .line 68
+    .line 69
+    .line 70
+    move-result v1
 
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v1
+    .line 71
+    const/4 v2, 0x6
 
-    .line 9
-    const-string v2, "Event{name=\'"
+    .line 72
+    aput v2, v0, v1
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
 
-    .line 10
-    .line 11
-    const-string v3, "\', timestamp="
+    .line 73
+    .line 74
+    :catch_5
+    :try_start_6
+    sget-object v0, Lcom/google/android/gms/internal/measurement/D;->a:[I
 
-    .line 12
-    .line 13
-    invoke-static {v2, v0, v3}, LU3/c;->v(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 75
+    .line 76
+    sget-object v1, Lcom/google/android/gms/internal/measurement/G;->o0:Lcom/google/android/gms/internal/measurement/G;
 
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v0
+    .line 77
+    .line 78
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
-    .line 17
-    iget-wide v2, p0, Lcom/google/android/gms/internal/measurement/d;->b:J
+    .line 79
+    .line 80
+    .line 81
+    move-result v1
 
-    .line 18
-    .line 19
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    .line 82
+    const/4 v2, 0x7
 
-    .line 20
-    .line 21
-    .line 22
-    const-string v2, ", params="
+    .line 83
+    aput v2, v0, v1
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
 
-    .line 23
-    .line 24
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 84
+    .line 85
+    :catch_6
+    :try_start_7
+    sget-object v0, Lcom/google/android/gms/internal/measurement/D;->a:[I
 
-    .line 25
-    .line 26
-    .line 27
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 86
+    .line 87
+    sget-object v1, Lcom/google/android/gms/internal/measurement/G;->q0:Lcom/google/android/gms/internal/measurement/G;
 
-    .line 28
-    .line 29
-    .line 30
-    const-string v1, "}"
+    .line 88
+    .line 89
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
-    .line 31
-    .line 32
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 90
+    .line 91
+    .line 92
+    move-result v1
 
-    .line 33
-    .line 34
-    .line 35
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 93
+    const/16 v2, 0x8
 
-    .line 36
-    .line 37
-    .line 38
-    move-result-object v0
+    .line 94
+    .line 95
+    aput v2, v0, v1
+    :try_end_7
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
 
-    .line 39
-    return-object v0
+    .line 96
+    .line 97
+    :catch_7
+    :try_start_8
+    sget-object v0, Lcom/google/android/gms/internal/measurement/D;->a:[I
+
+    .line 98
+    .line 99
+    sget-object v1, Lcom/google/android/gms/internal/measurement/G;->r0:Lcom/google/android/gms/internal/measurement/G;
+
+    .line 100
+    .line 101
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 102
+    .line 103
+    .line 104
+    move-result v1
+
+    .line 105
+    const/16 v2, 0x9
+
+    .line 106
+    .line 107
+    aput v2, v0, v1
+    :try_end_8
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
+
+    .line 108
+    .line 109
+    :catch_8
+    :try_start_9
+    sget-object v0, Lcom/google/android/gms/internal/measurement/D;->a:[I
+
+    .line 110
+    .line 111
+    sget-object v1, Lcom/google/android/gms/internal/measurement/G;->u0:Lcom/google/android/gms/internal/measurement/G;
+
+    .line 112
+    .line 113
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 114
+    .line 115
+    .line 116
+    move-result v1
+
+    .line 117
+    const/16 v2, 0xa
+
+    .line 118
+    .line 119
+    aput v2, v0, v1
+    :try_end_9
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
+
+    .line 120
+    .line 121
+    :catch_9
+    return-void
 .end method

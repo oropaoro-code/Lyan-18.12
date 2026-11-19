@@ -1,267 +1,269 @@
-.class public final LO5/G;
-.super LO5/j0;
+.class public final LO5/g;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LY5/c;
 
-# instance fields
-.field public final a:Ljava/lang/String;
 
-.field public final b:[B
+# static fields
+.field public static final a:LO5/g;
+
+.field public static final b:LY5/b;
+
+.field public static final c:LY5/b;
+
+.field public static final d:LY5/b;
+
+.field public static final e:LY5/b;
+
+.field public static final f:LY5/b;
+
+.field public static final g:LY5/b;
+
+.field public static final h:LY5/b;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;[B)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LO5/g;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LO5/G;->a:Ljava/lang/String;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, LO5/G;->b:[B
+    sput-object v0, LO5/g;->a:LO5/g;
 
     .line 7
     .line 8
+    const-string v0, "identifier"
+
+    .line 9
+    .line 10
+    invoke-static {v0}, LY5/b;->a(Ljava/lang/String;)LY5/b;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    sput-object v0, LO5/g;->b:LY5/b;
+
+    .line 15
+    .line 16
+    const-string v0, "version"
+
+    .line 17
+    .line 18
+    invoke-static {v0}, LY5/b;->a(Ljava/lang/String;)LY5/b;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v0
+
+    .line 22
+    sput-object v0, LO5/g;->c:LY5/b;
+
+    .line 23
+    .line 24
+    const-string v0, "displayVersion"
+
+    .line 25
+    .line 26
+    invoke-static {v0}, LY5/b;->a(Ljava/lang/String;)LY5/b;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v0
+
+    .line 30
+    sput-object v0, LO5/g;->d:LY5/b;
+
+    .line 31
+    .line 32
+    const-string v0, "organization"
+
+    .line 33
+    .line 34
+    invoke-static {v0}, LY5/b;->a(Ljava/lang/String;)LY5/b;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v0
+
+    .line 38
+    sput-object v0, LO5/g;->e:LY5/b;
+
+    .line 39
+    .line 40
+    const-string v0, "installationUuid"
+
+    .line 41
+    .line 42
+    invoke-static {v0}, LY5/b;->a(Ljava/lang/String;)LY5/b;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object v0
+
+    .line 46
+    sput-object v0, LO5/g;->f:LY5/b;
+
+    .line 47
+    .line 48
+    const-string v0, "developmentPlatform"
+
+    .line 49
+    .line 50
+    invoke-static {v0}, LY5/b;->a(Ljava/lang/String;)LY5/b;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object v0
+
+    .line 54
+    sput-object v0, LO5/g;->g:LY5/b;
+
+    .line 55
+    .line 56
+    const-string v0, "developmentPlatformVersion"
+
+    .line 57
+    .line 58
+    invoke-static {v0}, LY5/b;->a(Ljava/lang/String;)LY5/b;
+
+    .line 59
+    .line 60
+    .line 61
+    move-result-object v0
+
+    .line 62
+    sput-object v0, LO5/g;->h:LY5/b;
+
+    .line 63
+    .line 64
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final a(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 2
 
     .line 1
-    const/4 v0, 0x1
+    check-cast p1, LO5/m0;
 
     .line 2
-    if-ne p1, p0, :cond_0
-
     .line 3
-    .line 4
-    return v0
+    check-cast p2, LY5/d;
 
+    .line 4
     .line 5
-    :cond_0
-    instance-of v1, p1, LO5/j0;
+    check-cast p1, LO5/I;
 
     .line 6
     .line 7
-    const/4 v2, 0x0
+    iget-object v0, p1, LO5/I;->a:Ljava/lang/String;
 
     .line 8
-    if-eqz v1, :cond_3
-
     .line 9
+    sget-object v1, LO5/g;->b:LY5/b;
+
     .line 10
-    check-cast p1, LO5/j0;
-
     .line 11
+    invoke-interface {p2, v1, v0}, LY5/d;->f(LY5/b;Ljava/lang/Object;)LY5/d;
+
     .line 12
-    move-object v1, p1
-
     .line 13
-    check-cast v1, LO5/G;
-
     .line 14
+    iget-object v0, p1, LO5/I;->b:Ljava/lang/String;
+
     .line 15
-    iget-object v1, v1, LO5/G;->a:Ljava/lang/String;
-
     .line 16
+    sget-object v1, LO5/g;->c:LY5/b;
+
     .line 17
-    iget-object v3, p0, LO5/G;->a:Ljava/lang/String;
-
     .line 18
-    .line 19
-    invoke-virtual {v3, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-interface {p2, v1, v0}, LY5/d;->f(LY5/b;Ljava/lang/Object;)LY5/d;
 
+    .line 19
     .line 20
     .line 21
-    .line 22
-    move-result v1
+    sget-object v0, LO5/g;->d:LY5/b;
 
+    .line 22
     .line 23
-    if-eqz v1, :cond_2
+    iget-object v1, p1, LO5/I;->c:Ljava/lang/String;
 
     .line 24
     .line 25
-    instance-of v1, p1, LO5/G;
+    invoke-interface {p2, v0, v1}, LY5/d;->f(LY5/b;Ljava/lang/Object;)LY5/d;
 
     .line 26
     .line 27
-    if-eqz v1, :cond_1
-
     .line 28
-    .line 29
-    check-cast p1, LO5/G;
+    sget-object v0, LO5/g;->e:LY5/b;
 
+    .line 29
     .line 30
+    const/4 v1, 0x0
+
     .line 31
-    :goto_0
-    iget-object p1, p1, LO5/G;->b:[B
+    invoke-interface {p2, v0, v1}, LY5/d;->f(LY5/b;Ljava/lang/Object;)LY5/d;
 
     .line 32
     .line 33
-    goto :goto_1
-
     .line 34
-    :cond_1
-    check-cast p1, LO5/G;
+    sget-object v0, LO5/g;->f:LY5/b;
 
     .line 35
     .line 36
-    goto :goto_0
+    iget-object v1, p1, LO5/I;->d:Ljava/lang/String;
 
     .line 37
-    :goto_1
-    iget-object v1, p0, LO5/G;->b:[B
-
     .line 38
-    .line 39
-    invoke-static {v1, p1}, Ljava/util/Arrays;->equals([B[B)Z
+    invoke-interface {p2, v0, v1}, LY5/d;->f(LY5/b;Ljava/lang/Object;)LY5/d;
 
+    .line 39
     .line 40
     .line 41
-    .line 42
-    move-result p1
+    sget-object v0, LO5/g;->g:LY5/b;
 
+    .line 42
     .line 43
-    if-eqz p1, :cond_2
+    iget-object v1, p1, LO5/I;->e:Ljava/lang/String;
 
     .line 44
     .line 45
-    goto :goto_2
+    invoke-interface {p2, v0, v1}, LY5/d;->f(LY5/b;Ljava/lang/Object;)LY5/d;
 
     .line 46
-    :cond_2
-    move v0, v2
-
     .line 47
-    :goto_2
-    return v0
-
     .line 48
-    :cond_3
-    return v2
-.end method
+    sget-object v0, LO5/g;->h:LY5/b;
 
-.method public final hashCode()I
-    .locals 2
+    .line 49
+    .line 50
+    iget-object p1, p1, LO5/I;->f:Ljava/lang/String;
 
-    .line 1
-    iget-object v0, p0, LO5/G;->a:Ljava/lang/String;
+    .line 51
+    .line 52
+    invoke-interface {p2, v0, p1}, LY5/d;->f(LY5/b;Ljava/lang/Object;)LY5/d;
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    const v1, 0xf4243
-
-    .line 8
-    .line 9
-    .line 10
-    xor-int/2addr v0, v1
-
-    .line 11
-    mul-int/2addr v0, v1
-
-    .line 12
-    iget-object v1, p0, LO5/G;->b:[B
-
-    .line 13
-    .line 14
-    invoke-static {v1}, Ljava/util/Arrays;->hashCode([B)I
-
-    .line 15
-    .line 16
-    .line 17
-    move-result v1
-
-    .line 18
-    xor-int/2addr v0, v1
-
-    .line 19
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "File{filename="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LO5/G;->a:Ljava/lang/String;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", contents="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-object v1, p0, LO5/G;->b:[B
-
-    .line 19
-    .line 20
-    invoke-static {v1}, Ljava/util/Arrays;->toString([B)Ljava/lang/String;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object v1
-
-    .line 24
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 25
-    .line 26
-    .line 27
-    const-string v1, "}"
-
-    .line 28
-    .line 29
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 30
-    .line 31
-    .line 32
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 33
-    .line 34
-    .line 35
-    move-result-object v0
-
-    .line 36
-    return-object v0
+    .line 53
+    .line 54
+    .line 55
+    return-void
 .end method

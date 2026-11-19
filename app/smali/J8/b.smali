@@ -1,71 +1,81 @@
-.class public final Lj8/b;
-.super Lq9/j;
+.class public final LJ8/b;
+.super LA5/b;
 .source "SourceFile"
 
-# interfaces
-.implements Lp9/a;
 
+# instance fields
+.field public final synthetic b:I
 
-# static fields
-.field public static final INSTANCE:Lj8/b;
+.field public final c:Ljava/lang/Object;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public synthetic constructor <init>(ILjava/lang/Object;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lj8/b;
+    iput p1, p0, LJ8/b;->b:I
 
-    .line 2
-    .line 3
-    invoke-direct {v0}, Lj8/b;-><init>()V
+    iput-object p2, p0, LJ8/b;->c:Ljava/lang/Object;
 
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, Lj8/b;->INSTANCE:Lj8/b;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    invoke-direct {p0, v0}, Lq9/j;-><init>(I)V
-
-    .line 3
-    .line 4
-    .line 5
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Lj8/a;
+.method public final c(Ljava/io/Serializable;)LA5/b;
     .locals 1
 
     .line 1
-    new-instance v0, Lj8/a;
-
-    invoke-direct {v0}, Lj8/a;-><init>()V
-
-    return-object v0
-.end method
-
-.method public bridge synthetic invoke()Ljava/lang/Object;
-    .locals 1
+    iget v0, p0, LJ8/b;->b:I
 
     .line 2
-    invoke-virtual {p0}, Lj8/b;->invoke()Lj8/a;
+    .line 3
+    packed-switch v0, :pswitch_data_0
 
-    move-result-object v0
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, LJ8/b;->c:Ljava/lang/Object;
 
-    return-object v0
+    .line 7
+    .line 8
+    check-cast v0, Ljava/io/PrintWriter;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, p1}, Ljava/io/PrintWriter;->print(Ljava/lang/Object;)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-object p0
+
+    .line 14
+    :pswitch_0
+    iget-object v0, p0, LJ8/b;->c:Ljava/lang/Object;
+
+    .line 15
+    .line 16
+    check-cast v0, Ljava/io/PrintStream;
+
+    .line 17
+    .line 18
+    invoke-virtual {v0, p1}, Ljava/io/PrintStream;->print(Ljava/lang/Object;)V
+
+    .line 19
+    .line 20
+    .line 21
+    return-object p0
+
+    .line 22
+    nop
+
+    .line 23
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

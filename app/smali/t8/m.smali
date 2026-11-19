@@ -1,187 +1,200 @@
-.class public final LT8/m;
-.super Ljava/util/concurrent/atomic/AtomicLong;
+.class public final Lt8/m;
+.super Lf3/b;
 .source "SourceFile"
-
-# interfaces
-.implements Ljava/util/concurrent/ThreadFactory;
-
-
-# static fields
-.field private static final serialVersionUID:J = -0x6c1ac31a817da8a4L
 
 
 # instance fields
-.field public final q:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
-.field public final r:I
-
-.field public final s:Z
+.field public final synthetic c:Lt8/j;
 
 
 # direct methods
-.method public constructor <init>(ILjava/lang/String;Z)V
-    .locals 0
-
-    .line 2
-    invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicLong;-><init>()V
-
-    .line 3
-    iput-object p2, p0, LT8/m;->q:Ljava/lang/String;
-
-    .line 4
-    iput p1, p0, LT8/m;->r:I
-
-    .line 5
-    iput-boolean p3, p0, LT8/m;->s:Z
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 2
-
-    const/4 v0, 0x5
-
-    const/4 v1, 0x0
+.method public constructor <init>(Lt8/j;Ljava/lang/String;Lt8/c;)V
+    .locals 1
 
     .line 1
-    invoke-direct {p0, v0, p1, v1}, LT8/m;-><init>(ILjava/lang/String;Z)V
+    const-string v0, "name"
 
+    .line 2
+    .line 3
+    invoke-static {p2, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iput-object p1, p0, Lt8/m;->c:Lt8/j;
+
+    .line 7
+    .line 8
+    invoke-direct {p0, p3}, Lf3/b;-><init>(Lp9/d;)V
+
+    .line 9
+    .line 10
+    .line 11
+    iput-object p2, p0, Lt8/m;->b:Ljava/lang/String;
+
+    .line 12
+    .line 13
     return-void
 .end method
 
 
 # virtual methods
-.method public final newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
-    .locals 3
+.method public final a(Li3/a;)V
+    .locals 2
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget-object v0, p0, Lt8/m;->c:Lt8/j;
 
     .line 2
     .line 3
-    iget-object v1, p0, LT8/m;->q:Ljava/lang/String;
+    iget-object v0, v0, LE4/u0;->a:Ljava/lang/Object;
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    check-cast v0, Lk3/i;
 
     .line 6
     .line 7
+    const-string v1, "tags"
+
     .line 8
-    const/16 v1, 0x2d
-
     .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    filled-new-array {v1}, [Ljava/lang/String;
 
+    .line 10
     .line 11
     .line 12
+    move-result-object v1
+
     .line 13
-    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicLong;->incrementAndGet()J
+    invoke-virtual {v0, v1, p1}, Lk3/i;->c([Ljava/lang/String;Li3/a;)V
 
     .line 14
     .line 15
     .line 16
-    move-result-wide v1
+    return-void
+.end method
 
+.method public final b(Lp9/d;)Lj3/d;
+    .locals 7
+
+    .line 1
+    iget-object v0, p0, Lt8/m;->c:Lt8/j;
+
+    .line 2
+    .line 3
+    iget-object v0, v0, LE4/u0;->a:Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    move-object v1, v0
+
+    .line 6
+    check-cast v1, Lk3/i;
+
+    .line 7
+    .line 8
+    const v0, 0x6dd7102c
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v2
+
+    .line 15
+    new-instance v6, LY/o0;
+
+    .line 16
     .line 17
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    const/16 v0, 0x16
 
     .line 18
     .line 19
-    .line 20
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-direct {v6, v0, p0}, LY/o0;-><init>(ILjava/lang/Object;)V
 
+    .line 20
     .line 21
     .line 22
-    .line 23
-    move-result-object v0
+    const-string v3, "SELECT _ID, name, added_date FROM tags WHERE name = ?"
 
+    .line 23
     .line 24
-    iget-boolean v1, p0, LT8/m;->s:Z
+    const/4 v5, 0x1
 
     .line 25
+    move-object v4, p1
+
     .line 26
-    if-eqz v1, :cond_0
+    invoke-virtual/range {v1 .. v6}, Lk3/i;->l(Ljava/lang/Integer;Ljava/lang/String;Lp9/d;ILp9/d;)Lj3/d;
 
     .line 27
     .line 28
-    new-instance v1, LT8/l;
-
     .line 29
+    move-result-object p1
+
     .line 30
-    invoke-direct {v1, p1, v0}, LT8/l;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
-
-    .line 31
-    .line 32
-    .line 33
-    goto :goto_0
-
-    .line 34
-    :cond_0
-    new-instance v1, Ljava/lang/Thread;
-
-    .line 35
-    .line 36
-    invoke-direct {v1, p1, v0}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
-
-    .line 37
-    .line 38
-    .line 39
-    :goto_0
-    iget p1, p0, LT8/m;->r:I
-
-    .line 40
-    .line 41
-    invoke-virtual {v1, p1}, Ljava/lang/Thread;->setPriority(I)V
-
-    .line 42
-    .line 43
-    .line 44
-    const/4 p1, 0x1
-
-    .line 45
-    invoke-virtual {v1, p1}, Ljava/lang/Thread;->setDaemon(Z)V
-
-    .line 46
-    .line 47
-    .line 48
-    return-object v1
+    return-object p1
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 3
+.method public final d(Li3/a;)V
+    .locals 2
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    const-string v0, "listener"
 
     .line 2
     .line 3
-    const-string v1, "RxThreadFactory["
+    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 6
+    iget-object v0, p0, Lt8/m;->c:Lt8/j;
+
     .line 7
     .line 8
-    iget-object v1, p0, LT8/m;->q:Ljava/lang/String;
+    iget-object v0, v0, LE4/u0;->a:Ljava/lang/Object;
 
     .line 9
     .line 10
-    const-string v2, "]"
+    check-cast v0, Lk3/i;
 
     .line 11
     .line 12
-    invoke-static {v0, v1, v2}, Lj6/d;->x(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    const-string v1, "tags"
 
     .line 13
     .line 14
-    .line 15
-    move-result-object v0
+    filled-new-array {v1}, [Ljava/lang/String;
 
+    .line 15
     .line 16
+    .line 17
+    move-result-object v1
+
+    .line 18
+    invoke-virtual {v0, v1, p1}, Lk3/i;->v([Ljava/lang/String;Li3/a;)V
+
+    .line 19
+    .line 20
+    .line 21
+    return-void
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "Tag.sq:tagByName"
+
+    .line 2
+    .line 3
     return-object v0
 .end method

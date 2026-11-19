@@ -1,34 +1,30 @@
-.class public final Ldb/P;
-.super Ldb/Q;
+.class public final Ldb/p;
+.super Ldb/v;
 .source "SourceFile"
 
 
 # static fields
-.field public static final b:Ldb/P;
+.field public static final a:Ldb/p;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 1
 
     .line 1
-    new-instance v0, Ldb/P;
+    new-instance v0, Ldb/p;
 
     .line 2
     .line 3
-    sget-object v1, Ldb/t;->a:Ldb/t;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, LE4/u0;-><init>(Ljava/lang/Object;)V
-
     .line 6
+    sput-object v0, Ldb/p;->a:Ldb/p;
+
     .line 7
     .line 8
-    sput-object v0, Ldb/P;->b:Ldb/P;
-
-    .line 9
-    .line 10
     return-void
 .end method
 
@@ -49,7 +45,7 @@
 
     .line 5
     :cond_0
-    instance-of p1, p1, Ldb/P;
+    instance-of p1, p1, Ldb/p;
 
     .line 6
     .line 7
@@ -71,7 +67,7 @@
     .locals 1
 
     .line 1
-    const v0, -0x52262acb
+    const v0, -0x21077700
 
     .line 2
     .line 3
@@ -83,7 +79,7 @@
     .locals 1
 
     .line 1
-    const-string v0, "Stop"
+    const-string v0, "Rewind"
 
     .line 2
     .line 3

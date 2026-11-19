@@ -1,209 +1,125 @@
-.class public final LG0/l;
-.super LG0/S;
+.class public final enum LG0/L;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
 
-# instance fields
-.field public final synthetic v:I
+# static fields
+.field public static final enum q:LG0/L;
+
+.field public static final enum r:LG0/L;
+
+.field public static final synthetic s:[LG0/L;
 
 
 # direct methods
-.method public constructor <init>(III)V
-    .locals 4
+.method static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    iput p3, p0, LG0/l;->v:I
+    const/4 v0, 0x1
+
+    .line 2
+    const/4 v1, 0x0
+
+    .line 3
+    new-instance v2, LG0/L;
+
+    .line 4
+    .line 5
+    const-string v3, "Min"
+
+    .line 6
+    .line 7
+    invoke-direct {v2, v3, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 8
+    .line 9
+    .line 10
+    sput-object v2, LG0/L;->q:LG0/L;
+
+    .line 11
+    .line 12
+    new-instance v3, LG0/L;
+
+    .line 13
+    .line 14
+    const-string v4, "Max"
+
+    .line 15
+    .line 16
+    invoke-direct {v3, v4, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 17
+    .line 18
+    .line 19
+    sput-object v3, LG0/L;->r:LG0/L;
+
+    .line 20
+    .line 21
+    const/4 v4, 0x2
+
+    .line 22
+    new-array v4, v4, [LG0/L;
+
+    .line 23
+    .line 24
+    aput-object v2, v4, v1
+
+    .line 25
+    .line 26
+    aput-object v3, v4, v0
+
+    .line 27
+    .line 28
+    sput-object v4, LG0/L;->s:[LG0/L;
+
+    .line 29
+    .line 30
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)LG0/L;
+    .locals 1
+
+    .line 1
+    const-class v0, LG0/L;
 
     .line 2
     .line 3
-    packed-switch p3, :pswitch_data_0
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     .line 4
     .line 5
     .line 6
-    invoke-direct {p0}, LG0/S;-><init>()V
+    move-result-object p0
 
     .line 7
+    check-cast p0, LG0/L;
+
     .line 8
     .line 9
-    int-to-long v0, p1
-
-    .line 10
-    const/16 p1, 0x20
-
-    .line 11
-    .line 12
-    shl-long/2addr v0, p1
-
-    .line 13
-    int-to-long p1, p2
-
-    .line 14
-    const-wide v2, 0xffffffffL
-
-    .line 15
-    .line 16
-    .line 17
-    .line 18
-    .line 19
-    and-long/2addr p1, v2
-
-    .line 20
-    or-long/2addr p1, v0
-
-    .line 21
-    invoke-virtual {p0, p1, p2}, LG0/S;->Z(J)V
-
-    .line 22
-    .line 23
-    .line 24
-    return-void
-
-    .line 25
-    :pswitch_0
-    invoke-direct {p0}, LG0/S;-><init>()V
-
-    .line 26
-    .line 27
-    .line 28
-    int-to-long v0, p1
-
-    .line 29
-    const/16 p1, 0x20
-
-    .line 30
-    .line 31
-    shl-long/2addr v0, p1
-
-    .line 32
-    int-to-long p1, p2
-
-    .line 33
-    const-wide v2, 0xffffffffL
-
-    .line 34
-    .line 35
-    .line 36
-    .line 37
-    .line 38
-    and-long/2addr p1, v2
-
-    .line 39
-    or-long/2addr p1, v0
-
-    .line 40
-    invoke-virtual {p0, p1, p2}, LG0/S;->Z(J)V
-
-    .line 41
-    .line 42
-    .line 43
-    return-void
-
-    .line 44
-    :pswitch_1
-    invoke-direct {p0}, LG0/S;-><init>()V
-
-    .line 45
-    .line 46
-    .line 47
-    int-to-long v0, p1
-
-    .line 48
-    const/16 p1, 0x20
-
-    .line 49
-    .line 50
-    shl-long/2addr v0, p1
-
-    .line 51
-    int-to-long p1, p2
-
-    .line 52
-    const-wide v2, 0xffffffffL
-
-    .line 53
-    .line 54
-    .line 55
-    .line 56
-    .line 57
-    and-long/2addr p1, v2
-
-    .line 58
-    or-long/2addr p1, v0
-
-    .line 59
-    invoke-virtual {p0, p1, p2}, LG0/S;->Z(J)V
-
-    .line 60
-    .line 61
-    .line 62
-    return-void
-
-    .line 63
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return-object p0
 .end method
 
-.method private final b0(JFLp9/d;)V
-    .locals 0
+.method public static values()[LG0/L;
+    .locals 1
 
     .line 1
-    return-void
-.end method
+    sget-object v0, LG0/L;->s:[LG0/L;
 
-.method private final f0(JFLp9/d;)V
-    .locals 0
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
-    .line 1
-    return-void
-.end method
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
 
-.method private final g0(JFLp9/d;)V
-    .locals 0
+    .line 7
+    check-cast v0, [LG0/L;
 
-    .line 1
-    return-void
-.end method
-
-
-# virtual methods
-.method public final R(LG0/m;)I
-    .locals 0
-
-    .line 1
-    iget p1, p0, LG0/l;->v:I
-
-    packed-switch p1, :pswitch_data_0
-
-    const/high16 p1, -0x80000000
-
-    return p1
-
-    :pswitch_0
-    const/high16 p1, -0x80000000
-
-    return p1
-
-    :pswitch_1
-    const/high16 p1, -0x80000000
-
-    return p1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final Y(JFLp9/d;)V
-    .locals 0
-
-    .line 1
-    iget p1, p0, LG0/l;->v:I
-
-    return-void
+    .line 8
+    .line 9
+    return-object v0
 .end method

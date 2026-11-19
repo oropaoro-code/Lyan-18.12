@@ -1,12 +1,69 @@
-.class public interface abstract LW8/a;
-.super Ljava/lang/Object;
+.class public final Lw8/a;
+.super Li9/c;
 .source "SourceFile"
 
-# interfaces
-.implements LI8/b;
-.implements LW8/d;
+
+# instance fields
+.field public synthetic q:Ljava/lang/Object;
+
+.field public final synthetic r:Lw8/d;
+
+.field public s:I
+
+
+# direct methods
+.method public constructor <init>(Lw8/d;Li9/c;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lw8/a;->r:Lw8/d;
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p2}, Li9/c;-><init>(Lg9/e;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract f()I
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iput-object p1, p0, Lw8/a;->q:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    iget p1, p0, Lw8/a;->s:I
+
+    .line 4
+    .line 5
+    const/high16 v0, -0x80000000
+
+    .line 6
+    .line 7
+    or-int/2addr p1, v0
+
+    .line 8
+    iput p1, p0, Lw8/a;->s:I
+
+    .line 9
+    .line 10
+    iget-object p1, p0, Lw8/a;->r:Lw8/d;
+
+    .line 11
+    .line 12
+    invoke-virtual {p1, p0}, Lw8/d;->a(Li9/c;)Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
+
+    .line 16
+    return-object p1
 .end method

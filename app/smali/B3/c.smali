@@ -1,201 +1,177 @@
-.class public final Lb3/c;
-.super Ljava/lang/Object;
+.class public final enum LB3/C;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
 
 # static fields
-.field public static final b:Ljava/lang/String;
+.field public static final enum q:LB3/C;
 
+.field public static final enum r:LB3/C;
 
-# instance fields
-.field public final a:Ljava/lang/Object;
+.field public static final enum s:LB3/C;
+
+.field public static final enum t:LB3/C;
+
+.field public static final synthetic u:[LB3/C;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 9
 
     .line 1
-    const-string v0, "NetworkRequestCompat"
+    const/4 v0, 0x3
 
     .line 2
+    const/4 v1, 0x2
+
     .line 3
-    invoke-static {v0}, LR2/w;->g(Ljava/lang/String;)Ljava/lang/String;
+    const/4 v2, 0x1
 
     .line 4
-    .line 5
-    .line 6
-    move-result-object v0
+    const/4 v3, 0x0
 
+    .line 5
+    new-instance v4, LB3/C;
+
+    .line 6
     .line 7
-    const-string v1, "tagWithPrefix(\"NetworkRequestCompat\")"
+    const-string v5, "NOT_LOADED"
 
     .line 8
     .line 9
-    invoke-static {v0, v1}, Lq9/i;->d(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {v4, v5, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 10
     .line 11
     .line 12
-    sput-object v0, Lb3/c;->b:Ljava/lang/String;
+    sput-object v4, LB3/C;->q:LB3/C;
 
     .line 13
     .line 14
-    return-void
-.end method
+    new-instance v5, LB3/C;
 
-.method public constructor <init>(Ljava/lang/Object;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lb3/c;->a:Ljava/lang/Object;
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, Lb3/c;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, Lb3/c;
-
-    .line 12
-    .line 13
-    iget-object v1, p0, Lb3/c;->a:Ljava/lang/Object;
-
-    .line 14
     .line 15
-    iget-object p1, p1, Lb3/c;->a:Ljava/lang/Object;
-
     .line 16
-    .line 17
-    invoke-static {v1, p1}, Lq9/i;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    const-string v6, "LOADING"
 
+    .line 17
     .line 18
+    invoke-direct {v5, v6, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 19
     .line 20
-    move-result p1
-
     .line 21
-    if-nez p1, :cond_2
+    sput-object v5, LB3/C;->r:LB3/C;
 
     .line 22
     .line 23
-    return v2
+    new-instance v6, LB3/C;
 
     .line 24
-    :cond_2
-    return v0
+    .line 25
+    const-string v7, "SUCCESS"
+
+    .line 26
+    .line 27
+    invoke-direct {v6, v7, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 28
+    .line 29
+    .line 30
+    sput-object v6, LB3/C;->s:LB3/C;
+
+    .line 31
+    .line 32
+    new-instance v7, LB3/C;
+
+    .line 33
+    .line 34
+    const-string v8, "ERROR"
+
+    .line 35
+    .line 36
+    invoke-direct {v7, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 37
+    .line 38
+    .line 39
+    sput-object v7, LB3/C;->t:LB3/C;
+
+    .line 40
+    .line 41
+    const/4 v8, 0x4
+
+    .line 42
+    new-array v8, v8, [LB3/C;
+
+    .line 43
+    .line 44
+    aput-object v4, v8, v3
+
+    .line 45
+    .line 46
+    aput-object v5, v8, v2
+
+    .line 47
+    .line 48
+    aput-object v6, v8, v1
+
+    .line 49
+    .line 50
+    aput-object v7, v8, v0
+
+    .line 51
+    .line 52
+    sput-object v8, LB3/C;->u:[LB3/C;
+
+    .line 53
+    .line 54
+    return-void
 .end method
 
-.method public final hashCode()I
+.method public static valueOf(Ljava/lang/String;)LB3/C;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lb3/c;->a:Ljava/lang/Object;
+    const-class v0, LB3/C;
 
     .line 2
     .line 3
-    if-nez v0, :cond_0
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     .line 4
     .line 5
-    const/4 v0, 0x0
-
     .line 6
-    goto :goto_0
+    move-result-object p0
 
     .line 7
-    :cond_0
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    check-cast p0, LB3/C;
 
     .line 8
     .line 9
-    .line 10
-    move-result v0
-
-    .line 11
-    :goto_0
-    return v0
+    return-object p0
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 2
+.method public static values()[LB3/C;
+    .locals 1
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    sget-object v0, LB3/C;->u:[LB3/C;
 
     .line 2
     .line 3
-    const-string v1, "NetworkRequestCompat(wrapped="
+    invoke-virtual {v0}, [LB3/C;->clone()Ljava/lang/Object;
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, Lb3/c;->a:Ljava/lang/Object;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const/16 v1, 0x29
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 19
-    .line 20
-    .line 21
     move-result-object v0
 
-    .line 22
+    .line 7
+    check-cast v0, [LB3/C;
+
+    .line 8
+    .line 9
     return-object v0
 .end method

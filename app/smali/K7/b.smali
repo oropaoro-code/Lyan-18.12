@@ -1,22 +1,64 @@
-.class public final Lk7/b;
-.super Lu/g;
+.class public final LK7/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements LJ7/b;
+
+
+# static fields
+.field private static final ANDROID_NOTIFICATION_ID:Ljava/lang/String; = "android_notif_id"
+
+.field public static final Companion:LK7/a;
+
+.field public static final DEFAULT_ACTION:Ljava/lang/String; = "__DEFAULT__"
+
+.field public static final PUSH_ADDITIONAL_DATA_KEY:Ljava/lang/String; = "a"
+
+.field public static final PUSH_MINIFIED_BUTTONS_LIST:Ljava/lang/String; = "o"
+
+.field public static final PUSH_MINIFIED_BUTTON_ICON:Ljava/lang/String; = "p"
+
+.field public static final PUSH_MINIFIED_BUTTON_ID:Ljava/lang/String; = "i"
+
+.field public static final PUSH_MINIFIED_BUTTON_TEXT:Ljava/lang/String; = "n"
 
 
 # instance fields
-.field private final context:Landroid/content/Context;
+.field private final _time:Le7/a;
 
-.field private final openActivity:Z
-
-.field private final url:Ljava/lang/String;
+.field private final _workManager:LQ7/b;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;ZLandroid/content/Context;)V
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, LK7/a;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-direct {v0, v1}, LK7/a;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 5
+    .line 6
+    .line 7
+    sput-object v0, LK7/b;->Companion:LK7/a;
+
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public constructor <init>(LQ7/b;Le7/a;)V
     .locals 1
 
     .line 1
-    const-string v0, "url"
+    const-string v0, "_workManager"
 
     .line 2
     .line 3
@@ -25,11 +67,11 @@
     .line 4
     .line 5
     .line 6
-    const-string v0, "context"
+    const-string v0, "_time"
 
     .line 7
     .line 8
-    invoke-static {p3, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -39,28 +81,357 @@
     .line 12
     .line 13
     .line 14
-    iput-object p1, p0, Lk7/b;->url:Ljava/lang/String;
+    iput-object p1, p0, LK7/b;->_workManager:LQ7/b;
 
     .line 15
     .line 16
-    iput-boolean p2, p0, Lk7/b;->openActivity:Z
+    iput-object p2, p0, LK7/b;->_time:Le7/a;
 
     .line 17
     .line 18
-    iput-object p3, p0, Lk7/b;->context:Landroid/content/Context;
+    return-void
+.end method
 
+.method private final maximizeButtonsFromBundle(Landroid/os/Bundle;)V
+    .locals 14
+
+    .line 1
+    const-string v0, "n"
+
+    .line 2
+    .line 3
+    const-string v1, "custom"
+
+    .line 4
+    .line 5
+    const-string v2, "p"
+
+    .line 6
+    .line 7
+    const-string v3, "i"
+
+    .line 8
+    .line 9
+    const-string v4, "a"
+
+    .line 10
+    .line 11
+    const-string v5, "o"
+
+    .line 12
+    .line 13
+    invoke-virtual {p1, v5}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v6
+
+    .line 17
+    if-nez v6, :cond_0
+
+    .line 18
     .line 19
+    return-void
+
     .line 20
+    :cond_0
+    :try_start_0
+    new-instance v6, Lorg/json/JSONObject;
+
+    .line 21
+    .line 22
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v7
+
+    .line 26
+    invoke-direct {v6, v7}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-virtual {v6, v4}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+
+    .line 30
+    .line 31
+    .line 32
+    move-result v7
+
+    .line 33
+    if-eqz v7, :cond_1
+
+    .line 34
+    .line 35
+    invoke-virtual {v6, v4}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object v7
+
+    .line 39
+    const-string v8, "{\n                    cu\u2026      )\n                }"
+
+    .line 40
+    .line 41
+    invoke-static {v7, v8}, Lq9/i;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 42
+    .line 43
+    .line 44
+    goto :goto_0
+
+    .line 45
+    :catch_0
+    move-exception p1
+
+    .line 46
+    goto :goto_3
+
+    .line 47
+    :cond_1
+    new-instance v7, Lorg/json/JSONObject;
+
+    .line 48
+    .line 49
+    invoke-direct {v7}, Lorg/json/JSONObject;-><init>()V
+
+    .line 50
+    .line 51
+    .line 52
+    :goto_0
+    new-instance v8, Lorg/json/JSONArray;
+
+    .line 53
+    .line 54
+    invoke-virtual {p1, v5}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object v9
+
+    .line 58
+    invoke-direct {v8, v9}, Lorg/json/JSONArray;-><init>(Ljava/lang/String;)V
+
+    .line 59
+    .line 60
+    .line 61
+    invoke-virtual {p1, v5}, Landroid/os/Bundle;->remove(Ljava/lang/String;)V
+
+    .line 62
+    .line 63
+    .line 64
+    invoke-virtual {v8}, Lorg/json/JSONArray;->length()I
+
+    .line 65
+    .line 66
+    .line 67
+    move-result v5
+
+    .line 68
+    const/4 v9, 0x0
+
+    .line 69
+    :goto_1
+    if-ge v9, v5, :cond_4
+
+    .line 70
+    .line 71
+    invoke-virtual {v8, v9}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object v10
+
+    .line 75
+    invoke-virtual {v10, v0}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 76
+    .line 77
+    .line 78
+    move-result-object v11
+
+    .line 79
+    invoke-virtual {v10, v0}, Lorg/json/JSONObject;->remove(Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 80
+    .line 81
+    .line 82
+    invoke-virtual {v10, v3}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+
+    .line 83
+    .line 84
+    .line 85
+    move-result v12
+
+    .line 86
+    if-eqz v12, :cond_2
+
+    .line 87
+    .line 88
+    invoke-virtual {v10, v3}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 89
+    .line 90
+    .line 91
+    move-result-object v12
+
+    .line 92
+    invoke-virtual {v10, v3}, Lorg/json/JSONObject;->remove(Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 93
+    .line 94
+    .line 95
+    goto :goto_2
+
+    .line 96
+    :cond_2
+    move-object v12, v11
+
+    .line 97
+    :goto_2
+    const-string v13, "id"
+
+    .line 98
+    .line 99
+    invoke-virtual {v10, v13, v12}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 100
+    .line 101
+    .line 102
+    const-string v12, "text"
+
+    .line 103
+    .line 104
+    invoke-virtual {v10, v12, v11}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 105
+    .line 106
+    .line 107
+    invoke-virtual {v10, v2}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+
+    .line 108
+    .line 109
+    .line 110
+    move-result v11
+
+    .line 111
+    if-eqz v11, :cond_3
+
+    .line 112
+    .line 113
+    const-string v11, "icon"
+
+    .line 114
+    .line 115
+    invoke-virtual {v10, v2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 116
+    .line 117
+    .line 118
+    move-result-object v12
+
+    .line 119
+    invoke-virtual {v10, v11, v12}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 120
+    .line 121
+    .line 122
+    invoke-virtual {v10, v2}, Lorg/json/JSONObject;->remove(Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 123
+    .line 124
+    .line 125
+    :cond_3
+    add-int/lit8 v9, v9, 0x1
+
+    .line 126
+    .line 127
+    goto :goto_1
+
+    .line 128
+    :cond_4
+    const-string v0, "actionButtons"
+
+    .line 129
+    .line 130
+    invoke-virtual {v7, v0, v8}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 131
+    .line 132
+    .line 133
+    const-string v0, "actionId"
+
+    .line 134
+    .line 135
+    const-string v2, "__DEFAULT__"
+
+    .line 136
+    .line 137
+    invoke-virtual {v7, v0, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 138
+    .line 139
+    .line 140
+    invoke-virtual {v6, v4}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+
+    .line 141
+    .line 142
+    .line 143
+    move-result v0
+
+    .line 144
+    if-nez v0, :cond_5
+
+    .line 145
+    .line 146
+    invoke-virtual {v6, v4, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 147
+    .line 148
+    .line 149
+    :cond_5
+    invoke-virtual {v6}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+
+    .line 150
+    .line 151
+    .line 152
+    move-result-object v0
+
+    .line 153
+    invoke-virtual {p1, v1, v0}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 154
+    .line 155
+    .line 156
+    goto :goto_4
+
+    .line 157
+    :goto_3
+    invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 158
+    .line 159
+    .line 160
+    :goto_4
     return-void
 .end method
 
 
 # virtual methods
-.method public onCustomTabsServiceConnected(Landroid/content/ComponentName;Lu/c;)V
-    .locals 4
+.method public processBundleFromReceiver(Landroid/content/Context;Landroid/os/Bundle;)LJ7/a;
+    .locals 13
 
     .line 1
-    const-string v0, "componentName"
+    const-string v0, "context"
 
     .line 2
     .line 3
@@ -69,263 +440,234 @@
     .line 4
     .line 5
     .line 6
-    const-string p1, "customTabsClient"
+    const-string v0, "bundle"
 
     .line 7
     .line 8
-    invoke-static {p2, p1}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 9
     .line 10
     .line 11
-    iget-object p1, p2, Lu/c;->a:Lb/d;
+    new-instance v0, LJ7/a;
 
     .line 12
     .line 13
-    :try_start_0
-    invoke-interface {p1}, Lb/d;->o0()Z
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-direct {v0}, LJ7/a;-><init>()V
 
     .line 14
     .line 15
     .line 16
-    :catch_0
-    new-instance v0, Lu/b;
+    sget-object v1, LN7/c;->INSTANCE:LN7/c;
 
     .line 17
     .line 18
-    invoke-direct {v0}, Landroid/os/Binder;-><init>()V
+    invoke-virtual {v1, p2}, LN7/c;->isOneSignalBundle(Landroid/os/Bundle;)Z
 
     .line 19
     .line 20
     .line 21
-    const-string v1, "android.support.customtabs.ICustomTabsCallback"
+    move-result v2
 
     .line 22
-    .line 23
-    invoke-virtual {v0, v0, v1}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    if-nez v2, :cond_0
 
+    .line 23
     .line 24
+    return-object v0
+
     .line 25
+    :cond_0
+    const/4 v2, 0x1
+
     .line 26
-    new-instance v1, Landroid/os/Handler;
+    invoke-virtual {v0, v2}, LJ7/a;->setOneSignalPayload(Z)V
 
     .line 27
     .line 28
-    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
-
     .line 29
+    invoke-direct {p0, p2}, LK7/b;->maximizeButtonsFromBundle(Landroid/os/Bundle;)V
+
     .line 30
     .line 31
-    move-result-object v2
-
     .line 32
-    invoke-direct {v1, v2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+    sget-object v3, Lcom/onesignal/common/i;->INSTANCE:Lcom/onesignal/common/i;
 
     .line 33
     .line 34
+    invoke-virtual {v3, p2}, Lcom/onesignal/common/i;->bundleAsJSONObject(Landroid/os/Bundle;)Lorg/json/JSONObject;
+
     .line 35
-    const/4 v1, 0x0
-
     .line 36
-    :try_start_1
-    invoke-interface {p1, v0}, Lb/d;->t0(Lb/b;)Z
-
     .line 37
-    .line 38
-    .line 39
-    move-result v2
-    :try_end_1
-    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_1
+    move-result-object v8
 
+    .line 38
+    iget-object v3, p0, LK7/b;->_time:Le7/a;
+
+    .line 39
     .line 40
-    if-nez v2, :cond_0
+    check-cast v3, Lf7/a;
 
     .line 41
     .line 42
-    :catch_1
-    move-object v2, v1
+    invoke-virtual {v3}, Lf7/a;->getCurrentTimeMillis()J
 
     .line 43
-    goto :goto_0
-
     .line 44
-    :cond_0
-    new-instance v2, Lcom/facebook/x;
-
     .line 45
+    move-result-wide v3
+
     .line 46
-    iget-object p2, p2, Lu/c;->b:Landroid/content/ComponentName;
+    const-wide/16 v5, 0x3e8
 
     .line 47
     .line 48
-    const/16 v3, 0x10
+    div-long v9, v3, v5
 
     .line 49
     .line 50
-    invoke-direct {v2, p1, v0, p2, v3}, Lcom/facebook/x;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    const-string v3, "is_restoring"
 
     .line 51
     .line 52
+    const/4 v4, 0x0
+
     .line 53
-    :goto_0
-    if-nez v2, :cond_1
+    invoke-virtual {p2, v3, v4}, Landroid/os/BaseBundle;->getBoolean(Ljava/lang/String;Z)Z
 
     .line 54
     .line 55
-    return-void
-
     .line 56
-    :cond_1
-    iget-object p1, v2, Lcom/facebook/x;->s:Ljava/lang/Object;
+    move-result v11
 
     .line 57
+    const-string v3, "pri"
+
     .line 58
-    check-cast p1, Lu/b;
-
     .line 59
+    const-string v5, "0"
+
     .line 60
-    iget-object p2, p0, Lk7/b;->url:Ljava/lang/String;
-
     .line 61
-    .line 62
-    invoke-static {p2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-virtual {p2, v3, v5}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
+    .line 62
     .line 63
     .line 64
+    move-result-object v3
+
     .line 65
-    move-result-object p2
+    const-string v5, "bundle.getString(\"pri\", \"0\")"
 
     .line 66
-    :try_start_2
-    iget-object v0, v2, Lcom/facebook/x;->r:Ljava/lang/Object;
-
     .line 67
-    .line 68
-    check-cast v0, Lb/d;
+    invoke-static {v3, v5}, Lq9/i;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
+    .line 68
     .line 69
     .line 70
-    invoke-interface {v0, p1, p2, v1, v1}, Lb/d;->V(Lb/b;Landroid/net/Uri;Landroid/os/Bundle;Ljava/util/List;)Z
-    :try_end_2
-    .catch Landroid/os/RemoteException; {:try_start_2 .. :try_end_2} :catch_2
+    invoke-static {v3}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     .line 71
     .line 72
     .line 73
-    :catch_2
-    iget-boolean v0, p0, Lk7/b;->openActivity:Z
+    move-result v3
 
     .line 74
+    const/16 v5, 0x9
+
     .line 75
-    if-eqz v0, :cond_2
-
     .line 76
-    .line 77
-    new-instance v0, Landroid/content/Intent;
+    if-le v3, v5, :cond_1
 
+    .line 77
     .line 78
+    move v12, v2
+
     .line 79
-    const-string v3, "android.intent.action.VIEW"
+    goto :goto_0
 
     .line 80
+    :cond_1
+    move v12, v4
+
     .line 81
-    invoke-direct {v0, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    :goto_0
+    invoke-virtual {v1, v8}, LN7/c;->getOSNotificationIdFromJson(Lorg/json/JSONObject;)Ljava/lang/String;
 
     .line 82
     .line 83
     .line 84
-    iget-object v2, v2, Lcom/facebook/x;->t:Ljava/lang/Object;
+    move-result-object v6
 
     .line 85
+    const-string v1, "android_notif_id"
+
     .line 86
-    check-cast v2, Landroid/content/ComponentName;
-
     .line 87
-    .line 88
-    invoke-virtual {v2}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p2, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
+    .line 88
     .line 89
     .line 90
+    move-result v2
+
     .line 91
-    move-result-object v2
+    if-eqz v2, :cond_2
 
     .line 92
-    invoke-virtual {v0, v2}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
-
     .line 93
+    invoke-virtual {p2, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
+
     .line 94
     .line 95
-    new-instance v2, Landroid/os/Bundle;
-
     .line 96
+    move-result p2
+
     .line 97
-    invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
+    move v7, p2
 
     .line 98
+    goto :goto_1
+
     .line 99
+    :cond_2
+    move v7, v4
+
     .line 100
-    const-string v3, "android.support.customtabs.extra.SESSION"
+    :goto_1
+    iget-object p2, p0, LK7/b;->_workManager:LQ7/b;
 
     .line 101
     .line 102
-    invoke-virtual {v2, v3, p1}, Landroid/os/Bundle;->putBinder(Ljava/lang/String;Landroid/os/IBinder;)V
+    invoke-static {v6}, Lq9/i;->b(Ljava/lang/Object;)V
 
     .line 103
     .line 104
     .line 105
-    invoke-virtual {v0, v2}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
+    move-object v4, p2
 
     .line 106
+    check-cast v4, Lcom/onesignal/notifications/internal/generation/impl/n;
+
     .line 107
     .line 108
-    const-string p1, "android.support.customtabs.extra.EXTRA_ENABLE_INSTANT_APPS"
+    move-object v5, p1
 
     .line 109
+    invoke-virtual/range {v4 .. v12}, Lcom/onesignal/notifications/internal/generation/impl/n;->beginEnqueueingWork(Landroid/content/Context;Ljava/lang/String;ILorg/json/JSONObject;JZZ)Z
+
     .line 110
-    const/4 v2, 0x1
-
     .line 111
-    invoke-virtual {v0, p1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
-
     .line 112
-    .line 113
-    .line 114
-    invoke-virtual {v0, p2}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+    move-result p1
 
+    .line 113
+    invoke-virtual {v0, p1}, LJ7/a;->setWorkManagerProcessing(Z)V
+
+    .line 114
     .line 115
     .line 116
-    .line 117
-    const/high16 p1, 0x10000000
-
-    .line 118
-    .line 119
-    invoke-virtual {v0, p1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
-
-    .line 120
-    .line 121
-    .line 122
-    iget-object p1, p0, Lk7/b;->context:Landroid/content/Context;
-
-    .line 123
-    .line 124
-    invoke-virtual {p1, v0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;Landroid/os/Bundle;)V
-
-    .line 125
-    .line 126
-    .line 127
-    :cond_2
-    return-void
-.end method
-
-.method public onServiceDisconnected(Landroid/content/ComponentName;)V
-    .locals 1
-
-    .line 1
-    const-string v0, "name"
-
-    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
-
-    return-void
+    return-object v0
 .end method

@@ -1,166 +1,430 @@
-.class public final Ll8/a;
-.super La7/b;
+.class public final enum LL8/a;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
+# interfaces
+.implements LI8/b;
 
-# instance fields
-.field private final _configModelStore:Lcom/onesignal/core/internal/config/D;
+
+# static fields
+.field public static final enum q:LL8/a;
+
+.field public static final synthetic r:[LL8/a;
 
 
 # direct methods
-.method public constructor <init>(Lj8/c;LZ6/f;Lcom/onesignal/core/internal/config/D;)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    const-string v0, "store"
+    const/4 v0, 0x0
 
     .line 2
-    .line 3
-    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    new-instance v1, LL8/a;
 
+    .line 3
     .line 4
+    const-string v2, "DISPOSED"
+
     .line 5
     .line 6
-    const-string v0, "opRepo"
+    invoke-direct {v1, v2, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 7
     .line 8
-    invoke-static {p2, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 9
+    sput-object v1, LL8/a;->q:LL8/a;
+
     .line 10
     .line 11
-    const-string v0, "_configModelStore"
+    const/4 v2, 0x1
+
+    .line 12
+    new-array v2, v2, [LL8/a;
+
+    .line 13
+    .line 14
+    aput-object v1, v2, v0
+
+    .line 15
+    .line 16
+    sput-object v2, LL8/a;->r:[LL8/a;
+
+    .line 17
+    .line 18
+    return-void
+.end method
+
+.method public static a(Ljava/util/concurrent/atomic/AtomicReference;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    check-cast v0, LI8/b;
+
+    .line 6
+    .line 7
+    sget-object v1, LL8/a;->q:LL8/a;
+
+    .line 8
+    .line 9
+    if-eq v0, v1, :cond_0
+
+    .line 10
+    .line 11
+    invoke-virtual {p0, v1}, Ljava/util/concurrent/atomic/AtomicReference;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 12
     .line 13
-    invoke-static {p3, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 14
+    move-result-object p0
+
+    .line 15
+    check-cast p0, LI8/b;
+
+    .line 16
+    .line 17
+    if-eq p0, v1, :cond_0
+
+    .line 18
+    .line 19
+    if-eqz p0, :cond_0
+
+    .line 20
+    .line 21
+    invoke-interface {p0}, LI8/b;->b()V
+
+    .line 22
+    .line 23
+    .line 24
+    :cond_0
+    return-void
+.end method
+
+.method public static c(LI8/b;)Z
+    .locals 1
+
+    .line 1
+    sget-object v0, LL8/a;->q:LL8/a;
+
+    .line 2
+    .line 3
+    if-ne p0, v0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p0, 0x1
+
+    .line 6
+    goto :goto_0
+
+    .line 7
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 8
+    :goto_0
+    return p0
+.end method
+
+.method public static d(Ljava/util/concurrent/atomic/AtomicReference;LI8/b;)Z
+    .locals 2
+
+    .line 1
+    :goto_0
+    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    check-cast v0, LI8/b;
+
+    .line 6
+    .line 7
+    sget-object v1, LL8/a;->q:LL8/a;
+
+    .line 8
+    .line 9
+    if-ne v0, v1, :cond_1
+
+    .line 10
+    .line 11
+    if-eqz p1, :cond_0
+
+    .line 12
+    .line 13
+    invoke-interface {p1}, LI8/b;->b()V
 
     .line 14
     .line 15
     .line 16
-    invoke-direct {p0, p1, p2}, La7/b;-><init>(Lcom/onesignal/common/modeling/f;LZ6/f;)V
+    :cond_0
+    const/4 p0, 0x0
 
     .line 17
+    return p0
+
     .line 18
+    :cond_1
+    invoke-virtual {p0, v0, p1}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 19
-    iput-object p3, p0, Ll8/a;->_configModelStore:Lcom/onesignal/core/internal/config/D;
+    .line 20
+    .line 21
+    move-result v1
+
+    .line 22
+    if-eqz v1, :cond_2
+
+    .line 23
+    .line 24
+    const/4 p0, 0x1
+
+    .line 25
+    return p0
+
+    .line 26
+    :cond_2
+    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v1
+
+    .line 30
+    if-eq v1, v0, :cond_1
+
+    .line 31
+    .line 32
+    goto :goto_0
+.end method
+
+.method public static e(Ljava/util/concurrent/atomic/AtomicReference;LI8/b;)Z
+    .locals 1
+
+    .line 1
+    const-string v0, "d is null"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 7
+    invoke-virtual {p0, v0, p1}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v0
+
+    .line 11
+    if-eqz v0, :cond_1
+
+    .line 12
+    .line 13
+    const/4 p0, 0x1
+
+    .line 14
+    return p0
+
+    .line 15
+    :cond_1
+    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    if-eqz v0, :cond_0
 
     .line 20
     .line 21
-    return-void
+    invoke-interface {p1}, LI8/b;->b()V
+
+    .line 22
+    .line 23
+    .line 24
+    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p0
+
+    .line 28
+    sget-object p1, LL8/a;->q:LL8/a;
+
+    .line 29
+    .line 30
+    if-eq p0, p1, :cond_2
+
+    .line 31
+    .line 32
+    new-instance p0, Lio/reactivex/rxjava3/exceptions/ProtocolViolationException;
+
+    .line 33
+    .line 34
+    const-string p1, "Disposable already set!"
+
+    .line 35
+    .line 36
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-static {p0}, LM2/a;->v(Ljava/lang/Throwable;)V
+
+    .line 40
+    .line 41
+    .line 42
+    :cond_2
+    const/4 p0, 0x0
+
+    .line 43
+    return p0
+.end method
+
+.method public static g(LI8/b;LI8/b;)Z
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    if-nez p1, :cond_0
+
+    .line 3
+    .line 4
+    new-instance p0, Ljava/lang/NullPointerException;
+
+    .line 5
+    .line 6
+    const-string p1, "next is null"
+
+    .line 7
+    .line 8
+    invoke-direct {p0, p1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-static {p0}, LM2/a;->v(Ljava/lang/Throwable;)V
+
+    .line 12
+    .line 13
+    .line 14
+    return v0
+
+    .line 15
+    :cond_0
+    if-eqz p0, :cond_1
+
+    .line 16
+    .line 17
+    invoke-interface {p1}, LI8/b;->b()V
+
+    .line 18
+    .line 19
+    .line 20
+    new-instance p0, Lio/reactivex/rxjava3/exceptions/ProtocolViolationException;
+
+    .line 21
+    .line 22
+    const-string p1, "Disposable already set!"
+
+    .line 23
+    .line 24
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 25
+    .line 26
+    .line 27
+    invoke-static {p0}, LM2/a;->v(Ljava/lang/Throwable;)V
+
+    .line 28
+    .line 29
+    .line 30
+    return v0
+
+    .line 31
+    :cond_1
+    const/4 p0, 0x1
+
+    .line 32
+    return p0
+.end method
+
+.method public static valueOf(Ljava/lang/String;)LL8/a;
+    .locals 1
+
+    .line 1
+    const-class v0, LL8/a;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, LL8/a;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[LL8/a;
+    .locals 1
+
+    .line 1
+    sget-object v0, LL8/a;->r:[LL8/a;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, [LL8/a;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [LL8/a;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public bridge synthetic getReplaceOperation(Lcom/onesignal/common/modeling/j;)LZ6/g;
-    .locals 0
-
-    .line 2
-    check-cast p1, Lj8/a;
-
-    invoke-virtual {p0, p1}, Ll8/a;->getReplaceOperation(Lj8/a;)LZ6/g;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public getReplaceOperation(Lj8/a;)LZ6/g;
-    .locals 1
-
-    .line 1
-    const-string v0, "model"
-
-    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    return-object p1
-.end method
-
-.method public bridge synthetic getUpdateOperation(Lcom/onesignal/common/modeling/j;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)LZ6/g;
+.method public final b()V
     .locals 0
 
     .line 1
-    check-cast p1, Lj8/a;
-
-    invoke-virtual/range {p0 .. p5}, Ll8/a;->getUpdateOperation(Lj8/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)LZ6/g;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public getUpdateOperation(Lj8/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)LZ6/g;
-    .locals 0
-
-    const-string p4, "model"
-
-    invoke-static {p1, p4}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p4, "path"
-
-    invoke-static {p2, p4}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p2, "property"
-
-    invoke-static {p3, p2}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
-
-    if-eqz p5, :cond_0
-
-    .line 2
-    instance-of p2, p5, Ljava/lang/String;
-
-    if-eqz p2, :cond_0
-
-    .line 3
-    new-instance p2, Lk8/i;
-
-    iget-object p4, p0, Ll8/a;->_configModelStore:Lcom/onesignal/core/internal/config/D;
-
-    invoke-virtual {p4}, Lcom/onesignal/common/modeling/t;->getModel()Lcom/onesignal/common/modeling/j;
-
-    move-result-object p4
-
-    check-cast p4, Lcom/onesignal/core/internal/config/B;
-
-    invoke-virtual {p4}, Lcom/onesignal/core/internal/config/B;->getAppId()Ljava/lang/String;
-
-    move-result-object p4
-
-    invoke-virtual {p1}, Lj8/a;->getOnesignalId()Ljava/lang/String;
-
-    move-result-object p1
-
-    check-cast p5, Ljava/lang/String;
-
-    invoke-direct {p2, p4, p1, p3, p5}, Lk8/i;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    goto :goto_0
-
-    .line 4
-    :cond_0
-    new-instance p2, Lk8/b;
-
-    iget-object p4, p0, Ll8/a;->_configModelStore:Lcom/onesignal/core/internal/config/D;
-
-    invoke-virtual {p4}, Lcom/onesignal/common/modeling/t;->getModel()Lcom/onesignal/common/modeling/j;
-
-    move-result-object p4
-
-    check-cast p4, Lcom/onesignal/core/internal/config/B;
-
-    invoke-virtual {p4}, Lcom/onesignal/core/internal/config/B;->getAppId()Ljava/lang/String;
-
-    move-result-object p4
-
-    invoke-virtual {p1}, Lj8/a;->getOnesignalId()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p2, p4, p1, p3}, Lk8/b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    :goto_0
-    return-object p2
+    return-void
 .end method

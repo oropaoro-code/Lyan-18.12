@@ -1,191 +1,298 @@
-.class public abstract Ln3/c;
-.super Ljava/lang/Object;
+.class public final LN3/C;
+.super LN3/D;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
-
-.field public static b:Ljava/lang/String;
-
-.field public static volatile c:Z
+# instance fields
+.field public final synthetic b:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public synthetic constructor <init>(I)V
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/util/concurrent/locks/ReentrantReadWriteLock;
+    iput p1, p0, LN3/C;->b:I
 
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;-><init>()V
+    invoke-direct {p0}, LN3/D;-><init>()V
 
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, Ln3/c;->a:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
-
-    .line 7
-    .line 8
-    const/4 v0, 0x0
-
-    .line 9
-    sput-boolean v0, Ln3/c;->c:Z
-
-    .line 10
-    .line 11
     return-void
 .end method
 
-.method public static a()V
-    .locals 4
+
+# virtual methods
+.method public b(LO3/h;)V
+    .locals 1
 
     .line 1
-    sget-boolean v0, Ln3/c;->c:Z
+    iget v0, p0, LN3/C;->b:I
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    return-void
-
     .line 6
-    :cond_0
-    sget-object v0, Ln3/c;->a:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
+    invoke-super {p0, p1}, LN3/D;->b(LO3/h;)V
 
     .line 7
     .line 8
-    invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->writeLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;
-
     .line 9
-    .line 10
-    .line 11
-    move-result-object v1
+    return-void
 
+    .line 10
+    :pswitch_0
+    new-instance p1, Lcom/facebook/FacebookException;
+
+    .line 11
     .line 12
-    invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;->lock()V
+    const-string v0, "Cannot share ShareMediaContent via web sharing dialogs"
 
     .line 13
     .line 14
-    .line 15
-    :try_start_0
-    sget-boolean v1, Ln3/c;->c:Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-direct {p1, v0}, Lcom/facebook/FacebookException;-><init>(Ljava/lang/String;)V
 
+    .line 15
     .line 16
     .line 17
-    if-eqz v1, :cond_1
+    throw p1
 
     .line 18
+    nop
+
     .line 19
-    invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->writeLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
+.end method
 
+.method public d(LO3/x;)V
+    .locals 1
+
+    .line 1
+    iget v0, p0, LN3/C;->b:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-super {p0, p1}, LN3/D;->d(LO3/x;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+
+    .line 10
+    :pswitch_0
+    if-eqz p1, :cond_2
+
+    .line 11
+    .line 12
+    iget-object v0, p1, LO3/x;->r:Landroid/graphics/Bitmap;
+
+    .line 13
+    .line 14
+    if-nez v0, :cond_1
+
+    .line 15
+    .line 16
+    iget-object p1, p1, LO3/x;->s:Landroid/net/Uri;
+
+    .line 17
+    .line 18
+    if-eqz p1, :cond_0
+
+    .line 19
     .line 20
-    .line 21
-    .line 22
-    move-result-object v0
+    goto :goto_0
 
+    .line 21
+    :cond_0
+    new-instance p1, Lcom/facebook/FacebookException;
+
+    .line 22
     .line 23
-    invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;->unlock()V
+    const-string v0, "SharePhoto does not have a Bitmap or ImageUrl specified"
 
     .line 24
     .line 25
+    invoke-direct {p1, v0}, Lcom/facebook/FacebookException;-><init>(Ljava/lang/String;)V
+
     .line 26
+    .line 27
+    .line 28
+    throw p1
+
+    .line 29
+    :cond_1
+    :goto_0
     return-void
 
-    .line 27
-    :cond_1
-    :try_start_1
-    sget-object v1, Lcom/facebook/j;->a:Ljava/util/HashSet;
-
-    .line 28
-    .line 29
-    invoke-static {}, LB3/X;->k()V
-
     .line 30
+    :cond_2
+    new-instance p1, Lcom/facebook/FacebookException;
+
     .line 31
     .line 32
-    sget-object v1, Lcom/facebook/j;->i:Landroid/content/Context;
+    const-string v0, "Cannot share a null SharePhoto"
 
     .line 33
     .line 34
-    invoke-static {v1}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
+    invoke-direct {p1, v0}, Lcom/facebook/FacebookException;-><init>(Ljava/lang/String;)V
 
     .line 35
     .line 36
     .line 37
-    move-result-object v1
+    throw p1
 
     .line 38
-    const-string v2, "com.facebook.appevents.AnalyticsUserIDStore.userID"
+    nop
 
     .line 39
-    .line 40
-    const/4 v3, 0x0
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
+.end method
 
-    .line 41
-    invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.method public e(LO3/z;)V
+    .locals 1
 
-    .line 42
-    .line 43
-    .line 44
-    move-result-object v1
+    .line 1
+    iget v0, p0, LN3/C;->b:I
 
-    .line 45
-    sput-object v1, Ln3/c;->b:Ljava/lang/String;
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
 
-    .line 46
-    .line 47
-    const/4 v1, 0x1
+    .line 4
+    .line 5
+    .line 6
+    invoke-super {p0, p1}, LN3/D;->e(LO3/z;)V
 
-    .line 48
-    sput-boolean v1, Ln3/c;->c:Z
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 49
-    .line 50
-    invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->writeLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;
-
-    .line 51
-    .line 52
-    .line 53
-    move-result-object v0
-
-    .line 54
-    invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;->unlock()V
-
-    .line 55
-    .line 56
-    .line 57
+    .line 7
+    .line 8
+    .line 9
     return-void
 
-    .line 58
-    :catchall_0
-    move-exception v0
+    .line 10
+    :pswitch_0
+    if-eqz p1, :cond_3
 
-    .line 59
-    sget-object v1, Ln3/c;->a:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
+    .line 11
+    .line 12
+    iget-object v0, p1, LO3/z;->x:LO3/x;
 
-    .line 60
-    .line 61
-    invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->writeLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;
+    .line 13
+    .line 14
+    iget-object p1, p1, LO3/z;->w:LO3/g;
 
-    .line 62
-    .line 63
-    .line 64
-    move-result-object v1
+    .line 15
+    .line 16
+    if-nez p1, :cond_0
 
-    .line 65
-    invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;->unlock()V
+    .line 17
+    .line 18
+    if-eqz v0, :cond_3
 
-    .line 66
-    .line 67
-    .line 68
-    throw v0
+    .line 19
+    .line 20
+    :cond_0
+    if-eqz p1, :cond_1
+
+    .line 21
+    .line 22
+    invoke-virtual {p0, p1}, LN3/D;->a(LO3/g;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :cond_1
+    if-eqz v0, :cond_2
+
+    .line 26
+    .line 27
+    invoke-virtual {p0, v0}, LN3/D;->d(LO3/x;)V
+
+    .line 28
+    .line 29
+    .line 30
+    :cond_2
+    return-void
+
+    .line 31
+    :cond_3
+    new-instance p1, Lcom/facebook/FacebookException;
+
+    .line 32
+    .line 33
+    const-string v0, "Must pass the Facebook app a background asset, a sticker asset, or both"
+
+    .line 34
+    .line 35
+    invoke-direct {p1, v0}, Lcom/facebook/FacebookException;-><init>(Ljava/lang/String;)V
+
+    .line 36
+    .line 37
+    .line 38
+    throw p1
+
+    .line 39
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public g(LO3/C;)V
+    .locals 1
+
+    .line 1
+    iget v0, p0, LN3/C;->b:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-super {p0, p1}, LN3/D;->g(LO3/C;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+
+    .line 10
+    :pswitch_0
+    new-instance p1, Lcom/facebook/FacebookException;
+
+    .line 11
+    .line 12
+    const-string v0, "Cannot share ShareVideoContent via web sharing dialogs"
+
+    .line 13
+    .line 14
+    invoke-direct {p1, v0}, Lcom/facebook/FacebookException;-><init>(Ljava/lang/String;)V
+
+    .line 15
+    .line 16
+    .line 17
+    throw p1
+
+    .line 18
+    nop
+
+    .line 19
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
 .end method

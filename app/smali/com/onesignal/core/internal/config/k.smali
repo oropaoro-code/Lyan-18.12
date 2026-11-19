@@ -1,4 +1,4 @@
-.class public final Lcom/onesignal/core/internal/config/k;
+.class public final Lcom/onesignal/core/internal/config/K;
 .super Lq9/j;
 .source "SourceFile"
 
@@ -7,18 +7,18 @@
 
 
 # static fields
-.field public static final INSTANCE:Lcom/onesignal/core/internal/config/k;
+.field public static final INSTANCE:Lcom/onesignal/core/internal/config/K;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lcom/onesignal/core/internal/config/k;
+    new-instance v0, Lcom/onesignal/core/internal/config/K;
 
-    invoke-direct {v0}, Lcom/onesignal/core/internal/config/k;-><init>()V
+    invoke-direct {v0}, Lcom/onesignal/core/internal/config/K;-><init>()V
 
-    sput-object v0, Lcom/onesignal/core/internal/config/k;->INSTANCE:Lcom/onesignal/core/internal/config/k;
+    sput-object v0, Lcom/onesignal/core/internal/config/K;->INSTANCE:Lcom/onesignal/core/internal/config/K;
 
     return-void
 .end method
@@ -38,7 +38,7 @@
 .method public final invoke()Ljava/lang/Integer;
     .locals 1
 
-    const/16 v0, 0x3c
+    const/16 v0, 0x5a0
 
     .line 1
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -52,7 +52,7 @@
     .locals 1
 
     .line 2
-    invoke-virtual {p0}, Lcom/onesignal/core/internal/config/k;->invoke()Ljava/lang/Integer;
+    invoke-virtual {p0}, Lcom/onesignal/core/internal/config/K;->invoke()Ljava/lang/Integer;
 
     move-result-object v0
 

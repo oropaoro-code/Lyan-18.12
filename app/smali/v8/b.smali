@@ -1,80 +1,74 @@
-.class public abstract LV8/b;
-.super Ljava/lang/Object;
+.class public final Lv8/b;
+.super Li9/c;
 .source "SourceFile"
-
-# interfaces
-.implements LH8/f;
-.implements LI8/b;
 
 
 # instance fields
-.field public final q:Ljava/util/concurrent/atomic/AtomicReference;
+.field public q:Lv8/g;
+
+.field public synthetic r:Ljava/lang/Object;
+
+.field public final synthetic s:Lv8/g;
+
+.field public t:I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Lv8/g;Li9/c;)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lv8/b;->s:Lv8/g;
 
     .line 2
     .line 3
-    .line 4
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
+    invoke-direct {p0, p2}, Li9/c;-><init>(Lg9/e;)V
 
+    .line 4
     .line 5
     .line 6
-    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
-
-    .line 7
-    .line 8
-    .line 9
-    iput-object v0, p0, LV8/b;->q:Ljava/util/concurrent/atomic/AtomicReference;
-
-    .line 10
-    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final b()V
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    iget-object v0, p0, LV8/b;->q:Ljava/util/concurrent/atomic/AtomicReference;
+    iput-object p1, p0, Lv8/b;->r:Ljava/lang/Object;
 
     .line 2
     .line 3
-    invoke-static {v0}, LL8/a;->a(Ljava/util/concurrent/atomic/AtomicReference;)V
+    iget p1, p0, Lv8/b;->t:I
 
     .line 4
     .line 5
+    const/high16 v0, -0x80000000
+
     .line 6
-    return-void
-.end method
-
-.method public final c(LI8/b;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LV8/b;->q:Ljava/util/concurrent/atomic/AtomicReference;
-
-    .line 2
-    .line 3
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v1
-
     .line 7
-    invoke-static {v0, p1, v1}, Ls3/a;->n(Ljava/util/concurrent/atomic/AtomicReference;LI8/b;Ljava/lang/Class;)V
+    or-int/2addr p1, v0
 
     .line 8
+    iput p1, p0, Lv8/b;->t:I
+
     .line 9
     .line 10
-    return-void
+    iget-object p1, p0, Lv8/b;->s:Lv8/g;
+
+    .line 11
+    .line 12
+    const/4 v0, 0x0
+
+    .line 13
+    invoke-virtual {p1, v0, p0}, Lv8/g;->o(Ljava/lang/String;Li9/c;)Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p1
+
+    .line 17
+    return-object p1
 .end method

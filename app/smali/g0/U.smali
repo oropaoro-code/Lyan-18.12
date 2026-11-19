@@ -1,37 +1,23 @@
-.class public abstract LG0/U;
+.class public interface abstract LG0/u;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# static fields
-.field public static final a:J
-
-.field public static final synthetic b:I
+# interfaces
+.implements Lk0/p;
 
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 2
+# virtual methods
+.method public abstract a(LI0/O;LG0/H;I)I
+.end method
 
-    .line 1
-    const/16 v0, 0xf
+.method public abstract b(LI0/O;LG0/H;I)I
+.end method
 
-    .line 2
-    .line 3
-    const/4 v1, 0x0
+.method public abstract d(LI0/O;LG0/H;I)I
+.end method
 
-    .line 4
-    invoke-static {v1, v1, v0}, Lf1/b;->b(III)J
+.method public abstract e(LI0/O;LG0/H;I)I
+.end method
 
-    .line 5
-    .line 6
-    .line 7
-    move-result-wide v0
-
-    .line 8
-    sput-wide v0, LG0/U;->a:J
-
-    .line 9
-    .line 10
-    return-void
+.method public abstract f(LG0/K;LG0/H;J)LG0/J;
 .end method

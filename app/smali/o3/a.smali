@@ -1,113 +1,182 @@
-.class public final LO3/a;
+.class public abstract Lo3/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/os/Parcelable;
-
 
 # static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator<",
-            "LO3/a;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-
-# instance fields
-.field public final q:Landroid/os/Bundle;
+.field public static a:Ljava/lang/Boolean;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 1
 
     .line 1
-    new-instance v0, LG4/c;
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     .line 2
     .line 3
-    const/16 v1, 0x13
+    sput-object v0, Lo3/a;->a:Ljava/lang/Boolean;
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, LG4/c;-><init>(I)V
+    return-void
+.end method
+
+.method public static a()V
+    .locals 4
+
+    .line 1
+    sget-object v0, LE3/a;->a:Ljava/util/Set;
+
+    .line 2
+    .line 3
+    const-class v1, Lo3/a;
+
+    .line 4
+    .line 5
+    invoke-interface {v0, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
     .line 6
     .line 7
     .line 8
-    sput-object v0, LO3/a;->CREATOR:Landroid/os/Parcelable$Creator;
+    move-result v2
 
     .line 9
+    if-eqz v2, :cond_0
+
     .line 10
+    .line 11
     return-void
-.end method
 
-.method public constructor <init>(LO3/r;)V
-    .locals 0
+    .line 12
+    :cond_0
+    :try_start_0
+    sget-object v2, Lcom/facebook/j;->a:Ljava/util/HashSet;
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 13
+    .line 14
+    invoke-static {}, LB3/X;->k()V
 
-    .line 2
-    iget-object p1, p1, LO3/r;->a:Landroid/os/Bundle;
+    .line 15
+    .line 16
+    .line 17
+    sget-object v2, Lcom/facebook/j;->c:Ljava/lang/String;
 
-    .line 3
-    iput-object p1, p0, LO3/a;->q:Landroid/os/Bundle;
+    .line 18
+    .line 19
+    const/4 v3, 0x0
 
+    .line 20
+    invoke-static {v2, v3}, LB3/D;->f(Ljava/lang/String;Z)LB3/A;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v2
+
+    .line 24
+    if-nez v2, :cond_1
+
+    .line 25
+    .line 26
     return-void
-.end method
 
-.method public constructor <init>(Landroid/os/Parcel;)V
-    .locals 1
+    .line 27
+    :cond_1
+    iget-object v2, v2, LB3/A;->n:Ljava/lang/String;
 
-    .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 28
+    .line 29
+    if-nez v2, :cond_2
 
-    .line 5
-    const-class v0, LO3/a;
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->readBundle(Ljava/lang/ClassLoader;)Landroid/os/Bundle;
-
-    move-result-object p1
-
-    iput-object p1, p0, LO3/a;->q:Landroid/os/Bundle;
-
+    .line 30
+    .line 31
     return-void
-.end method
 
+    .line 32
+    :cond_2
+    sget-object v3, Lo3/c;->d:Ljava/util/concurrent/CopyOnWriteArraySet;
 
-# virtual methods
-.method public final describeContents()I
-    .locals 1
+    .line 33
+    .line 34
+    const-class v3, Lo3/c;
 
-    .line 1
-    const/4 v0, 0x0
+    .line 35
+    .line 36
+    invoke-interface {v0, v3}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
-    .line 2
-    return v0
-.end method
+    .line 37
+    .line 38
+    .line 39
+    move-result v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 0
+    .line 40
+    if-eqz v0, :cond_3
 
-    .line 1
-    iget-object p2, p0, LO3/a;->q:Landroid/os/Bundle;
+    .line 41
+    .line 42
+    goto :goto_0
 
-    .line 2
-    .line 3
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeBundle(Landroid/os/Bundle;)V
+    .line 43
+    :cond_3
+    :try_start_1
+    sget-object v0, Lo3/c;->d:Ljava/util/concurrent/CopyOnWriteArraySet;
 
-    .line 4
-    .line 5
-    .line 6
+    .line 44
+    .line 45
+    invoke-virtual {v0}, Ljava/util/concurrent/CopyOnWriteArraySet;->clear()V
+
+    .line 46
+    .line 47
+    .line 48
+    new-instance v0, Lorg/json/JSONObject;
+
+    .line 49
+    .line 50
+    invoke-direct {v0, v2}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+
+    .line 51
+    .line 52
+    .line 53
+    invoke-static {v0}, Lo3/c;->a(Lorg/json/JSONObject;)V
+    :try_end_1
+    .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 54
+    .line 55
+    .line 56
+    goto :goto_0
+
+    .line 57
+    :catchall_0
+    move-exception v0
+
+    .line 58
+    :try_start_2
+    invoke-static {v0, v3}, LE3/a;->a(Ljava/lang/Throwable;Ljava/lang/Object;)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    .line 59
+    .line 60
+    .line 61
+    :catch_0
+    :goto_0
+    return-void
+
+    .line 62
+    :catchall_1
+    move-exception v0
+
+    .line 63
+    invoke-static {v0, v1}, LE3/a;->a(Ljava/lang/Throwable;Ljava/lang/Object;)V
+
+    .line 64
+    .line 65
+    .line 66
     return-void
 .end method

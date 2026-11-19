@@ -1,119 +1,200 @@
-.class public final enum Ln9/h;
-.super Ljava/lang/Enum;
+.class public final LN9/h;
+.super LZ9/m;
 .source "SourceFile"
 
 
-# static fields
-.field public static final enum q:Ln9/h;
+# instance fields
+.field public final r:Lq9/j;
 
-.field public static final synthetic r:[Ln9/h;
+.field public s:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>(LZ9/b;Lp9/d;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x1
+    invoke-direct {p0, p1}, LZ9/m;-><init>(LZ9/D;)V
 
     .line 2
-    const/4 v1, 0x0
-
     .line 3
-    new-instance v2, Ln9/h;
+    .line 4
+    check-cast p2, Lq9/j;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, LN9/h;->r:Lq9/j;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final I(LZ9/g;J)V
+    .locals 1
+
+    .line 1
+    const-string v0, "source"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 4
     .line 5
-    const-string v3, "TOP_DOWN"
-
     .line 6
-    .line 7
-    invoke-direct {v2, v3, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iget-boolean v0, p0, LN9/h;->s:Z
 
+    .line 7
     .line 8
+    if-eqz v0, :cond_0
+
     .line 9
     .line 10
-    new-instance v3, Ln9/h;
+    invoke-virtual {p1, p2, p3}, LZ9/g;->skip(J)V
 
     .line 11
     .line 12
-    const-string v4, "BOTTOM_UP"
-
     .line 13
+    return-void
+
     .line 14
-    invoke-direct {v3, v4, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    :cond_0
+    :try_start_0
+    invoke-super {p0, p1, p2, p3}, LZ9/m;->I(LZ9/g;J)V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 15
     .line 16
     .line 17
-    sput-object v3, Ln9/h;->q:Ln9/h;
+    goto :goto_0
 
     .line 18
+    :catch_0
+    move-exception p1
+
     .line 19
-    const/4 v4, 0x2
+    const/4 p2, 0x1
 
     .line 20
-    new-array v4, v4, [Ln9/h;
+    iput-boolean p2, p0, LN9/h;->s:Z
 
     .line 21
     .line 22
-    aput-object v2, v4, v1
+    iget-object p2, p0, LN9/h;->r:Lq9/j;
 
     .line 23
     .line 24
-    aput-object v3, v4, v0
+    invoke-interface {p2, p1}, Lp9/d;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 25
     .line 26
-    sput-object v4, Ln9/h;->r:[Ln9/h;
-
     .line 27
-    .line 28
+    :goto_0
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Ln9/h;
-    .locals 1
+.method public final close()V
+    .locals 2
 
     .line 1
-    const-class v0, Ln9/h;
+    iget-boolean v0, p0, LN9/h;->s:Z
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
+    return-void
+
     .line 6
-    move-result-object p0
+    :cond_0
+    :try_start_0
+    invoke-super {p0}, LZ9/m;->close()V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 7
-    check-cast p0, Ln9/h;
-
     .line 8
     .line 9
-    return-object p0
+    goto :goto_0
+
+    .line 10
+    :catch_0
+    move-exception v0
+
+    .line 11
+    const/4 v1, 0x1
+
+    .line 12
+    iput-boolean v1, p0, LN9/h;->s:Z
+
+    .line 13
+    .line 14
+    iget-object v1, p0, LN9/h;->r:Lq9/j;
+
+    .line 15
+    .line 16
+    invoke-interface {v1, v0}, Lp9/d;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 17
+    .line 18
+    .line 19
+    :goto_0
+    return-void
 .end method
 
-.method public static values()[Ln9/h;
-    .locals 1
+.method public final flush()V
+    .locals 2
 
     .line 1
-    sget-object v0, Ln9/h;->r:[Ln9/h;
+    iget-boolean v0, p0, LN9/h;->s:Z
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
+    return-void
+
     .line 6
-    move-result-object v0
+    :cond_0
+    :try_start_0
+    invoke-super {p0}, LZ9/m;->flush()V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 7
-    check-cast v0, [Ln9/h;
-
     .line 8
     .line 9
-    return-object v0
+    goto :goto_0
+
+    .line 10
+    :catch_0
+    move-exception v0
+
+    .line 11
+    const/4 v1, 0x1
+
+    .line 12
+    iput-boolean v1, p0, LN9/h;->s:Z
+
+    .line 13
+    .line 14
+    iget-object v1, p0, LN9/h;->r:Lq9/j;
+
+    .line 15
+    .line 16
+    invoke-interface {v1, v0}, Lp9/d;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 17
+    .line 18
+    .line 19
+    :goto_0
+    return-void
 .end method

@@ -1,8 +1,6 @@
-.class public interface abstract Lc4/a;
+.class public abstract LC4/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# virtual methods
-.method public abstract b()J
-.end method
+# interfaces
+.implements LE4/U0;

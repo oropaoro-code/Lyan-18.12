@@ -1,4 +1,4 @@
-.class public final Lcom/onesignal/notifications/internal/data/impl/d;
+.class public final Lcom/onesignal/notifications/internal/data/impl/D;
 .super Li9/i;
 .source "SourceFile"
 
@@ -7,9 +7,7 @@
 
 
 # instance fields
-.field final synthetic $maxNumberOfNotificationsInt:I
-
-.field final synthetic $notificationsToMakeRoomFor:I
+.field final synthetic $group:Ljava/lang/String;
 
 .field label:I
 
@@ -17,48 +15,44 @@
 
 
 # direct methods
-.method public constructor <init>(ILcom/onesignal/notifications/internal/data/impl/G;ILg9/e;)V
+.method public constructor <init>(Lcom/onesignal/notifications/internal/data/impl/G;Ljava/lang/String;Lg9/e;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(I",
+            "(",
             "Lcom/onesignal/notifications/internal/data/impl/G;",
-            "I",
+            "Ljava/lang/String;",
             "Lg9/e<",
             "-",
-            "Lcom/onesignal/notifications/internal/data/impl/d;",
+            "Lcom/onesignal/notifications/internal/data/impl/D;",
             ">;)V"
         }
     .end annotation
 
     .line 1
-    iput p1, p0, Lcom/onesignal/notifications/internal/data/impl/d;->$maxNumberOfNotificationsInt:I
+    iput-object p1, p0, Lcom/onesignal/notifications/internal/data/impl/D;->this$0:Lcom/onesignal/notifications/internal/data/impl/G;
 
     .line 2
     .line 3
-    iput-object p2, p0, Lcom/onesignal/notifications/internal/data/impl/d;->this$0:Lcom/onesignal/notifications/internal/data/impl/G;
+    iput-object p2, p0, Lcom/onesignal/notifications/internal/data/impl/D;->$group:Ljava/lang/String;
 
     .line 4
     .line 5
-    iput p3, p0, Lcom/onesignal/notifications/internal/data/impl/d;->$notificationsToMakeRoomFor:I
-
-    .line 6
-    .line 7
     const/4 p1, 0x2
 
-    .line 8
-    invoke-direct {p0, p1, p4}, Li9/i;-><init>(ILg9/e;)V
+    .line 6
+    invoke-direct {p0, p1, p3}, Li9/i;-><init>(ILg9/e;)V
 
+    .line 7
+    .line 8
     .line 9
-    .line 10
-    .line 11
     return-void
 .end method
 
 
 # virtual methods
 .method public final create(Ljava/lang/Object;Lg9/e;)Lg9/e;
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -72,27 +66,23 @@
     .end annotation
 
     .line 1
-    new-instance p1, Lcom/onesignal/notifications/internal/data/impl/d;
+    new-instance p1, Lcom/onesignal/notifications/internal/data/impl/D;
 
     .line 2
     .line 3
-    iget v0, p0, Lcom/onesignal/notifications/internal/data/impl/d;->$maxNumberOfNotificationsInt:I
+    iget-object v0, p0, Lcom/onesignal/notifications/internal/data/impl/D;->this$0:Lcom/onesignal/notifications/internal/data/impl/G;
 
     .line 4
     .line 5
-    iget-object v1, p0, Lcom/onesignal/notifications/internal/data/impl/d;->this$0:Lcom/onesignal/notifications/internal/data/impl/G;
+    iget-object v1, p0, Lcom/onesignal/notifications/internal/data/impl/D;->$group:Ljava/lang/String;
 
     .line 6
     .line 7
-    iget v2, p0, Lcom/onesignal/notifications/internal/data/impl/d;->$notificationsToMakeRoomFor:I
+    invoke-direct {p1, v0, v1, p2}, Lcom/onesignal/notifications/internal/data/impl/D;-><init>(Lcom/onesignal/notifications/internal/data/impl/G;Ljava/lang/String;Lg9/e;)V
 
     .line 8
     .line 9
-    invoke-direct {p1, v0, v1, v2, p2}, Lcom/onesignal/notifications/internal/data/impl/d;-><init>(ILcom/onesignal/notifications/internal/data/impl/G;ILg9/e;)V
-
     .line 10
-    .line 11
-    .line 12
     return-object p1
 .end method
 
@@ -111,15 +101,15 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/onesignal/notifications/internal/data/impl/d;->create(Ljava/lang/Object;Lg9/e;)Lg9/e;
+    invoke-virtual {p0, p1, p2}, Lcom/onesignal/notifications/internal/data/impl/D;->create(Ljava/lang/Object;Lg9/e;)Lg9/e;
 
     move-result-object p1
 
-    check-cast p1, Lcom/onesignal/notifications/internal/data/impl/d;
+    check-cast p1, Lcom/onesignal/notifications/internal/data/impl/D;
 
     sget-object p2, Lb9/n;->a:Lb9/n;
 
-    invoke-virtual {p1, p2}, Lcom/onesignal/notifications/internal/data/impl/d;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, p2}, Lcom/onesignal/notifications/internal/data/impl/D;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -134,7 +124,7 @@
 
     check-cast p2, Lg9/e;
 
-    invoke-virtual {p0, p1, p2}, Lcom/onesignal/notifications/internal/data/impl/d;->invoke(LA9/x;Lg9/e;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Lcom/onesignal/notifications/internal/data/impl/D;->invoke(LA9/x;Lg9/e;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -145,7 +135,7 @@
     .locals 13
 
     .line 1
-    iget v0, p0, Lcom/onesignal/notifications/internal/data/impl/d;->label:I
+    iget v0, p0, Lcom/onesignal/notifications/internal/data/impl/D;->label:I
 
     .line 2
     .line 3
@@ -158,11 +148,11 @@
     .line 6
     .line 7
     .line 8
-    iget p1, p0, Lcom/onesignal/notifications/internal/data/impl/d;->$maxNumberOfNotificationsInt:I
+    iget-object p1, p0, Lcom/onesignal/notifications/internal/data/impl/D;->this$0:Lcom/onesignal/notifications/internal/data/impl/G;
 
     .line 9
     .line 10
-    invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+    invoke-static {p1}, Lcom/onesignal/notifications/internal/data/impl/G;->access$get_applicationService$p(Lcom/onesignal/notifications/internal/data/impl/G;)LQ6/f;
 
     .line 11
     .line 12
@@ -170,195 +160,234 @@
     move-result-object p1
 
     .line 14
-    :try_start_0
-    iget-object v0, p0, Lcom/onesignal/notifications/internal/data/impl/d;->this$0:Lcom/onesignal/notifications/internal/data/impl/G;
+    check-cast p1, Lcom/onesignal/core/internal/application/impl/n;
 
     .line 15
     .line 16
-    invoke-static {v0}, Lcom/onesignal/notifications/internal/data/impl/G;->access$get_databaseProvider$p(Lcom/onesignal/notifications/internal/data/impl/G;)LT6/d;
+    invoke-virtual {p1}, Lcom/onesignal/core/internal/application/impl/n;->getAppContext()Landroid/content/Context;
 
     .line 17
     .line 18
     .line 19
-    move-result-object v0
+    move-result-object p1
 
     .line 20
-    check-cast v0, LU6/b;
+    sget-object v0, LN7/e;->INSTANCE:LN7/e;
 
     .line 21
     .line 22
-    invoke-virtual {v0}, LU6/b;->getOs()LT6/c;
+    invoke-virtual {v0, p1}, LN7/e;->getNotificationManager(Landroid/content/Context;)Landroid/app/NotificationManager;
 
     .line 23
     .line 24
     .line 25
-    move-result-object v1
+    move-result-object p1
 
     .line 26
-    const-string v2, "notification"
+    const-string v0, "android_notification_id"
 
     .line 27
     .line 28
-    const-string v0, "android_notification_id"
+    filled-new-array {v0}, [Ljava/lang/String;
 
     .line 29
     .line 30
-    filled-new-array {v0}, [Ljava/lang/String;
-
     .line 31
-    .line 32
-    .line 33
     move-result-object v3
 
+    .line 32
+    iget-object v0, p0, Lcom/onesignal/notifications/internal/data/impl/D;->$group:Ljava/lang/String;
+
+    .line 33
     .line 34
-    iget-object v0, p0, Lcom/onesignal/notifications/internal/data/impl/d;->this$0:Lcom/onesignal/notifications/internal/data/impl/G;
+    filled-new-array {v0}, [Ljava/lang/String;
 
     .line 35
     .line 36
-    invoke-static {v0}, Lcom/onesignal/notifications/internal/data/impl/G;->access$get_queryHelper$p(Lcom/onesignal/notifications/internal/data/impl/G;)LO7/a;
-
     .line 37
-    .line 38
-    .line 39
     move-result-object v0
 
+    .line 38
+    iget-object v1, p0, Lcom/onesignal/notifications/internal/data/impl/D;->this$0:Lcom/onesignal/notifications/internal/data/impl/G;
+
+    .line 39
     .line 40
-    check-cast v0, Lcom/onesignal/notifications/internal/data/impl/a;
+    invoke-static {v1}, Lcom/onesignal/notifications/internal/data/impl/G;->access$get_databaseProvider$p(Lcom/onesignal/notifications/internal/data/impl/G;)LT6/d;
 
     .line 41
     .line 42
-    invoke-virtual {v0}, Lcom/onesignal/notifications/internal/data/impl/a;->recentUninteractedWithNotificationsWhere()Ljava/lang/StringBuilder;
-
     .line 43
-    .line 44
-    .line 45
-    move-result-object v0
+    move-result-object v1
 
+    .line 44
+    check-cast v1, LU6/b;
+
+    .line 45
     .line 46
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, LU6/b;->getOs()LT6/c;
 
     .line 47
     .line 48
     .line 49
-    move-result-object v4
+    move-result-object v1
 
     .line 50
-    const-string v8, "_id"
+    new-instance v10, Lcom/onesignal/notifications/internal/data/impl/C;
 
     .line 51
     .line 52
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-direct {v10, p1}, Lcom/onesignal/notifications/internal/data/impl/C;-><init>(Landroid/app/NotificationManager;)V
 
     .line 53
     .line 54
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
     .line 55
+    const/16 v11, 0xf0
+
     .line 56
     .line 57
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 v12, 0x0
 
     .line 58
+    const-string v2, "notification"
+
     .line 59
     .line 60
-    iget p1, p0, Lcom/onesignal/notifications/internal/data/impl/d;->$notificationsToMakeRoomFor:I
+    const-string v4, "group_id = ? AND dismissed = 0 AND opened = 0"
 
     .line 61
     .line 62
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const/4 v6, 0x0
 
     .line 63
+    const/4 v7, 0x0
+
     .line 64
+    const/4 v8, 0x0
+
     .line 65
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/4 v9, 0x0
 
     .line 66
+    move-object v5, v0
+
     .line 67
+    invoke-static/range {v1 .. v12}, LT6/b;->query$default(LT6/c;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lp9/d;ILjava/lang/Object;)V
+
     .line 68
-    move-result-object v9
-
     .line 69
-    new-instance v10, Lcom/onesignal/notifications/internal/data/impl/c;
-
     .line 70
+    new-instance p1, Landroid/content/ContentValues;
+
     .line 71
-    iget p1, p0, Lcom/onesignal/notifications/internal/data/impl/d;->$maxNumberOfNotificationsInt:I
-
     .line 72
-    .line 73
-    iget v0, p0, Lcom/onesignal/notifications/internal/data/impl/d;->$notificationsToMakeRoomFor:I
+    invoke-direct {p1}, Landroid/content/ContentValues;-><init>()V
 
+    .line 73
     .line 74
     .line 75
-    iget-object v5, p0, Lcom/onesignal/notifications/internal/data/impl/d;->this$0:Lcom/onesignal/notifications/internal/data/impl/G;
+    new-instance v1, Ljava/lang/Integer;
 
     .line 76
     .line 77
-    invoke-direct {v10, p1, v0, v5}, Lcom/onesignal/notifications/internal/data/impl/c;-><init>(IILcom/onesignal/notifications/internal/data/impl/G;)V
+    const/4 v2, 0x1
 
     .line 78
+    invoke-direct {v1, v2}, Ljava/lang/Integer;-><init>(I)V
+
     .line 79
     .line 80
-    const/16 v11, 0x38
-
     .line 81
-    .line 82
-    const/4 v12, 0x0
+    const-string v2, "dismissed"
 
+    .line 82
     .line 83
-    const/4 v5, 0x0
+    invoke-virtual {p1, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
     .line 84
-    const/4 v6, 0x0
-
     .line 85
-    const/4 v7, 0x0
-
     .line 86
-    invoke-static/range {v1 .. v12}, LT6/b;->query$default(LT6/c;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lp9/d;ILjava/lang/Object;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    iget-object v1, p0, Lcom/onesignal/notifications/internal/data/impl/D;->this$0:Lcom/onesignal/notifications/internal/data/impl/G;
 
     .line 87
     .line 88
+    invoke-static {v1}, Lcom/onesignal/notifications/internal/data/impl/G;->access$get_databaseProvider$p(Lcom/onesignal/notifications/internal/data/impl/G;)LT6/d;
+
     .line 89
-    goto :goto_0
-
     .line 90
-    :catchall_0
-    move-exception p1
-
     .line 91
-    const-string v0, "Error clearing oldest notifications over limit! "
+    move-result-object v1
 
     .line 92
-    .line 93
-    invoke-static {v0, p1}, Lcom/onesignal/debug/internal/logging/c;->error(Ljava/lang/String;Ljava/lang/Throwable;)V
+    check-cast v1, LU6/b;
 
+    .line 93
     .line 94
+    invoke-virtual {v1}, LU6/b;->getOs()LT6/c;
+
     .line 95
     .line 96
-    :goto_0
-    sget-object p1, Lb9/n;->a:Lb9/n;
-
     .line 97
+    move-result-object v1
+
     .line 98
-    return-object p1
+    const-string v2, "notification"
 
     .line 99
+    .line 100
+    check-cast v1, LU6/d;
+
+    .line 101
+    .line 102
+    const-string v3, "group_id = ? AND opened = 0 AND dismissed = 0"
+
+    .line 103
+    .line 104
+    invoke-virtual {v1, v2, p1, v3, v0}, LU6/d;->update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
+
+    .line 105
+    .line 106
+    .line 107
+    iget-object p1, p0, Lcom/onesignal/notifications/internal/data/impl/D;->this$0:Lcom/onesignal/notifications/internal/data/impl/G;
+
+    .line 108
+    .line 109
+    invoke-static {p1}, Lcom/onesignal/notifications/internal/data/impl/G;->access$get_badgeCountUpdater$p(Lcom/onesignal/notifications/internal/data/impl/G;)LG7/a;
+
+    .line 110
+    .line 111
+    .line 112
+    move-result-object p1
+
+    .line 113
+    check-cast p1, Lcom/onesignal/notifications/internal/badges/impl/b;
+
+    .line 114
+    .line 115
+    invoke-virtual {p1}, Lcom/onesignal/notifications/internal/badges/impl/b;->update()V
+
+    .line 116
+    .line 117
+    .line 118
+    sget-object p1, Lb9/n;->a:Lb9/n;
+
+    .line 119
+    .line 120
+    return-object p1
+
+    .line 121
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 100
-    .line 101
+    .line 122
+    .line 123
     const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
 
-    .line 102
-    .line 103
+    .line 124
+    .line 125
     invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    .line 104
-    .line 105
-    .line 106
+    .line 126
+    .line 127
+    .line 128
     throw p1
 .end method

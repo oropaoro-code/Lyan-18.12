@@ -1,209 +1,359 @@
-.class public final LV9/a;
+.class public final Lv9/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LV9/n;
+
+# instance fields
+.field public final a:F
+
+.field public final b:F
 
 
-# virtual methods
-.method public final a(Ljavax/net/ssl/SSLSocket;)Z
+# direct methods
+.method public constructor <init>(FF)V
     .locals 0
 
     .line 1
-    invoke-static {p1}, LK2/B;->B(Ljavax/net/ssl/SSLSocket;)Z
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    move-result p1
+    iput p1, p0, Lv9/a;->a:F
 
     .line 5
-    return p1
+    .line 6
+    iput p2, p0, Lv9/a;->b:F
+
+    .line 7
+    .line 8
+    return-void
 .end method
 
-.method public final b(Ljavax/net/ssl/SSLSocket;)Ljava/lang/String;
-    .locals 1
+.method public static d(Ljava/lang/Comparable;Ljava/lang/Comparable;)Z
+    .locals 0
 
     .line 1
-    invoke-static {p1}, LK2/B;->i(Ljavax/net/ssl/SSLSocket;)Ljava/lang/String;
+    check-cast p0, Ljava/lang/Number;
 
     .line 2
     .line 3
+    invoke-virtual {p0}, Ljava/lang/Number;->floatValue()F
+
     .line 4
-    move-result-object p1
-
     .line 5
-    if-nez p1, :cond_0
-
     .line 6
+    move-result p0
+
     .line 7
-    const/4 v0, 0x1
+    check-cast p1, Ljava/lang/Number;
 
     .line 8
-    goto :goto_0
-
     .line 9
-    :cond_0
-    const-string v0, ""
+    invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
 
     .line 10
     .line 11
-    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
     .line 12
-    .line 13
-    .line 14
-    move-result v0
+    move-result p1
 
+    .line 13
+    cmpg-float p0, p0, p1
+
+    .line 14
     .line 15
-    :goto_0
-    if-eqz v0, :cond_1
+    if-gtz p0, :cond_0
 
     .line 16
     .line 17
-    const/4 p1, 0x0
+    const/4 p0, 0x1
 
     .line 18
-    :cond_1
-    return-object p1
+    goto :goto_0
+
+    .line 19
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 20
+    :goto_0
+    return p0
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/lang/Comparable;
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lv9/a;->b:F
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public final b()Ljava/lang/Comparable;
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lv9/a;->a:F
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
 .end method
 
 .method public final c()Z
     .locals 2
 
     .line 1
-    sget-object v0, LU9/n;->a:LU9/n;
+    iget v0, p0, Lv9/a;->a:F
 
     .line 2
     .line 3
-    invoke-static {}, Ld6/d;->r()Z
+    iget v1, p0, Lv9/a;->b:F
 
     .line 4
     .line 5
-    .line 6
-    move-result v0
+    cmpg-float v0, v0, v1
 
+    .line 6
     .line 7
-    if-eqz v0, :cond_0
+    if-lez v0, :cond_0
 
     .line 8
     .line 9
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    .line 10
-    .line 11
-    const/16 v1, 0x1d
-
-    .line 12
-    .line 13
-    if-lt v0, v1, :cond_0
-
-    .line 14
-    .line 15
     const/4 v0, 0x1
 
-    .line 16
+    .line 10
     goto :goto_0
 
-    .line 17
+    .line 11
     :cond_0
     const/4 v0, 0x0
 
-    .line 18
+    .line 12
     :goto_0
     return v0
 .end method
 
-.method public final d(Ljavax/net/ssl/SSLSocket;Ljava/lang/String;Ljava/util/List;)V
-    .locals 1
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
 
     .line 1
-    const-string p2, "protocols"
+    instance-of v0, p1, Lv9/a;
 
     .line 2
     .line 3
-    invoke-static {p3, p2}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    if-eqz v0, :cond_2
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Lv9/a;->c()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    if-eqz v0, :cond_0
+
+    .line 10
+    .line 11
+    move-object v0, p1
+
+    .line 12
+    check-cast v0, Lv9/a;
+
+    .line 13
+    .line 14
+    invoke-virtual {v0}, Lv9/a;->c()Z
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v0
+
+    .line 18
+    if-nez v0, :cond_1
+
+    .line 19
+    .line 20
+    :cond_0
+    check-cast p1, Lv9/a;
+
+    .line 21
+    .line 22
+    iget v0, p1, Lv9/a;->a:F
+
+    .line 23
+    .line 24
+    iget v1, p0, Lv9/a;->a:F
+
+    .line 25
+    .line 26
+    cmpg-float v0, v1, v0
+
+    .line 27
+    .line 28
+    if-nez v0, :cond_2
+
+    .line 29
+    .line 30
+    iget v0, p0, Lv9/a;->b:F
+
+    .line 31
+    .line 32
+    iget p1, p1, Lv9/a;->b:F
+
+    .line 33
+    .line 34
+    cmpg-float p1, v0, p1
+
+    .line 35
+    .line 36
+    if-nez p1, :cond_2
+
+    .line 37
+    .line 38
+    :cond_1
+    const/4 p1, 0x1
+
+    .line 39
+    goto :goto_0
+
+    .line 40
+    :cond_2
+    const/4 p1, 0x0
+
+    .line 41
+    :goto_0
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Lv9/a;->c()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, -0x1
+
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_0
+    iget v0, p0, Lv9/a;->a:F
+
+    .line 10
+    .line 11
+    invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 16
+    .line 17
+    iget v1, p0, Lv9/a;->b:F
+
+    .line 18
+    .line 19
+    invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
+
+    .line 20
+    .line 21
+    .line 22
+    move-result v1
+
+    .line 23
+    add-int/2addr v0, v1
+
+    .line 24
+    :goto_0
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    :try_start_0
-    invoke-static {p1}, LK2/B;->x(Ljavax/net/ssl/SSLSocket;)V
+    iget v1, p0, Lv9/a;->a:F
 
     .line 7
     .line 8
-    .line 9
-    invoke-virtual {p1}, Ljavax/net/ssl/SSLSocket;->getSSLParameters()Ljavax/net/ssl/SSLParameters;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
+    .line 9
     .line 10
     .line 11
-    .line 12
-    move-result-object p2
+    const-string v1, ".."
 
+    .line 12
     .line 13
-    sget-object v0, LU9/n;->a:LU9/n;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 14
     .line 15
-    invoke-static {p3}, Ld6/d;->l(Ljava/util/List;)Ljava/util/ArrayList;
-
     .line 16
+    iget v1, p0, Lv9/a;->b:F
+
     .line 17
     .line 18
-    move-result-object p3
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
     .line 19
-    const/4 v0, 0x0
-
     .line 20
-    new-array v0, v0, [Ljava/lang/String;
-
     .line 21
-    .line 22
-    invoke-virtual {p3, v0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 22
     .line 23
     .line 24
+    move-result-object v0
+
     .line 25
-    move-result-object p3
-
-    .line 26
-    check-cast p3, [Ljava/lang/String;
-
-    .line 27
-    .line 28
-    invoke-static {p2, p3}, LK2/B;->w(Ljavax/net/ssl/SSLParameters;[Ljava/lang/String;)V
-
-    .line 29
-    .line 30
-    .line 31
-    invoke-virtual {p1, p2}, Ljavax/net/ssl/SSLSocket;->setSSLParameters(Ljavax/net/ssl/SSLParameters;)V
-    :try_end_0
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 32
-    .line 33
-    .line 34
-    return-void
-
-    .line 35
-    :catch_0
-    move-exception p1
-
-    .line 36
-    new-instance p2, Ljava/io/IOException;
-
-    .line 37
-    .line 38
-    const-string p3, "Android internal error"
-
-    .line 39
-    .line 40
-    invoke-direct {p2, p3, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    .line 41
-    .line 42
-    .line 43
-    throw p2
+    return-object v0
 .end method

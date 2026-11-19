@@ -1,15 +1,17 @@
-.class public final synthetic LH1/E;
+.class public interface abstract LH1/e;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LH1/s;
-
 
 # virtual methods
-.method public final a(LH1/h;)LH1/h;
-    .locals 0
+.method public abstract a(Landroid/os/Bundle;)V
+.end method
 
-    .line 1
-    return-object p1
+.method public abstract build()LH1/h;
+.end method
+
+.method public abstract h(Landroid/net/Uri;)V
+.end method
+
+.method public abstract o(I)V
 .end method

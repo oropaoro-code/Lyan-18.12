@@ -1,170 +1,209 @@
-.class public abstract LV9/c;
+.class public final Lv9/c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/util/Iterator;
+.implements Lr9/a;
 
-# static fields
-.field public static final a:Ljava/util/concurrent/CopyOnWriteArraySet;
 
-.field public static final b:Ljava/util/Map;
+# instance fields
+.field public final q:I
+
+.field public final r:I
+
+.field public s:Z
+
+.field public t:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
+.method public constructor <init>(III)V
+    .locals 2
 
     .line 1
-    new-instance v0, Ljava/util/concurrent/CopyOnWriteArraySet;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/util/concurrent/CopyOnWriteArraySet;-><init>()V
-
     .line 4
+    iput p3, p0, Lv9/c;->q:I
+
     .line 5
     .line 6
-    sput-object v0, LV9/c;->a:Ljava/util/concurrent/CopyOnWriteArraySet;
+    iput p2, p0, Lv9/c;->r:I
 
     .line 7
     .line 8
-    new-instance v0, Ljava/util/LinkedHashMap;
+    const/4 v0, 0x0
 
     .line 9
+    const/4 v1, 0x1
+
     .line 10
-    invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
+    if-lez p3, :cond_0
 
     .line 11
     .line 12
-    .line 13
-    const-class v1, LK9/E;
+    if-gt p1, p2, :cond_1
 
+    .line 13
     .line 14
+    :goto_0
+    move v0, v1
+
     .line 15
-    invoke-virtual {v1}, Ljava/lang/Class;->getPackage()Ljava/lang/Package;
+    goto :goto_1
 
     .line 16
+    :cond_0
+    if-lt p1, p2, :cond_1
+
     .line 17
     .line 18
-    move-result-object v2
+    goto :goto_0
 
     .line 19
-    if-eqz v2, :cond_0
+    :cond_1
+    :goto_1
+    iput-boolean v0, p0, Lv9/c;->s:Z
 
     .line 20
     .line 21
-    invoke-virtual {v2}, Ljava/lang/Package;->getName()Ljava/lang/String;
+    if-eqz v0, :cond_2
 
     .line 22
     .line 23
+    goto :goto_2
+
     .line 24
-    move-result-object v2
+    :cond_2
+    move p1, p2
 
     .line 25
-    goto :goto_0
+    :goto_2
+    iput p1, p0, Lv9/c;->t:I
 
     .line 26
-    :cond_0
-    const/4 v2, 0x0
-
     .line 27
-    :goto_0
-    if-eqz v2, :cond_1
+    return-void
+.end method
 
-    .line 28
-    .line 29
-    const-string v3, "OkHttp"
 
-    .line 30
-    .line 31
-    invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+# virtual methods
+.method public final a()I
+    .locals 2
 
-    .line 32
-    .line 33
-    .line 34
+    .line 1
+    iget v0, p0, Lv9/c;->t:I
+
+    .line 2
+    .line 3
+    iget v1, p0, Lv9/c;->r:I
+
+    .line 4
+    .line 5
+    if-ne v0, v1, :cond_1
+
+    .line 6
+    .line 7
+    iget-boolean v1, p0, Lv9/c;->s:Z
+
+    .line 8
+    .line 9
+    if-eqz v1, :cond_0
+
+    .line 10
+    .line 11
+    const/4 v1, 0x0
+
+    .line 12
+    iput-boolean v1, p0, Lv9/c;->s:Z
+
+    .line 13
+    .line 14
+    goto :goto_0
+
+    .line 15
+    :cond_0
+    new-instance v0, Ljava/util/NoSuchElementException;
+
+    .line 16
+    .line 17
+    invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
+
+    .line 18
+    .line 19
+    .line 20
+    throw v0
+
+    .line 21
     :cond_1
-    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    iget v1, p0, Lv9/c;->q:I
 
-    .line 35
-    .line 36
-    .line 37
-    move-result-object v1
+    .line 22
+    .line 23
+    add-int/2addr v1, v0
 
-    .line 38
-    const-string v2, "okhttp.OkHttpClient"
+    .line 24
+    iput v1, p0, Lv9/c;->t:I
 
-    .line 39
-    .line 40
-    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 25
+    .line 26
+    :goto_0
+    return v0
+.end method
 
-    .line 41
-    .line 42
-    .line 43
-    const-class v1, LS9/e;
+.method public final hasNext()Z
+    .locals 1
 
-    .line 44
-    .line 45
-    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    .line 1
+    iget-boolean v0, p0, Lv9/c;->s:Z
 
-    .line 46
-    .line 47
-    .line 48
-    move-result-object v1
+    .line 2
+    .line 3
+    return v0
+.end method
 
-    .line 49
-    const-string v2, "okhttp.Http2"
+.method public final bridge synthetic next()Ljava/lang/Object;
+    .locals 1
 
-    .line 50
-    .line 51
-    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 1
+    invoke-virtual {p0}, Lv9/c;->a()I
 
-    .line 52
-    .line 53
-    .line 54
-    const-class v1, LO9/c;
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
 
-    .line 55
-    .line 56
-    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    .line 5
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 57
-    .line 58
-    .line 59
-    move-result-object v1
-
-    .line 60
-    const-string v2, "okhttp.TaskRunner"
-
-    .line 61
-    .line 62
-    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 63
-    .line 64
-    .line 65
-    const-string v1, "okhttp3.mockwebserver.MockWebServer"
-
-    .line 66
-    .line 67
-    const-string v2, "okhttp.MockWebServer"
-
-    .line 68
-    .line 69
-    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 70
-    .line 71
-    .line 72
-    invoke-static {v0}, Lc9/A;->B(Ljava/util/Map;)Ljava/util/Map;
-
-    .line 73
-    .line 74
-    .line 75
+    .line 6
+    .line 7
+    .line 8
     move-result-object v0
 
-    .line 76
-    sput-object v0, LV9/c;->b:Ljava/util/Map;
+    .line 9
+    return-object v0
+.end method
 
-    .line 77
-    .line 78
-    return-void
+.method public final remove()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    const-string v1, "Operation is not supported for read-only collection"
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw v0
 .end method

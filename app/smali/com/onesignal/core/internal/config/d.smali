@@ -1,56 +1,43 @@
-.class public final Lcom/onesignal/core/internal/config/d;
-.super Lq9/j;
+.class public final Lcom/onesignal/core/internal/config/D;
+.super Lcom/onesignal/common/modeling/t;
 .source "SourceFile"
-
-# interfaces
-.implements Lp9/a;
-
-
-# static fields
-.field public static final INSTANCE:Lcom/onesignal/core/internal/config/d;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lcom/onesignal/core/internal/config/d;
-
-    invoke-direct {v0}, Lcom/onesignal/core/internal/config/d;-><init>()V
-
-    sput-object v0, Lcom/onesignal/core/internal/config/d;->INSTANCE:Lcom/onesignal/core/internal/config/d;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    invoke-direct {p0, v0}, Lq9/j;-><init>(I)V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final invoke()Ljava/lang/Boolean;
-    .locals 1
+.method public constructor <init>(Lc7/b;)V
+    .locals 3
 
     .line 1
-    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
-    return-object v0
-.end method
-
-.method public bridge synthetic invoke()Ljava/lang/Object;
-    .locals 1
+    const-string v0, "prefs"
 
     .line 2
-    invoke-virtual {p0}, Lcom/onesignal/core/internal/config/d;->invoke()Ljava/lang/Boolean;
+    .line 3
+    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-result-object v0
+    .line 4
+    .line 5
+    .line 6
+    new-instance v0, Lcom/onesignal/common/modeling/q;
 
-    return-object v0
+    .line 7
+    .line 8
+    sget-object v1, Lcom/onesignal/core/internal/config/C;->INSTANCE:Lcom/onesignal/core/internal/config/C;
+
+    .line 9
+    .line 10
+    const-string v2, "config"
+
+    .line 11
+    .line 12
+    invoke-direct {v0, v1, v2, p1}, Lcom/onesignal/common/modeling/q;-><init>(Lp9/a;Ljava/lang/String;Lc7/b;)V
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-direct {p0, v0}, Lcom/onesignal/common/modeling/t;-><init>(Lcom/onesignal/common/modeling/p;)V
+
+    .line 16
+    .line 17
+    .line 18
+    return-void
 .end method

@@ -1,73 +1,69 @@
-.class public final Lcom/onesignal/session/internal/outcomes/impl/a;
-.super Ljava/lang/Object;
+.class public final Lcom/onesignal/session/internal/outcomes/impl/A;
+.super Lq9/j;
 .source "SourceFile"
+
+# interfaces
+.implements Lp9/d;
 
 
 # instance fields
-.field private final channel:La8/e;
+.field final synthetic $availableInfluenceIds:Lorg/json/JSONArray;
 
-.field private final influenceId:Ljava/lang/String;
+.field final synthetic $channelInfluenceId:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;La8/e;)V
-    .locals 1
+.method public constructor <init>(Lorg/json/JSONArray;Ljava/lang/String;)V
+    .locals 0
 
-    .line 1
-    const-string v0, "influenceId"
+    iput-object p1, p0, Lcom/onesignal/session/internal/outcomes/impl/A;->$availableInfluenceIds:Lorg/json/JSONArray;
 
-    .line 2
-    .line 3
-    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    iput-object p2, p0, Lcom/onesignal/session/internal/outcomes/impl/A;->$channelInfluenceId:Ljava/lang/String;
 
-    .line 4
-    .line 5
-    .line 6
-    const-string v0, "channel"
+    const/4 p1, 0x1
 
-    .line 7
-    .line 8
-    invoke-static {p2, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lq9/j;-><init>(I)V
 
-    .line 9
-    .line 10
-    .line 11
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 12
-    .line 13
-    .line 14
-    iput-object p1, p0, Lcom/onesignal/session/internal/outcomes/impl/a;->influenceId:Ljava/lang/String;
-
-    .line 15
-    .line 16
-    iput-object p2, p0, Lcom/onesignal/session/internal/outcomes/impl/a;->channel:La8/e;
-
-    .line 17
-    .line 18
     return-void
 .end method
 
 
 # virtual methods
-.method public final getChannel()La8/e;
-    .locals 1
+.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lcom/onesignal/session/internal/outcomes/impl/a;->channel:La8/e;
+    check-cast p1, LT6/a;
 
-    .line 2
-    .line 3
-    return-object v0
+    invoke-virtual {p0, p1}, Lcom/onesignal/session/internal/outcomes/impl/A;->invoke(LT6/a;)V
+
+    sget-object p1, Lb9/n;->a:Lb9/n;
+
+    return-object p1
 .end method
 
-.method public final getInfluenceId()Ljava/lang/String;
+.method public final invoke(LT6/a;)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lcom/onesignal/session/internal/outcomes/impl/a;->influenceId:Ljava/lang/String;
+    const-string v0, "it"
+
+    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
-    .line 3
-    return-object v0
+    check-cast p1, LU6/a;
+
+    invoke-virtual {p1}, LU6/a;->getCount()I
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    iget-object p1, p0, Lcom/onesignal/session/internal/outcomes/impl/A;->$availableInfluenceIds:Lorg/json/JSONArray;
+
+    iget-object v0, p0, Lcom/onesignal/session/internal/outcomes/impl/A;->$channelInfluenceId:Ljava/lang/String;
+
+    invoke-virtual {p1, v0}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
+
+    :cond_0
+    return-void
 .end method

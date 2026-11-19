@@ -1,445 +1,388 @@
-.class public final LB8/H;
-.super LB8/k;
+.class public final Lb8/h;
+.super Lb8/a;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Ljava/lang/Class;
-
-.field public final b:[Ljava/lang/String;
-
-.field public final c:[Ljava/lang/Enum;
-
-.field public final d:LB8/n;
-
-
 # direct methods
-.method public constructor <init>(Ljava/lang/Class;)V
-    .locals 5
+.method public constructor <init>(Lb8/f;Le7/a;)V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const-string v0, "dataRepository"
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LB8/H;->a:Ljava/lang/Class;
+    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
+    .line 4
     .line 5
     .line 6
-    :try_start_0
-    invoke-virtual {p1}, Ljava/lang/Class;->getEnumConstants()[Ljava/lang/Object;
+    const-string v0, "timeProvider"
 
     .line 7
     .line 8
+    invoke-static {p2, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
     .line 9
-    move-result-object v0
-
     .line 10
-    check-cast v0, [Ljava/lang/Enum;
-
     .line 11
-    .line 12
-    iput-object v0, p0, LB8/H;->c:[Ljava/lang/Enum;
+    invoke-direct {p0, p1, p2}, Lb8/a;-><init>(Lb8/f;Le7/a;)V
 
+    .line 12
     .line 13
     .line 14
-    array-length v0, v0
-
-    .line 15
-    new-array v0, v0, [Ljava/lang/String;
-
-    .line 16
-    .line 17
-    iput-object v0, p0, LB8/H;->b:[Ljava/lang/String;
-
-    .line 18
-    .line 19
-    const/4 v0, 0x0
-
-    .line 20
-    :goto_0
-    iget-object v1, p0, LB8/H;->c:[Ljava/lang/Enum;
-
-    .line 21
-    .line 22
-    array-length v2, v1
-
-    .line 23
-    if-ge v0, v2, :cond_2
-
-    .line 24
-    .line 25
-    aget-object v1, v1, v0
-
-    .line 26
-    .line 27
-    invoke-virtual {v1}, Ljava/lang/Enum;->name()Ljava/lang/String;
-
-    .line 28
-    .line 29
-    .line 30
-    move-result-object v1
-
-    .line 31
-    iget-object v2, p0, LB8/H;->b:[Ljava/lang/String;
-
-    .line 32
-    .line 33
-    invoke-virtual {p1, v1}, Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
-
-    .line 34
-    .line 35
-    .line 36
-    move-result-object v3
-
-    .line 37
-    sget-object v4, LC8/f;->a:Ljava/util/Set;
-
-    .line 38
-    .line 39
-    const-class v4, LB8/i;
-
-    .line 40
-    .line 41
-    invoke-virtual {v3, v4}, Ljava/lang/reflect/Field;->getAnnotation(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
-
-    .line 42
-    .line 43
-    .line 44
-    move-result-object v3
-
-    .line 45
-    check-cast v3, LB8/i;
-
-    .line 46
-    .line 47
-    if-nez v3, :cond_0
-
-    .line 48
-    .line 49
-    goto :goto_1
-
-    .line 50
-    :cond_0
-    invoke-interface {v3}, LB8/i;->name()Ljava/lang/String;
-
-    .line 51
-    .line 52
-    .line 53
-    move-result-object v3
-
-    .line 54
-    const-string v4, "\u0000"
-
-    .line 55
-    .line 56
-    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 57
-    .line 58
-    .line 59
-    move-result v4
-
-    .line 60
-    if-eqz v4, :cond_1
-
-    .line 61
-    .line 62
-    goto :goto_1
-
-    .line 63
-    :cond_1
-    move-object v1, v3
-
-    .line 64
-    :goto_1
-    aput-object v1, v2, v0
-
-    .line 65
-    .line 66
-    add-int/lit8 v0, v0, 0x1
-
-    .line 67
-    .line 68
-    goto :goto_0
-
-    .line 69
-    :catch_0
-    move-exception v0
-
-    .line 70
-    goto :goto_2
-
-    .line 71
-    :cond_2
-    iget-object v0, p0, LB8/H;->b:[Ljava/lang/String;
-
-    .line 72
-    .line 73
-    invoke-static {v0}, LB8/n;->a([Ljava/lang/String;)LB8/n;
-
-    .line 74
-    .line 75
-    .line 76
-    move-result-object v0
-
-    .line 77
-    iput-object v0, p0, LB8/H;->d:LB8/n;
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 78
-    .line 79
     return-void
-
-    .line 80
-    :goto_2
-    new-instance v1, Ljava/lang/AssertionError;
-
-    .line 81
-    .line 82
-    invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    .line 83
-    .line 84
-    .line 85
-    move-result-object p1
-
-    .line 86
-    const-string v2, "Missing field in "
-
-    .line 87
-    .line 88
-    invoke-virtual {v2, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 89
-    .line 90
-    .line 91
-    move-result-object p1
-
-    .line 92
-    invoke-direct {v1, p1, v0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    .line 93
-    .line 94
-    .line 95
-    throw v1
 .end method
 
 
 # virtual methods
-.method public final fromJson(LB8/p;)Ljava/lang/Object;
-    .locals 4
+.method public cacheState()V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, LB8/H;->d:LB8/n;
+    invoke-virtual {p0}, Lb8/a;->getDataRepository()Lb8/f;
 
     .line 2
     .line 3
-    invoke-virtual {p1, v0}, LB8/p;->K(LB8/n;)I
-
     .line 4
+    move-result-object v0
+
     .line 5
+    invoke-virtual {p0}, Lb8/a;->getInfluenceType()La8/g;
+
     .line 6
-    move-result v0
-
     .line 7
-    const/4 v1, -0x1
-
     .line 8
-    if-eq v0, v1, :cond_0
+    move-result-object v1
 
     .line 9
-    .line 10
-    iget-object p1, p0, LB8/H;->c:[Ljava/lang/Enum;
+    if-nez v1, :cond_0
 
+    .line 10
+    .line 11
+    sget-object v1, La8/g;->UNATTRIBUTED:La8/g;
+
+    .line 12
+    .line 13
+    :cond_0
+    invoke-virtual {v0, v1}, Lb8/f;->cacheNotificationInfluenceType(La8/g;)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-virtual {p0}, Lb8/a;->getDataRepository()Lb8/f;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    invoke-virtual {p0}, Lb8/a;->getDirectId()Ljava/lang/String;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v1
+
+    .line 24
+    invoke-virtual {v0, v1}, Lb8/f;->cacheNotificationOpenId(Ljava/lang/String;)V
+
+    .line 25
+    .line 26
+    .line 27
+    return-void
+.end method
+
+.method public getChannelLimit()I
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lb8/a;->getDataRepository()Lb8/f;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lb8/f;->getNotificationLimit()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    return v0
+.end method
+
+.method public getChannelType()La8/e;
+    .locals 1
+
+    .line 1
+    sget-object v0, La8/e;->NOTIFICATION:La8/e;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getIdTag()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "notification_id"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getIndirectAttributionWindow()I
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lb8/a;->getDataRepository()Lb8/f;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lb8/f;->getNotificationIndirectAttributionWindow()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    return v0
+.end method
+
+.method public getLastChannelObjects()Lorg/json/JSONArray;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lb8/a;->getDataRepository()Lb8/f;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lb8/f;->getLastNotificationsReceivedData()Lorg/json/JSONArray;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getLastChannelObjectsReceivedByNewId(Ljava/lang/String;)Lorg/json/JSONArray;
+    .locals 1
+
+    .line 1
+    :try_start_0
+    invoke-virtual {p0}, Lb8/h;->getLastChannelObjects()Lorg/json/JSONArray;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 5
+    goto :goto_0
+
+    .line 6
+    :catch_0
+    move-exception p1
+
+    .line 7
+    const-string v0, "Generating Notification tracker getLastChannelObjects JSONObject "
+
+    .line 8
+    .line 9
+    invoke-static {v0, p1}, Lcom/onesignal/debug/internal/logging/c;->error(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 10
     .line 11
     .line 12
-    aget-object p1, p1, v0
+    new-instance p1, Lorg/json/JSONArray;
 
     .line 13
     .line 14
-    return-object p1
+    invoke-direct {p1}, Lorg/json/JSONArray;-><init>()V
 
     .line 15
-    :cond_0
-    invoke-virtual {p1}, LB8/p;->o()Ljava/lang/String;
+    .line 16
+    .line 17
+    :goto_0
+    return-object p1
+.end method
+
+.method public initInfluencedTypeFromCache()V
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, Lb8/a;->getDataRepository()Lb8/f;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lb8/f;->getNotificationCachedInfluenceType()La8/g;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-virtual {v0}, La8/g;->isIndirect()Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v1
+
+    .line 13
+    if-eqz v1, :cond_0
+
+    .line 14
+    .line 15
+    invoke-virtual {p0}, Lb8/a;->getLastReceivedIds()Lorg/json/JSONArray;
 
     .line 16
     .line 17
     .line 18
-    move-result-object v0
+    move-result-object v1
 
     .line 19
-    invoke-virtual {p1}, LB8/p;->C()Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lb8/a;->setIndirectIds(Lorg/json/JSONArray;)V
 
     .line 20
     .line 21
     .line 22
-    move-result-object p1
+    goto :goto_0
 
     .line 23
-    new-instance v1, Lcom/squareup/moshi/JsonDataException;
+    :cond_0
+    invoke-virtual {v0}, La8/g;->isDirect()Z
 
     .line 24
     .line 25
-    new-instance v2, Ljava/lang/StringBuilder;
-
     .line 26
+    move-result v1
+
     .line 27
-    const-string v3, "Expected one of "
+    if-eqz v1, :cond_1
 
     .line 28
     .line 29
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-virtual {p0}, Lb8/a;->getDataRepository()Lb8/f;
 
     .line 30
     .line 31
     .line 32
-    iget-object v3, p0, LB8/H;->b:[Ljava/lang/String;
+    move-result-object v1
 
     .line 33
-    .line 34
-    invoke-static {v3}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    invoke-virtual {v1}, Lb8/f;->getCachedNotificationOpenId()Ljava/lang/String;
 
+    .line 34
     .line 35
     .line 36
+    move-result-object v1
+
     .line 37
-    move-result-object v3
+    invoke-virtual {p0, v1}, Lb8/a;->setDirectId(Ljava/lang/String;)V
 
     .line 38
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
     .line 39
     .line 40
-    .line 41
-    const-string v3, " but was "
+    :cond_1
+    :goto_0
+    invoke-virtual {p0, v0}, Lb8/a;->setInfluenceType(La8/g;)V
 
+    .line 41
     .line 42
     .line 43
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 44
     .line 45
-    .line 46
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, "NotificationTracker.initInfluencedTypeFromCache: "
 
+    .line 46
     .line 47
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     .line 48
     .line 49
-    const-string p1, " at path "
-
     .line 50
-    .line 51
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    .line 51
     .line 52
     .line 53
-    .line 54
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 54
     .line 55
     .line 56
+    move-result-object v0
+
     .line 57
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/4 v1, 0x2
 
     .line 58
+    const/4 v2, 0x0
+
     .line 59
+    invoke-static {v0, v2, v1, v2}, Lcom/onesignal/debug/internal/logging/c;->debug$default(Ljava/lang/String;Ljava/lang/Throwable;ILjava/lang/Object;)V
+
     .line 60
-    move-result-object p1
-
     .line 61
-    invoke-direct {v1, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
     .line 62
-    .line 63
-    .line 64
-    throw v1
-.end method
-
-.method public final toJson(LB8/v;Ljava/lang/Object;)V
-    .locals 1
-
-    .line 1
-    check-cast p2, Ljava/lang/Enum;
-
-    .line 2
-    .line 3
-    iget-object v0, p0, LB8/H;->b:[Ljava/lang/String;
-
-    .line 4
-    .line 5
-    invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result p2
-
-    .line 9
-    aget-object p2, v0, p2
-
-    .line 10
-    .line 11
-    invoke-virtual {p1, p2}, LB8/v;->G(Ljava/lang/String;)LB8/v;
-
-    .line 12
-    .line 13
-    .line 14
     return-void
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 2
+.method public saveChannelObjects(Lorg/json/JSONArray;)V
+    .locals 1
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    const-string v0, "channelObjects"
 
     .line 2
     .line 3
-    const-string v1, "JsonAdapter("
+    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 6
+    invoke-virtual {p0}, Lb8/a;->getDataRepository()Lb8/f;
+
     .line 7
     .line 8
-    iget-object v1, p0, LB8/H;->a:Ljava/lang/Class;
-
     .line 9
+    move-result-object v0
+
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    invoke-virtual {v0, p1}, Lb8/f;->saveNotifications(Lorg/json/JSONArray;)V
 
     .line 11
     .line 12
     .line 13
-    move-result-object v1
-
-    .line 14
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 15
-    .line 16
-    .line 17
-    const-string v1, ")"
-
-    .line 18
-    .line 19
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 20
-    .line 21
-    .line 22
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v0
-
-    .line 26
-    return-object v0
+    return-void
 .end method

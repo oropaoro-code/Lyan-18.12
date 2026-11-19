@@ -1,4 +1,4 @@
-.class public final Lcom/onesignal/inAppMessages/internal/display/impl/k;
+.class public final Lcom/onesignal/inAppMessages/internal/display/impl/K;
 .super Li9/c;
 .source "SourceFile"
 
@@ -6,35 +6,29 @@
 # instance fields
 .field L$0:Ljava/lang/Object;
 
-.field L$1:Ljava/lang/Object;
-
-.field L$2:Ljava/lang/Object;
-
-.field L$3:Ljava/lang/Object;
-
 .field label:I
 
 .field synthetic result:Ljava/lang/Object;
 
-.field final synthetic this$0:Lcom/onesignal/inAppMessages/internal/display/impl/l;
+.field final synthetic this$0:Lcom/onesignal/inAppMessages/internal/display/impl/P;
 
 
 # direct methods
-.method public constructor <init>(Lcom/onesignal/inAppMessages/internal/display/impl/l;Lg9/e;)V
+.method public constructor <init>(Lcom/onesignal/inAppMessages/internal/display/impl/P;Lg9/e;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/onesignal/inAppMessages/internal/display/impl/l;",
+            "Lcom/onesignal/inAppMessages/internal/display/impl/P;",
             "Lg9/e<",
             "-",
-            "Lcom/onesignal/inAppMessages/internal/display/impl/k;",
+            "Lcom/onesignal/inAppMessages/internal/display/impl/K;",
             ">;)V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/onesignal/inAppMessages/internal/display/impl/k;->this$0:Lcom/onesignal/inAppMessages/internal/display/impl/l;
+    iput-object p1, p0, Lcom/onesignal/inAppMessages/internal/display/impl/K;->this$0:Lcom/onesignal/inAppMessages/internal/display/impl/P;
 
     .line 2
     .line 3
@@ -51,21 +45,19 @@
 .method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    iput-object p1, p0, Lcom/onesignal/inAppMessages/internal/display/impl/k;->result:Ljava/lang/Object;
+    iput-object p1, p0, Lcom/onesignal/inAppMessages/internal/display/impl/K;->result:Ljava/lang/Object;
 
-    iget p1, p0, Lcom/onesignal/inAppMessages/internal/display/impl/k;->label:I
+    iget p1, p0, Lcom/onesignal/inAppMessages/internal/display/impl/K;->label:I
 
     const/high16 v0, -0x80000000
 
     or-int/2addr p1, v0
 
-    iput p1, p0, Lcom/onesignal/inAppMessages/internal/display/impl/k;->label:I
+    iput p1, p0, Lcom/onesignal/inAppMessages/internal/display/impl/K;->label:I
 
-    iget-object p1, p0, Lcom/onesignal/inAppMessages/internal/display/impl/k;->this$0:Lcom/onesignal/inAppMessages/internal/display/impl/l;
+    iget-object p1, p0, Lcom/onesignal/inAppMessages/internal/display/impl/K;->this$0:Lcom/onesignal/inAppMessages/internal/display/impl/P;
 
-    const/4 v0, 0x0
-
-    invoke-static {p1, v0, v0, p0}, Lcom/onesignal/inAppMessages/internal/display/impl/l;->access$showMessageContent(Lcom/onesignal/inAppMessages/internal/display/impl/l;Lcom/onesignal/inAppMessages/internal/b;Lcom/onesignal/inAppMessages/internal/g;Lg9/e;)Ljava/lang/Object;
+    invoke-virtual {p1, p0}, Lcom/onesignal/inAppMessages/internal/display/impl/P;->dismissAndAwaitNextMessage(Lg9/e;)Ljava/lang/Object;
 
     move-result-object p1
 

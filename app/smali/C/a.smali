@@ -1,124 +1,190 @@
-.class public final Lc/a;
-.super Ljava/lang/Object;
+.class public final LC/a;
+.super Lq9/j;
 .source "SourceFile"
 
 # interfaces
-.implements Lc/b;
+.implements Lp9/f;
 
 
 # instance fields
-.field public g:Landroid/os/IBinder;
+.field public final synthetic q:I
+
+.field public final synthetic r:LC/o;
+
+.field public final synthetic s:Lp9/a;
+
+.field public final synthetic t:Lk0/r;
+
+.field public final synthetic u:LD/g;
+
+.field public final synthetic v:I
+
+
+# direct methods
+.method public synthetic constructor <init>(LC/o;Lp9/a;Lk0/r;LD/g;II)V
+    .locals 0
+
+    .line 1
+    iput p6, p0, LC/a;->q:I
+
+    iput-object p1, p0, LC/a;->r:LC/o;
+
+    iput-object p2, p0, LC/a;->s:Lp9/a;
+
+    iput-object p3, p0, LC/a;->t:Lk0/r;
+
+    iput-object p4, p0, LC/a;->u:LD/g;
+
+    iput p5, p0, LC/a;->v:I
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1}, Lq9/j;-><init>(I)V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public final asBinder()Landroid/os/IBinder;
-    .locals 1
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 7
 
     .line 1
-    iget-object v0, p0, Lc/a;->g:Landroid/os/IBinder;
+    iget v0, p0, LC/a;->q:I
 
     .line 2
     .line 3
-    return-object v0
-.end method
+    packed-switch v0, :pswitch_data_0
 
-.method public final y0(Ljava/lang/String;ILandroid/app/Notification;)V
-    .locals 2
-
-    .line 1
-    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
-
-    .line 2
-    .line 3
     .line 4
-    move-result-object v0
-
     .line 5
-    :try_start_0
-    sget-object v1, Lc/b;->a:Ljava/lang/String;
-
     .line 6
+    move-object v5, p1
+
     .line 7
-    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
+    check-cast v5, LY/o;
 
     .line 8
     .line 9
-    .line 10
-    invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+    check-cast p2, Ljava/lang/Number;
 
+    .line 10
     .line 11
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+
     .line 12
     .line 13
-    invoke-virtual {v0, p2}, Landroid/os/Parcel;->writeInt(I)V
-
     .line 14
+    iget p1, p0, LC/a;->v:I
+
     .line 15
     .line 16
-    const/4 p1, 0x0
+    or-int/lit8 p1, p1, 0x1
 
     .line 17
-    invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
-
     .line 18
+    invoke-static {p1}, LY/c;->x(I)I
+
     .line 19
     .line 20
-    const/4 p2, 0x0
-
     .line 21
-    const/4 v1, 0x1
+    move-result v6
 
     .line 22
-    if-eqz p3, :cond_0
+    iget-object v4, p0, LC/a;->u:LD/g;
 
     .line 23
     .line 24
-    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInt(I)V
+    iget-object v1, p0, LC/a;->r:LC/o;
 
     .line 25
     .line 26
-    .line 27
-    invoke-interface {p3, v0, p2}, Landroid/os/Parcelable;->writeToParcel(Landroid/os/Parcel;I)V
+    iget-object v2, p0, LC/a;->s:Lp9/a;
 
+    .line 27
     .line 28
+    iget-object v3, p0, LC/a;->t:Lk0/r;
+
     .line 29
     .line 30
-    goto :goto_0
+    invoke-static/range {v1 .. v6}, La3/f;->a(LC/o;Lp9/a;Lk0/r;LD/g;LY/o;I)V
 
     .line 31
-    :cond_0
-    invoke-virtual {v0, p2}, Landroid/os/Parcel;->writeInt(I)V
-
     .line 32
     .line 33
-    .line 34
-    :goto_0
-    iget-object p2, p0, Lc/a;->g:Landroid/os/IBinder;
+    sget-object p1, Lb9/n;->a:Lb9/n;
 
+    .line 34
     .line 35
+    return-object p1
+
     .line 36
-    invoke-interface {p2, v1, v0, p1, v1}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :pswitch_0
+    move-object v4, p1
 
     .line 37
+    check-cast v4, LY/o;
+
     .line 38
     .line 39
-    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
+    check-cast p2, Ljava/lang/Number;
 
     .line 40
     .line 41
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+
     .line 42
-    return-void
-
     .line 43
-    :catchall_0
-    move-exception p1
-
     .line 44
-    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
+    iget p1, p0, LC/a;->v:I
 
     .line 45
     .line 46
+    or-int/lit8 p1, p1, 0x1
+
     .line 47
-    throw p1
+    .line 48
+    invoke-static {p1}, LY/c;->x(I)I
+
+    .line 49
+    .line 50
+    .line 51
+    move-result v5
+
+    .line 52
+    iget-object v3, p0, LC/a;->u:LD/g;
+
+    .line 53
+    .line 54
+    iget-object v0, p0, LC/a;->r:LC/o;
+
+    .line 55
+    .line 56
+    iget-object v1, p0, LC/a;->s:Lp9/a;
+
+    .line 57
+    .line 58
+    iget-object v2, p0, LC/a;->t:Lk0/r;
+
+    .line 59
+    .line 60
+    invoke-static/range {v0 .. v5}, La3/f;->a(LC/o;Lp9/a;Lk0/r;LD/g;LY/o;I)V
+
+    .line 61
+    .line 62
+    .line 63
+    sget-object p1, Lb9/n;->a:Lb9/n;
+
+    .line 64
+    .line 65
+    return-object p1
+
+    .line 66
+    nop
+
+    .line 67
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -1,119 +1,146 @@
-.class public final LR6/a;
-.super Ljava/lang/Object;
+.class public final Lr6/A;
+.super Li9/i;
 .source "SourceFile"
+
+# interfaces
+.implements Lp9/f;
 
 
 # instance fields
-.field private final apiKey:Ljava/lang/String;
+.field public synthetic q:Ljava/lang/Object;
 
-.field private final appId:Ljava/lang/String;
-
-.field private final projectId:Ljava/lang/String;
+.field public final synthetic r:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 6
-
-    const/4 v4, 0x7
-
-    const/4 v5, 0x0
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    move-object v0, p0
-
-    .line 1
-    invoke-direct/range {v0 .. v5}, LR6/a;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>(Ljava/lang/String;Lg9/e;)V
     .locals 0
 
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    iput-object p1, p0, Lr6/A;->r:Ljava/lang/String;
 
+    .line 2
     .line 3
-    iput-object p1, p0, LR6/a;->projectId:Ljava/lang/String;
+    const/4 p1, 0x2
 
     .line 4
-    iput-object p2, p0, LR6/a;->appId:Ljava/lang/String;
+    invoke-direct {p0, p1, p2}, Li9/i;-><init>(ILg9/e;)V
 
     .line 5
-    iput-object p3, p0, LR6/a;->apiKey:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-    .locals 1
-
-    and-int/lit8 p5, p4, 0x1
-
-    const/4 v0, 0x0
-
-    if-eqz p5, :cond_0
-
-    move-object p1, v0
-
-    :cond_0
-    and-int/lit8 p5, p4, 0x2
-
-    if-eqz p5, :cond_1
-
-    move-object p2, v0
-
-    :cond_1
-    and-int/lit8 p4, p4, 0x4
-
-    if-eqz p4, :cond_2
-
-    move-object p3, v0
-
     .line 6
-    :cond_2
-    invoke-direct {p0, p1, p2, p3}, LR6/a;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
+    .line 7
     return-void
 .end method
 
 
 # virtual methods
-.method public final getApiKey()Ljava/lang/String;
-    .locals 1
+.method public final create(Ljava/lang/Object;Lg9/e;)Lg9/e;
+    .locals 2
 
     .line 1
-    iget-object v0, p0, LR6/a;->apiKey:Ljava/lang/String;
+    new-instance v0, Lr6/A;
 
     .line 2
     .line 3
+    iget-object v1, p0, Lr6/A;->r:Ljava/lang/String;
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1, p2}, Lr6/A;-><init>(Ljava/lang/String;Lg9/e;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iput-object p1, v0, Lr6/A;->q:Ljava/lang/Object;
+
+    .line 9
+    .line 10
     return-object v0
 .end method
 
-.method public final getAppId()Ljava/lang/String;
-    .locals 1
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, LR6/a;->appId:Ljava/lang/String;
+    check-cast p1, LU1/b;
 
     .line 2
     .line 3
-    return-object v0
+    check-cast p2, Lg9/e;
+
+    .line 4
+    .line 5
+    invoke-virtual {p0, p1, p2}, Lr6/A;->create(Ljava/lang/Object;Lg9/e;)Lg9/e;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    check-cast p1, Lr6/A;
+
+    .line 10
+    .line 11
+    sget-object p2, Lb9/n;->a:Lb9/n;
+
+    .line 12
+    .line 13
+    invoke-virtual {p1, p2}, Lr6/A;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    return-object p2
 .end method
 
-.method public final getProjectId()Ljava/lang/String;
-    .locals 1
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    iget-object v0, p0, LR6/a;->projectId:Ljava/lang/String;
+    invoke-static {p1}, LO5/l0;->V(Ljava/lang/Object;)V
 
     .line 2
     .line 3
-    return-object v0
+    .line 4
+    iget-object p1, p0, Lr6/A;->q:Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    check-cast p1, LU1/b;
+
+    .line 7
+    .line 8
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 9
+    .line 10
+    .line 11
+    const-string v0, "key"
+
+    .line 12
+    .line 13
+    sget-object v1, Lr6/y;->a:LU1/d;
+
+    .line 14
+    .line 15
+    invoke-static {v1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v0, p0, Lr6/A;->r:Ljava/lang/String;
+
+    .line 19
+    .line 20
+    invoke-virtual {p1, v1, v0}, LU1/b;->b(LU1/d;Ljava/lang/Object;)V
+
+    .line 21
+    .line 22
+    .line 23
+    sget-object p1, Lb9/n;->a:Lb9/n;
+
+    .line 24
+    .line 25
+    return-object p1
 .end method

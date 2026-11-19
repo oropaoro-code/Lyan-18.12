@@ -1,3 +1,3 @@
-.class public final Lp1/a;
-.super Lp1/g;
+.class public final LP1/a;
+.super LP1/b;
 .source "SourceFile"

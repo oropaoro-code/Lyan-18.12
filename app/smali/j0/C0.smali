@@ -1,84 +1,29 @@
-.class public final LJ0/C0;
+.class public final LJ0/c0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/util/Comparator;
-
-
-# static fields
-.field public static final b:LJ0/C0;
-
-.field public static final c:LJ0/C0;
-
-.field public static final d:LJ0/C0;
+.implements Landroid/view/Choreographer$FrameCallback;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic q:I
+
+.field public final synthetic r:LA9/h;
+
+.field public final synthetic s:Lp9/d;
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    new-instance v0, LJ0/C0;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    invoke-direct {v0, v1}, LJ0/C0;-><init>(I)V
-
-    .line 5
-    .line 6
-    .line 7
-    sput-object v0, LJ0/C0;->b:LJ0/C0;
-
-    .line 8
-    .line 9
-    new-instance v0, LJ0/C0;
-
-    .line 10
-    .line 11
-    const/4 v1, 0x1
-
-    .line 12
-    invoke-direct {v0, v1}, LJ0/C0;-><init>(I)V
-
-    .line 13
-    .line 14
-    .line 15
-    sput-object v0, LJ0/C0;->c:LJ0/C0;
-
-    .line 16
-    .line 17
-    new-instance v0, LJ0/C0;
-
-    .line 18
-    .line 19
-    const/4 v1, 0x2
-
-    .line 20
-    invoke-direct {v0, v1}, LJ0/C0;-><init>(I)V
-
-    .line 21
-    .line 22
-    .line 23
-    sput-object v0, LJ0/C0;->d:LJ0/C0;
-
-    .line 24
-    .line 25
-    return-void
-.end method
-
-.method public synthetic constructor <init>(I)V
+.method public synthetic constructor <init>(LA9/h;LY/S;Lp9/d;I)V
     .locals 0
 
     .line 1
-    iput p1, p0, LJ0/C0;->a:I
+    iput p4, p0, LJ0/c0;->q:I
+
+    iput-object p1, p0, LJ0/c0;->r:LA9/h;
+
+    iput-object p3, p0, LJ0/c0;->s:Lp9/d;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -87,11 +32,11 @@
 
 
 # virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 2
+.method public final doFrame(J)V
+    .locals 1
 
     .line 1
-    iget v0, p0, LJ0/C0;->a:I
+    iget v0, p0, LJ0/c0;->q:I
 
     .line 2
     .line 3
@@ -100,330 +45,114 @@
     .line 4
     .line 5
     .line 6
-    check-cast p1, Lb9/h;
+    iget-object v0, p0, LJ0/c0;->s:Lp9/d;
 
     .line 7
     .line 8
-    check-cast p2, Lb9/h;
+    :try_start_0
+    invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     .line 9
     .line 10
-    iget-object v0, p1, Lb9/h;->q:Ljava/lang/Object;
-
     .line 11
+    move-result-object p1
+
     .line 12
-    check-cast v0, Lq0/c;
+    invoke-interface {v0, p1}, Lp9/d;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 13
     .line 14
-    iget v0, v0, Lq0/c;->b:F
-
     .line 15
+    move-result-object p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
     .line 16
-    iget-object v1, p2, Lb9/h;->q:Ljava/lang/Object;
+    goto :goto_0
 
     .line 17
+    :catchall_0
+    move-exception p1
+
     .line 18
-    check-cast v1, Lq0/c;
+    invoke-static {p1}, LO5/l0;->j(Ljava/lang/Throwable;)Lb9/j;
 
     .line 19
     .line 20
-    iget v1, v1, Lq0/c;->b:F
-
     .line 21
+    move-result-object p1
+
     .line 22
-    invoke-static {v0, v1}, Ljava/lang/Float;->compare(FF)I
+    :goto_0
+    iget-object p2, p0, LJ0/c0;->r:LA9/h;
 
     .line 23
     .line 24
+    invoke-virtual {p2, p1}, LA9/h;->resumeWith(Ljava/lang/Object;)V
+
     .line 25
-    move-result v0
-
     .line 26
-    if-eqz v0, :cond_0
-
     .line 27
+    return-void
+
     .line 28
-    goto :goto_0
+    :pswitch_0
+    iget-object v0, p0, LJ0/c0;->s:Lp9/d;
 
     .line 29
-    :cond_0
-    iget-object p1, p1, Lb9/h;->q:Ljava/lang/Object;
-
     .line 30
-    .line 31
-    check-cast p1, Lq0/c;
+    :try_start_1
+    invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
+    .line 31
     .line 32
     .line 33
-    iget p1, p1, Lq0/c;->d:F
+    move-result-object p1
 
     .line 34
-    .line 35
-    iget-object p2, p2, Lb9/h;->q:Ljava/lang/Object;
+    invoke-interface {v0, p1}, Lp9/d;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 35
     .line 36
     .line 37
-    check-cast p2, Lq0/c;
+    move-result-object p1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     .line 38
+    goto :goto_1
+
     .line 39
-    iget p2, p2, Lq0/c;->d:F
+    :catchall_1
+    move-exception p1
 
     .line 40
-    .line 41
-    invoke-static {p1, p2}, Ljava/lang/Float;->compare(FF)I
+    invoke-static {p1}, LO5/l0;->j(Ljava/lang/Throwable;)Lb9/j;
 
+    .line 41
     .line 42
     .line 43
+    move-result-object p1
+
     .line 44
-    move-result v0
+    :goto_1
+    iget-object p2, p0, LJ0/c0;->r:LA9/h;
 
     .line 45
-    :goto_0
-    return v0
-
     .line 46
-    :pswitch_0
-    check-cast p1, LQ0/l;
+    invoke-virtual {p2, p1}, LA9/h;->resumeWith(Ljava/lang/Object;)V
 
     .line 47
     .line 48
-    check-cast p2, LQ0/l;
-
     .line 49
+    return-void
+
     .line 50
-    invoke-virtual {p1}, LQ0/l;->f()Lq0/c;
-
-    .line 51
-    .line 52
-    .line 53
-    move-result-object p1
-
-    .line 54
-    invoke-virtual {p2}, LQ0/l;->f()Lq0/c;
-
-    .line 55
-    .line 56
-    .line 57
-    move-result-object p2
-
-    .line 58
-    iget v0, p2, Lq0/c;->c:F
-
-    .line 59
-    .line 60
-    iget v1, p1, Lq0/c;->c:F
-
-    .line 61
-    .line 62
-    invoke-static {v0, v1}, Ljava/lang/Float;->compare(FF)I
-
-    .line 63
-    .line 64
-    .line 65
-    move-result v0
-
-    .line 66
-    if-eqz v0, :cond_1
-
-    .line 67
-    .line 68
-    goto :goto_1
-
-    .line 69
-    :cond_1
-    iget v0, p1, Lq0/c;->b:F
-
-    .line 70
-    .line 71
-    iget v1, p2, Lq0/c;->b:F
-
-    .line 72
-    .line 73
-    invoke-static {v0, v1}, Ljava/lang/Float;->compare(FF)I
-
-    .line 74
-    .line 75
-    .line 76
-    move-result v0
-
-    .line 77
-    if-eqz v0, :cond_2
-
-    .line 78
-    .line 79
-    goto :goto_1
-
-    .line 80
-    :cond_2
-    iget v0, p1, Lq0/c;->d:F
-
-    .line 81
-    .line 82
-    iget v1, p2, Lq0/c;->d:F
-
-    .line 83
-    .line 84
-    invoke-static {v0, v1}, Ljava/lang/Float;->compare(FF)I
-
-    .line 85
-    .line 86
-    .line 87
-    move-result v0
-
-    .line 88
-    if-eqz v0, :cond_3
-
-    .line 89
-    .line 90
-    goto :goto_1
-
-    .line 91
-    :cond_3
-    iget p2, p2, Lq0/c;->a:F
-
-    .line 92
-    .line 93
-    iget p1, p1, Lq0/c;->a:F
-
-    .line 94
-    .line 95
-    invoke-static {p2, p1}, Ljava/lang/Float;->compare(FF)I
-
-    .line 96
-    .line 97
-    .line 98
-    move-result v0
-
-    .line 99
-    :goto_1
-    return v0
-
-    .line 100
-    :pswitch_1
-    check-cast p1, LQ0/l;
-
-    .line 101
-    .line 102
-    check-cast p2, LQ0/l;
-
-    .line 103
-    .line 104
-    invoke-virtual {p1}, LQ0/l;->f()Lq0/c;
-
-    .line 105
-    .line 106
-    .line 107
-    move-result-object p1
-
-    .line 108
-    invoke-virtual {p2}, LQ0/l;->f()Lq0/c;
-
-    .line 109
-    .line 110
-    .line 111
-    move-result-object p2
-
-    .line 112
-    iget v0, p1, Lq0/c;->a:F
-
-    .line 113
-    .line 114
-    iget v1, p2, Lq0/c;->a:F
-
-    .line 115
-    .line 116
-    invoke-static {v0, v1}, Ljava/lang/Float;->compare(FF)I
-
-    .line 117
-    .line 118
-    .line 119
-    move-result v0
-
-    .line 120
-    if-eqz v0, :cond_4
-
-    .line 121
-    .line 122
-    goto :goto_2
-
-    .line 123
-    :cond_4
-    iget v0, p1, Lq0/c;->b:F
-
-    .line 124
-    .line 125
-    iget v1, p2, Lq0/c;->b:F
-
-    .line 126
-    .line 127
-    invoke-static {v0, v1}, Ljava/lang/Float;->compare(FF)I
-
-    .line 128
-    .line 129
-    .line 130
-    move-result v0
-
-    .line 131
-    if-eqz v0, :cond_5
-
-    .line 132
-    .line 133
-    goto :goto_2
-
-    .line 134
-    :cond_5
-    iget v0, p1, Lq0/c;->d:F
-
-    .line 135
-    .line 136
-    iget v1, p2, Lq0/c;->d:F
-
-    .line 137
-    .line 138
-    invoke-static {v0, v1}, Ljava/lang/Float;->compare(FF)I
-
-    .line 139
-    .line 140
-    .line 141
-    move-result v0
-
-    .line 142
-    if-eqz v0, :cond_6
-
-    .line 143
-    .line 144
-    goto :goto_2
-
-    .line 145
-    :cond_6
-    iget p1, p1, Lq0/c;->c:F
-
-    .line 146
-    .line 147
-    iget p2, p2, Lq0/c;->c:F
-
-    .line 148
-    .line 149
-    invoke-static {p1, p2}, Ljava/lang/Float;->compare(FF)I
-
-    .line 150
-    .line 151
-    .line 152
-    move-result v0
-
-    .line 153
-    :goto_2
-    return v0
-
-    .line 154
     nop
 
-    .line 155
+    .line 51
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

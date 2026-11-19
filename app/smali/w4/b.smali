@@ -1,42 +1,19 @@
-.class public final LW4/b;
+.class public final Lw4/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/animation/TypeEvaluator;
-
-
-# static fields
-.field public static final b:LW4/b;
+.implements Lw4/d;
+.implements Landroid/os/IInterface;
 
 
 # instance fields
-.field public final a:LW4/e;
+.field public final g:Landroid/os/IBinder;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, LW4/b;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, LW4/b;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, LW4/b;->b:LW4/b;
-
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Landroid/os/IBinder;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,99 +21,94 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, LW4/e;
+    iput-object p1, p0, Lw4/b;->g:Landroid/os/IBinder;
 
     .line 5
     .line 6
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 7
-    .line 8
-    .line 9
-    iput-object v0, p0, LW4/b;->a:LW4/e;
-
-    .line 10
-    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
+.method public final asBinder()Landroid/os/IBinder;
+    .locals 1
 
     .line 1
-    check-cast p2, LW4/e;
+    iget-object v0, p0, Lw4/b;->g:Landroid/os/IBinder;
 
     .line 2
     .line 3
-    check-cast p3, LW4/e;
+    return-object v0
+.end method
 
+.method public final y0(Landroid/os/Parcel;I)Landroid/os/Parcel;
+    .locals 3
+
+    .line 1
+    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+
+    .line 2
+    .line 3
     .line 4
+    move-result-object v0
+
     .line 5
-    iget v0, p2, LW4/e;->a:F
+    :try_start_0
+    iget-object v1, p0, Lw4/b;->g:Landroid/os/IBinder;
 
     .line 6
     .line 7
-    iget v1, p3, LW4/e;->a:F
+    const/4 v2, 0x0
 
     .line 8
-    .line 9
-    invoke-static {v0, v1, p1}, Lu3/f;->p(FFF)F
+    invoke-interface {v1, p2, p1, v0, v2}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
+    .line 9
     .line 10
     .line 11
+    invoke-virtual {v0}, Landroid/os/Parcel;->readException()V
+    :try_end_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
     .line 12
-    move-result v0
-
     .line 13
-    iget v1, p2, LW4/e;->b:F
-
     .line 14
-    .line 15
-    iget v2, p3, LW4/e;->b:F
+    invoke-virtual {p1}, Landroid/os/Parcel;->recycle()V
 
+    .line 15
     .line 16
     .line 17
-    invoke-static {v1, v2, p1}, Lu3/f;->p(FFF)F
+    return-object v0
 
     .line 18
+    :catchall_0
+    move-exception p2
+
     .line 19
+    goto :goto_0
+
     .line 20
-    move-result v1
+    :catch_0
+    move-exception p2
 
     .line 21
-    iget p2, p2, LW4/e;->c:F
+    :try_start_1
+    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     .line 22
     .line 23
-    iget p3, p3, LW4/e;->c:F
-
     .line 24
+    throw p2
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
     .line 25
-    invoke-static {p2, p3, p1}, Lu3/f;->p(FFF)F
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->recycle()V
 
     .line 26
     .line 27
     .line 28
-    move-result p1
-
-    .line 29
-    iget-object p2, p0, LW4/b;->a:LW4/e;
-
-    .line 30
-    .line 31
-    iput v0, p2, LW4/e;->a:F
-
-    .line 32
-    .line 33
-    iput v1, p2, LW4/e;->b:F
-
-    .line 34
-    .line 35
-    iput p1, p2, LW4/e;->c:F
-
-    .line 36
-    .line 37
-    return-object p2
+    throw p2
 .end method

@@ -1,2754 +1,1642 @@
-.class public final LE4/E;
-.super Ljava/lang/Object;
+.class public final LE4/e;
+.super LE4/u0;
 .source "SourceFile"
 
 
 # instance fields
-.field public A:J
-
-.field public B:Ljava/lang/String;
-
-.field public C:I
-
-.field public D:I
-
-.field public E:J
-
-.field public F:Ljava/lang/String;
-
-.field public G:J
-
-.field public H:J
-
-.field public I:J
-
-.field public J:J
-
-.field public K:J
-
-.field public L:J
-
-.field public M:Ljava/lang/String;
-
-.field public N:Z
-
-.field public O:J
-
-.field public P:J
-
-.field public final a:LE4/m0;
-
-.field public final b:Ljava/lang/String;
+.field public b:Ljava/lang/Boolean;
 
 .field public c:Ljava/lang/String;
 
-.field public d:Ljava/lang/String;
+.field public d:LE4/g;
 
-.field public e:Ljava/lang/String;
-
-.field public f:Ljava/lang/String;
-
-.field public g:J
-
-.field public h:J
-
-.field public i:J
-
-.field public j:Ljava/lang/String;
-
-.field public k:J
-
-.field public l:Ljava/lang/String;
-
-.field public m:J
-
-.field public n:J
-
-.field public o:Z
-
-.field public p:Z
-
-.field public q:Ljava/lang/String;
-
-.field public r:Ljava/lang/Boolean;
-
-.field public s:J
-
-.field public t:Ljava/util/ArrayList;
-
-.field public u:Ljava/lang/String;
-
-.field public v:Z
-
-.field public w:J
-
-.field public x:J
-
-.field public y:I
-
-.field public z:Z
+.field public e:Ljava/lang/Boolean;
 
 
 # direct methods
-.method public constructor <init>(LE4/m0;Ljava/lang/String;)V
-    .locals 0
+.method public static z()J
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v0, LE4/y;->E:LE4/G;
 
     .line 2
     .line 3
+    const/4 v1, 0x0
+
     .line 4
-    invoke-static {p1}, Ln4/D;->i(Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, LE4/G;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
     .line 6
     .line 7
-    invoke-static {p2}, Ln4/D;->e(Ljava/lang/String;)V
+    move-result-object v0
 
     .line 8
+    check-cast v0, Ljava/lang/Long;
+
     .line 9
     .line 10
-    iput-object p1, p0, LE4/E;->a:LE4/m0;
+    invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
     .line 11
     .line 12
-    iput-object p2, p0, LE4/E;->b:Ljava/lang/String;
-
     .line 13
+    move-result-wide v0
+
     .line 14
-    iget-object p1, p1, LE4/m0;->j:LE4/h0;
-
-    .line 15
-    .line 16
-    invoke-static {p1}, LE4/m0;->e(LE4/t0;)V
-
-    .line 17
-    .line 18
-    .line 19
-    invoke-virtual {p1}, LE4/h0;->m()V
-
-    .line 20
-    .line 21
-    .line 22
-    return-void
+    return-wide v0
 .end method
 
 
 # virtual methods
-.method public final A(Ljava/lang/String;)V
-    .locals 2
+.method public final A()Z
+    .locals 1
 
     .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
+    const-string v0, "google_analytics_automatic_screen_reporting_enabled"
 
     .line 2
     .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
+    invoke-virtual {p0, v0}, LE4/e;->w(Ljava/lang/String;)Ljava/lang/Boolean;
 
     .line 4
     .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
     .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
+    move-result-object v0
 
+    .line 7
+    if-eqz v0, :cond_1
+
+    .line 8
     .line 9
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
     .line 10
     .line 11
-    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
     .line 12
-    .line 13
-    .line 14
     move-result v0
 
-    .line 15
+    .line 13
     if-eqz v0, :cond_0
 
-    .line 16
-    .line 17
-    const/4 p1, 0x0
-
-    .line 18
-    :cond_0
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 19
-    .line 20
-    iget-object v1, p0, LE4/E;->d:Ljava/lang/String;
-
-    .line 21
-    .line 22
-    invoke-static {v1, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 23
-    .line 24
-    .line 25
-    move-result v1
-
-    .line 26
-    xor-int/lit8 v1, v1, 0x1
-
-    .line 27
-    .line 28
-    or-int/2addr v0, v1
-
-    .line 29
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 30
-    .line 31
-    iput-object p1, p0, LE4/E;->d:Ljava/lang/String;
-
-    .line 32
-    .line 33
-    return-void
-.end method
-
-.method public final B(J)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-wide v1, p0, LE4/E;->I:J
-
     .line 14
     .line 15
-    cmp-long v1, v1, p1
-
-    .line 16
-    .line 17
-    if-eqz v1, :cond_0
-
-    .line 18
-    .line 19
-    const/4 v1, 0x1
-
-    .line 20
     goto :goto_0
 
-    .line 21
+    .line 16
     :cond_0
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
-    .line 22
-    :goto_0
-    or-int/2addr v0, v1
-
-    .line 23
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 24
-    .line 25
-    iput-wide p1, p0, LE4/E;->I:J
-
-    .line 26
-    .line 27
-    return-void
-.end method
-
-.method public final C(Ljava/lang/String;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-object v1, p0, LE4/E;->M:Ljava/lang/String;
-
-    .line 14
-    .line 15
-    invoke-static {v1, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 16
     .line 17
-    .line 18
-    move-result v1
-
-    .line 19
-    xor-int/lit8 v1, v1, 0x1
-
-    .line 20
-    .line 21
-    or-int/2addr v0, v1
-
-    .line 22
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 23
-    .line 24
-    iput-object p1, p0, LE4/E;->M:Ljava/lang/String;
-
-    .line 25
-    .line 26
-    return-void
-.end method
-
-.method public final D(J)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-wide v1, p0, LE4/E;->H:J
-
-    .line 14
-    .line 15
-    cmp-long v1, v1, p1
-
-    .line 16
-    .line 17
-    if-eqz v1, :cond_0
+    return v0
 
     .line 18
-    .line 19
-    const/4 v1, 0x1
-
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 22
-    :goto_0
-    or-int/2addr v0, v1
-
-    .line 23
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 24
-    .line 25
-    iput-wide p1, p0, LE4/E;->H:J
-
-    .line 26
-    .line 27
-    return-void
-.end method
-
-.method public final E(Ljava/lang/String;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-object v1, p0, LE4/E;->e:Ljava/lang/String;
-
-    .line 14
-    .line 15
-    invoke-static {v1, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 16
-    .line 17
-    .line 18
-    move-result v1
-
-    .line 19
-    xor-int/lit8 v1, v1, 0x1
-
-    .line 20
-    .line 21
-    or-int/2addr v0, v1
-
-    .line 22
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 23
-    .line 24
-    iput-object p1, p0, LE4/E;->e:Ljava/lang/String;
-
-    .line 25
-    .line 26
-    return-void
-.end method
-
-.method public final F(J)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-wide v1, p0, LE4/E;->L:J
-
-    .line 14
-    .line 15
-    cmp-long v1, v1, p1
-
-    .line 16
-    .line 17
-    if-eqz v1, :cond_0
-
-    .line 18
-    .line 19
-    const/4 v1, 0x1
-
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 22
-    :goto_0
-    or-int/2addr v0, v1
-
-    .line 23
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 24
-    .line 25
-    iput-wide p1, p0, LE4/E;->L:J
-
-    .line 26
-    .line 27
-    return-void
-.end method
-
-.method public final G(J)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-wide v1, p0, LE4/E;->G:J
-
-    .line 14
-    .line 15
-    cmp-long v1, v1, p1
-
-    .line 16
-    .line 17
-    if-eqz v1, :cond_0
-
-    .line 18
-    .line 19
-    const/4 v1, 0x1
-
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 22
-    :goto_0
-    or-int/2addr v0, v1
-
-    .line 23
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 24
-    .line 25
-    iput-wide p1, p0, LE4/E;->G:J
-
-    .line 26
-    .line 27
-    return-void
-.end method
-
-.method public final H(J)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-wide v1, p0, LE4/E;->n:J
-
-    .line 14
-    .line 15
-    cmp-long v1, v1, p1
-
-    .line 16
-    .line 17
-    if-eqz v1, :cond_0
-
-    .line 18
-    .line 19
-    const/4 v1, 0x1
-
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 22
-    :goto_0
-    or-int/2addr v0, v1
-
-    .line 23
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 24
-    .line 25
-    iput-wide p1, p0, LE4/E;->n:J
-
-    .line 26
-    .line 27
-    return-void
-.end method
-
-.method public final I(J)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-wide v1, p0, LE4/E;->s:J
-
-    .line 14
-    .line 15
-    cmp-long v1, v1, p1
-
-    .line 16
-    .line 17
-    if-eqz v1, :cond_0
-
-    .line 18
-    .line 19
-    const/4 v1, 0x1
-
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 22
-    :goto_0
-    or-int/2addr v0, v1
-
-    .line 23
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 24
-    .line 25
-    iput-wide p1, p0, LE4/E;->s:J
-
-    .line 26
-    .line 27
-    return-void
-.end method
-
-.method public final J(J)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-wide v1, p0, LE4/E;->P:J
-
-    .line 14
-    .line 15
-    cmp-long v1, v1, p1
-
-    .line 16
-    .line 17
-    if-eqz v1, :cond_0
-
-    .line 18
-    .line 19
-    const/4 v1, 0x1
-
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 22
-    :goto_0
-    or-int/2addr v0, v1
-
-    .line 23
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 24
-    .line 25
-    iput-wide p1, p0, LE4/E;->P:J
-
-    .line 26
-    .line 27
-    return-void
-.end method
-
-.method public final K(J)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-wide v1, p0, LE4/E;->m:J
-
-    .line 14
-    .line 15
-    cmp-long v1, v1, p1
-
-    .line 16
-    .line 17
-    if-eqz v1, :cond_0
-
-    .line 18
-    .line 19
-    const/4 v1, 0x1
-
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 22
-    :goto_0
-    or-int/2addr v0, v1
-
-    .line 23
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 24
-    .line 25
-    iput-wide p1, p0, LE4/E;->m:J
-
-    .line 26
-    .line 27
-    return-void
-.end method
-
-.method public final L()J
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-wide v0, p0, LE4/E;->s:J
-
-    .line 12
-    .line 13
-    return-wide v0
-.end method
-
-.method public final M(J)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-wide v1, p0, LE4/E;->E:J
-
-    .line 14
-    .line 15
-    cmp-long v1, v1, p1
-
-    .line 16
-    .line 17
-    if-eqz v1, :cond_0
-
-    .line 18
-    .line 19
-    const/4 v1, 0x1
-
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 22
-    :goto_0
-    or-int/2addr v0, v1
-
-    .line 23
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 24
-    .line 25
-    iput-wide p1, p0, LE4/E;->E:J
-
-    .line 26
-    .line 27
-    return-void
-.end method
-
-.method public final N(J)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-wide v1, p0, LE4/E;->i:J
-
-    .line 14
-    .line 15
-    cmp-long v1, v1, p1
-
-    .line 16
-    .line 17
-    if-eqz v1, :cond_0
-
-    .line 18
-    .line 19
-    const/4 v1, 0x1
-
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 22
-    :goto_0
-    or-int/2addr v0, v1
-
-    .line 23
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 24
-    .line 25
-    iput-wide p1, p0, LE4/E;->i:J
-
-    .line 26
-    .line 27
-    return-void
-.end method
-
-.method public final O(J)V
-    .locals 5
-
-    .line 1
-    const-wide/16 v0, 0x0
-
-    .line 2
-    .line 3
-    cmp-long v0, p1, v0
-
-    .line 4
-    .line 5
-    const/4 v1, 0x0
-
-    .line 6
-    const/4 v2, 0x1
-
-    .line 7
-    if-ltz v0, :cond_0
-
-    .line 8
-    .line 9
-    move v0, v2
-
-    .line 10
-    goto :goto_0
-
-    .line 11
-    :cond_0
-    move v0, v1
-
-    .line 12
-    :goto_0
-    invoke-static {v0}, Ln4/D;->b(Z)V
-
-    .line 13
-    .line 14
-    .line 15
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 16
-    .line 17
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 18
-    .line 19
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 20
-    .line 21
-    .line 22
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 23
-    .line 24
-    .line 25
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 26
-    .line 27
-    iget-wide v3, p0, LE4/E;->g:J
-
-    .line 28
-    .line 29
-    cmp-long v3, v3, p1
-
-    .line 30
-    .line 31
-    if-eqz v3, :cond_1
-
-    .line 32
-    .line 33
-    move v1, v2
-
-    .line 34
     :cond_1
-    or-int/2addr v0, v1
-
-    .line 35
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 36
-    .line 37
-    iput-wide p1, p0, LE4/E;->g:J
-
-    .line 38
-    .line 39
-    return-void
-.end method
-
-.method public final P(J)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-wide v1, p0, LE4/E;->h:J
-
-    .line 14
-    .line 15
-    cmp-long v1, v1, p1
-
-    .line 16
-    .line 17
-    if-eqz v1, :cond_0
-
-    .line 18
-    .line 19
-    const/4 v1, 0x1
-
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 22
     :goto_0
-    or-int/2addr v0, v1
+    const/4 v0, 0x1
 
-    .line 23
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 24
-    .line 25
-    iput-wide p1, p0, LE4/E;->h:J
-
-    .line 26
-    .line 27
-    return-void
-.end method
-
-.method public final Q(J)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-wide v1, p0, LE4/E;->x:J
-
-    .line 14
-    .line 15
-    cmp-long v1, v1, p1
-
-    .line 16
-    .line 17
-    if-eqz v1, :cond_0
-
-    .line 18
     .line 19
-    const/4 v1, 0x1
-
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 22
-    :goto_0
-    or-int/2addr v0, v1
-
-    .line 23
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 24
-    .line 25
-    iput-wide p1, p0, LE4/E;->x:J
-
-    .line 26
-    .line 27
-    return-void
+    return v0
 .end method
 
-.method public final R(J)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-wide v1, p0, LE4/E;->w:J
-
-    .line 14
-    .line 15
-    cmp-long v1, v1, p1
-
-    .line 16
-    .line 17
-    if-eqz v1, :cond_0
-
-    .line 18
-    .line 19
-    const/4 v1, 0x1
-
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 22
-    :goto_0
-    or-int/2addr v0, v1
-
-    .line 23
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 24
-    .line 25
-    iput-wide p1, p0, LE4/E;->w:J
-
-    .line 26
-    .line 27
-    return-void
-.end method
-
-.method public final S()Ljava/lang/Boolean;
+.method public final B()Z
     .locals 1
 
     .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
+    iget-object v0, p0, LE4/e;->b:Ljava/lang/Boolean;
 
     .line 2
     .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
+    if-nez v0, :cond_0
 
     .line 4
     .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
+    const-string v0, "app_measurement_lite"
 
     .line 6
     .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
+    invoke-virtual {p0, v0}, LE4/e;->w(Ljava/lang/String;)Ljava/lang/Boolean;
 
+    .line 8
     .line 9
     .line 10
+    move-result-object v0
+
     .line 11
-    iget-object v0, p0, LE4/E;->r:Ljava/lang/Boolean;
+    iput-object v0, p0, LE4/e;->b:Ljava/lang/Boolean;
 
     .line 12
     .line 13
-    return-object v0
-.end method
-
-.method public final T()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-object v0, p0, LE4/E;->q:Ljava/lang/String;
-
-    .line 12
-    .line 13
-    return-object v0
-.end method
-
-.method public final U()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-object v0, p0, LE4/E;->M:Ljava/lang/String;
-
-    .line 12
-    .line 13
-    const/4 v1, 0x0
+    if-nez v0, :cond_0
 
     .line 14
-    invoke-virtual {p0, v1}, LE4/E;->C(Ljava/lang/String;)V
-
     .line 15
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
     .line 16
     .line 17
-    return-object v0
-.end method
-
-.method public final a(J)V
-    .locals 9
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v1, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v1}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v1}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-wide v1, p0, LE4/E;->g:J
-
-    .line 12
-    .line 13
-    add-long/2addr v1, p1
-
-    .line 14
-    const-wide/32 v3, 0x7fffffff
-
-    .line 15
-    .line 16
-    .line 17
-    cmp-long v5, v1, v3
+    iput-object v0, p0, LE4/e;->b:Ljava/lang/Boolean;
 
     .line 18
     .line 19
-    iget-object v0, v0, LE4/m0;->i:LE4/P;
+    :cond_0
+    iget-object v0, p0, LE4/e;->b:Ljava/lang/Boolean;
 
     .line 20
     .line 21
-    const-wide/16 v6, 0x1
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 22
     .line 23
-    iget-object v8, p0, LE4/E;->b:Ljava/lang/String;
-
     .line 24
+    move-result v0
+
     .line 25
-    if-lez v5, :cond_0
+    if-nez v0, :cond_2
 
     .line 26
     .line 27
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
+    iget-object v0, p0, LE4/u0;->a:Ljava/lang/Object;
 
     .line 28
     .line 29
+    check-cast v0, LE4/m0;
+
     .line 30
-    invoke-static {v8}, LE4/P;->q(Ljava/lang/String;)LE4/Q;
+    .line 31
+    iget-boolean v0, v0, LE4/m0;->e:Z
+
+    .line 32
+    .line 33
+    if-nez v0, :cond_1
+
+    .line 34
+    .line 35
+    goto :goto_0
+
+    .line 36
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 37
+    return v0
+
+    .line 38
+    :cond_2
+    :goto_0
+    const/4 v0, 0x1
+
+    .line 39
+    return v0
+.end method
+
+.method public final C()Landroid/os/Bundle;
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, LE4/u0;->a:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    check-cast v0, LE4/m0;
+
+    .line 4
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    :try_start_0
+    iget-object v2, v0, LE4/m0;->a:Landroid/content/Context;
+
+    .line 7
+    .line 8
+    invoke-virtual {v2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v2
+
+    .line 12
+    if-nez v2, :cond_0
+
+    .line 13
+    .line 14
+    invoke-virtual {p0}, LE4/u0;->g()LE4/P;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    iget-object v0, v0, LE4/P;->f:LE4/S;
+
+    .line 19
+    .line 20
+    const-string v2, "Failed to load metadata: PackageManager is null"
+
+    .line 21
+    .line 22
+    invoke-virtual {v0, v2}, LE4/S;->d(Ljava/lang/String;)V
+
+    .line 23
+    .line 24
+    .line 25
+    return-object v1
+
+    .line 26
+    :catch_0
+    move-exception v0
+
+    .line 27
+    goto :goto_0
+
+    .line 28
+    :cond_0
+    iget-object v2, v0, LE4/m0;->a:Landroid/content/Context;
+
+    .line 29
+    .line 30
+    invoke-static {v2}, Lt4/b;->a(Landroid/content/Context;)LT3/j;
 
     .line 31
     .line 32
     .line 33
-    move-result-object v1
+    move-result-object v2
 
     .line 34
-    iget-object v2, v0, LE4/P;->i:LE4/S;
+    iget-object v0, v0, LE4/m0;->a:Landroid/content/Context;
 
     .line 35
     .line 36
-    const-string v5, "Bundle index overflow. appId"
+    invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     .line 37
     .line 38
-    invoke-virtual {v2, v1, v5}, LE4/S;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 39
+    move-result-object v0
+
     .line 40
+    const/16 v3, 0x80
+
     .line 41
-    sub-long v1, p1, v6
-
     .line 42
-    .line 43
-    :cond_0
-    iget-wide p1, p0, LE4/E;->E:J
+    invoke-virtual {v2, v3, v0}, LT3/j;->b(ILjava/lang/String;)Landroid/content/pm/ApplicationInfo;
 
+    .line 43
     .line 44
     .line 45
-    add-long/2addr p1, v6
+    move-result-object v0
 
     .line 46
-    cmp-long v3, p1, v3
+    if-nez v0, :cond_1
 
     .line 47
     .line 48
-    if-lez v3, :cond_1
+    invoke-virtual {p0}, LE4/u0;->g()LE4/P;
 
     .line 49
     .line 50
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
+    .line 51
+    move-result-object v0
+
+    .line 52
+    iget-object v0, v0, LE4/P;->f:LE4/S;
+
+    .line 53
+    .line 54
+    const-string v2, "Failed to load metadata: ApplicationInfo is null"
+
+    .line 55
+    .line 56
+    invoke-virtual {v0, v2}, LE4/S;->d(Ljava/lang/String;)V
+
+    .line 57
+    .line 58
+    .line 59
+    return-object v1
+
+    .line 60
+    :cond_1
+    iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
+    :try_end_0
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 61
+    .line 62
+    return-object v0
+
+    .line 63
+    :goto_0
+    invoke-virtual {p0}, LE4/u0;->g()LE4/P;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object v2
+
+    .line 67
+    const-string v3, "Failed to load metadata: Package name not found"
+
+    .line 68
+    .line 69
+    iget-object v2, v2, LE4/P;->f:LE4/S;
+
+    .line 70
+    .line 71
+    invoke-virtual {v2, v0, v3}, LE4/S;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 72
+    .line 73
+    .line 74
+    return-object v1
+.end method
+
+.method public final n(Ljava/lang/String;LE4/G;)D
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    if-nez p1, :cond_0
+
+    .line 3
+    .line 4
+    invoke-virtual {p2, v0}, LE4/G;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    check-cast p1, Ljava/lang/Double;
+
+    .line 9
+    .line 10
+    invoke-virtual {p1}, Ljava/lang/Double;->doubleValue()D
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-wide p1
+
+    .line 14
+    return-wide p1
+
+    .line 15
+    :cond_0
+    iget-object v1, p0, LE4/e;->d:LE4/g;
+
+    .line 16
+    .line 17
+    iget-object v2, p2, LE4/G;->a:Ljava/lang/String;
+
+    .line 18
+    .line 19
+    invoke-interface {v1, p1, v2}, LE4/g;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p1
+
+    .line 23
+    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v1
+
+    .line 27
+    if-eqz v1, :cond_1
+
+    .line 28
+    .line 29
+    invoke-virtual {p2, v0}, LE4/G;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object p1
+
+    .line 33
+    check-cast p1, Ljava/lang/Double;
+
+    .line 34
+    .line 35
+    invoke-virtual {p1}, Ljava/lang/Double;->doubleValue()D
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-wide p1
+
+    .line 39
+    return-wide p1
+
+    .line 40
+    :cond_1
+    :try_start_0
+    invoke-static {p1}, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-wide v1
+
+    .line 44
+    invoke-static {v1, v2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object p1
+
+    .line 48
+    invoke-virtual {p2, p1}, LE4/G;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object p1
+
+    .line 52
+    check-cast p1, Ljava/lang/Double;
+
+    .line 53
+    .line 54
+    invoke-virtual {p1}, Ljava/lang/Double;->doubleValue()D
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-wide p1
+    :try_end_0
+    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 58
+    return-wide p1
+
+    .line 59
+    :catch_0
+    invoke-virtual {p2, v0}, LE4/G;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 60
+    .line 61
+    .line 62
+    move-result-object p1
+
+    .line 63
+    check-cast p1, Ljava/lang/Double;
+
+    .line 64
+    .line 65
+    invoke-virtual {p1}, Ljava/lang/Double;->doubleValue()D
+
+    .line 66
+    .line 67
+    .line 68
+    move-result-wide p1
+
+    .line 69
+    return-wide p1
+.end method
+
+.method public final o(Ljava/lang/String;Z)I
+    .locals 3
+
+    .line 1
+    sget-object v0, Lcom/google/android/gms/internal/measurement/Q3;->r:Lcom/google/android/gms/internal/measurement/Q3;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/measurement/Q3;->get()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, LE4/u0;->a:Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    check-cast v0, LE4/m0;
+
+    .line 9
+    .line 10
+    iget-object v0, v0, LE4/m0;->g:LE4/e;
+
+    .line 11
+    .line 12
+    sget-object v1, LE4/y;->T0:LE4/G;
+
+    .line 13
+    .line 14
+    const/4 v2, 0x0
+
+    .line 15
+    invoke-virtual {v0, v2, v1}, LE4/e;->x(Ljava/lang/String;LE4/G;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v0
+
+    .line 19
+    const/16 v1, 0x64
+
+    .line 20
+    .line 21
+    if-eqz v0, :cond_1
+
+    .line 22
+    .line 23
+    const/16 v0, 0x1f4
+
+    .line 24
+    .line 25
+    if-eqz p2, :cond_0
+
+    .line 26
+    .line 27
+    sget-object p2, LE4/y;->S:LE4/G;
+
+    .line 28
+    .line 29
+    invoke-virtual {p0, p1, p2}, LE4/e;->r(Ljava/lang/String;LE4/G;)I
+
+    .line 30
+    .line 31
+    .line 32
+    move-result p1
+
+    .line 33
+    invoke-static {p1, v0}, Ljava/lang/Math;->min(II)I
+
+    .line 34
+    .line 35
+    .line 36
+    move-result p1
+
+    .line 37
+    invoke-static {p1, v1}, Ljava/lang/Math;->max(II)I
+
+    .line 38
+    .line 39
+    .line 40
+    move-result p1
+
+    .line 41
+    return p1
+
+    .line 42
+    :cond_0
+    return v0
+
+    .line 43
+    :cond_1
+    return v1
+.end method
+
+.method public final p(Ljava/lang/String;)Ljava/lang/String;
+    .locals 8
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    const/4 v1, 0x0
+
+    .line 3
+    const/4 v2, 0x2
+
+    .line 4
+    const-string v3, ""
+
+    .line 5
+    .line 6
+    :try_start_0
+    const-string v4, "android.os.SystemProperties"
+
+    .line 7
+    .line 8
+    invoke-static {v4}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v4
+
+    .line 12
+    const-string v5, "get"
+
+    .line 13
+    .line 14
+    new-array v6, v2, [Ljava/lang/Class;
+
+    .line 15
+    .line 16
+    const-class v7, Ljava/lang/String;
+
+    .line 17
+    .line 18
+    aput-object v7, v6, v1
+
+    .line 19
+    .line 20
+    aput-object v7, v6, v0
+
+    .line 21
+    .line 22
+    invoke-virtual {v4, v5, v6}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v4
+
+    .line 26
+    new-array v2, v2, [Ljava/lang/Object;
+
+    .line 27
+    .line 28
+    aput-object p1, v2, v1
+
+    .line 29
+    .line 30
+    aput-object v3, v2, v0
+
+    .line 31
+    .line 32
+    const/4 p1, 0x0
+
+    .line 33
+    invoke-virtual {v4, p1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object p1
+
+    .line 37
+    check-cast p1, Ljava/lang/String;
+
+    .line 38
+    .line 39
+    invoke-static {p1}, Ln4/D;->i(Ljava/lang/Object;)V
+    :try_end_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_3
+    .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 40
+    .line 41
+    .line 42
+    return-object p1
+
+    .line 43
+    :catch_0
+    move-exception p1
+
+    .line 44
+    goto :goto_0
+
+    .line 45
+    :catch_1
+    move-exception p1
+
+    .line 46
+    goto :goto_1
+
+    .line 47
+    :catch_2
+    move-exception p1
+
+    .line 48
+    goto :goto_2
+
+    .line 49
+    :catch_3
+    move-exception p1
+
+    .line 50
+    goto :goto_3
+
+    .line 51
+    :goto_0
+    invoke-virtual {p0}, LE4/u0;->g()LE4/P;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object v0
+
+    .line 55
+    const-string v1, "SystemProperties.get() threw an exception"
+
+    .line 56
+    .line 57
+    iget-object v0, v0, LE4/P;->f:LE4/S;
+
+    .line 58
+    .line 59
+    invoke-virtual {v0, p1, v1}, LE4/S;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 60
+    .line 61
+    .line 62
+    goto :goto_4
+
+    .line 63
+    :goto_1
+    invoke-virtual {p0}, LE4/u0;->g()LE4/P;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object v0
+
+    .line 67
+    const-string v1, "Could not access SystemProperties.get()"
+
+    .line 68
+    .line 69
+    iget-object v0, v0, LE4/P;->f:LE4/S;
+
+    .line 70
+    .line 71
+    invoke-virtual {v0, p1, v1}, LE4/S;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 72
+    .line 73
+    .line 74
+    goto :goto_4
+
+    .line 75
+    :goto_2
+    invoke-virtual {p0}, LE4/u0;->g()LE4/P;
+
+    .line 76
+    .line 77
+    .line 78
+    move-result-object v0
+
+    .line 79
+    const-string v1, "Could not find SystemProperties.get() method"
+
+    .line 80
+    .line 81
+    iget-object v0, v0, LE4/P;->f:LE4/S;
+
+    .line 82
+    .line 83
+    invoke-virtual {v0, p1, v1}, LE4/S;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 84
+    .line 85
+    .line 86
+    goto :goto_4
+
+    .line 87
+    :goto_3
+    invoke-virtual {p0}, LE4/u0;->g()LE4/P;
+
+    .line 88
+    .line 89
+    .line 90
+    move-result-object v0
+
+    .line 91
+    const-string v1, "Could not find SystemProperties class"
+
+    .line 92
+    .line 93
+    iget-object v0, v0, LE4/P;->f:LE4/S;
+
+    .line 94
+    .line 95
+    invoke-virtual {v0, p1, v1}, LE4/S;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 96
+    .line 97
+    .line 98
+    :goto_4
+    return-object v3
+.end method
+
+.method public final q(LE4/G;)Z
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-virtual {p0, v0, p1}, LE4/e;->x(Ljava/lang/String;LE4/G;)Z
+
+    .line 3
+    .line 4
+    .line 5
+    move-result p1
+
+    .line 6
+    return p1
+.end method
+
+.method public final r(Ljava/lang/String;LE4/G;)I
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    if-nez p1, :cond_0
+
+    .line 3
+    .line 4
+    invoke-virtual {p2, v0}, LE4/G;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    check-cast p1, Ljava/lang/Integer;
+
+    .line 9
+    .line 10
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
+    return p1
+
+    .line 15
+    :cond_0
+    iget-object v1, p0, LE4/e;->d:LE4/g;
+
+    .line 16
+    .line 17
+    iget-object v2, p2, LE4/G;->a:Ljava/lang/String;
+
+    .line 18
+    .line 19
+    invoke-interface {v1, p1, v2}, LE4/g;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p1
+
+    .line 23
+    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v1
+
+    .line 27
+    if-eqz v1, :cond_1
+
+    .line 28
+    .line 29
+    invoke-virtual {p2, v0}, LE4/G;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object p1
+
+    .line 33
+    check-cast p1, Ljava/lang/Integer;
+
+    .line 34
+    .line 35
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    .line 36
+    .line 37
+    .line 38
+    move-result p1
+
+    .line 39
+    return p1
+
+    .line 40
+    :cond_1
+    :try_start_0
+    invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    .line 41
+    .line 42
+    .line 43
+    move-result p1
+
+    .line 44
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object p1
+
+    .line 48
+    invoke-virtual {p2, p1}, LE4/G;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object p1
+
+    .line 52
+    check-cast p1, Ljava/lang/Integer;
+
+    .line 53
+    .line 54
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    .line 55
+    .line 56
+    .line 57
+    move-result p1
+    :try_end_0
+    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 58
+    return p1
+
+    .line 59
+    :catch_0
+    invoke-virtual {p2, v0}, LE4/G;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 60
+    .line 61
+    .line 62
+    move-result-object p1
+
+    .line 63
+    check-cast p1, Ljava/lang/Integer;
+
+    .line 64
+    .line 65
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    .line 66
+    .line 67
+    .line 68
+    move-result p1
+
+    .line 69
+    return p1
+.end method
+
+.method public final s(Ljava/lang/String;LE4/G;)J
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    if-nez p1, :cond_0
+
+    .line 3
+    .line 4
+    invoke-virtual {p2, v0}, LE4/G;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    check-cast p1, Ljava/lang/Long;
+
+    .line 9
+    .line 10
+    invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-wide p1
+
+    .line 14
+    return-wide p1
+
+    .line 15
+    :cond_0
+    iget-object v1, p0, LE4/e;->d:LE4/g;
+
+    .line 16
+    .line 17
+    iget-object v2, p2, LE4/G;->a:Ljava/lang/String;
+
+    .line 18
+    .line 19
+    invoke-interface {v1, p1, v2}, LE4/g;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p1
+
+    .line 23
+    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v1
+
+    .line 27
+    if-eqz v1, :cond_1
+
+    .line 28
+    .line 29
+    invoke-virtual {p2, v0}, LE4/G;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object p1
+
+    .line 33
+    check-cast p1, Ljava/lang/Long;
+
+    .line 34
+    .line 35
+    invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-wide p1
+
+    .line 39
+    return-wide p1
+
+    .line 40
+    :cond_1
+    :try_start_0
+    invoke-static {p1}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-wide v1
+
+    .line 44
+    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object p1
+
+    .line 48
+    invoke-virtual {p2, p1}, LE4/G;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object p1
+
+    .line 52
+    check-cast p1, Ljava/lang/Long;
+
+    .line 53
+    .line 54
+    invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-wide p1
+    :try_end_0
+    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 58
+    return-wide p1
+
+    .line 59
+    :catch_0
+    invoke-virtual {p2, v0}, LE4/G;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 60
+    .line 61
+    .line 62
+    move-result-object p1
+
+    .line 63
+    check-cast p1, Ljava/lang/Long;
+
+    .line 64
+    .line 65
+    invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
+
+    .line 66
+    .line 67
+    .line 68
+    move-result-wide p1
+
+    .line 69
+    return-wide p1
+.end method
+
+.method public final t(Ljava/lang/String;LE4/G;)Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    if-nez p1, :cond_0
+
+    .line 2
+    .line 3
+    const/4 p1, 0x0
+
+    .line 4
+    invoke-virtual {p2, p1}, LE4/G;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    check-cast p1, Ljava/lang/String;
+
+    .line 9
+    .line 10
+    return-object p1
+
+    .line 11
+    :cond_0
+    iget-object v0, p0, LE4/e;->d:LE4/g;
+
+    .line 12
+    .line 13
+    iget-object v1, p2, LE4/G;->a:Ljava/lang/String;
+
+    .line 14
+    .line 15
+    invoke-interface {v0, p1, v1}, LE4/g;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p1
+
+    .line 19
+    invoke-virtual {p2, p1}, LE4/G;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p1
+
+    .line 23
+    check-cast p1, Ljava/lang/String;
+
+    .line 24
+    .line 25
+    return-object p1
+.end method
+
+.method public final u(Ljava/lang/String;)LE4/w0;
+    .locals 3
+
+    .line 1
+    invoke-static {p1}, Ln4/D;->e(Ljava/lang/String;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, LE4/e;->C()Landroid/os/Bundle;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    if-nez v0, :cond_0
+
+    .line 9
+    .line 10
+    invoke-virtual {p0}, LE4/u0;->g()LE4/P;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    const-string v1, "Failed to load metadata: Metadata bundle is null"
+
+    .line 15
+    .line 16
+    iget-object v0, v0, LE4/P;->f:LE4/S;
+
+    .line 17
+    .line 18
+    invoke-virtual {v0, v1}, LE4/S;->d(Ljava/lang/String;)V
+
+    .line 19
+    .line 20
+    .line 21
+    const/4 v0, 0x0
+
+    .line 22
+    goto :goto_0
+
+    .line 23
+    :cond_0
+    invoke-virtual {v0, p1}, Landroid/os/BaseBundle;->get(Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v0
+
+    .line 27
+    :goto_0
+    sget-object v1, LE4/w0;->q:LE4/w0;
+
+    .line 28
+    .line 29
+    if-nez v0, :cond_1
+
+    .line 30
+    .line 31
+    return-object v1
+
+    .line 32
+    :cond_1
+    sget-object v2, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 33
+    .line 34
+    invoke-virtual {v2, v0}, Ljava/lang/Boolean;->equals(Ljava/lang/Object;)Z
+
+    .line 35
+    .line 36
+    .line 37
+    move-result v2
+
+    .line 38
+    if-eqz v2, :cond_2
+
+    .line 39
+    .line 40
+    sget-object p1, LE4/w0;->t:LE4/w0;
+
+    .line 41
+    .line 42
+    return-object p1
+
+    .line 43
+    :cond_2
+    sget-object v2, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    .line 44
+    .line 45
+    invoke-virtual {v2, v0}, Ljava/lang/Boolean;->equals(Ljava/lang/Object;)Z
+
+    .line 46
+    .line 47
+    .line 48
+    move-result v2
+
+    .line 49
+    if-eqz v2, :cond_3
+
+    .line 50
+    .line 51
+    sget-object p1, LE4/w0;->s:LE4/w0;
+
+    .line 52
+    .line 53
+    return-object p1
+
+    .line 54
+    :cond_3
+    const-string v2, "default"
+
+    .line 55
+    .line 56
+    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 57
+    .line 58
+    .line 59
+    move-result v0
+
+    .line 60
+    if-eqz v0, :cond_4
+
+    .line 61
+    .line 62
+    sget-object p1, LE4/w0;->r:LE4/w0;
+
+    .line 63
+    .line 64
+    return-object p1
+
+    .line 65
+    :cond_4
+    invoke-virtual {p0}, LE4/u0;->g()LE4/P;
+
+    .line 66
+    .line 67
+    .line 68
+    move-result-object v0
+
+    .line 69
+    const-string v2, "Invalid manifest metadata for"
+
+    .line 70
+    .line 71
+    iget-object v0, v0, LE4/P;->i:LE4/S;
+
+    .line 72
+    .line 73
+    invoke-virtual {v0, p1, v2}, LE4/S;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 74
+    .line 75
+    .line 76
+    return-object v1
+.end method
+
+.method public final v(Ljava/lang/String;LE4/G;)Z
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, LE4/e;->x(Ljava/lang/String;LE4/G;)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p1
+
+    .line 5
+    return p1
+.end method
+
+.method public final w(Ljava/lang/String;)Ljava/lang/Boolean;
+    .locals 3
+
+    .line 1
+    invoke-static {p1}, Ln4/D;->e(Ljava/lang/String;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, LE4/e;->C()Landroid/os/Bundle;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    const/4 v1, 0x0
+
+    .line 9
+    if-nez v0, :cond_0
+
+    .line 10
+    .line 11
+    invoke-virtual {p0}, LE4/u0;->g()LE4/P;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    const-string v0, "Failed to load metadata: Metadata bundle is null"
+
+    .line 16
+    .line 17
+    iget-object p1, p1, LE4/P;->f:LE4/S;
+
+    .line 18
+    .line 19
+    invoke-virtual {p1, v0}, LE4/S;->d(Ljava/lang/String;)V
+
+    .line 20
+    .line 21
+    .line 22
+    return-object v1
+
+    .line 23
+    :cond_0
+    invoke-virtual {v0, p1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v2
+
+    .line 27
+    if-nez v2, :cond_1
+
+    .line 28
+    .line 29
+    return-object v1
+
+    .line 30
+    :cond_1
+    invoke-virtual {v0, p1}, Landroid/os/BaseBundle;->getBoolean(Ljava/lang/String;)Z
+
+    .line 31
+    .line 32
+    .line 33
+    move-result p1
+
+    .line 34
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object p1
+
+    .line 38
+    return-object p1
+.end method
+
+.method public final x(Ljava/lang/String;LE4/G;)Z
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    if-nez p1, :cond_0
+
+    .line 3
+    .line 4
+    invoke-virtual {p2, v0}, LE4/G;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    check-cast p1, Ljava/lang/Boolean;
+
+    .line 9
+    .line 10
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
+    return p1
+
+    .line 15
+    :cond_0
+    iget-object v1, p0, LE4/e;->d:LE4/g;
+
+    .line 16
+    .line 17
+    iget-object v2, p2, LE4/G;->a:Ljava/lang/String;
+
+    .line 18
+    .line 19
+    invoke-interface {v1, p1, v2}, LE4/g;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p1
+
+    .line 23
+    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v1
+
+    .line 27
+    if-eqz v1, :cond_1
+
+    .line 28
+    .line 29
+    invoke-virtual {p2, v0}, LE4/G;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object p1
+
+    .line 33
+    check-cast p1, Ljava/lang/Boolean;
+
+    .line 34
+    .line 35
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 36
+    .line 37
+    .line 38
+    move-result p1
+
+    .line 39
+    return p1
+
+    .line 40
+    :cond_1
+    const-string v0, "1"
+
+    .line 41
+    .line 42
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 43
+    .line 44
+    .line 45
+    move-result p1
+
+    .line 46
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object p1
+
+    .line 50
+    invoke-virtual {p2, p1}, LE4/G;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 51
     .line 52
     .line 53
-    invoke-static {v8}, LE4/P;->q(Ljava/lang/String;)LE4/Q;
-
-    .line 54
-    .line 55
-    .line 56
     move-result-object p1
 
-    .line 57
-    iget-object p2, v0, LE4/P;->i:LE4/S;
+    .line 54
+    check-cast p1, Ljava/lang/Boolean;
 
+    .line 55
+    .line 56
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 57
     .line 58
     .line 59
-    const-string v0, "Delivery index overflow. appId"
+    move-result p1
 
     .line 60
-    .line 61
-    invoke-virtual {p2, p1, v0}, LE4/S;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 62
-    .line 63
-    .line 64
-    const-wide/16 p1, 0x0
-
-    .line 65
-    .line 66
-    :cond_1
-    const/4 v0, 0x1
-
-    .line 67
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 68
-    .line 69
-    iput-wide v1, p0, LE4/E;->g:J
-
-    .line 70
-    .line 71
-    iput-wide p1, p0, LE4/E;->E:J
-
-    .line 72
-    .line 73
-    return-void
+    return p1
 .end method
 
-.method public final b(Ljava/lang/String;)V
+.method public final y(Ljava/lang/String;)Z
     .locals 2
 
     .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
+    iget-object v0, p0, LE4/e;->d:LE4/g;
 
     .line 2
     .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
+    const-string v1, "measurement.event_sampling_enabled"
 
     .line 4
     .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
+    invoke-interface {v0, p1, v1}, LE4/g;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 6
     .line 7
     .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
+    move-result-object p1
 
     .line 9
+    const-string v0, "1"
+
     .line 10
     .line 11
-    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 12
     .line 13
     .line 14
-    move-result v0
+    move-result p1
 
     .line 15
-    if-eqz v0, :cond_0
-
-    .line 16
-    .line 17
-    const/4 p1, 0x0
-
-    .line 18
-    :cond_0
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 19
-    .line 20
-    iget-object v1, p0, LE4/E;->q:Ljava/lang/String;
-
-    .line 21
-    .line 22
-    invoke-static {v1, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 23
-    .line 24
-    .line 25
-    move-result v1
-
-    .line 26
-    xor-int/lit8 v1, v1, 0x1
-
-    .line 27
-    .line 28
-    or-int/2addr v0, v1
-
-    .line 29
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 30
-    .line 31
-    iput-object p1, p0, LE4/E;->q:Ljava/lang/String;
-
-    .line 32
-    .line 33
-    return-void
-.end method
-
-.method public final c(Ljava/util/List;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-object v0, p0, LE4/E;->t:Ljava/util/ArrayList;
-
-    .line 12
-    .line 13
-    invoke-static {v0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 14
-    .line 15
-    .line 16
-    move-result v0
-
-    .line 17
-    if-nez v0, :cond_1
-
-    .line 18
-    .line 19
-    const/4 v0, 0x1
-
-    .line 20
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 21
-    .line 22
-    if-eqz p1, :cond_0
-
-    .line 23
-    .line 24
-    new-instance v0, Ljava/util/ArrayList;
-
-    .line 25
-    .line 26
-    invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
-
-    .line 27
-    .line 28
-    .line 29
-    goto :goto_0
-
-    .line 30
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 31
-    :goto_0
-    iput-object v0, p0, LE4/E;->t:Ljava/util/ArrayList;
-
-    .line 32
-    .line 33
-    :cond_1
-    return-void
-.end method
-
-.method public final d()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-object v0, p0, LE4/E;->b:Ljava/lang/String;
-
-    .line 12
-    .line 13
-    return-object v0
-.end method
-
-.method public final e()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-object v0, p0, LE4/E;->c:Ljava/lang/String;
-
-    .line 12
-    .line 13
-    return-object v0
-.end method
-
-.method public final f()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-object v0, p0, LE4/E;->j:Ljava/lang/String;
-
-    .line 12
-    .line 13
-    return-object v0
-.end method
-
-.method public final g()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-object v0, p0, LE4/E;->f:Ljava/lang/String;
-
-    .line 12
-    .line 13
-    return-object v0
-.end method
-
-.method public final h()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-object v0, p0, LE4/E;->d:Ljava/lang/String;
-
-    .line 12
-    .line 13
-    return-object v0
-.end method
-
-.method public final i()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-object v0, p0, LE4/E;->F:Ljava/lang/String;
-
-    .line 12
-    .line 13
-    return-object v0
-.end method
-
-.method public final j()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-object v0, p0, LE4/E;->B:Ljava/lang/String;
-
-    .line 12
-    .line 13
-    return-object v0
-.end method
-
-.method public final k()V
-    .locals 5
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v1, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v1}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v1}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-wide v1, p0, LE4/E;->g:J
-
-    .line 12
-    .line 13
-    const-wide/16 v3, 0x1
-
-    .line 14
-    .line 15
-    add-long/2addr v1, v3
-
-    .line 16
-    const-wide/32 v3, 0x7fffffff
-
-    .line 17
-    .line 18
-    .line 19
-    cmp-long v3, v1, v3
-
-    .line 20
-    .line 21
-    if-lez v3, :cond_0
-
-    .line 22
-    .line 23
-    iget-object v0, v0, LE4/m0;->i:LE4/P;
-
-    .line 24
-    .line 25
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 26
-    .line 27
-    .line 28
-    iget-object v1, p0, LE4/E;->b:Ljava/lang/String;
-
-    .line 29
-    .line 30
-    invoke-static {v1}, LE4/P;->q(Ljava/lang/String;)LE4/Q;
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-object v1
-
-    .line 34
-    iget-object v0, v0, LE4/P;->i:LE4/S;
-
-    .line 35
-    .line 36
-    const-string v2, "Bundle index overflow. appId"
-
-    .line 37
-    .line 38
-    invoke-virtual {v0, v1, v2}, LE4/S;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 39
-    .line 40
-    .line 41
-    const-wide/16 v1, 0x0
-
-    .line 42
-    .line 43
-    :cond_0
-    const/4 v0, 0x1
-
-    .line 44
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 45
-    .line 46
-    iput-wide v1, p0, LE4/E;->g:J
-
-    .line 47
-    .line 48
-    return-void
-.end method
-
-.method public final l()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->p:Z
-
-    .line 12
-    .line 13
-    return v0
-.end method
-
-.method public final m()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->v:Z
-
-    .line 12
-    .line 13
-    return v0
-.end method
-
-.method public final n(I)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget v1, p0, LE4/E;->D:I
-
-    .line 14
-    .line 15
-    if-eq v1, p1, :cond_0
-
-    .line 16
-    .line 17
-    const/4 v1, 0x1
-
-    .line 18
-    goto :goto_0
-
-    .line 19
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 20
-    :goto_0
-    or-int/2addr v0, v1
-
-    .line 21
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 22
-    .line 23
-    iput p1, p0, LE4/E;->D:I
-
-    .line 24
-    .line 25
-    return-void
-.end method
-
-.method public final o(J)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-wide v1, p0, LE4/E;->k:J
-
-    .line 14
-    .line 15
-    cmp-long v1, v1, p1
-
-    .line 16
-    .line 17
-    if-eqz v1, :cond_0
-
-    .line 18
-    .line 19
-    const/4 v1, 0x1
-
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 22
-    :goto_0
-    or-int/2addr v0, v1
-
-    .line 23
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 24
-    .line 25
-    iput-wide p1, p0, LE4/E;->k:J
-
-    .line 26
-    .line 27
-    return-void
-.end method
-
-.method public final p(Ljava/lang/String;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-object v1, p0, LE4/E;->c:Ljava/lang/String;
-
-    .line 14
-    .line 15
-    invoke-static {v1, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 16
-    .line 17
-    .line 18
-    move-result v1
-
-    .line 19
-    xor-int/lit8 v1, v1, 0x1
-
-    .line 20
-    .line 21
-    or-int/2addr v0, v1
-
-    .line 22
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 23
-    .line 24
-    iput-object p1, p0, LE4/E;->c:Ljava/lang/String;
-
-    .line 25
-    .line 26
-    return-void
-.end method
-
-.method public final q(Z)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-boolean v1, p0, LE4/E;->o:Z
-
-    .line 14
-    .line 15
-    if-eq v1, p1, :cond_0
-
-    .line 16
-    .line 17
-    const/4 v1, 0x1
-
-    .line 18
-    goto :goto_0
-
-    .line 19
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 20
-    :goto_0
-    or-int/2addr v0, v1
-
-    .line 21
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 22
-    .line 23
-    iput-boolean p1, p0, LE4/E;->o:Z
-
-    .line 24
-    .line 25
-    return-void
-.end method
-
-.method public final r(I)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget v1, p0, LE4/E;->C:I
-
-    .line 14
-    .line 15
-    if-eq v1, p1, :cond_0
-
-    .line 16
-    .line 17
-    const/4 v1, 0x1
-
-    .line 18
-    goto :goto_0
-
-    .line 19
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 20
-    :goto_0
-    or-int/2addr v0, v1
-
-    .line 21
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 22
-    .line 23
-    iput p1, p0, LE4/E;->C:I
-
-    .line 24
-    .line 25
-    return-void
-.end method
-
-.method public final s(J)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-wide v1, p0, LE4/E;->A:J
-
-    .line 14
-    .line 15
-    cmp-long v1, v1, p1
-
-    .line 16
-    .line 17
-    if-eqz v1, :cond_0
-
-    .line 18
-    .line 19
-    const/4 v1, 0x1
-
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 22
-    :goto_0
-    or-int/2addr v0, v1
-
-    .line 23
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 24
-    .line 25
-    iput-wide p1, p0, LE4/E;->A:J
-
-    .line 26
-    .line 27
-    return-void
-.end method
-
-.method public final t(Ljava/lang/String;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-object v1, p0, LE4/E;->l:Ljava/lang/String;
-
-    .line 14
-    .line 15
-    invoke-static {v1, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 16
-    .line 17
-    .line 18
-    move-result v1
-
-    .line 19
-    xor-int/lit8 v1, v1, 0x1
-
-    .line 20
-    .line 21
-    or-int/2addr v0, v1
-
-    .line 22
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 23
-    .line 24
-    iput-object p1, p0, LE4/E;->l:Ljava/lang/String;
-
-    .line 25
-    .line 26
-    return-void
-.end method
-
-.method public final u(J)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-wide v1, p0, LE4/E;->O:J
-
-    .line 14
-    .line 15
-    cmp-long v1, v1, p1
-
-    .line 16
-    .line 17
-    if-eqz v1, :cond_0
-
-    .line 18
-    .line 19
-    const/4 v1, 0x1
-
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 22
-    :goto_0
-    or-int/2addr v0, v1
-
-    .line 23
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 24
-    .line 25
-    iput-wide p1, p0, LE4/E;->O:J
-
-    .line 26
-    .line 27
-    return-void
-.end method
-
-.method public final v(Ljava/lang/String;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-object v1, p0, LE4/E;->j:Ljava/lang/String;
-
-    .line 14
-    .line 15
-    invoke-static {v1, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 16
-    .line 17
-    .line 18
-    move-result v1
-
-    .line 19
-    xor-int/lit8 v1, v1, 0x1
-
-    .line 20
-    .line 21
-    or-int/2addr v0, v1
-
-    .line 22
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 23
-    .line 24
-    iput-object p1, p0, LE4/E;->j:Ljava/lang/String;
-
-    .line 25
-    .line 26
-    return-void
-.end method
-
-.method public final w()J
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-wide v0, p0, LE4/E;->k:J
-
-    .line 12
-    .line 13
-    return-wide v0
-.end method
-
-.method public final x(J)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-wide v1, p0, LE4/E;->J:J
-
-    .line 14
-    .line 15
-    cmp-long v1, v1, p1
-
-    .line 16
-    .line 17
-    if-eqz v1, :cond_0
-
-    .line 18
-    .line 19
-    const/4 v1, 0x1
-
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 22
-    :goto_0
-    or-int/2addr v0, v1
-
-    .line 23
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 24
-    .line 25
-    iput-wide p1, p0, LE4/E;->J:J
-
-    .line 26
-    .line 27
-    return-void
-.end method
-
-.method public final y(Ljava/lang/String;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-object v1, p0, LE4/E;->f:Ljava/lang/String;
-
-    .line 14
-    .line 15
-    invoke-static {v1, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 16
-    .line 17
-    .line 18
-    move-result v1
-
-    .line 19
-    xor-int/lit8 v1, v1, 0x1
-
-    .line 20
-    .line 21
-    or-int/2addr v0, v1
-
-    .line 22
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 23
-    .line 24
-    iput-object p1, p0, LE4/E;->f:Ljava/lang/String;
-
-    .line 25
-    .line 26
-    return-void
-.end method
-
-.method public final z(J)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LE4/E;->a:LE4/m0;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LE4/m0;->j:LE4/h0;
-
-    .line 4
-    .line 5
-    invoke-static {v0}, LE4/m0;->e(LE4/t0;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LE4/h0;->m()V
-
-    .line 9
-    .line 10
-    .line 11
-    iget-boolean v0, p0, LE4/E;->N:Z
-
-    .line 12
-    .line 13
-    iget-wide v1, p0, LE4/E;->K:J
-
-    .line 14
-    .line 15
-    cmp-long v1, v1, p1
-
-    .line 16
-    .line 17
-    if-eqz v1, :cond_0
-
-    .line 18
-    .line 19
-    const/4 v1, 0x1
-
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 22
-    :goto_0
-    or-int/2addr v0, v1
-
-    .line 23
-    iput-boolean v0, p0, LE4/E;->N:Z
-
-    .line 24
-    .line 25
-    iput-wide p1, p0, LE4/E;->K:J
-
-    .line 26
-    .line 27
-    return-void
+    return p1
 .end method

@@ -1,18 +1,32 @@
-.class public final LD9/E;
+.class public final LD9/e;
 .super Li9/c;
 .source "SourceFile"
 
 
 # instance fields
-.field public q:Lp9/f;
+.field public synthetic q:Ljava/lang/Object;
 
-.field public r:Lq9/u;
+.field public final synthetic r:LD9/f;
 
-.field public s:LC2/c;
+.field public s:I
 
-.field public synthetic t:Ljava/lang/Object;
 
-.field public u:I
+# direct methods
+.method public constructor <init>(LD9/f;Lg9/e;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, LD9/e;->r:LD9/f;
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p2}, Li9/c;-><init>(Lg9/e;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
 
 
 # virtual methods
@@ -20,11 +34,11 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, LD9/E;->t:Ljava/lang/Object;
+    iput-object p1, p0, LD9/e;->q:Ljava/lang/Object;
 
     .line 2
     .line 3
-    iget p1, p0, LD9/E;->u:I
+    iget p1, p0, LD9/e;->s:I
 
     .line 4
     .line 5
@@ -35,20 +49,24 @@
     or-int/2addr p1, v0
 
     .line 8
-    iput p1, p0, LD9/E;->u:I
+    iput p1, p0, LD9/e;->s:I
 
     .line 9
     .line 10
-    const/4 p1, 0x0
+    iget-object p1, p0, LD9/e;->r:LD9/f;
 
     .line 11
-    invoke-static {p1, p1, p0}, LD9/Y;->l(LD9/h;Lp9/f;Li9/c;)Ljava/lang/Object;
-
     .line 12
+    const/4 v0, 0x0
+
     .line 13
+    invoke-virtual {p1, v0, p0}, LD9/f;->i(Ljava/lang/Object;Lg9/e;)Ljava/lang/Object;
+
     .line 14
+    .line 15
+    .line 16
     move-result-object p1
 
-    .line 15
+    .line 17
     return-object p1
 .end method

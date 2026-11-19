@@ -1,752 +1,642 @@
-.class public final LR/a1;
+.class public final Lr/a1;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lq/w;
 
-# static fields
-.field public static final a:LR/a1;
 
-.field public static final b:F
+# instance fields
+.field public q:Lq/k;
 
-.field public static final c:F
+.field public r:Lq/m;
 
-.field public static final d:F
-
-.field public static final e:F
+.field public final synthetic s:Landroidx/appcompat/widget/Toolbar;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Landroidx/appcompat/widget/Toolbar;)V
+    .locals 0
 
     .line 1
-    new-instance v0, LR/a1;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    iput-object p1, p0, Lr/a1;->s:Landroidx/appcompat/widget/Toolbar;
+
     .line 5
     .line 6
-    sput-object v0, LR/a1;->a:LR/a1;
-
-    .line 7
-    .line 8
-    const/16 v0, 0x38
-
-    .line 9
-    .line 10
-    int-to-float v0, v0
-
-    .line 11
-    sput v0, LR/a1;->b:F
-
-    .line 12
-    .line 13
-    const/16 v0, 0x118
-
-    .line 14
-    .line 15
-    int-to-float v0, v0
-
-    .line 16
-    sput v0, LR/a1;->c:F
-
-    .line 17
-    .line 18
-    const/4 v0, 0x1
-
-    .line 19
-    int-to-float v0, v0
-
-    .line 20
-    sput v0, LR/a1;->d:F
-
-    .line 21
-    .line 22
-    const/4 v0, 0x2
-
-    .line 23
-    int-to-float v0, v0
-
-    .line 24
-    sput v0, LR/a1;->e:F
-
-    .line 25
-    .line 26
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(IILE/j;LG/M;LR/d0;LT0/H;LY/o;Ljava/lang/String;Lp9/f;Lp9/f;Lp9/f;Lp9/f;Lp9/f;Lr0/H;ZZZ)V
-    .locals 35
-
-    move/from16 v15, p1
-
-    move/from16 v14, p2
-
-    move-object/from16 v0, p7
-
-    move-object/from16 v9, p10
-
-    const v1, -0x52f114f4
+.method public final b(Lq/k;Z)V
+    .locals 0
 
     .line 1
-    invoke-virtual {v0, v1}, LY/o;->U(I)LY/o;
+    return-void
+.end method
 
-    and-int/lit8 v1, v15, 0x6
+.method public final c(Lq/C;)Z
+    .locals 0
 
-    const/4 v2, 0x2
-
-    const/4 v3, 0x4
-
-    if-nez v1, :cond_1
-
-    invoke-virtual/range {p7 .. p8}, LY/o;->g(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    move v1, v3
-
-    goto :goto_0
-
-    :cond_0
-    move v1, v2
-
-    :goto_0
-    or-int/2addr v1, v15
-
-    goto :goto_1
-
-    :cond_1
-    move v1, v15
-
-    :goto_1
-    and-int/lit8 v4, v15, 0x30
-
-    const/16 v5, 0x10
-
-    const/16 v6, 0x20
-
-    if-nez v4, :cond_3
-
-    move-object/from16 v4, p9
-
-    invoke-virtual {v0, v4}, LY/o;->i(Ljava/lang/Object;)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_2
-
-    move v7, v6
-
-    goto :goto_2
-
-    :cond_2
-    move v7, v5
-
-    :goto_2
-    or-int/2addr v1, v7
-
-    goto :goto_3
-
-    :cond_3
-    move-object/from16 v4, p9
-
-    :goto_3
-    and-int/lit16 v7, v15, 0x180
-
-    if-nez v7, :cond_5
-
-    move/from16 v7, p15
-
-    invoke-virtual {v0, v7}, LY/o;->h(Z)Z
-
-    move-result v11
-
-    if-eqz v11, :cond_4
-
-    const/16 v11, 0x100
-
-    goto :goto_4
-
-    :cond_4
-    const/16 v11, 0x80
-
-    :goto_4
-    or-int/2addr v1, v11
-
-    goto :goto_5
-
-    :cond_5
-    move/from16 v7, p15
-
-    :goto_5
-    and-int/lit16 v11, v15, 0xc00
-
-    if-nez v11, :cond_7
-
-    move/from16 v11, p16
-
-    invoke-virtual {v0, v11}, LY/o;->h(Z)Z
-
-    move-result v12
-
-    if-eqz v12, :cond_6
-
-    const/16 v12, 0x800
-
-    goto :goto_6
-
-    :cond_6
-    const/16 v12, 0x400
-
-    :goto_6
-    or-int/2addr v1, v12
-
-    goto :goto_7
-
-    :cond_7
-    move/from16 v11, p16
-
-    :goto_7
-    and-int/lit16 v12, v15, 0x6000
-
-    const/16 v16, 0x2000
-
-    if-nez v12, :cond_9
-
-    move-object/from16 v12, p6
-
-    invoke-virtual {v0, v12}, LY/o;->g(Ljava/lang/Object;)Z
-
-    move-result v17
-
-    if-eqz v17, :cond_8
-
-    const/16 v17, 0x4000
-
-    goto :goto_8
-
-    :cond_8
-    move/from16 v17, v16
-
-    :goto_8
-    or-int v1, v1, v17
-
-    goto :goto_9
-
-    :cond_9
-    move-object/from16 v12, p6
-
-    :goto_9
-    const/high16 v17, 0x30000
-
-    and-int v18, v15, v17
-
-    move-object/from16 v8, p3
-
-    if-nez v18, :cond_b
-
-    invoke-virtual {v0, v8}, LY/o;->g(Ljava/lang/Object;)Z
-
-    move-result v19
-
-    if-eqz v19, :cond_a
-
-    const/high16 v19, 0x20000
-
-    goto :goto_a
-
-    :cond_a
-    const/high16 v19, 0x10000
-
-    :goto_a
-    or-int v1, v1, v19
-
-    :cond_b
-    const/high16 v19, 0x180000
-
-    and-int v19, v15, v19
-
-    move/from16 v10, p17
-
-    if-nez v19, :cond_d
-
-    invoke-virtual {v0, v10}, LY/o;->h(Z)Z
-
-    move-result v20
-
-    if-eqz v20, :cond_c
-
-    const/high16 v20, 0x100000
-
-    goto :goto_b
-
-    :cond_c
-    const/high16 v20, 0x80000
-
-    :goto_b
-    or-int v1, v1, v20
-
-    :cond_d
-    const/high16 v20, 0xc00000
-
-    and-int v20, v15, v20
-
-    if-nez v20, :cond_f
-
-    invoke-virtual {v0, v9}, LY/o;->i(Ljava/lang/Object;)Z
-
-    move-result v20
-
-    if-eqz v20, :cond_e
-
-    const/high16 v20, 0x800000
-
-    goto :goto_c
-
-    :cond_e
-    const/high16 v20, 0x400000
-
-    :goto_c
-    or-int v1, v1, v20
-
-    :cond_f
-    const/high16 v20, 0x6000000
-
-    and-int v20, v15, v20
-
-    move-object/from16 v13, p11
-
-    if-nez v20, :cond_11
-
-    invoke-virtual {v0, v13}, LY/o;->i(Ljava/lang/Object;)Z
-
-    move-result v21
-
-    if-eqz v21, :cond_10
-
-    const/high16 v21, 0x4000000
-
-    goto :goto_d
-
-    :cond_10
-    const/high16 v21, 0x2000000
-
-    :goto_d
-    or-int v1, v1, v21
-
-    :cond_11
-    const/high16 v21, 0x30000000
-
-    and-int v21, v15, v21
-
-    move-object/from16 v11, p12
-
-    if-nez v21, :cond_13
-
-    invoke-virtual {v0, v11}, LY/o;->i(Ljava/lang/Object;)Z
-
-    move-result v21
-
-    if-eqz v21, :cond_12
-
-    const/high16 v21, 0x20000000
-
-    goto :goto_e
-
-    :cond_12
-    const/high16 v21, 0x10000000
-
-    :goto_e
-    or-int v1, v1, v21
-
-    :cond_13
-    and-int/lit8 v21, v14, 0x6
-
-    move-object/from16 v12, p13
-
-    if-nez v21, :cond_15
-
-    invoke-virtual {v0, v12}, LY/o;->i(Ljava/lang/Object;)Z
-
-    move-result v21
-
-    if-eqz v21, :cond_14
-
-    move v2, v3
-
-    :cond_14
-    or-int/2addr v2, v14
-
-    goto :goto_f
-
-    :cond_15
-    move v2, v14
-
-    :goto_f
-    and-int/lit8 v3, v14, 0x30
-
-    if-nez v3, :cond_17
-
-    move-object/from16 v3, p14
-
-    invoke-virtual {v0, v3}, LY/o;->g(Ljava/lang/Object;)Z
-
-    move-result v21
-
-    if-eqz v21, :cond_16
-
-    move v5, v6
-
-    :cond_16
-    or-int/2addr v2, v5
-
-    goto :goto_10
-
-    :cond_17
-    move-object/from16 v3, p14
-
-    :goto_10
-    and-int/lit16 v5, v14, 0x180
-
-    move-object/from16 v6, p5
-
-    if-nez v5, :cond_19
-
-    invoke-virtual {v0, v6}, LY/o;->g(Ljava/lang/Object;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_18
-
-    const/16 v18, 0x100
-
-    goto :goto_11
-
-    :cond_18
-    const/16 v18, 0x80
-
-    :goto_11
-    or-int v2, v2, v18
-
-    :cond_19
-    and-int/lit16 v5, v14, 0xc00
-
-    if-nez v5, :cond_1a
-
-    or-int/lit16 v2, v2, 0x400
-
-    :cond_1a
-    and-int/lit16 v5, v14, 0x6000
-
-    if-nez v5, :cond_1c
-
-    move-object/from16 v5, p0
-
-    invoke-virtual {v0, v5}, LY/o;->g(Ljava/lang/Object;)Z
-
-    move-result v18
-
-    if-eqz v18, :cond_1b
-
-    const/16 v16, 0x4000
-
-    :cond_1b
-    or-int v2, v2, v16
-
-    goto :goto_12
-
-    :cond_1c
-    move-object/from16 v5, p0
-
-    :goto_12
-    const v16, 0x12492493
-
-    and-int v3, v1, v16
-
-    const v4, 0x12492492
-
-    if-ne v3, v4, :cond_1e
-
-    and-int/lit16 v3, v2, 0x2493
-
-    const/16 v4, 0x2492
-
-    if-eq v3, v4, :cond_1d
-
-    goto :goto_13
-
-    :cond_1d
-    const/4 v3, 0x0
-
-    goto :goto_14
-
-    :cond_1e
-    :goto_13
-    const/4 v3, 0x1
-
-    :goto_14
-    and-int/lit8 v4, v1, 0x1
-
-    invoke-virtual {v0, v4, v3}, LY/o;->K(IZ)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_22
-
-    invoke-virtual/range {p7 .. p7}, LY/o;->P()V
-
-    and-int/lit8 v3, v15, 0x1
-
-    if-eqz v3, :cond_20
-
-    invoke-virtual/range {p7 .. p7}, LY/o;->w()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_1f
-
-    goto :goto_15
+    .line 1
+    const/4 p1, 0x0
 
     .line 2
-    :cond_1f
-    invoke-virtual/range {p7 .. p7}, LY/o;->N()V
+    return p1
+.end method
 
-    and-int/lit16 v2, v2, -0x1c01
+.method public final e(Landroid/os/Parcelable;)V
+    .locals 0
 
-    move-object/from16 v4, p4
+    .line 1
+    return-void
+.end method
 
-    goto :goto_17
+.method public final g(Z)V
+    .locals 3
 
-    :cond_20
-    :goto_15
-    if-nez v9, :cond_21
+    .line 1
+    iget-object p1, p0, Lr/a1;->r:Lq/m;
 
+    .line 2
     .line 3
-    sget v3, LR/j1;->a:F
+    if-eqz p1, :cond_2
 
     .line 4
-    new-instance v4, LG/M;
-
-    invoke-direct {v4, v3, v3, v3, v3}, LG/M;-><init>(FFFF)V
-
-    goto :goto_16
-
     .line 5
-    :cond_21
-    sget v3, LR/j1;->a:F
+    iget-object p1, p0, Lr/a1;->q:Lq/k;
 
     .line 6
-    sget v4, LR/n1;->a:F
-
     .line 7
-    sget v0, LR/n1;->b:F
+    if-eqz p1, :cond_1
 
     .line 8
-    new-instance v5, LG/M;
-
-    invoke-direct {v5, v3, v4, v3, v0}, LG/M;-><init>(FFFF)V
-
-    move-object v4, v5
-
-    :goto_16
-    and-int/lit16 v2, v2, -0x1c01
-
     .line 9
-    :goto_17
-    invoke-virtual/range {p7 .. p7}, LY/o;->q()V
-
-    shl-int/lit8 v0, v1, 0x3
-
-    and-int/lit8 v3, v0, 0x70
-
-    or-int/lit8 v3, v3, 0x6
-
-    and-int/lit16 v0, v0, 0x380
-
-    or-int/2addr v0, v3
-
-    shr-int/lit8 v3, v1, 0x3
-
-    and-int/lit16 v3, v3, 0x1c00
-
-    or-int/2addr v0, v3
-
-    shr-int/lit8 v3, v1, 0x9
-
-    const v5, 0xe000
-
-    and-int v16, v3, v5
-
-    or-int v0, v0, v16
-
-    const/high16 v16, 0x70000
-
-    and-int v16, v3, v16
-
-    or-int v0, v0, v16
-
-    const/high16 v16, 0x380000
-
-    and-int v3, v3, v16
-
-    or-int/2addr v0, v3
-
-    shl-int/lit8 v3, v2, 0x15
-
-    const/high16 v16, 0x1c00000
-
-    and-int v3, v3, v16
-
-    or-int/2addr v0, v3
-
-    shl-int/lit8 v3, v1, 0xf
-
-    const/high16 v16, 0xe000000
-
-    and-int v3, v3, v16
-
-    or-int/2addr v0, v3
-
-    shl-int/lit8 v3, v1, 0x15
-
-    const/high16 v16, 0x70000000
-
-    and-int v3, v3, v16
-
-    or-int v16, v0, v3
-
-    shr-int/lit8 v0, v1, 0x12
-
-    and-int/lit8 v0, v0, 0xe
-
-    or-int v0, v0, v17
-
-    shr-int/lit8 v1, v1, 0xc
-
-    and-int/lit8 v1, v1, 0x70
-
-    or-int/2addr v0, v1
-
-    shl-int/lit8 v1, v2, 0x6
-
-    and-int/lit16 v2, v1, 0x1c00
-
-    or-int/2addr v0, v2
-
-    and-int/2addr v1, v5
-
-    or-int v17, v0, v1
-
-    move-object/from16 v18, p3
-
-    move-object/from16 v19, v4
-
-    move-object/from16 v20, p5
-
-    move-object/from16 v21, p6
-
-    move-object/from16 v22, p7
-
-    move-object/from16 v23, p8
-
-    move-object/from16 v24, p9
-
-    move-object/from16 v25, p10
-
-    move-object/from16 v26, p11
-
-    move-object/from16 v27, p12
-
-    move-object/from16 v28, p13
-
-    move-object/from16 v29, p14
-
-    move/from16 v30, p16
-
-    move/from16 v31, p15
-
-    move/from16 v32, p17
+    iget-object p1, p1, Lq/k;->f:Ljava/util/ArrayList;
 
     .line 10
-    invoke-static/range {v16 .. v32}, LR/j1;->a(IILE/j;LG/M;LR/d0;LT0/H;LY/o;Ljava/lang/String;Lp9/f;Lp9/f;Lp9/f;Lp9/f;Lp9/f;Lr0/H;ZZZ)V
-
-    move-object/from16 v16, v4
-
-    goto :goto_18
-
     .line 11
-    :cond_22
-    invoke-virtual/range {p7 .. p7}, LY/o;->N()V
-
-    move-object/from16 v16, p4
-
-    :goto_18
-    invoke-virtual/range {p7 .. p7}, LY/o;->r()LY/m0;
-
-    move-result-object v5
-
-    if-eqz v5, :cond_23
-
-    new-instance v4, LR/Y0;
-
-    move-object v0, v4
-
-    move-object/from16 v1, p0
-
-    move-object/from16 v2, p8
-
-    move-object/from16 v3, p9
-
-    move-object/from16 v33, v4
-
-    move/from16 v4, p15
-
-    move-object v7, v5
-
-    move/from16 v5, p16
-
-    move-object/from16 v6, p6
-
-    move-object/from16 v34, v7
-
-    move-object/from16 v7, p3
-
-    move/from16 v8, p17
-
-    move-object/from16 v9, p10
-
-    move-object/from16 v10, p11
-
-    move-object/from16 v11, p12
-
-    move-object/from16 v12, p13
-
-    move-object/from16 v13, p14
-
-    move-object/from16 v14, p5
-
-    move-object/from16 v15, v16
-
-    move/from16 v16, p1
-
-    move/from16 v17, p2
-
-    invoke-direct/range {v0 .. v17}, LR/Y0;-><init>(LR/a1;Ljava/lang/String;Lp9/f;ZZLT0/H;LE/j;ZLp9/f;Lp9/f;Lp9/f;Lp9/f;Lr0/H;LR/d0;LG/M;II)V
-
-    move-object/from16 v1, v33
-
-    move-object/from16 v0, v34
+    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
     .line 12
-    iput-object v1, v0, LY/m0;->d:Ljava/lang/Object;
+    .line 13
+    .line 14
+    move-result p1
 
-    :cond_23
+    .line 15
+    const/4 v0, 0x0
+
+    .line 16
+    :goto_0
+    if-ge v0, p1, :cond_1
+
+    .line 17
+    .line 18
+    iget-object v1, p0, Lr/a1;->q:Lq/k;
+
+    .line 19
+    .line 20
+    invoke-virtual {v1, v0}, Lq/k;->getItem(I)Landroid/view/MenuItem;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v1
+
+    .line 24
+    iget-object v2, p0, Lr/a1;->r:Lq/m;
+
+    .line 25
+    .line 26
+    if-ne v1, v2, :cond_0
+
+    .line 27
+    .line 28
+    goto :goto_1
+
+    .line 29
+    :cond_0
+    add-int/lit8 v0, v0, 0x1
+
+    .line 30
+    .line 31
+    goto :goto_0
+
+    .line 32
+    :cond_1
+    iget-object p1, p0, Lr/a1;->r:Lq/m;
+
+    .line 33
+    .line 34
+    invoke-virtual {p0, p1}, Lr/a1;->m(Lq/m;)Z
+
+    .line 35
+    .line 36
+    .line 37
+    :cond_2
+    :goto_1
     return-void
+.end method
+
+.method public final getId()I
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return v0
+.end method
+
+.method public final h(Lq/m;)Z
+    .locals 6
+
+    .line 1
+    iget-object v0, p0, Lr/a1;->s:Landroidx/appcompat/widget/Toolbar;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->c()V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v1, v0, Landroidx/appcompat/widget/Toolbar;->x:Landroidx/appcompat/widget/AppCompatImageButton;
+
+    .line 7
+    .line 8
+    invoke-virtual {v1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    if-eq v1, v0, :cond_1
+
+    .line 13
+    .line 14
+    instance-of v2, v1, Landroid/view/ViewGroup;
+
+    .line 15
+    .line 16
+    if-eqz v2, :cond_0
+
+    .line 17
+    .line 18
+    check-cast v1, Landroid/view/ViewGroup;
+
+    .line 19
+    .line 20
+    iget-object v2, v0, Landroidx/appcompat/widget/Toolbar;->x:Landroidx/appcompat/widget/AppCompatImageButton;
+
+    .line 21
+    .line 22
+    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :cond_0
+    iget-object v1, v0, Landroidx/appcompat/widget/Toolbar;->x:Landroidx/appcompat/widget/AppCompatImageButton;
+
+    .line 26
+    .line 27
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+
+    .line 28
+    .line 29
+    .line 30
+    :cond_1
+    invoke-virtual {p1}, Lq/m;->getActionView()Landroid/view/View;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v1
+
+    .line 34
+    iput-object v1, v0, Landroidx/appcompat/widget/Toolbar;->y:Landroid/view/View;
+
+    .line 35
+    .line 36
+    iput-object p1, p0, Lr/a1;->r:Lq/m;
+
+    .line 37
+    .line 38
+    invoke-virtual {v1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object v1
+
+    .line 42
+    const/4 v2, 0x2
+
+    .line 43
+    if-eq v1, v0, :cond_3
+
+    .line 44
+    .line 45
+    instance-of v3, v1, Landroid/view/ViewGroup;
+
+    .line 46
+    .line 47
+    if-eqz v3, :cond_2
+
+    .line 48
+    .line 49
+    check-cast v1, Landroid/view/ViewGroup;
+
+    .line 50
+    .line 51
+    iget-object v3, v0, Landroidx/appcompat/widget/Toolbar;->y:Landroid/view/View;
+
+    .line 52
+    .line 53
+    invoke-virtual {v1, v3}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+
+    .line 54
+    .line 55
+    .line 56
+    :cond_2
+    invoke-static {}, Landroidx/appcompat/widget/Toolbar;->h()Lr/b1;
+
+    .line 57
+    .line 58
+    .line 59
+    move-result-object v1
+
+    .line 60
+    iget v3, v0, Landroidx/appcompat/widget/Toolbar;->D:I
+
+    .line 61
+    .line 62
+    and-int/lit8 v3, v3, 0x70
+
+    .line 63
+    .line 64
+    const v4, 0x800003
+
+    .line 65
+    .line 66
+    .line 67
+    or-int/2addr v3, v4
+
+    .line 68
+    iput v3, v1, Lr/b1;->a:I
+
+    .line 69
+    .line 70
+    iput v2, v1, Lr/b1;->b:I
+
+    .line 71
+    .line 72
+    iget-object v3, v0, Landroidx/appcompat/widget/Toolbar;->y:Landroid/view/View;
+
+    .line 73
+    .line 74
+    invoke-virtual {v3, v1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 75
+    .line 76
+    .line 77
+    iget-object v1, v0, Landroidx/appcompat/widget/Toolbar;->y:Landroid/view/View;
+
+    .line 78
+    .line 79
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+
+    .line 80
+    .line 81
+    .line 82
+    :cond_3
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getChildCount()I
+
+    .line 83
+    .line 84
+    .line 85
+    move-result v1
+
+    .line 86
+    const/4 v3, 0x1
+
+    .line 87
+    sub-int/2addr v1, v3
+
+    .line 88
+    :goto_0
+    if-ltz v1, :cond_5
+
+    .line 89
+    .line 90
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    .line 91
+    .line 92
+    .line 93
+    move-result-object v4
+
+    .line 94
+    invoke-virtual {v4}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    .line 95
+    .line 96
+    .line 97
+    move-result-object v5
+
+    .line 98
+    check-cast v5, Lr/b1;
+
+    .line 99
+    .line 100
+    iget v5, v5, Lr/b1;->b:I
+
+    .line 101
+    .line 102
+    if-eq v5, v2, :cond_4
+
+    .line 103
+    .line 104
+    iget-object v5, v0, Landroidx/appcompat/widget/Toolbar;->q:Landroidx/appcompat/widget/ActionMenuView;
+
+    .line 105
+    .line 106
+    if-eq v4, v5, :cond_4
+
+    .line 107
+    .line 108
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeViewAt(I)V
+
+    .line 109
+    .line 110
+    .line 111
+    iget-object v5, v0, Landroidx/appcompat/widget/Toolbar;->U:Ljava/util/ArrayList;
+
+    .line 112
+    .line 113
+    invoke-virtual {v5, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 114
+    .line 115
+    .line 116
+    :cond_4
+    add-int/lit8 v1, v1, -0x1
+
+    .line 117
+    .line 118
+    goto :goto_0
+
+    .line 119
+    :cond_5
+    invoke-virtual {v0}, Landroid/view/View;->requestLayout()V
+
+    .line 120
+    .line 121
+    .line 122
+    iput-boolean v3, p1, Lq/m;->C:Z
+
+    .line 123
+    .line 124
+    iget-object p1, p1, Lq/m;->n:Lq/k;
+
+    .line 125
+    .line 126
+    const/4 v1, 0x0
+
+    .line 127
+    invoke-virtual {p1, v1}, Lq/k;->p(Z)V
+
+    .line 128
+    .line 129
+    .line 130
+    iget-object p1, v0, Landroidx/appcompat/widget/Toolbar;->y:Landroid/view/View;
+
+    .line 131
+    .line 132
+    instance-of v1, p1, Lp/c;
+
+    .line 133
+    .line 134
+    if-eqz v1, :cond_6
+
+    .line 135
+    .line 136
+    check-cast p1, Lp/c;
+
+    .line 137
+    .line 138
+    invoke-interface {p1}, Lp/c;->a()V
+
+    .line 139
+    .line 140
+    .line 141
+    :cond_6
+    invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->w()V
+
+    .line 142
+    .line 143
+    .line 144
+    return v3
+.end method
+
+.method public final i()Z
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return v0
+.end method
+
+.method public final j(Landroid/content/Context;Lq/k;)V
+    .locals 1
+
+    .line 1
+    iget-object p1, p0, Lr/a1;->q:Lq/k;
+
+    .line 2
+    .line 3
+    if-eqz p1, :cond_0
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Lr/a1;->r:Lq/m;
+
+    .line 6
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    invoke-virtual {p1, v0}, Lq/k;->d(Lq/m;)Z
+
+    .line 10
+    .line 11
+    .line 12
+    :cond_0
+    iput-object p2, p0, Lr/a1;->q:Lq/k;
+
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method public final k()Landroid/os/Parcelable;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return-object v0
+.end method
+
+.method public final m(Lq/m;)Z
+    .locals 6
+
+    .line 1
+    iget-object v0, p0, Lr/a1;->s:Landroidx/appcompat/widget/Toolbar;
+
+    .line 2
+    .line 3
+    iget-object v1, v0, Landroidx/appcompat/widget/Toolbar;->y:Landroid/view/View;
+
+    .line 4
+    .line 5
+    instance-of v2, v1, Lp/c;
+
+    .line 6
+    .line 7
+    if-eqz v2, :cond_0
+
+    .line 8
+    .line 9
+    check-cast v1, Lp/c;
+
+    .line 10
+    .line 11
+    invoke-interface {v1}, Lp/c;->e()V
+
+    .line 12
+    .line 13
+    .line 14
+    :cond_0
+    iget-object v1, v0, Landroidx/appcompat/widget/Toolbar;->y:Landroid/view/View;
+
+    .line 15
+    .line 16
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+
+    .line 17
+    .line 18
+    .line 19
+    iget-object v1, v0, Landroidx/appcompat/widget/Toolbar;->x:Landroidx/appcompat/widget/AppCompatImageButton;
+
+    .line 20
+    .line 21
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+
+    .line 22
+    .line 23
+    .line 24
+    const/4 v1, 0x0
+
+    .line 25
+    iput-object v1, v0, Landroidx/appcompat/widget/Toolbar;->y:Landroid/view/View;
+
+    .line 26
+    .line 27
+    iget-object v2, v0, Landroidx/appcompat/widget/Toolbar;->U:Ljava/util/ArrayList;
+
+    .line 28
+    .line 29
+    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
+
+    .line 30
+    .line 31
+    .line 32
+    move-result v3
+
+    .line 33
+    const/4 v4, 0x1
+
+    .line 34
+    sub-int/2addr v3, v4
+
+    .line 35
+    :goto_0
+    if-ltz v3, :cond_1
+
+    .line 36
+    .line 37
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v5
+
+    .line 41
+    check-cast v5, Landroid/view/View;
+
+    .line 42
+    .line 43
+    invoke-virtual {v0, v5}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+
+    .line 44
+    .line 45
+    .line 46
+    add-int/lit8 v3, v3, -0x1
+
+    .line 47
+    .line 48
+    goto :goto_0
+
+    .line 49
+    :cond_1
+    invoke-virtual {v2}, Ljava/util/ArrayList;->clear()V
+
+    .line 50
+    .line 51
+    .line 52
+    iput-object v1, p0, Lr/a1;->r:Lq/m;
+
+    .line 53
+    .line 54
+    invoke-virtual {v0}, Landroid/view/View;->requestLayout()V
+
+    .line 55
+    .line 56
+    .line 57
+    const/4 v1, 0x0
+
+    .line 58
+    iput-boolean v1, p1, Lq/m;->C:Z
+
+    .line 59
+    .line 60
+    iget-object p1, p1, Lq/m;->n:Lq/k;
+
+    .line 61
+    .line 62
+    invoke-virtual {p1, v1}, Lq/k;->p(Z)V
+
+    .line 63
+    .line 64
+    .line 65
+    invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->w()V
+
+    .line 66
+    .line 67
+    .line 68
+    return v4
 .end method

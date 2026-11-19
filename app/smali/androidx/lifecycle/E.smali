@@ -1,17 +1,26 @@
-.class public interface abstract annotation Landroidx/lifecycle/E;
+.class public interface abstract Landroidx/lifecycle/e;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/annotation/Annotation;
-
-
-# annotations
-.annotation runtime Ljava/lang/annotation/Retention;
-    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
-.end annotation
+.implements Landroidx/lifecycle/u;
 
 
 # virtual methods
-.method public abstract value()Landroidx/lifecycle/n;
+.method public abstract c(Landroidx/lifecycle/v;)V
+.end method
+
+.method public abstract e(Landroidx/lifecycle/v;)V
+.end method
+
+.method public abstract i(Landroidx/lifecycle/v;)V
+.end method
+
+.method public abstract o(Landroidx/lifecycle/v;)V
+.end method
+
+.method public abstract q(Landroidx/lifecycle/v;)V
+.end method
+
+.method public abstract s(Landroidx/lifecycle/v;)V
 .end method

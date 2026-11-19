@@ -1,3 +1,7 @@
-.class public final LV4/g;
-.super Landroid/view/ViewGroup$MarginLayoutParams;
+.class public final Lv4/g;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+
+# instance fields
+.field public a:Landroid/database/Cursor;

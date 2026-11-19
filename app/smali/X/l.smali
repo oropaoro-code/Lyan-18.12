@@ -1,10 +1,12 @@
-.class public abstract Lx/l;
+.class public abstract Lx/L;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final a:Lx/v;
+.field public static final a:[Ljava/lang/Object;
+
+.field public static final b:Lx/C;
 
 
 # direct methods
@@ -12,21 +14,29 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lx/v;
+    const/4 v0, 0x0
 
     .line 2
-    .line 3
-    const/4 v1, 0x0
+    new-array v1, v0, [Ljava/lang/Object;
 
+    .line 3
     .line 4
-    invoke-direct {v0, v1}, Lx/v;-><init>(I)V
+    sput-object v1, Lx/L;->a:[Ljava/lang/Object;
 
     .line 5
     .line 6
-    .line 7
-    sput-object v0, Lx/l;->a:Lx/v;
+    new-instance v1, Lx/C;
 
+    .line 7
     .line 8
+    invoke-direct {v1, v0}, Lx/C;-><init>(I)V
+
     .line 9
+    .line 10
+    .line 11
+    sput-object v1, Lx/L;->b:Lx/C;
+
+    .line 12
+    .line 13
     return-void
 .end method

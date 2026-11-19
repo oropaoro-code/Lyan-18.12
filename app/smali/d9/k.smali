@@ -1,56 +1,38 @@
-.class public final LD9/k;
+.class public final LD9/K;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements LD9/h;
+.implements LD9/i;
 
 
 # instance fields
 .field public final synthetic q:I
 
-.field public final r:Ljava/lang/Object;
+.field public final synthetic r:LD9/i;
 
 
 # direct methods
-.method public synthetic constructor <init>(ILjava/lang/Object;)V
+.method public synthetic constructor <init>(LD9/i;I)V
     .locals 0
 
     .line 1
-    iput p1, p0, LD9/k;->q:I
+    iput p2, p0, LD9/K;->q:I
 
-    iput-object p2, p0, LD9/k;->r:Ljava/lang/Object;
+    iput-object p1, p0, LD9/K;->r:LD9/i;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public constructor <init>(Lp9/f;)V
-    .locals 1
-
-    const/4 v0, 0x3
-
-    iput v0, p0, LD9/k;->q:I
-
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 3
-    check-cast p1, Li9/i;
-
-    iput-object p1, p0, LD9/k;->r:Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(LD9/i;Lg9/e;)Ljava/lang/Object;
-    .locals 7
+.method public final i(Ljava/lang/Object;Lg9/e;)Ljava/lang/Object;
+    .locals 8
 
     .line 1
-    iget v0, p0, LD9/k;->q:I
+    iget v0, p0, LD9/K;->q:I
 
     .line 2
     .line 3
@@ -59,544 +41,541 @@
     .line 4
     .line 5
     .line 6
-    new-instance v0, LD9/K;
+    instance-of v0, p2, Lrb/d;
 
     .line 7
     .line 8
-    const/16 v1, 0xe
+    if-eqz v0, :cond_0
 
     .line 9
     .line 10
-    invoke-direct {v0, p1, v1}, LD9/K;-><init>(LD9/i;I)V
+    move-object v0, p2
 
     .line 11
+    check-cast v0, Lrb/d;
+
     .line 12
     .line 13
-    iget-object p1, p0, LD9/k;->r:Ljava/lang/Object;
+    iget v1, v0, Lrb/d;->r:I
 
     .line 14
     .line 15
-    check-cast p1, LD9/T;
+    const/high16 v2, -0x80000000
 
     .line 16
     .line 17
-    invoke-virtual {p1, v0, p2}, LD9/T;->b(LD9/i;Lg9/e;)Ljava/lang/Object;
+    and-int v3, v1, v2
 
     .line 18
     .line 19
-    .line 20
-    sget-object p1, Lh9/a;->q:Lh9/a;
+    if-eqz v3, :cond_0
 
+    .line 20
     .line 21
+    sub-int/2addr v1, v2
+
     .line 22
-    return-object p1
+    iput v1, v0, Lrb/d;->r:I
 
     .line 23
-    :pswitch_0
-    new-instance v0, LD9/K;
-
     .line 24
+    goto :goto_0
+
     .line 25
-    const/16 v1, 0xc
+    :cond_0
+    new-instance v0, Lrb/d;
 
     .line 26
     .line 27
-    invoke-direct {v0, p1, v1}, LD9/K;-><init>(LD9/i;I)V
+    invoke-direct {v0, p0, p2}, Lrb/d;-><init>(LD9/K;Lg9/e;)V
 
     .line 28
     .line 29
     .line 30
-    iget-object p1, p0, LD9/k;->r:Ljava/lang/Object;
+    :goto_0
+    iget-object p2, v0, Lrb/d;->q:Ljava/lang/Object;
 
     .line 31
     .line 32
-    check-cast p1, Lha/b;
+    sget-object v1, Lh9/a;->q:Lh9/a;
 
     .line 33
     .line 34
-    invoke-virtual {p1, v0, p2}, Lha/b;->b(LD9/i;Lg9/e;)Ljava/lang/Object;
+    iget v2, v0, Lrb/d;->r:I
 
     .line 35
     .line 36
+    const/4 v3, 0x1
+
     .line 37
-    move-result-object p1
+    if-eqz v2, :cond_2
 
     .line 38
-    sget-object p2, Lh9/a;->q:Lh9/a;
-
     .line 39
+    if-ne v2, v3, :cond_1
+
     .line 40
-    if-ne p1, p2, :cond_0
-
     .line 41
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+
     .line 42
-    goto :goto_0
-
     .line 43
-    :cond_0
-    sget-object p1, Lb9/n;->a:Lb9/n;
-
     .line 44
+    goto :goto_1
+
     .line 45
-    :goto_0
-    return-object p1
+    :cond_1
+    new-instance p1, Ljava/lang/IllegalStateException;
 
     .line 46
-    :pswitch_1
-    new-instance v0, LD9/K;
-
     .line 47
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
+
     .line 48
-    const/16 v1, 0xb
-
     .line 49
-    .line 50
-    invoke-direct {v0, p1, v1}, LD9/K;-><init>(LD9/i;I)V
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
+    .line 50
     .line 51
     .line 52
+    throw p1
+
     .line 53
-    iget-object p1, p0, LD9/k;->r:Ljava/lang/Object;
+    :cond_2
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
 
     .line 54
     .line 55
-    check-cast p1, Ljb/e;
-
     .line 56
+    move-object p2, p1
+
     .line 57
-    invoke-virtual {p1, v0, p2}, Ljb/e;->b(LD9/i;Lg9/e;)Ljava/lang/Object;
+    check-cast p2, Lu8/h;
 
     .line 58
     .line 59
-    .line 60
-    move-result-object p1
+    instance-of p2, p2, Lu8/b;
 
+    .line 60
     .line 61
-    sget-object p2, Lh9/a;->q:Lh9/a;
+    if-eqz p2, :cond_3
 
     .line 62
     .line 63
-    if-ne p1, p2, :cond_1
+    iput v3, v0, Lrb/d;->r:I
 
     .line 64
     .line 65
-    goto :goto_1
+    iget-object p2, p0, LD9/K;->r:LD9/i;
 
     .line 66
-    :cond_1
-    sget-object p1, Lb9/n;->a:Lb9/n;
-
     .line 67
+    invoke-interface {p2, p1, v0}, LD9/i;->i(Ljava/lang/Object;Lg9/e;)Ljava/lang/Object;
+
     .line 68
-    :goto_1
-    return-object p1
-
     .line 69
-    :pswitch_2
-    new-instance v0, LD9/K;
-
     .line 70
+    move-result-object p1
+
     .line 71
-    const/16 v1, 0x9
+    if-ne p1, v1, :cond_3
 
     .line 72
     .line 73
-    invoke-direct {v0, p1, v1}, LD9/K;-><init>(LD9/i;I)V
+    goto :goto_2
 
     .line 74
+    :cond_3
+    :goto_1
+    sget-object v1, Lb9/n;->a:Lb9/n;
+
     .line 75
     .line 76
-    iget-object p1, p0, LD9/k;->r:Ljava/lang/Object;
+    :goto_2
+    return-object v1
 
     .line 77
+    :pswitch_0
+    instance-of v0, p2, Lrb/c;
+
     .line 78
-    check-cast p1, Lha/b;
-
     .line 79
+    if-eqz v0, :cond_4
+
     .line 80
-    invoke-virtual {p1, v0, p2}, Lha/b;->b(LD9/i;Lg9/e;)Ljava/lang/Object;
-
     .line 81
-    .line 82
-    .line 83
-    move-result-object p1
+    move-object v0, p2
 
+    .line 82
+    check-cast v0, Lrb/c;
+
+    .line 83
     .line 84
-    sget-object p2, Lh9/a;->q:Lh9/a;
+    iget v1, v0, Lrb/c;->r:I
 
     .line 85
     .line 86
-    if-ne p1, p2, :cond_2
+    const/high16 v2, -0x80000000
 
     .line 87
     .line 88
-    goto :goto_2
+    and-int v3, v1, v2
 
     .line 89
-    :cond_2
-    sget-object p1, Lb9/n;->a:Lb9/n;
-
     .line 90
-    .line 91
-    :goto_2
-    return-object p1
+    if-eqz v3, :cond_4
 
+    .line 91
     .line 92
-    :pswitch_3
-    new-instance v0, LD9/K;
+    sub-int/2addr v1, v2
 
     .line 93
-    .line 94
-    const/16 v1, 0x8
+    iput v1, v0, Lrb/c;->r:I
 
+    .line 94
     .line 95
+    goto :goto_3
+
     .line 96
-    invoke-direct {v0, p1, v1}, LD9/K;-><init>(LD9/i;I)V
+    :cond_4
+    new-instance v0, Lrb/c;
 
     .line 97
     .line 98
-    .line 99
-    iget-object p1, p0, LD9/k;->r:Ljava/lang/Object;
+    invoke-direct {v0, p0, p2}, Lrb/c;-><init>(LD9/K;Lg9/e;)V
 
+    .line 99
     .line 100
     .line 101
-    check-cast p1, LD9/k;
+    :goto_3
+    iget-object p2, v0, Lrb/c;->q:Ljava/lang/Object;
 
     .line 102
     .line 103
-    invoke-virtual {p1, v0, p2}, LD9/k;->b(LD9/i;Lg9/e;)Ljava/lang/Object;
+    sget-object v1, Lh9/a;->q:Lh9/a;
 
     .line 104
     .line 105
-    .line 106
-    move-result-object p1
+    iget v2, v0, Lrb/c;->r:I
 
+    .line 106
     .line 107
-    sget-object p2, Lh9/a;->q:Lh9/a;
+    const/4 v3, 0x1
 
     .line 108
+    if-eqz v2, :cond_6
+
     .line 109
-    if-ne p1, p2, :cond_3
-
     .line 110
-    .line 111
-    goto :goto_3
+    if-ne v2, v3, :cond_5
 
+    .line 111
     .line 112
-    :cond_3
-    sget-object p1, Lb9/n;->a:Lb9/n;
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
 
     .line 113
     .line 114
-    :goto_3
-    return-object p1
-
     .line 115
-    :pswitch_4
-    new-instance v0, LD9/K;
+    goto :goto_4
 
     .line 116
-    .line 117
-    const/4 v1, 0x6
+    :cond_5
+    new-instance p1, Ljava/lang/IllegalStateException;
 
+    .line 117
     .line 118
-    invoke-direct {v0, p1, v1}, LD9/K;-><init>(LD9/i;I)V
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
 
     .line 119
     .line 120
-    .line 121
-    iget-object p1, p0, LD9/k;->r:Ljava/lang/Object;
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
+    .line 121
     .line 122
     .line 123
-    check-cast p1, LD9/Q;
+    throw p1
 
     .line 124
-    .line 125
-    check-cast p1, LD9/l0;
+    :cond_6
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
 
+    .line 125
     .line 126
     .line 127
-    invoke-virtual {p1, v0, p2}, LD9/l0;->b(LD9/i;Lg9/e;)Ljava/lang/Object;
+    instance-of p2, p1, Lla/c;
 
     .line 128
     .line 129
+    if-eqz p2, :cond_7
+
     .line 130
-    sget-object p1, Lh9/a;->q:Lh9/a;
-
     .line 131
-    .line 132
-    return-object p1
+    iput v3, v0, Lrb/c;->r:I
 
+    .line 132
     .line 133
-    :pswitch_5
-    new-instance v0, LU/a;
+    iget-object p2, p0, LD9/K;->r:LD9/i;
 
     .line 134
     .line 135
-    iget-object v1, p0, LD9/k;->r:Ljava/lang/Object;
+    invoke-interface {p2, p1, v0}, LD9/i;->i(Ljava/lang/Object;Lg9/e;)Ljava/lang/Object;
 
     .line 136
     .line 137
-    check-cast v1, [LD9/h;
-
     .line 138
-    .line 139
-    const/4 v2, 0x4
-
-    .line 140
-    invoke-direct {v0, v2, v1}, LU/a;-><init>(ILjava/lang/Object;)V
-
-    .line 141
-    .line 142
-    .line 143
-    new-instance v2, LR/z;
-
-    .line 144
-    .line 145
-    const/4 v3, 0x3
-
-    .line 146
-    const/4 v4, 0x0
-
-    .line 147
-    const/4 v5, 0x1
-
-    .line 148
-    invoke-direct {v2, v3, v5, v4}, LR/z;-><init>(IILg9/e;)V
-
-    .line 149
-    .line 150
-    .line 151
-    invoke-static {p1, p2, v0, v2, v1}, LE9/b;->a(LD9/i;Lg9/e;Lp9/a;Lp9/g;[LD9/h;)Ljava/lang/Object;
-
-    .line 152
-    .line 153
-    .line 154
     move-result-object p1
 
+    .line 139
+    if-ne p1, v1, :cond_7
+
+    .line 140
+    .line 141
+    goto :goto_5
+
+    .line 142
+    :cond_7
+    :goto_4
+    sget-object v1, Lb9/n;->a:Lb9/n;
+
+    .line 143
+    .line 144
+    :goto_5
+    return-object v1
+
+    .line 145
+    :pswitch_1
+    instance-of v0, p2, Ljb/k;
+
+    .line 146
+    .line 147
+    if-eqz v0, :cond_8
+
+    .line 148
+    .line 149
+    move-object v0, p2
+
+    .line 150
+    check-cast v0, Ljb/k;
+
+    .line 151
+    .line 152
+    iget v1, v0, Ljb/k;->r:I
+
+    .line 153
+    .line 154
+    const/high16 v2, -0x80000000
+
     .line 155
-    sget-object p2, Lh9/a;->q:Lh9/a;
-
     .line 156
+    and-int v3, v1, v2
+
     .line 157
-    if-ne p1, p2, :cond_4
-
     .line 158
-    .line 159
-    goto :goto_4
+    if-eqz v3, :cond_8
 
+    .line 159
     .line 160
-    :cond_4
-    sget-object p1, Lb9/n;->a:Lb9/n;
+    sub-int/2addr v1, v2
 
     .line 161
-    .line 162
-    :goto_4
-    return-object p1
+    iput v1, v0, Ljb/k;->r:I
 
+    .line 162
     .line 163
-    :pswitch_6
-    new-instance v0, LD9/K;
+    goto :goto_6
 
     .line 164
-    .line 165
-    const/4 v1, 0x2
+    :cond_8
+    new-instance v0, Ljb/k;
 
+    .line 165
     .line 166
-    invoke-direct {v0, p1, v1}, LD9/K;-><init>(LD9/i;I)V
+    invoke-direct {v0, p0, p2}, Ljb/k;-><init>(LD9/K;Lg9/e;)V
 
     .line 167
     .line 168
     .line 169
-    iget-object p1, p0, LD9/k;->r:Ljava/lang/Object;
+    :goto_6
+    iget-object p2, v0, Ljb/k;->q:Ljava/lang/Object;
 
     .line 170
     .line 171
-    check-cast p1, LD9/k;
+    sget-object v1, Lh9/a;->q:Lh9/a;
 
     .line 172
     .line 173
-    invoke-virtual {p1, v0, p2}, LD9/k;->b(LD9/i;Lg9/e;)Ljava/lang/Object;
+    iget v2, v0, Ljb/k;->r:I
 
     .line 174
     .line 175
+    const/4 v3, 0x1
+
     .line 176
-    move-result-object p1
+    if-eqz v2, :cond_a
 
     .line 177
-    sget-object p2, Lh9/a;->q:Lh9/a;
-
     .line 178
+    if-ne v2, v3, :cond_9
+
     .line 179
-    if-ne p1, p2, :cond_5
-
     .line 180
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+
     .line 181
-    goto :goto_5
-
     .line 182
-    :cond_5
-    sget-object p1, Lb9/n;->a:Lb9/n;
-
     .line 183
+    goto :goto_7
+
     .line 184
-    :goto_5
-    return-object p1
+    :cond_9
+    new-instance p1, Ljava/lang/IllegalStateException;
 
     .line 185
-    :pswitch_7
-    new-instance v0, LD9/K;
-
     .line 186
-    .line 187
-    const/4 v1, 0x1
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
 
+    .line 187
     .line 188
-    invoke-direct {v0, p1, v1}, LD9/K;-><init>(LD9/i;I)V
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 189
     .line 190
     .line 191
-    iget-object p1, p0, LD9/k;->r:Ljava/lang/Object;
+    throw p1
 
     .line 192
-    .line 193
-    check-cast p1, LC2/d;
+    :cond_a
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
 
+    .line 193
     .line 194
     .line 195
-    invoke-virtual {p1, v0, p2}, LC2/d;->b(LD9/i;Lg9/e;)Ljava/lang/Object;
+    instance-of p2, p1, Lib/k;
 
     .line 196
     .line 197
-    .line 198
-    move-result-object p1
+    if-eqz p2, :cond_b
 
+    .line 198
     .line 199
-    sget-object p2, Lh9/a;->q:Lh9/a;
+    iput v3, v0, Ljb/k;->r:I
 
     .line 200
     .line 201
-    if-ne p1, p2, :cond_6
+    iget-object p2, p0, LD9/K;->r:LD9/i;
 
     .line 202
     .line 203
-    goto :goto_6
+    invoke-interface {p2, p1, v0}, LD9/i;->i(Ljava/lang/Object;Lg9/e;)Ljava/lang/Object;
 
     .line 204
-    :cond_6
-    sget-object p1, Lb9/n;->a:Lb9/n;
-
     .line 205
     .line 206
-    :goto_6
-    return-object p1
+    move-result-object p1
 
     .line 207
-    :pswitch_8
-    instance-of v0, p2, LD9/a;
+    if-ne p1, v1, :cond_b
 
     .line 208
     .line 209
-    if-eqz v0, :cond_7
+    goto :goto_8
 
     .line 210
-    .line 211
-    move-object v0, p2
+    :cond_b
+    :goto_7
+    sget-object v1, Lb9/n;->a:Lb9/n;
 
+    .line 211
     .line 212
-    check-cast v0, LD9/a;
+    :goto_8
+    return-object v1
 
     .line 213
+    :pswitch_2
+    instance-of v0, p2, Ljb/h;
+
     .line 214
-    iget v1, v0, LD9/a;->t:I
-
     .line 215
-    .line 216
-    const/high16 v2, -0x80000000
+    if-eqz v0, :cond_c
 
+    .line 216
     .line 217
+    move-object v0, p2
+
     .line 218
-    and-int v3, v1, v2
+    check-cast v0, Ljb/h;
 
     .line 219
     .line 220
-    if-eqz v3, :cond_7
+    iget v1, v0, Ljb/h;->r:I
 
     .line 221
     .line 222
-    sub-int/2addr v1, v2
+    const/high16 v2, -0x80000000
 
     .line 223
-    iput v1, v0, LD9/a;->t:I
-
     .line 224
-    .line 225
-    goto :goto_7
+    and-int v3, v1, v2
 
+    .line 225
     .line 226
-    :cond_7
-    new-instance v0, LD9/a;
+    if-eqz v3, :cond_c
 
     .line 227
     .line 228
-    invoke-direct {v0, p0, p2}, LD9/a;-><init>(LD9/k;Lg9/e;)V
+    sub-int/2addr v1, v2
 
     .line 229
+    iput v1, v0, Ljb/h;->r:I
+
     .line 230
     .line 231
-    :goto_7
-    iget-object p2, v0, LD9/a;->r:Ljava/lang/Object;
+    goto :goto_9
 
     .line 232
+    :cond_c
+    new-instance v0, Ljb/h;
+
     .line 233
-    sget-object v1, Lh9/a;->q:Lh9/a;
-
     .line 234
-    .line 235
-    iget v2, v0, LD9/a;->t:I
+    invoke-direct {v0, p0, p2}, Ljb/h;-><init>(LD9/K;Lg9/e;)V
 
+    .line 235
     .line 236
     .line 237
-    sget-object v3, Lb9/n;->a:Lb9/n;
+    :goto_9
+    iget-object p2, v0, Ljb/h;->q:Ljava/lang/Object;
 
     .line 238
     .line 239
-    const/4 v4, 0x1
+    sget-object v1, Lh9/a;->q:Lh9/a;
 
     .line 240
-    if-eqz v2, :cond_9
-
     .line 241
-    .line 242
-    if-ne v2, v4, :cond_8
+    iget v2, v0, Ljb/h;->r:I
 
+    .line 242
     .line 243
+    const/4 v3, 0x1
+
     .line 244
-    iget-object p1, v0, LD9/a;->q:LE9/w;
+    if-eqz v2, :cond_e
 
     .line 245
     .line 246
-    :try_start_0
-    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    if-ne v2, v3, :cond_d
 
     .line 247
     .line 248
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+
     .line 249
-    goto :goto_9
-
     .line 250
-    :catchall_0
-    move-exception p2
-
     .line 251
-    goto :goto_c
+    goto :goto_b
 
     .line 252
-    :cond_8
+    :cond_d
     new-instance p1, Ljava/lang/IllegalStateException;
 
     .line 253
@@ -613,591 +592,2303 @@
     throw p1
 
     .line 260
-    :cond_9
+    :cond_e
     invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
 
     .line 261
     .line 262
     .line 263
-    new-instance p2, LE9/w;
+    check-cast p1, Lu8/c;
 
     .line 264
     .line 265
-    invoke-interface {v0}, Lg9/e;->getContext()Lg9/j;
+    invoke-virtual {p1}, Lu8/c;->a()Landroid/os/Parcelable;
 
     .line 266
     .line 267
     .line 268
-    move-result-object v2
+    move-result-object p2
 
     .line 269
-    invoke-direct {p2, p1, v2}, LE9/w;-><init>(LD9/i;Lg9/j;)V
+    instance-of v2, p2, Lka/a;
 
     .line 270
     .line 271
+    const/4 v4, 0x0
+
     .line 272
-    :try_start_1
-    iput-object p2, v0, LD9/a;->q:LE9/w;
+    if-eqz v2, :cond_f
 
     .line 273
     .line 274
-    iput v4, v0, LD9/a;->t:I
+    check-cast p2, Lka/a;
 
     .line 275
     .line 276
-    iget-object p1, p0, LD9/k;->r:Ljava/lang/Object;
+    goto :goto_a
 
     .line 277
+    :cond_f
+    move-object p2, v4
+
     .line 278
-    check-cast p1, Li9/i;
+    :goto_a
+    if-eqz p2, :cond_10
 
     .line 279
     .line 280
-    invoke-interface {p1, p2, v0}, Lp9/f;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    new-instance v4, Lb9/h;
 
     .line 281
     .line 282
+    invoke-direct {v4, p1, p2}, Lb9/h;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
     .line 283
-    move-result-object p1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
     .line 284
-    if-ne p1, v1, :cond_a
-
     .line 285
-    .line 286
-    goto :goto_8
+    :cond_10
+    if-eqz v4, :cond_11
 
+    .line 286
     .line 287
-    :cond_a
-    move-object p1, v3
+    iput v3, v0, Ljb/h;->r:I
 
     .line 288
-    :goto_8
-    if-ne p1, v1, :cond_b
-
     .line 289
-    .line 290
-    goto :goto_a
+    iget-object p1, p0, LD9/K;->r:LD9/i;
 
+    .line 290
     .line 291
-    :cond_b
-    move-object p1, p2
+    invoke-interface {p1, v4, v0}, LD9/i;->i(Ljava/lang/Object;Lg9/e;)Ljava/lang/Object;
 
     .line 292
-    :goto_9
-    invoke-virtual {p1}, Li9/c;->releaseIntercepted()V
-
     .line 293
     .line 294
+    move-result-object p1
+
     .line 295
-    move-object v1, v3
+    if-ne p1, v1, :cond_11
 
     .line 296
-    :goto_a
-    return-object v1
-
     .line 297
-    :goto_b
-    move-object v6, p2
-
-    .line 298
-    move-object p2, p1
-
-    .line 299
-    move-object p1, v6
-
-    .line 300
     goto :goto_c
 
+    .line 298
+    :cond_11
+    :goto_b
+    sget-object v1, Lb9/n;->a:Lb9/n;
+
+    .line 299
+    .line 300
+    :goto_c
+    return-object v1
+
     .line 301
-    :catchall_1
-    move-exception p1
+    :pswitch_3
+    instance-of v0, p2, Ljb/g;
 
     .line 302
-    goto :goto_b
-
     .line 303
-    :goto_c
-    invoke-virtual {p1}, Li9/c;->releaseIntercepted()V
+    if-eqz v0, :cond_12
 
     .line 304
     .line 305
+    move-object v0, p2
+
     .line 306
-    throw p2
+    check-cast v0, Ljb/g;
 
     .line 307
-    :pswitch_9
-    new-instance v0, LD9/K;
-
     .line 308
-    .line 309
-    const/4 v1, 0x0
+    iget v1, v0, Ljb/g;->r:I
 
+    .line 309
     .line 310
-    invoke-direct {v0, p1, v1}, LD9/K;-><init>(LD9/i;I)V
+    const/high16 v2, -0x80000000
 
     .line 311
     .line 312
+    and-int v3, v1, v2
+
     .line 313
-    iget-object p1, p0, LD9/k;->r:Ljava/lang/Object;
-
     .line 314
-    .line 315
-    check-cast p1, LD9/h;
+    if-eqz v3, :cond_12
 
+    .line 315
     .line 316
+    sub-int/2addr v1, v2
+
     .line 317
-    invoke-interface {p1, v0, p2}, LD9/h;->b(LD9/i;Lg9/e;)Ljava/lang/Object;
+    iput v1, v0, Ljb/g;->r:I
 
     .line 318
     .line 319
-    .line 320
-    move-result-object p1
-
-    .line 321
-    sget-object p2, Lh9/a;->q:Lh9/a;
-
-    .line 322
-    .line 323
-    if-ne p1, p2, :cond_c
-
-    .line 324
-    .line 325
     goto :goto_d
 
-    .line 326
-    :cond_c
-    sget-object p1, Lb9/n;->a:Lb9/n;
+    .line 320
+    :cond_12
+    new-instance v0, Ljb/g;
 
-    .line 327
-    .line 328
+    .line 321
+    .line 322
+    invoke-direct {v0, p0, p2}, Ljb/g;-><init>(LD9/K;Lg9/e;)V
+
+    .line 323
+    .line 324
+    .line 325
     :goto_d
-    return-object p1
+    iget-object p2, v0, Ljb/g;->q:Ljava/lang/Object;
 
+    .line 326
+    .line 327
+    sget-object v1, Lh9/a;->q:Lh9/a;
+
+    .line 328
     .line 329
-    :pswitch_a
-    instance-of v0, p2, LD9/x;
+    iget v2, v0, Ljb/g;->r:I
 
     .line 330
     .line 331
-    if-eqz v0, :cond_d
+    const/4 v3, 0x1
 
     .line 332
-    .line 333
-    move-object v0, p2
+    if-eqz v2, :cond_14
 
+    .line 333
     .line 334
-    check-cast v0, LD9/x;
+    if-ne v2, v3, :cond_13
 
     .line 335
     .line 336
-    iget v1, v0, LD9/x;->r:I
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
 
     .line 337
     .line 338
-    const/high16 v2, -0x80000000
-
     .line 339
+    goto :goto_e
+
     .line 340
-    and-int v3, v1, v2
+    :cond_13
+    new-instance p1, Ljava/lang/IllegalStateException;
 
     .line 341
     .line 342
-    if-eqz v3, :cond_d
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
 
     .line 343
     .line 344
-    sub-int/2addr v1, v2
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 345
-    iput v1, v0, LD9/x;->r:I
-
     .line 346
     .line 347
-    goto :goto_e
+    throw p1
 
     .line 348
-    :cond_d
-    new-instance v0, LD9/x;
+    :cond_14
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
 
     .line 349
     .line 350
-    invoke-direct {v0, p0, p2}, LD9/x;-><init>(LD9/k;Lg9/e;)V
-
     .line 351
+    check-cast p1, Lb9/h;
+
     .line 352
     .line 353
-    :goto_e
-    iget-object p2, v0, LD9/x;->q:Ljava/lang/Object;
+    iget-object p1, p1, Lb9/h;->q:Ljava/lang/Object;
 
     .line 354
     .line 355
-    sget-object v1, Lh9/a;->q:Lh9/a;
+    check-cast p1, Lu8/c;
 
     .line 356
     .line 357
-    iget v2, v0, LD9/x;->r:I
+    iput v3, v0, Ljb/g;->r:I
 
     .line 358
     .line 359
-    const/4 v3, 0x1
+    iget-object p2, p0, LD9/K;->r:LD9/i;
 
     .line 360
-    if-eqz v2, :cond_f
-
     .line 361
-    .line 362
-    if-ne v2, v3, :cond_e
+    invoke-interface {p2, p1, v0}, LD9/i;->i(Ljava/lang/Object;Lg9/e;)Ljava/lang/Object;
 
+    .line 362
     .line 363
     .line 364
-    iget-object p1, v0, LD9/x;->t:Ljava/lang/Object;
+    move-result-object p1
 
     .line 365
+    if-ne p1, v1, :cond_15
+
     .line 366
-    :try_start_2
-    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
-    :try_end_2
-    .catch Lkotlinx/coroutines/flow/internal/AbortFlowException; {:try_start_2 .. :try_end_2} :catch_0
-
     .line 367
-    .line 368
-    .line 369
-    goto :goto_10
-
-    .line 370
-    :catch_0
-    move-exception p2
-
-    .line 371
     goto :goto_f
 
+    .line 368
+    :cond_15
+    :goto_e
+    sget-object v1, Lb9/n;->a:Lb9/n;
+
+    .line 369
+    .line 370
+    :goto_f
+    return-object v1
+
+    .line 371
+    :pswitch_4
+    instance-of v0, p2, Ljb/f;
+
     .line 372
-    :cond_e
-    new-instance p1, Ljava/lang/IllegalStateException;
-
     .line 373
-    .line 374
-    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
+    if-eqz v0, :cond_16
 
+    .line 374
     .line 375
+    move-object v0, p2
+
     .line 376
-    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    check-cast v0, Ljb/f;
 
     .line 377
     .line 378
-    .line 379
-    throw p1
+    iget v1, v0, Ljb/f;->r:I
 
+    .line 379
     .line 380
-    :cond_f
-    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+    const/high16 v2, -0x80000000
 
     .line 381
     .line 382
+    and-int v3, v1, v2
+
     .line 383
-    new-instance p2, Ljava/lang/Object;
-
     .line 384
+    if-eqz v3, :cond_16
+
     .line 385
-    invoke-direct {p2}, Ljava/lang/Object;-><init>()V
-
     .line 386
-    .line 387
-    .line 388
-    new-instance v2, Lq9/s;
+    sub-int/2addr v1, v2
 
+    .line 387
+    iput v1, v0, Ljb/f;->r:I
+
+    .line 388
     .line 389
+    goto :goto_10
+
     .line 390
-    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+    :cond_16
+    new-instance v0, Ljb/f;
 
     .line 391
     .line 392
-    .line 393
-    :try_start_3
-    iget-object v4, p0, LD9/k;->r:Ljava/lang/Object;
+    invoke-direct {v0, p0, p2}, Ljb/f;-><init>(LD9/K;Lg9/e;)V
 
+    .line 393
     .line 394
     .line 395
-    check-cast v4, LE9/o;
+    :goto_10
+    iget-object p2, v0, Ljb/f;->q:Ljava/lang/Object;
 
     .line 396
     .line 397
-    new-instance v5, LD9/f;
+    sget-object v1, Lh9/a;->q:Lh9/a;
 
     .line 398
     .line 399
-    invoke-direct {v5, v2, p1, p2}, LD9/f;-><init>(Lq9/s;LD9/i;Ljava/lang/Object;)V
+    iget v2, v0, Ljb/f;->r:I
 
     .line 400
     .line 401
+    const/4 v3, 0x1
+
     .line 402
-    iput-object p2, v0, LD9/x;->t:Ljava/lang/Object;
+    if-eqz v2, :cond_18
 
     .line 403
     .line 404
-    iput v3, v0, LD9/x;->r:I
+    if-ne v2, v3, :cond_17
 
     .line 405
     .line 406
-    invoke-virtual {v4, v5, v0}, LE9/f;->b(LD9/i;Lg9/e;)Ljava/lang/Object;
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
 
     .line 407
     .line 408
     .line 409
-    move-result-object p1
-    :try_end_3
-    .catch Lkotlinx/coroutines/flow/internal/AbortFlowException; {:try_start_3 .. :try_end_3} :catch_1
+    goto :goto_11
 
     .line 410
-    if-ne p1, v1, :cond_10
+    :cond_17
+    new-instance p1, Ljava/lang/IllegalStateException;
 
     .line 411
     .line 412
-    goto :goto_11
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
 
     .line 413
-    :catch_1
-    move-exception p1
-
     .line 414
-    move-object v6, p2
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 415
-    move-object p2, p1
-
     .line 416
-    move-object p1, v6
-
     .line 417
-    :goto_f
-    iget-object v0, p2, Lkotlinx/coroutines/flow/internal/AbortFlowException;->q:Ljava/lang/Object;
+    throw p1
 
     .line 418
-    .line 419
-    if-ne v0, p1, :cond_11
+    :cond_18
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
 
+    .line 419
     .line 420
     .line 421
-    :cond_10
-    :goto_10
-    sget-object v1, Lb9/n;->a:Lb9/n;
+    instance-of p2, p1, Lu8/c;
 
     .line 422
     .line 423
-    :goto_11
-    return-object v1
+    if-eqz p2, :cond_19
 
     .line 424
-    :cond_11
-    throw p2
-
     .line 425
-    :pswitch_b
-    instance-of v0, p2, LD9/j;
+    iput v3, v0, Ljb/f;->r:I
 
     .line 426
     .line 427
-    if-eqz v0, :cond_12
+    iget-object p2, p0, LD9/K;->r:LD9/i;
 
     .line 428
     .line 429
-    move-object v0, p2
+    invoke-interface {p2, p1, v0}, LD9/i;->i(Ljava/lang/Object;Lg9/e;)Ljava/lang/Object;
 
     .line 430
-    check-cast v0, LD9/j;
-
     .line 431
     .line 432
-    iget v1, v0, LD9/j;->r:I
+    move-result-object p1
 
     .line 433
-    .line 434
-    const/high16 v2, -0x80000000
+    if-ne p1, v1, :cond_19
 
+    .line 434
     .line 435
+    goto :goto_12
+
     .line 436
-    and-int v3, v1, v2
+    :cond_19
+    :goto_11
+    sget-object v1, Lb9/n;->a:Lb9/n;
 
     .line 437
     .line 438
-    if-eqz v3, :cond_12
+    :goto_12
+    return-object v1
 
     .line 439
-    .line 440
-    sub-int/2addr v1, v2
+    :pswitch_5
+    instance-of v0, p2, Lha/i;
 
+    .line 440
     .line 441
-    iput v1, v0, LD9/j;->r:I
+    if-eqz v0, :cond_1a
 
     .line 442
     .line 443
-    goto :goto_12
+    move-object v0, p2
 
     .line 444
-    :cond_12
-    new-instance v0, LD9/j;
+    check-cast v0, Lha/i;
 
     .line 445
     .line 446
-    invoke-direct {v0, p0, p2}, LD9/j;-><init>(LD9/k;Lg9/e;)V
+    iget v1, v0, Lha/i;->r:I
 
     .line 447
     .line 448
+    const/high16 v2, -0x80000000
+
     .line 449
-    :goto_12
-    iget-object p2, v0, LD9/j;->q:Ljava/lang/Object;
-
     .line 450
+    and-int v3, v1, v2
+
     .line 451
-    sget-object v1, Lh9/a;->q:Lh9/a;
-
     .line 452
-    .line 453
-    iget v2, v0, LD9/j;->r:I
+    if-eqz v3, :cond_1a
 
+    .line 453
     .line 454
+    sub-int/2addr v1, v2
+
     .line 455
-    const/4 v3, 0x1
+    iput v1, v0, Lha/i;->r:I
 
     .line 456
-    if-eqz v2, :cond_14
-
     .line 457
+    goto :goto_13
+
     .line 458
-    if-ne v2, v3, :cond_13
+    :cond_1a
+    new-instance v0, Lha/i;
 
     .line 459
     .line 460
-    iget-object p1, v0, LD9/j;->u:Ljava/util/Iterator;
+    invoke-direct {v0, p0, p2}, Lha/i;-><init>(LD9/K;Lg9/e;)V
 
     .line 461
     .line 462
-    iget-object v2, v0, LD9/j;->t:LD9/i;
-
     .line 463
-    .line 464
-    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+    :goto_13
+    iget-object p2, v0, Lha/i;->q:Ljava/lang/Object;
 
+    .line 464
     .line 465
+    sget-object v1, Lh9/a;->q:Lh9/a;
+
     .line 466
     .line 467
-    move-object p2, v2
+    iget v2, v0, Lha/i;->r:I
 
     .line 468
-    goto :goto_13
-
     .line 469
-    :cond_13
-    new-instance p1, Ljava/lang/IllegalStateException;
+    const/4 v3, 0x1
 
     .line 470
+    if-eqz v2, :cond_1c
+
     .line 471
-    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
-
     .line 472
+    if-ne v2, v3, :cond_1b
+
     .line 473
-    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
     .line 474
-    .line 475
-    .line 476
-    throw p1
-
-    .line 477
-    :cond_14
     invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
 
+    .line 475
+    .line 476
+    .line 477
+    goto :goto_15
+
     .line 478
+    :cond_1b
+    new-instance p1, Ljava/lang/IllegalStateException;
+
     .line 479
     .line 480
-    iget-object p2, p0, LD9/k;->r:Ljava/lang/Object;
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
 
     .line 481
     .line 482
-    check-cast p2, Ljava/util/ArrayList;
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 483
     .line 484
-    invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
     .line 485
+    throw p1
+
     .line 486
+    :cond_1c
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+
     .line 487
-    move-result-object p2
-
     .line 488
-    move-object v6, p2
-
     .line 489
-    move-object p2, p1
+    check-cast p1, Lu8/f;
 
     .line 490
-    move-object p1, v6
-
     .line 491
-    :cond_15
-    :goto_13
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+    iget-object p1, p1, Lu8/f;->c:Landroid/os/Parcelable;
 
     .line 492
     .line 493
-    .line 494
-    move-result v2
+    instance-of p2, p1, Lka/a;
 
+    .line 494
     .line 495
-    if-eqz v2, :cond_16
+    if-eqz p2, :cond_1d
 
     .line 496
     .line 497
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    check-cast p1, Lka/a;
 
     .line 498
     .line 499
+    goto :goto_14
+
     .line 500
-    move-result-object v2
+    :cond_1d
+    const/4 p1, 0x0
 
     .line 501
-    iput-object p2, v0, LD9/j;->t:LD9/i;
+    :goto_14
+    if-eqz p1, :cond_1e
 
     .line 502
     .line 503
-    iput-object p1, v0, LD9/j;->u:Ljava/util/Iterator;
+    iput v3, v0, Lha/i;->r:I
 
     .line 504
     .line 505
-    iput v3, v0, LD9/j;->r:I
+    iget-object p2, p0, LD9/K;->r:LD9/i;
 
     .line 506
     .line 507
-    invoke-interface {p2, v2, v0}, LD9/i;->i(Ljava/lang/Object;Lg9/e;)Ljava/lang/Object;
+    invoke-interface {p2, p1, v0}, LD9/i;->i(Ljava/lang/Object;Lg9/e;)Ljava/lang/Object;
 
     .line 508
     .line 509
     .line 510
-    move-result-object v2
+    move-result-object p1
 
     .line 511
-    if-ne v2, v1, :cond_15
+    if-ne p1, v1, :cond_1e
 
     .line 512
     .line 513
-    goto :goto_14
+    goto :goto_16
 
     .line 514
-    :cond_16
+    :cond_1e
+    :goto_15
     sget-object v1, Lb9/n;->a:Lb9/n;
 
     .line 515
     .line 516
-    :goto_14
+    :goto_16
     return-object v1
 
     .line 517
+    :pswitch_6
+    instance-of v0, p2, Lha/h;
+
+    .line 518
+    .line 519
+    if-eqz v0, :cond_1f
+
+    .line 520
+    .line 521
+    move-object v0, p2
+
+    .line 522
+    check-cast v0, Lha/h;
+
+    .line 523
+    .line 524
+    iget v1, v0, Lha/h;->r:I
+
+    .line 525
+    .line 526
+    const/high16 v2, -0x80000000
+
+    .line 527
+    .line 528
+    and-int v3, v1, v2
+
+    .line 529
+    .line 530
+    if-eqz v3, :cond_1f
+
+    .line 531
+    .line 532
+    sub-int/2addr v1, v2
+
+    .line 533
+    iput v1, v0, Lha/h;->r:I
+
+    .line 534
+    .line 535
+    goto :goto_17
+
+    .line 536
+    :cond_1f
+    new-instance v0, Lha/h;
+
+    .line 537
+    .line 538
+    invoke-direct {v0, p0, p2}, Lha/h;-><init>(LD9/K;Lg9/e;)V
+
+    .line 539
+    .line 540
+    .line 541
+    :goto_17
+    iget-object p2, v0, Lha/h;->q:Ljava/lang/Object;
+
+    .line 542
+    .line 543
+    sget-object v1, Lh9/a;->q:Lh9/a;
+
+    .line 544
+    .line 545
+    iget v2, v0, Lha/h;->r:I
+
+    .line 546
+    .line 547
+    const/4 v3, 0x1
+
+    .line 548
+    if-eqz v2, :cond_21
+
+    .line 549
+    .line 550
+    if-ne v2, v3, :cond_20
+
+    .line 551
+    .line 552
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+
+    .line 553
+    .line 554
+    .line 555
+    goto :goto_18
+
+    .line 556
+    :cond_20
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 557
+    .line 558
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 559
+    .line 560
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 561
+    .line 562
+    .line 563
+    throw p1
+
+    .line 564
+    :cond_21
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+
+    .line 565
+    .line 566
+    .line 567
+    check-cast p1, Lka/a;
+
+    .line 568
+    .line 569
+    iget p1, p1, Lka/a;->q:I
+
+    .line 570
+    .line 571
+    new-instance p2, Ljava/lang/Integer;
+
+    .line 572
+    .line 573
+    invoke-direct {p2, p1}, Ljava/lang/Integer;-><init>(I)V
+
+    .line 574
+    .line 575
+    .line 576
+    iput v3, v0, Lha/h;->r:I
+
+    .line 577
+    .line 578
+    iget-object p1, p0, LD9/K;->r:LD9/i;
+
+    .line 579
+    .line 580
+    invoke-interface {p1, p2, v0}, LD9/i;->i(Ljava/lang/Object;Lg9/e;)Ljava/lang/Object;
+
+    .line 581
+    .line 582
+    .line 583
+    move-result-object p1
+
+    .line 584
+    if-ne p1, v1, :cond_22
+
+    .line 585
+    .line 586
+    goto :goto_19
+
+    .line 587
+    :cond_22
+    :goto_18
+    sget-object v1, Lb9/n;->a:Lb9/n;
+
+    .line 588
+    .line 589
+    :goto_19
+    return-object v1
+
+    .line 590
+    :pswitch_7
+    instance-of v0, p2, Lha/g;
+
+    .line 591
+    .line 592
+    if-eqz v0, :cond_23
+
+    .line 593
+    .line 594
+    move-object v0, p2
+
+    .line 595
+    check-cast v0, Lha/g;
+
+    .line 596
+    .line 597
+    iget v1, v0, Lha/g;->r:I
+
+    .line 598
+    .line 599
+    const/high16 v2, -0x80000000
+
+    .line 600
+    .line 601
+    and-int v3, v1, v2
+
+    .line 602
+    .line 603
+    if-eqz v3, :cond_23
+
+    .line 604
+    .line 605
+    sub-int/2addr v1, v2
+
+    .line 606
+    iput v1, v0, Lha/g;->r:I
+
+    .line 607
+    .line 608
+    goto :goto_1a
+
+    .line 609
+    :cond_23
+    new-instance v0, Lha/g;
+
+    .line 610
+    .line 611
+    invoke-direct {v0, p0, p2}, Lha/g;-><init>(LD9/K;Lg9/e;)V
+
+    .line 612
+    .line 613
+    .line 614
+    :goto_1a
+    iget-object p2, v0, Lha/g;->q:Ljava/lang/Object;
+
+    .line 615
+    .line 616
+    sget-object v1, Lh9/a;->q:Lh9/a;
+
+    .line 617
+    .line 618
+    iget v2, v0, Lha/g;->r:I
+
+    .line 619
+    .line 620
+    const/4 v3, 0x1
+
+    .line 621
+    if-eqz v2, :cond_25
+
+    .line 622
+    .line 623
+    if-ne v2, v3, :cond_24
+
+    .line 624
+    .line 625
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+
+    .line 626
+    .line 627
+    .line 628
+    goto :goto_1b
+
+    .line 629
+    :cond_24
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 630
+    .line 631
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 632
+    .line 633
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 634
+    .line 635
+    .line 636
+    throw p1
+
+    .line 637
+    :cond_25
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+
+    .line 638
+    .line 639
+    .line 640
+    instance-of p2, p1, Lu8/f;
+
+    .line 641
+    .line 642
+    if-eqz p2, :cond_26
+
+    .line 643
+    .line 644
+    iput v3, v0, Lha/g;->r:I
+
+    .line 645
+    .line 646
+    iget-object p2, p0, LD9/K;->r:LD9/i;
+
+    .line 647
+    .line 648
+    invoke-interface {p2, p1, v0}, LD9/i;->i(Ljava/lang/Object;Lg9/e;)Ljava/lang/Object;
+
+    .line 649
+    .line 650
+    .line 651
+    move-result-object p1
+
+    .line 652
+    if-ne p1, v1, :cond_26
+
+    .line 653
+    .line 654
+    goto :goto_1c
+
+    .line 655
+    :cond_26
+    :goto_1b
+    sget-object v1, Lb9/n;->a:Lb9/n;
+
+    .line 656
+    .line 657
+    :goto_1c
+    return-object v1
+
+    .line 658
+    :pswitch_8
+    instance-of v0, p2, Lha/f;
+
+    .line 659
+    .line 660
+    if-eqz v0, :cond_27
+
+    .line 661
+    .line 662
+    move-object v0, p2
+
+    .line 663
+    check-cast v0, Lha/f;
+
+    .line 664
+    .line 665
+    iget v1, v0, Lha/f;->r:I
+
+    .line 666
+    .line 667
+    const/high16 v2, -0x80000000
+
+    .line 668
+    .line 669
+    and-int v3, v1, v2
+
+    .line 670
+    .line 671
+    if-eqz v3, :cond_27
+
+    .line 672
+    .line 673
+    sub-int/2addr v1, v2
+
+    .line 674
+    iput v1, v0, Lha/f;->r:I
+
+    .line 675
+    .line 676
+    goto :goto_1d
+
+    .line 677
+    :cond_27
+    new-instance v0, Lha/f;
+
+    .line 678
+    .line 679
+    invoke-direct {v0, p0, p2}, Lha/f;-><init>(LD9/K;Lg9/e;)V
+
+    .line 680
+    .line 681
+    .line 682
+    :goto_1d
+    iget-object p2, v0, Lha/f;->q:Ljava/lang/Object;
+
+    .line 683
+    .line 684
+    sget-object v1, Lh9/a;->q:Lh9/a;
+
+    .line 685
+    .line 686
+    iget v2, v0, Lha/f;->r:I
+
+    .line 687
+    .line 688
+    const/4 v3, 0x1
+
+    .line 689
+    if-eqz v2, :cond_29
+
+    .line 690
+    .line 691
+    if-ne v2, v3, :cond_28
+
+    .line 692
+    .line 693
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+
+    .line 694
+    .line 695
+    .line 696
+    goto/16 :goto_21
+
+    .line 697
+    .line 698
+    :cond_28
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 699
+    .line 700
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 701
+    .line 702
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 703
+    .line 704
+    .line 705
+    throw p1
+
+    .line 706
+    :cond_29
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+
+    .line 707
+    .line 708
+    .line 709
+    check-cast p1, Ljava/util/List;
+
+    .line 710
+    .line 711
+    check-cast p1, Ljava/lang/Iterable;
+
+    .line 712
+    .line 713
+    new-instance p2, Ljava/util/ArrayList;
+
+    .line 714
+    .line 715
+    invoke-direct {p2}, Ljava/util/ArrayList;-><init>()V
+
+    .line 716
+    .line 717
+    .line 718
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 719
+    .line 720
+    .line 721
+    move-result-object p1
+
+    .line 722
+    :cond_2a
+    :goto_1e
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 723
+    .line 724
+    .line 725
+    move-result v2
+
+    .line 726
+    if-eqz v2, :cond_2f
+
+    .line 727
+    .line 728
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 729
+    .line 730
+    .line 731
+    move-result-object v2
+
+    .line 732
+    move-object v4, v2
+
+    .line 733
+    check-cast v4, Lka/e;
+
+    .line 734
+    .line 735
+    invoke-virtual {v4}, Lka/e;->b()Lua/a;
+
+    .line 736
+    .line 737
+    .line 738
+    move-result-object v5
+
+    .line 739
+    instance-of v6, v4, Lka/d;
+
+    .line 740
+    .line 741
+    if-eqz v6, :cond_2b
+
+    .line 742
+    .line 743
+    move-object v6, v4
+
+    .line 744
+    check-cast v6, Lka/d;
+
+    .line 745
+    .line 746
+    goto :goto_1f
+
+    .line 747
+    :cond_2b
+    const/4 v6, 0x0
+
+    .line 748
+    :goto_1f
+    iget-boolean v7, v5, Lua/a;->g:Z
+
+    .line 749
+    .line 750
+    if-nez v7, :cond_2d
+
+    .line 751
+    .line 752
+    iget-boolean v5, v5, Lua/a;->e:Z
+
+    .line 753
+    .line 754
+    if-eqz v5, :cond_2d
+
+    .line 755
+    .line 756
+    invoke-virtual {v4}, Lka/e;->a()Ljava/util/List;
+
+    .line 757
+    .line 758
+    .line 759
+    move-result-object v4
+
+    .line 760
+    check-cast v4, Ljava/util/Collection;
+
+    .line 761
+    .line 762
+    invoke-interface {v4}, Ljava/util/Collection;->isEmpty()Z
+
+    .line 763
+    .line 764
+    .line 765
+    move-result v4
+
+    .line 766
+    if-eqz v4, :cond_2d
+
+    .line 767
+    .line 768
+    const/4 v4, 0x0
+
+    .line 769
+    if-eqz v6, :cond_2c
+
+    .line 770
+    .line 771
+    iget-object v5, v6, Lka/d;->c:Ljava/util/List;
+
+    .line 772
+    .line 773
+    if-eqz v5, :cond_2c
+
+    .line 774
+    .line 775
+    check-cast v5, Ljava/util/Collection;
+
+    .line 776
+    .line 777
+    invoke-interface {v5}, Ljava/util/Collection;->isEmpty()Z
+
+    .line 778
+    .line 779
+    .line 780
+    move-result v5
+
+    .line 781
+    xor-int/2addr v5, v3
+
+    .line 782
+    goto :goto_20
+
+    .line 783
+    :cond_2c
+    move v5, v4
+
+    .line 784
+    :goto_20
+    if-eqz v5, :cond_2e
+
+    .line 785
+    .line 786
+    :cond_2d
+    move v4, v3
+
+    .line 787
+    :cond_2e
+    if-eqz v4, :cond_2a
+
+    .line 788
+    .line 789
+    invoke-virtual {p2, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 790
+    .line 791
+    .line 792
+    goto :goto_1e
+
+    .line 793
+    :cond_2f
+    iput v3, v0, Lha/f;->r:I
+
+    .line 794
+    .line 795
+    iget-object p1, p0, LD9/K;->r:LD9/i;
+
+    .line 796
+    .line 797
+    invoke-interface {p1, p2, v0}, LD9/i;->i(Ljava/lang/Object;Lg9/e;)Ljava/lang/Object;
+
+    .line 798
+    .line 799
+    .line 800
+    move-result-object p1
+
+    .line 801
+    if-ne p1, v1, :cond_30
+
+    .line 802
+    .line 803
+    goto :goto_22
+
+    .line 804
+    :cond_30
+    :goto_21
+    sget-object v1, Lb9/n;->a:Lb9/n;
+
+    .line 805
+    .line 806
+    :goto_22
+    return-object v1
+
+    .line 807
+    :pswitch_9
+    instance-of v0, p2, Lha/a;
+
+    .line 808
+    .line 809
+    if-eqz v0, :cond_31
+
+    .line 810
+    .line 811
+    move-object v0, p2
+
+    .line 812
+    check-cast v0, Lha/a;
+
+    .line 813
+    .line 814
+    iget v1, v0, Lha/a;->r:I
+
+    .line 815
+    .line 816
+    const/high16 v2, -0x80000000
+
+    .line 817
+    .line 818
+    and-int v3, v1, v2
+
+    .line 819
+    .line 820
+    if-eqz v3, :cond_31
+
+    .line 821
+    .line 822
+    sub-int/2addr v1, v2
+
+    .line 823
+    iput v1, v0, Lha/a;->r:I
+
+    .line 824
+    .line 825
+    goto :goto_23
+
+    .line 826
+    :cond_31
+    new-instance v0, Lha/a;
+
+    .line 827
+    .line 828
+    invoke-direct {v0, p0, p2}, Lha/a;-><init>(LD9/K;Lg9/e;)V
+
+    .line 829
+    .line 830
+    .line 831
+    :goto_23
+    iget-object p2, v0, Lha/a;->q:Ljava/lang/Object;
+
+    .line 832
+    .line 833
+    sget-object v1, Lh9/a;->q:Lh9/a;
+
+    .line 834
+    .line 835
+    iget v2, v0, Lha/a;->r:I
+
+    .line 836
+    .line 837
+    const/4 v3, 0x1
+
+    .line 838
+    if-eqz v2, :cond_33
+
+    .line 839
+    .line 840
+    if-ne v2, v3, :cond_32
+
+    .line 841
+    .line 842
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+
+    .line 843
+    .line 844
+    .line 845
+    goto :goto_24
+
+    .line 846
+    :cond_32
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 847
+    .line 848
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 849
+    .line 850
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 851
+    .line 852
+    .line 853
+    throw p1
+
+    .line 854
+    :cond_33
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+
+    .line 855
+    .line 856
+    .line 857
+    move-object p2, p1
+
+    .line 858
+    check-cast p2, Ljava/lang/Number;
+
+    .line 859
+    .line 860
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+
+    .line 861
+    .line 862
+    .line 863
+    move-result p2
+
+    .line 864
+    const/4 v2, -0x1
+
+    .line 865
+    if-le p2, v2, :cond_34
+
+    .line 866
+    .line 867
+    iput v3, v0, Lha/a;->r:I
+
+    .line 868
+    .line 869
+    iget-object p2, p0, LD9/K;->r:LD9/i;
+
+    .line 870
+    .line 871
+    invoke-interface {p2, p1, v0}, LD9/i;->i(Ljava/lang/Object;Lg9/e;)Ljava/lang/Object;
+
+    .line 872
+    .line 873
+    .line 874
+    move-result-object p1
+
+    .line 875
+    if-ne p1, v1, :cond_34
+
+    .line 876
+    .line 877
+    goto :goto_25
+
+    .line 878
+    :cond_34
+    :goto_24
+    sget-object v1, Lb9/n;->a:Lb9/n;
+
+    .line 879
+    .line 880
+    :goto_25
+    return-object v1
+
+    .line 881
+    :pswitch_a
+    instance-of v0, p2, Ld3/h;
+
+    .line 882
+    .line 883
+    if-eqz v0, :cond_35
+
+    .line 884
+    .line 885
+    move-object v0, p2
+
+    .line 886
+    check-cast v0, Ld3/h;
+
+    .line 887
+    .line 888
+    iget v1, v0, Ld3/h;->r:I
+
+    .line 889
+    .line 890
+    const/high16 v2, -0x80000000
+
+    .line 891
+    .line 892
+    and-int v3, v1, v2
+
+    .line 893
+    .line 894
+    if-eqz v3, :cond_35
+
+    .line 895
+    .line 896
+    sub-int/2addr v1, v2
+
+    .line 897
+    iput v1, v0, Ld3/h;->r:I
+
+    .line 898
+    .line 899
+    goto :goto_26
+
+    .line 900
+    :cond_35
+    new-instance v0, Ld3/h;
+
+    .line 901
+    .line 902
+    invoke-direct {v0, p0, p2}, Ld3/h;-><init>(LD9/K;Lg9/e;)V
+
+    .line 903
+    .line 904
+    .line 905
+    :goto_26
+    iget-object p2, v0, Ld3/h;->q:Ljava/lang/Object;
+
+    .line 906
+    .line 907
+    sget-object v1, Lh9/a;->q:Lh9/a;
+
+    .line 908
+    .line 909
+    iget v2, v0, Ld3/h;->r:I
+
+    .line 910
+    .line 911
+    const/4 v3, 0x1
+
+    .line 912
+    if-eqz v2, :cond_37
+
+    .line 913
+    .line 914
+    if-ne v2, v3, :cond_36
+
+    .line 915
+    .line 916
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+
+    .line 917
+    .line 918
+    .line 919
+    goto :goto_27
+
+    .line 920
+    :cond_36
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 921
+    .line 922
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 923
+    .line 924
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 925
+    .line 926
+    .line 927
+    throw p1
+
+    .line 928
+    :cond_37
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+
+    .line 929
+    .line 930
+    .line 931
+    instance-of p2, p1, LW2/b;
+
+    .line 932
+    .line 933
+    if-eqz p2, :cond_38
+
+    .line 934
+    .line 935
+    iput v3, v0, Ld3/h;->r:I
+
+    .line 936
+    .line 937
+    iget-object p2, p0, LD9/K;->r:LD9/i;
+
+    .line 938
+    .line 939
+    invoke-interface {p2, p1, v0}, LD9/i;->i(Ljava/lang/Object;Lg9/e;)Ljava/lang/Object;
+
+    .line 940
+    .line 941
+    .line 942
+    move-result-object p1
+
+    .line 943
+    if-ne p1, v1, :cond_38
+
+    .line 944
+    .line 945
+    goto :goto_28
+
+    .line 946
+    :cond_38
+    :goto_27
+    sget-object v1, Lb9/n;->a:Lb9/n;
+
+    .line 947
+    .line 948
+    :goto_28
+    return-object v1
+
+    .line 949
+    :pswitch_b
+    instance-of v0, p2, LR1/s;
+
+    .line 950
+    .line 951
+    if-eqz v0, :cond_39
+
+    .line 952
+    .line 953
+    move-object v0, p2
+
+    .line 954
+    check-cast v0, LR1/s;
+
+    .line 955
+    .line 956
+    iget v1, v0, LR1/s;->r:I
+
+    .line 957
+    .line 958
+    const/high16 v2, -0x80000000
+
+    .line 959
+    .line 960
+    and-int v3, v1, v2
+
+    .line 961
+    .line 962
+    if-eqz v3, :cond_39
+
+    .line 963
+    .line 964
+    sub-int/2addr v1, v2
+
+    .line 965
+    iput v1, v0, LR1/s;->r:I
+
+    .line 966
+    .line 967
+    goto :goto_29
+
+    .line 968
+    :cond_39
+    new-instance v0, LR1/s;
+
+    .line 969
+    .line 970
+    invoke-direct {v0, p0, p2}, LR1/s;-><init>(LD9/K;Lg9/e;)V
+
+    .line 971
+    .line 972
+    .line 973
+    :goto_29
+    iget-object p2, v0, LR1/s;->q:Ljava/lang/Object;
+
+    .line 974
+    .line 975
+    sget-object v1, Lh9/a;->q:Lh9/a;
+
+    .line 976
+    .line 977
+    iget v2, v0, LR1/s;->r:I
+
+    .line 978
+    .line 979
+    const/4 v3, 0x1
+
+    .line 980
+    if-eqz v2, :cond_3b
+
+    .line 981
+    .line 982
+    if-ne v2, v3, :cond_3a
+
+    .line 983
+    .line 984
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+
+    .line 985
+    .line 986
+    .line 987
+    goto :goto_2a
+
+    .line 988
+    :cond_3a
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 989
+    .line 990
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 991
+    .line 992
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 993
+    .line 994
+    .line 995
+    throw p1
+
+    .line 996
+    :cond_3b
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+
+    .line 997
+    .line 998
+    .line 999
+    check-cast p1, LR1/G;
+
+    .line 1000
+    .line 1001
+    instance-of p2, p1, LR1/i;
+
+    .line 1002
+    .line 1003
+    if-nez p2, :cond_40
+
+    .line 1004
+    .line 1005
+    instance-of p2, p1, LR1/h;
+
+    .line 1006
+    .line 1007
+    if-nez p2, :cond_3f
+
+    .line 1008
+    .line 1009
+    instance-of p2, p1, LR1/b;
+
+    .line 1010
+    .line 1011
+    if-eqz p2, :cond_3d
+
+    .line 1012
+    .line 1013
+    check-cast p1, LR1/b;
+
+    .line 1014
+    .line 1015
+    iget-object p1, p1, LR1/b;->a:Ljava/lang/Object;
+
+    .line 1016
+    .line 1017
+    iput v3, v0, LR1/s;->r:I
+
+    .line 1018
+    .line 1019
+    iget-object p2, p0, LD9/K;->r:LD9/i;
+
+    .line 1020
+    .line 1021
+    invoke-interface {p2, p1, v0}, LD9/i;->i(Ljava/lang/Object;Lg9/e;)Ljava/lang/Object;
+
+    .line 1022
+    .line 1023
+    .line 1024
+    move-result-object p1
+
+    .line 1025
+    if-ne p1, v1, :cond_3c
+
+    .line 1026
+    .line 1027
+    goto :goto_2b
+
+    .line 1028
+    :cond_3c
+    :goto_2a
+    sget-object v1, Lb9/n;->a:Lb9/n;
+
+    .line 1029
+    .line 1030
+    :goto_2b
+    return-object v1
+
+    .line 1031
+    :cond_3d
+    instance-of p1, p1, LR1/H;
+
+    .line 1032
+    .line 1033
+    if-eqz p1, :cond_3e
+
+    .line 1034
+    .line 1035
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 1036
+    .line 1037
+    const-string p2, "This is a bug in DataStore. Please file a bug at: https://issuetracker.google.com/issues/new?component=907884&template=1466542"
+
+    .line 1038
+    .line 1039
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 1040
+    .line 1041
+    .line 1042
+    throw p1
+
+    .line 1043
+    :cond_3e
+    new-instance p1, Lkotlin/NoWhenBranchMatchedException;
+
+    .line 1044
+    .line 1045
+    invoke-direct {p1}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
+
+    .line 1046
+    .line 1047
+    .line 1048
+    throw p1
+
+    .line 1049
+    :cond_3f
+    check-cast p1, LR1/h;
+
+    .line 1050
+    .line 1051
+    iget-object p1, p1, LR1/h;->a:Ljava/lang/Throwable;
+
+    .line 1052
+    .line 1053
+    throw p1
+
+    .line 1054
+    :cond_40
+    check-cast p1, LR1/i;
+
+    .line 1055
+    .line 1056
+    iget-object p1, p1, LR1/i;->a:Ljava/lang/Throwable;
+
+    .line 1057
+    .line 1058
+    throw p1
+
+    .line 1059
+    :pswitch_c
+    instance-of v0, p2, LGb/b;
+
+    .line 1060
+    .line 1061
+    if-eqz v0, :cond_41
+
+    .line 1062
+    .line 1063
+    move-object v0, p2
+
+    .line 1064
+    check-cast v0, LGb/b;
+
+    .line 1065
+    .line 1066
+    iget v1, v0, LGb/b;->r:I
+
+    .line 1067
+    .line 1068
+    const/high16 v2, -0x80000000
+
+    .line 1069
+    .line 1070
+    and-int v3, v1, v2
+
+    .line 1071
+    .line 1072
+    if-eqz v3, :cond_41
+
+    .line 1073
+    .line 1074
+    sub-int/2addr v1, v2
+
+    .line 1075
+    iput v1, v0, LGb/b;->r:I
+
+    .line 1076
+    .line 1077
+    goto :goto_2c
+
+    .line 1078
+    :cond_41
+    new-instance v0, LGb/b;
+
+    .line 1079
+    .line 1080
+    invoke-direct {v0, p0, p2}, LGb/b;-><init>(LD9/K;Lg9/e;)V
+
+    .line 1081
+    .line 1082
+    .line 1083
+    :goto_2c
+    iget-object p2, v0, LGb/b;->q:Ljava/lang/Object;
+
+    .line 1084
+    .line 1085
+    sget-object v1, Lh9/a;->q:Lh9/a;
+
+    .line 1086
+    .line 1087
+    iget v2, v0, LGb/b;->r:I
+
+    .line 1088
+    .line 1089
+    const/4 v3, 0x1
+
+    .line 1090
+    if-eqz v2, :cond_43
+
+    .line 1091
+    .line 1092
+    if-ne v2, v3, :cond_42
+
+    .line 1093
+    .line 1094
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+
+    .line 1095
+    .line 1096
+    .line 1097
+    goto :goto_2d
+
+    .line 1098
+    :cond_42
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 1099
+    .line 1100
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 1101
+    .line 1102
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 1103
+    .line 1104
+    .line 1105
+    throw p1
+
+    .line 1106
+    :cond_43
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+
+    .line 1107
+    .line 1108
+    .line 1109
+    check-cast p1, Ljava/util/List;
+
+    .line 1110
+    .line 1111
+    check-cast p1, Ljava/lang/Iterable;
+
+    .line 1112
+    .line 1113
+    new-instance p2, LB8/w;
+
+    .line 1114
+    .line 1115
+    const/4 v2, 0x4
+
+    .line 1116
+    invoke-direct {p2, v2}, LB8/w;-><init>(I)V
+
+    .line 1117
+    .line 1118
+    .line 1119
+    invoke-static {p1, p2}, Lc9/m;->W(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+
+    .line 1120
+    .line 1121
+    .line 1122
+    move-result-object p1
+
+    .line 1123
+    iput v3, v0, LGb/b;->r:I
+
+    .line 1124
+    .line 1125
+    iget-object p2, p0, LD9/K;->r:LD9/i;
+
+    .line 1126
+    .line 1127
+    invoke-interface {p2, p1, v0}, LD9/i;->i(Ljava/lang/Object;Lg9/e;)Ljava/lang/Object;
+
+    .line 1128
+    .line 1129
+    .line 1130
+    move-result-object p1
+
+    .line 1131
+    if-ne p1, v1, :cond_44
+
+    .line 1132
+    .line 1133
+    goto :goto_2e
+
+    .line 1134
+    :cond_44
+    :goto_2d
+    sget-object v1, Lb9/n;->a:Lb9/n;
+
+    .line 1135
+    .line 1136
+    :goto_2e
+    return-object v1
+
+    .line 1137
+    :pswitch_d
+    instance-of v0, p2, LFb/b;
+
+    .line 1138
+    .line 1139
+    if-eqz v0, :cond_45
+
+    .line 1140
+    .line 1141
+    move-object v0, p2
+
+    .line 1142
+    check-cast v0, LFb/b;
+
+    .line 1143
+    .line 1144
+    iget v1, v0, LFb/b;->r:I
+
+    .line 1145
+    .line 1146
+    const/high16 v2, -0x80000000
+
+    .line 1147
+    .line 1148
+    and-int v3, v1, v2
+
+    .line 1149
+    .line 1150
+    if-eqz v3, :cond_45
+
+    .line 1151
+    .line 1152
+    sub-int/2addr v1, v2
+
+    .line 1153
+    iput v1, v0, LFb/b;->r:I
+
+    .line 1154
+    .line 1155
+    goto :goto_2f
+
+    .line 1156
+    :cond_45
+    new-instance v0, LFb/b;
+
+    .line 1157
+    .line 1158
+    invoke-direct {v0, p0, p2}, LFb/b;-><init>(LD9/K;Lg9/e;)V
+
+    .line 1159
+    .line 1160
+    .line 1161
+    :goto_2f
+    iget-object p2, v0, LFb/b;->q:Ljava/lang/Object;
+
+    .line 1162
+    .line 1163
+    sget-object v1, Lh9/a;->q:Lh9/a;
+
+    .line 1164
+    .line 1165
+    iget v2, v0, LFb/b;->r:I
+
+    .line 1166
+    .line 1167
+    const/4 v3, 0x1
+
+    .line 1168
+    if-eqz v2, :cond_47
+
+    .line 1169
+    .line 1170
+    if-ne v2, v3, :cond_46
+
+    .line 1171
+    .line 1172
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+
+    .line 1173
+    .line 1174
+    .line 1175
+    goto :goto_31
+
+    .line 1176
+    :cond_46
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 1177
+    .line 1178
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 1179
+    .line 1180
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 1181
+    .line 1182
+    .line 1183
+    throw p1
+
+    .line 1184
+    :cond_47
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+
+    .line 1185
+    .line 1186
+    .line 1187
+    check-cast p1, Ljava/util/List;
+
+    .line 1188
+    .line 1189
+    check-cast p1, Ljava/lang/Iterable;
+
+    .line 1190
+    .line 1191
+    invoke-static {p1}, Lc9/o;->E(Ljava/lang/Iterable;)I
+
+    .line 1192
+    .line 1193
+    .line 1194
+    move-result p2
+
+    .line 1195
+    invoke-static {p2}, Lc9/B;->p(I)I
+
+    .line 1196
+    .line 1197
+    .line 1198
+    move-result p2
+
+    .line 1199
+    const/16 v2, 0x10
+
+    .line 1200
+    .line 1201
+    if-ge p2, v2, :cond_48
+
+    .line 1202
+    .line 1203
+    move p2, v2
+
+    .line 1204
+    :cond_48
+    new-instance v2, Ljava/util/LinkedHashMap;
+
+    .line 1205
+    .line 1206
+    invoke-direct {v2, p2}, Ljava/util/LinkedHashMap;-><init>(I)V
+
+    .line 1207
+    .line 1208
+    .line 1209
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 1210
+    .line 1211
+    .line 1212
+    move-result-object p1
+
+    .line 1213
+    :goto_30
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 1214
+    .line 1215
+    .line 1216
+    move-result p2
+
+    .line 1217
+    if-eqz p2, :cond_49
+
+    .line 1218
+    .line 1219
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 1220
+    .line 1221
+    .line 1222
+    move-result-object p2
+
+    .line 1223
+    move-object v4, p2
+
+    .line 1224
+    check-cast v4, Lz8/a;
+
+    .line 1225
+    .line 1226
+    iget-object v4, v4, Lz8/a;->b:Ljava/lang/String;
+
+    .line 1227
+    .line 1228
+    invoke-interface {v2, v4, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1229
+    .line 1230
+    .line 1231
+    goto :goto_30
+
+    .line 1232
+    :cond_49
+    iput v3, v0, LFb/b;->r:I
+
+    .line 1233
+    .line 1234
+    iget-object p1, p0, LD9/K;->r:LD9/i;
+
+    .line 1235
+    .line 1236
+    invoke-interface {p1, v2, v0}, LD9/i;->i(Ljava/lang/Object;Lg9/e;)Ljava/lang/Object;
+
+    .line 1237
+    .line 1238
+    .line 1239
+    move-result-object p1
+
+    .line 1240
+    if-ne p1, v1, :cond_4a
+
+    .line 1241
+    .line 1242
+    goto :goto_32
+
+    .line 1243
+    :cond_4a
+    :goto_31
+    sget-object v1, Lb9/n;->a:Lb9/n;
+
+    .line 1244
+    .line 1245
+    :goto_32
+    return-object v1
+
+    .line 1246
+    :pswitch_e
+    instance-of v0, p2, LD9/J;
+
+    .line 1247
+    .line 1248
+    if-eqz v0, :cond_4b
+
+    .line 1249
+    .line 1250
+    move-object v0, p2
+
+    .line 1251
+    check-cast v0, LD9/J;
+
+    .line 1252
+    .line 1253
+    iget v1, v0, LD9/J;->r:I
+
+    .line 1254
+    .line 1255
+    const/high16 v2, -0x80000000
+
+    .line 1256
+    .line 1257
+    and-int v3, v1, v2
+
+    .line 1258
+    .line 1259
+    if-eqz v3, :cond_4b
+
+    .line 1260
+    .line 1261
+    sub-int/2addr v1, v2
+
+    .line 1262
+    iput v1, v0, LD9/J;->r:I
+
+    .line 1263
+    .line 1264
+    goto :goto_33
+
+    .line 1265
+    :cond_4b
+    new-instance v0, LD9/J;
+
+    .line 1266
+    .line 1267
+    invoke-direct {v0, p0, p2}, LD9/J;-><init>(LD9/K;Lg9/e;)V
+
+    .line 1268
+    .line 1269
+    .line 1270
+    :goto_33
+    iget-object p2, v0, LD9/J;->q:Ljava/lang/Object;
+
+    .line 1271
+    .line 1272
+    sget-object v1, Lh9/a;->q:Lh9/a;
+
+    .line 1273
+    .line 1274
+    iget v2, v0, LD9/J;->r:I
+
+    .line 1275
+    .line 1276
+    const/4 v3, 0x1
+
+    .line 1277
+    if-eqz v2, :cond_4d
+
+    .line 1278
+    .line 1279
+    if-ne v2, v3, :cond_4c
+
+    .line 1280
+    .line 1281
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+
+    .line 1282
+    .line 1283
+    .line 1284
+    goto :goto_34
+
+    .line 1285
+    :cond_4c
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 1286
+    .line 1287
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 1288
+    .line 1289
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 1290
+    .line 1291
+    .line 1292
+    throw p1
+
+    .line 1293
+    :cond_4d
+    invoke-static {p2}, LO5/l0;->V(Ljava/lang/Object;)V
+
+    .line 1294
+    .line 1295
+    .line 1296
+    if-eqz p1, :cond_4e
+
+    .line 1297
+    .line 1298
+    iput v3, v0, LD9/J;->r:I
+
+    .line 1299
+    .line 1300
+    iget-object p2, p0, LD9/K;->r:LD9/i;
+
+    .line 1301
+    .line 1302
+    invoke-interface {p2, p1, v0}, LD9/i;->i(Ljava/lang/Object;Lg9/e;)Ljava/lang/Object;
+
+    .line 1303
+    .line 1304
+    .line 1305
+    move-result-object p1
+
+    .line 1306
+    if-ne p1, v1, :cond_4e
+
+    .line 1307
+    .line 1308
+    goto :goto_35
+
+    .line 1309
+    :cond_4e
+    :goto_34
+    sget-object v1, Lb9/n;->a:Lb9/n;
+
+    .line 1310
+    .line 1311
+    :goto_35
+    return-object v1
+
+    .line 1312
+    nop
+
+    .line 1313
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
         :pswitch_b
         :pswitch_a
         :pswitch_9

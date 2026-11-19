@@ -1,71 +1,31 @@
-.class public final LJ0/s0;
-.super Lq9/j;
+.class public final LJ0/S0;
+.super Landroid/view/ViewOutlineProvider;
 .source "SourceFile"
-
-# interfaces
-.implements Lp9/a;
 
 
 # instance fields
-.field public final synthetic q:I
-
-.field public final synthetic r:Z
-
-.field public final synthetic s:Ljava/lang/Object;
-
-.field public final synthetic t:Ljava/lang/Object;
+.field public final synthetic a:I
 
 
 # direct methods
-.method public constructor <init>(LY/V;Lp9/d;Z)V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    iput v0, p0, LJ0/s0;->q:I
+.method public synthetic constructor <init>(I)V
+    .locals 0
 
     .line 1
-    iput-object p1, p0, LJ0/s0;->s:Ljava/lang/Object;
+    iput p1, p0, LJ0/S0;->a:I
 
-    iput-object p2, p0, LJ0/s0;->t:Ljava/lang/Object;
-
-    iput-boolean p3, p0, LJ0/s0;->r:Z
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, Lq9/j;-><init>(I)V
-
-    return-void
-.end method
-
-.method public constructor <init>(ZLa3/s;Ljava/lang/String;)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    iput v0, p0, LJ0/s0;->q:I
-
-    .line 2
-    iput-boolean p1, p0, LJ0/s0;->r:Z
-
-    iput-object p2, p0, LJ0/s0;->s:Ljava/lang/Object;
-
-    iput-object p3, p0, LJ0/s0;->t:Ljava/lang/Object;
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, Lq9/j;-><init>(I)V
+    invoke-direct {p0}, Landroid/view/ViewOutlineProvider;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 3
+.method public final getOutline(Landroid/view/View;Landroid/graphics/Outline;)V
+    .locals 2
 
     .line 1
-    iget v0, p0, LJ0/s0;->q:I
+    iget v0, p0, LJ0/S0;->a:I
 
     .line 2
     .line 3
@@ -74,150 +34,139 @@
     .line 4
     .line 5
     .line 6
-    new-instance v0, LV/S;
+    instance-of v0, p1, Landroidx/compose/ui/graphics/layer/ViewLayer;
 
     .line 7
     .line 8
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    if-eqz v0, :cond_0
 
     .line 9
     .line 10
+    check-cast p1, Landroidx/compose/ui/graphics/layer/ViewLayer;
+
     .line 11
-    iget-object v1, p0, LJ0/s0;->s:Ljava/lang/Object;
-
     .line 12
+    iget-object p1, p1, Landroidx/compose/ui/graphics/layer/ViewLayer;->u:Landroid/graphics/Outline;
+
     .line 13
-    check-cast v1, LY/V;
-
     .line 14
-    .line 15
-    invoke-interface {v1, v0}, LY/V;->setValue(Ljava/lang/Object;)V
+    if-eqz p1, :cond_0
 
+    .line 15
     .line 16
+    invoke-virtual {p2, p1}, Landroid/graphics/Outline;->set(Landroid/graphics/Outline;)V
+
     .line 17
     .line 18
-    iget-boolean v0, p0, LJ0/s0;->r:Z
-
     .line 19
+    :cond_0
+    return-void
+
     .line 20
-    xor-int/lit8 v0, v0, 0x1
+    :pswitch_0
+    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
     .line 21
     .line 22
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
     .line 23
+    move-result v0
+
     .line 24
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
+
     .line 25
-    move-result-object v0
-
     .line 26
-    iget-object v1, p0, LJ0/s0;->t:Ljava/lang/Object;
-
     .line 27
+    move-result p1
+
     .line 28
-    check-cast v1, Lp9/d;
+    const/4 v1, 0x0
 
     .line 29
-    .line 30
-    invoke-interface {v1, v0}, Lp9/d;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p2, v1, v1, v0, p1}, Landroid/graphics/Outline;->setRect(IIII)V
 
+    .line 30
     .line 31
     .line 32
+    const/4 p1, 0x0
+
     .line 33
-    sget-object v0, Lb9/n;->a:Lb9/n;
+    invoke-virtual {p2, p1}, Landroid/graphics/Outline;->setAlpha(F)V
 
     .line 34
     .line 35
-    return-object v0
-
     .line 36
-    :pswitch_0
-    iget-boolean v0, p0, LJ0/s0;->r:Z
+    return-void
 
     .line 37
-    .line 38
-    if-eqz v0, :cond_0
+    :pswitch_1
+    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
+    .line 38
     .line 39
     .line 40
-    iget-object v0, p0, LJ0/s0;->s:Ljava/lang/Object;
+    move-result v0
 
     .line 41
-    .line 42
-    check-cast v0, La3/s;
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
+    .line 42
     .line 43
     .line 44
-    iget-object v1, p0, LJ0/s0;->t:Ljava/lang/Object;
+    move-result p1
 
     .line 45
+    const/4 v1, 0x0
+
     .line 46
-    check-cast v1, Ljava/lang/String;
+    invoke-virtual {p2, v1, v1, v0, p1}, Landroid/graphics/Outline;->setRect(IIII)V
 
     .line 47
     .line 48
-    iget-object v0, v0, La3/s;->q:Ljava/lang/Object;
-
     .line 49
+    const/4 p1, 0x0
+
     .line 50
-    check-cast v0, LB2/b;
+    invoke-virtual {p2, p1}, Landroid/graphics/Outline;->setAlpha(F)V
 
     .line 51
     .line 52
-    iget-object v2, v0, LB2/b;->c:LG3/a;
-
     .line 53
+    return-void
+
     .line 54
-    monitor-enter v2
+    :pswitch_2
+    const-string p2, "null cannot be cast to non-null type androidx.compose.ui.platform.ViewLayer"
 
     .line 55
-    :try_start_0
-    iget-object v0, v0, LB2/b;->d:Ljava/util/LinkedHashMap;
-
     .line 56
-    .line 57
-    invoke-interface {v0, v1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, p2}, Lq9/i;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
+    .line 57
     .line 58
     .line 59
-    .line 60
-    move-result-object v0
+    check-cast p1, Landroidx/compose/ui/platform/ViewLayer;
 
+    .line 60
     .line 61
-    check-cast v0, LA2/d;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 62
     .line 63
-    monitor-exit v2
-
     .line 64
-    goto :goto_0
+    const/4 p1, 0x0
 
     .line 65
-    :catchall_0
-    move-exception v0
+    throw p1
 
     .line 66
-    monitor-exit v2
+    nop
 
     .line 67
-    throw v0
-
-    .line 68
-    :cond_0
-    :goto_0
-    sget-object v0, Lb9/n;->a:Lb9/n;
-
-    .line 69
-    .line 70
-    return-object v0
-
-    .line 71
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

@@ -1,216 +1,283 @@
-.class public final LT8/b;
-.super LH8/h;
+.class public final Lt8/b;
+.super Lf3/b;
 .source "SourceFile"
 
 
 # instance fields
-.field public final q:LI8/a;
+.field public final b:Ljava/lang/Integer;
 
-.field public final r:LI8/a;
+.field public final c:Ljava/lang/Integer;
 
-.field public final s:LI8/a;
-
-.field public final t:LT8/d;
-
-.field public volatile u:Z
+.field public final synthetic d:Lt8/g;
 
 
 # direct methods
-.method public constructor <init>(LT8/d;)V
-    .locals 3
+.method public constructor <init>(Lt8/g;Ljava/lang/Integer;Ljava/lang/Integer;)V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v0, Lt8/c;->v:Lt8/c;
 
     .line 2
     .line 3
+    iput-object p1, p0, Lt8/b;->d:Lt8/g;
+
     .line 4
-    iput-object p1, p0, LT8/b;->t:LT8/d;
-
     .line 5
-    .line 6
-    new-instance p1, LI8/a;
+    invoke-direct {p0, v0}, Lf3/b;-><init>(Lp9/d;)V
 
+    .line 6
     .line 7
     .line 8
-    const/4 v0, 0x1
+    iput-object p2, p0, Lt8/b;->b:Ljava/lang/Integer;
 
     .line 9
-    invoke-direct {p1, v0}, LI8/a;-><init>(I)V
-
     .line 10
+    iput-object p3, p0, Lt8/b;->c:Ljava/lang/Integer;
+
     .line 11
     .line 12
-    iput-object p1, p0, LT8/b;->q:LI8/a;
-
-    .line 13
-    .line 14
-    new-instance v0, LI8/a;
-
-    .line 15
-    .line 16
-    const/4 v1, 0x0
-
-    .line 17
-    invoke-direct {v0, v1}, LI8/a;-><init>(I)V
-
-    .line 18
-    .line 19
-    .line 20
-    iput-object v0, p0, LT8/b;->r:LI8/a;
-
-    .line 21
-    .line 22
-    new-instance v1, LI8/a;
-
-    .line 23
-    .line 24
-    const/4 v2, 0x1
-
-    .line 25
-    invoke-direct {v1, v2}, LI8/a;-><init>(I)V
-
-    .line 26
-    .line 27
-    .line 28
-    iput-object v1, p0, LT8/b;->s:LI8/a;
-
-    .line 29
-    .line 30
-    invoke-virtual {v1, p1}, LI8/a;->a(LI8/b;)Z
-
-    .line 31
-    .line 32
-    .line 33
-    invoke-virtual {v1, v0}, LI8/a;->a(LI8/b;)Z
-
-    .line 34
-    .line 35
-    .line 36
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)LI8/b;
-    .locals 6
+.method public final a(Li3/a;)V
+    .locals 2
 
     .line 1
-    iget-boolean v0, p0, LT8/b;->u:Z
+    iget-object v0, p0, Lt8/b;->d:Lt8/g;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    iget-object v0, v0, LE4/u0;->a:Ljava/lang/Object;
 
     .line 4
     .line 5
-    sget-object p1, LL8/b;->q:LL8/b;
+    check-cast v0, Lk3/i;
 
     .line 6
     .line 7
-    return-object p1
+    const-string v1, "bookmarks"
 
     .line 8
-    :cond_0
-    iget-object v0, p0, LT8/b;->t:LT8/d;
+    .line 9
+    filled-new-array {v1}, [Ljava/lang/String;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    invoke-virtual {v0, v1, p1}, Lk3/i;->c([Ljava/lang/String;Li3/a;)V
+
+    .line 14
+    .line 15
+    .line 16
+    return-void
+.end method
+
+.method public final b(Lp9/d;)Lj3/d;
+    .locals 8
+
+    .line 1
+    iget-object v0, p0, Lt8/b;->d:Lt8/g;
+
+    .line 2
+    .line 3
+    iget-object v1, v0, LE4/u0;->a:Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    move-object v2, v1
+
+    .line 6
+    check-cast v2, Lk3/i;
+
+    .line 7
+    .line 8
+    iget-object v1, p0, Lt8/b;->b:Ljava/lang/Integer;
 
     .line 9
     .line 10
-    iget-object v5, p0, LT8/b;->r:LI8/a;
+    const-string v3, "="
 
     .line 11
     .line 12
-    move-object v1, p1
+    const-string v4, "IS"
 
     .line 13
-    move-wide v2, p2
-
     .line 14
-    move-object v4, p4
+    if-nez v1, :cond_0
 
     .line 15
-    invoke-virtual/range {v0 .. v5}, LT8/k;->d(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;LI8/a;)LT8/o;
-
     .line 16
+    move-object v1, v4
+
     .line 17
+    goto :goto_0
+
     .line 18
-    move-result-object p1
+    :cond_0
+    move-object v1, v3
 
     .line 19
+    :goto_0
+    iget-object v5, p0, Lt8/b;->c:Ljava/lang/Integer;
+
+    .line 20
+    .line 21
+    if-nez v5, :cond_1
+
+    .line 22
+    .line 23
+    move-object v3, v4
+
+    .line 24
+    :cond_1
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    .line 25
+    .line 26
+    const-string v5, "\n    |SELECT bookmarks._ID FROM bookmarks\n    |    WHERE bookmarks.sura "
+
+    .line 27
+    .line 28
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 29
+    .line 30
+    .line 31
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 32
+    .line 33
+    .line 34
+    const-string v1, " ?\n    |    AND bookmarks.ayah "
+
+    .line 35
+    .line 36
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 40
+    .line 41
+    .line 42
+    const-string v1, " ?\n    "
+
+    .line 43
+    .line 44
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 45
+    .line 46
+    .line 47
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object v1
+
+    .line 51
+    invoke-static {v1}, Ly9/i;->w(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object v4
+
+    .line 55
+    new-instance v7, LR1/j;
+
+    .line 56
+    .line 57
+    const/16 v1, 0x1a
+
+    .line 58
+    .line 59
+    invoke-direct {v7, v1, p0, v0}, LR1/j;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+
+    .line 60
+    .line 61
+    .line 62
+    const/4 v3, 0x0
+
+    .line 63
+    const/4 v6, 0x2
+
+    .line 64
+    move-object v5, p1
+
+    .line 65
+    invoke-virtual/range {v2 .. v7}, Lk3/i;->l(Ljava/lang/Integer;Ljava/lang/String;Lp9/d;ILp9/d;)Lj3/d;
+
+    .line 66
+    .line 67
+    .line 68
+    move-result-object p1
+
+    .line 69
     return-object p1
 .end method
 
-.method public final b()V
+.method public final d(Li3/a;)V
+    .locals 2
+
+    .line 1
+    const-string v0, "listener"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lq9/i;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Lt8/b;->d:Lt8/g;
+
+    .line 7
+    .line 8
+    iget-object v0, v0, LE4/u0;->a:Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    check-cast v0, Lk3/i;
+
+    .line 11
+    .line 12
+    const-string v1, "bookmarks"
+
+    .line 13
+    .line 14
+    filled-new-array {v1}, [Ljava/lang/String;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v1
+
+    .line 18
+    invoke-virtual {v0, v1, p1}, Lk3/i;->v([Ljava/lang/String;Li3/a;)V
+
+    .line 19
+    .line 20
+    .line 21
+    return-void
+.end method
+
+.method public final toString()Ljava/lang/String;
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, LT8/b;->u:Z
+    const-string v0, "Bookmark.sq:getBookmarkIdForSuraAyah"
 
     .line 2
     .line 3
-    if-nez v0, :cond_0
-
-    .line 4
-    .line 5
-    const/4 v0, 0x1
-
-    .line 6
-    iput-boolean v0, p0, LT8/b;->u:Z
-
-    .line 7
-    .line 8
-    iget-object v0, p0, LT8/b;->s:LI8/a;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0}, LI8/a;->b()V
-
-    .line 11
-    .line 12
-    .line 13
-    :cond_0
-    return-void
-.end method
-
-.method public final c(LR8/q;)V
-    .locals 7
-
-    .line 1
-    iget-boolean v0, p0, LT8/b;->u:Z
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    return-void
-
-    .line 6
-    :cond_0
-    iget-object v1, p0, LT8/b;->t:LT8/d;
-
-    .line 7
-    .line 8
-    sget-object v5, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
-
-    .line 9
-    .line 10
-    iget-object v6, p0, LT8/b;->q:LI8/a;
-
-    .line 11
-    .line 12
-    const-wide/16 v3, 0x0
-
-    .line 13
-    .line 14
-    move-object v2, p1
-
-    .line 15
-    invoke-virtual/range {v1 .. v6}, LT8/k;->d(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;LI8/a;)LT8/o;
-
-    .line 16
-    .line 17
-    .line 18
-    return-void
+    return-object v0
 .end method
