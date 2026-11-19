@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="app.layan.test">
+ <uses-sdk android:minSdkVersion="29" android:targetSdkVersion="34"/>
+ <application android:label="Layan runtime test"/>
+ <instrumentation android:name="app.layan.test.StylePrayerRegression" android:targetPackage="app.layan.quran" android:functionalTest="true"/>
+ <instrumentation android:name="app.layan.test.Smoke" android:targetPackage="app.layan.quran" android:functionalTest="true"/>
+ <instrumentation android:name="app.layan.test.AyahRegression" android:targetPackage="app.layan.quran" android:functionalTest="true"/>
+ <instrumentation android:name="app.layan.test.QuranWidgetRegression" android:targetPackage="app.layan.quran" android:functionalTest="true"/>
+ <instrumentation android:name="app.layan.test.PrayerRegression" android:targetPackage="app.layan.quran" android:functionalTest="true"/>
+ <instrumentation android:name="app.layan.test.QiblaRegression" android:targetPackage="app.layan.quran" android:functionalTest="true"/>
+ <instrumentation android:name="app.layan.test.QiraatRegression" android:targetPackage="app.layan.quran" android:functionalTest="true"/>
+ <instrumentation android:name="app.layan.test.QiraatOfflineReopen" android:targetPackage="app.layan.quran" android:functionalTest="true"/>
+ <instrumentation android:name="app.layan.test.QiraatVisual" android:targetPackage="app.layan.quran" android:functionalTest="true"/>
+ <instrumentation android:name="app.layan.test.DhikrRegression" android:targetPackage="app.layan.quran" android:functionalTest="true"/>
+ <instrumentation android:name="app.layan.test.DhikrProbe" android:targetPackage="app.layan.test" android:functionalTest="true"/>
+ <instrumentation android:name="app.layan.test.HotfixRegression" android:targetPackage="app.layan.quran" android:functionalTest="true"/>
+ <instrumentation android:name="app.layan.test.DhikrBackground" android:targetPackage="app.layan.quran" android:functionalTest="true"/>
+ <instrumentation android:name="app.layan.test.BrandRegression" android:targetPackage="app.layan.quran" android:functionalTest="true"/>
+ <instrumentation android:name="app.layan.test.PhoneLocaleRegression" android:targetPackage="app.layan.quran" android:functionalTest="true"/>
+ <instrumentation android:name="app.layan.test.DhikrRepeatProbe" android:targetPackage="app.layan.test" android:functionalTest="true"/>
+ <instrumentation android:name="app.layan.test.NotificationSoundProbe" android:targetPackage="app.layan.quran" android:functionalTest="true"/>
+ <instrumentation android:name="app.layan.test.ProofExport" android:targetPackage="app.layan.quran" android:functionalTest="true"/>
+<instrumentation android:name="app.layan.test.BackgroundSupportRegression" android:targetPackage="app.layan.quran" android:functionalTest="true" /><instrumentation android:name="app.layan.test.TaskRemovalRegression" android:targetPackage="app.layan.quran" android:functionalTest="true" /><instrumentation android:name="app.layan.test.QiraatGuideRegression" android:targetPackage="app.layan.quran" android:functionalTest="true"/><instrumentation android:name="app.layan.test.QiraatPagePreview" android:targetPackage="app.layan.quran" android:functionalTest="true"/><instrumentation android:name="app.layan.test.QiraatFullGuideRegression" android:targetPackage="app.layan.quran" android:functionalTest="true"/><instrumentation android:name="app.layan.test.QiraatBubblePreview" android:targetPackage="app.layan.quran" android:functionalTest="true"/><instrumentation android:name="app.layan.test.FontRenderingProbe" android:targetPackage="app.layan.quran" android:functionalTest="true"/><instrumentation android:name="app.layan.test.UniformFontRegression" android:targetPackage="app.layan.quran" android:functionalTest="true"/><instrumentation android:name="app.layan.test.PreparedCorpusInstall" android:targetPackage="app.layan.quran" android:functionalTest="true"/><instrumentation android:name="app.layan.test.NightFixRegression" android:targetPackage="app.layan.quran" android:functionalTest="true"/><instrumentation android:name="app.layan.test.QiraatImmersiveRegression" android:targetPackage="app.layan.quran" android:functionalTest="true"/></manifest>

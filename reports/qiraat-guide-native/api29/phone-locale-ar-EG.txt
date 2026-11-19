@@ -1,0 +1,12 @@
+console:/ $ console:/ $ 
+transport_507ded340a8a494eb2b8496dbff153cb
+console:/ $ 
+transport_743d22a2e86f4af3b5062d195d59e51b
+console:/ $ [  595.369068] binder: undelivered TRANSACTION_COMPLETE
+[  595.461344] binder: undelivered transaction 201223, process died.
+[  597.806426] binder: release 4233:4243 transaction 201315 in, still active
+[  597.806634] binder: send failed reply for transaction 201315 to 1984:4270
+INSTRUMENTATION_RESULT: result=PASS real phone locales: [ar_EG]
+INSTRUMENTATION_CODE: -1
+
+LYN_aa7433d2108640f7acd6d84eda387382:0

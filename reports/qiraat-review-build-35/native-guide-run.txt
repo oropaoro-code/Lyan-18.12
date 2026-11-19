@@ -1,0 +1,7 @@
+INSTRUMENTATION_RESULT: error=java.lang.AssertionError: Real RTL swipe retained
+	at app.layan.test.QiraatGuideRegression.check(QiraatGuideRegression.java:7)
+	at app.layan.test.QiraatGuideRegression.swipe(QiraatGuideRegression.java:16)
+	at app.layan.test.QiraatGuideRegression.onStart(QiraatGuideRegression.java:29)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2189)
+
+INSTRUMENTATION_CODE: 0

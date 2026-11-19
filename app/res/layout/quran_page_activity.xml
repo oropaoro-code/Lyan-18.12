@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.layan.quran.view.FitSystemRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager.widget.NonRestoringViewPager android:id="@id/quran_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <app.layan.quran.common.toolbar.AyahToolBar android:id="@id/ayah_toolbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/toolbar_total_height" />
+    <FrameLayout android:id="@id/toolbar_area" android:background="@color/transparent_actionbar_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/status_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <androidx.appcompat.widget.Toolbar android:theme="?actionBarPopupTheme" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="?actionBarPopupTheme">
+            <app.layan.quran.view.QuranSpinner android:id="@id/spinner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </androidx.appcompat.widget.Toolbar>
+    </FrameLayout>
+    <app.layan.quran.feature.audiobar.AudioBarWrapper android:id="@id/audio_area" android:background="@color/transparent_actionbar_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/audiobar_height" android:itemBackground="?selectableItemBackgroundBorderless" android:layout_alignParentBottom="true" />
+</app.layan.quran.view.FitSystemRelativeLayout>

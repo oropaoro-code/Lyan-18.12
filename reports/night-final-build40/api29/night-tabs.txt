@@ -1,0 +1,2 @@
+INSTRUMENTATION_RESULT: result=PASS stable home tab colours after seven immediate selections and six real swipes; heading colour guides in all applicable riwayat
+INSTRUMENTATION_CODE: -1

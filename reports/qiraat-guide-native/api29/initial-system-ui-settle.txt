@@ -1,0 +1,9 @@
+console:/ $ [  565.884179] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+console:/ $ [  565.884179] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+
+transport_8313e0256914449f8e7ebbb3d13b6272
+console:/ $ 
+transport_ac499aa1278e464ab2a581185ad435c2
+console:/ $ LAYAN_UI_READY
+
+LYN_c38a82e2c68f4b2082ce85e85fbc6ed3:0

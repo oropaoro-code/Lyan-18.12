@@ -1,0 +1,6 @@
+INSTRUMENTATION_RESULT: error=java.lang.AssertionError: Reader never gained actual input focus
+	at app.layan.test.QiraatPagePreview.show(QiraatPagePreview.java:10)
+	at app.layan.test.QiraatPagePreview.onStart(QiraatPagePreview.java:14)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2189)
+
+INSTRUMENTATION_CODE: 0

@@ -1,0 +1,8 @@
+console:/ $ console:/ $ 
+transport_7bf2a021e173439e83898487a4e19eed
+console:/ $ console:/ $ 
+transport_9c15639b79fa47a88ee765abb3c91b3e
+console:/ $ [  626.058652] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+LAYAN_UI_READY
+
+LYN_b0c652c4d157485fad7f56d3b7cb4ff5:0

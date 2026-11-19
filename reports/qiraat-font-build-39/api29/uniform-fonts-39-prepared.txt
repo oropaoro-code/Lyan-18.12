@@ -1,0 +1,23 @@
+INSTRUMENTATION_RESULT: result=PASS 60 checks; all twenty final native font scales within 0.1px
+hafs=11.18633px
+shubah=11.18633px
+warsh=11.18633px
+qaloon=11.18633px
+buzzi=11.18633px
+qunbul=11.18633px
+duri=11.18633px
+susi=11.18633px
+hisham=11.18633px
+ibn-dhakwan=11.18633px
+khalaf=11.18633px
+khallad=11.18633px
+abu-harith=11.18633px
+duri-kisai=11.18633px
+ibn-wardan=11.18633px
+ibn-jammaz=11.18633px
+ruways=11.18633px
+rawh=11.18633px
+ishaq=11.18633px
+idris=11.18633px
+
+INSTRUMENTATION_CODE: -1

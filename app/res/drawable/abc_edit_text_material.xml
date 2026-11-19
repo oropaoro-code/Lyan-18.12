@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset ns0:insetLeft="@dimen/abc_edit_text_inset_horizontal_material" ns0:insetRight="@dimen/abc_edit_text_inset_horizontal_material" ns0:insetTop="@dimen/abc_edit_text_inset_top_material" ns0:insetBottom="@dimen/abc_edit_text_inset_bottom_material"
+  xmlns:ns0="http://schemas.android.com/apk/res/android">
+    <selector>
+        <item ns0:state_enabled="false">
+            <nine-patch ns0:src="@drawable/abc_textfield_default_mtrl_alpha" ns0:tint="?colorControlNormal" ns0:alpha="?android:disabledAlpha" />
+        </item>
+        <item ns0:state_focused="false" ns0:state_pressed="false">
+            <nine-patch ns0:src="@drawable/abc_textfield_default_mtrl_alpha" ns0:tint="?colorControlNormal" />
+        </item>
+        <item>
+            <nine-patch ns0:src="@drawable/abc_textfield_activated_mtrl_alpha" ns0:tint="?colorControlActivated" />
+        </item>
+    </selector>
+</inset>

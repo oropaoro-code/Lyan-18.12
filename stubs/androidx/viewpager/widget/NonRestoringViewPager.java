@@ -1,0 +1,1 @@
+package androidx.viewpager.widget;public class NonRestoringViewPager extends ViewPager {public NonRestoringViewPager(android.content.Context c){super(c);}public void setIsDualPagesInLandscape(boolean b){}}

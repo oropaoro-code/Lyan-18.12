@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "pages": 12080,
+  "pagePaintEntries": 24486,
+  "unverifiedPaintKinds": 33,
+  "sacredPDFsUnchanged": true,
+  "allTransformedBoundsInsideCommonCanvas": true,
+  "allPagePaintsRepresented": true,
+  "allMeaningsVerified": false
+}

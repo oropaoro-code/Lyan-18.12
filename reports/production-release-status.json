@@ -1,0 +1,38 @@
+{
+  "versionName": "18.12",
+  "versionCode": 41,
+  "apkSha256": "42b05dd2e55e3054c51534c37693e709be7c0a1fe4a16685fc557ad36b85178c",
+  "aabSha256": "89458d073929787dec70de02608675422f27181b2ff3f8bd9b264cb79556fd9c",
+  "productionReady": false,
+  "nativeMatrixComplete": false,
+  "signingCertificateSha256": "9702d490a448abaa42e113f8b2f6c65915b9b8840d8cd0173d041389dc431474",
+  "checks": {
+    "signatureApi29": "PASS",
+    "signatureApi30": "PASS",
+    "signatureApi31": "PASS",
+    "signatureApi32": "PASS",
+    "signatureApi33": "PASS",
+    "signatureApi34": "PASS",
+    "signatureApi35": "PASS",
+    "signatureApi36": "PASS",
+    "alignment16KB": "PASS",
+    "bundleStructure": "PASS",
+    "bundleSignature": "PASS",
+    "expectedSigningCertificate": "PASS",
+    "expectedBundleSigningCertificate": "PASS",
+    "publishingRecordingUncompressedConfig": "PASS",
+    "compiledVersionAndSdk": "PASS",
+    "integrityAndNoPrivateKey": "PASS",
+    "testedApkMatchesPublishingBundle": "PASS",
+    "timezoneProviderAndData": "PASS",
+    "nativePackagingStrategy": "PASS",
+    "nativeLoadSegmentLayout": "PASS"
+  },
+  "nativePackaging": "Native libraries extracted at installation; APK ZIP alignment and packaged ELF LOAD alignment checked",
+  "nativeLoadAlignment": {
+    "lib/x86_64/libandroidx.graphics.path.so": 16384,
+    "lib/arm64-v8a/libandroidx.graphics.path.so": 16384,
+    "lib/x86/libandroidx.graphics.path.so": 16384,
+    "lib/armeabi-v7a/libandroidx.graphics.path.so": 16384
+  }
+}

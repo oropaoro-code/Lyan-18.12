@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lp_widget_root" android:background="@drawable/lp_widget_background" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/lp_widget_moon" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/layan_prayer_moon" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="8.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="#ff20392e" android:ellipsize="end" android:id="@id/lp_widget_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textSize="10.0sp" android:textColor="#ff6d7b72" android:ellipsize="end" android:id="@id/lp_widget_location" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+        </LinearLayout>
+        <ImageView android:id="@id/lp_widget_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/ic_launcher" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lp_widget_next_box" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="#ff285b47" android:gravity="center" android:id="@id/lp_widget_next" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        <Chronometer android:textSize="12.0sp" android:textColor="#ff285b47" android:id="@id/lp_widget_countdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:countDown="true" />
+    </LinearLayout>
+</LinearLayout>

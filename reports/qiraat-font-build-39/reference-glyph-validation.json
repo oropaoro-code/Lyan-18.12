@@ -1,0 +1,87 @@
+{
+  "result": "PASS",
+  "reference": "original HQPB1 alif outline",
+  "riwayat": [
+    {
+      "id": "abu-harith",
+      "referenceGlyphHeightEm": 0.716796875
+    },
+    {
+      "id": "buzzi",
+      "referenceGlyphHeightEm": 0.716796875
+    },
+    {
+      "id": "duri-kisai",
+      "referenceGlyphHeightEm": 0.716796875
+    },
+    {
+      "id": "duri",
+      "referenceGlyphHeightEm": 0.716796875
+    },
+    {
+      "id": "hafs",
+      "referenceGlyphHeightEm": 0.716796875
+    },
+    {
+      "id": "hisham",
+      "referenceGlyphHeightEm": 0.716796875
+    },
+    {
+      "id": "ibn-dhakwan",
+      "referenceGlyphHeightEm": 0.716796875
+    },
+    {
+      "id": "ibn-jammaz",
+      "referenceGlyphHeightEm": 0.716796875
+    },
+    {
+      "id": "ibn-wardan",
+      "referenceGlyphHeightEm": 0.716796875
+    },
+    {
+      "id": "idris",
+      "referenceGlyphHeightEm": 0.716796875
+    },
+    {
+      "id": "ishaq",
+      "referenceGlyphHeightEm": 0.716796875
+    },
+    {
+      "id": "khalaf",
+      "referenceGlyphHeightEm": 0.716796875
+    },
+    {
+      "id": "khallad",
+      "referenceGlyphHeightEm": 0.716796875
+    },
+    {
+      "id": "qaloon",
+      "referenceGlyphHeightEm": 0.716796875
+    },
+    {
+      "id": "qunbul",
+      "referenceGlyphHeightEm": 0.716796875
+    },
+    {
+      "id": "rawh",
+      "referenceGlyphHeightEm": 0.716796875
+    },
+    {
+      "id": "ruways",
+      "referenceGlyphHeightEm": 0.716796875
+    },
+    {
+      "id": "shubah",
+      "referenceGlyphHeightEm": 0.716796875
+    },
+    {
+      "id": "susi",
+      "referenceGlyphHeightEm": 0.716796875
+    },
+    {
+      "id": "warsh",
+      "referenceGlyphHeightEm": 0.716796875
+    }
+  ],
+  "limitation": "This checks the common body-letter reference, not decorative glyphs or the originally smaller runs inside some pages."
+}

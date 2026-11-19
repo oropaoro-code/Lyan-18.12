@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0.0dip" app:fastScrollEnabled="true" app:fastScrollHorizontalThumbDrawable="@drawable/fast_scroll_thumb" app:fastScrollHorizontalTrackDrawable="@drawable/fast_scroll_track" app:fastScrollVerticalThumbDrawable="@drawable/fast_scroll_thumb" app:fastScrollVerticalTrackDrawable="@drawable/fast_scroll_track" />
+    <TextView android:gravity="center" android:id="@id/empty_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/loading" />
+</LinearLayout>

@@ -1,0 +1,62 @@
+{
+  "nonce": 2,
+  "replies": [
+    {
+      "type": "adb",
+      "args": [
+        "install",
+        "--no-streaming",
+        "-r",
+        "/workspace/scratch/44e931097658/layan-source/layan-18.12-source/build/instrumentation/layan-test.apk"
+      ],
+      "output": "/workspace/scratch/44e931097658/layan-source/layan-18.12-source/build/instrumentation/layan-test.apk: 1 file pushed, 0 skipped. 984.0 MB/s (147859 bytes in 0.000s)\nPerforming Push Install\nSuccess\n"
+    },
+    {
+      "type": "adb",
+      "args": [
+        "shell",
+        "mkdir",
+        "-p",
+        "/data/local/tmp/qiraat-corpus"
+      ],
+      "output": ""
+    },
+    {
+      "type": "adb",
+      "args": [
+        "push",
+        "/workspace/scratch/44e931097658/qiraat-corpus/01-asim-hafs.pdf.xz",
+        "/workspace/scratch/44e931097658/qiraat-corpus/01-asim-shubah.pdf.xz",
+        "/workspace/scratch/44e931097658/qiraat-corpus/02-nafi-qalun.pdf.xz",
+        "/workspace/scratch/44e931097658/qiraat-corpus/02-nafi-warsh.pdf.xz",
+        "/workspace/scratch/44e931097658/qiraat-corpus/03-ibn-kathir-al-bazzi.pdf.xz",
+        "/workspace/scratch/44e931097658/qiraat-corpus/03-ibn-kathir-qunbul.pdf.xz",
+        "/workspace/scratch/44e931097658/qiraat-corpus/04-abu-amr-ad-duri.pdf.xz",
+        "/workspace/scratch/44e931097658/qiraat-corpus/04-abu-amr-as-susi.pdf.xz",
+        "/workspace/scratch/44e931097658/qiraat-corpus/05-ibn-amir-hisham.pdf.xz",
+        "/workspace/scratch/44e931097658/qiraat-corpus/05-ibn-amir-ibn-dhakwan.pdf.xz",
+        "/workspace/scratch/44e931097658/qiraat-corpus/06-hamzah-khalaf.pdf.xz",
+        "/workspace/scratch/44e931097658/qiraat-corpus/06-hamzah-khallad.pdf.xz",
+        "/workspace/scratch/44e931097658/qiraat-corpus/07-al-kisai-abu-al-harith.pdf.xz",
+        "/workspace/scratch/44e931097658/qiraat-corpus/07-al-kisai-ad-duri.pdf.xz",
+        "/workspace/scratch/44e931097658/qiraat-corpus/08-abu-jafar-ibn-jammaz.pdf.xz",
+        "/workspace/scratch/44e931097658/qiraat-corpus/08-abu-jafar-ibn-wardan.pdf.xz",
+        "/workspace/scratch/44e931097658/qiraat-corpus/09-yaqub-rawh.pdf.xz",
+        "/workspace/scratch/44e931097658/qiraat-corpus/09-yaqub-ruways.pdf.xz",
+        "/workspace/scratch/44e931097658/qiraat-corpus/10-khalaf-al-ashir-idris.pdf.xz",
+        "/workspace/scratch/44e931097658/qiraat-corpus/10-khalaf-al-ashir-ishaq.pdf.xz",
+        "/data/local/tmp/qiraat-corpus/"
+      ],
+      "output": "/workspace/scratch/44e931097658/qiraat-corpus/01-asim-hafs.pdf.xz: 1 file pushed, 0 skipped. 2815.5 MB/s (774808 bytes in 0.000s)\n/workspace/scratch/44e931097658/qiraat-corpus/01-asim-shubah.pdf.xz: 1 file pushed, 0 skipped. 5578.0 MB/s (921220 bytes in 0.000s)\n/workspace/scratch/44e931097658/qiraat-corpus/02-nafi-qalun.pdf.xz: 1 file pushed, 0 skipped. 5037.2 MB/s (1001976 bytes in 0.000s)\n/workspace/scratch/44e931097658/qiraat-corpus/02-nafi-warsh.pdf.xz: 1 file pushed, 0 skipped. 5077.8 MB/s (1089176 bytes in 0.000s)\n/workspace/scratch/44e931097658/qiraat-corpus/03-ibn-kathir-al-bazzi.pdf.xz: 1 file pushed, 0 skipped. 38.2 MB/s (1373580 bytes in 0.034s)\n/workspace/scratch/44e931097658/qiraat-corpus/03-ibn-kathir-qunbul.pdf.xz: 1 file pushed, 0 skipped. 33.9 MB/s (969172 bytes in 0.027s)\n/workspace/scratch/44e931097658/qiraat-corpus/04-abu-amr-ad-duri.pdf.xz: 1 file pushed, 0 skipped. 13.3 MB/s (974164 bytes in 0.070s)\n/workspace/scratch/44e931097658/qiraat-corpus/04-abu-amr-as-susi.pdf.xz: 1 file pushed, 0 skipped. 27.7 MB/s (964020 bytes in 0.033s)\n/workspace/scratch/44e931097658/qiraat-corpus/05-ibn-amir-hisham.pdf.xz: 1 file pushed, 0 skipped. 4550.8 MB/s (912112 bytes in 0.000s)\n/workspace/scratch/44e931097658/qiraat-corpus/05-ibn-amir-ibn-dhakwan.pdf.xz: 1 file pushed, 0 skipped. 11.0 MB/s (896368 bytes in 0.077s)\n/workspace/scratch/44e931097658/qiraat-corpus/06-hamzah-khalaf.pdf.xz: 1 file pushed, 0 skipped. 23.0 MB/s (946884 bytes in 0.039s)\n/workspace/scratch/44e931097658/qiraat-corpus/06-hamzah-khallad.pdf.xz: 1 file pushed, 0 skipped. 17.4 MB/s (954884 bytes in 0.052s)\n/workspace/scratch/44e931097658/qiraat-corpus/07-al-kisai-abu-al-harith.pdf.xz: 1 file pushed, 0 skipped. 17.5 MB/s (1005148 bytes in 0.055s)\n/workspace/scratch/44e931097658/qiraat-corpus/07-al-kisai-ad-duri.pdf.xz: 1 file pushed, 0 skipped. 28.1 MB/s (1206528 bytes in 0.041s)\n/workspace/scratch/44e931097658/qiraat-corpus/08-abu-jafar-ibn-jammaz.pdf.xz: 1 file pushed, 0 skipped. 19.0 MB/s (1426336 bytes in 0.072s)\n/workspace/scratch/44e931097658/qiraat-corpus/08-abu-jafar-ibn-wardan.pdf.xz: 1 file pushed, 0 skipped. 35.1 MB/s (1415964 bytes in 0.038s)\n/workspace/scratch/44e931097658/qiraat-corpus/09-yaqub-rawh.pdf.xz: 1 file pushed, 0 skipped. 17.2 MB/s (1354704 bytes in 0.075s)\n/workspace/scratch/44e931097658/qiraat-corpus/09-yaqub-ruways.pdf.xz: 1 file pushed, 0 skipped. 3068.4 MB/s (1410344 bytes in 0.000s)\n/workspace/scratch/44e931097658/qiraat-corpus/10-khalaf-al-ashir-idris.pdf.xz: 1 file pushed, 0 skipped. 43.2 MB/s (1560016 bytes in 0.034s)\n/workspace/scratch/44e931097658/qiraat-corpus/10-khalaf-al-ashir-ishaq.pdf.xz: 1 file pushed, 0 skipped. 16.6 MB/s (1556688 bytes in 0.090s)\n20 files pushed, 0 skipped. 22.7 MB/s (22714092 bytes in 0.956s)\n"
+    },
+    {
+      "api": 29,
+      "installedSha256": "51afd4a0210b8b0c719392bb9d921262ea8bfbb18e56534a356c808f6263d99e",
+      "expectedSha256": "51afd4a0210b8b0c719392bb9d921262ea8bfbb18e56534a356c808f6263d99e",
+      "diagnostic": false,
+      "result": "ERROR",
+      "time": 1791914705.6852179
+    }
+  ],
+  "quit": false
+}

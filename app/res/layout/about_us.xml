@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ns0:orientation="vertical" ns0:layout_width="fill_parent" ns0:layout_height="fill_parent"
+  xmlns:ns0="http://schemas.android.com/apk/res/android" xmlns:ns1="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar ns0:id="@id/toolbar" ns0:background="?colorPrimary" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" />
+    <ScrollView ns0:orientation="vertical" ns0:layout_width="fill_parent" ns0:layout_height="0.0dip" ns0:layout_weight="1.0">
+        <LinearLayout ns0:orientation="vertical" ns0:paddingBottom="20.0dip" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content">
+            <LinearLayout ns0:gravity="center" ns0:orientation="horizontal" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" ns0:layout_marginTop="25.0dip">
+                <ImageView ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns1:srcCompat="@drawable/icon" />
+            </LinearLayout>
+            <TextView ns0:textSize="17.0sp" ns0:layout_gravity="center" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:layout_margin="16.0dip" ns0:text="@string/about_description" ns0:textAlignment="center" />
+            <LinearLayout ns0:orientation="vertical" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" ns0:layout_marginLeft="5.0dip" ns0:layout_marginTop="20.0dip" ns0:layout_marginRight="5.0dip" ns0:layout_marginBottom="20.0dip">
+                <TextView ns0:textSize="16.0sp" ns0:layout_gravity="center" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:text="@string/about_contactDesc" />
+            </LinearLayout>
+            <LinearLayout ns0:layout_gravity="center" ns0:orientation="horizontal" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:layout_marginLeft="5.0dip" ns0:layout_marginRight="5.0dip">
+                <ImageView ns0:id="@id/ib_facebook" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:layout_margin="@dimen/translation_top_bottom_margin" ns1:srcCompat="@drawable/ic_facebook" />
+                <ImageView ns0:id="@id/ib_instagram" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:layout_margin="@dimen/translation_top_bottom_margin" ns1:srcCompat="@drawable/ic_instagram" />
+                <ImageView ns0:id="@id/ib_twitter" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:layout_margin="@dimen/translation_top_bottom_margin" ns1:srcCompat="@drawable/ic_twitter" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout ns0:orientation="horizontal" ns0:id="@id/adView" ns0:visibility="gone" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" />
+</LinearLayout>

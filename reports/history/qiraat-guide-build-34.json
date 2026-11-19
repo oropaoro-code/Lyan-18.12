@@ -1,0 +1,61 @@
+{
+  "versionName": "18.12",
+  "versionCode": 34,
+  "apkSha256": "f140c45a726c4aabc9544b345248bd09f47708696cb85879d94eca86ab4d76d6",
+  "aabSha256": "1673f076d939d1e0cf664c6da6a102c5b1d3257fb922d1596b5a79a751451b6d",
+  "productionReady": false,
+  "nativeMatrixComplete": false,
+  "signingCertificateSha256": "9702d490a448abaa42e113f8b2f6c65915b9b8840d8cd0173d041389dc431474",
+  "checks": {
+    "signatureApi29": "PASS",
+    "signatureApi30": "PASS",
+    "signatureApi31": "PASS",
+    "signatureApi32": "PASS",
+    "signatureApi33": "PASS",
+    "signatureApi34": "PASS",
+    "signatureApi35": "PASS",
+    "signatureApi36": "PASS",
+    "alignment16KB": "PASS",
+    "bundleStructure": "PASS",
+    "bundleSignature": "PASS",
+    "expectedSigningCertificate": "PASS",
+    "expectedBundleSigningCertificate": "PASS",
+    "publishingRecordingUncompressedConfig": "PASS",
+    "compiledVersionAndSdk": "PASS",
+    "integrityAndNoPrivateKey": "PASS",
+    "testedApkMatchesPublishingBundle": "PASS",
+    "timezoneProviderAndData": "PASS",
+    "nativePackagingStrategy": "PASS",
+    "nativeLoadSegmentLayout": "PASS"
+  },
+  "nativePackaging": "Compressed native libraries with extraction; packaged ELF LOAD alignment checked",
+  "nativeLoadAlignment": {
+    "lib/arm64-v8a/libandroidx.graphics.path.so": 16384,
+    "lib/armeabi-v7a/libandroidx.graphics.path.so": 16384,
+    "lib/x86/libandroidx.graphics.path.so": 16384,
+    "lib/x86_64/libandroidx.graphics.path.so": 16384
+  },
+  "feature": "Always-visible non-clickable riwayah guide footer on every page; no guide button.",
+  "nativeTargetedCase": {
+    "per-page-riwayah-guide": "PASS"
+  },
+  "nativeGuideDataSets": 20,
+  "nativeReaderPages": [
+    1,
+    2,
+    300,
+    604
+  ],
+  "nativeNightMode": "PASS",
+  "nativeApi": 29,
+  "originalColourKeys": 18,
+  "basicDiacriticGuides": [
+    "hafs",
+    "qaloon"
+  ],
+  "allRawRiwayahMetadataUnchanged": true,
+  "coreDexAndOriginalRecordingUnchanged": true,
+  "fullCurrentVersionNativeMatrix": false,
+  "physicalInfinixRetest": "Pending",
+  "verifiedUtc": "2026-10-13T11:33:38.599548+00:00"
+}

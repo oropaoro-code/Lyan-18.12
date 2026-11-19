@@ -1,0 +1,2 @@
+INSTRUMENTATION_RESULT: error=java.io.IOException: No native screenshots at /storage/emulated/0/Android/data/app.layan.quran/files/tests
+INSTRUMENTATION_CODE: 0

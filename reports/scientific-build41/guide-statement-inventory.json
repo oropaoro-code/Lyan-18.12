@@ -1,0 +1,4114 @@
+[
+  {
+    "title": "المخالفة لحفص",
+    "meaning": "تشير العلامة الملونة في هذا المدخل إلى حرف أو حركة أو صورة كلمة تخالف حفصًا في هذا المصحف. اقرأ الحرف وحركته وتشديده وإثباته أو حذفه كما في الرواية المختارة. لا تنقل ضبط حفص إلى هذا الموضع. وقد يلوّن ترقيم الآية تبعًا لعدّ هذه النسخة؛ تلوين إطار الآية أو رقمها لا يضيف حكمًا صوتيًا إلى الكلمة.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "items",
+        "index": 0
+      },
+      {
+        "id": "idris",
+        "group": "items",
+        "index": 7
+      },
+      {
+        "id": "susi",
+        "group": "items",
+        "index": 0
+      },
+      {
+        "id": "khallad",
+        "group": "items",
+        "index": 0
+      },
+      {
+        "id": "qaloon",
+        "group": "items",
+        "index": 0
+      },
+      {
+        "id": "shubah",
+        "group": "items",
+        "index": 0
+      },
+      {
+        "id": "duri",
+        "group": "items",
+        "index": 0
+      },
+      {
+        "id": "duri-kisai",
+        "group": "items",
+        "index": 0
+      },
+      {
+        "id": "duri-kisai",
+        "group": "items",
+        "index": 5
+      },
+      {
+        "id": "ruways",
+        "group": "items",
+        "index": 0
+      },
+      {
+        "id": "ruways",
+        "group": "items",
+        "index": 4
+      },
+      {
+        "id": "khalaf",
+        "group": "items",
+        "index": 0
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "items",
+        "index": 0
+      },
+      {
+        "id": "qunbul",
+        "group": "items",
+        "index": 0
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "items",
+        "index": 0
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "items",
+        "index": 0
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "items",
+        "index": 4
+      },
+      {
+        "id": "ishaq",
+        "group": "items",
+        "index": 0
+      },
+      {
+        "id": "ishaq",
+        "group": "items",
+        "index": 7
+      },
+      {
+        "id": "rawh",
+        "group": "items",
+        "index": 0
+      },
+      {
+        "id": "rawh",
+        "group": "items",
+        "index": 3
+      },
+      {
+        "id": "buzzi",
+        "group": "items",
+        "index": 0
+      },
+      {
+        "id": "buzzi",
+        "group": "items",
+        "index": 5
+      },
+      {
+        "id": "buzzi",
+        "group": "items",
+        "index": 6
+      },
+      {
+        "id": "hisham",
+        "group": "items",
+        "index": 0
+      },
+      {
+        "id": "warsh",
+        "group": "items",
+        "index": 0
+      },
+      {
+        "id": "abu-harith",
+        "group": "items",
+        "index": 0
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "الإدغام",
+    "meaning": "أدخل صوت الحرف الأول في الحرف التالي حتى يصيرا في الأداء حرفًا واحدًا مشددًا من جنس الثاني، وفق ضبط الرواية. قد يكون الأول ساكنًا، أو يكون الموضع من الإدغام الكبير للحرف المتحرك. يُعمل بالإدغام عند الوصل؛ وعند الوقف على الكلمة الأولى لا توصلها بالحرف التالي.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "items",
+        "index": 1
+      },
+      {
+        "id": "idris",
+        "group": "items",
+        "index": 5
+      },
+      {
+        "id": "idris",
+        "group": "items",
+        "index": 6
+      },
+      {
+        "id": "susi",
+        "group": "items",
+        "index": 1
+      },
+      {
+        "id": "susi",
+        "group": "items",
+        "index": 5
+      },
+      {
+        "id": "khallad",
+        "group": "items",
+        "index": 1
+      },
+      {
+        "id": "qaloon",
+        "group": "items",
+        "index": 1
+      },
+      {
+        "id": "qaloon",
+        "group": "items",
+        "index": 5
+      },
+      {
+        "id": "shubah",
+        "group": "items",
+        "index": 1
+      },
+      {
+        "id": "duri",
+        "group": "items",
+        "index": 1
+      },
+      {
+        "id": "duri",
+        "group": "items",
+        "index": 4
+      },
+      {
+        "id": "duri-kisai",
+        "group": "items",
+        "index": 1
+      },
+      {
+        "id": "ruways",
+        "group": "items",
+        "index": 1
+      },
+      {
+        "id": "khalaf",
+        "group": "items",
+        "index": 7
+      },
+      {
+        "id": "khalaf",
+        "group": "items",
+        "index": 9
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "items",
+        "index": 1
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "items",
+        "index": 1
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "items",
+        "index": 1
+      },
+      {
+        "id": "ishaq",
+        "group": "items",
+        "index": 1
+      },
+      {
+        "id": "ishaq",
+        "group": "items",
+        "index": 5
+      },
+      {
+        "id": "ishaq",
+        "group": "items",
+        "index": 6
+      },
+      {
+        "id": "rawh",
+        "group": "items",
+        "index": 1
+      },
+      {
+        "id": "hisham",
+        "group": "items",
+        "index": 1
+      },
+      {
+        "id": "warsh",
+        "group": "items",
+        "index": 1
+      },
+      {
+        "id": "abu-harith",
+        "group": "items",
+        "index": 1
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "الإمالة",
+    "meaning": "قرّب الفتحة من الكسرة والألف من الياء من غير تحويلهما إلى كسرة وياء خالصتين. الإمالة الكبرى أقوى من التقليل. اتبع مواضع الرواية المعلّمة، وميّز بين الإمالة في الوصل والوقف وبين المواضع المختصة بالوقف.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "items",
+        "index": 2
+      },
+      {
+        "id": "susi",
+        "group": "items",
+        "index": 2
+      },
+      {
+        "id": "khallad",
+        "group": "items",
+        "index": 2
+      },
+      {
+        "id": "qaloon",
+        "group": "items",
+        "index": 2
+      },
+      {
+        "id": "qaloon",
+        "group": "items",
+        "index": 3
+      },
+      {
+        "id": "shubah",
+        "group": "items",
+        "index": 2
+      },
+      {
+        "id": "duri",
+        "group": "items",
+        "index": 2
+      },
+      {
+        "id": "duri-kisai",
+        "group": "items",
+        "index": 2
+      },
+      {
+        "id": "ruways",
+        "group": "items",
+        "index": 2
+      },
+      {
+        "id": "khalaf",
+        "group": "items",
+        "index": 2
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "items",
+        "index": 2
+      },
+      {
+        "id": "ishaq",
+        "group": "items",
+        "index": 2
+      },
+      {
+        "id": "rawh",
+        "group": "items",
+        "index": 2
+      },
+      {
+        "id": "hisham",
+        "group": "items",
+        "index": 2
+      },
+      {
+        "id": "abu-harith",
+        "group": "items",
+        "index": 2
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "إشمام الصاد صوت الزاي",
+    "meaning": "انطق الصاد بصوت ممزوج بالزاي مع المحافظة على خصائص الصاد؛ ليست زايًا خالصة. هذا إشمام يسمع في النطق، وليس ضمّ الشفتين بلا صوت في باب الوقف. مواضعه، مثل الصاد الساكنة قبل الدال في «أصدق»، تتبع الرواية وطريقها.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "items",
+        "index": 3
+      },
+      {
+        "id": "khallad",
+        "group": "items",
+        "index": 4
+      },
+      {
+        "id": "khallad",
+        "group": "items",
+        "index": 7
+      },
+      {
+        "id": "duri-kisai",
+        "group": "items",
+        "index": 3
+      },
+      {
+        "id": "khalaf",
+        "group": "items",
+        "index": 4
+      },
+      {
+        "id": "ishaq",
+        "group": "items",
+        "index": 3
+      },
+      {
+        "id": "abu-harith",
+        "group": "items",
+        "index": 3
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "حركات الضبط في الموضع",
+    "meaning": "درجة خضراء في أجزاء متفرقة من حركات الكلمات وتنوينها. يفسر الدليل الكلمة والحركة في كل موضع أدناه، ولا ينسب إلى الدرجة حكمًا عامًا غير موجود في مفتاح الناشر. اتبع حكم التاء والتنوين بحسب الرواية؛ لا تنقل إمالة هاء التأنيث الخاصة بالكسائي إلى هذه الرواية لمجرد تشابه اللون.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "items",
+        "index": 4
+      },
+      {
+        "id": "khalaf",
+        "group": "items",
+        "index": 6
+      },
+      {
+        "id": "ishaq",
+        "group": "items",
+        "index": 4
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "الفتحة",
+    "meaning": "حركة قصيرة فوق الحرف، تدل على نطقه مفتوحًا. لا تزد مدًا من الفتحة وحدها.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "basicDiacritics",
+        "index": 0
+      },
+      {
+        "id": "susi",
+        "group": "basicDiacritics",
+        "index": 0
+      },
+      {
+        "id": "khallad",
+        "group": "basicDiacritics",
+        "index": 0
+      },
+      {
+        "id": "qaloon",
+        "group": "basicDiacritics",
+        "index": 0
+      },
+      {
+        "id": "shubah",
+        "group": "basicDiacritics",
+        "index": 0
+      },
+      {
+        "id": "duri",
+        "group": "basicDiacritics",
+        "index": 0
+      },
+      {
+        "id": "duri-kisai",
+        "group": "basicDiacritics",
+        "index": 0
+      },
+      {
+        "id": "ruways",
+        "group": "basicDiacritics",
+        "index": 0
+      },
+      {
+        "id": "khalaf",
+        "group": "basicDiacritics",
+        "index": 0
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "basicDiacritics",
+        "index": 0
+      },
+      {
+        "id": "qunbul",
+        "group": "basicDiacritics",
+        "index": 0
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "basicDiacritics",
+        "index": 0
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "basicDiacritics",
+        "index": 0
+      },
+      {
+        "id": "ishaq",
+        "group": "basicDiacritics",
+        "index": 0
+      },
+      {
+        "id": "hafs",
+        "group": "items",
+        "index": 0
+      },
+      {
+        "id": "hafs",
+        "group": "basicDiacritics",
+        "index": 0
+      },
+      {
+        "id": "rawh",
+        "group": "basicDiacritics",
+        "index": 0
+      },
+      {
+        "id": "buzzi",
+        "group": "basicDiacritics",
+        "index": 0
+      },
+      {
+        "id": "hisham",
+        "group": "basicDiacritics",
+        "index": 0
+      },
+      {
+        "id": "warsh",
+        "group": "basicDiacritics",
+        "index": 0
+      },
+      {
+        "id": "abu-harith",
+        "group": "basicDiacritics",
+        "index": 0
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "الضمة",
+    "meaning": "حركة قصيرة فوق الحرف، تدل على نطقه مضمومًا. الضمة وحدها ليست واو مد.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "basicDiacritics",
+        "index": 1
+      },
+      {
+        "id": "susi",
+        "group": "basicDiacritics",
+        "index": 1
+      },
+      {
+        "id": "khallad",
+        "group": "basicDiacritics",
+        "index": 1
+      },
+      {
+        "id": "qaloon",
+        "group": "basicDiacritics",
+        "index": 1
+      },
+      {
+        "id": "shubah",
+        "group": "basicDiacritics",
+        "index": 1
+      },
+      {
+        "id": "duri",
+        "group": "basicDiacritics",
+        "index": 1
+      },
+      {
+        "id": "duri-kisai",
+        "group": "basicDiacritics",
+        "index": 1
+      },
+      {
+        "id": "ruways",
+        "group": "basicDiacritics",
+        "index": 1
+      },
+      {
+        "id": "khalaf",
+        "group": "basicDiacritics",
+        "index": 1
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "basicDiacritics",
+        "index": 1
+      },
+      {
+        "id": "qunbul",
+        "group": "basicDiacritics",
+        "index": 1
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "basicDiacritics",
+        "index": 1
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "basicDiacritics",
+        "index": 1
+      },
+      {
+        "id": "ishaq",
+        "group": "basicDiacritics",
+        "index": 1
+      },
+      {
+        "id": "hafs",
+        "group": "items",
+        "index": 1
+      },
+      {
+        "id": "hafs",
+        "group": "basicDiacritics",
+        "index": 1
+      },
+      {
+        "id": "rawh",
+        "group": "basicDiacritics",
+        "index": 1
+      },
+      {
+        "id": "buzzi",
+        "group": "basicDiacritics",
+        "index": 1
+      },
+      {
+        "id": "hisham",
+        "group": "basicDiacritics",
+        "index": 1
+      },
+      {
+        "id": "warsh",
+        "group": "basicDiacritics",
+        "index": 1
+      },
+      {
+        "id": "abu-harith",
+        "group": "basicDiacritics",
+        "index": 1
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "الكسرة",
+    "meaning": "حركة قصيرة تحت الحرف، تدل على نطقه مكسورًا. الكسرة وحدها ليست ياء مد.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "basicDiacritics",
+        "index": 2
+      },
+      {
+        "id": "susi",
+        "group": "basicDiacritics",
+        "index": 2
+      },
+      {
+        "id": "khallad",
+        "group": "basicDiacritics",
+        "index": 2
+      },
+      {
+        "id": "qaloon",
+        "group": "basicDiacritics",
+        "index": 2
+      },
+      {
+        "id": "shubah",
+        "group": "basicDiacritics",
+        "index": 2
+      },
+      {
+        "id": "duri",
+        "group": "basicDiacritics",
+        "index": 2
+      },
+      {
+        "id": "duri-kisai",
+        "group": "basicDiacritics",
+        "index": 2
+      },
+      {
+        "id": "ruways",
+        "group": "basicDiacritics",
+        "index": 2
+      },
+      {
+        "id": "khalaf",
+        "group": "basicDiacritics",
+        "index": 2
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "basicDiacritics",
+        "index": 2
+      },
+      {
+        "id": "qunbul",
+        "group": "basicDiacritics",
+        "index": 2
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "basicDiacritics",
+        "index": 2
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "basicDiacritics",
+        "index": 2
+      },
+      {
+        "id": "ishaq",
+        "group": "basicDiacritics",
+        "index": 2
+      },
+      {
+        "id": "hafs",
+        "group": "items",
+        "index": 2
+      },
+      {
+        "id": "hafs",
+        "group": "basicDiacritics",
+        "index": 2
+      },
+      {
+        "id": "rawh",
+        "group": "basicDiacritics",
+        "index": 2
+      },
+      {
+        "id": "buzzi",
+        "group": "basicDiacritics",
+        "index": 2
+      },
+      {
+        "id": "hisham",
+        "group": "basicDiacritics",
+        "index": 2
+      },
+      {
+        "id": "warsh",
+        "group": "basicDiacritics",
+        "index": 2
+      },
+      {
+        "id": "abu-harith",
+        "group": "basicDiacritics",
+        "index": 2
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "السكون",
+    "meaning": "يُقرأ الحرف من غير فتحة أو ضمة أو كسرة. شكله في بعض الخطوط رأس خاء صغيرة، وتطبق عليه أحكام الرواية بحسب الحرف التالي.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "basicDiacritics",
+        "index": 3
+      },
+      {
+        "id": "susi",
+        "group": "basicDiacritics",
+        "index": 3
+      },
+      {
+        "id": "khallad",
+        "group": "basicDiacritics",
+        "index": 3
+      },
+      {
+        "id": "qaloon",
+        "group": "basicDiacritics",
+        "index": 3
+      },
+      {
+        "id": "shubah",
+        "group": "basicDiacritics",
+        "index": 3
+      },
+      {
+        "id": "duri",
+        "group": "basicDiacritics",
+        "index": 3
+      },
+      {
+        "id": "duri-kisai",
+        "group": "basicDiacritics",
+        "index": 3
+      },
+      {
+        "id": "ruways",
+        "group": "basicDiacritics",
+        "index": 3
+      },
+      {
+        "id": "khalaf",
+        "group": "basicDiacritics",
+        "index": 3
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "basicDiacritics",
+        "index": 3
+      },
+      {
+        "id": "qunbul",
+        "group": "basicDiacritics",
+        "index": 3
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "basicDiacritics",
+        "index": 3
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "basicDiacritics",
+        "index": 3
+      },
+      {
+        "id": "ishaq",
+        "group": "basicDiacritics",
+        "index": 3
+      },
+      {
+        "id": "hafs",
+        "group": "items",
+        "index": 3
+      },
+      {
+        "id": "hafs",
+        "group": "basicDiacritics",
+        "index": 3
+      },
+      {
+        "id": "rawh",
+        "group": "basicDiacritics",
+        "index": 3
+      },
+      {
+        "id": "buzzi",
+        "group": "basicDiacritics",
+        "index": 3
+      },
+      {
+        "id": "hisham",
+        "group": "basicDiacritics",
+        "index": 3
+      },
+      {
+        "id": "warsh",
+        "group": "basicDiacritics",
+        "index": 3
+      },
+      {
+        "id": "abu-harith",
+        "group": "basicDiacritics",
+        "index": 3
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "الشدة",
+    "meaning": "تدل على حرفين من جنس واحد: الأول ساكن والثاني متحرك. أدّ التشديد وحركة الحرف معًا، مع الغنة حيث يقتضيها الموضع.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "basicDiacritics",
+        "index": 4
+      },
+      {
+        "id": "susi",
+        "group": "basicDiacritics",
+        "index": 4
+      },
+      {
+        "id": "khallad",
+        "group": "basicDiacritics",
+        "index": 4
+      },
+      {
+        "id": "qaloon",
+        "group": "basicDiacritics",
+        "index": 4
+      },
+      {
+        "id": "shubah",
+        "group": "basicDiacritics",
+        "index": 4
+      },
+      {
+        "id": "duri",
+        "group": "basicDiacritics",
+        "index": 4
+      },
+      {
+        "id": "duri-kisai",
+        "group": "basicDiacritics",
+        "index": 4
+      },
+      {
+        "id": "ruways",
+        "group": "basicDiacritics",
+        "index": 4
+      },
+      {
+        "id": "khalaf",
+        "group": "basicDiacritics",
+        "index": 4
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "basicDiacritics",
+        "index": 4
+      },
+      {
+        "id": "qunbul",
+        "group": "basicDiacritics",
+        "index": 4
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "basicDiacritics",
+        "index": 4
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "basicDiacritics",
+        "index": 4
+      },
+      {
+        "id": "ishaq",
+        "group": "basicDiacritics",
+        "index": 4
+      },
+      {
+        "id": "hafs",
+        "group": "items",
+        "index": 4
+      },
+      {
+        "id": "hafs",
+        "group": "basicDiacritics",
+        "index": 4
+      },
+      {
+        "id": "rawh",
+        "group": "basicDiacritics",
+        "index": 4
+      },
+      {
+        "id": "buzzi",
+        "group": "basicDiacritics",
+        "index": 4
+      },
+      {
+        "id": "hisham",
+        "group": "basicDiacritics",
+        "index": 4
+      },
+      {
+        "id": "warsh",
+        "group": "basicDiacritics",
+        "index": 4
+      },
+      {
+        "id": "abu-harith",
+        "group": "basicDiacritics",
+        "index": 4
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "التنوين",
+    "meaning": "نون ساكنة زائدة تلفظ عند الوصل ولا ترسم نونًا. أدّ حكمها مع الحرف التالي. عند الوقف يسقط التنوين؛ وتنوين الفتح يبدل ألفًا في مواضعه، وتاء التأنيث المربوطة يوقف عليها هاء.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "basicDiacritics",
+        "index": 5
+      },
+      {
+        "id": "susi",
+        "group": "basicDiacritics",
+        "index": 5
+      },
+      {
+        "id": "khallad",
+        "group": "basicDiacritics",
+        "index": 5
+      },
+      {
+        "id": "qaloon",
+        "group": "basicDiacritics",
+        "index": 5
+      },
+      {
+        "id": "shubah",
+        "group": "basicDiacritics",
+        "index": 5
+      },
+      {
+        "id": "duri",
+        "group": "basicDiacritics",
+        "index": 5
+      },
+      {
+        "id": "duri-kisai",
+        "group": "basicDiacritics",
+        "index": 5
+      },
+      {
+        "id": "ruways",
+        "group": "basicDiacritics",
+        "index": 5
+      },
+      {
+        "id": "khalaf",
+        "group": "basicDiacritics",
+        "index": 5
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "basicDiacritics",
+        "index": 5
+      },
+      {
+        "id": "qunbul",
+        "group": "basicDiacritics",
+        "index": 5
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "basicDiacritics",
+        "index": 5
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "basicDiacritics",
+        "index": 5
+      },
+      {
+        "id": "ishaq",
+        "group": "basicDiacritics",
+        "index": 5
+      },
+      {
+        "id": "hafs",
+        "group": "basicDiacritics",
+        "index": 5
+      },
+      {
+        "id": "rawh",
+        "group": "basicDiacritics",
+        "index": 5
+      },
+      {
+        "id": "buzzi",
+        "group": "basicDiacritics",
+        "index": 5
+      },
+      {
+        "id": "hisham",
+        "group": "basicDiacritics",
+        "index": 5
+      },
+      {
+        "id": "warsh",
+        "group": "basicDiacritics",
+        "index": 5
+      },
+      {
+        "id": "abu-harith",
+        "group": "basicDiacritics",
+        "index": 5
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "الألف الصغيرة",
+    "meaning": "تدل على ألف ثابتة في التلاوة محذوفة من الرسم العثماني. اقرأها حرف مد بحسب الموضع؛ لا تسقطها لأنها صغيرة.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "basicDiacritics",
+        "index": 6
+      },
+      {
+        "id": "susi",
+        "group": "basicDiacritics",
+        "index": 6
+      },
+      {
+        "id": "khallad",
+        "group": "basicDiacritics",
+        "index": 6
+      },
+      {
+        "id": "qaloon",
+        "group": "basicDiacritics",
+        "index": 6
+      },
+      {
+        "id": "shubah",
+        "group": "basicDiacritics",
+        "index": 6
+      },
+      {
+        "id": "duri",
+        "group": "basicDiacritics",
+        "index": 6
+      },
+      {
+        "id": "duri-kisai",
+        "group": "basicDiacritics",
+        "index": 6
+      },
+      {
+        "id": "ruways",
+        "group": "basicDiacritics",
+        "index": 6
+      },
+      {
+        "id": "khalaf",
+        "group": "basicDiacritics",
+        "index": 6
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "basicDiacritics",
+        "index": 6
+      },
+      {
+        "id": "qunbul",
+        "group": "basicDiacritics",
+        "index": 6
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "basicDiacritics",
+        "index": 6
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "basicDiacritics",
+        "index": 6
+      },
+      {
+        "id": "ishaq",
+        "group": "basicDiacritics",
+        "index": 6
+      },
+      {
+        "id": "hafs",
+        "group": "basicDiacritics",
+        "index": 6
+      },
+      {
+        "id": "rawh",
+        "group": "basicDiacritics",
+        "index": 6
+      },
+      {
+        "id": "buzzi",
+        "group": "basicDiacritics",
+        "index": 6
+      },
+      {
+        "id": "hisham",
+        "group": "basicDiacritics",
+        "index": 6
+      },
+      {
+        "id": "warsh",
+        "group": "basicDiacritics",
+        "index": 6
+      },
+      {
+        "id": "abu-harith",
+        "group": "basicDiacritics",
+        "index": 6
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "حرف الصلة الصغير",
+    "meaning": "واو أو ياء صغيرة لضبط الصلة الصوتية في موضعها. يراعى حكم هاء الضمير أو ميم الجمع في الرواية، وتسقط الصلة عند الوقف.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "basicDiacritics",
+        "index": 7
+      },
+      {
+        "id": "susi",
+        "group": "basicDiacritics",
+        "index": 7
+      },
+      {
+        "id": "khallad",
+        "group": "basicDiacritics",
+        "index": 7
+      },
+      {
+        "id": "qaloon",
+        "group": "basicDiacritics",
+        "index": 7
+      },
+      {
+        "id": "shubah",
+        "group": "basicDiacritics",
+        "index": 7
+      },
+      {
+        "id": "duri",
+        "group": "basicDiacritics",
+        "index": 7
+      },
+      {
+        "id": "duri-kisai",
+        "group": "basicDiacritics",
+        "index": 7
+      },
+      {
+        "id": "ruways",
+        "group": "basicDiacritics",
+        "index": 7
+      },
+      {
+        "id": "khalaf",
+        "group": "basicDiacritics",
+        "index": 7
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "basicDiacritics",
+        "index": 7
+      },
+      {
+        "id": "qunbul",
+        "group": "basicDiacritics",
+        "index": 7
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "basicDiacritics",
+        "index": 7
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "basicDiacritics",
+        "index": 7
+      },
+      {
+        "id": "ishaq",
+        "group": "basicDiacritics",
+        "index": 7
+      },
+      {
+        "id": "hafs",
+        "group": "basicDiacritics",
+        "index": 7
+      },
+      {
+        "id": "rawh",
+        "group": "basicDiacritics",
+        "index": 7
+      },
+      {
+        "id": "buzzi",
+        "group": "basicDiacritics",
+        "index": 7
+      },
+      {
+        "id": "hisham",
+        "group": "basicDiacritics",
+        "index": 7
+      },
+      {
+        "id": "warsh",
+        "group": "basicDiacritics",
+        "index": 7
+      },
+      {
+        "id": "abu-harith",
+        "group": "basicDiacritics",
+        "index": 7
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "علامة المد",
+    "meaning": "تلفت إلى مد يتجاوز المد الطبيعي بسبب همز أو سكون. مقداره يتبع نوع المد والرواية والطريق، ولا يحدد رسم العلامة وحده عدد الحركات.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "basicDiacritics",
+        "index": 8
+      },
+      {
+        "id": "susi",
+        "group": "basicDiacritics",
+        "index": 8
+      },
+      {
+        "id": "khallad",
+        "group": "basicDiacritics",
+        "index": 8
+      },
+      {
+        "id": "qaloon",
+        "group": "basicDiacritics",
+        "index": 8
+      },
+      {
+        "id": "shubah",
+        "group": "basicDiacritics",
+        "index": 8
+      },
+      {
+        "id": "duri",
+        "group": "basicDiacritics",
+        "index": 8
+      },
+      {
+        "id": "duri-kisai",
+        "group": "basicDiacritics",
+        "index": 8
+      },
+      {
+        "id": "ruways",
+        "group": "basicDiacritics",
+        "index": 8
+      },
+      {
+        "id": "khalaf",
+        "group": "basicDiacritics",
+        "index": 8
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "basicDiacritics",
+        "index": 8
+      },
+      {
+        "id": "qunbul",
+        "group": "basicDiacritics",
+        "index": 8
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "basicDiacritics",
+        "index": 8
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "basicDiacritics",
+        "index": 8
+      },
+      {
+        "id": "ishaq",
+        "group": "basicDiacritics",
+        "index": 8
+      },
+      {
+        "id": "hafs",
+        "group": "basicDiacritics",
+        "index": 8
+      },
+      {
+        "id": "rawh",
+        "group": "basicDiacritics",
+        "index": 8
+      },
+      {
+        "id": "buzzi",
+        "group": "basicDiacritics",
+        "index": 8
+      },
+      {
+        "id": "hisham",
+        "group": "basicDiacritics",
+        "index": 8
+      },
+      {
+        "id": "warsh",
+        "group": "basicDiacritics",
+        "index": 8
+      },
+      {
+        "id": "abu-harith",
+        "group": "basicDiacritics",
+        "index": 8
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "همزة الوصل",
+    "meaning": "تُلفظ عند الابتداء بالكلمة بالحركة المناسبة، وتسقط في درج الكلام. لا تخلطها بهمزة القطع التي تثبت في الوصل والابتداء.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "basicDiacritics",
+        "index": 9
+      },
+      {
+        "id": "susi",
+        "group": "basicDiacritics",
+        "index": 9
+      },
+      {
+        "id": "khallad",
+        "group": "basicDiacritics",
+        "index": 9
+      },
+      {
+        "id": "qaloon",
+        "group": "basicDiacritics",
+        "index": 9
+      },
+      {
+        "id": "shubah",
+        "group": "basicDiacritics",
+        "index": 9
+      },
+      {
+        "id": "duri",
+        "group": "basicDiacritics",
+        "index": 9
+      },
+      {
+        "id": "duri-kisai",
+        "group": "basicDiacritics",
+        "index": 9
+      },
+      {
+        "id": "ruways",
+        "group": "basicDiacritics",
+        "index": 9
+      },
+      {
+        "id": "khalaf",
+        "group": "basicDiacritics",
+        "index": 9
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "basicDiacritics",
+        "index": 9
+      },
+      {
+        "id": "qunbul",
+        "group": "basicDiacritics",
+        "index": 9
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "basicDiacritics",
+        "index": 9
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "basicDiacritics",
+        "index": 9
+      },
+      {
+        "id": "ishaq",
+        "group": "basicDiacritics",
+        "index": 9
+      },
+      {
+        "id": "hafs",
+        "group": "basicDiacritics",
+        "index": 9
+      },
+      {
+        "id": "rawh",
+        "group": "basicDiacritics",
+        "index": 9
+      },
+      {
+        "id": "buzzi",
+        "group": "basicDiacritics",
+        "index": 9
+      },
+      {
+        "id": "hisham",
+        "group": "basicDiacritics",
+        "index": 9
+      },
+      {
+        "id": "warsh",
+        "group": "basicDiacritics",
+        "index": 9
+      },
+      {
+        "id": "abu-harith",
+        "group": "basicDiacritics",
+        "index": 9
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "الصفر المستدير",
+    "meaning": "إذا وضع فوق حرف المد دل على عدم النطق بذلك الحرف في الوصل والوقف، بحسب ضبط المصحف؛ لا تقرأ الحرف لمجرد وجوده في الرسم.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "basicDiacritics",
+        "index": 10
+      },
+      {
+        "id": "susi",
+        "group": "basicDiacritics",
+        "index": 10
+      },
+      {
+        "id": "khallad",
+        "group": "basicDiacritics",
+        "index": 10
+      },
+      {
+        "id": "qaloon",
+        "group": "basicDiacritics",
+        "index": 10
+      },
+      {
+        "id": "shubah",
+        "group": "basicDiacritics",
+        "index": 10
+      },
+      {
+        "id": "duri",
+        "group": "basicDiacritics",
+        "index": 10
+      },
+      {
+        "id": "duri-kisai",
+        "group": "basicDiacritics",
+        "index": 10
+      },
+      {
+        "id": "ruways",
+        "group": "basicDiacritics",
+        "index": 10
+      },
+      {
+        "id": "khalaf",
+        "group": "basicDiacritics",
+        "index": 10
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "basicDiacritics",
+        "index": 10
+      },
+      {
+        "id": "qunbul",
+        "group": "basicDiacritics",
+        "index": 10
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "basicDiacritics",
+        "index": 10
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "basicDiacritics",
+        "index": 10
+      },
+      {
+        "id": "ishaq",
+        "group": "basicDiacritics",
+        "index": 10
+      },
+      {
+        "id": "hafs",
+        "group": "basicDiacritics",
+        "index": 10
+      },
+      {
+        "id": "rawh",
+        "group": "basicDiacritics",
+        "index": 10
+      },
+      {
+        "id": "buzzi",
+        "group": "basicDiacritics",
+        "index": 10
+      },
+      {
+        "id": "hisham",
+        "group": "basicDiacritics",
+        "index": 10
+      },
+      {
+        "id": "warsh",
+        "group": "basicDiacritics",
+        "index": 10
+      },
+      {
+        "id": "abu-harith",
+        "group": "basicDiacritics",
+        "index": 10
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "الصفر المستطيل",
+    "meaning": "إذا وضع فوق الألف دل على حذفها في الوصل وإثباتها عند الوقف في الموضع المضبوط. يختلف عن الصفر المستدير.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "basicDiacritics",
+        "index": 11
+      },
+      {
+        "id": "susi",
+        "group": "basicDiacritics",
+        "index": 11
+      },
+      {
+        "id": "khallad",
+        "group": "basicDiacritics",
+        "index": 11
+      },
+      {
+        "id": "qaloon",
+        "group": "basicDiacritics",
+        "index": 11
+      },
+      {
+        "id": "shubah",
+        "group": "basicDiacritics",
+        "index": 11
+      },
+      {
+        "id": "duri",
+        "group": "basicDiacritics",
+        "index": 11
+      },
+      {
+        "id": "duri-kisai",
+        "group": "basicDiacritics",
+        "index": 11
+      },
+      {
+        "id": "ruways",
+        "group": "basicDiacritics",
+        "index": 11
+      },
+      {
+        "id": "khalaf",
+        "group": "basicDiacritics",
+        "index": 11
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "basicDiacritics",
+        "index": 11
+      },
+      {
+        "id": "qunbul",
+        "group": "basicDiacritics",
+        "index": 11
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "basicDiacritics",
+        "index": 11
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "basicDiacritics",
+        "index": 11
+      },
+      {
+        "id": "ishaq",
+        "group": "basicDiacritics",
+        "index": 11
+      },
+      {
+        "id": "hafs",
+        "group": "basicDiacritics",
+        "index": 11
+      },
+      {
+        "id": "rawh",
+        "group": "basicDiacritics",
+        "index": 11
+      },
+      {
+        "id": "buzzi",
+        "group": "basicDiacritics",
+        "index": 11
+      },
+      {
+        "id": "hisham",
+        "group": "basicDiacritics",
+        "index": 11
+      },
+      {
+        "id": "warsh",
+        "group": "basicDiacritics",
+        "index": 11
+      },
+      {
+        "id": "abu-harith",
+        "group": "basicDiacritics",
+        "index": 11
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "الوقف اللازم",
+    "meaning": "علامة لوقف يلزم مراعاته لاتصال المعنى؛ قف ثم ابتدئ ابتداءً صحيحًا.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "stopSigns",
+        "index": 0
+      },
+      {
+        "id": "susi",
+        "group": "stopSigns",
+        "index": 0
+      },
+      {
+        "id": "khallad",
+        "group": "stopSigns",
+        "index": 0
+      },
+      {
+        "id": "qaloon",
+        "group": "stopSigns",
+        "index": 0
+      },
+      {
+        "id": "shubah",
+        "group": "stopSigns",
+        "index": 0
+      },
+      {
+        "id": "duri",
+        "group": "stopSigns",
+        "index": 0
+      },
+      {
+        "id": "duri-kisai",
+        "group": "stopSigns",
+        "index": 0
+      },
+      {
+        "id": "ruways",
+        "group": "stopSigns",
+        "index": 0
+      },
+      {
+        "id": "khalaf",
+        "group": "stopSigns",
+        "index": 0
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "stopSigns",
+        "index": 0
+      },
+      {
+        "id": "qunbul",
+        "group": "stopSigns",
+        "index": 0
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "stopSigns",
+        "index": 0
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "stopSigns",
+        "index": 0
+      },
+      {
+        "id": "ishaq",
+        "group": "stopSigns",
+        "index": 0
+      },
+      {
+        "id": "hafs",
+        "group": "stopSigns",
+        "index": 0
+      },
+      {
+        "id": "rawh",
+        "group": "stopSigns",
+        "index": 0
+      },
+      {
+        "id": "buzzi",
+        "group": "stopSigns",
+        "index": 0
+      },
+      {
+        "id": "hisham",
+        "group": "stopSigns",
+        "index": 0
+      },
+      {
+        "id": "warsh",
+        "group": "stopSigns",
+        "index": 0
+      },
+      {
+        "id": "abu-harith",
+        "group": "stopSigns",
+        "index": 0
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "لا تقف هنا",
+    "meaning": "لا تتعمد الوقف في هذا الموضع. إن اضطررت لانقطاع النفس فارجع إلى موضع يصح الابتداء منه.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "stopSigns",
+        "index": 1
+      },
+      {
+        "id": "susi",
+        "group": "stopSigns",
+        "index": 1
+      },
+      {
+        "id": "khallad",
+        "group": "stopSigns",
+        "index": 1
+      },
+      {
+        "id": "qaloon",
+        "group": "stopSigns",
+        "index": 1
+      },
+      {
+        "id": "shubah",
+        "group": "stopSigns",
+        "index": 1
+      },
+      {
+        "id": "duri",
+        "group": "stopSigns",
+        "index": 1
+      },
+      {
+        "id": "duri-kisai",
+        "group": "stopSigns",
+        "index": 1
+      },
+      {
+        "id": "ruways",
+        "group": "stopSigns",
+        "index": 1
+      },
+      {
+        "id": "khalaf",
+        "group": "stopSigns",
+        "index": 1
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "stopSigns",
+        "index": 1
+      },
+      {
+        "id": "qunbul",
+        "group": "stopSigns",
+        "index": 1
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "stopSigns",
+        "index": 1
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "stopSigns",
+        "index": 1
+      },
+      {
+        "id": "ishaq",
+        "group": "stopSigns",
+        "index": 1
+      },
+      {
+        "id": "hafs",
+        "group": "stopSigns",
+        "index": 1
+      },
+      {
+        "id": "rawh",
+        "group": "stopSigns",
+        "index": 1
+      },
+      {
+        "id": "buzzi",
+        "group": "stopSigns",
+        "index": 1
+      },
+      {
+        "id": "hisham",
+        "group": "stopSigns",
+        "index": 1
+      },
+      {
+        "id": "warsh",
+        "group": "stopSigns",
+        "index": 1
+      },
+      {
+        "id": "abu-harith",
+        "group": "stopSigns",
+        "index": 1
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "الوقف الجائز",
+    "meaning": "يجوز الوقف والوصل، مع مراعاة المعنى وحسن الابتداء.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "stopSigns",
+        "index": 2
+      },
+      {
+        "id": "susi",
+        "group": "stopSigns",
+        "index": 2
+      },
+      {
+        "id": "khallad",
+        "group": "stopSigns",
+        "index": 2
+      },
+      {
+        "id": "qaloon",
+        "group": "stopSigns",
+        "index": 2
+      },
+      {
+        "id": "shubah",
+        "group": "stopSigns",
+        "index": 2
+      },
+      {
+        "id": "duri",
+        "group": "stopSigns",
+        "index": 2
+      },
+      {
+        "id": "duri-kisai",
+        "group": "stopSigns",
+        "index": 2
+      },
+      {
+        "id": "ruways",
+        "group": "stopSigns",
+        "index": 2
+      },
+      {
+        "id": "khalaf",
+        "group": "stopSigns",
+        "index": 2
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "stopSigns",
+        "index": 2
+      },
+      {
+        "id": "qunbul",
+        "group": "stopSigns",
+        "index": 2
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "stopSigns",
+        "index": 2
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "stopSigns",
+        "index": 2
+      },
+      {
+        "id": "ishaq",
+        "group": "stopSigns",
+        "index": 2
+      },
+      {
+        "id": "hafs",
+        "group": "stopSigns",
+        "index": 2
+      },
+      {
+        "id": "rawh",
+        "group": "stopSigns",
+        "index": 2
+      },
+      {
+        "id": "buzzi",
+        "group": "stopSigns",
+        "index": 2
+      },
+      {
+        "id": "hisham",
+        "group": "stopSigns",
+        "index": 2
+      },
+      {
+        "id": "warsh",
+        "group": "stopSigns",
+        "index": 2
+      },
+      {
+        "id": "abu-harith",
+        "group": "stopSigns",
+        "index": 2
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "الوصل أولى",
+    "meaning": "الوقف جائز، والوصل أولى في هذا الموضع.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "stopSigns",
+        "index": 3
+      },
+      {
+        "id": "susi",
+        "group": "stopSigns",
+        "index": 3
+      },
+      {
+        "id": "khallad",
+        "group": "stopSigns",
+        "index": 3
+      },
+      {
+        "id": "qaloon",
+        "group": "stopSigns",
+        "index": 3
+      },
+      {
+        "id": "shubah",
+        "group": "stopSigns",
+        "index": 3
+      },
+      {
+        "id": "duri",
+        "group": "stopSigns",
+        "index": 3
+      },
+      {
+        "id": "duri-kisai",
+        "group": "stopSigns",
+        "index": 3
+      },
+      {
+        "id": "ruways",
+        "group": "stopSigns",
+        "index": 3
+      },
+      {
+        "id": "khalaf",
+        "group": "stopSigns",
+        "index": 3
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "stopSigns",
+        "index": 3
+      },
+      {
+        "id": "qunbul",
+        "group": "stopSigns",
+        "index": 3
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "stopSigns",
+        "index": 3
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "stopSigns",
+        "index": 3
+      },
+      {
+        "id": "ishaq",
+        "group": "stopSigns",
+        "index": 3
+      },
+      {
+        "id": "hafs",
+        "group": "stopSigns",
+        "index": 3
+      },
+      {
+        "id": "rawh",
+        "group": "stopSigns",
+        "index": 3
+      },
+      {
+        "id": "buzzi",
+        "group": "stopSigns",
+        "index": 3
+      },
+      {
+        "id": "hisham",
+        "group": "stopSigns",
+        "index": 3
+      },
+      {
+        "id": "warsh",
+        "group": "stopSigns",
+        "index": 3
+      },
+      {
+        "id": "abu-harith",
+        "group": "stopSigns",
+        "index": 3
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "الوقف أولى",
+    "meaning": "الوصل جائز، والوقف أولى في هذا الموضع.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "stopSigns",
+        "index": 4
+      },
+      {
+        "id": "susi",
+        "group": "stopSigns",
+        "index": 4
+      },
+      {
+        "id": "khallad",
+        "group": "stopSigns",
+        "index": 4
+      },
+      {
+        "id": "qaloon",
+        "group": "stopSigns",
+        "index": 4
+      },
+      {
+        "id": "shubah",
+        "group": "stopSigns",
+        "index": 4
+      },
+      {
+        "id": "duri",
+        "group": "stopSigns",
+        "index": 4
+      },
+      {
+        "id": "duri-kisai",
+        "group": "stopSigns",
+        "index": 4
+      },
+      {
+        "id": "ruways",
+        "group": "stopSigns",
+        "index": 4
+      },
+      {
+        "id": "khalaf",
+        "group": "stopSigns",
+        "index": 4
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "stopSigns",
+        "index": 4
+      },
+      {
+        "id": "qunbul",
+        "group": "stopSigns",
+        "index": 4
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "stopSigns",
+        "index": 4
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "stopSigns",
+        "index": 4
+      },
+      {
+        "id": "ishaq",
+        "group": "stopSigns",
+        "index": 4
+      },
+      {
+        "id": "hafs",
+        "group": "stopSigns",
+        "index": 4
+      },
+      {
+        "id": "rawh",
+        "group": "stopSigns",
+        "index": 4
+      },
+      {
+        "id": "buzzi",
+        "group": "stopSigns",
+        "index": 4
+      },
+      {
+        "id": "hisham",
+        "group": "stopSigns",
+        "index": 4
+      },
+      {
+        "id": "warsh",
+        "group": "stopSigns",
+        "index": 4
+      },
+      {
+        "id": "abu-harith",
+        "group": "stopSigns",
+        "index": 4
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "تعانق الوقف",
+    "meaning": "إذا وقفت على أحد الموضعين المتعانقين فلا تقف على الآخر في السياق نفسه؛ ويجوز وصلهما.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "stopSigns",
+        "index": 5
+      },
+      {
+        "id": "susi",
+        "group": "stopSigns",
+        "index": 5
+      },
+      {
+        "id": "khallad",
+        "group": "stopSigns",
+        "index": 5
+      },
+      {
+        "id": "qaloon",
+        "group": "stopSigns",
+        "index": 5
+      },
+      {
+        "id": "shubah",
+        "group": "stopSigns",
+        "index": 5
+      },
+      {
+        "id": "duri",
+        "group": "stopSigns",
+        "index": 5
+      },
+      {
+        "id": "duri-kisai",
+        "group": "stopSigns",
+        "index": 5
+      },
+      {
+        "id": "ruways",
+        "group": "stopSigns",
+        "index": 5
+      },
+      {
+        "id": "khalaf",
+        "group": "stopSigns",
+        "index": 5
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "stopSigns",
+        "index": 5
+      },
+      {
+        "id": "qunbul",
+        "group": "stopSigns",
+        "index": 5
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "stopSigns",
+        "index": 5
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "stopSigns",
+        "index": 5
+      },
+      {
+        "id": "ishaq",
+        "group": "stopSigns",
+        "index": 5
+      },
+      {
+        "id": "hafs",
+        "group": "stopSigns",
+        "index": 5
+      },
+      {
+        "id": "rawh",
+        "group": "stopSigns",
+        "index": 5
+      },
+      {
+        "id": "buzzi",
+        "group": "stopSigns",
+        "index": 5
+      },
+      {
+        "id": "hisham",
+        "group": "stopSigns",
+        "index": 5
+      },
+      {
+        "id": "warsh",
+        "group": "stopSigns",
+        "index": 5
+      },
+      {
+        "id": "abu-harith",
+        "group": "stopSigns",
+        "index": 5
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "السكت",
+    "meaning": "قطع لطيف للصوت بلا نفس في الموضع المنقول في الرواية؛ لا تستبدله بوقف مع تنفس.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "stopSigns",
+        "index": 6
+      },
+      {
+        "id": "susi",
+        "group": "stopSigns",
+        "index": 6
+      },
+      {
+        "id": "khallad",
+        "group": "stopSigns",
+        "index": 6
+      },
+      {
+        "id": "qaloon",
+        "group": "stopSigns",
+        "index": 6
+      },
+      {
+        "id": "shubah",
+        "group": "stopSigns",
+        "index": 6
+      },
+      {
+        "id": "duri",
+        "group": "stopSigns",
+        "index": 6
+      },
+      {
+        "id": "duri-kisai",
+        "group": "stopSigns",
+        "index": 6
+      },
+      {
+        "id": "ruways",
+        "group": "stopSigns",
+        "index": 6
+      },
+      {
+        "id": "khalaf",
+        "group": "stopSigns",
+        "index": 6
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "stopSigns",
+        "index": 6
+      },
+      {
+        "id": "qunbul",
+        "group": "stopSigns",
+        "index": 6
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "stopSigns",
+        "index": 6
+      },
+      {
+        "id": "ibn-dhakwan",
+        "group": "stopSigns",
+        "index": 6
+      },
+      {
+        "id": "ishaq",
+        "group": "stopSigns",
+        "index": 6
+      },
+      {
+        "id": "hafs",
+        "group": "stopSigns",
+        "index": 6
+      },
+      {
+        "id": "rawh",
+        "group": "stopSigns",
+        "index": 6
+      },
+      {
+        "id": "buzzi",
+        "group": "stopSigns",
+        "index": 6
+      },
+      {
+        "id": "hisham",
+        "group": "stopSigns",
+        "index": 6
+      },
+      {
+        "id": "warsh",
+        "group": "stopSigns",
+        "index": 6
+      },
+      {
+        "id": "abu-harith",
+        "group": "stopSigns",
+        "index": 6
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "التقليل",
+    "meaning": "اقرأ بين الفتح والإمالة الكبرى: ميل خفيف للفتحة نحو الكسرة وللألف نحو الياء. لا تنطق الألف ياء خالصة. الدائرة المملوءة أو المجوّفة هنا تتبع مفتاح هذه الرواية؛ ليست جميع الدوائر الحمراء في كل الروايات ذات معنى واحد.",
+    "locations": [
+      {
+        "id": "susi",
+        "group": "items",
+        "index": 3
+      },
+      {
+        "id": "duri",
+        "group": "items",
+        "index": 3
+      },
+      {
+        "id": "warsh",
+        "group": "items",
+        "index": 2
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "حبر النص",
+    "meaning": "هذه درجة رمادية داكنة في جزء من اللام في «له»، وليست علامة ملونة مستقلة في مفتاح الرواية. في «ونحن له» يعمل بالإدغام المعلّم بالأزرق: تدغم النون في اللام عند الوصل. بقاء بقية اللام بهذا الحبر لا ينشئ حكمًا آخر.",
+    "locations": [
+      {
+        "id": "susi",
+        "group": "items",
+        "index": 4
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "السكت",
+    "meaning": "اقطع الصوت قطعًا لطيفًا من غير أخذ نفس، ثم تابع القراءة. السكت غير الوقف الذي يجوز معه التنفس. في روايتي حمزة تتبع مواضع السكت وأوجهه الطريق المأخوذ به، وخاصة الساكن قبل الهمز و«أل» و«شيء»؛ العلامة السماوية تعيّن الموضع في هذه النسخة.",
+    "locations": [
+      {
+        "id": "khallad",
+        "group": "items",
+        "index": 3
+      },
+      {
+        "id": "khallad",
+        "group": "items",
+        "index": 5
+      },
+      {
+        "id": "khalaf",
+        "group": "items",
+        "index": 3
+      },
+      {
+        "id": "khalaf",
+        "group": "items",
+        "index": 5
+      },
+      {
+        "id": "khalaf",
+        "group": "items",
+        "index": 8
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «الأنهار»",
+    "meaning": "هذه الدرجة في مكونات «أل» وهمزة «الأنهار» على الصفحة 67، إلى جوار علامة السكت السماوية. في رواية خلاد يراعى وجه السكت على «أل» قبل الهمزة بحسب الطريق؛ السكت بلا تنفس. لا تجعل الأخضر هنا علامة إمالة مستقلة.",
+    "locations": [
+      {
+        "id": "khallad",
+        "group": "items",
+        "index": 6
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «هؤلاء إن»",
+    "meaning": "في وصل «هؤلاء إن» سهّل الهمزة الأخيرة في «هؤلاء» بين الهمزة والياء، وحقق همزة «إن». له المد والقصر في المد السابق للهمزة المغيّرة بحسب الوجه المأخوذ به. لا تطبق هذا التسهيل إذا وقفت على «هؤلاء»؛ ولا تجعل اللون إمالة للام أو الألف.",
+    "locations": [
+      {
+        "id": "qaloon",
+        "group": "items",
+        "index": 4
+      },
+      {
+        "id": "buzzi",
+        "group": "items",
+        "index": 4
+      },
+      {
+        "id": "qaloon",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 0,
+        "page": 6
+      },
+      {
+        "id": "buzzi",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 0,
+        "page": 6
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "تنبيه الرواية",
+    "meaning": "قالون: في «هار» من سورة التوبة الإمالة. وله في ميم الجمع أوجه الإسكان والصلة بحسب الطريق؛ النسخة تعرض الضبط المرسوم، ولا يجعل غياب لون الصلة نفيًا لوجه آخر منقول.",
+    "locations": [
+      {
+        "id": "qaloon",
+        "group": "readingNotes",
+        "index": 0
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "تنبيه الرواية",
+    "meaning": "في لفظ «التوراة» لقالون الفتح والتقليل بحسب الوجه المأخوذ به. التقليل بين الفتح والإمالة الكبرى؛ لا يُحوَّل كل اختلاف ملون عن حفص إلى إمالة.",
+    "locations": [
+      {
+        "id": "qaloon",
+        "group": "readingNotes",
+        "index": 1
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "إمالة هاء التأنيث وقفًا",
+    "meaning": "في المواضع المبيّنة أدناه، قف على التاء المربوطة هاءً مع إمالة ما قبلها وفق مذهب الكسائي. الإمالة مختصة بالوقف؛ في الوصل تبقى التاء وحركتها. لا تعمم الإمالة على جميع التاءات؛ لها شروطها واستثناءاتها في أصول القراءة.",
+    "locations": [
+      {
+        "id": "duri-kisai",
+        "group": "items",
+        "index": 4
+      },
+      {
+        "id": "abu-harith",
+        "group": "items",
+        "index": 4
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "تنبيه الرواية",
+    "meaning": "إمالة هاء التأنيث للكسائي حكم في الوقف، وليس تغييرًا لحركة التاء عند الوصل.",
+    "locations": [
+      {
+        "id": "duri-kisai",
+        "group": "readingNotes",
+        "index": 0
+      },
+      {
+        "id": "abu-harith",
+        "group": "readingNotes",
+        "index": 0
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "إشمام الصاد صوت الزاي",
+    "meaning": "انطق الصاد بصوت ممزوج بالزاي مع المحافظة على خصائص الصاد؛ ليست زايًا خالصة. هذا إشمام يسمع في النطق، وليس ضمّ الشفتين بلا صوت في باب الوقف. مواضعه، مثل الصاد الساكنة قبل الدال في «أصدق»، تتبع الرواية وطريقها. وفي باب «أصدق» عن رويس إشمام وصاد خالصة باختلاف الطريق؛ اتبع الوجه المعلّم في هذه الطبعة ولا تعمم الإشمام على كل طرقه.",
+    "locations": [
+      {
+        "id": "ruways",
+        "group": "items",
+        "index": 3
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "تنبيه الرواية",
+    "meaning": "إشمام الصاد صوت الزاي في باب «أصدق» لرويس يختلف باختلاف الطريق؛ هذه النسخة تعلم مواضع الوجه المطبوع. وإشمام الكسرة الضم في «قيل» ونظائرها صوت حركي آخر، فلا تخلط بينه وبين إشمام الصاد أو إشمام الوقف بالشفتين.",
+    "locations": [
+      {
+        "id": "ruways",
+        "group": "readingNotes",
+        "index": 0
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "الإدغام",
+    "meaning": "أدخل صوت الحرف الأول في الحرف التالي حتى يصيرا في الأداء حرفًا واحدًا مشددًا من جنس الثاني، وفق ضبط الرواية. قد يكون الأول ساكنًا، أو يكون الموضع من الإدغام الكبير للحرف المتحرك. يُعمل بالإدغام عند الوصل؛ وعند الوقف على الكلمة الأولى لا توصلها بالحرف التالي. وخلف عن حمزة يدغم النون الساكنة والتنوين في الواو والياء بغير غنة؛ هذا الحكم لا ينقل إلى خلاد.",
+    "locations": [
+      {
+        "id": "khalaf",
+        "group": "items",
+        "index": 1
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "تنبيه الرواية",
+    "meaning": "خلف هنا هو خلف عن حمزة. ترك الغنة في الإدغام عند الواو والياء خاص بهذه الرواية؛ إسحاق وإدريس عن خلف العاشر دليلان مستقلان.",
+    "locations": [
+      {
+        "id": "khalaf",
+        "group": "readingNotes",
+        "index": 0
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "صلة ميم الجمع",
+    "meaning": "عند الوصل، ضمّ ميم الجمع المعلّمة وألحق بها واوًا صوتية، فتسمع الصلة بعد الميم. لا تثبت واو الصلة عند الوقف. مواضع الصلة ومقدار المد إن جاء بعدها همز تتبع الرواية والطريق؛ اللون يحدد الميم المقصودة.",
+    "locations": [
+      {
+        "id": "ibn-jammaz",
+        "group": "items",
+        "index": 2
+      },
+      {
+        "id": "qunbul",
+        "group": "items",
+        "index": 2
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "items",
+        "index": 2
+      },
+      {
+        "id": "buzzi",
+        "group": "items",
+        "index": 2
+      },
+      {
+        "id": "warsh",
+        "group": "items",
+        "index": 6
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "الغنّة مع الخاء والغين",
+    "meaning": "أخفِ النون الساكنة أو التنوين عند الخاء والغين مع بقاء الغنة في المواضع المعلّمة من قراءة أبي جعفر. لا تجعل النون مظهرة إظهارًا كاملاً. من المستثنيات المنصوصة في أصول القراءة «المنخنقة» و«فسينغضون» و«إن يكن غنيًا»؛ تُتبع الرواية في كل موضع.",
+    "locations": [
+      {
+        "id": "ibn-jammaz",
+        "group": "items",
+        "index": 3
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "items",
+        "index": 7
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "items",
+        "index": 8
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "items",
+        "index": 3
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "items",
+        "index": 7
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "items",
+        "index": 8
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "السكت على الحروف المقطعة",
+    "meaning": "اسكت سكتة لطيفة بلا تنفس على كل حرف هجاء في أوائل السور، ثم انتقل إلى الحرف الذي بعده. السكت يقتضي إظهار الحروف؛ لا تدغمها ولا تخفها بعضها في بعض. هذه علامة قراءة أبي جعفر، وليست وقفًا لإعادة النفس.",
+    "locations": [
+      {
+        "id": "ibn-jammaz",
+        "group": "items",
+        "index": 4
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "items",
+        "index": 4
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "المخالفة لحفص",
+    "meaning": "تشير العلامة الملونة في هذا المدخل إلى حرف أو حركة أو صورة كلمة تخالف حفصًا في هذا المصحف. اقرأ الحرف وحركته وتشديده وإثباته أو حذفه كما في الرواية المختارة. لا تنقل ضبط حفص إلى هذا الموضع. وقد يلوّن ترقيم الآية تبعًا لعدّ هذه النسخة؛ تلوين إطار الآية أو رقمها لا يضيف حكمًا صوتيًا إلى الكلمة. وتشمل هذه الدرجة بعض أطر الآيات، وهي ترقيم وليست علامة أداء صوتي.",
+    "locations": [
+      {
+        "id": "ibn-jammaz",
+        "group": "items",
+        "index": 5
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "items",
+        "index": 5
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "همزة الوصل مع الإبدال",
+    "meaning": "النقطة الخضراء الصغيرة في هذه الكلمات من ضبط همزة الوصل مع الهمزة الساكنة المبدلة. همزة الوصل تثبت عند الابتداء بالحركة المناسبة، وتسقط في الوصل. في «ائت» ونظائرها يكون الابتداء بهمزة مكسورة وياء بعدها، وفي «اؤتمن» بهمزة مضمومة وواو بعدها. راجع تفصيل كل موضع أدناه.",
+    "locations": [
+      {
+        "id": "ibn-jammaz",
+        "group": "items",
+        "index": 6
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "items",
+        "index": 6
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "تنبيه الرواية",
+    "meaning": "في قراءة أبي جعفر: السكت على الحروف المقطعة، وإخفاء النون والتنوين عند الخاء والغين في مواضعه، وإبدال الهمز الساكن وفق الأصل مع استثناءاته. لكل علامة أدناه شرحها وأمثلتها.",
+    "locations": [
+      {
+        "id": "ibn-jammaz",
+        "group": "readingNotes",
+        "index": 0
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "readingNotes",
+        "index": 0
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "هاء الضمير المخالفة لحفص",
+    "meaning": "الهاء ضمير للمفرد المذكر الغائب. اتبع حركة الهاء وصِلتها في الكلمة المعلّمة: الصلة بعد الضمة واو صوتية، وبعد الكسرة ياء صوتية، وتكون في الوصل دون الوقف. ابن كثير يصل الهاء في مواضع يترك فيها حفص الصلة؛ لا تعمم ذلك على كل هاء.",
+    "locations": [
+      {
+        "id": "qunbul",
+        "group": "items",
+        "index": 1
+      },
+      {
+        "id": "buzzi",
+        "group": "items",
+        "index": 1
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «هؤلاء إن»",
+    "meaning": "في وصل «هؤلاء إن» حقق الهمزة الأخيرة في «هؤلاء»، وسهّل همزة «إن» بين الهمزة والياء. لقنبل أيضًا وجه إبدال الثانية ياء مدية مع الإشباع، بحسب الوجه المأخوذ به. الدرجة الزيتونية في رسم «هؤلاء» ليست علامة إمالة للام أو الألف.",
+    "locations": [
+      {
+        "id": "qunbul",
+        "group": "items",
+        "index": 3
+      },
+      {
+        "id": "qunbul",
+        "group": "occurrenceNotes",
+        "index": 3,
+        "note": 0,
+        "page": 6
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ترقيم الآيات",
+    "meaning": "هذا لون إطار الآية أو رقمها في النسخة الأصلية. يعيّن نهاية الآية بحسب عدّ المصحف، ولا يضيف إمالة أو إدغامًا أو سكتًا إلى الكلمة السابقة بمجرد لونه.",
+    "locations": [
+      {
+        "id": "ibn-dhakwan",
+        "group": "items",
+        "index": 3
+      },
+      {
+        "id": "hisham",
+        "group": "items",
+        "index": 3
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "تنبيه الرواية",
+    "meaning": "ملف حفص في التطبيق بحبر غير ملون؛ لذلك يشرح دليله علامات الضبط والوقف. عدم وجود لون للأداء في هذه الطبعة لا يعني إلغاء الأحكام المعروفة لحفص.",
+    "locations": [
+      {
+        "id": "hafs",
+        "group": "readingNotes",
+        "index": 0
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "تنبيه الرواية",
+    "meaning": "روح يمال له أول «أعمى» في الإسراء و«كافرين» في النمل وياء «يس»؛ لا يعمم إمالة رويس على جميع ألفاظ «الكافرين» في رواية روح.",
+    "locations": [
+      {
+        "id": "rawh",
+        "group": "readingNotes",
+        "index": 0
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "تشديد تاءات البزي",
+    "meaning": "شدّد تاء المضارعة المعلّمة عند وصلها بما قبلها، نحو «ولا تيمموا» و«ولا تفرقوا». إن سبق التاء المشددة حرف مد يعمل بمقتضى التقاء المد بالسكون المشدد. وعند الابتداء بالكلمة تُقرأ التاء مخففة؛ الحكم هنا مختص بالمواضع المنقولة للبزي.",
+    "locations": [
+      {
+        "id": "buzzi",
+        "group": "items",
+        "index": 3
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "تنبيه الرواية",
+    "meaning": "تشديد تاءات البزي في المواضع المنقولة يكون عند الوصل؛ يبدأ بالكلمة بتاء مخففة.",
+    "locations": [
+      {
+        "id": "buzzi",
+        "group": "readingNotes",
+        "index": 0
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "الراءات المرقّقة",
+    "meaning": "اقرأ الراء مرققة، بصوت رقيق غير مفخّم، مع المحافظة على حركتها المكتوبة. في ورش توجد مواضع ترقيق زائدة على القواعد العامة؛ اتبع الراء المعلّمة وأصول الطريق الذي تقرأ به.",
+    "locations": [
+      {
+        "id": "warsh",
+        "group": "items",
+        "index": 3
+      },
+      {
+        "id": "warsh",
+        "group": "items",
+        "index": 11
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "مدّ البدل",
+    "meaning": "تقدمت الهمزة على حرف المد، نحو «آدم» و«آمنوا». حقق الهمزة ثم مدّ الحرف بعدها. للأزرق عن ورش القصر والتوسط والطول، أي حركتان أو أربع أو ست، بحسب الوجه والتراكيب المأخوذ بها؛ التزم وجه القراءة ولا تجمع الأوجه عشوائيًا.",
+    "locations": [
+      {
+        "id": "warsh",
+        "group": "items",
+        "index": 4
+      },
+      {
+        "id": "warsh",
+        "group": "items",
+        "index": 9
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "اللامات المغلّظة",
+    "meaning": "غلّظ صوت اللام في الموضع المعلّم، مع بقاء اللام وحركتها كما هما. هذه اللامات في رواية ورش غير لام لفظ الجلالة وحدها؛ التغليظ يتعلق بشروط الموضع والرواية، ولا يعم كل لام في الصفحة.",
+    "locations": [
+      {
+        "id": "warsh",
+        "group": "items",
+        "index": 5
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "مدّ اللين",
+    "meaning": "الواو أو الياء ساكنة وقبلها فتحة، وبعدها همزة في الموضع المعلّم، نحو «شيء». للأزرق عن ورش التوسط والطول في الباب بحسب الطريق والتحرير؛ لا تعمم مدّ اللين الملوّن على كل واو أو ياء ساكنة.",
+    "locations": [
+      {
+        "id": "warsh",
+        "group": "items",
+        "index": 7
+      },
+      {
+        "id": "warsh",
+        "group": "items",
+        "index": 10
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "حركات الضبط في الموضع",
+    "meaning": "تظهر هذه الدرجة الخضراء في أجزاء ضبط متفرقة، ولا يضع لها مفتاح الناشر حكمًا عامًا مستقلًا. يُشرح الأداء لكل موضع أدناه: بعضها حركة عادية، وبعضها جزء من علامة ترقيق الراء أو البدل. لا تعاملها كلها على أنها ترقيق أو إمالة.",
+    "locations": [
+      {
+        "id": "warsh",
+        "group": "items",
+        "index": 8
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «ليلةً»",
+    "meaning": "فتحتا التنوين في «ليلةً» عند الوصل؛ لا يُنشئ هذا اللون إمالة. تلوين جزء الحركة لا يغيّر حكمها.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 0,
+        "page": 8
+      },
+      {
+        "id": "ishaq",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 0,
+        "page": 8
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «الآخرةِ»",
+    "meaning": "كسرة تاء «الآخرةِ» عند الوصل. في خلف العاشر تفتح هاء التأنيث عند الوقف، ولا يؤخذ حكم الكسائي من اللون الأخضر. تلوين جزء الحركة لا يغيّر حكمها.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 1,
+        "page": 61
+      },
+      {
+        "id": "ishaq",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 1,
+        "page": 61
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «لعنةَ»",
+    "meaning": "الفتحة في «أنَّ لعنةَ الله». اتبع نصب التاء وتشديد «أن» كما في المصحف؛ اللون الأخضر مكوّن طباعي من الكلمة. تلوين جزء الحركة لا يغيّر حكمها.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 2,
+        "page": 156
+      },
+      {
+        "id": "ishaq",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 2,
+        "page": 156
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «الملائكةُ»",
+    "meaning": "ضمة تاء «الملائكةُ» عند الوصل. تقف على تائها بالهاء من غير نقل حكم إمالة الكسائي إليها. تلوين جزء الحركة لا يغيّر حكمها.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 3,
+        "page": 270
+      },
+      {
+        "id": "ishaq",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 3,
+        "page": 270
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «فتيةٌ»",
+    "meaning": "ضبط التنوين في «إنهم فتيةٌ آمنوا». عند الوصل تظهر النون الساكنة قبل الهمزة، وعند الوقف على التاء المربوطة تقف بالهاء. تلوين جزء الحركة لا يغيّر حكمها.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 4,
+        "page": 294
+      },
+      {
+        "id": "ishaq",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 4,
+        "page": 294
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «بآيةٍ»",
+    "meaning": "كسرة وتنوين «بآيةٍ من ربه» عند الوصل؛ يعمل بحكم التنوين قبل الميم. لا يجعل هذا اللون التاء ممالة. تلوين جزء الحركة لا يغيّر حكمها.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 5,
+        "page": 321
+      },
+      {
+        "id": "ishaq",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 5,
+        "page": 321
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «لعبرةً»",
+    "meaning": "ضبط «لعبرةً لأولي الأبصار»: التنوين قبل اللام يدغم بلا غنة عند الوصل، والتاء المربوطة هاء عند الوقف. تلوين جزء الحركة لا يغيّر حكمها.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 6,
+        "page": 356
+      },
+      {
+        "id": "ishaq",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 6,
+        "page": 356
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "إدغام «اتخذتم»",
+    "meaning": "أدغم الذال الساكنة في التاء من «اتخذتم». الدرجة الزرقاء الداكنة جزء من علامة الإدغام.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "occurrenceNotes",
+        "index": 5,
+        "note": 0,
+        "page": 14
+      },
+      {
+        "id": "ishaq",
+        "group": "occurrenceNotes",
+        "index": 5,
+        "note": 0,
+        "page": 14
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "إدغام «قد جاءكم»",
+    "meaning": "أدغم الدال الساكنة في الجيم عند وصل «قد جاءكم» على قراءة خلف العاشر.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "occurrenceNotes",
+        "index": 5,
+        "note": 1,
+        "page": 105
+      },
+      {
+        "id": "ishaq",
+        "group": "occurrenceNotes",
+        "index": 5,
+        "note": 1,
+        "page": 105
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "إدغام «فقد جاءكم»",
+    "meaning": "أدغم الدال الساكنة في الجيم عند وصل «فقد جاءكم». هذه درجة فرعية من أزرق الإدغام.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 0,
+        "page": 179
+      },
+      {
+        "id": "ishaq",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 0,
+        "page": 179
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ياء «سيفرغ»",
+    "meaning": "اقرأ «سيفرغ» بياء الغيبة في رواية خلف العاشر بدل «سنفرغ» بنون المتكلم عند حفص.",
+    "locations": [
+      {
+        "id": "idris",
+        "group": "occurrenceNotes",
+        "index": 7,
+        "note": 0,
+        "page": 532
+      },
+      {
+        "id": "ishaq",
+        "group": "occurrenceNotes",
+        "index": 7,
+        "note": 0,
+        "page": 532
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "الإدغام في «ونحن له»",
+    "meaning": "في الوصل أدغم النون في اللام. الدرجة الرمادية جزء من حبر اللام، أما الأزرق فهو لون الإدغام.",
+    "locations": [
+      {
+        "id": "susi",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 0,
+        "page": 20
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «الأنهار»",
+    "meaning": "اتبع علامة السكت السماوية في «الأنهار» على وجه السكت المنقول لخلاد. الدرجة الخضراء في أجزاء الرسم لا تضيف حكمًا صوتيًا آخر.",
+    "locations": [
+      {
+        "id": "khallad",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 0,
+        "page": 67
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "إمالة هاء «الآخرة» وقفًا",
+    "meaning": "عند الوقف على «الآخرة» يميل الكسائي هاء التأنيث وما قبلها في هذا الموضع. عند الوصل تنطق التاء وحركتها كما في الضبط؛ لا تجعل الإمالة الخاصة بالوقف إمالة في الوصل.",
+    "locations": [
+      {
+        "id": "duri-kisai",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 0,
+        "page": 13
+      },
+      {
+        "id": "duri-kisai",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 1,
+        "page": 18
+      },
+      {
+        "id": "duri-kisai",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 4,
+        "page": 279
+      },
+      {
+        "id": "duri-kisai",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 5,
+        "page": 282
+      },
+      {
+        "id": "abu-harith",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 2,
+        "page": 398
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "إمالة هاء «خيانة» وقفًا",
+    "meaning": "عند الوقف على «خيانة» يميل الكسائي هاء التأنيث وما قبلها في هذا الموضع. عند الوصل تنطق التاء وحركتها كما في الضبط؛ لا تجعل الإمالة الخاصة بالوقف إمالة في الوصل.",
+    "locations": [
+      {
+        "id": "duri-kisai",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 2,
+        "page": 184
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "إمالة هاء «الجزية» وقفًا",
+    "meaning": "عند الوقف على «الجزية» يميل الكسائي هاء التأنيث وما قبلها في هذا الموضع. عند الوصل تنطق التاء وحركتها كما في الضبط؛ لا تجعل الإمالة الخاصة بالوقف إمالة في الوصل.",
+    "locations": [
+      {
+        "id": "duri-kisai",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 3,
+        "page": 191
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "إمالة هاء «القاسية» وقفًا",
+    "meaning": "عند الوقف على «القاسية» يميل الكسائي هاء التأنيث وما قبلها في هذا الموضع. عند الوصل تنطق التاء وحركتها كما في الضبط؛ لا تجعل الإمالة الخاصة بالوقف إمالة في الوصل.",
+    "locations": [
+      {
+        "id": "duri-kisai",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 6,
+        "page": 338
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "إمالة هاء «الإربة» وقفًا",
+    "meaning": "عند الوقف على «الإربة» يميل الكسائي هاء التأنيث وما قبلها في هذا الموضع. عند الوصل تنطق التاء وحركتها كما في الضبط؛ لا تجعل الإمالة الخاصة بالوقف إمالة في الوصل.",
+    "locations": [
+      {
+        "id": "duri-kisai",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 7,
+        "page": 353
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "إمالة هاء «بغتة» وقفًا",
+    "meaning": "عند الوقف على «بغتة» يميل الكسائي هاء التأنيث وما قبلها في هذا الموضع. عند الوصل تنطق التاء وحركتها كما في الضبط؛ لا تجعل الإمالة الخاصة بالوقف إمالة في الوصل.",
+    "locations": [
+      {
+        "id": "duri-kisai",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 8,
+        "page": 464
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "إمالة هاء «العزة» وقفًا",
+    "meaning": "عند الوقف على «العزة» يميل الكسائي هاء التأنيث وما قبلها في هذا الموضع. عند الوصل تنطق التاء وحركتها كما في الضبط؛ لا تجعل الإمالة الخاصة بالوقف إمالة في الوصل.",
+    "locations": [
+      {
+        "id": "duri-kisai",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 9,
+        "page": 555
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "إمالة هاء «عاقبة» وقفًا",
+    "meaning": "عند الوقف على «عاقبة» يميل الكسائي هاء التأنيث وما قبلها في هذا الموضع. عند الوصل تنطق التاء وحركتها كما في الضبط؛ لا تجعل الإمالة الخاصة بالوقف إمالة في الوصل.",
+    "locations": [
+      {
+        "id": "duri-kisai",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 10,
+        "page": 559
+      },
+      {
+        "id": "abu-harith",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 3,
+        "page": 405
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "إمالة هاء «الجنة» وقفًا",
+    "meaning": "عند الوقف على «الجنة» يميل الكسائي هاء التأنيث وما قبلها في هذا الموضع. عند الوصل تنطق التاء وحركتها كما في الضبط؛ لا تجعل الإمالة الخاصة بالوقف إمالة في الوصل.",
+    "locations": [
+      {
+        "id": "duri-kisai",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 11,
+        "page": 565
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «أطعم»",
+    "meaning": "الموضع من سورة البلد: «أو أطعم» فعل ماضٍ في هذه القراءة، بدل المصدر «إطعام» عند حفص. اقرأ فتح الهمزة والطاء والعين كما في المصحف.",
+    "locations": [
+      {
+        "id": "duri-kisai",
+        "group": "occurrenceNotes",
+        "index": 5,
+        "note": 0,
+        "page": 594
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضم هاء «عليهم»",
+    "meaning": "اقرأ هاء «عليهم» مضمومة كما في رواية رويس.",
+    "locations": [
+      {
+        "id": "ruways",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 0,
+        "page": 507
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «تُوُلِّيتم»",
+    "meaning": "اقرأ «تُوُلِّيتم» بضم التاء والواو، وكسر اللام المشددة؛ القراءة مبنية للمفعول، وتخالف فتح التاء والواو واللام في حفص.",
+    "locations": [
+      {
+        "id": "ruways",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 1,
+        "page": 509
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «ونبلو»",
+    "meaning": "في «ونبلو أخباركم» يسكن رويس الواو، فتقرأ واو مد، بدل فتح الواو عند حفص. لا تنطق الألف الزائدة في الرسم كحرف مستقل.",
+    "locations": [
+      {
+        "id": "ruways",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 2,
+        "page": 510
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «القيامةِ»",
+    "meaning": "كسرة تاء «القيامةِ» عند الوصل. تلوين جزء الحركة لا يغيّر حكمها.",
+    "locations": [
+      {
+        "id": "khalaf",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 0,
+        "page": 33
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «ثلاثةَ»",
+    "meaning": "فتحة التاء المربوطة من «ثلاثةَ قروء» عند الوصل. تلوين جزء الحركة لا يغيّر حكمها.",
+    "locations": [
+      {
+        "id": "khalaf",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 1,
+        "page": 36
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «القردةَ»",
+    "meaning": "فتحة التاء المربوطة من «القردةَ والخنازير» عند الوصل. تلوين جزء الحركة لا يغيّر حكمها.",
+    "locations": [
+      {
+        "id": "khalaf",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 2,
+        "page": 118
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «بالشهادةِ»",
+    "meaning": "كسرة التاء المربوطة من «بالشهادةِ» عند الوصل. تلوين جزء الحركة لا يغيّر حكمها.",
+    "locations": [
+      {
+        "id": "khalaf",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 3,
+        "page": 125
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «الآخرةِ»",
+    "meaning": "كسرة التاء المربوطة من «ولدار الآخرةِ» عند الوصل، مع السكت المعلّم بالسماوي قبل الهمز حسب الرواية. تلوين جزء الحركة لا يغيّر حكمها.",
+    "locations": [
+      {
+        "id": "khalaf",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 4,
+        "page": 248
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «الآخرةَ»",
+    "meaning": "فتحة التاء المربوطة من «وإن الآخرةَ» عند الوصل، مع السكت المعلّم بالسماوي قبل الهمز حسب الرواية. تلوين جزء الحركة لا يغيّر حكمها.",
+    "locations": [
+      {
+        "id": "khalaf",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 5,
+        "page": 471
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "إدغام «حق ويقتلون»",
+    "meaning": "يدغم تنوين «حق» في واو «ويقتلون» بغير غنة في رواية خلف عن حمزة. الدرجة الزرقاء الفرعية في التنوين تابعة للإدغام.",
+    "locations": [
+      {
+        "id": "khalaf",
+        "group": "occurrenceNotes",
+        "index": 7,
+        "note": 0,
+        "page": 52
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "السكت في «سفر أو»",
+    "meaning": "العلامة في الحد بين «سفر» و«أو»: يسكت على الساكن قبل الهمزة بلا تنفس على وجه السكت المنقول في هذه النسخة.",
+    "locations": [
+      {
+        "id": "khalaf",
+        "group": "occurrenceNotes",
+        "index": 8,
+        "note": 0,
+        "page": 108
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "إدغام «هدى ورحمة»",
+    "meaning": "يدغم تنوين «هدى» في واو «ورحمة» بغير غنة في رواية خلف عن حمزة.",
+    "locations": [
+      {
+        "id": "khalaf",
+        "group": "occurrenceNotes",
+        "index": 9,
+        "note": 0,
+        "page": 149
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "إدغام «وازرة وزر»",
+    "meaning": "يدغم تنوين «وازرة» في واو «وزر» بغير غنة في رواية خلف عن حمزة.",
+    "locations": [
+      {
+        "id": "khalaf",
+        "group": "occurrenceNotes",
+        "index": 9,
+        "note": 1,
+        "page": 150
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "همزة الوصل في «اؤتمن»",
+    "meaning": "في الابتداء بـ«اؤتمن» تضم همزة الوصل وتبدل الهمزة الساكنة واوًا، فيكون الابتداء «أوتمن». وفي الوصل تسقط همزة الوصل ويعمل بإبدال الهمزة الساكنة على أصل أبي جعفر.",
+    "locations": [
+      {
+        "id": "ibn-jammaz",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 0,
+        "page": 49
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 0,
+        "page": 49
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "همزة الوصل في «ائتنا»",
+    "meaning": "عند الابتداء بـ«ائتنا» تكسر همزة الوصل، وتبدل همزة القطع الساكنة ياء، فيكون الابتداء بصوت «إيـ». وفي الوصل تسقط همزة الوصل ويعمل بالإبدال المنقول في قراءة أبي جعفر.",
+    "locations": [
+      {
+        "id": "ibn-jammaz",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 1,
+        "page": 136
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 2,
+        "page": 160
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 3,
+        "page": 180
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 11,
+        "page": 399
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 1,
+        "page": 136
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 2,
+        "page": 160
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 3,
+        "page": 180
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 11,
+        "page": 399
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "همزة الوصل في «ائذن»",
+    "meaning": "عند الابتداء بـ«ائذن» تكسر همزة الوصل، وتبدل همزة القطع الساكنة ياء، فيكون الابتداء بصوت «إيـ». وفي الوصل تسقط همزة الوصل ويعمل بالإبدال المنقول في قراءة أبي جعفر.",
+    "locations": [
+      {
+        "id": "ibn-jammaz",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 4,
+        "page": 195
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 4,
+        "page": 195
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "همزة الوصل في «ائت»",
+    "meaning": "عند الابتداء بـ«ائت» تكسر همزة الوصل، وتبدل همزة القطع الساكنة ياء، فيكون الابتداء بصوت «إيـ». وفي الوصل تسقط همزة الوصل ويعمل بالإبدال المنقول في قراءة أبي جعفر.",
+    "locations": [
+      {
+        "id": "ibn-jammaz",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 5,
+        "page": 210
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 10,
+        "page": 367
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 5,
+        "page": 210
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 10,
+        "page": 367
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "همزة الوصل في «ائتوني»",
+    "meaning": "عند الابتداء بـ«ائتوني» تكسر همزة الوصل، وتبدل همزة القطع الساكنة ياء، فيكون الابتداء بصوت «إيـ». وفي الوصل تسقط همزة الوصل ويعمل بالإبدال المنقول في قراءة أبي جعفر.",
+    "locations": [
+      {
+        "id": "ibn-jammaz",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 6,
+        "page": 218
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 7,
+        "page": 241
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 8,
+        "page": 242
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 14,
+        "page": 502
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 6,
+        "page": 218
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 7,
+        "page": 241
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 8,
+        "page": 242
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 14,
+        "page": 502
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "همزة الوصل في «ائتوا»",
+    "meaning": "عند الابتداء بـ«ائتوا» تكسر همزة الوصل، وتبدل همزة القطع الساكنة ياء، فيكون الابتداء بصوت «إيـ». وفي الوصل تسقط همزة الوصل ويعمل بالإبدال المنقول في قراءة أبي جعفر.",
+    "locations": [
+      {
+        "id": "ibn-jammaz",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 9,
+        "page": 315
+      },
+      {
+        "id": "ibn-jammaz",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 13,
+        "page": 501
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 9,
+        "page": 315
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 13,
+        "page": 501
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "همزة الوصل في «ائتيا»",
+    "meaning": "عند الابتداء بـ«ائتيا» تكسر همزة الوصل، وتبدل همزة القطع الساكنة ياء، فيكون الابتداء بصوت «إيـ». وفي الوصل تسقط همزة الوصل ويعمل بالإبدال المنقول في قراءة أبي جعفر.",
+    "locations": [
+      {
+        "id": "ibn-jammaz",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 12,
+        "page": 477
+      },
+      {
+        "id": "ibn-wardan",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 12,
+        "page": 477
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «يضعّف»",
+    "meaning": "الدرجة البنفسجية في «يضعّف لهم» مرتبطة بضبط الكلمة المخالف لحفص؛ اتبع التشديد وصورة الكلمة في هذه الرواية.",
+    "locations": [
+      {
+        "id": "ibn-dhakwan",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 0,
+        "page": 539
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «ويلههم الأمل»",
+    "meaning": "عند وصل «ويلههم الأمل» يقرأ روح بكسر الهاء وميم الجمع. عند الوقف يكسر الهاء ويسكن الميم. الدرجة البنفسجية الفرعية في هذا الضبط لا تعني إمالة.",
+    "locations": [
+      {
+        "id": "rawh",
+        "group": "occurrenceNotes",
+        "index": 3,
+        "note": 0,
+        "page": 262
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "تخفيف زاي «ينزل»",
+    "meaning": "في «أن ينزل الله» يقرأ ابن كثير بسكون النون وتخفيف الزاي. اللام ذات الدرجة الحمراء الداكنة جزء من رسم الكلمة، وليست علامة مستقلة لإمالتها أو لتفخيمها.",
+    "locations": [
+      {
+        "id": "buzzi",
+        "group": "occurrenceNotes",
+        "index": 5,
+        "note": 0,
+        "page": 14
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ياء «يعقلون»",
+    "meaning": "اقرأ «يعقلون» بياء الغيبة في هذا الموضع من رواية البزي، بدل تاء الخطاب «تعقلون» عند حفص. الدرجة البنفسجية الفرعية علامة اختلاف في الضبط، وليست إمالة أو سكتًا.",
+    "locations": [
+      {
+        "id": "buzzi",
+        "group": "occurrenceNotes",
+        "index": 6,
+        "note": 0,
+        "page": 172
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ضبط «لآدم»",
+    "meaning": "العلامة الخضراء كسرة اللام في «لآدم». اقرأ اللام مكسورة، وألف «آدم» المعلّمة بالسماوي مد بدل في رواية ورش.",
+    "locations": [
+      {
+        "id": "warsh",
+        "group": "occurrenceNotes",
+        "index": 8,
+        "note": 0,
+        "page": 6
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ترقيق راء «الآخرة»",
+    "meaning": "العلامة الخضراء جزء من ضبط راء «الآخرة». الراء مرققة في هذا الموضع؛ لا تقلب الكسرة إلى حركة أخرى.",
+    "locations": [
+      {
+        "id": "warsh",
+        "group": "occurrenceNotes",
+        "index": 8,
+        "note": 1,
+        "page": 426
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "تنوين «قوةً»",
+    "meaning": "الدرجتان الخضراوان هنا فتحتا التنوين في «قوةً». عند وصلها بـ«وكانوا» يدغم التنوين في الواو مع الغنة. عند الوقف على تائها المربوطة تقف بالهاء.",
+    "locations": [
+      {
+        "id": "warsh",
+        "group": "occurrenceNotes",
+        "index": 8,
+        "note": 2,
+        "page": 478
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "كسرة «القيامة»",
+    "meaning": "اللون في كسرة التاء المربوطة من «يوم القيامةِ». عند الوصل تنطق التاء مكسورة، وعند الوقف تقف بهاء؛ هذه الكسرة لا تعني إمالة.",
+    "locations": [
+      {
+        "id": "warsh",
+        "group": "occurrenceNotes",
+        "index": 8,
+        "note": 3,
+        "page": 543
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "كسرة «الناصية»",
+    "meaning": "اللون في كسرة التاء المربوطة من «بالناصيةِ». أدّ الكسرة عند الوصل، واقف بالهاء عند الوقف؛ لا تستنتج إمالة من هذا اللون.",
+    "locations": [
+      {
+        "id": "warsh",
+        "group": "occurrenceNotes",
+        "index": 8,
+        "note": 4,
+        "page": 597
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "مدّ البدل في «فآمنوا»",
+    "meaning": "موضع اللون في «فآمنوا بالله ورسله»: ألف المد بعد الهمزة من مد البدل. الدرجة السماوية الأفتح هنا تؤدي وظيفة علامة البدل.",
+    "locations": [
+      {
+        "id": "warsh",
+        "group": "occurrenceNotes",
+        "index": 9,
+        "note": 0,
+        "page": 73
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "مدّ اللين في «شيئًا»",
+    "meaning": "الياء في «شيئًا» ساكنة وقبلها فتحة وبعدها همزة؛ تعمل بأوجه مد اللين في طريق ورش المأخوذ به. الدرجة الزيتونية واقعة في مكونات ضبط هذه الكلمة.",
+    "locations": [
+      {
+        "id": "warsh",
+        "group": "occurrenceNotes",
+        "index": 10,
+        "note": 0,
+        "page": 425
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "ترقيق راء «قدير»",
+    "meaning": "رقّق الراء في «قدير». اللون الأخضر الفرعي في مكوّن ضبط الراء تابع لترقيقها في هذا الموضع.",
+    "locations": [
+      {
+        "id": "warsh",
+        "group": "occurrenceNotes",
+        "index": 11,
+        "note": 0,
+        "page": 546
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "إمالة هاء «لعنة» وقفًا",
+    "meaning": "عند الوقف على «لعنة» يميل الكسائي هاء التأنيث وما قبلها في هذا الموضع. عند الوصل تنطق التاء وحركتها كما في الضبط؛ لا تجعل الإمالة الخاصة بالوقف إمالة في الوصل.",
+    "locations": [
+      {
+        "id": "abu-harith",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 0,
+        "page": 156
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "إمالة هاء «القيامة» وقفًا",
+    "meaning": "عند الوقف على «القيامة» يميل الكسائي هاء التأنيث وما قبلها في هذا الموضع. عند الوصل تنطق التاء وحركتها كما في الضبط؛ لا تجعل الإمالة الخاصة بالوقف إمالة في الوصل.",
+    "locations": [
+      {
+        "id": "abu-harith",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 1,
+        "page": 292
+      },
+      {
+        "id": "abu-harith",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 6,
+        "page": 501
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "إمالة هاء «الأمانة» وقفًا",
+    "meaning": "عند الوقف على «الأمانة» يميل الكسائي هاء التأنيث وما قبلها في هذا الموضع. عند الوصل تنطق التاء وحركتها كما في الضبط؛ لا تجعل الإمالة الخاصة بالوقف إمالة في الوصل.",
+    "locations": [
+      {
+        "id": "abu-harith",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 4,
+        "page": 427
+      }
+    ],
+    "status": "pending-independent-review"
+  },
+  {
+    "title": "إمالة هاء «مائة» وقفًا",
+    "meaning": "عند الوقف على «مائة» يميل الكسائي هاء التأنيث وما قبلها في هذا الموضع. عند الوصل تنطق التاء وحركتها كما في الضبط؛ لا تجعل الإمالة الخاصة بالوقف إمالة في الوصل.",
+    "locations": [
+      {
+        "id": "abu-harith",
+        "group": "occurrenceNotes",
+        "index": 4,
+        "note": 5,
+        "page": 451
+      }
+    ],
+    "status": "pending-independent-review"
+  }
+]

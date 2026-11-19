@@ -1,0 +1,22 @@
+{
+  "proof": {
+    "api": 29,
+    "installedSha256": "dd51e77130afa0fc26418b3d90524b8d04a21ead8c29d570dbb86bd118a18eab",
+    "expectedSha256": "dd51e77130afa0fc26418b3d90524b8d04a21ead8c29d570dbb86bd118a18eab",
+    "diagnostic": false,
+    "result": "PASS",
+    "time": 1791919182.7804542
+  },
+  "actualViews": [
+    "complete-guide-duri-kisai.png",
+    "complete-guide-hafs.png",
+    "complete-guide-ibn-wardan.png",
+    "complete-guide-warsh-night.png",
+    "complete-guide-warsh.png",
+    "complete-page-duri-kisai.png",
+    "complete-page-ibn-wardan.png",
+    "complete-page-ishaq.png",
+    "complete-page-qaloon.png"
+  ],
+  "count": 9
+}

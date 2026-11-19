@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ns0:orientation="vertical" ns0:layout_width="fill_parent" ns0:layout_height="fill_parent"
+  xmlns:ns0="http://schemas.android.com/apk/res/android">
+    <ImageView ns0:id="@id/preview" ns0:layout_width="fill_parent" ns0:layout_height="fill_parent" ns0:scaleType="centerInside" />
+    <ProgressBar ns0:layout_gravity="center" ns0:id="@id/progress_bar" ns0:visibility="gone" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton ns0:layout_gravity="end|bottom" ns0:id="@id/fab" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:layout_marginRight="16.0dip" ns0:layout_marginBottom="92.0dip" ns0:src="@drawable/ic_done" ns0:layout_marginEnd="16.0dip" />
+    <LinearLayout ns0:layout_gravity="bottom" ns0:orientation="vertical" ns0:background="@color/overlay_panel" ns0:padding="16.0dip" ns0:layout_width="fill_parent" ns0:layout_height="120.0dip">
+        <TextView ns0:textAppearance="@style/PageTypeTitle" ns0:id="@id/title" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" />
+        <TextView ns0:textAppearance="@style/PageTypeDescription" ns0:id="@id/description" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

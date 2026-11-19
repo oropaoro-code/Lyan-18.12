@@ -1,0 +1,2 @@
+INSTRUMENTATION_RESULT: result=PASS actual day/night rounded bubble, 22dp clear native page edges and page number below; original source page rendered
+INSTRUMENTATION_CODE: -1

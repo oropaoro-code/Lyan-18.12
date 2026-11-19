@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:ns0="http://schemas.android.com/apk/res/android" xmlns:ns1="http://schemas.android.com/apk/res-auto">
+    <item ns0:icon="@drawable/ic_sort" ns0:enabled="false" ns0:id="@id/sort" ns0:visible="false" ns0:title="@string/menu_sort" ns1:showAsAction="ifRoom">
+        <menu>
+            <group ns0:checkableBehavior="single">
+                <item ns0:id="@id/sort_date" ns0:title="@string/menu_sort_date" ns1:showAsAction="withText" />
+                <item ns0:id="@id/sort_location" ns0:title="@string/menu_sort_location" ns1:showAsAction="withText" />
+            </group>
+            <item ns0:id="@id/group_by_tags" ns0:title="@string/menu_sort_group_by_tags" ns0:checkable="true" ns1:showAsAction="withText" />
+            <item ns0:id="@id/show_recents" ns0:title="@string/menu_show_recents" ns0:checkable="true" ns1:showAsAction="withText" />
+            <item ns0:id="@id/show_date" ns0:title="@string/menu_show_date" ns0:checkable="true" ns1:showAsAction="withText" />
+        </menu>
+    </item>
+    <item ns0:icon="@drawable/ic_goto_quran" ns0:id="@id/last_page" ns0:title="@string/menu_jump_last_page" ns1:showAsAction="ifRoom" />
+    <item ns0:icon="@drawable/ic_ab_search" ns0:id="@id/search" ns0:title="@string/menu_search" ns1:actionViewClass="androidx.appcompat.widget.SearchView" ns1:showAsAction="ifRoom|collapseActionView" />
+    <item ns0:id="@id/jump" ns0:title="@string/menu_jump" ns1:showAsAction="never" />
+    <item ns0:icon="@drawable/ic_action_settings" ns0:id="@id/settings" ns0:title="@string/menu_settings" ns1:showAsAction="never" />
+    <item ns0:id="@id/help" ns0:title="@string/menu_help" ns1:showAsAction="never" />
+    <item ns0:id="@id/about" ns0:title="@string/menu_about" ns1:showAsAction="never" />
+</menu>

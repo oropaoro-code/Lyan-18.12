@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ns0:gravity="center" ns0:orientation="vertical" ns0:id="@id/sliding_layout" ns0:background="@color/panel_background_color" ns0:layout_width="fill_parent" ns0:layout_height="fill_parent"
+  xmlns:ns0="http://schemas.android.com/apk/res/android" xmlns:ns1="http://schemas.android.com/apk/res-auto">
+    <LinearLayout ns0:orientation="horizontal" ns0:id="@id/ayah_action_bar" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content">
+        <ImageView ns0:layout_gravity="center" ns0:id="@id/sliding_menu_close" ns0:focusable="true" ns0:clickable="true" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:src="@drawable/ic_action_expand" ns0:scaleType="fitCenter" ns0:contentDescription="@string/cancel" style="?actionModeCloseButtonStyle" />
+        <app.layan.quran.view.IconPageIndicator ns0:id="@id/sliding_pager_indicator" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns1:indicatorColor="@color/indicator_color" ns1:indicatorHeight="@dimen/icon_page_indicator_height" />
+    </LinearLayout>
+    <app.layan.quran.view.QuranViewPager ns0:id="@id/sliding_layout_pager" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" />
+</LinearLayout>

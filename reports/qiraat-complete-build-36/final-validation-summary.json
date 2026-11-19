@@ -1,0 +1,29 @@
+{
+  "versionName": "18.12",
+  "versionCode": 36,
+  "apkSha256": "2f60a41c3a88af79b9060951db55bcead6f9cbcb0717f48734c9e648448f5cd3",
+  "fullGuideNativeValidation": {
+    "api": 29,
+    "installedSha256": "dd51e77130afa0fc26418b3d90524b8d04a21ead8c29d570dbb86bd118a18eab",
+    "expectedSha256": "dd51e77130afa0fc26418b3d90524b8d04a21ead8c29d570dbb86bd118a18eab",
+    "diagnostic": false,
+    "result": "PASS",
+    "time": 1791918820.4121265
+  },
+  "fullGuideNativeAssertions": 24905,
+  "guideCompleteness": {
+    "riwayat": 20,
+    "sourcePageInventories": 12080,
+    "paintKinds": 122,
+    "unresolved": 0,
+    "rareCasesCompleted": 33,
+    "rareGlyphComponents": 350
+  },
+  "nativeGuideAndNightViews": "All twenty actual complete dialogs and localized page views passed, including night guide rendering.",
+  "physicalTouchPreview": "Current auxiliary test could not acquire window focus; not reported as passed. Pager, renderer and saved brightness lookup are unchanged from build 35, whose focused native proof remains historical.",
+  "allAndroidRuntimeVersionsVerified": false,
+  "nativeValidationApkSha256": "dd51e77130afa0fc26418b3d90524b8d04a21ead8c29d570dbb86bd118a18eab",
+  "finalChange": "Only the close-button text colour was corrected after native visual review; all twenty guides and reading assets remain byte-identical.",
+  "nativeRunApkMatchesFinal": false,
+  "allReadingAssetsMatchNativeRun": true
+}

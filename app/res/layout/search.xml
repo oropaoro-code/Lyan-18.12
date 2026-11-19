@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="17.0sp" android:textColor="?android:textColorPrimary" android:id="@id/search_warning" android:background="@android:drawable/title_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:id="@id/btnGetTranslations" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/menu_get_translations" />
+    <TextView android:textSize="17.0sp" android:textColor="?android:textColorPrimary" android:id="@id/search_area" android:background="@android:drawable/title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_key" />
+    <ListView android:id="@id/results_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/adView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

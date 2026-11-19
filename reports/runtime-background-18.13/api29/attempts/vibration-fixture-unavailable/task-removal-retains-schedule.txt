@@ -1,0 +1,18 @@
+console:/ $ console:/ $ 
+transport_9c877d75946a4cfa96a4742b386b8124
+console:/ $ 
+transport_ea73a9d1b85645fca53a5ff44ecf99a8
+console:/ $ [  811.716713] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[  816.359831] binder: undelivered TRANSACTION_COMPLETE
+[  816.363177] binder: undelivered transaction 293821, process died.
+[  816.366803] binder: undelivered transaction 293848, process died.
+[  816.384200] binder: undelivered transaction 293693, process died.
+[  817.573493] binder: release 4942:4952 transaction 293645 in, still active
+[  817.577708] binder: send failed reply for transaction 293645 to 1984:5001
+INSTRUMENTATION_RESULT: error=java.lang.AssertionError: Actual vibration-mode fixture missing
+	at app.layan.test.TaskRemovalRegression.onStart(TaskRemovalRegression.java:6)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2189)
+
+INSTRUMENTATION_CODE: 0
+
+LYN_cfc23bd4e3ad47f5b585ce55cae010be:0

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ns0:paddingLeft="20.0dip" ns0:paddingRight="20.0dip" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content"
+  xmlns:ns0="http://schemas.android.com/apk/res/android">
+    <RelativeLayout ns0:id="@id/com_facebook_body_frame" ns0:background="@drawable/com_facebook_tooltip_blue_background" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:layout_below="@id/com_facebook_tooltip_bubble_view_top_pointer" ns0:layout_centerHorizontal="true">
+        <ImageView ns0:id="@id/com_facebook_button_xout" ns0:padding="10.0dip" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:src="@drawable/com_facebook_tooltip_blue_xout" ns0:layout_alignParentTop="true" ns0:layout_alignParentRight="true" />
+        <TextView ns0:id="@id/com_facebook_tooltip_bubble_view_text_body" ns0:padding="10.0dip" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:layout_toLeftOf="@id/com_facebook_button_xout" ns0:layout_alignParentLeft="true" ns0:layout_alignParentTop="true" style="@style/tooltip_bubble_text" />
+    </RelativeLayout>
+    <ImageView ns0:id="@id/com_facebook_tooltip_bubble_view_top_pointer" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:layout_marginBottom="-10.0dip" ns0:src="@drawable/com_facebook_tooltip_blue_topnub" ns0:layout_alignParentTop="true" ns0:layout_centerHorizontal="true" />
+    <ImageView ns0:layout_gravity="center|bottom" ns0:id="@id/com_facebook_tooltip_bubble_view_bottom_pointer" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:layout_marginTop="-13.0dip" ns0:src="@drawable/com_facebook_tooltip_blue_bottomnub" ns0:layout_below="@id/com_facebook_body_frame" ns0:layout_centerHorizontal="true" />
+</RelativeLayout>

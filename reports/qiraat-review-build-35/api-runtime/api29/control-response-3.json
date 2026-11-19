@@ -1,0 +1,67 @@
+{
+  "nonce": 3,
+  "replies": [
+    {
+      "type": "adb",
+      "args": [
+        "pull",
+        "/sdcard/Android/data/app.layan.quran/files/tests",
+        "/workspace/scratch/44e931097658/layan-source/layan-18.12-source/reports/qiraat-review-build-35/api-runtime/api29/first-attempt-screens"
+      ],
+      "output": "/sdcard/Android/data/app.layan.quran/files/tests/: 21 files pulled, 0 skipped. 10.5 MB/s (1908678 bytes in 0.173s)\n"
+    },
+    {
+      "type": "adb",
+      "args": [
+        "shell",
+        "am",
+        "force-stop",
+        "app.layan.quran"
+      ],
+      "output": ""
+    },
+    {
+      "type": "adb",
+      "args": [
+        "install",
+        "--no-streaming",
+        "-r",
+        "/workspace/scratch/44e931097658/layan-source/layan-18.12-source/build/instrumentation/layan-test.apk"
+      ],
+      "output": "/workspace/scratch/44e931097658/layan-source/layan-18.12-source/build/instrumentation/layan-test.apk: 1 file pushed, 0 skipped. 1266.4 MB/s (147859 bytes in 0.000s)\nPerforming Push Install\nSuccess\n"
+    },
+    {
+      "type": "adb",
+      "args": [
+        "shell",
+        "am",
+        "instrument",
+        "-w",
+        "-r",
+        "app.layan.test/app.layan.test.QiraatGuideRegression"
+      ],
+      "output": "INSTRUMENTATION_RESULT: error=java.lang.AssertionError: Real RTL swipe retained\n\tat app.layan.test.QiraatGuideRegression.check(QiraatGuideRegression.java:7)\n\tat app.layan.test.QiraatGuideRegression.swipe(QiraatGuideRegression.java:16)\n\tat app.layan.test.QiraatGuideRegression.onStart(QiraatGuideRegression.java:29)\n\tat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2189)\n\nINSTRUMENTATION_CODE: 0\n"
+    },
+    {
+      "type": "adb",
+      "args": [
+        "logcat",
+        "-d",
+        "LayanQiraatTest:I",
+        "AndroidRuntime:E",
+        "*:S"
+      ],
+      "output": "--------- beginning of main\n--------- beginning of system\n10-13 19:57:03.883  4042  4063 I LayanQiraatTest: PASS native reading hafs\n10-13 19:57:21.890  4042  4063 I LayanQiraatTest: PASS native reading shubah\n10-13 19:57:46.450  4042  4063 I LayanQiraatTest: PASS native reading warsh\n10-13 19:58:09.162  4042  4063 I LayanQiraatTest: PASS native reading qaloon\n10-13 19:58:36.892  4042  4063 I LayanQiraatTest: PASS native reading buzzi\n10-13 19:58:59.686  4042  4063 I LayanQiraatTest: PASS native reading qunbul\n10-13 19:59:21.473  4042  4063 I LayanQiraatTest: PASS native reading duri\n10-13 19:59:43.909  4042  4063 I LayanQiraatTest: PASS native reading susi\n10-13 20:00:06.247  4042  4063 I LayanQiraatTest: PASS native reading hisham\n10-13 20:00:27.276  4042  4063 I LayanQiraatTest: PASS native reading ibn-dhakwan\n10-13 20:00:52.719  4042  4063 I LayanQiraatTest: PASS native reading khalaf\n10-13 20:01:16.427  4042  4063 I LayanQiraatTest: PASS native reading khallad\n10-13 20:01:39.379  4042  4063 I LayanQiraatTest: PASS native reading abu-harith\n10-13 20:02:16.144  4042  4063 I LayanQiraatTest: PASS native reading duri-kisai\n10-13 20:02:41.300  4042  4063 I LayanQiraatTest: PASS native reading ibn-wardan\n10-13 20:03:10.233  4042  4063 I LayanQiraatTest: PASS native reading ibn-jammaz\n10-13 20:03:35.289  4042  4063 I LayanQiraatTest: PASS native reading ruways\n10-13 20:03:56.976  4042  4063 I LayanQiraatTest: PASS native reading rawh\n10-13 20:04:24.483  4042  4063 I LayanQiraatTest: PASS native reading ishaq\n10-13 20:04:49.550  4042  4063 I LayanQiraatTest: PASS native reading idris\n--------- beginning of crash\n10-13 20:05:08.840  4042  4063 E AndroidRuntime: FATAL EXCEPTION: Instr: app.layan.test.QiraatGuideRegression\n10-13 20:05:08.840  4042  4063 E AndroidRuntime: Process: app.layan.quran, PID: 4042\n10-13 20:05:08.840  4042  4063 E AndroidRuntime: java.lang.IllegalStateException: Cannot call disconnect() while connecting!\n10-13 20:05:08.840  4042  4063 E AndroidRuntime: \tat android.app.UiAutomation.disconnect(UiAutomation.java:291)\n10-13 20:05:08.840  4042  4063 E AndroidRuntime: \tat android.app.Instrumentation.finish(Instrumentation.java:248)\n10-13 20:05:08.840  4042  4063 E AndroidRuntime: \tat app.layan.test.QiraatGuideRegression.onStart(QiraatGuideRegression.java:32)\n10-13 20:05:08.840  4042  4063 E AndroidRuntime: \tat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2189)\n10-13 20:07:52.302  4299  4320 I LayanQiraatTest: PASS native reading hafs\n10-13 20:08:12.630  4299  4320 I LayanQiraatTest: PASS native reading shubah\n10-13 20:08:28.369  4299  4320 I LayanQiraatTest: PASS native reading warsh\n10-13 20:08:41.069  4299  4320 I LayanQiraatTest: PASS native reading qaloon\n10-13 20:08:56.069  4299  4320 I LayanQiraatTest: PASS native reading buzzi\n10-13 20:09:10.104  4299  4320 I LayanQiraatTest: PASS native reading qunbul\n10-13 20:09:23.985  4299  4320 I LayanQiraatTest: PASS native reading duri\n10-13 20:09:37.869  4299  4320 I LayanQiraatTest: PASS native reading susi\n10-13 20:09:52.094  4299  4320 I LayanQiraatTest: PASS native reading hisham\n10-13 20:10:06.805  4299  4320 I LayanQiraatTest: PASS native reading ibn-dhakwan\n10-13 20:10:24.179  4299  4320 I LayanQiraatTest: PASS native reading khalaf\n10-13 20:10:38.918  4299  4320 I LayanQiraatTest: PASS native reading khallad\n10-13 20:10:53.622  4299  4320 I LayanQiraatTest: PASS native reading abu-harith\n10-13 20:11:12.639  4299  4320 I LayanQiraatTest: PASS native reading duri-kisai\n10-13 20:11:25.696  4299  4320 I LayanQiraatTest: PASS native reading ibn-wardan\n10-13 20:11:38.666  4299  4320 I LayanQiraatTest: PASS native reading ibn-jammaz\n10-13 20:11:51.542  4299  4320 I LayanQiraatTest: PASS native reading ruways\n10-13 20:12:03.609  4299  4320 I LayanQiraatTest: PASS native reading rawh\n10-13 20:12:19.000  4299  4320 I LayanQiraatTest: PASS native reading ishaq\n10-13 20:12:33.619  4299  4320 I LayanQiraatTest: PASS native reading idris\n"
+    },
+    {
+      "type": "adb",
+      "args": [
+        "pull",
+        "/sdcard/Android/data/app.layan.quran/files/tests",
+        "/workspace/scratch/44e931097658/layan-source/layan-18.12-source/reports/qiraat-review-build-35/api-runtime/api29/native-screens"
+      ],
+      "output": "/sdcard/Android/data/app.layan.quran/files/tests/: 21 files pulled, 0 skipped. 8.2 MB/s (1901392 bytes in 0.222s)\n"
+    }
+  ],
+  "quit": false
+}

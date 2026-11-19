@@ -1,0 +1,12 @@
+Layan 0.9.0 preview — modified build, 2026-10-03.
+Reader core and page layout derive from the user-supplied se.anwar.quran 4.5.0 package and Quran for Android (https://github.com/quran/quran_android), GPL-3.0. Original third-party license texts embedded in META-INF are retained.
+Changes: Layan branding, independent package and signing, removal of vendor cloud/push/social configuration, Arabic resources merged, original page renderer and swipe engine retained, native Hadith and location prayer screens added.
+Quran images/data and audio retain the licenses of their original authors and hosting providers. Public data endpoints are retained for page/audio/translation downloading.
+Hadith datasets: https://github.com/fawazahmed0/hadith-api — stored Hadith text, references and grading preserved unchanged. Dataset license: Unlicense, https://unlicense.org.
+Amiri font: SIL Open Font License.
+Prayer calculations in 0.9.5: isolated calculation, astronomical and Hijri modules from the user-supplied com.reworewo.prayertimes 3.8.3 package. UI and widgets recreated in Layan themes. Earlier Adhan Java code is not included in the current runtime.
+Time-zone boundary lookup: photostructure/tz-lookup, CC0; approximate near borders.
+ThreeTen Backport: BSD-3-Clause.
+No affiliation or endorsement by the original application authors is claimed.
+
+Qibla in 0.9.6 (2026-10-04): isolated CompassDialView, CalibrationGuideView and AuroraView drawing code from the user-supplied com.jenos.qiblafinder_qibladirection_kaaba package. Package descriptors, animator adapter and theme color resolution changed for Layan. Location/sensor binding and section/settings shell implemented separately. No reference reminders, accounts, services, trackers or navigation imported. Package/drawing provenance and SHA-256 records: content_provenance/qibla/reference.json in the source archive.

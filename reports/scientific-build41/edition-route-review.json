@@ -1,0 +1,167 @@
+{
+  "riwayat": [
+    {
+      "id": "abu-harith",
+      "name": "أَبُو الحَارِث عَنِ الكِسَائِي",
+      "publisherInfoUrl": "https://dl2.islamweb.net/Audio_Path/quran_list/alhareth/info.pdf",
+      "editionRouteBinding": "open-not-certified",
+      "infoSha256": "fb4a0915f34067a7a89608ba826333b1ec768ebd7ec4d4cd10298a598f6a7b42",
+      "status": "conflicting-introduction-excluded",
+      "reason": "Introduction says Duri from Kisai although selected publisher record is Abu Harith; later material refers to Abu Harith. No route assigned from this contradiction."
+    },
+    {
+      "id": "buzzi",
+      "name": "البَزِّي عَن ابنِ كَثِير",
+      "publisherInfoUrl": "https://dl2.islamweb.net/Audio_Path/quran_list/albuzi/info.pdf",
+      "editionRouteBinding": "open-not-certified",
+      "infoSha256": "b40228b0989963c821524cdd088a9d9768849882dfd9d51c2fcebc6d52855795",
+      "status": "route-not-established-from-readable-document"
+    },
+    {
+      "id": "duri",
+      "name": "الدُّورِي عَن أَبِي عَمرٍو",
+      "publisherInfoUrl": "https://dl2.islamweb.net/Audio_Path/quran_list/Dori2/info.pdf",
+      "editionRouteBinding": "open-not-certified",
+      "infoSha256": "bf1b75bacc32edd02cb89ae0af6619baa9e5ff48ce167b3361322fda12a37413",
+      "status": "publisher-document-explicit-declaration",
+      "declaration": "أبو الزعراء عبد الرحمن بن عبدوس"
+    },
+    {
+      "id": "duri-kisai",
+      "name": "الدُّورِي عَنِ الكِسَائِي",
+      "publisherInfoUrl": "https://dl2.islamweb.net/Audio_Path/quran_list/Dori/info.pdf",
+      "editionRouteBinding": "open-not-certified",
+      "infoSha256": "20a59c33210256e09be434e300efd7d6b3ed31130d7b52102fe86f6f31337c5b",
+      "status": "route-not-established-from-readable-document"
+    },
+    {
+      "id": "hafs",
+      "name": "حَفص عَن عَاصِم",
+      "publisherInfoUrl": "https://dl2.islamweb.net/Audio_Path/quran_list/hafs/info.pdf",
+      "editionRouteBinding": "open-not-certified",
+      "infoSha256": "dad0eec8e26f54e17b61b36c00506f363f949c730388a4b2ca279cab46e6bdac",
+      "status": "route-not-established-from-readable-document"
+    },
+    {
+      "id": "hisham",
+      "name": "هِشَام عَن ابنِ عَامِر",
+      "publisherInfoUrl": "https://dl2.islamweb.net/Audio_Path/quran_list/hesham/info.pdf",
+      "editionRouteBinding": "open-not-certified",
+      "infoSha256": "eca99e76c06578ab8415e8b4f48af913723a8d79532aea5ca23a3782c7b9c948",
+      "status": "publisher-document-explicit-declaration",
+      "declaration": "الحلواني — التيسير والشاطبية"
+    },
+    {
+      "id": "ibn-dhakwan",
+      "name": "ابنُ ذَكوَان عَن ابنِ عَامِر",
+      "publisherInfoUrl": "https://dl2.islamweb.net/Audio_Path/quran_list/shuaba/info.pdf",
+      "editionRouteBinding": "open-not-certified",
+      "infoSha256": "86fffdbcba74ccfc257a3bd697d360b9148bac0117ccba485c1e7e019e2ea963",
+      "status": "conflicting-document-excluded",
+      "reason": "Publisher link returns a document beginning with Shubah biography and describing Shubah. It is not valid proof of Ibn Dhakwan route."
+    },
+    {
+      "id": "ibn-jammaz",
+      "name": "ابنُ جَمَّاز عَن أَبِي جَعفَر",
+      "publisherInfoUrl": null,
+      "editionRouteBinding": "open-not-certified",
+      "status": "info-document-not-provided"
+    },
+    {
+      "id": "ibn-wardan",
+      "name": "ابنُ وَردَان عَن أَبِي جَعفَر",
+      "publisherInfoUrl": null,
+      "editionRouteBinding": "open-not-certified",
+      "status": "info-document-not-provided"
+    },
+    {
+      "id": "idris",
+      "name": "إِدرِيس عَن خَلَفٍ العَاشِر",
+      "publisherInfoUrl": null,
+      "editionRouteBinding": "open-not-certified",
+      "status": "info-document-not-provided"
+    },
+    {
+      "id": "ishaq",
+      "name": "إِسحَاق عَن خَلَفٍ العَاشِر",
+      "publisherInfoUrl": null,
+      "editionRouteBinding": "open-not-certified",
+      "status": "info-document-not-provided"
+    },
+    {
+      "id": "khalaf",
+      "name": "خَلَف عَن حَمزَة",
+      "publisherInfoUrl": "https://dl2.islamweb.net/Audio_Path/quran_list/khalaf/info.pdf",
+      "editionRouteBinding": "open-not-certified",
+      "infoSha256": "a969ea1827941b88766bf355ad923d18d14c21dd0a1be5e77d8add62520aa766",
+      "status": "publisher-document-explicit-declaration",
+      "declaration": "الشاطبية"
+    },
+    {
+      "id": "khallad",
+      "name": "خَلَّاد عَن حَمزَة",
+      "publisherInfoUrl": "https://dl2.islamweb.net/Audio_Path/quran_list/khallad/info.pdf",
+      "editionRouteBinding": "open-not-certified",
+      "infoSha256": "581ab7d074cefd0a6f8e90ae2dbb5cdd9f2052dd0f2c59ab10f9a6964dc2ab87",
+      "status": "publisher-document-explicit-declaration",
+      "declaration": "الشاطبية"
+    },
+    {
+      "id": "qaloon",
+      "name": "قَالُون عَن نَافِع",
+      "publisherInfoUrl": "https://dl2.islamweb.net/Audio_Path/quran_list/qaloon/info.pdf",
+      "editionRouteBinding": "open-not-certified",
+      "infoSha256": "6a2bfe13a2ea71c78991d9a288a96a55d0c37f0c2c28d6eac4c56740244bc460",
+      "status": "publisher-document-explicit-declaration",
+      "declaration": "أبو نشيط محمد بن هارون"
+    },
+    {
+      "id": "qunbul",
+      "name": "قُنبُل عَن ابنِ كَثِير",
+      "publisherInfoUrl": "https://dl2.islamweb.net/Audio_Path/quran_list/qunbol/info.pdf",
+      "editionRouteBinding": "open-not-certified",
+      "infoSha256": "8d1742ed90016a7ff6db2e98af249303edf98dfbe9cef450906ba7bd44bb6195",
+      "status": "publisher-document-explicit-declaration",
+      "declaration": "أبو بكر أحمد بن مجاهد — التيسير والشاطبية"
+    },
+    {
+      "id": "rawh",
+      "name": "رَوح عَن يَعقُوب",
+      "publisherInfoUrl": null,
+      "editionRouteBinding": "open-not-certified",
+      "status": "info-document-not-provided"
+    },
+    {
+      "id": "ruways",
+      "name": "رُوَيس عَن يَعقُوب",
+      "publisherInfoUrl": null,
+      "editionRouteBinding": "open-not-certified",
+      "status": "info-document-not-provided"
+    },
+    {
+      "id": "shubah",
+      "name": "شُعبَة عَن عَاصِم",
+      "publisherInfoUrl": "https://dl2.islamweb.net/Audio_Path/quran_list/thakwaan/info.pdf",
+      "editionRouteBinding": "open-not-certified",
+      "infoSha256": "9bc2d8407633c12c0107e2a48fda07271b0440b0a9ab46cae319aa49e99faa18",
+      "status": "route-not-established-from-readable-document"
+    },
+    {
+      "id": "susi",
+      "name": "السُّوسِي عَن أَبِي عَمرٍو",
+      "publisherInfoUrl": "https://dl2.islamweb.net/Audio_Path/quran_list/alsosi/info.pdf",
+      "editionRouteBinding": "open-not-certified",
+      "infoSha256": "b981d3bdba153cb1b2682fc9d0eea4593c5f366cd48d0a78d1239c9895af9480",
+      "status": "route-not-established-from-readable-document"
+    },
+    {
+      "id": "warsh",
+      "name": "وَرش عَن نَافِع",
+      "publisherInfoUrl": "https://dl2.islamweb.net/Audio_Path/quran_list/warsh/info.pdf",
+      "editionRouteBinding": "open-not-certified",
+      "infoSha256": "42a93464e1d2fb3ae6f999bdc7529635d962f4eb4daaa5470e10adf53780dd68",
+      "status": "route-not-established-from-readable-document"
+    }
+  ],
+  "allTwentyEditionRoutesEstablished": false
+}

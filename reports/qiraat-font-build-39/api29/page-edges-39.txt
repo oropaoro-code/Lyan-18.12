@@ -1,0 +1,6 @@
+INSTRUMENTATION_RESULT: error=java.lang.AssertionError: Source page not ready
+	at app.layan.test.QiraatBubblePreview.show(QiraatBubblePreview.java:10)
+	at app.layan.test.QiraatBubblePreview.onStart(QiraatBubblePreview.java:15)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2189)
+
+INSTRUMENTATION_CODE: 0

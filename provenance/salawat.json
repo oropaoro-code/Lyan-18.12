@@ -1,0 +1,21 @@
+{
+  "status": "Original first recording imported; exact bytes verified",
+  "resource": "res/raw/layan_salawat_one.mp3",
+  "original": "tazkeer.zip/base.apk:res/raw/sound_1.mp3",
+  "bytes": 21129,
+  "sha256": "ab9556b85c0f5c25e0e4dd79b1da5ac36f82c4a8c1a478361391db12e9203b37",
+  "intervalMinutes": [
+    5,
+    10,
+    15,
+    20,
+    30,
+    60,
+    180,
+    360,
+    720
+  ],
+  "noOtherVoices": true,
+  "defaultEnabled": false,
+  "onlyWhileAppNotVisible": true
+}

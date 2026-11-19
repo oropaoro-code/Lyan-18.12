@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/44e931097658/layan-source/layan-18.12-source/scripts/device-matrix.py", line 289, in <module>
+    try:
+         
+  File "/workspace/scratch/44e931097658/layan-source/layan-18.12-source/scripts/device-matrix.py", line 39, in adb
+    if p.returncode and not (allow_missing and p.returncode==1 and not p.stdout.strip()):raise RuntimeError(p.stdout)
+                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: run-as: package not debuggable: app.layan.quran
+

@@ -1,0 +1,1 @@
+package app.layan.quran.view;import android.content.Context;public class QuranImagePageLayout extends android.widget.FrameLayout {public int v,y;public QuranImagePageLayout(Context c){super(c);}public void h(Pb.h p){}public HighlightingImageView getImageView(){return null;}}

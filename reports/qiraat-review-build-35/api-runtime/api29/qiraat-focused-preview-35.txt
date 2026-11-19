@@ -1,0 +1,2 @@
+INSTRUMENTATION_RESULT: result=PASS real focused RTL touchscreen swipe and actual Arabic day, Qaloon imala, and colour-preserving night previews
+INSTRUMENTATION_CODE: -1

@@ -1,0 +1,8 @@
+{
+  "versionCode": 37,
+  "nativePreview": "PASS",
+  "dayAndNight": true,
+  "horizontalInsetDp": 22,
+  "pageNumberBelow": true,
+  "physicalSwipeTested": false
+}

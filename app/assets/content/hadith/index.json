@@ -1,0 +1,58 @@
+{
+  "items": [
+    {
+      "identifier": "ara-bukhari",
+      "name": "صحيح البخاري",
+      "file": "hadith/ara-bukhari.json",
+      "count": 7580
+    },
+    {
+      "identifier": "ara-muslim",
+      "name": "صحيح مسلم",
+      "file": "hadith/ara-muslim.json",
+      "count": 7360
+    },
+    {
+      "identifier": "ara-nasai",
+      "name": "سنن النسائي",
+      "file": "hadith/ara-nasai.json",
+      "count": 5679
+    },
+    {
+      "identifier": "ara-abudawud",
+      "name": "سنن أبي داود",
+      "file": "hadith/ara-abudawud.json",
+      "count": 5272
+    },
+    {
+      "identifier": "ara-tirmidhi",
+      "name": "جامع الترمذي",
+      "file": "hadith/ara-tirmidhi.json",
+      "count": 3924
+    },
+    {
+      "identifier": "ara-ibnmajah",
+      "name": "سنن ابن ماجه",
+      "file": "hadith/ara-ibnmajah.json",
+      "count": 4338
+    },
+    {
+      "identifier": "ara-malik",
+      "name": "موطأ مالك",
+      "file": "hadith/ara-malik.json",
+      "count": 1829
+    },
+    {
+      "identifier": "ara-nawawi",
+      "name": "الأربعون النووية",
+      "file": "hadith/ara-nawawi.json",
+      "count": 42
+    },
+    {
+      "identifier": "ara-qudsi",
+      "name": "الأحاديث القدسية",
+      "file": "hadith/ara-qudsi.json",
+      "count": 40
+    }
+  ]
+}

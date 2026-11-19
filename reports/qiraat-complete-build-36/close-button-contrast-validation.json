@@ -1,0 +1,11 @@
+{
+  "backgroundObservedInNativeView": [
+    16,
+    63,
+    50
+  ],
+  "finalButtonTextColor": "#FFFFFF",
+  "contrastRatio": 11.803771402074174,
+  "result": "PASS",
+  "scope": "One-line visual correction after the twenty-guide native run; guide content unchanged."
+}

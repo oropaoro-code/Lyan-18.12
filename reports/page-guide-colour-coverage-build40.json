@@ -1,0 +1,140 @@
+{
+  "pages": 12080,
+  "riwayat": [
+    {
+      "id": "idris",
+      "pages": 604,
+      "titlePages": 0,
+      "extraNonTitleTraces": []
+    },
+    {
+      "id": "susi",
+      "pages": 604,
+      "titlePages": 43,
+      "extraNonTitleTraces": []
+    },
+    {
+      "id": "khallad",
+      "pages": 604,
+      "titlePages": 0,
+      "extraNonTitleTraces": []
+    },
+    {
+      "id": "qaloon",
+      "pages": 604,
+      "titlePages": 44,
+      "extraNonTitleTraces": []
+    },
+    {
+      "id": "shubah",
+      "pages": 604,
+      "titlePages": 0,
+      "extraNonTitleTraces": []
+    },
+    {
+      "id": "duri",
+      "pages": 604,
+      "titlePages": 43,
+      "extraNonTitleTraces": []
+    },
+    {
+      "id": "duri-kisai",
+      "pages": 604,
+      "titlePages": 0,
+      "extraNonTitleTraces": []
+    },
+    {
+      "id": "ruways",
+      "pages": 604,
+      "titlePages": 0,
+      "extraNonTitleTraces": [
+        {
+          "paint": "#0000FF:fill",
+          "font": "DecoType-ProfessionalNas",
+          "pages": [
+            604
+          ]
+        }
+      ]
+    },
+    {
+      "id": "khalaf",
+      "pages": 604,
+      "titlePages": 0,
+      "extraNonTitleTraces": []
+    },
+    {
+      "id": "ibn-jammaz",
+      "pages": 604,
+      "titlePages": 0,
+      "extraNonTitleTraces": []
+    },
+    {
+      "id": "qunbul",
+      "pages": 604,
+      "titlePages": 59,
+      "extraNonTitleTraces": []
+    },
+    {
+      "id": "ibn-wardan",
+      "pages": 604,
+      "titlePages": 0,
+      "extraNonTitleTraces": []
+    },
+    {
+      "id": "ibn-dhakwan",
+      "pages": 604,
+      "titlePages": 46,
+      "extraNonTitleTraces": []
+    },
+    {
+      "id": "ishaq",
+      "pages": 604,
+      "titlePages": 0,
+      "extraNonTitleTraces": []
+    },
+    {
+      "id": "hafs",
+      "pages": 604,
+      "titlePages": 0,
+      "extraNonTitleTraces": []
+    },
+    {
+      "id": "rawh",
+      "pages": 604,
+      "titlePages": 0,
+      "extraNonTitleTraces": []
+    },
+    {
+      "id": "buzzi",
+      "pages": 604,
+      "titlePages": 58,
+      "extraNonTitleTraces": []
+    },
+    {
+      "id": "hisham",
+      "pages": 604,
+      "titlePages": 48,
+      "extraNonTitleTraces": []
+    },
+    {
+      "id": "warsh",
+      "pages": 604,
+      "titlePages": 57,
+      "extraNonTitleTraces": []
+    },
+    {
+      "id": "abu-harith",
+      "pages": 604,
+      "titlePages": 0,
+      "extraNonTitleTraces": []
+    }
+  ],
+  "invisibleTraceResolution": {
+    "id": "ruways",
+    "page": 604,
+    "paint": "#0000FF:fill",
+    "visibleBluePixelsInDisplayedCropAt3x": 0,
+    "classification": "nonvisible source trace; no invented performance rule"
+  }
+}

@@ -1,0 +1,22 @@
+SELinux Enforcing before APK installation and every app regression. Console bootstrap permissive: True
+console:/ $ [  232.632955] type=1400 audit(1791784891.299:54): avc: denied { associate } for comm="Binder:1706_1" name="globalAlert" scontext=u:object_r:proc_net:s0 tcontext=u:object_r:proc:s0 tclass=filesystem permissive=1
+[  232.644912] type=1400 audit(1791784908.229:55): avc: denied { associate } for comm="Binder:1706_5" name="globalAlert" scontext=u:object_r:proc_net:s0 tcontext=u:object_r:proc:s0 tclass=filesystem permissive=1
+console:/ $ [  232.632955] type=1400 audit(1791784891.299:54): avc: denied { associate } for comm="Binder:1706_1" name="globalAlert" scontext=u:object_r:proc_net:s0 tcontext=u:object_r:proc:s0 tclass=filesystem permissive=1
+[  232.644912] type=1400 audit(1791784908.229:55): avc: denied { associate } for comm="Binder:1706_5" name="globalAlert" scontext=u:object_r:proc_net:s0 tcontext=u:object_r:proc:s0 tclass=filesystem permissive=1
+
+transport_1ce12b05bd0c4be9a1a49b41a6bb1ee7
+console:/ $ [  236.929861] init: Received control message 'start' for 'gsid' from pid: 1982 (system_server)
+[  236.945076] init: starting service 'gsid'...
+
+transport_092d2b3b51154f8e94d77447b9e0133f
+console:/ $ [  237.579243] init: Received control message 'stop' for 'gsid' from pid: 1982 (system_server)
+[  237.579590] init: Sending signal 9 to service 'gsid' (pid 3147) process group...
+[  237.609866] libprocessgroup: Successfully killed process cgroup uid 0 pid 3147 in 29ms
+[  237.622160] init: Service 'gsid' (pid 3147) received signal 9
+[  237.906525] type=1400 audit(1791784908.229:55): avc: denied { associate } for comm="Binder:1706_5" name="globalAlert" scontext=u:object_r:proc_net:s0 tcontext=u:object_r:proc:s0 tclass=filesystem permissive=1
+[  237.990604] type=1400 audit(1791784913.499:56): avc: granted { read } for comm="main" name="u:object_r:net_dns_prop:s0" dev="tmpfs" ino=703 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:net_dns_prop:s0 tclass=file app=com.android.email
+[  241.606890] type=1400 audit(1791784913.499:56): avc: granted { read } for comm="main" name="u:object_r:net_dns_prop:s0" dev="tmpfs" ino=703 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:net_dns_prop:s0 tclass=file app=com.android.email
+[  241.607391] type=1404 audit(1791784917.189:57): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295
+Enforcing
+
+LYN_3a4c8372795a4ebfb63892c68868c09b:0

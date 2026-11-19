@@ -1,0 +1,126 @@
+{
+  "reference": "com.reworewo.prayertimes 3.8.3",
+  "scope": "calculation, astronomy, Umm al-Qura, prayer interface strings",
+  "classes": [
+    {
+      "original": "m4/a",
+      "sha256": "603c3fffbfe36394c52b3a503b7b510b136c2dcbec75a06ffe483e0b69b4a447",
+      "methods": 3
+    },
+    {
+      "original": "m4/b",
+      "sha256": "fc8c970b2118eb3cd68f130b7cf5fd1ff731c0f86d4aa63976b772e052c75b08",
+      "methods": 5
+    },
+    {
+      "original": "m4/c",
+      "sha256": "4ea8d49f5165f026eca2832498a34f8fe2b5cb721b2ec31f7cd585ace4a21427",
+      "methods": 4
+    },
+    {
+      "original": "m4/d",
+      "sha256": "f3f5400d625ef8773f0e901d89b3ad9a3a0eccdebe621e8f9a3040adce79d3c0",
+      "methods": 10
+    },
+    {
+      "original": "m4/e",
+      "sha256": "ab5f68c76f159440cf5115f3b479c19df1a49daf17fb740771e1868706ef83df",
+      "methods": 3
+    },
+    {
+      "original": "e5/a",
+      "sha256": "c37cfcbdb1b05554ff1ada71e7ce89457a209925cdb0cc787653a361a1fa2728",
+      "methods": 3
+    },
+    {
+      "original": "e5/b",
+      "sha256": "6360e79f45abbb12f1555e41f0c2b0f695d5abe898f472083101640943b9ce93",
+      "methods": 3
+    },
+    {
+      "original": "e5/c",
+      "sha256": "105f2bb26468edcc379fbc704a123bd10804be97f79cda472e397f17d504a663",
+      "methods": 3
+    },
+    {
+      "original": "e5/d",
+      "sha256": "4a659ddeeb1b83e84118c1005b3b964dba1c82cac8e636a1567d32e5a1be7ff6",
+      "methods": 2
+    },
+    {
+      "original": "e5/e",
+      "sha256": "c464be3ccec66becf054555a1f598a8366d83218813725fa4f091dec9b9f819d",
+      "methods": 1
+    },
+    {
+      "original": "e5/f",
+      "sha256": "58903751c9104501ec37356862be6871ac4e77585cc2c6e95cce8a2d71080eda",
+      "methods": 1
+    },
+    {
+      "original": "e5/g",
+      "sha256": "b7f3d56bb4ae0db51b61da90bbbeb051f0ccf12cd3b328f18ca67207a2bfa058",
+      "methods": 2
+    },
+    {
+      "original": "e5/h",
+      "sha256": "1aa4625b366984317193edf920941b0eb4ebaffbb022cb15162f21e1c8b200fb",
+      "methods": 11
+    },
+    {
+      "original": "f5/b",
+      "sha256": "bc5f7995fcad2d6175ab62cb7096e64cc8c9d563e0f965501c72c66f88b7518f",
+      "methods": 1
+    },
+    {
+      "original": "f5/c",
+      "sha256": "6fc554d7b7e5950730a85a7b81614567a4586629f53e567d2733f24054a89745",
+      "methods": 2
+    },
+    {
+      "original": "f5/d",
+      "sha256": "ceb7c6a3e3ab1ed13ec7e8c9e64b45e4360109e03b2dac8588509e99a3172027",
+      "methods": 1
+    },
+    {
+      "original": "f5/e",
+      "sha256": "0530b6eb7aee9166680e8ae5cb974699783a6fad8f44632c5f4dc1d44fcbaa4b",
+      "methods": 1
+    },
+    {
+      "original": "f5/f",
+      "sha256": "c96ccb156ea56367e2e54620a5ec659638a1643625f1d481e634c2948a2fb620",
+      "methods": 1
+    },
+    {
+      "original": "r5/a",
+      "sha256": "74ecd4ac5b95737c7fd9a196ac33651388a28bad79e7f1408a2e77fc6a85180e",
+      "methods": 4
+    },
+    {
+      "original": "r5/b",
+      "sha256": "1b6a7ff41a2789127ac5ee17b9f7b0717d9004e74e3fc97a7ae6460712a23474",
+      "methods": 10
+    },
+    {
+      "original": "r5/c",
+      "sha256": "5212e19c8529cf2c329277b7d28ec37cb1cb54e092fee5cce9519763ded99a15",
+      "methods": 2
+    }
+  ],
+  "link_adapters": "ReferenceSupport; arithmetic instructions preserved; unrelated app methods removed",
+  "reference_apk_sha256": "4e77df2480866adf7935710df92fa43e2474dfff05e3fc94896d0e20b82e8d5f",
+  "ui": "Native Java reconstruction using Layan themes, not pixel-identical source layouts",
+  "widgets": [
+    "horizontal",
+    "vertical",
+    "mini",
+    "minimal",
+    "clock"
+  ],
+  "widget_implementation": "Native Android RemoteViews reconstruction; uses saved foreground coordinates and identical prayer engine",
+  "reference_app_services_imported": false,
+  "prayer_notifications_imported": false,
+  "timezone_adapter": "ThreeTenBP TZDB 2026c instead of legacy OS TimeZone rules",
+  "ummalqura_license_source": "https://raw.githubusercontent.com/msarhan/ummalqura-calendar/master/LICENSE"
+}

@@ -1,0 +1,16 @@
+console:/ $ console:/ $ 
+transport_60957a1ea5994e4ca26fa9bd43d09db2
+console:/ $ 
+transport_062e1c60b9d6458d888536e00a1e05da
+console:/ $ [  315.093450] binder: 1803:2419 transaction failed 29189/-22, size 64-0 line 3128
+[  316.167904] binder: 1982:2150 transaction failed 29189/-22, size 504-0 line 3128
+[  318.292590] binder: 1982:1982 transaction failed 29189/-22, size 88-0 line 3128
+[  320.105791] binder: 2433:2507 transaction failed 29189/-22, size 124-0 line 3128
+[  320.453397] binder: 2405:2405 transaction failed 29189/-22, size 92-0 line 3128
+[  329.817772] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[  331.884927] binder: 1982:2078 transaction failed 29189/-22, size 0-0 line 3128
+  Window #1 Window{aeb5a51 u0 Application Not Responding: com.android.systemui}:
+LAYAN_TEST_OS_RESTART_com.android.systemui
+LAYAN_UI_READY
+
+LYN_1629de8b27f94ff499c4e982f65bbd7a:0

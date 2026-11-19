@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ns0:orientation="horizontal" ns0:background="@drawable/quran_row_background" ns0:padding="16.0dip" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content"
+  xmlns:ns0="http://schemas.android.com/apk/res/android">
+    <ImageView ns0:layout_gravity="center_vertical" ns0:id="@id/image" ns0:background="@drawable/download_button_circle" ns0:layout_width="40.0dip" ns0:layout_height="40.0dip" ns0:layout_marginRight="16.0dip" ns0:src="@drawable/ic_download" ns0:scaleType="center" ns0:layout_alignParentLeft="true" ns0:contentDescription="@null" ns0:layout_marginEnd="16.0dip" ns0:layout_alignParentStart="true" />
+    <LinearLayout ns0:layout_gravity="center_vertical" ns0:orientation="vertical" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" ns0:layout_toRightOf="@id/image" ns0:layout_alignParentRight="true" ns0:layout_toEndOf="@id/image" ns0:layout_alignParentEnd="true">
+        <TextView ns0:textAppearance="@style/TitleText" ns0:id="@id/name" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" ns0:layout_marginBottom="4.0dip" />
+        <TextView ns0:id="@id/quantity" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

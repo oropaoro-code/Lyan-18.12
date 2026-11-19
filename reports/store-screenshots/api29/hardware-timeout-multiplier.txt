@@ -1,0 +1,19 @@
+[  327.623324] type=1404 audit(1791789543.800:17): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295
+[  327.728180] type=1400 audit(1791789553.860:18): avc: denied { write } for comm="RenderThread" name="property_service" dev="tmpfs" ino=6350 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=com.android.launcher3
+[  328.569103] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[  327.623324] type=1404 audit(1791789543.800:17): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295
+[  327.728180] type=1400 audit(1791789553.860:18): avc: denied { write } for comm="RenderThread" name="property_service" dev="tmpfs" ino=6350 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=com.android.launcher3
+[  328.569103] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+console:/ $ 
+transport_dbc91fd730df427386147b9b928f454d
+console:/ $ 
+transport_4786f38df104435aa7ea3adb2f243891
+console:/ $ [  355.569434] type=1400 audit(1791789553.860:18): avc: denied { write } for comm="RenderThread" name="property_service" dev="tmpfs" ino=6350 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=com.android.launcher3
+[  355.569886] type=1400 audit(1791789581.780:19): avc: denied { read } for comm="DcHandlerThread" name="u:object_r:net_radio0_prop:s0" dev="tmpfs" ino=6305 scontext=u:r:radio:s0 tcontext=u:object_r:net_radio0_prop:s0 tclass=file permissive=0
+[  363.084547] binder: release 3243:3331 transaction 67006 out, still active
+[  363.084784] binder: undelivered TRANSACTION_COMPLETE
+[  371.478761] binder: 1986:2409 transaction failed 29189/0, size 2080-16 line 3060
+[  371.479177] binder: send failed reply for transaction 67006, target dead
+10
+
+LYN_8a7a5a26c6c048d6acb113a904d344d2:0

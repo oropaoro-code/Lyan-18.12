@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.layan.quran.view.AyahNumberView android:textSize="12.0sp" android:textColor="@color/translation_verse_text_color" android:id="@id/ayah_number" android:layout_width="fill_parent" android:layout_height="72.0dip" app:backgroundColor="@color/translation_verse_background_color" app:nightBackgroundColor="@color/translation_verse_background_night_color" app:verseBoxHeight="42.0dip" app:verseBoxWidth="42.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

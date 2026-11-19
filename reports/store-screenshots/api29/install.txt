@@ -1,0 +1,14 @@
+console:/ $ console:/ $ 
+transport_bf63e9d273b2481384b96579dc16a65b
+console:/ $ [  568.525998] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[  568.525998] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+
+transport_a1b8d194c5904d8da9aa577e1e132672
+console:/ $ 
+transport_8a16697a2c9a4e8b8fec92d71be9179e
+console:/ $ [  628.507133] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+5d93152f8d3a3af5dd9eb6e1a9609c3dd72f4c14f2aa9a313a430d4f0294269c  /data/local/tmp/layan.apk
+Success
+Success
+
+LYN_4fcddc3675c247799f625b2ce511305e:0

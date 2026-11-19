@@ -1,0 +1,30 @@
+{
+  "result": "PASS",
+  "installedApkSha256": "46566eacd255098da7d3d67d9b722a3a08fad8715cfe8db2b5a1435f500f0114",
+  "views": [
+    {
+      "file": "bubble-day-49.png",
+      "sha256": "63eb9a9a85a5f410e7e8fa49b7e025826b439d2c7cd033eb5632fa07e5dead5d",
+      "layout": "Full-height native QuranImagePageLayout; inset guide; reserved text viewport; page number below"
+    },
+    {
+      "file": "bubble-day-50.png",
+      "sha256": "bab3d2c361ea90be441f9c24a239eed48118818ddf53ea056894c81128db611d",
+      "layout": "Full-height native QuranImagePageLayout; inset guide; reserved text viewport; page number below"
+    },
+    {
+      "file": "bubble-night-49.png",
+      "sha256": "57209cbc5a9b4553c54d64804a46d84b527d92c55a8edf4015548ee124ca0f10",
+      "layout": "Full-height native QuranImagePageLayout; inset guide; reserved text viewport; page number below"
+    },
+    {
+      "file": "bubble-night-50.png",
+      "sha256": "3055022a0a4d7ef5056fa4c09623e2a74eabb6eb8ab1c1e7935924577efa9c61",
+      "layout": "Full-height native QuranImagePageLayout; inset guide; reserved text viewport; page number below"
+    }
+  ],
+  "staleDeviceFilesIgnored": [
+    "bubble-day.png",
+    "bubble-night.png"
+  ]
+}

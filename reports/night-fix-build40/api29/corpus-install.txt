@@ -1,0 +1,2 @@
+INSTRUMENTATION_RESULT: result=PASS all twenty original source PDFs prepared; copied 20; Book verifies SHA256 when opening each file
+INSTRUMENTATION_CODE: -1

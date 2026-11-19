@@ -1,0 +1,2155 @@
+847964] ALSA device list:
+[    9.848038]   No soundcards found.
+[    9.907549] Freeing unused kernel memory: 1320K
+[    9.907876] Write protecting the kernel read-only data: 20480k
+[    9.912495] Freeing unused kernel memory: 2024K
+[    9.919593] Freeing unused kernel memory: 548K
+[    9.986965] init: init first stage started!
+[    9.994582] init: [libfs_mgr]ReadFstabFromDt(): failed to read fstab from dt
+[   10.005634] init: Using Android DT directory /proc/device-tree/firmware/android/
+[   10.154321] init: [libfs_mgr]Created logical partition system on device /dev/block/dm-0
+[   10.159020] init: [libfs_mgr]Created logical partition vendor on device /dev/block/dm-1
+[   10.250713] snd_hda_codec_generic hdaudioC0D0: autoconfig for Generic: line_outs=1 (0x3/0x0/0x0/0x0/0x0) type:line
+[   10.251190] snd_hda_codec_generic hdaudioC0D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+[   10.251280] snd_hda_codec_generic hdaudioC0D0:    hp_outs=0 (0x0/0x0/0x0/0x0/0x0)
+[   10.251351] snd_hda_codec_generic hdaudioC0D0:    mono: mono_out=0x0
+[   10.251416] snd_hda_codec_generic hdaudioC0D0:    inputs:
+[   10.251540] snd_hda_codec_generic hdaudioC0D0:      Line=0x5
+[   11.189921] init: [libfs_avb]Device path not found: /dev/block/by-name/system
+[   11.195302] init: [libfs_avb]Fallback to use logical device path: /dev/block/dm-0
+[   12.208448] init: [libfs_avb]Device path not found: /dev/block/by-name/system
+[   12.209309] init: [libfs_avb]Fallback to use logical device path: /dev/block/dm-0
+[   12.216925] init: [libfs_avb]Returning avb_handle with status: Success
+[   12.220893] init: [libfs_avb]Built verity table: '1 /dev/block/dm-0 /dev/block/dm-0 4096 4096 357169 357169 sha1 b7da532c6db1eb9094da927847069d1c5327072b 0852d013f45625d39d677046675ec71016196de0 10 use_fec_from_device /dev/block/dm-0 fec_roots 2 fec_blocks 359983 fec_start 359983 restart_on_corruption ignore_zero_blocks'
+[   12.225376] device-mapper: verity: sha1 using implementation "sha1-generic"
+[   12.249762] init: [libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/dm-2
+[   12.272070] EXT4-fs (dm-2): mounted filesystem without journal. Opts: barrier=1
+[   12.272867] init: [libfs_mgr]__mount(source=/dev/block/dm-2,target=/system,type=ext4)=0: Success
+[   12.276608] init: Switching root to '/system'
+[   12.301415] init: Skip mounting partition: /product
+[   12.301649] init: Skip mounting partition: /product_services
+[   12.309512] init: [libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/dm-1
+[   12.331658] EXT4-fs (dm-1): mounted filesystem without journal. Opts: barrier=1
+[   12.331987] init: [libfs_mgr]__mount(source=/dev/block/dm-1,target=/vendor,type=ext4)=0: Success
+[   12.352416] init: Skip mounting partition: /product
+[   12.352685] init: Skip mounting partition: /product_services
+[   12.354436] init: Skip mounting partition: /product
+[   12.354539] init: Skip mounting partition: /product_services
+[   12.356130] init: Skip mounting partition: /product
+[   12.356263] init: Skip mounting partition: /product_services
+[   12.357478] init: DM_DEV_STATUS failed for scratch: No such device or address
+[   12.358374] init: Skip mounting partition: /product
+[   12.358468] init: Skip mounting partition: /product_services
+[   12.359200] init: Skip mounting partition: /product
+[   12.359293] init: Skip mounting partition: /product_services
+[   12.360436] init: Skip mounting partition: /product
+[   12.360643] init: Skip mounting partition: /product_services
+[   12.361675] init: DM_DEV_STATUS failed for scratch: No such device or address
+[   12.367418] init: Skipped setting INIT_AVB_VERSION (not in recovery mode)
+[   13.021972] init: Loading SELinux policy
+[   13.097929] SELinux:  Permission nlmsg_readpriv in class netlink_route_socket not defined in policy.
+[   13.098509] SELinux: the above unknown classes and permissions will be denied
+[   13.098778] SELinux:  policy capability network_peer_controls=1
+[   13.098861] SELinux:  policy capability open_perms=1
+[   13.098916] SELinux:  policy capability extended_socket_class=1
+[   13.098977] SELinux:  policy capability always_check_network=0
+[   13.099034] SELinux:  policy capability cgroup_seclabel=0
+[   13.099090] SELinux:  policy capability nnp_nosuid_transition=1
+[   13.246349] selinux: SELinux: Loaded policy from /vendor/etc/selinux/precompiled_sepolicy
+[   13.246349] 
+[   13.250411] audit: type=1403 audit(1791945230.929:2): policy loaded auid=4294967295 ses=4294967295
+[   13.251999] audit: type=1404 audit(1791945230.939:3): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295
+[   13.339354] selinux: SELinux: Loaded file_contexts
+[   13.339354] 
+[   13.517268] init: init second stage started!
+[   13.641357] init: Using Android DT directory /proc/device-tree/firmware/android/
+[   13.665185] selinux: SELinux: Loaded file_contexts
+[   13.665185] 
+[   13.667564] init: Running restorecon...
+[   13.715320] init: Overriding previous 'ro.' property 'ro.control_privapp_permissions':'disable' with new value 'enforce'
+[   13.720641] init: Overriding previous 'ro.' property 'ro.apex.updatable':'true' with new value 'false'
+[   13.721270] init: Overriding previous 'ro.' property 'ro.config.notification_sound':'OnTheHunt.ogg' with new value 'pixiedust.ogg'
+[   13.722024] init: Couldn't load property file '/product_services/build.prop': open() failed: No such file or directory: No such file or directory
+[   13.722286] init: Couldn't load property file '/factory/factory.prop': open() failed: No such file or directory: No such file or directory
+[   13.725921] init: Setting product property ro.product.brand to 'Android' (from ro.product.odm.brand)
+[   13.726185] init: Setting product property ro.product.device to 'generic_x86_64' (from ro.product.odm.device)
+[   13.726388] init: Setting product property ro.product.manufacturer to 'unknown' (from ro.product.odm.manufacturer)
+[   13.726595] init: Setting product property ro.product.model to 'Android SDK built for x86_64' (from ro.product.odm.model)
+[   13.726775] init: Setting product property ro.product.name to 'sdk_phone_x86_64' (from ro.product.odm.name)
+[   13.727374] init: Setting property 'ro.build.fingerprint' to 'Android/sdk_phone_x86_64/generic_x86_64:10/QSR1.210820.001/7663313:userdebug/test-keys'
+[   13.786174] init: Created socket '/dev/socket/property_service', mode 666, user 0, group 0
+[   13.789452] init: SetupMountNamespaces done
+[   13.830526] init: Forked subcontext for 'u:r:vendor_init:s0' with pid 1271
+[   13.866377] init: Forked subcontext for 'u:r:vendor_init:s0' with pid 1272
+[   13.867795] init: Parsing file /init.rc...
+[   13.899651] init: Added '/init.environ.rc' to import list
+[   13.900054] init: Added '/init.usb.rc' to import list
+[   13.921535] init: Added '/init.ranchu.rc' to import list
+[   13.922077] init: Added '/vendor/etc/init/hw/init.ranchu.rc' to import list
+[   13.922221] init: Added '/init.usb.configfs.rc' to import list
+[   13.922384] init: Added '/init.zygote64_32.rc' to import list
+[   13.954209] init: Parsing file /init.environ.rc...
+[   13.980625] init: Parsing file /init.usb.rc...
+[   13.994795] init: Parsing file /init.ranchu.rc...
+[   13.995193] init: Unable to read config file '/init.ranchu.rc': open() failed: No such file or directory
+[   14.011099] init: Parsing file /vendor/etc/init/hw/init.ranchu.rc...
+[   14.039664] init: Parsing file /init.usb.configfs.rc...
+[   14.143059] init: Parsing file /init.zygote64_32.rc...
+[   14.201874] init: Parsing directory /system/etc/init...
+[   14.205405] init: Parsing file /system/etc/init/android.hidl.allocator@1.0-service.rc...
+[   14.241556] init: Parsing file /system/etc/init/android.system.suspend@1.0-service.rc...
+[   14.271524] init: Parsing file /system/etc/init/apexd.rc...
+[   14.301387] init: Parsing file /system/etc/init/art_apex_boot_integrity.rc...
+[   14.321544] init: Parsing file /system/etc/init/ashmemd.rc...
+[   14.323319] init: Parsing file /system/etc/init/atrace.rc...
+[   14.326583] init: Parsing file /system/etc/init/atrace_userdebug.rc...
+[   14.327882] init: Parsing file /system/etc/init/audioserver.rc...
+[   14.329543] init: Parsing file /system/etc/init/blank_screen.rc...
+[   14.331102] init: Parsing file /system/etc/init/bootanim.rc...
+[   14.332791] init: Parsing file /system/etc/init/bootstat-debug.rc...
+[   14.333919] init: Parsing file /system/etc/init/bootstat.rc...
+[   14.335498] init: Parsing file /system/etc/init/bpfloader.rc...
+[   14.337383] init: Parsing file /system/etc/init/cameraserver.rc...
+[   14.339332] init: Parsing file /system/etc/init/cppreopts.rc...
+[   14.341443] init: Parsing file /system/etc/init/drmserver.rc...
+[   14.343039] init: Parsing file /system/etc/init/dumpstate.rc...
+[   14.345228] init: Parsing file /system/etc/init/flags_health_check.rc...
+[   14.346334] init: Parsing file /system/etc/init/gatekeeperd.rc...
+[   14.347954] init: Parsing file /system/etc/init/gpuservice.rc...
+[   14.349484] init: Parsing file /system/etc/init/gsid.rc...
+[   14.351629] init: Parsing file /system/etc/init/healthd.rc...
+[   14.353135] init: Parsing file /system/etc/init/heapprofd.rc...
+[   14.354986] init: Parsing file /system/etc/init/hwservicemanager.rc...
+[   14.356537] init: Parsing file /system/etc/init/idmap2d.rc...
+[   14.357739] init: Parsing file /system/etc/init/incidentd.rc...
+[   14.359028] init: Parsing file /system/etc/init/init-debug.rc...
+[   14.360544] init: Parsing file /system/etc/init/init.gsi.rc...
+[   14.361552] init: Parsing file /system/etc/init/installd.rc...
+[   14.363547] init: Parsing file /system/etc/init/iorapd.rc...
+[   14.364962] init: Parsing file /system/etc/init/keystore.rc...
+[   14.366569] init: Parsing file /system/etc/init/llkd-debuggable.rc...
+[   14.368359] init: Parsing file /system/etc/init/llkd.rc...
+[   14.370993] init: Parsing file /system/etc/init/lmkd.rc...
+[   14.372389] init: Parsing file /system/etc/init/logcatd.rc...
+[   14.374277] init: Parsing file /system/etc/init/logd.rc...
+[   14.376899] init: Parsing file /system/etc/init/logtagd.rc...
+[   14.378756] init: Parsing file /system/etc/init/lpdumpd.rc...
+[   14.380993] init: Parsing file /system/etc/init/mdnsd.rc...
+[   14.382397] init: Parsing file /system/etc/init/mediadrmserver.rc...
+[   14.384041] init: Parsing file /system/etc/init/mediaextractor.rc...
+[   14.387398] init: Parsing file /system/etc/init/mediametrics.rc...
+[   14.388947] init: Parsing file /system/etc/init/mediaserver.rc...
+[   14.391489] init: Parsing file /system/etc/init/mtpd.rc...
+[   14.393090] init: Parsing file /system/etc/init/netd.rc...
+[   14.394545] init: Parsing file /system/etc/init/otapreopt.rc...
+[   14.395926] init: Parsing file /system/etc/init/perfetto.rc...
+[   14.397914] init: Parsing file /system/etc/init/racoon.rc...
+[   14.399542] init: Parsing file /system/etc/init/recovery-persist.rc...
+[   14.400767] init: Parsing file /system/etc/init/recovery-refresh.rc...
+[   14.402126] init: Parsing file /system/etc/init/rss_hwm_reset.rc...
+[   14.403675] init: Parsing file /system/etc/init/servicemanager.rc...
+[   14.405996] init: Parsing file /system/etc/init/statsd.rc...
+[   14.407503] init: Parsing file /system/etc/init/storaged.rc...
+[   14.409165] init: Parsing file /system/etc/init/surfaceflinger.rc...
+[   14.411012] init: Parsing file /system/etc/init/tombstoned.rc...
+[   14.412684] init: Parsing file /system/etc/init/traceur.rc...
+[   14.414158] init: Parsing file /system/etc/init/uncrypt.rc...
+[   14.415816] init: Parsing file /system/etc/init/update_engine.rc...
+[   14.417458] init: Parsing file /system/etc/init/update_verifier.rc...
+[   14.419418] init: Parsing file /system/etc/init/usbd.rc...
+[   14.421144] init: Parsing file /system/etc/init/vdc.rc...
+[   14.422437] init: Parsing file /system/etc/init/vold.rc...
+[   14.424270] init: Parsing file /system/etc/init/wait_for_keymaster.rc...
+[   14.425665] init: Parsing file /system/etc/init/wifi-events.rc...
+[   14.427574] init: Parsing file /system/etc/init/wificond.rc...
+[   14.429503] init: Parsing file /product/etc/init...
+[   14.429684] init: Unable to read config file '/product/etc/init': open() failed: No such file or directory
+[   14.429987] init: Parsing file /product_services/etc/init...
+[   14.430800] init: Unable to read config file '/product_services/etc/init': open() failed: No such file or directory
+[   14.431189] init: Parsing file /odm/etc/init...
+[   14.431393] init: Unable to read config file '/odm/etc/init': open() failed: No such file or directory
+[   14.431678] init: Parsing directory /vendor/etc/init...
+[   14.432602] init: Parsing file /vendor/etc/init/android.hardware.audio@2.0-service.rc...
+[   14.435058] init: Parsing file /vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc...
+[   14.436382] init: Parsing file /vendor/etc/init/android.hardware.broadcastradio@1.1-service.rc...
+[   14.437497] init: Parsing file /vendor/etc/init/android.hardware.camera.provider@2.4-service.rc...
+[   14.439400] init: Parsing file /vendor/etc/init/android.hardware.cas@1.1-service.rc...
+[   14.440825] init: Parsing file /vendor/etc/init/android.hardware.configstore@1.1-service.rc...
+[   14.441909] init: Parsing file /vendor/etc/init/android.hardware.drm@1.0-service.rc...
+[   14.443672] init: Parsing file /vendor/etc/init/android.hardware.drm@1.2-service.clearkey.rc...
+[   14.446877] init: Parsing file /vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc...
+[   14.452165] init: Parsing file /vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc...
+[   14.453456] init: Parsing file /vendor/etc/init/android.hardware.gnss@1.0-service.rc...
+[   14.455251] init: Parsing file /vendor/etc/init/android.hardware.graphics.allocator@2.0-service.rc...
+[   14.457293] init: Parsing file /vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc...
+[   14.458553] init: Parsing file /vendor/etc/init/android.hardware.health@2.0-service.goldfish.rc...
+[   14.459547] init: Parsing file /vendor/etc/init/android.hardware.keymaster@3.0-service.rc...
+[   14.460669] init: Parsing file /vendor/etc/init/android.hardware.media.omx@1.0-service.rc...
+[   14.461893] init: Parsing file /vendor/etc/init/android.hardware.power@1.1-service.ranchu.rc...
+[   14.463050] init: Parsing file /vendor/etc/init/android.hardware.sensors@1.0-service.rc...
+[   14.464111] init: Parsing file /vendor/etc/init/android.hardware.thermal@2.0-service.rc...
+[   14.465657] init: Parsing file /vendor/etc/init/android.hardware.wifi@1.0-service.rc...
+[   14.467323] init: Parsing file /vendor/etc/init/hostapd.android.rc...
+[   14.473132] init: Parsing file /vendor/etc/init/rild.rc...
+[   14.474559] init: Parsing file /vendor/etc/init/vndservicemanager.rc...
+[   14.477979] init: processing action (SetupCgroups) from (<Builtin Action>:0)
+[   14.486598] libprocessgroup: Failed to mount blkio cgroup: No such file or directory
+[   14.486783] libprocessgroup: Failed to setup blkio cgroup
+[   14.515355] init: processing action (early-init) from (/init.rc:15)
+[   14.601984] init: Command 'write /proc/sys/kernel/sysrq 0' action=early-init (/init.rc:17) took 85ms and succeeded
+[   14.625030] init: starting service 'ueventd'...
+[   14.669936] init: starting service 'apexd-bootstrap'...
+[   14.736093] init: SVC_EXEC service 'apexd-bootstrap' pid 1274 (uid 0 gid 1000+0 context default) started; waiting...
+[   14.736555] init: Command 'exec_start apexd-bootstrap' action=early-init (/init.rc:40) took 71ms and succeeded
+[   15.037450] ueventd: ueventd started!
+[   15.074386] selinux: SELinux: Loaded file_contexts
+[   15.074386] 
+[   15.076256] ueventd: Parsing file /ueventd.rc...
+[   15.126576] ueventd: Parsing file /vendor/ueventd.rc...
+[   15.131188] ueventd: /vendor/ueventd.rc: 5: Invalid section keyword found
+[   15.131590] ueventd: Parsing file /odm/ueventd.rc...
+[   15.132090] ueventd: Unable to read config file '/odm/ueventd.rc': open() failed: No such file or directory
+[   15.132358] ueventd: Parsing file /ueventd.ranchu.rc...
+[   15.132503] ueventd: Unable to read config file '/ueventd.ranchu.rc': open() failed: No such file or directory
+[   15.305691] apexd: Bootstrap subcommand detected
+[   15.543838] apexd: Scanning /system/apex for embedded keys
+[   15.555145] apexd: Scanning /product/apex for embedded keys
+[   15.555793] apexd: ... does not exist. Skipping
+[   15.556452] apexd: Scanning /system/apex looking for APEX packages.
+[   15.557552] apexd: Found /system/apex/com.android.media.swcodec
+[   15.559006] apexd: Skipped when bootstrapping
+[   15.559517] apexd: Found /system/apex/com.android.tzdata
+[   15.578296] apexd: Successfully bind-mounted flattened package /system/apex/com.android.tzdata on /apex/com.android.tzdata@290000000
+[   15.591499] apexd: Found /system/apex/com.android.apex.cts.shim.apex
+[   15.594437] apexd: Skipping activation of non-flattened apex package /system/apex/com.android.apex.cts.shim.apex because device doesn't support it
+[   15.595034] apexd: Found /system/apex/com.android.runtime.debug
+[   15.599432] apexd: Successfully bind-mounted flattened package /system/apex/com.android.runtime.debug on /apex/com.android.runtime@1
+[   15.602589] apexd: Found /system/apex/com.android.conscrypt
+[   15.603682] apexd: Skipped when bootstrapping
+[   15.604491] apexd: Found /system/apex/com.android.resolv
+[   15.605815] apexd: Skipped when bootstrapping
+[   15.606286] apexd: Found /system/apex/com.android.media
+[   15.607174] apexd: Skipped when bootstrapping
+[   15.608072] apexd: Activated 6 packages. Skipped: 1
+[   15.609099] apexd: Bootstrapping done
+[   15.644001] init: Service 'apexd-bootstrap' (pid 1274) exited with status 0 waiting took 0.910000 seconds
+[   15.645653] init: processing action (early-init) from (/init.environ.rc:2)
+[   15.646466] init: processing action (early-init) from (/vendor/etc/init/hw/init.ranchu.rc:4)
+[   15.669705] init: processing action (wait_for_coldboot_done) from (<Builtin Action>:0)
+[   16.177063] init: wait for '/dev/.coldboot_done' took 506ms
+[   16.177632] init: Command 'wait_for_coldboot_done' action=wait_for_coldboot_done (<Builtin Action>:0) took 507ms and succeeded
+[   16.178040] init: processing action (MixHwrngIntoLinuxRng) from (<Builtin Action>:0)
+[   16.178713] ueventd: Coldboot took 1.037 seconds
+[   16.192191] init: Mixed 512 bytes from /dev/hw_random into /dev/urandom
+[   16.192763] init: processing action (SetMmapRndBits) from (<Builtin Action>:0)
+[   16.196442] init: processing action (SetKptrRestrict) from (<Builtin Action>:0)
+[   16.197989] init: processing action (KeychordInit) from (<Builtin Action>:0)
+[   16.201576] init: EVIOCSMASK not supported: Invalid argument
+[   17.182006] init: Command 'KeychordInit' action=KeychordInit (<Builtin Action>:0) took 982ms and succeeded
+[   17.182314] init: processing action (console_init) from (<Builtin Action>:0)
+[   17.182636] init: processing action (init) from (/init.rc:42)
+[   17.293114] init: property 'ro.bionic.cpu_variant' doesn't exist while expanding '${ro.bionic.cpu_variant}'
+[   17.293512] init: Command 'write /dev/cpu_variant:${ro.bionic.arch} ${ro.bionic.cpu_variant}' action=init (/init.rc:281) took 0ms and failed: cannot expand '${ro.bionic.cpu_variant}'
+[   17.293861] init: property 'ro.bionic.2nd_cpu_variant' doesn't exist while expanding '${ro.bionic.2nd_cpu_variant}'
+[   17.294098] init: Command 'write /dev/cpu_variant:${ro.bionic.2nd_arch} ${ro.bionic.2nd_cpu_variant}' action=init (/init.rc:283) took 0ms and failed: cannot expand '${ro.bionic.2nd_cpu_variant}'
+[   17.296512] init: starting service 'logd'...
+[   17.329028] init: Created socket '/dev/socket/logd', mode 666, user 1036, group 1036
+[   17.336738] init: starting service 'servicemanager'...
+[   17.343632] init: Created socket '/dev/socket/logdr', mode 666, user 1036, group 1036
+[   17.346149] init: Created socket '/dev/socket/logdw', mode 222, user 1036, group 1036
+[   17.347054] init: Opened file '/proc/kmsg', flags 0
+[   17.347350] init: Opened file '/dev/kmsg', flags 1
+[   17.372678] init: starting service 'hwservicemanager'...
+[   17.409136] init: starting service 'vndservicemanager'...
+[   17.453703] init: Command 'start vndservicemanager' action=init (/init.rc:297) took 54ms and succeeded
+[   17.454208] init: processing action (init) from (/vendor/etc/init/hw/init.ranchu.rc:8)
+[   17.509555] init: processing action (init) from (/system/etc/init/audioserver.rc:20)
+[   17.518087] init: processing action (StartBoringSslSelfTest) from (<Builtin Action>:0)
+[   17.575634] init: Command 'StartBoringSslSelfTest' action=StartBoringSslSelfTest (<Builtin Action>:0) took 56ms and succeeded
+[   17.577287] init: processing action (MixHwrngIntoLinuxRng) from (<Builtin Action>:0)
+[   17.735170] init: Mixed 512 bytes from /dev/hw_random into /dev/urandom
+[   17.735486] init: Command 'MixHwrngIntoLinuxRng' action=MixHwrngIntoLinuxRng (<Builtin Action>:0) took 157ms and succeeded
+[   17.735729] init: processing action (InitBinder) from (<Builtin Action>:0)
+[   17.738150] init: processing action (late-init) from (/init.rc:315)
+[   17.738568] init: processing action (late-init) from (/system/etc/init/atrace.rc:3)
+[   17.789299] init: Untracked pid 1613 exited with status 0
+[   18.417742] logd.auditd: start
+[   18.418014] logd.klogd: 18417930854
+[   18.643780] init: Command 'write /proc/sys/kernel/sched_schedstats 1' action=late-init (/system/etc/init/atrace.rc:10) took 853ms and succeeded
+[   18.680184] init: processing action (queue_property_triggers) from (<Builtin Action>:0)
+[   18.680742] init: processing action (early-fs) from (/init.rc:348)
+[   18.682307] init: starting service 'vold'...
+[   18.739067] init: processing action (fs) from (/vendor/etc/init/hw/init.ranchu.rc:1)
+[   18.810595] init: Skip mounting partition: /product
+[   18.810815] init: Skip mounting partition: /product_services
+[   18.821118] init: [libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/vdc
+[   18.831392] init: [libfs_mgr]Enabling quotas on /dev/block/vdc
+[   19.446887] tune2fs: tune2fs 1.44.4 (18-Aug-2018)
+[   19.446887] 
+[   19.449748] EXT4-fs (vdc): Ignoring removed nomblk_io_submit option
+[   19.466310] EXT4-fs (vdc): mounted filesystem with ordered data mode. Opts: errors=remount-ro,nomblk_io_submit
+[   19.467004] init: [libfs_mgr]check_fs(): mount(/dev/block/vdc,/data,ext4)=0: Success
+[   19.524032] init: [libfs_mgr]check_fs(): unmount(/data) succeeded
+[   19.525682] init: [libfs_mgr]Running /system/bin/e2fsck on /dev/block/vdc
+[   19.857973] e2fsck: e2fsck 1.44.4 (18-Aug-2018)
+[   19.857973] 
+[   19.858242] e2fsck: Pass 1: Checking inodes, blocks, and sizes
+[   19.858242] 
+[   19.858335] e2fsck: Pass 2: Checking directory structure
+[   19.858335] 
+[   19.858408] e2fsck: Pass 3: Checking directory connectivity
+[   19.858408] 
+[   19.858479] e2fsck: Pass 4: Checking reference counts
+[   19.858479] 
+[   19.858546] e2fsck: Pass 5: Checking group summary information
+[   19.858546] 
+[   19.858619] e2fsck: /dev/block/vdc: 19/393216 files (0.0% non-contiguous), 52344/1572864 blocks
+[   19.858619] 
+[   19.861847] init: [libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/vdc
+[   19.862790] init: [libfs_mgr]Reserved blocks 32768 is too large; capping to 31457
+[   19.863829] init: [libfs_mgr]Setting reserved block count on /dev/block/vdc to 31457
+[   20.017579] tune2fs: tune2fs 1.44.4 (18-Aug-2018)
+[   20.017579] 
+[   20.017964] tune2fs: Setting reserved blocks gid to 1065
+[   20.017964] 
+[   20.018058] tune2fs: Setting reserved blocks count to 31457
+[   20.018058] 
+[   20.019091] init: [libfs_mgr]Enabling ext4 encryption on /dev/block/vdc
+[   20.166380] tune2fs: tune2fs 1.44.4 (18-Aug-2018)
+[   20.166380] 
+[   20.168119] EXT4-fs (vdc): Ignoring removed nomblk_io_submit option
+[   20.174640] EXT4-fs (vdc): mounted filesystem with ordered data mode. Opts: nomblk_io_submit,errors=panic
+[   20.175344] init: [libfs_mgr]__mount(source=/dev/block/vdc,target=/data,type=ext4)=0: Success
+[   20.176105] init: [libfs_mgr]/data is file encrypted
+[   20.179258] init: Skip mounting partition: /product
+[   20.179387] init: Skip mounting partition: /product_services
+[   20.187206] init: Skip mounting partition: /product
+[   20.187355] init: Skip mounting partition: /product_services
+[   20.188793] init: Skip mounting partition: /product
+[   20.188898] init: Skip mounting partition: /product_services
+[   20.190024] init: Skip mounting partition: /product
+[   20.190756] init: Skip mounting partition: /product_services
+[   20.191995] init: Skip mounting partition: /product
+[   20.192101] init: Skip mounting partition: /product_services
+[   20.194380] init: Skip mounting partition: /product
+[   20.194482] init: Skip mounting partition: /product_services
+[   20.198862] init: DM_DEV_STATUS failed for scratch: No such device or address
+[   20.203665] init: Parsing file /product/etc/init...
+[   20.203893] init: Unable to read config file '/product/etc/init': open() failed: No such file or directory
+[   20.204089] init: Parsing file /product_services/etc/init...
+[   20.204255] init: Unable to read config file '/product_services/etc/init': open() failed: No such file or directory
+[   20.204444] init: Parsing file /odm/etc/init...
+[   20.204571] init: Unable to read config file '/odm/etc/init': open() failed: No such file or directory
+[   20.205421] init: Keyring created with id 678876670 in process 1
+[   20.206510] init: Command 'mount_all /vendor/etc/fstab.ranchu' action=fs (/vendor/etc/init/hw/init.ranchu.rc:2) took 1467ms and succeeded
+[   20.208575] init: processing action (fs) from (/system/etc/init/logd.rc:27)
+[   20.213538] init: processing action (fs) from (/system/etc/init/wifi-events.rc:17)
+[   20.230738] init: processing action (post-fs) from (/init.rc:352)
+[   20.233416] init: starting service 'exec 1 (/system/bin/vdc checkpoint markBootAttempt)'...
+[   20.285665] init: SVC_EXEC service 'exec 1 (/system/bin/vdc checkpoint markBootAttempt)' pid 1635 (uid 1000 gid 1000+0 context default) started; waiting...
+[   20.286205] init: Command 'exec - system system -- /system/bin/vdc checkpoint markBootAttempt' action=post-fs (/init.rc:353) took 54ms and succeeded
+[   20.609884] init: Service 'exec 1 (/system/bin/vdc checkpoint markBootAttempt)' (pid 1635) exited with status 0 waiting took 0.326000 seconds
+[   20.626146] init: Command 'chown system cache /cache' action=post-fs (/init.rc:367) took 0ms and failed: lchown() failed: Read-only file system
+[   20.626804] init: Command 'chmod 0770 /cache' action=post-fs (/init.rc:368) took 0ms and failed: fchmodat() failed: Read-only file system
+[   20.633417] selinux: SELinux:  setxattr failed: /cache:  Read-only file system
+[   20.633417] 
+[   20.634818] init: Command 'mkdir /cache/recovery 0770 system cache' action=post-fs (/init.rc:374) took 0ms and failed: mkdir() failed: Read-only file system
+[   20.635955] init: Command 'mkdir /cache/backup_stage 0700 system system' action=post-fs (/init.rc:377) took 0ms and failed: mkdir() failed: Read-only file system
+[   20.636702] init: Command 'mkdir /cache/backup 0700 system system' action=post-fs (/init.rc:378) took 0ms and failed: mkdir() failed: Read-only file system
+[   20.641729] init: Command 'mkdir /cache/lost+found 0770 root root' action=post-fs (/init.rc:399) took 2ms and failed: mkdir() failed: Read-only file system
+[   20.643576] selinux: SELinux:  setxattr failed: /metadata:  Read-only file system
+[   20.643576] 
+[   20.644354] init: Command 'mkdir /metadata/vold' action=post-fs (/init.rc:402) took 0ms and failed: mkdir() failed: Read-only file system
+[   20.645239] init: Command 'mkdir /metadata/password_slots 0771 root system' action=post-fs (/init.rc:404) took 0ms and failed: mkdir() failed: Read-only file system
+[   20.645960] init: Command 'mkdir /metadata/apex 0700 root system' action=post-fs (/init.rc:406) took 0ms and failed: mkdir() failed: Read-only file system
+[   20.646833] init: processing action (post-fs) from (/system/etc/init/atrace_userdebug.rc:7)
+[   20.648436] init: processing action (post-fs) from (/system/etc/init/gsid.rc:6)
+[   20.649283] init: Command 'mkdir /metadata/gsi 0771 root system' action=post-fs (/system/etc/init/gsid.rc:7) took 0ms and failed: mkdir() failed: Read-only file system
+[   20.652723] init: processing action (post-fs) from (/system/etc/init/recovery-refresh.rc:1)
+[   20.654236] init: starting service 'exec 2 (/system/bin/recovery-refresh)'...
+[   20.687791] init: processing action (late-fs) from (/init.rc:408)
+[   20.692726] init: starting service 'vendor.keymaster-3-0'...
+[   20.715837] init: processing action (post-fs-data) from (/init.rc:416)
+[   20.717798] init: starting service 'exec 3 (/system/bin/vdc checkpoint prepareCheckpoint)'...
+[   20.810079] init: SVC_EXEC service 'exec 3 (/system/bin/vdc checkpoint prepareCheckpoint)' pid 1674 (uid 1000 gid 1000+0 context default) started; waiting...
+[   20.810679] init: Command 'exec - system system -- /system/bin/vdc checkpoint prepareCheckpoint' action=post-fs-data (/init.rc:421) took 94ms and succeeded
+[   20.950738] init: Service 'exec 2 (/system/bin/recovery-refresh)' (pid 1672) exited with status 254
+[   21.079638] init: Service 'exec 3 (/system/bin/vdc checkpoint prepareCheckpoint)' (pid 1674) exited with status 0 waiting took 0.301000 seconds
+[   21.143678] init: starting service 'exec 4 (/system/bin/vdc --wait cryptfs enablefilecrypto)'...
+[   21.199494] init: SVC_EXEC service 'exec 4 (/system/bin/vdc --wait cryptfs enablefilecrypto)' pid 1675 (uid 0 gid 0+0 context default) started; waiting...
+[   21.199975] init: Command 'installkey /data' action=post-fs-data (/init.rc:430) took 81ms and succeeded
+[   21.677356] init: Service 'exec 4 (/system/bin/vdc --wait cryptfs enablefilecrypto)' (pid 1675) exited with status 0 waiting took 0.481000 seconds
+[   21.683116] init: Setting policy on /data/bootchart
+[   21.685411] init: Policy for /data/bootchart set to 79eb88400098bdae modes 1/4
+[   21.691789] fscrypt: AES-256-CTS-CBC using implementation "cts(cbc-aes-aesni)"
+[   21.694133] init: starting service 'exec 5 (/system/bin/fsverity_init)'...
+[   21.733338] init: SVC_EXEC service 'exec 5 (/system/bin/fsverity_init)' pid 1678 (uid 0 gid 0+0 context default) started; waiting...
+[   22.280844] init: Service 'exec 5 (/system/bin/fsverity_init)' (pid 1678) exited with status 0 waiting took 0.560000 seconds
+[   22.281725] init: Switched to default mount namespace
+[   22.285453] init: Not setting policy on /data/apex
+[   22.291717] init: Not setting policy on /data/app-staging
+[   22.292756] init: starting service 'apexd'...
+[   22.332843] init: Setting policy on /data/misc
+[   22.342029] init: Failed to get encryption policy for /data/misc: Permission denied
+[   22.400815] type=1400 audit(1791945240.029:4): avc: denied { ioctl } for comm="init" path="/data/misc" dev="vdc" ino=12 ioctlcmd=0x6615 scontext=u:r:init:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=0
+[   22.621342] type=1400 audit(1791945240.029:4): avc: denied { ioctl } for comm="init" path="/data/misc" dev="vdc" ino=12 ioctlcmd=0x6615 scontext=u:r:init:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=0
+[   22.621614] type=1400 audit(1791945240.299:5): avc: denied { getattr } for comm="ls" path="/data/misc" dev="vdc" ino=12 scontext=u:r:toolbox:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=0
+[   22.641649] init: ls -laZ /data/misc returned failure: 1
+[   22.642282] init: Setting 79ffffffebffffff8840 policy on /data/misc failed!
+[   22.642531] init: Rebooting into recovery
+[   22.645426] init: Skip mounting partition: /product
+[   22.645554] init: Skip mounting partition: /product_services
+[   22.646483] init: Command 'mkdir /data/misc 01771 system misc' action=post-fs-data (/init.rc:456) took 315ms and failed: Failed to set bootloader message: failed to find /misc partition
+[   22.695965] apexd: Marking APEXd as starting
+[   22.701533] apexd: Scanning /system/apex for embedded keys
+[   22.755214] apexd: Scanning /product/apex for embedded keys
+[   22.755549] apexd: ... does not exist. Skipping
+[   22.755769] apexd: Populating APEX database from mounts...
+[   22.758877] apexd: Failed to walk /product/apex : Can't open /product/apex for reading : No such file or directory
+[   22.775944] apexd: Found "/apex/com.android.tzdata@290000000"
+[   22.776587] apexd: Found "/apex/com.android.runtime@1"
+[   22.777608] apexd: 2 packages restored.
+[   22.778377] apexd: Scanning /data/apex/sessions looking for sessions to be activated.
+[   22.781394] apexd: Scanning /data/apex/active looking for APEX packages.
+[   22.784161] apexd: Activated 0 packages. Skipped: 0
+[   22.784519] apexd: Scanning /system/apex looking for APEX packages.
+[   22.785822] apexd: Found /system/apex/com.android.media.swcodec
+[   22.788468] apexd: Successfully bind-mounted flattened package /system/apex/com.android.media.swcodec on /apex/com.android.media.swcodec@290000000
+[   22.794390] apexd: Found /system/apex/com.android.tzdata
+[   22.795223] apexd: Skipping activation of /system/apex/com.android.tzdata same package with higher version 290000000 is already active
+[   22.795419] apexd: Found /system/apex/com.android.apex.cts.shim.apex
+[   22.797114] apexd: Skipping activation of non-flattened apex package /system/apex/com.android.apex.cts.shim.apex because device doesn't support it
+[   22.797462] apexd: Found /system/apex/com.android.runtime.debug
+[   22.798360] apexd: Skipping activation of /system/apex/com.android.runtime.debug same package with higher version 1 is already active
+[   22.798646] apexd: Found /system/apex/com.android.conscrypt
+[   22.800043] apexd: Successfully bind-mounted flattened package /system/apex/com.android.conscrypt on /apex/com.android.conscrypt@290000000
+[   22.803564] apexd: Found /system/apex/com.android.resolv
+[   22.804978] apexd: Successfully bind-mounted flattened package /system/apex/com.android.resolv on /apex/com.android.resolv@290000000
+[   22.805980] apexd: Found /system/apex/com.android.media
+[   22.807201] apexd: Successfully bind-mounted flattened package /system/apex/com.android.media on /apex/com.android.media@290000000
+[   22.808002] apexd: Activated 4 packages. Skipped: 3
+[   22.808170] apexd: Scanning /product/apex looking for APEX packages.
+[   22.808892] apexd: Failed to activate packages from /product/apex : Failed to scan /product/apex : Can't open /product/apex for reading : No such file or directory
+[   22.812224] init: Setting policy on /data/local
+[   22.813805] init: Policy for /data/local set to 79eb88400098bdae modes 1/4
+[   22.824090] apexd: Marking APEXd as ready
+[   22.869435] init: Not setting policy on /data/preloads
+[   22.872199] init: Setting policy on /data/vendor
+[   22.873017] init: Policy for /data/vendor set to 79eb88400098bdae modes 1/4
+[   22.875249] init: Not setting policy on /data/vendor_ce
+[   22.877148] init: Not setting policy on /data/vendor_de
+[   22.885101] init: Not setting policy on /data/data
+[   22.887811] init: Setting policy on /data/app-private
+[   22.888475] init: Policy for /data/app-private set to 79eb88400098bdae modes 1/4
+[   22.891197] init: Setting policy on /data/app-ephemeral
+[   22.891738] init: Policy for /data/app-ephemeral set to 79eb88400098bdae modes 1/4
+[   22.893865] init: Setting policy on /data/app-asec
+[   22.894442] init: Policy for /data/app-asec set to 79eb88400098bdae modes 1/4
+[   22.896786] init: Setting policy on /data/app-lib
+[   22.897429] init: Policy for /data/app-lib set to 79eb88400098bdae modes 1/4
+[   22.899825] init: Setting policy on /data/app
+[   22.901818] init: Policy for /data/app set to 79eb88400098bdae modes 1/4
+[   22.903821] init: Setting policy on /data/property
+[   22.904763] init: Policy for /data/property set to 79eb88400098bdae modes 1/4
+[   22.907274] init: Setting policy on /data/tombstones
+[   22.907823] init: Policy for /data/tombstones set to 79eb88400098bdae modes 1/4
+[   22.913826] init: Setting policy on /data/dalvik-cache
+[   22.914458] init: Policy for /data/dalvik-cache set to 79eb88400098bdae modes 1/4
+[   22.916665] init: Setting policy on /data/ota
+[   22.917490] init: Policy for /data/ota set to 79eb88400098bdae modes 1/4
+[   22.919866] init: Setting policy on /data/ota_package
+[   22.921530] init: Policy for /data/ota_package set to 79eb88400098bdae modes 1/4
+[   22.923960] init: Setting policy on /data/resource-cache
+[   22.924625] init: Policy for /data/resource-cache set to 79eb88400098bdae modes 1/4
+[   22.926169] init: Not setting policy on /data/lost+found
+[   22.928739] init: Setting policy on /data/drm
+[   22.929324] init: Policy for /data/drm set to 79eb88400098bdae modes 1/4
+[   22.933423] init: Setting policy on /data/mediadrm
+[   22.933979] init: Policy for /data/mediadrm set to 79eb88400098bdae modes 1/4
+[   22.936477] init: Setting policy on /data/anr
+[   22.937204] init: Policy for /data/anr set to 79eb88400098bdae modes 1/4
+[   22.941061] init: Setting policy on /data/nfc
+[   22.941722] init: Policy for /data/nfc set to 79eb88400098bdae modes 1/4
+[   22.946745] init: Setting policy on /data/backup
+[   22.947715] init: Policy for /data/backup set to 79eb88400098bdae modes 1/4
+[   22.951376] init: Setting policy on /data/ss
+[   22.951872] init: Policy for /data/ss set to 79eb88400098bdae modes 1/4
+[   22.955059] init: Setting policy on /data/system
+[   22.955748] init: Policy for /data/system set to 79eb88400098bdae modes 1/4
+[   22.968536] init: Not setting policy on /data/system_de
+[   22.971820] init: Not setting policy on /data/system_ce
+[   22.974218] init: Not setting policy on /data/misc_de
+[   22.976207] init: Not setting policy on /data/misc_ce
+[   22.978209] init: Not setting policy on /data/user
+[   22.980387] init: Not setting policy on /data/user_de
+[   22.984881] init: Not setting policy on /data/media
+[   22.986678] init: Setting policy on /data/media/obb
+[   22.987484] init: Policy for /data/media/obb set to 79eb88400098bdae modes 1/4
+[   22.992120] init: Setting policy on /data/cache
+[   22.994405] init: Policy for /data/cache set to 79eb88400098bdae modes 1/4
+[   23.000814] init: start_waiting_for_property("apexd.status", "ready"): already set
+[   23.012095] init: Parsing file /apex/com.android.media.swcodec@290000000/etc/init.rc...
+[   23.015840] init: starting service 'exec 6 (/system/bin/vdc --wait cryptfs init_user0)'...
+[   23.053828] init: SVC_EXEC service 'exec 6 (/system/bin/vdc --wait cryptfs init_user0)' pid 1687 (uid 0 gid 0+0 context default) started; waiting...
+[   23.521681] init: Service 'exec 6 (/system/bin/vdc --wait cryptfs init_user0)' (pid 1687) exited with status 0 waiting took 0.469000 seconds
+[   23.751540] init: Command 'restorecon --recursive --skip-ce /data' action=post-fs-data (/init.rc:606) took 227ms and succeeded
+[   23.753665] init: starting service 'exec 7 (/system/bin/tzdatacheck /apex/com.android.runtime/etc/tz /data/misc/zoneinfo)'...
+[   23.792812] init: SVC_EXEC service 'exec 7 (/system/bin/tzdatacheck /apex/com.android.runtime/etc/tz /data/misc/zoneinfo)' pid 1689 (uid 1000 gid 1000+0 context default) started; waiting...
+[   23.888767] init: Service 'exec 7 (/system/bin/tzdatacheck /apex/com.android.runtime/etc/tz /data/misc/zoneinfo)' (pid 1689) exited with status 0 waiting took 0.097000 seconds
+[   23.891542] init: processing action (post-fs-data) from (/init.usb.rc:6)
+[   23.896497] init: Setting policy on /data/adb
+[   23.897562] init: Policy for /data/adb set to 79eb88400098bdae modes 1/4
+[   23.897753] init: processing action (post-fs-data) from (/vendor/etc/init/hw/init.ranchu.rc:18)
+[   23.914848] init: starting service 'ranchu-net'...
+[   23.947790] init: processing action (post-fs-data) from (/system/etc/init/art_apex_boot_integrity.rc:19)
+[   23.950023] init: starting service 'exec 8 (/system/bin/art_apex_boot_integrity)'...
+[   23.975519] init: SVC_EXEC service 'exec 8 (/system/bin/art_apex_boot_integrity)' pid 1691 (uid 0 gid 0+0 context default) started; waiting...
+[   25.134676] init: Service 'exec 8 (/system/bin/art_apex_boot_integrity)' (pid 1691) exited with status 0 waiting took 1.160000 seconds
+[   25.135176] init: processing action (post-fs-data) from (/system/etc/init/bootstat.rc:9)
+[   25.139788] init: processing action (post-fs-data) from (/system/etc/init/gsid.rc:10)
+[   25.143853] init: Not setting policy on /data/gsi
+[   25.145334] init: processing actovery-persist.rc:2) took 1371ms and succeeded
+[   51.429505] IPv6: ADDRCONF(NETDEV_UP): radio0: link is not ready
+[   55.895860] init: starting service 'exec 10 (/system/bin/recovery-persist)'...
+[   56.032195] init: Command 'exec_background - system log -- /system/bin/recovery-persist' action=post-fs-data (/system/etc/init/recovery-persist.rc:3) took 137ms and succeeded
+[   56.334167] IPv6: ADDRCONF(NETDEV_CHANGE): radio0: link becomes ready
+[   56.334715] IPv6: ADDRCONF(NETDEV_CHANGE): radio0-peer: link becomes ready
+[   58.758758] init: Service 'exec 10 (/system/bin/recovery-persist)' (pid 1734) exited with status 0
+[   58.759747] init: processing action (post-fs-data) from (/system/etc/init/statsd.rc:25)
+[   58.767900] init: processing action (post-fs-data) from (/vendor/etc/init/hostapd.android.rc:9)
+[   58.778009] init: processing action (load_persist_props_action) from (/init.rc:305)
+[   58.778901] init: Couldn't load property file '/data/local.prop': open() failed: No such file or directory: No such file or directory
+[   58.780367] init: Could not load single persistent property file, trying legacy directory: Unable to read persistent property file: open() failed: No such file or directory
+[   58.795454] init: starting service 'logd-reinit'...
+[   58.818829] init: processing action (load_persist_props_action) from (/system/etc/init/flags_health_check.rc:1)
+[   58.829366] init: Setting policy on /data/server_configurable_flags
+[   58.832570] init: Policy for /data/server_configurable_flags set to 79eb88400098bdae modes 1/4
+[   58.837126] init: starting service 'exec 11 (/system/bin/flags_health_check BOOT_FAILURE)'...
+[   58.880701] init: SVC_EXEC service 'exec 11 (/system/bin/flags_health_check BOOT_FAILURE)' pid 1742 (uid 1000 gid 1000+0 context default) started; waiting...
+[   58.890735] init: Command 'exec - system system -- /system/bin/flags_health_check BOOT_FAILURE' action=load_persist_props_action (/system/etc/init/flags_health_check.rc:5) took 54ms and succeeded
+[   58.980385] logd.daemon: reinit
+[   58.987500] init: Service 'logd-reinit' (pid 1741) exited with status 0
+[   59.217428] init: Service 'exec 11 (/system/bin/flags_health_check BOOT_FAILURE)' (pid 1742) exited with status 0 waiting took 0.348000 seconds
+[   59.217954] init: processing action (load_persist_props_action) from (/system/etc/init/logcatd.rc:31)
+[   59.219191] init: processing action (ro.crypto.state=encrypted && ro.crypto.type=file && zygote-start) from (/init.rc:642)
+[   59.232139] init: starting service 'update_verifier_nonencrypted'...
+[   59.286262] init: SVC_EXEC service 'update_verifier_nonencrypted' pid 1745 (uid 0 gid 2001+1 context default) started; waiting...
+[   59.286831] init: Command 'exec_start update_verifier_nonencrypted' action=ro.crypto.state=encrypted && ro.crypto.type=file && zygote-start (/init.rc:644) took 67ms and succeeded
+[   59.387033] init: Received control message 'start' for 'netmgr' from pid: 1744 (setprop ctl.start netmgr)
+[   59.388288] init: starting service 'netmgr'...
+[   59.822202] init: Service 'update_verifier_nonencrypted' (pid 1745) exited with status 0 waiting took 0.554000 seconds
+[   59.824931] init: starting service 'netd'...
+[   59.886088] init: Command 'start netd' action=ro.crypto.state=encrypted && ro.crypto.type=file && zygote-start (/init.rc:645) took 62ms and succeeded
+[   59.888549] init: starting service 'zygote'...
+[   59.890750] init: Created socket '/dev/socket/dnsproxyd', mode 660, user 0, group 3003
+[   59.893207] init: Created socket '/dev/socket/mdns', mode 660, user 0, group 1000
+[   59.894956] init: Created socket '/dev/socket/fwmarkd', mode 660, user 0, group 3003
+[   59.975090] init: Command 'start zygote' action=ro.crypto.state=encrypted && ro.crypto.type=file && zygote-start (/init.rc:646) took 87ms and succeeded
+[   59.976637] init: starting service 'zygote_secondary'...
+[   60.029638] init: Created socket '/dev/socket/zygote_secondary', mode 660, user 0, group 1000
+[   60.062547] init: Created socket '/dev/socket/usap_pool_secondary', mode 660, user 0, group 1000
+[   60.075821] init: Created socket '/dev/socket/zygote', mode 660, user 0, group 1000
+[   60.077550] init: Created socket '/dev/socket/usap_pool_primary', mode 660, user 0, group 1000
+[   60.083504] init: Command 'start zygote_secondary' action=ro.crypto.state=encrypted && ro.crypto.type=file && zygote-start (/init.rc:647) took 107ms and succeeded
+[   60.085182] init: Received control message 'start' for 'wifi_forwarder' from pid: 1747 (setprop ctl.start wifi_forwarder)
+[   60.086570] init: starting service 'wifi_forwarder'...
+[   60.166268] init: processing action (zygote-start) from (/vendor/etc/init/hw/init.ranchu.rc:25)
+[   60.360113] init: Command 'mkdir /data/vendor/wifi/wpa 0770 wifi wifi' action=zygote-start (/vendor/etc/init/hw/init.ranchu.rc:28) took 149ms and succeeded
+[   60.364995] init: processing action (zygote-start) from (/system/etc/init/bootstat.rc:72)
+[   60.366287] init: starting service 'exec 12 (/system/bin/bootstat --set_system_boot_reason)'...
+[   60.428856] init: Command 'exec_background - system log -- /system/bin/bootstat --set_system_boot_reason' action=zygote-start (/system/etc/init/bootstat.rc:75) took 62ms and succeeded
+[   60.429777] init: processing action (firmware_mounts_complete) from (/init.rc:311)
+[   60.438203] br0: port 1(eth0) entered blocking state
+[   60.438411] br0: port 1(eth0) entered disabled state
+[   60.445505] init: processing action (early-boot) from (/vendor/etc/init/hw/init.ranchu.rc:31)
+[   60.463864] file system registered
+[   60.495970] device eth0 entered promiscuous mode
+[   60.510288] init: processing action (early-boot) from (/system/etc/init/installd.rc:5)
+[   60.533731] br0: port 1(eth0) entered blocking state
+[   60.533890] br0: port 1(eth0) entered forwarding state
+[   60.536421] br0: port 2(radio0-peer) entered blocking state
+[   60.536507] br0: port 2(radio0-peer) entered disabled state
+[   60.537417] device radio0-peer entered promiscuous mode
+[   60.537734] br0: port 2(radio0-peer) entered blocking state
+[   60.537800] br0: port 2(radio0-peer) entered forwarding state
+[   60.686959] init: Command 'mkdir /config/sdcardfs/extensions/1057/jng' action=early-boot (/system/etc/init/installd.rc:58) took 76ms and succeeded
+[   60.779658] init: processing action (boot) from (/init.rc:649)
+[   60.931621] init: starting service 'hidl_memory'...
+[   61.007880] init: starting service 'system_suspend'...
+[   61.146072] init: starting service 'healthd'...
+[   61.273792] init: starting service 'vendor.audio-hal-2-0'...
+[   61.471662] init: starting service 'broadcastradio-hal'...
+[   61.622592] init: starting service 'vendor.camera-provider-2-4'...
+[   61.772961] init: couldn't write 1763 to /dev/cpuset/camera-daemon/tasks: No such file or directory
+[   61.845584] init: starting service 'vendor.cas-hal-1-1'...
+[   62.155432] init: starting service 'vendor.configstore-hal'...
+[   62.482639] init: starting service 'vendor.drm-hal-1-0'...
+[   62.603554] init: starting service 'vendor.drm-clearkey-hal-1-2'...
+[   62.707749] init: starting service 'vendor.drm-widevine-hal-1-2'...
+[   63.094531] init: starting service 'vendor.gatekeeper-1-0'...
+[   63.219929] init: starting service 'vendor.gnss_service'...
+[   63.495711] init: starting service 'vendor.gralloc-2-0'...
+[   63.885988] init: starting service 'vendor.hwcomposer-2-1'...
+[   64.126236] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[   64.387291] init: starting service 'vendor.health-hal-2-0'...
+[   64.537646] init: Opened file '/dev/kmsg', flags 1
+[   64.986091] init: starting service 'vendor.power-hal-1-1'...
+[   65.350676] init: starting service 'vendor.sensors-hal-1-0'...
+[   65.593505] init: starting service 'vendor.thermal-hal-2-0-mock'...
+[   65.955548] init: starting service 'vendor.wifi_hal_legacy'...
+[   66.316316] init: Command 'class_start hal' action=boot (/init.rc:753) took 5447ms and succeeded
+[   66.326421] init: starting service 'ranchu-setup'...
+[   66.602623] init: starting servic109.147408] init: Service 'exec 13 (/system/bin/gsid run-startup-tasks)' (pid 1821) exited with status 0
+[  110.484233] device wlan1 entered promiscuous mode
+[  110.962938] init: Command 'start console' action=ro.debuggable=1 (/init.rc:846) took 6ms and failed: Could not start service: Couldn't open console '/dev/ttyS0': Permission denied
+[  110.972911] type=1400 audit(1791945240.299:5): avc: denied { getattr } for comm="ls" path="/data/misc" dev="vdc" ino=12 scontext=u:r:toolbox:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=0
+[  110.974806] type=1400 audit(1791945328.639:6): avc: denied { read write } for comm="init" name="ttyS0" dev="tmpfs" ino=9138 scontext=u:r:init:s0 tcontext=u:object_r:serial_device:s0 tclass=chr_file permissive=0
+[  118.111336] init: processing action (vendor.qemu.android.bootanim=0) from (/vendor/etc/init/hw/init.ranchu.rc:78)
+[  118.826540] init: processing action (vendor.network.bridged=1) from (/vendor/etc/init/hw/init.ranchu.rc:111)
+[  118.845766] init: starting service 'dhcpclient_rtr'...
+[  118.909217] init: Command 'start dhcpclient_rtr' action=vendor.network.bridged=1 (/vendor/etc/init/hw/init.ranchu.rc:112) took 81ms and succeeded
+[  118.909968] init: processing action (sys.usb.config=adb && sys.usb.configfs=1) from (/vendor/etc/init/hw/init.ranchu.rc:169)
+[  118.936821] configfs-gadget dummy_udc.0: failed to start g1: -19
+[  118.944871] init: Command 'write /config/usb_gadget/g1/UDC ${sys.usb.controller}' action=sys.usb.config=adb && sys.usb.configfs=1 (/vendor/etc/init/hw/init.ranchu.rc:172) took 11ms and failed: Unable to write to file '/config/usb_gadget/g1/UDC': Unable to write file contents: No such device
+[  118.947434] init: processing action (sys.usb.config=adb && sys.usb.configfs=1) from (/init.usb.configfs.rc:17)
+[  118.948590] init: starting service 'adbd'...
+[  119.052001] init: Command 'start adbd' action=sys.usb.config=adb && sys.usb.configfs=1 (/init.usb.configfs.rc:18) took 103ms and succeeded
+[  119.053891] init: processing action (ro.iorapd.enable=false) from (/system/etc/init/iorapd.rc:24)
+[  119.055760] init: processing action (ro.debuggable=1) from (/system/etc/init/llkd-debuggable.rc:1)
+[  119.059449] init: processing action (ro.debuggable=*) from (/system/etc/init/llkd.rc:2)
+[  119.070549] init: processing action (persist.traced.enable=1) from (/system/etc/init/perfetto.rc:50)
+[  119.111089] init: Created socket '/dev/socket/adbd', mode 660, user 1000, group 1000
+[  119.141004] init: starting service 'traced'...
+[  119.175535] init: starting service 'traced_probes'...
+[  119.242028] init: Created socket '/dev/socket/traced_consumer', mode 666, user 0, group 0
+[  119.295169] init: Opened file '/dev/kmsg', flags 1
+[  119.306256] init: Command 'start traced_probes' action=persist.traced.enable=1 (/system/etc/init/perfetto.rc:60) took 131ms and succeeded
+[  119.311526] init: processing action (nonencrypted) from (/init.rc:757)
+[  119.312743] init: Could not start service 'flash_recovery' as part of class 'main': Cannot find '/system/bin/install-recovery.sh': No such file or directory
+[  119.315486] init: starting service 'bpfloader'...
+[  119.327045] init: Created socket '/dev/socket/traced_producer', mode 666, user 0, group 0
+[  119.435010] init: starting service 'cameraserver'...
+[  119.734240] init: couldn't write 1844 to /dev/cpuset/camera-daemon/tasks: No such file or directory
+[  119.752743] init: starting service 'drm'...
+[  119.998594] init: starting service 'idmap2d'...
+[  120.333732] init: starting service 'incidentd'...
+[  120.832228] init: starting service 'installd'...
+[  121.194260] init: starting service 'keystore'...
+[  121.547255] IPv6: ADDRCONF(NETDEV_CHANGE): wlan1: link becomes ready
+[  121.711539] br0: port 3(wlan1) entered blocking state
+[  121.711675] br0: port 3(wlan1) entered forwarding state
+[  121.772749] init: starting service 'mdnsd'...
+[  122.078290] init: Created socket '/dev/socket/mdnsd', mode 660, user 1020, group 3003
+[  122.226870] init: starting service 'mediadrm'...
+[  122.434505] init: starting service 'mediaextractor'...
+[  122.569542] init: starting service 'mediametrics'...
+[  122.585376] read descriptors
+[  122.585773] read strings
+[  122.967249] init: starting service 'media'...
+[  123.217709] init: starting service 'statsd'...
+[  123.667742] init: Created socket '/dev/socket/statsdw', mode 222, user 1066, group 1066
+[  123.911933] init: starting service 'storaged'...
+[  124.010857] init: Failed to open file '/d/mmc0/mmc0:0001/ext_csd': No such file or directory
+[  124.038685] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[  124.458080] init: starting service 'wificond'...
+[  124.945771] init: starting service 'vendor.media.omx'...
+[  125.165218] init: starting service 'vendor.ril-daemon'...
+[  125.753084] init: starting service 'media.swcodec'...
+[  126.091853] init: Command 'class_start main' action=nonencrypted (/init.rc:758) took 6648ms and succeeded
+[  126.097261] init: starting service 'gatekeeperd'...
+[  126.444691] init: starting service 'tombstoned'...
+[  126.717985] init: Created socket '/dev/socket/tombstoned_crash', mode 666, user 1000, group 1000
+[  126.874599] init: Created socket '/dev/socket/tombstoned_intercept', mode 666, user 1000, group 1000
+[  126.876641] init: Created socket '/dev/socket/tombstoned_java_trace', mode 666, user 1000, group 1000
+[  127.513200] init: starting service 'usbd'...
+[  127.989260] init: starting service 'vendor.fps_hal'...
+[  128.885722] init: Command 'class_start late_start' action=nonencrypted (/init.rc:759) took 2790ms and succeeded
+[  129.063086] init: processing action (llk.enable=1) from (/system/etc/init/llkd.rc:9)
+[  129.112064] init: processing action (khungtask.enable=1) from (/system/etc/init/llkd.rc:18)
+[  129.165003] init: processing action (llk.enable=0) from (/system/etc/init/llkd.rc:12)
+[  129.183851] init: processing action (khungtask.enable=0) from (/system/etc/init/llkd.rc:21)
+[  129.184600] init: Service 'bpfloader' (pid 1843) exited with status 0
+[  129.316498] init: processing action (init.svc.mediadrm=running) from (/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:1)
+[  129.558287] init: Command 'mkdir /data/vendor/mediadrm 0770 media mediadrm' action=init.svc.mediadrm=running (/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:2) took 241ms and succeeded
+[  129.773273] init: Received control message 'start' for 'bootanim' from pid: 1811 (/system/bin/surfaceflinger)
+[  129.775630] init: starting service 'bootanim'...
+[  130.378454] read descriptors
+[  130.378573] read strings
+[  130.774894] init: processing action (sys.usb.config=adb && sys.usb.configfs=1 && sys.usb.ffs.ready=1) from (/init.usb.configfs.rc:20)
+[  130.792922] init: Service 'usbd' (pid 1885) exited with status 0
+[  130.859949] init: processing action (llk.enable=true) from (/system/etc/init/llkd.rc:34)
+[  130.938631] android_work: did not send uevent (0 0           (null))
+[  130.958670] init: starting service 'llkd-1'...
+[  131.081730] usb 1-1: new high-speed USB device number 2 using dummy_hcd
+[  131.103136] android_work: did not send uevent (0 0           (null))
+[  131.154810] init: Opened file '/dev/kmsg', flags 1
+[  131.155570] init: Opened file '/proc/sysrq-trigger', flags 1
+[  131.205112] init: Command 'start llkd-${ro.debuggable:-0}' action=llk.enable=true (/system/etc/init/llkd.rc:35) took 247ms and succeeded
+[  131.219911] init: processing action (khungtask.enable=true) from (/system/etc/init/llkd.rc:25)
+[  131.421706] android_work: sent uevent USB_STATE=CONNECTED
+[  131.429028] init: Command 'write /proc/sys/kernel/hung_task_timeout_secs ${ro.khungtask.timeout:-720}' action=khungtask.enable=true (/system/etc/init/llkd.rc:26) took 139ms and succeeded
+[  131.511407] usb 1-1: New USB device found, idVendor=0000, idProduct=0000
+[  131.511540] usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[  131.539767] init: Command 'write /proc/sys/kernel/hung_task_warnings 65535' action=khungtask.enable=true (/system/etc/init/llkd.rc:27) took 323]  arch_trigger_cpumask_backtrace+0x10/0x20
+[  361.897792]  sysrq_handle_showallcpus+0x12/0x20
+[  361.897792]  __handle_sysrq+0x125/0x140
+[  361.897792]  write_sysrq_trigger+0x23/0x40
+[  361.897792]  proc_reg_write+0x39/0x80
+[  361.897792]  __vfs_write+0x3e/0x150
+[  361.897792]  ? __this_cpu_preempt_check+0x13/0x20
+[  361.897792]  ? __sb_start_write+0x6a/0xd0
+[  361.897792]  vfs_write+0xd3/0x180
+[  361.897792]  SyS_write+0x60/0xc0
+[  361.897792]  do_syscall_64+0x6d/0xa0
+[  361.897792]  entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+[  361.897792] RIP: 0033:0x703f2092e077
+[  361.897792] RSP: 002b:0000703e47ea1568 EFLAGS: 00000202 ORIG_RAX: 0000000000000001
+[  361.897792] RAX: ffffffffffffffda RBX: 0000703e47ea15fc RCX: 0000703f2092e077
+[  361.897792] RDX: 0000000000000001 RSI: 0000703e4749d000 RDI: 00000000000000e9
+[  361.897792] RBP: 00000000000000e9 R08: ffff8fc1cbde5b1c R09: 0000000000000010
+[  361.897792] R10: 0000703e99d3c010 R11: 0000000000000202 R12: 0000703e4754b820
+[  361.897792] R13: 0000703e4749d000 R14: 0000000000000001 R15: 0000703e94ffdb80
+[  362.835365] Sending NMI from CPU 0 to CPUs 1-3:
+[  362.837667] NMI backtrace for cpu 1 skipped: idling at pc 0xffffffff9d22886e
+[  362.830954] INFO: NMI handler (nmi_cpu_backtrace_handler) took too long to run: 2.397 msecs
+[  362.830954] NMI backtrace for cpu 2
+[  362.830954] CPU: 2 PID: 1992 Comm: Signal Catcher Not tainted 4.14.175-g6f3fc9538452 #1
+[  362.830954] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  362.830954] task: 000000004b90c6bb task.stack: 00000000db2cd330
+[  362.830954] RIP: 0010:smp_call_function_many+0x222/0x250
+[  362.830954] RSP: 0018:ffffa9cac039fca0 EFLAGS: 00000202
+[  362.830954] RAX: 0000000000000000 RBX: 0000000000000040 RCX: 0000000000024500
+[  362.830954] RDX: ffff8e697fc00000 RSI: 0000000000000040 RDI: ffff8e697fd20a48
+[  362.830954] RBP: ffffa9cac039fce0 R08: 0000703e42734000 R09: 0000703e42734000
+[  362.830954] R10: 0000000000000000 R11: ffffffff9c842980 R12: ffff8e697fd20a40
+[  362.830954] R13: 0000000000000001 R14: ffff8e697fd20a50 R15: ffff8e697fd20a48
+[  362.830954] FS:  0000703e49d73010(0000) GS:ffff8e697fd00000(0000) knlGS:0000703e950f8800
+[  362.830954] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  362.830954] CR2: 0000703e4091dff4 CR3: 00000000947e6000 CR4: 00000000000006e0
+[  362.830954] Call Trace:
+[  362.830954]  ? native_flush_tlb_others+0x130/0x130
+[  362.830954]  native_flush_tlb_others+0x113/0x130
+[  362.830954]  flush_tlb_mm_range+0xf0/0x140
+[  362.830954]  tlb_flush_mmu+0x35/0xd0
+[  362.830954]  tlb_finish_mmu+0x43/0x80
+[  362.830954]  unmap_region+0xf7/0x120
+[  362.830954]  ? __rwsem_down_write_failed_common+0x3e0/0x410
+[  362.830954]  do_munmap+0x2bd/0x490
+[  362.830954]  ? call_rwsem_down_write_failed_killable+0x17/0x30
+[  362.830954]  SyS_munmap+0x6e/0xa0
+[  362.830954]  do_syscall_64+0x6d/0xa0
+[  362.830954]  entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+[  362.830954] RIP: 0033:0x703f2092d677
+[  362.830954] RSP: 002b:0000703e49d72898 EFLAGS: 00000202 ORIG_RAX: 000000000000000b
+[  362.830954] RAX: ffffffffffffffda RBX: 0000703e47594740 RCX: 0000703f2092d677
+[  362.830954] RDX: 000000000000ffff RSI: 00000000000a6010 RDI: 0000703e4268d000
+[  362.830954] RBP: 0000703e49d72978 R08: 0000000000000007 R09: 0000000000000000
+[  362.830954] R10: 000000000000000e R11: 0000000000000202 R12: 0000703e4091d760
+[  362.830954] R13: 000000000000005c R14: 0000703e4091d760 R15: 0000703e41fe32c0
+[  362.830954] Code: 7a 8f 00 3b 05 a8 2d 3f 01 73 2c 49 8b 0c 24 48 63 d0 48 8b 14 d5 40 76 b0 9d f6 44 0a 18 01 74 d8 0f 1f 84 00 00 00 00 00 f3 90 <8b> 74 11 18 40 f6 c6 01 75 f4 eb c2 48 83 c4 18 5b 41 5c 41 5d 
+[  362.831386] NMI backtrace for cpu 3
+[  362.831386] CPU: 3 PID: 2588 Comm: crash_dump64 Not tainted 4.14.175-g6f3fc9538452 #1
+[  362.831386] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  362.831386] task: 0000000002e2e7b1 task.stack: 0000000072633087
+[  362.831386] RIP: 0033:0x742384c8736f
+[  362.831386] RSP: 002b:00007ffcf105aa30 EFLAGS: 00000206
+[  362.831386] RAX: 0000742384c21050 RBX: 0000742384c21050 RCX: 00000000849ab010
+[  362.831386] RDX: 0000000000000000 RSI: 0000742384c21030 RDI: 0000742384c21050
+[  362.831386] RBP: 0000742384c21060 R08: 000000000000ffff R09: 0000000000000007
+[  362.831386] R10: fffffffffffff1c7 R11: 0000000000000246 R12: 0000742384c21060
+[  362.831386] R13: 00007ffcf105abf0 R14: 0000742384c21030 R15: 0000000000000008
+[  362.831386] FS:  00007ffcf105be20(0000) GS:ffff8e697fd80000(0000) knlGS:0000000000000000
+[  362.831386] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  362.831386] CR2: 0000742384946b5d CR3: 00000000629dc000 CR4: 00000000000006e0
+[  364.052429] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[  365.506491] init: Untracked pid 2589 exited with status 0
+[  365.593173] init: Untracked pid 2592 exited with status 0
+[  365.650623] binder: undelivered TRANSACTION_COMPLETE
+[  365.650770] binder: undelivered transaction 21536, process died.
+[  365.650917] binder: release 1981:2151 transaction 21528 in, still active
+[  365.651046] binder: send failed reply for transaction 21528 to 1771:2435
+[  365.695582] binder: release 1981:2060 transaction 20625 in, still active
+[  365.695801] binder: send failed reply for transaction 20625 to 2547:2547
+[  365.695918] binder: release 1981:2061 transaction 20627 in, still active
+[  365.695984] binder: send failed reply for transaction 20627 to 2476:2476
+[  365.696111] binder: release 1981:2102 transaction 20253 in, still active
+[  365.696241] binder: send failed reply for transaction 20253 to 2156:2156
+[  365.719207] binder: release 1981:2290 transaction 14380 in, still active
+[  365.719352] binder: send failed reply for transaction 14380 to 2156:2315
+[  365.750875] binder: 2547:2547 transaction failed 29189/-22, size 1956-8 line 3128
+[  365.839629] binder: 2156:2315 transaction failed 29189/-22, size 88-0 line 3128
+[  365.873344] binder: 2156:2315 transaction failed 29189/-22, size 280-0 line 3128
+[  366.049016] init: Service 'zygote' (pid 1749) received signal 9
+[  366.049377] init: Sending signal 9 to service 'zygote' (pid 1749) process group...
+[  366.098170] libprocessgroup: Successfully killed process cgroup uid 0 pid 1749 in 32ms
+[  366.135845] init: Command 'write /sys/power/state on' action=onrestart (<Service 'zygote' onrestart>:2) took 1ms and failed: Unable to write to file '/sys/power/state': Unable to write file contents: Invalid argument
+[  366.136327] init: Sending signal 9 to service 'audioserver' (pid 1806) process group...
+[  366.197543] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1806 in 60ms
+[  366.223921] init: Command 'restart audioserver' action=onrestart (<Service 'zygote' onrestart>:3) took 87ms and succeeded
+[  366.224277] init: Sending signal 9 to service 'cameraserver' (pid 1844) process group...
+[  366.287991] libprocessgroup: Successfully killed process cgroup uid 1047 pid 1844 in 63ms
+[  366.288901] init: Command 'restart cameraserver' action=onrestart (<Service 'zygote' onrestart>:4) took 64ms and succeeded
+[  366.289168] init: Sending signal 9 to service 'media' (pid 1860) process group...
+[  366.329436] libprocessgroup: Successfully killed process cgroup uid 1013 pid 1860 in 30ms
+[  366.337832] init: Sending signal 9 to service 'netd' (pid 1748) process group...
+[  366.361361] libprocessgroup: Successfully killed process cgroup uid 0 pid 1748 in 22ms
+[  366.367059] init: Sending signal 9 to service 'wificond' (pid 1874) process group...
+[  366.378640] libprocessgroup: Successfully killed process cgroup uid 1010 pid 1874 in 11ms
+[  366.389361] init: Service 'netd' (pid 1748) received signal 9
+[  366.389931] init: Sending signal 9 to service 'zygote_secondary' (pid 1750) process group...
+[  366.391934] binder: 1855:1855 transaction failed 29189/-22, size 64-0 line 3128
+[  366.555210] libprocessgroup: Successfully killed process cgroup status 0
+[  633.663657] init: processing action (sys.boot_completed=1 && sys.wifitracing.started=0) from (/system/etc/init/wifi-events.rc:20)
+[  633.904063] init: Command 'mkdir /sys/kernel/debug/tracing/instances/wifi 711' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:22) took 239ms and succeeded
+[  685.526405] sysrq: Show Blocked State
+[  696.517900]   task                        PC stack   pid father
+[  698.292868] init            D
+[  704.256142]     0     1      0 0x00000000
+[  704.256896] Call Trace:
+[  705.784973] init: Command 'write /sys/kernel/debug/tracing/instances/wifi/buffer_size_kb 1' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:25) took 68619ms and succeeded
+[  707.650092]  ? flat_send_IPI_mask_allbutself+0x90/0x90
+[  708.628783] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[  710.134322]  ? smp_call_function_many+0x222/0x250
+[  711.514184]  ? preempt_schedule+0x3e/0xb0
+[  713.151646]  ? cpumask_next+0x19/0x20
+[  714.880266]  ? smp_call_function_many+0x1fa/0x250
+[  715.155153] init: Command 'write /sys/kernel/debug/tracing/instances/wifi/events/cfg80211/cfg80211_gtk_rekey_notify/enable 1' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:32) took 9230ms and succeeded
+[  718.500495]  ? update_cfs_rq_load_avg+0xc5/0x160
+[  719.025919]  ? jump_label_update+0x177/0x1a0
+[  719.025962]  ? static_key_slow_inc_cpuslocked+0x4d/0x80
+[  719.025981]  ? static_key_slow_inc+0x15/0x20
+[  719.025989]  ? tracepoint_probe_register_prio+0x1c5/0x220
+[  719.025999]  ? tracepoint_probe_register+0xe/0x10
+[  719.026006]  ? trace_event_reg+0x6e/0x80
+[  719.026014]  ? __ftrace_event_enable_disable+0x1af/0x240
+[  719.026023]  ? event_enable_write+0x94/0xc0
+[  719.026036]  ? __vfs_write+0x3e/0x150
+[  719.026115]  ? __this_cpu_preempt_check+0x13/0x20
+[  719.026124]  ? __sb_start_write+0x6a/0xd0
+[  719.026131]  ? vfs_write+0xd3/0x180
+[  719.026185]  ? SyS_write+0x60/0xc0
+[  719.026201]  ? do_syscall_64+0x6d/0xa0
+[  719.026212]  ? entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+[  719.050883] sysrq: Show backtrace of all active CPUs
+[  719.564229] init: Command 'write /sys/kernel/debug/tracing/instances/wifi/events/cfg80211/rdev_add_key/enable 1' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:33) took 877ms and succeeded
+[  719.564806] init: Async property child exited with status 0
+[  719.565205] init: Untracked pid 3436 exited with status 0
+[  719.565411] init: Untracked pid 3439 exited with status 0
+[  719.565541] init: Untracked pid 3448 exited with status 0
+[  719.565678] init: Untracked pid 3454 exited with status 0
+[  719.566092] init: Untracked pid 3440 exited with status 0
+[  719.566375] init: Untracked pid 3455 exited with status 0
+[  719.566700] init: Untracked pid 3457 exited with status 0
+[  719.566840] init: Untracked pid 3446 exited with status 0
+[  719.567003] init: Untracked pid 3445 exited with status 0
+[  719.567149] init: Untracked pid 3451 exited with status 0
+[  719.567272] init: Untracked pid 3460 exited with status 0
+[  719.567521] init: Untracked pid 3443 exited with status 0
+[  719.567662] init: Untracked pid 3462 exited with status 0
+[  719.567785] init: Untracked pid 3441 exited with status 0
+[  719.568221] init: Untracked pid 3442 exited with status 0
+[  719.568367] init: Untracked pid 3464 exited with status 0
+[  719.568497] init: Untracked pid 3437 exited with status 0
+[  719.568629] init: Untracked pid 3459 exited with status 0
+[  719.569034] init: Untracked pid 3465 exited with status 0
+[  719.569172] init: Untracked pid 3444 exited with status 0
+[  719.600778] NMI backtrace for cpu 0
+[  720.931491] CPU: 0 PID: 2701 Comm: watchdog Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  720.931562] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  720.931590] Call Trace:
+[  720.931774]  dump_stack+0x74/0xb0
+[  720.931815]  nmi_trigger_cpumask_backtrace+0x80/0x150
+[  720.931827]  arch_trigger_cpumask_backtrace+0x10/0x20
+[  720.931837]  sysrq_handle_showallcpus+0x12/0x20
+[  720.931845]  __handle_sysrq+0x125/0x140
+[  720.931853]  write_sysrq_trigger+0x23/0x40
+[  720.931861]  proc_reg_write+0x39/0x80
+[  720.931869]  __vfs_write+0x3e/0x150
+[  720.931882]  ? __this_cpu_preempt_check+0x13/0x20
+[  720.931890]  ? __sb_start_write+0x6a/0xd0
+[  720.931897]  vfs_write+0xd3/0x180
+[  720.931905]  SyS_write+0x60/0xc0
+[  720.931913]  do_syscall_64+0x6d/0xa0
+[  720.931920]  entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+[  720.932085] RIP: 0033:0x76530aa73077
+[  720.932098] RSP: 002b:000076522b8e0568 EFLAGS: 00000202 ORIG_RAX: 0000000000000001
+[  720.932155] RAX: ffffffffffffffda RBX: 000076522b8e05fc RCX: 000076530aa73077
+[  720.932163] RDX: 0000000000000001 RSI: 000076527b324000 RDI: 00000000000000bd
+[  720.932170] RBP: 00000000000000bd R08: ffff89ad97efad3c R09: 0000000000000010
+[  720.932179] R10: 000076527dccc010 R11: 0000000000000202 R12: 000076527b2f12e0
+[  720.932186] R13: 000076527b324000 R14: 0000000000000001 R15: 000076530b1feb80
+[  720.932245] Sending NMI from CPU 0 to CPUs 1-3:
+[  720.930758] INFO: NMI handler (nmi_cpu_backtrace_handler) took too long to run: 2.971 msecs
+[  720.930758] NMI backtrace for cpu 1
+[  720.930758] CPU: 1 PID: 222 Comm: kworker/u8:4 Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  720.930758] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  720.930758] Workqueue: phy0 hw_scan_work
+[  720.930758] task: 0000000048ee7121 task.stack: 000000001f753032
+[  720.930758] RIP: 0010:vprintk_emit+0x132/0x1c0
+[  720.930758] RSP: 0018:ffffa9cac0667bf8 EFLAGS: 00000002
+[  720.930758] RAX: 0000000080000001 RBX: 0000000000000246 RCX: ffff8e697e9b8cc0
+[  720.930758] RDX: 0000000000000002 RSI: 0000000000000002 RDI: 00000000ffffffff
+[  720.930758] RBP: ffffa9cac0667c40 R08: 0000000000000004 R09: ffffffff9de9f6ba
+[  720.930758] R10: 00000000000000ff R11: 00000000000006e7 R12: 0000000000000246
+[  720.930758] R13: 0000000000000007 R14: 0000000000000020 R15: 0000000000000007
+[  720.930758] FS:  0000000000000000(0000) GS:ffff8e697fc80000(0000) knlGS:0000000000000000
+[  720.930758] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  720.930758] CR2: 00000000134d8000 CR3: 00000000a1ee2000 CR4: 00000000000006e0
+[  720.930758] Call Trace:
+[  720.930758]  dev_vprintk_emit+0x1cd/0x210
+[  720.930758]  dev_printk_emit+0x53/0x70
+[  720.930758]  ? __switch_to_asm+0x41/0x70
+[  720.930758]  ? __switch_to_asm+0x35/0x70
+[  720.930758]  ? __switch_to_asm+0x41/0x70
+[  720.930758]  dev_printk+0xae/0xf0
+[  720.930758]  ? __switch_to_xtra+0x36/0x650
+[  720.930758]  ? __switch_to_asm+0x35/0x70
+[  720.930758]  ? __switch_to_asm+0x41/0x70
+[  720.930758]  hw_scan_work+0x74/0x2c0
+[  720.930758]  process_one_work+0x226/0x420
+[  720.930758]  worker_thread+0x26d/0x480
+[  720.930758]  kthread+0x131/0x140
+[  720.930758]  ? process_one_work+0x420/0x420
+[  720.930758]  ? kthread_destroy_worker+0xd0/0xd0
+[  720.930758]  ret_from_fork+0x35/0x40
+[  720.930758] Code: c1 74 45 c6 05 37 c3 5d 01 01 48 c7 c7 98 ca eb 9d e8 a3 84 94 00 80 3d 24 c3 5d 01 00 74 15 66 2e 0f 1f 84 00 00 00 00 00 f3 90 <80> 3d 0f c3 5d 01 00 75 f5 e8 e0 27 00 00 48 89 df 57 9d 0f 1f 
+[  720.940268] NMI backtrace for cpu 2 skipped: idling at pc 0xffffffff9d22886e
+[  720.940200] INFO: NMI handler (nmi_cpu_backtrace_handler) took too long to run: 9.954 msecs
+[  720.950668] NMI backtrace for cpu 3
+[  720.950677] CPU: 3 PID: 1 Comm: init Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  720.950681] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  720.950683] task: 000000000cef4367 task.stack: 0000000041387cec
+[  720.950685] RIP: 0010:smp_call_function_many+0x222/0x250
+[  720.950687] RSP: 0018:ffffa9cac000fbd8 EFLAGS: 00000202
+[  720.950692] RAX: 0000000000000000 RBX: 0000000000000040 RCX: 0000000000024520
+[  720.950694] RDX: ffff8e697fc00000 RSI: 0000000000000003 RDI: ffff8e697fda0a48
+[  720.950696] RBP: ffffa9cac000fc18 R08: 0000000000284000 R09: ffffa9cac000fd50
+[  720.950698] R10: ffff8e69414763c0 R11: ffffffff9c842a50 R12: ffff8e697fda0a40
+[  720.950700] R13: 0000000000000001 R14: ffff8e697fda0a50 R15: ffff8e697fda0a48
+[  720.950702] FS:  00007f11ca3fd010(0000) GS:ffff8e697fd80000(0000) knlGS:0000000000000000
+[  720.950704] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  720.950706] CR2: 00007f11c8eb4980 CR3: 00000000b83c0000 CR4: 00000000000006e0
+[  720.950708] Call Trace:
+[  720.950709]  ? text_poke_bp+0xe0/0xe0
+[  720.950711]  ? rdev_assoc+0x1e/0x120
+[  720.950713]  ? perf_trace_rdev_auth+0x180/0x180
+[  720.950714]  ? text_poke_bp+0xe0/0xe0
+[  720.950716]  on_each_cpu+0x3e/0xb0
+[  720.950717]  ? rdev_assoc+0x1d/0x120
+[  720.950719]  text_poke_bp+0xad/0xe0
+[  720.950721]  __jump_label_transform+0xee/0x120
+[  720.950722]  arch_jump_label_transform+0x28/0x40
+[  720.950724]  jump_label_update+0x177/0x1a0
+[  720.950726]  static_key_slow_inc_cpuslocked+0x4d/0x80
+[  720.950727]  static_key_slow_inc+0x15/0x20
+[  720.950729]  tracepoint_probe_register_prio+0x1c5/0x220
+[  720.950731]  tracepoint_probe_register+0xe/0x10
+[  720.950732]  trace_event_reg+0x6e/0x80
+[  720.950734]  __ftrace_event_enable_disable+0x1af/0x240
+[  720.950736]  event_enable_write+0x94/0xc0
+[  720.950737]  __vfs_write+0x3e/0x150
+[  720.950739]  ? __this_cpu_preempt_check+0x13/0x20
+[  720.950741]  ? __sb_start_write+0x6a/0xd0
+[  720.950742]  vfs_write+0xd3/0x180
+[  720.950744]  SyS_write+0x60/0xc0
+[  720.950745]  do_syscall_64+0x6d/0xa0
+[  720.950747]  entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+[  720.950748] RIP: 0033:0x7f11c9fee077
+[  720.950750] RSP: 002b:00007ffed3bb13d8 EFLAGS: 00000202 ORIG_RAX: 0000000000000001
+[  720.950754] RAX: ffffffffffffffda RBX: 00007f11c8e78451 RCX: 00007f11c9fee077
+[  720.950756] RDX: 0000000000000001 RSI: 00007f11c8e78451 RDI: 0000000000000011
+[  720.950758] RBP: 0000000000000001 R08: 0000000000000002 R09: 00007ffed3bac350
+[  720.950760] R10: 0000000000000180 R11: 0000000000000202 R12: 00007ffed3bb1450
+[  720.950762] R13: 00007f11c8e78438 R14: 00007f11c8e78401 R15: 0000000000000011
+[  720.950764] Code: 7a 8f 00 3b 05 a8 2d 3f 01 73 2c 49 8b 0c 24 48 63 d0 48 8b 14 d5 40 76 b0 9d f6 44 0a 18 01 74 d8 0f 1f 84 00 00 00 00 00 f3 90 <8b> 74 11 18 40 f6 c6 01 75 f4 eb c2 48 83 c4 18 5b 41 5c 41 5d 
+[  722.608717] init: Command 'write /sys/kernel/debug/tracing/instances/wifi/events/cfg80211/rdev_assoc/enable 1' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:34) took 3039ms and succeeded
+[  722.957455] binder_alloc: 2676: binder_alloc_buf, no vma
+[  724.000610] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[  724.626871] binder: 3074:3074 transaction failed 29189/-3, size 632-0 line 3274
+[  725.848491] init: Command 'write /sys/kernel/debug/tracing/instances/wifi/events/cfg80211/rdev_auth/enable 1' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:35) took 3224ms and succeeded
+[  726.266007] binder_alloc: 2676: binder_alloc_buf, no vma
+[  749.230093] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [init:1]
+[  749.230093] Modules linked in:
+[  749.230093] CPU: 2 PID: 1 Comm: init Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  749.230093] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  749.230093] task: 000000000cef4367 task.stack: 0000000041387cec
+[  749.230093] RIP: 0010:smp_call_function_many+0x222/0x250
+[  749.230093] RSP: 0018:ffffa9cac000fbd8 EFLAGS: 00000202 ORIG_RAX: ffffffffffffff10
+[  749.230093] RAX: 0000000000000003 RBX: 0000000000000040 RCX: 0000000000024500
+[  749.230093] RDX: ffff8e697fd80000 RSI: 0000000000000003 RDI: ffff8e697fd20a48
+[  749.230093] RBP: ffffa9cac000fc18 R08: 0000000000284000 R09: ffffa9cac000fd50
+[  749.230093] R10: ffff8e691bba1580 R11: ffffffff9c842a50 R12: ffff8e697fd20a40
+[  749.230093] R13: 0000000000000001 R14: ffff8e697fd20a50 R15: ffff8e697fd20a48
+[  749.230093] FS:  00007f11ca3fd010(0000) GS:ffff8e697fd00000(0000) knlGS:0000000000000000
+[  749.230093] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  749.230093] CR2: 00007f11c982a2a8 CR3: 00000000b83c0000 CR4: 00000000000006e0
+[  749.230093] Call Trace:
+[  749.230093]  ? text_poke_bp+0xe0/0xe0
+[  749.230093]  ? rdev_connect+0x1e/0x120
+[  749.230093]  ? perf_trace_rdev_set_power_mgmt+0x150/0x150
+[  749.230093]  ? text_poke_bp+0xe0/0xe0
+[  749.230093]  on_each_cpu+0x3e/0xb0
+[  749.230093]  ? rdev_connect+0x1d/0x120
+[  749.230093]  text_poke_bp+0xad/0xe0
+[  749.230093]  __jump_label_transform+0xee/0x120
+[  749.230093]  arch_jump_label_transform+0x28/0x40
+[  749.230093]  jump_label_update+0x177/0x1a0
+[  749.230093]  static_key_slow_inc_cpuslocked+0x4d/0x80
+[  749.230093]  static_key_slow_inc+0x15/0x20
+[  749.230093]  tracepoint_probe_register_prio+0x1c5/0x220
+[  749.230093]  tracepoint_probe_register+0xe/0x10
+[  749.230093]  trace_event_reg+0x6e/0x80
+[  749.230093]  __ftrace_event_enable_disable+0x1af/0x240
+[  749.230093]  event_enable_write+0x94/0xc0
+[  749.230093]  __vfs_write+0x3e/0x150
+[  749.230093]  ? __this_cpu_preempt_check+0x13/0x20
+[  749.230093]  ? __sb_start_write+0x6a/0xd0
+[  749.230093]  vfs_write+0xd3/0x180
+[  749.230093]  SyS_write+0x60/0xc0
+[  749.230093]  do_syscall_64+0x6d/0xa0
+[  749.230093]  entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+[  749.230093] RIP: 0033:0x7f11c9fee077
+[  749.230093] RSP: 002b:00007ffed3bb13d8 EFLAGS: 00000202 ORIG_RAX: 0000000000000001
+[  749.230093] RAX: ffffffffffffffda RBX: 00007f11c8e78451 RCX: 00007f11c9fee077
+[  749.230093] RDX: 0000000000000001 RSI: 00007f11c8e78451 RDI: 0000000000000011
+[  749.230093] RBP: 0000000000000001 R08: 0000000000000002 R09: 00007ffed3bac350
+[  749.230093] R10: 0000000000000180 R11: 0000000000000202 R12: 00007ffed3bb1450
+[  749.230093] R13: 00007f11c8e78438 R14: 00007f11c8e78401 R15: 0000000000000011
+[  749.230093] Code: 7a 8f 00 3b 05 a8 2d 3f 01 73 2c 49 8b 0c 24 48 63 d0 48 8b 14 d5 40 76 b0 9d f6 44 0a 18 01 74 d8 0f 1f 84 00 00 00 00 00 f3 90 <8b> 74 11 18 40 f6 c6 01 75 f4 eb c2 48 83 c4 18 5b 41 5c 41 5d 
+[  777.230085] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [init:1]
+[  777.230085] Modules linked in:
+[  777.230085] CPU: 2 PID: 1 Comm: init Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  777.230085] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  777.230085] task: 000000000cef4367 task.stack: 0000000041387cec
+[  777.230085] RIP: 0010:smp_call_function_many+0x222/0x250
+[  777.230085] RSP: 0018:ffffa9cac000fbd8 EFLAGS: 00000202 ORIG_RAX: ffffffffffffff10
+[  777.230085] RAX: 0000000000000003 RBX: 0000000000000040 RCX: 0000000000024500
+[  777.230085] RDX: ffff8e697fd80000 RSI: 0000000000000003 RDI: ffff8e697fd20a48
+[  777.230085] RBP: ffffa9cac000fc18 R08: 0000000000284000 R09: ffffa9cac000fd50
+[  777.230085] R10: ffff8e691bba1580 R11: ffffffff9c842a50 R12: ffff8e697fd20a40
+[  777.230085] R13: 0000000000000001 R14: ffff8e697fd20a50 R15: ffff8e697fd20a48
+[  777.230085] FS:  00007f11ca3fd010(0000) GS:ffff8e697fd00000(0000) knlGS:0000000000000000
+[  777.230085] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  777.230085] CR2: 00007f11c982a2a8 CR3: 00000000b83c0000 CR4: 00000000000006e0
+[  777.230085] Call Trace:
+[  777.230085]  ? text_poke_bp+0xe0/0xe0
+[  777.230085]  ? rdev_connect+0x1e/0x120
+[  777.230085]  ? perf_trace_rdev_set_power_mgmt+0x150/0x150
+[  777.230085]  ? text_poke_bp+0xe0/0xe0
+[  777.230085]  on_each_cpu+0x3e/0xb0
+[  777.230085]  ? rdev_connect+0x1d/0x120
+[  777.230085]  text_poke_bp+0xad/0xe0
+[  777.230085]  __jump_label_transform+0xee/0x120
+[  777.230085]  arch_jump_label_transform+0x28/0x40
+[  777.230085]  jump_label_update+0x177/0x1a0
+[  777.230085]  static_key_slow_inc_cpuslocked+0x4d/0x80
+[  777.230085]  static_key_slow_inc+0x15/0x20
+[  777.230085]  tracepoint_probe_register_prio+0x1c5/0x220
+[  777.230085]  tracepoint_probe_register+0xe/0x10
+[  777.230085]  trace_event_reg+0x6e/0x80
+[  777.230085]  __ftrace_event_enable_disable+0x1af/0x240
+[  777.230085]  event_enable_write+0x94/0xc0
+[  777.230085]  __vfs_write+0x3e/0x150
+[  777.230085]  ? __this_cpu_preempt_check+0x13/0x20
+[  777.230085]  ? __sb_start_write+0x6a/0xd0
+[  777.230085]  vfs_write+0xd3/0x180
+[  777.230085]  SyS_write+0x60/0xc0
+[  777.230085]  do_syscall_64+0x6d/0xa0
+[  777.230085]  entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+[  777.230085] RIP: 0033:0x7f11c9fee077
+[  777.230085] RSP: 002b:00007ffed3bb13d8 EFLAGS: 00000202 ORIG_RAX: 0000000000000001
+[  777.230085] RAX: ffffffffffffffda RBX: 00007f11c8e78451 RCX: 00007f11c9fee077
+[  777.230085] RDX: 0000000000000001 RSI: 00007f11c8e78451 RDI: 0000000000000011
+[  777.230085] RBP: 0000000000000001 R08: 0000000000000002 R09: 00007ffed3bac350
+[  777.230085] R10: 0000000000000180 R11: 0000000000000202 R12: 00007ffed3bb1450
+[  777.230085] R13: 00007f11c8e78438 R14: 00007f11c8e78401 R15: 0000000000000011
+[  777.230085] Code: 7a 8f 00 3b 05 a8 2d 3f 01 73 2c 49 8b 0c 24 48 63 d0 48 8b 14 d5 40 76 b0 9d f6 44 0a 18 01 74 d8 0f 1f 84 00 00 00 00 00 f3 90 <8b> 74 11 18 40 f6 c6 01 75 f4 eb c2 48 83 c4 18 5b 41 5c 41 5d 
+[  786.370108] INFO: rcu_sched self-detected stall on CPU
+[  786.370108] 	2-...: (5871 ticks this GP) idle=d3a/140000000000001/0 softirq=13235/13236 fqs=2945 
+[  786.370108] 	 (t=6000 jiffies g=889 c=888 q=0)
+[  786.370108] Sending NMI from CPU 2 to CPUs 1:
+[  786.370108] NMI backtrace for cpu 1
+[  786.370108] CPU: 1 PID: 3074 Comm: m.android.phone Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  786.370108] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  786.370108] task: 000000008683b921 task.stack: 00000000e4ea7ccf
+[  786.370108] RIP: 0010:vprintk_emit+0x132/0x1c0
+[  786.370108] RSP: 0018:ffffa9cac0b9f8e8 EFLAGS: 00000002
+[  786.370108] RAX: 0000000080000001 RBX: 0000000000000246 RCX: ffff8e69278f8000
+[  786.370108] RDX: 0000000000000000 RSI: 0000000000000002 RDI: 00000000ffffffff
+[  786.370108] RBP: ffffa9cac0b9f930 R08: 0000000000000004 R09: ffffffff9dea1620
+[  786.370108] R10: 000000000000016b R11: 000000000000075c R12: 0000000000000246
+[  786.370108] R13: 00000000ffffffff R14: 000000000000002c R15: 00000000ffffffff
+[  786.370108] FS:  000076530b242010(0000) GS:ffff8e697fc80000(0000) knlGS:000076530b08d000
+[  786.370108] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  786.370108] CR2: 0000765284383644 CR3: 0000000062b5e000 CR4: 00000000000006e0
+[  786.370108] Call Trace:
+[  786.370108]  vprintk_default+0x1a/0x20
+[  786.370108]  vprintk_func+0x1b5/0x210
+[  786.370108]  printk+0x5d/0x80
+[  786.370108]  binder_alloc_new_buf+0xc7/0x590
+[  786.370108]  ? selinux_binder_transaction+0x8f/0xa0
+[  786.370108]  ? kmem_cache_alloc_trace+0xd8/0x1d0
+[  786.370108]  ? preempt_count_add+0x68/0xc0
+[  786.370108]  binder_transaction+0x13e6/0x3030
+[  786.370108]  ? probe_sched_wakeup+0x31/0x40
+[  786.370108]  ? debug_smp_processor_id+0x17/0x20
+[  786.370108]  ? _raw_spin_unlock_irqrestore+0x1f/0x40
+[  786.370108]  ? do_task_dead+0x50/0x50
+[  786.370108]  ? _raw_spin_unlock_irqrestore+0x1f/0x40
+[  786.370108]  binder_thread_write+0x115/0x1c20
+[  786.370108]  ? lock_page_memcg+0x11/0x90
+[  786.370108]  binder_ioctl_write_read+0xb5/0x330
+[  786.370108]  binder_ioctl+0x20f/0x710
+[  786.370108]  do_vfs_ioctl+0x4db/0x710
+[  786.370108]  SyS_ioctl+0x7c/0x90
+[  786.370108]  do_syscall_64+0x6d/0xa0
+[  786.370108]  entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+[  786.370108] RIP: 0033:0x76530aa71a77
+[  786.370108] RSP: 002b:00007ffcc5d3ef18 EFLAGS: 00000206 ORIG_RAX: 0000000000000010
+[  786.370108] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 000076530aa71a77
+[  786.370108] RDX: 00007ffcc5d3f010 RSI: 00000000c0306201 RDI: 0000000000000008
+[  786.370108] RBP: 00000000fffffff7 R08: 0000000000000003 R09: 000076527ad13d80
+[  786.370108] R10: 0000000070471a90 R11: 0000000000000206 R12: 000076527b22f800
+[  786.370108] R13: 00007ffcc5d3f010 R14: 000076527b22f8a8 R15: 000076527b22f920
+[  786.370108] Code: c1 74 45 c6 05 37 c3 5d 01 01 48 c7 c7 98 ca eb 9d e8 a3 84 94 00 80 3d 24 c3 5d 01 00 74 15 66 2e 0f 1f 84 00 00 00 00 00 f3 90 <80> 3d 0f c3 5d 01 00 75 f5 e8 e0 27 00 00 48 89 df 57 9d 0f 1f 
+[  786.370108] NMI backtrace for cpu 2
+[  786.370108] CPU: 2 PID: 1 Comm: init Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  786.370108] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  786.370108] Call Trace:
+[  786.370108]  <IRQ>
+[  786.370108]  dump_stack+0x74/0xb0
+[  786.370108]  nmi_trigger_cpumask_backtrace+0x80/0x150
+[  786.370108]  arch_trigger_cpumask_backtrace+0x10/0x20
+[  786.370108]  rcu_dump_cpu_stacks+0xe9/0x100
+[  786.370108]  rcu_check_callbacks+0x4ac/0xa40
+[  786.370108]  ? debug_smp_processor_id+0x17/0x20
+[  786.370108]  ? hrtimer_run_queues+0x2a/0x180
+[  786.370108]  ? account_process_tick+0x178/0x190
+[  786.370108]  update_process_times+0x6e/0xa0
+[  786.370108]  tick_sched_timer+0x87/0xe0
+[  786.370108]  ? tick_setup_sched_timer+0x130/0x130
+[  786.370108]  __run_hrtimer+0x135/0x200
+[  786.370108]  hrtimer_interrupt+0x134/0x2c0
+[  786.370108]  smp_apic_timer_interrupt+0xcc/0x1d0
+[  786.370108]  apic_timer_interrupt+0x8c/0xa0
+[  786.370108]  </IRQ>
+[  786.370108] RIP: 0010:smp_call_function_many+0x222/0x250
+[  786.370108] RSP: 0018:ffffa9cac000fbd8 EFLAGS: 00000202 ORIG_RAX: ffffffffffffff10
+[  786.370108] RAX: 0000000000000003 RBX: 0000000000000040 RCX: 0000000000024500
+[  786.370108] RDX: ffff8e697fd80000 RSI: 0000000000000003 RDI: ffff8e697fd20a48
+[  786.370108] RBP: ffffa9cac000fc18 R08: 0000000000284000 R09: ffffa9cac000fd50
+[  786.370108] R10: ffff8e691bba1580 R11: ffffffff9c842a50 R12: ffff8e697fd20a40
+[  786.370108] R13: 0000000000000001 R14: ffff8e697fd20a50 R15: ffff8e697fd20a48
+[  786.370108]  ? flat_send_IPI_mask_allbutself+0x90/0x90
+[  786.370108]  ? smp_call_function_many+0x1fa/0x250
+[  786.370108]  ? text_poke_bp+0xe0/0xe0
+[  786.370108]  ? rdev_connect+0x1e/0x120
+[  786.370108]  ? perf_trace_rdev_set_power_mgmt+0x150/0x150
+[  786.370108]  ? text_poke_bp+0xe0/0xe0
+[  786.370108]  on_each_cpu+0x3e/0xb0
+[  786.370108]  ? rdev_connect+0x1d/0x120
+[  786.370108]  text_poke_bp+0xad/0xe0
+[  786.370108]  __jump_label_transform+0xee/0x120
+[  786.370108]  arch_jump_label_transform+0x28/0x40
+[  786.370108]  jump_label_update+0x177/0x1a0
+[  786.370108]  static_key_slow_inc_cpuslocked+0x4d/0x80
+[  786.370108]  static_key_slow_inc+0x15/0x20
+[  786.370108]  tracepoint_probe_register_prio+0x1c5/0x220
+[  786.370108]  tracepoint_probe_register+0xe/0x10
+[  786.370108]  trace_event_reg+0x6e/0x80
+[  786.370108]  __ftrace_event_enable_disable+0x1af/0x240
+[  786.370108]  event_enable_write+0x94/0xc0
+[  786.370108]  __vfs_write+0x3e/0x150
+[  786.370108]  ? __this_cpu_preempt_check+0x13/0x20
+[  786.370108]  ? __sb_start_write+0x6a/0xd0
+[  786.370108]  vfs_write+0xd3/0x180
+[  786.370108]  SyS_write+0x60/0xc0
+[  786.370108]  do_syscall_64+0x6d/0xa0
+[  786.370108]  entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+[  786.370108] RIP: 0033:0x7f11c9fee077
+[  786.370108] RSP: 002b:00007ffed3bb13d8 EFLAGS: 00000202 ORIG_RAX: 0000000000000001
+[  786.370108] RAX: ffffffffffffffda RBX: 00007f11c8e78451 RCX: 00007f11c9fee077
+[  786.370108] RDX: 0000000000000001 RSI: 00007f11c8e78451 RDI: 0000000000000011
+[  786.370108] RBP: 0000000000000001 R08: 0000000000000002 R09: 00007ffed3bac350
+[  786.370108] R10: 0000000000000180 R11: 0000000000000202 R12: 00007ffed3bb1450
+[  786.370108] R13: 00007f11c8e78438 R14: 00007f11c8e78401 R15: 0000000000000011
+[  786.370108] Sending NMI from CPU 2 to CPUs 3:
+[  786.370108] NMI backtrace for cpu 3
+[  786.370108] CPU: 3 PID: 222 Comm: kworker/u8:4 Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  786.370108] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  786.370108] Workqueue: phy0 hw_scan_work
+[  786.370108] task: 0000000048ee7121 task.stack: 000000001f753032
+[  786.370108] RIP: 0010:delay_tsc+0x66/0xe0
+[  786.370108] RSP: 0018:ffffa9cac0667a38 EFLAGS: 00000046
+[  786.370108] RAX: 0000000000000000 RBX: 0000000000000046 RCX: 0000000005fbc520
+[  786.370108] RDX: 0000000000000200 RSI: ffffffff9da9825a RDI: 00000000ffffffff
+[  786.370108] RBP: ffffa9cac0667a58 R08: ffff0a1000000600 R09: 0000000000000000
+[  786.370108] R10: 00000000ffff0a00 R11: ffffffff9d220b40 R12: 00000200211c4934
+[  786.370108] R13: ffffffff9dedd430 R14: 00000000000007d8 R15: 0000000000000003
+[  786.370108] FS:  0000000000000000(0000) GS:ffff8e697fd80000(0000) knlGS:0000000000000000
+[  786.370108] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  786.370108] CR2: 00007733fcae5010 CR3: 00000000a1ee2000 CR4: 00000000000006e0
+[  786.370108] Call Trace:
+[  786.370108]  __const_udelay+0x39/0x40
+[  786.370108]  wait_for_xmitr+0x4e/0xd0
+[  786.370108]  serial8250_console_putchar+0x17/0x30
+[  786.370108]  ? serial8250_console_write+0x380/0x380
+[  786.370108]  uart_console_write+0x3e/0x80
+[  786.370108]  serial8250_console_write+0x2d6/0x380
+[  786.370108]  univ8250_console_write+0x1d/0x20
+[  786.370108]  call_console_drivers+0xa0/0x120
+[  786.370108]  console_unlock+0x2ee/0x4b0
+[  786.370108]  vprintk_emit+0xbf/0x1c0
+[  786.370108]  dev_vprintk_emit+0x1cd/0x210
+[  786.370108]  dev_printk_emit+0x53/0x70
+[  786.370108]  ? __switch_to_asm+0x41/0x70
+[  786.370108]  ? __switch_to_asm+0x35/0x70
+[  786.370108]  ? __switch_to_asm+0x41/0x70
+[  786.370108]  dev_printk+0xae/0xf0
+[  786.370108]  ? __switch_to_xtra+0x36/0x650
+[  786.370108]  ? __switch_to_asm+0x35/0x70
+[  786.370108]  ? __switch_to_asm+0x41/0x70
+[  786.370108]  hw_scan_work+0x74/0x2c0
+[  786.370108]  process_one_work+0x226/0x420
+[  786.370108]  worker_thread+0x26d/0x480
+[  786.370108]  kthread+0x131/0x140
+[  786.370108]  ? process_one_work+0x420/0x420
+[  786.370108]  ? kthread_destroy_worker+0xd0/0xd0
+[  786.370108]  ret_from_fork+0x35/0x40
+[  786.370108] Code: 48 09 c3 4c 29 e3 bf 01 00 00 00 e8 35 ef 68 ff 65 8b 05 02 41 df 62 85 c0 0f 94 c0 4c 39 f3 73 70 0f 1f 40 00 a8 01 75 45 f3 90 <bf> 01 00 00 00 e8 50 ee 68 ff e8 0b 41 a3 ff 41 39 c7 75 36 0f 
+[  786.380517] INFO: rcu_preempt detected stalls on CPUs/tasks:
+[  786.380723] 	1-...: (1 GPs behind) idle=afa/140000000000000/0 softirq=12294/12451 fqs=2946 
+[  786.380723] 	3-...: (1 GPs behind) idle=946/140000000000000/0 softirq=17233/17363 fqs=2946 
+[  786.380723] 	(detected by 0, t=6002 jiffies, g=4291, c=4290, q=1922)
+[  786.380723] Sending NMI from CPU 0 to CPUs 1:
+[  786.380723] NMI backtrace for cpu 1
+[  786.380723] CPU: 1 PID: 3074 Comm: m.android.phone Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  786.380723] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  786.380723] task: 000000008683b921 task.stack: 00000000e4ea7ccf
+[  786.380723] RIP: 0010:vprintk_emit+0x132/0x1c0
+[  786.380723] RSP: 0018:ffffa9cac0b9f8e8 EFLAGS: 00000002
+[  786.380723] RAX: 0000000080000001 RBX: 0000000000000246 RCX: ffff8e69278f8000
+[  786.380723] RDX: 0000000000000000 RSI: 0000000000000002 RDI: 00000000ffffffff
+[  786.380723] RBP: ffffa9cac0b9f930 R08: 0000000000000004 R09: ffffffff9dea1620
+[  786.380723] R10: 000000000000016b R11: 000000000000075c R12: 0000000000000246
+[  786.380723] R13: 00000000ffffffff R14: 000000000000002c R15: 00000000ffffffff
+[  786.380723] FS:  000076530b242010(0000) GS:ffff8e697fc80000(0000) knlGS:000076530b08d000
+[  786.380723] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  786.380723] CR2: 0000765284383644 CR3: 0000000062b5e000 CR4: 00000000000006e0
+[  786.380723] Call Trace:
+[  786.380723]  vprintk_default+0x1a/0x20
+[  786.380723]  vprintk_func+0x1b5/0x210
+[  786.380723]  printk+0x5d/0x80
+[  786.380723]  binder_alloc_new_buf+0xc7/0x590
+[  786.380723]  ? selinux_binder_transaction+0x8f/0xa0
+[  786.380723]  ? kmem_cache_alloc_trace+0xd8/0x1d0
+[  786.380723]  ? preempt_count_add+0x68/0xc0
+[  786.380723]  binder_transaction+0x13e6/0x3030
+[  786.380723]  ? probe_sched_wakeup+0x31/0x40
+[  786.380723]  ? debug_smp_processor_id+0x17/0x20
+[  786.380723]  ? _raw_spin_unlock_irqrestore+0x1f/0x40
+[  786.380723]  ? do_task_dead+0x50/0x50
+[  786.380723]  ? _raw_spin_unlock_irqrestore+0x1f/0x40
+[  786.380723]  binder_thread_write+0x115/0x1c20
+[  786.380723]  ? lock_page_memcg+0x11/0x90
+[  786.380723]  binder_ioctl_write_read+0xb5/0x330
+[  786.380723]  binder_ioctl+0x20f/0x710
+[  786.380723]  do_vfs_ioctl+0x4db/0x710
+[  786.380723]  SyS_ioctl+0x7c/0x90
+[  786.380723]  do_syscall_64+0x6d/0xa0
+[  786.380723]  entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+[  786.380723] RIP: 0033:0x76530aa71a77
+[  786.380723] RSP: 002b:00007ffcc5d3ef18 EFLAGS: 00000206 ORIG_RAX: 0000000000000010
+[  786.380723] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 000076530aa71a77
+[  786.380723] RDX: 00007ffcc5d3f010 RSI: 00000000c0306201 RDI: 0000000000000008
+[  786.380723] RBP: 00000000fffffff7 R08: 0000000000000003 R09: 000076527ad13d80
+[  786.380723] R10: 0000000070471a90 R11: 0000000000000206 R12: 000076527b22f800
+[  786.380723] R13: 00007ffcc5d3f010 R14: 000076527b22f8a8 R15: 000076527b22f920
+[  786.380723] Code: c1 74 45 c6 05 37 c3 5d 01 01 48 c7 c7 98 ca eb 9d e8 a3 84 94 00 80 3d 24 c3 5d 01 00 74 15 66 2e 0f 1f 84 00 00 00 00 00 f3 90 <80> 3d 0f c3 5d 01 00 75 f5 e8 e0 27 00 00 48 89 df 57 9d 0f 1f 
+[  786.380723] Sending NMI from CPU 0 to CPUs 3:
+[  786.380723] NMI backtrace for cpu 3
+[  786.380723] CPU: 3 PID: 222 Comm: kworker/u8:4 Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  786.380723] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  786.380723] Workqueue: phy0 hw_scan_work
+[  786.380723] task: 0000000048ee7121 task.stack: 000000001f753032
+[  786.380723] RIP: 0010:delay_tsc+0x66/0xe0
+[  786.380723] RSP: 0018:ffffa9cac0667a38 EFLAGS: 00000046
+[  786.380723] RAX: 0000000000000000 RBX: 000000000000002c RCX: 0000000005fbc520
+[  786.380723] RDX: 0000000000000200 RSI: ffffffff9da9825a RDI: 00000000ffffffff
+[  786.380723] RBP: ffffa9cac0667a58 R08: ffff0a1000000600 R09: 0000000000000000
+[  786.380723] R10: 00000000ffff0a00 R11: ffffffff9d220b40 R12: 00000200231046a6
+[  786.380723] R13: ffffffff9dedd430 R14: 00000000000007d8 R15: 0000000000000003
+[  786.380723] FS:  0000000000000000(0000) GS:ffff8e697fd80000(0000) knlGS:0000000000000000
+[  786.380723] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  786.380723] CR2: 00007733fcae5010 CR3: 00000000a1ee2000 CR4: 00000000000006e0
+[  786.380723] Call Trace:
+[  786.380723]  __const_udelay+0x39/0x40
+[  786.380723]  wait_for_xmitr+0x4e/0xd0
+[  786.380723]  serial8250_console_putchar+0x17/0x30
+[  786.380723]  ? serial8250_console_write+0x380/0x380
+[  786.380723]  uart_console_write+0x3e/0x80
+[  786.380723]  serial8250_console_write+0x2d6/0x380
+[  786.380723]  univ8250_console_write+0x1d/0x20
+[  786.380723]  call_console_drivers+0xa0/0x120
+[  786.380723]  console_unlock+0x2ee/0x4b0
+[  786.380723]  vprintk_emit+0xbf/0x1c0
+[  786.380723]  dev_vprintk_emit+0x1cd/0x210
+[  786.380723]  dev_printk_emit+0x53/0x70
+[  786.380723]  ? __switch_to_asm+0x41/0x70
+[  786.380723]  ? __switch_to_asm+0x35/0x70
+[  786.380723]  ? __switch_to_asm+0x41/0x70
+[  786.380723]  dev_printk+0xae/0xf0
+[  786.380723]  ? __switch_to_xtra+0x36/0x650
+[  786.380723]  ? __switch_to_asm+0x35/0x70
+[  786.380723]  ? __switch_to_asm+0x41/0x70
+[  786.380723]  hw_scan_work+0x74/0x2c0
+[  786.380723]  process_one_work+0x226/0x420
+[  786.380723]  worker_thread+0x26d/0x480
+[  786.380723]  kthread+0x131/0x140
+[  786.380723]  ? process_one_work+0x420/0x420
+[  786.380723]  ? kthread_destroy_worker+0xd0/0xd0
+[  786.380723]  ret_from_fork+0x35/0x40
+[  786.380723] Code: 48 09 c3 4c 29 e3 bf 01 00 00 00 e8 35 ef 68 ff 65 8b 05 02 41 df 62 85 c0 0f 94 c0 4c 39 f3 73 70 0f 1f 40 00 a8 01 75 45 f3 90 <bf> 01 00 00 00 e8 50 ee 68 ff e8 0b 41 a3 ff 41 39 c7 75 36 0f 
+[  786.380723] INFO: rcu_bh detected stalls on CPUs/tasks:
+[  786.380723] 	1-...: (1 GPs behind) idle=afa/140000000000000/0 softirq=12295/12451 fqs=2946 
+[  786.380723] 	3-...: (1 GPs behind) idle=946/140000000000000/0 softirq=17362/17363 fqs=2946 
+[  786.380723] 	(detected by 0, t=6002 jiffies, g=-291, c=-292, q=0)
+[  786.380723] Sending NMI from CPU 0 to CPUs 1:
+[  786.380723] NMI backtrace for cpu 1
+[  786.380723] CPU: 1 PID: 3074 Comm: m.android.phone Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  786.380723] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  786.380723] task: 000000008683b921 task.stack: 00000000e4ea7ccf
+[  786.380723] RIP: 0010:vprintk_emit+0x132/0x1c0
+[  786.380723] RSP: 0018:ffffa9cac0b9f8e8 EFLAGS: 00000002
+[  786.380723] RAX: 0000000080000001 RBX: 0000000000000246 RCX: ffff8e69278f8000
+[  786.380723] RDX: 0000000000000000 RSI: 0000000000000002 RDI: 00000000ffffffff
+[  786.380723] RBP: ffffa9cac0b9f930 R08: 0000000000000004 R09: ffffffff9dea1620
+[  786.380723] R10: 000000000000016b R11: 000000000000075c R12: 0000000000000246
+[  786.380723] R13: 00000000ffffffff R14: 000000000000002c R15: 00000000ffffffff
+[  786.380723] FS:  000076530b242010(0000) GS:ffff8e697fc80000(0000) knlGS:000076530b08d000
+[  786.380723] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  786.380723] CR2: 0000765284383644 CR3: 0000000062b5e000 CR4: 00000000000006e0
+[  786.380723] Call Trace:
+[  786.380723]  vprintk_default+0x1a/0x20
+[  786.380723]  vprintk_func+0x1b5/0x210
+[  786.380723]  printk+0x5d/0x80
+[  786.380723]  binder_alloc_new_buf+0xc7/0x590
+[  786.380723]  ? selinux_binder_transaction+0x8f/0xa0
+[  786.380723]  ? kmem_cache_alloc_trace+0xd8/0x1d0
+[  786.380723]  ? preempt_count_add+0x68/0xc0
+[  786.380723]  binder_transaction+0x13e6/0x3030
+[  786.380723]  ? probe_sched_wakeup+0x31/0x40
+[  786.380723]  ? debug_smp_processor_id+0x17/0x20
+[  786.380723]  ? _raw_spin_unlock_irqrestore+0x1f/0x40
+[  786.380723]  ? do_task_dead+0x50/0x50
+[  786.380723]  ? _raw_spin_unlock_irqrestore+0x1f/0x40
+[  786.380723]  binder_thread_write+0x115/0x1c20
+[  786.380723]  ? lock_page_memcg+0x11/0x90
+[  786.380723]  binder_ioctl_write_read+0xb5/0x330
+[  786.380723]  binder_ioctl+0x20f/0x710
+[  786.380723]  do_vfs_ioctl+0x4db/0x710
+[  786.380723]  SyS_ioctl+0x7c/0x90
+[  786.380723]  do_syscall_64+0x6d/0xa0
+[  786.380723]  entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+[  786.380723] RIP: 0033:0x76530aa71a77
+[  786.380723] RSP: 002b:00007ffcc5d3ef18 EFLAGS: 00000206 ORIG_RAX: 0000000000000010
+[  786.380723] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 000076530aa71a77
+[  786.380723] RDX: 00007ffcc5d3f010 RSI: 00000000c0306201 RDI: 0000000000000008
+[  786.380723] RBP: 00000000fffffff7 R08: 0000000000000003 R09: 000076527ad13d80
+[  786.380723] R10: 0000000070471a90 R11: 0000000000000206 R12: 000076527b22f800
+[  786.380723] R13: 00007ffcc5d3f010 R14: 000076527b22f8a8 R15: 000076527b22f920
+[  786.380723] Code: c1 74 45 c6 05 37 c3 5d 01 01 48 c7 c7 98 ca eb 9d e8 a3 84 94 00 80 3d 24 c3 5d 01 00 74 15 66 2e 0f 1f 84 00 00 00 00 00 f3 90 <80> 3d 0f c3 5d 01 00 75 f5 e8 e0 27 00 00 48 89 df 57 9d 0f 1f 
+[  786.380723] Sending NMI from CPU 0 to CPUs 3:
+[  786.380723] NMI backtrace for cpu 3
+[  786.380723] CPU: 3 PID: 222 Comm: kworker/u8:4 Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  786.380723] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  786.380723] Workqueue: phy0 hw_scan_work
+[  786.380723] task: 0000000048ee7121 task.stack: 000000001f753032
+[  786.380723] RIP: 0010:delay_tsc+0x66/0xe0
+[  786.380723] RSP: 0018:ffffa9cac0667a38 EFLAGS: 00000046
+[  786.380723] RAX: 0000000000000000 RBX: 00000000000007ca RCX: 0000000005fbc520
+[  786.380723] RDX: 0000000000000200 RSI: ffffffff9da9825a RDI: 00000000ffffffff
+[  786.380723] RBP: ffffa9cac0667a58 R08: ffff0a1000000600 R09: 0000000000000000
+[  786.380723] R10: 00000000ffff0a00 R11: ffffffff9d220b40 R12: 00000200238cd45c
+[  786.380723] R13: ffffffff9dedd430 R14: 00000000000007d8 R15: 0000000000000003
+[  786.380723] FS:  0000000000000000(0000) GS:ffff8e697fd80000(0000) knlGS:0000000000000000
+[  786.380723] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  786.380723] CR2: 00007733fcae5010 CR3: 00000000a1ee2000 CR4: 00000000000006e0
+[  786.380723] Call Trace:
+[  786.380723]  __const_udelay+0x39/0x40
+[  786.380723]  wait_for_xmitr+0x4e/0xd0
+[  786.380723]  serial8250_console_putchar+0x17/0x30
+[  786.380723]  ? serial8250_console_write+0x380/0x380
+[  786.380723]  uart_console_write+0x3e/0x80
+[  786.380723]  serial8250_console_write+0x2d6/0x380
+[  786.380723]  univ8250_console_write+0x1d/0x20
+[  786.380723]  call_console_drivers+0xa0/0x120
+[  786.380723]  console_unlock+0x2ee/0x4b0
+[  786.380723]  vprintk_emit+0xbf/0x1c0
+[  786.380723]  dev_vprintk_emit+0x1cd/0x210
+[  786.380723]  dev_printk_emit+0x53/0x70
+[  786.380723]  ? __switch_to_asm+0x41/0x70
+[  786.380723]  ? __switch_to_asm+0x35/0x70
+[  786.380723]  ? __switch_to_asm+0x41/0x70
+[  786.380723]  dev_printk+0xae/0xf0
+[  786.380723]  ? __switch_to_xtra+0x36/0x650
+[  786.380723]  ? __switch_to_asm+0x35/0x70
+[  786.380723]  ? __switch_to_asm+0x41/0x70
+[  786.380723]  hw_scan_work+0x74/0x2c0
+[  786.380723]  process_one_work+0x226/0x420
+[  786.380723]  worker_thread+0x26d/0x480
+[  786.380723]  kthread+0x131/0x140
+[  786.380723]  ? process_one_work+0x420/0x420
+[  786.380723]  ? kthread_destroy_worker+0xd0/0xd0
+[  786.380723]  ret_from_fork+0x35/0x40
+[  786.380723] Code: 48 09 c3 4c 29 e3 bf 01 00 00 00 e8 35 ef 68 ff 65 8b 05 02 41 df 62 85 c0 0f 94 c0 4c 39 f3 73 70 0f 1f 40 00 a8 01 75 45 f3 90 <bf> 01 00 00 00 e8 50 ee 68 ff e8 0b 41 a3 ff 41 39 c7 75 36 0f 
+[  813.230105] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [init:1]
+[  813.230105] Modules linked in:
+[  813.230105] CPU: 2 PID: 1 Comm: init Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  813.230105] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  813.230105] task: 000000000cef4367 task.stack: 0000000041387cec
+[  813.230105] RIP: 0010:smp_call_function_many+0x222/0x250
+[  813.230105] RSP: 0018:ffffa9cac000fbd8 EFLAGS: 00000202 ORIG_RAX: ffffffffffffff10
+[  813.230105] RAX: 0000000000000003 RBX: 0000000000000040 RCX: 0000000000024500
+[  813.230105] RDX: ffff8e697fd80000 RSI: 0000000000000003 RDI: ffff8e697fd20a48
+[  813.230105] RBP: ffffa9cac000fc18 R08: 0000000000284000 R09: ffffa9cac000fd50
+[  813.230105] R10: ffff8e691bba1580 R11: ffffffff9c842a50 R12: ffff8e697fd20a40
+[  813.230105] R13: 0000000000000001 R14: ffff8e697fd20a50 R15: ffff8e697fd20a48
+[  813.230105] FS:  00007f11ca3fd010(0000) GS:ffff8e697fd00000(0000) knlGS:0000000000000000
+[  813.230105] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  813.230105] CR2: 00007f11c982a2a8 CR3: 00000000b83c0000 CR4: 00000000000006e0
+[  813.230105] Call Trace:
+[  813.230105]  ? text_poke_bp+0xe0/0xe0
+[  813.230105]  ? rdev_connect+0x1e/0x120
+[  813.230105]  ? perf_trace_rdev_set_power_mgmt+0x150/0x150
+[  813.230105]  ? text_poke_bp+0xe0/0xe0
+[  813.230105]  on_each_cpu+0x3e/0xb0
+[  813.230105]  ? rdev_connect+0x1d/0x120
+[  813.230105]  text_poke_bp+0xad/0xe0
+[  813.230105]  __jump_label_transform+0xee/0x120
+[  813.230105]  arch_jump_label_transform+0x28/0x40
+[  813.230105]  jump_label_update+0x177/0x1a0
+[  813.230105]  static_key_slow_inc_cpuslocked+0x4d/0x80
+[  813.230105]  static_key_slow_inc+0x15/0x20
+[  813.230105]  tracepoint_probe_register_prio+0x1c5/0x220
+[  813.230105]  tracepoint_probe_register+0xe/0x10
+[  813.230105]  trace_event_reg+0x6e/0x80
+[  813.230105]  __ftrace_event_enable_disable+0x1af/0x240
+[  813.230105]  event_enable_write+0x94/0xc0
+[  813.230105]  __vfs_write+0x3e/0x150
+[  813.230105]  ? __this_cpu_preempt_check+0x13/0x20
+[  813.230105]  ? __sb_start_write+0x6a/0xd0
+[  813.230105]  vfs_write+0xd3/0x180
+[  813.230105]  SyS_write+0x60/0xc0
+[  813.230105]  do_syscall_64+0x6d/0xa0
+[  813.230105]  entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+[  813.230105] RIP: 0033:0x7f11c9fee077
+[  813.230105] RSP: 002b:00007ffed3bb13d8 EFLAGS: 00000202 ORIG_RAX: 0000000000000001
+[  813.230105] RAX: ffffffffffffffda RBX: 00007f11c8e78451 RCX: 00007f11c9fee077
+[  813.230105] RDX: 0000000000000001 RSI: 00007f11c8e78451 RDI: 0000000000000011
+[  813.230105] RBP: 0000000000000001 R08: 0000000000000002 R09: 00007ffed3bac350
+[  813.230105] R10: 0000000000000180 R11: 0000000000000202 R12: 00007ffed3bb1450
+[  813.230105] R13: 00007f11c8e78438 R14: 00007f11c8e78401 R15: 0000000000000011
+[  813.230105] Code: 7a 8f 00 3b 05 a8 2d 3f 01 73 2c 49 8b 0c 24 48 63 d0 48 8b 14 d5 40 76 b0 9d f6 44 0a 18 01 74 d8 0f 1f 84 00 00 00 00 00 f3 90 <8b> 74 11 18 40 f6 c6 01 75 f4 eb c2 48 83 c4 18 5b 41 5c 41 5d 
+[  841.230079] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [init:1]
+[  841.230079] Modules linked in:
+[  841.230079] CPU: 2 PID: 1 Comm: init Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  841.230079] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  841.230079] task: 000000000cef4367 task.stack: 0000000041387cec
+[  841.230079] RIP: 0010:smp_call_function_many+0x222/0x250
+[  841.230079] RSP: 0018:ffffa9cac000fbd8 EFLAGS: 00000202 ORIG_RAX: ffffffffffffff10
+[  841.230079] RAX: 0000000000000003 RBX: 0000000000000040 RCX: 0000000000024500
+[  841.230079] RDX: ffff8e697fd80000 RSI: 0000000000000003 RDI: ffff8e697fd20a48
+[  841.230079] RBP: ffffa9cac000fc18 R08: 0000000000284000 R09: ffffa9cac000fd50
+[  841.230079] R10: ffff8e691bba1580 R11: ffffffff9c842a50 R12: ffff8e697fd20a40
+[  841.230079] R13: 0000000000000001 R14: ffff8e697fd20a50 R15: ffff8e697fd20a48
+[  841.230079] FS:  00007f11ca3fd010(0000) GS:ffff8e697fd00000(0000) knlGS:0000000000000000
+[  841.230079] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  841.230079] CR2: 00007f11c982a2a8 CR3: 00000000b83c0000 CR4: 00000000000006e0
+[  841.230079] Call Trace:
+[  841.230079]  ? text_poke_bp+0xe0/0xe0
+[  841.230079]  ? rdev_connect+0x1e/0x120
+[  841.230079]  ? perf_trace_rdev_set_power_mgmt+0x150/0x150
+[  841.230079]  ? text_poke_bp+0xe0/0xe0
+[  841.230079]  on_each_cpu+0x3e/0xb0
+[  841.230079]  ? rdev_connect+0x1d/0x120
+[  841.230079]  text_poke_bp+0xad/0xe0
+[  841.230079]  __jump_label_transform+0xee/0x120
+[  841.230079]  arch_jump_label_transform+0x28/0x40
+[  841.230079]  jump_label_update+0x177/0x1a0
+[  841.230079]  static_key_slow_inc_cpuslocked+0x4d/0x80
+[  841.230079]  static_key_slow_inc+0x15/0x20
+[  841.230079]  tracepoint_probe_register_prio+0x1c5/0x220
+[  841.230079]  tracepoint_probe_register+0xe/0x10
+[  841.230079]  trace_event_reg+0x6e/0x80
+[  841.230079]  __ftrace_event_enable_disable+0x1af/0x240
+[  841.230079]  event_enable_write+0x94/0xc0
+[  841.230079]  __vfs_write+0x3e/0x150
+[  841.230079]  ? __this_cpu_preempt_check+0x13/0x20
+[  841.230079]  ? __sb_start_write+0x6a/0xd0
+[  841.230079]  vfs_write+0xd3/0x180
+[  841.230079]  SyS_write+0x60/0xc0
+[  841.230079]  do_syscall_64+0x6d/0xa0
+[  841.230079]  entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+[  841.230079] RIP: 0033:0x7f11c9fee077
+[  841.230079] RSP: 002b:00007ffed3bb13d8 EFLAGS: 00000202 ORIG_RAX: 0000000000000001
+[  841.230079] RAX: ffffffffffffffda RBX: 00007f11c8e78451 RCX: 00007f11c9fee077
+[  841.230079] RDX: 0000000000000001 RSI: 00007f11c8e78451 RDI: 0000000000000011
+[  841.230079] RBP: 0000000000000001 R08: 0000000000000002 R09: 00007ffed3bac350
+[  841.230079] R10: 0000000000000180 R11: 0000000000000202 R12: 00007ffed3bb1450
+[  841.230079] R13: 00007f11c8e78438 R14: 00007f11c8e78401 R15: 0000000000000011
+[  841.230079] Code: 7a 8f 00 3b 05 a8 2d 3f 01 73 2c 49 8b 0c 24 48 63 d0 48 8b 14 d5 40 76 b0 9d f6 44 0a 18 01 74 d8 0f 1f 84 00 00 00 00 00 f3 90 <8b> 74 11 18 40 f6 c6 01 75 f4 eb c2 48 83 c4 18 5b 41 5c 41 5d 
+[  869.230060] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [init:1]
+[  869.230060] Modules linked in:
+[  869.230060] CPU: 2 PID: 1 Comm: init Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  869.230060] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  869.230060] task: 000000000cef4367 task.stack: 0000000041387cec
+[  869.230060] RIP: 0010:smp_call_function_many+0x222/0x250
+[  869.230060] RSP: 0018:ffffa9cac000fbd8 EFLAGS: 00000202 ORIG_RAX: ffffffffffffff10
+[  869.230060] RAX: 0000000000000003 RBX: 0000000000000040 RCX: 0000000000024500
+[  869.230060] RDX: ffff8e697fd80000 RSI: 0000000000000003 RDI: ffff8e697fd20a48
+[  869.230060] RBP: ffffa9cac000fc18 R08: 0000000000284000 R09: ffffa9cac000fd50
+[  869.230060] R10: ffff8e691bba1580 R11: ffffffff9c842a50 R12: ffff8e697fd20a40
+[  869.230060] R13: 0000000000000001 R14: ffff8e697fd20a50 R15: ffff8e697fd20a48
+[  869.230060] FS:  00007f11ca3fd010(0000) GS:ffff8e697fd00000(0000) knlGS:0000000000000000
+[  869.230060] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  869.230060] CR2: 00007f11c982a2a8 CR3: 00000000b83c0000 CR4: 00000000000006e0
+[  869.230060] Call Trace:
+[  869.230060]  ? text_poke_bp+0xe0/0xe0
+[  869.230060]  ? rdev_connect+0x1e/0x120
+[  869.230060]  ? perf_trace_rdev_set_power_mgmt+0x150/0x150
+[  869.230060]  ? text_poke_bp+0xe0/0xe0
+[  869.230060]  on_each_cpu+0x3e/0xb0
+[  869.230060]  ? rdev_connect+0x1d/0x120
+[  869.230060]  text_poke_bp+0xad/0xe0
+[  869.230060]  __jump_label_transform+0xee/0x120
+[  869.230060]  arch_jump_label_transform+0x28/0x40
+[  869.230060]  jump_label_update+0x177/0x1a0
+[  869.230060]  static_key_slow_inc_cpuslocked+0x4d/0x80
+[  869.230060]  static_key_slow_inc+0x15/0x20
+[  869.230060]  tracepoint_probe_register_prio+0x1c5/0x220
+[  869.230060]  tracepoint_probe_register+0xe/0x10
+[  869.230060]  trace_event_reg+0x6e/0x80
+[  869.230060]  __ftrace_event_enable_disable+0x1af/0x240
+[  869.230060]  event_enable_write+0x94/0xc0
+[  869.230060]  __vfs_write+0x3e/0x150
+[  869.230060]  ? __this_cpu_preempt_check+0x13/0x20
+[  869.230060]  ? __sb_start_write+0x6a/0xd0
+[  869.230060]  vfs_write+0xd3/0x180
+[  869.230060]  SyS_write+0x60/0xc0
+[  869.230060]  do_syscall_64+0x6d/0xa0
+[  869.230060]  entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+[  869.230060] RIP: 0033:0x7f11c9fee077
+[  869.230060] RSP: 002b:00007ffed3bb13d8 EFLAGS: 00000202 ORIG_RAX: 0000000000000001
+[  869.230060] RAX: ffffffffffffffda RBX: 00007f11c8e78451 RCX: 00007f11c9fee077
+[  869.230060] RDX: 0000000000000001 RSI: 00007f11c8e78451 RDI: 0000000000000011
+[  869.230060] RBP: 0000000000000001 R08: 0000000000000002 R09: 00007ffed3bac350
+[  869.230060] R10: 0000000000000180 R11: 0000000000000202 R12: 00007ffed3bb1450
+[  869.230060] R13: 00007f11c8e78438 R14: 00007f11c8e78401 R15: 0000000000000011
+[  869.230060] Code: 7a 8f 00 3b 05 a8 2d 3f 01 73 2c 49 8b 0c 24 48 63 d0 48 8b 14 d5 40 76 b0 9d f6 44 0a 18 01 74 d8 0f 1f 84 00 00 00 00 00 f3 90 <8b> 74 11 18 40 f6 c6 01 75 f4 eb c2 48 83 c4 18 5b 41 5c 41 5d 
+[  897.230055] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [init:1]
+[  897.230055] Modules linked in:
+[  897.230055] CPU: 2 PID: 1 Comm: init Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  897.230055] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  897.230055] task: 000000000cef4367 task.stack: 0000000041387cec
+[  897.230055] RIP: 0010:read_hpet+0xd6/0xf0
+[  897.230055] RSP: 0018:ffff8e697fd03e10 EFLAGS: 00000246 ORIG_RAX: ffffffffffffff10
+[  897.230055] RAX: ffffa9cac0000000 RBX: ffff8e697d635ff8 RCX: 0000000000000246
+[  897.230055] RDX: e5b2dd6800000000 RSI: 00000000e5b2f5fd RDI: 0000000000000246
+[  897.230055] RBP: ffff8e697fd03e28 R08: ffff8e694ae14f90 R09: 0000000000000004
+[  897.230055] R10: 0000000000000000 R11: ffffffff9c845ba0 R12: 0000000000000000
+[  897.230055] R13: 000000000001f32e R14: 000000d0b03980ed R15: ffffffff9debd390
+[  897.230055] FS:  00007f11ca3fd010(0000) GS:ffff8e697fd00000(0000) knlGS:0000000000000000
+[  897.230055] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  897.230055] CR2: 00007f11c982a2a8 CR3: 00000000b83c0000 CR4: 00000000000006e0
+[  897.230055] Call Trace:
+[  897.230055]  <IRQ>
+[  897.230055]  ? ieee80211_beacon_get_tim+0x3d/0x150
+[  897.230055]  ktime_get_with_offset+0x56/0xc0
+[  897.230055]  mac80211_hwsim_beacon_tx+0xc4/0x190
+[  897.230055]  ? mac80211_hwsim_vendor_cmd_test+0x160/0x160
+[  897.230055]  ieee80211_iterate_active_interfaces_atomic+0x9f/0xf0
+[  897.230055]  mac80211_hwsim_beacon+0x32/0x80
+[  897.230055]  __tasklet_hrtimer_trampoline+0x11/0x30
+[  897.230055]  tasklet_hi_action+0x175/0x1a0
+[  897.230055]  __do_softirq+0x151/0x32b
+[  897.230055]  irq_exit+0xd7/0xe0
+[  897.230055]  smp_apic_timer_interrupt+0x19a/0x1d0
+[  897.230055]  apic_timer_interrupt+0x8c/0xa0
+[  897.230055]  </IRQ>
+[  897.230055] RIP: 0010:smp_call_function_many+0x222/0x250
+[  897.230055] RSP: 0018:ffffa9cac000fbd8 EFLAGS: 00000202 ORIG_RAX: ffffffffffffff10
+[  897.230055] RAX: 0000000000000003 RBX: 0000000000000040 RCX: 0000000000024500
+[  897.230055] RDX: ffff8e697fd80000 RSI: 0000000000000003 RDI: ffff8e697fd20a48
+[  897.230055] RBP: ffffa9cac000fc18 R08: 0000000000284000 R09: ffffa9cac000fd50
+[  897.230055] R10: ffff8e691bba1580 R11: ffffffff9c842a50 R12: ffff8e697fd20a40
+[  897.230055] R13: 0000000000000001 R14: ffff8e697fd20a50 R15: ffff8e697fd20a48
+[  897.230055]  ? flat_send_IPI_mask_allbutself+0x90/0x90
+[  897.230055]  ? smp_call_function_many+0x1fa/0x250
+[  897.230055]  ? text_poke_bp+0xe0/0xe0
+[  897.230055]  ? rdev_connect+0x1e/0x120
+[  897.230055]  ? perf_trace_rdev_set_power_mgmt+0x150/0x150
+[  897.230055]  ? text_poke_bp+0xe0/0xe0
+[  897.230055]  on_each_cpu+0x3e/0xb0
+[  897.230055]  ? rdev_connect+0x1d/0x120
+[  897.230055]  text_poke_bp+0xad/0xe0
+[  897.230055]  __jump_label_transform+0xee/0x120
+[  897.230055]  arch_jump_label_transform+0x28/0x40
+[  897.230055]  jump_label_update+0x177/0x1a0
+[  897.230055]  static_key_slow_inc_cpuslocked+0x4d/0x80
+[  897.230055]  static_key_slow_inc+0x15/0x20
+[  897.230055]  tracepoint_probe_register_prio+0x1c5/0x220
+[  897.230055]  tracepoint_probe_register+0xe/0x10
+[  897.230055]  trace_event_reg+0x6e/0x80
+[  897.230055]  __ftrace_event_enable_disable+0x1af/0x240
+[  897.230055]  event_enable_write+0x94/0xc0
+[  897.230055]  __vfs_write+0x3e/0x150
+[  897.230055]  ? __this_cpu_preempt_check+0x13/0x20
+[  897.230055]  ? __sb_start_write+0x6a/0xd0
+[  897.230055]  vfs_write+0xd3/0x180
+[  897.230055]  SyS_write+0x60/0xc0
+[  897.230055]  do_syscall_64+0x6d/0xa0
+[  897.230055]  entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+[  897.230055] RIP: 0033:0x7f11c9fee077
+[  897.230055] RSP: 002b:00007ffed3bb13d8 EFLAGS: 00000202 ORIG_RAX: 0000000000000001
+[  897.230055] RAX: ffffffffffffffda RBX: 00007f11c8e78451 RCX: 00007f11c9fee077
+[  897.230055] RDX: 0000000000000001 RSI: 00007f11c8e78451 RDI: 0000000000000011
+[  897.230055] RBP: 0000000000000001 R08: 0000000000000002 R09: 00007ffed3bac350
+[  897.230055] R10: 0000000000000180 R11: 0000000000000202 R12: 00007ffed3bb1450
+[  897.230055] R13: 00007f11c8e78438 R14: 00007f11c8e78401 R15: 0000000000000011
+[  897.230055] Code: 83 c4 18 5d c3 48 8b 05 81 d8 64 01 8b b0 f0 00 00 00 89 35 e1 f3 3b 01 48 c7 c7 40 50 c0 9d c6 07 00 0f 1f 40 00 48 89 cf 57 9d <0f> 1f 44 00 00 eb bc e8 fe d0 03 00 0f 1f 40 00 66 2e 0f 1f 84 
+[  925.230213] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [init:1]
+[  925.230213] Modules linked in:
+[  925.230213] CPU: 2 PID: 1 Comm: init Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  925.230213] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  925.230213] task: 000000000cef4367 task.stack: 0000000041387cec
+[  925.230213] RIP: 0010:smp_call_function_many+0x222/0x250
+[  925.230213] RSP: 0018:ffffa9cac000fbd8 EFLAGS: 00000202 ORIG_RAX: ffffffffffffff10
+[  925.230213] RAX: 0000000000000003 RBX: 0000000000000040 RCX: 0000000000024500
+[  925.230213] RDX: ffff8e697fd80000 RSI: 0000000000000003 RDI: ffff8e697fd20a48
+[  925.230213] RBP: ffffa9cac000fc18 R08: 0000000000284000 R09: ffffa9cac000fd50
+[  925.230213] R10: ffff8e691bba1580 R11: ffffffff9c842a50 R12: ffff8e697fd20a40
+[  925.230213] R13: 0000000000000001 R14: ffff8e697fd20a50 R15: ffff8e697fd20a48
+[  925.230213] FS:  00007f11ca3fd010(0000) GS:ffff8e697fd00000(0000) knlGS:0000000000000000
+[  925.230213] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  925.230213] CR2: 00007f11c982a2a8 CR3: 00000000b83c0000 CR4: 00000000000006e0
+[  925.230213] Call Trace:
+[  925.230213]  ? text_poke_bp+0xe0/0xe0
+[  925.230213]  ? rdev_connect+0x1e/0x120
+[  925.230213]  ? perf_trace_rdev_set_power_mgmt+0x150/0x150
+[  925.230213]  ? text_poke_bp+0xe0/0xe0
+[  925.230213]  on_each_cpu+0x3e/0xb0
+[  925.230213]  ? rdev_connect+0x1d/0x120
+[  925.230213]  text_poke_bp+0xad/0xe0
+[  925.230213]  __jump_label_transform+0xee/0x120
+[  925.230213]  arch_jump_label_transform+0x28/0x40
+[  925.230213]  jump_label_update+0x177/0x1a0
+[  925.230213]  static_key_slow_inc_cpuslocked+0x4d/0x80
+[  925.230213]  static_key_slow_inc+0x15/0x20
+[  925.230213]  tracepoint_probe_register_prio+0x1c5/0x220
+[  925.230213]  tracepoint_probe_register+0xe/0x10
+[  925.230213]  trace_event_reg+0x6e/0x80
+[  925.230213]  __ftrace_event_enable_disable+0x1af/0x240
+[  925.230213]  event_enable_write+0x94/0xc0
+[  925.230213]  __vfs_write+0x3e/0x150
+[  925.230213]  ? __this_cpu_preempt_check+0x13/0x20
+[  925.230213]  ? __sb_start_write+0x6a/0xd0
+[  925.230213]  vfs_write+0xd3/0x180
+[  925.230213]  SyS_write+0x60/0xc0
+[  925.230213]  do_syscall_64+0x6d/0xa0
+[  925.230213]  entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+[  925.230213] RIP: 0033:0x7f11c9fee077
+[  925.230213] RSP: 002b:00007ffed3bb13d8 EFLAGS: 00000202 ORIG_RAX: 0000000000000001
+[  925.230213] RAX: ffffffffffffffda RBX: 00007f11c8e78451 RCX: 00007f11c9fee077
+[  925.230213] RDX: 0000000000000001 RSI: 00007f11c8e78451 RDI: 0000000000000011
+[  925.230213] RBP: 0000000000000001 R08: 0000000000000002 R09: 00007ffed3bac350
+[  925.230213] R10: 0000000000000180 R11: 0000000000000202 R12: 00007ffed3bb1450
+[  925.230213] R13: 00007f11c8e78438 R14: 00007f11c8e78401 R15: 0000000000000011
+[  925.230213] Code: 7a 8f 00 3b 05 a8 2d 3f 01 73 2c 49 8b 0c 24 48 63 d0 48 8b 14 d5 40 76 b0 9d f6 44 0a 18 01 74 d8 0f 1f 84 00 00 00 00 00 f3 90 <8b> 74 11 18 40 f6 c6 01 75 f4 eb c2 48 83 c4 18 5b 41 5c 41 5d 
+[  953.230059] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [init:1]
+[  953.230059] Modules linked in:
+[  953.230059] CPU: 2 PID: 1 Comm: init Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  953.230059] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  953.230059] task: 000000000cef4367 task.stack: 0000000041387cec
+[  953.230059] RIP: 0010:smp_call_function_many+0x222/0x250
+[  953.230059] RSP: 0018:ffffa9cac000fbd8 EFLAGS: 00000202 ORIG_RAX: ffffffffffffff10
+[  953.230059] RAX: 0000000000000003 RBX: 0000000000000040 RCX: 0000000000024500
+[  953.230059] RDX: ffff8e697fd80000 RSI: 0000000000000003 RDI: ffff8e697fd20a48
+[  953.230059] RBP: ffffa9cac000fc18 R08: 0000000000284000 R09: ffffa9cac000fd50
+[  953.230059] R10: ffff8e691bba1580 R11: ffffffff9c842a50 R12: ffff8e697fd20a40
+[  953.230059] R13: 0000000000000001 R14: ffff8e697fd20a50 R15: ffff8e697fd20a48
+[  953.230059] FS:  00007f11ca3fd010(0000) GS:ffff8e697fd00000(0000) knlGS:0000000000000000
+[  953.230059] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  953.230059] CR2: 00007f11c982a2a8 CR3: 00000000b83c0000 CR4: 00000000000006e0
+[  953.230059] Call Trace:
+[  953.230059]  ? text_poke_bp+0xe0/0xe0
+[  953.230059]  ? rdev_connect+0x1e/0x120
+[  953.230059]  ? perf_trace_rdev_set_power_mgmt+0x150/0x150
+[  953.230059]  ? text_poke_bp+0xe0/0xe0
+[  953.230059]  on_each_cpu+0x3e/0xb0
+[  953.230059]  ? rdev_connect+0x1d/0x120
+[  953.230059]  text_poke_bp+0xad/0xe0
+[  953.230059]  __jump_label_transform+0xee/0x120
+[  953.230059]  arch_jump_label_transform+0x28/0x40
+[  953.230059]  jump_label_update+0x177/0x1a0
+[  953.230059]  static_key_slow_inc_cpuslocked+0x4d/0x80
+[  953.230059]  static_key_slow_inc+0x15/0x20
+[  953.230059]  tracepoint_probe_register_prio+0x1c5/0x220
+[  953.230059]  tracepoint_probe_register+0xe/0x10
+[  953.230059]  trace_event_reg+0x6e/0x80
+[  953.230059]  __ftrace_event_enable_disable+0x1af/0x240
+[  953.230059]  event_enable_write+0x94/0xc0
+[  953.230059]  __vfs_write+0x3e/0x150
+[  953.230059]  ? __this_cpu_preempt_check+0x13/0x20
+[  953.230059]  ? __sb_start_write+0x6a/0xd0
+[  953.230059]  vfs_write+0xd3/0x180
+[  953.230059]  SyS_write+0x60/0xc0
+[  953.230059]  do_syscall_64+0x6d/0xa0
+[  953.230059]  entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+[  953.230059] RIP: 0033:0x7f11c9fee077
+[  953.230059] RSP: 002b:00007ffed3bb13d8 EFLAGS: 00000202 ORIG_RAX: 0000000000000001
+[  953.230059] RAX: ffffffffffffffda RBX: 00007f11c8e78451 RCX: 00007f11c9fee077
+[  953.230059] RDX: 0000000000000001 RSI: 00007f11c8e78451 RDI: 0000000000000011
+[  953.230059] RBP: 0000000000000001 R08: 0000000000000002 R09: 00007ffed3bac350
+[  953.230059] R10: 0000000000000180 R11: 0000000000000202 R12: 00007ffed3bb1450
+[  953.230059] R13: 00007f11c8e78438 R14: 00007f11c8e78401 R15: 0000000000000011
+[  953.230059] Code: 7a 8f 00 3b 05 a8 2d 3f 01 73 2c 49 8b 0c 24 48 63 d0 48 8b 14 d5 40 76 b0 9d f6 44 0a 18 01 74 d8 0f 1f 84 00 00 00 00 00 f3 90 <8b> 74 11 18 40 f6 c6 01 75 f4 eb c2 48 83 c4 18 5b 41 5c 41 5d 
+[  966.410122] INFO: rcu_sched self-detected stall on CPU
+[  966.410161] 	2-...: (23693 ticks this GP) idle=d3a/140000000000001/0 softirq=13235/13236 fqs=11878 
+[  966.410165] 	 (t=24004 jiffies g=889 c=888 q=0)
+[  966.410186] Sending NMI from CPU 2 to CPUs 1:
+[  966.410974] NMI backtrace for cpu 1
+[  966.410974] CPU: 1 PID: 3074 Comm: m.android.phone Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  966.410974] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  966.410974] task: 000000008683b921 task.stack: 00000000e4ea7ccf
+[  966.410974] RIP: 0010:vprintk_emit+0x132/0x1c0
+[  966.410974] RSP: 0018:ffffa9cac0b9f8e8 EFLAGS: 00000002
+[  966.410974] RAX: 0000000080000001 RBX: 0000000000000246 RCX: ffff8e69278f8000
+[  966.410974] RDX: 0000000000000000 RSI: 0000000000000002 RDI: 00000000ffffffff
+[  966.410974] RBP: ffffa9cac0b9f930 R08: 0000000000000004 R09: ffffffff9dea1620
+[  966.410974] R10: 000000000000016b R11: 000000000000075c R12: 0000000000000246
+[  966.410974] R13: 00000000ffffffff R14: 000000000000002c R15: 00000000ffffffff
+[  966.410974] FS:  000076530b242010(0000) GS:ffff8e697fc80000(0000) knlGS:000076530b08d000
+[  966.410974] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  966.410974] CR2: 0000765284383644 CR3: 0000000062b5e000 CR4: 00000000000006e0
+[  966.410974] Call Trace:
+[  966.410974]  vprintk_default+0x1a/0x20
+[  966.410974]  vprintk_func+0x1b5/0x210
+[  966.410974]  printk+0x5d/0x80
+[  966.410974]  binder_alloc_new_buf+0xc7/0x590
+[  966.410974]  ? selinux_binder_transaction+0x8f/0xa0
+[  966.410974]  ? kmem_cache_alloc_trace+0xd8/0x1d0
+[  966.410974]  ? preempt_count_add+0x68/0xc0
+[  966.410974]  binder_transaction+0x13e6/0x3030
+[  966.410974]  ? probe_sched_wakeup+0x31/0x40
+[  966.410974]  ? debug_smp_processor_id+0x17/0x20
+[  966.410974]  ? _raw_spin_unlock_irqrestore+0x1f/0x40
+[  966.410974]  ? do_task_dead+0x50/0x50
+[  966.410974]  ? _raw_spin_unlock_irqrestore+0x1f/0x40
+[  966.410974]  binder_thread_write+0x115/0x1c20
+[  966.410974]  ? lock_page_memcg+0x11/0x90
+[  966.410974]  binder_ioctl_write_read+0xb5/0x330
+[  966.410974]  binder_ioctl+0x20f/0x710
+[  966.410974]  do_vfs_ioctl+0x4db/0x710
+[  966.410974]  SyS_ioctl+0x7c/0x90
+[  966.410974]  do_syscall_64+0x6d/0xa0
+[  966.410974]  entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+[  966.410974] RIP: 0033:0x76530aa71a77
+[  966.410974] RSP: 002b:00007ffcc5d3ef18 EFLAGS: 00000206 ORIG_RAX: 0000000000000010
+[  966.410974] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 000076530aa71a77
+[  966.410974] RDX: 00007ffcc5d3f010 RSI: 00000000c0306201 RDI: 0000000000000008
+[  966.410974] RBP: 00000000fffffff7 R08: 0000000000000003 R09: 000076527ad13d80
+[  966.410974] R10: 0000000070471a90 R11: 0000000000000206 R12: 000076527b22f800
+[  966.410974] R13: 00007ffcc5d3f010 R14: 000076527b22f8a8 R15: 000076527b22f920
+[  966.410974] Code: c1 74 45 c6 05 37 c3 5d 01 01 48 c7 c7 98 ca eb 9d e8 a3 84 94 00 80 3d 24 c3 5d 01 00 74 15 66 2e 0f 1f 84 00 00 00 00 00 f3 90 <80> 3d 0f c3 5d 01 00 75 f5 e8 e0 27 00 00 48 89 df 57 9d 0f 1f 
+[  966.410974] NMI backtrace for cpu 2
+[  966.410974] CPU: 2 PID: 1 Comm: init Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  966.410974] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  966.410974] Call Trace:
+[  966.410974]  <IRQ>
+[  966.410974]  dump_stack+0x74/0xb0
+[  966.410974]  nmi_trigger_cpumask_backtrace+0x80/0x150
+[  966.410974]  arch_trigger_cpumask_backtrace+0x10/0x20
+[  966.410974]  rcu_dump_cpu_stacks+0xe9/0x100
+[  966.410974]  rcu_check_callbacks+0x4ac/0xa40
+[  966.410974]  ? debug_smp_processor_id+0x17/0x20
+[  966.410974]  ? hrtimer_run_queues+0x2a/0x180
+[  966.410974]  ? account_process_tick+0x178/0x190
+[  966.410974]  update_process_times+0x6e/0xa0
+[  966.410974]  tick_sched_timer+0x87/0xe0
+[  966.410974]  ? tick_setup_sched_timer+0x130/0x130
+[  966.410974]  __run_hrtimer+0x135/0x200
+[  966.410974]  hrtimer_interrupt+0x134/0x2c0
+[  966.410974]  smp_apic_timer_interrupt+0xcc/0x1d0
+[  966.410974]  apic_timer_interrupt+0x8c/0xa0
+[  966.410974]  </IRQ>
+[  966.410974] RIP: 0010:smp_call_function_many+0x222/0x250
+[  966.410974] RSP: 0018:ffffa9cac000fbd8 EFLAGS: 00000202 ORIG_RAX: ffffffffffffff10
+[  966.410974] RAX: 0000000000000003 RBX: 0000000000000040 RCX: 0000000000024500
+[  966.410974] RDX: ffff8e697fd80000 RSI: 0000000000000003 RDI: ffff8e697fd20a48
+[  966.410974] RBP: ffffa9cac000fc18 R08: 0000000000284000 R09: ffffa9cac000fd50
+[  966.410974] R10: ffff8e691bba1580 R11: ffffffff9c842a50 R12: ffff8e697fd20a40
+[  966.410974] R13: 0000000000000001 R14: ffff8e697fd20a50 R15: ffff8e697fd20a48
+[  966.410974]  ? flat_send_IPI_mask_allbutself+0x90/0x90
+[  966.410974]  ? smp_call_function_many+0x1fa/0x250
+[  966.410974]  ? text_poke_bp+0xe0/0xe0
+[  966.410974]  ? rdev_connect+0x1e/0x120
+[  966.410974]  ? perf_trace_rdev_set_power_mgmt+0x150/0x150
+[  966.410974]  ? text_poke_bp+0xe0/0xe0
+[  966.410974]  on_each_cpu+0x3e/0xb0
+[  966.410974]  ? rdev_connect+0x1d/0x120
+[  966.410974]  text_poke_bp+0xad/0xe0
+[  966.410974]  __jump_label_transform+0xee/0x120
+[  966.410974]  arch_jump_label_transform+0x28/0x40
+[  966.410974]  jump_label_update+0x177/0x1a0
+[  966.410974]  static_key_slow_inc_cpuslocked+0x4d/0x80
+[  966.410974]  static_key_slow_inc+0x15/0x20
+[  966.410974]  tracepoint_probe_register_prio+0x1c5/0x220
+[  966.410974]  tracepoint_probe_register+0xe/0x10
+[  966.410974]  trace_event_reg+0x6e/0x80
+[  966.410974]  __ftrace_event_enable_disable+0x1af/0x240
+[  966.410974]  event_enable_write+0x94/0xc0
+[  966.410974]  __vfs_write+0x3e/0x150
+[  966.410974]  ? __this_cpu_preempt_check+0x13/0x20
+[  966.410974]  ? __sb_start_write+0x6a/0xd0
+[  966.410974]  vfs_write+0xd3/0x180
+[  966.410974]  SyS_write+0x60/0xc0
+[  966.410974]  do_syscall_64+0x6d/0xa0
+[  966.410974]  entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+[  966.410974] RIP: 0033:0x7f11c9fee077
+[  966.410974] RSP: 002b:00007ffed3bb13d8 EFLAGS: 00000202 ORIG_RAX: 0000000000000001
+[  966.410974] RAX: ffffffffffffffda RBX: 00007f11c8e78451 RCX: 00007f11c9fee077
+[  966.410974] RDX: 0000000000000001 RSI: 00007f11c8e78451 RDI: 0000000000000011
+[  966.410974] RBP: 0000000000000001 R08: 0000000000000002 R09: 00007ffed3bac350
+[  966.410974] R10: 0000000000000180 R11: 0000000000000202 R12: 00007ffed3bb1450
+[  966.410974] R13: 00007f11c8e78438 R14: 00007f11c8e78401 R15: 0000000000000011
+[  966.410974] Sending NMI from CPU 2 to CPUs 3:
+[  966.410974] NMI backtrace for cpu 3
+[  966.410974] CPU: 3 PID: 222 Comm: kworker/u8:4 Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  966.410974] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  966.410974] Workqueue: phy0 hw_scan_work
+[  966.410974] task: 0000000048ee7121 task.stack: 000000001f753032
+[  966.410974] RIP: 0010:delay_tsc+0x66/0xe0
+[  966.410974] RSP: 0018:ffffa9cac0667a38 EFLAGS: 00000046
+[  966.410974] RAX: 0000000000000000 RBX: 000000000000002a RCX: 0000000005fbc520
+[  966.410974] RDX: 0000000000000275 RSI: ffffffff9da9825a RDI: 00000000ffffffff
+[  966.410974] RBP: ffffa9cac0667a58 R08: ffff0a1000000600 R09: 0000000000000000
+[  966.410974] R10: 00000000ffff0a00 R11: ffffffff9d220b40 R12: 000002753a102f20
+[  966.410974] R13: ffffffff9dedd430 R14: 00000000000007d8 R15: 0000000000000003
+[  966.410974] FS:  0000000000000000(0000) GS:ffff8e697fd80000(0000) knlGS:0000000000000000
+[  966.410974] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  966.410974] CR2: 00007733fcae5010 CR3: 00000000a1ee2000 CR4: 00000000000006e0
+[  966.410974] Call Trace:
+[  966.410974]  __const_udelay+0x39/0x40
+[  966.410974]  wait_for_xmitr+0x4e/0xd0
+[  966.410974]  serial8250_console_putchar+0x17/0x30
+[  966.410974]  ? serial8250_console_write+0x380/0x380
+[  966.410974]  uart_console_write+0x3e/0x80
+[  966.410974]  serial8250_console_write+0x2d6/0x380
+[  966.410974]  univ8250_console_write+0x1d/0x20
+[  966.410974]  call_console_drivers+0xa0/0x120
+[  966.410974]  console_unlock+0x2ee/0x4b0
+[  966.410974]  vprintk_emit+0xbf/0x1c0
+[  966.410974]  dev_vprintk_emit+0x1cd/0x210
+[  966.410974]  dev_printk_emit+0x53/0x70
+[  966.410974]  ? __switch_to_asm+0x41/0x70
+[  966.410974]  ? __switch_to_asm+0x35/0x70
+[  966.410974]  ? __switch_to_asm+0x41/0x70
+[  966.410974]  dev_printk+0xae/0xf0
+[  966.410974]  ? __switch_to_xtra+0x36/0x650
+[  966.410974]  ? __switch_to_asm+0x35/0x70
+[  966.410974]  ? __switch_to_asm+0x41/0x70
+[  966.410974]  hw_scan_work+0x74/0x2c0
+[  966.410974]  process_one_work+0x226/0x420
+[  966.410974]  worker_thread+0x26d/0x480
+[  966.410974]  kthread+0x131/0x140
+[  966.410974]  ? process_one_work+0x420/0x420
+[  966.410974]  ? kthread_destroy_worker+0xd0/0xd0
+[  966.410974]  ret_from_fork+0x35/0x40
+[  966.410974] Code: 48 09 c3 4c 29 e3 bf 01 00 00 00 e8 35 ef 68 ff 65 8b 05 02 41 df 62 85 c0 0f 94 c0 4c 39 f3 73 70 0f 1f 40 00 a8 01 75 45 f3 90 <bf> 01 00 00 00 e8 50 ee 68 ff e8 0b 41 a3 ff 41 39 c7 75 36 0f 
+[  966.430203] INFO: rcu_preempt detected stalls on CPUs/tasks:
+[  966.430250] 	1-...: (1 GPs behind) idle=afa/140000000000000/0 softirq=12294/12451 fqs=11879 
+[  966.430261] 	3-...: (1 GPs behind) idle=946/140000000000000/0 softirq=17233/17363 fqs=11879 
+[  966.430265] 	(detected by 0, t=24007 jiffies, g=4291, c=4290, q=3380)
+[  966.430287] Sending NMI from CPU 0 to CPUs 1:
+[  966.430823] NMI backtrace for cpu 1
+[  966.430823] CPU: 1 PID: 3074 Comm: m.android.phone Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  966.430823] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  966.430823] task: 000000008683b921 task.stack: 00000000e4ea7ccf
+[  966.430823] RIP: 0010:vprintk_emit+0x132/0x1c0
+[  966.430823] RSP: 0018:ffffa9cac0b9f8e8 EFLAGS: 00000002
+[  966.430823] RAX: 0000000080000001 RBX: 0000000000000246 RCX: ffff8e69278f8000
+[  966.430823] RDX: 0000000000000000 RSI: 0000000000000002 RDI: 00000000ffffffff
+[  966.430823] RBP: ffffa9cac0b9f930 R08: 0000000000000004 R09: ffffffff9dea1620
+[  966.430823] R10: 000000000000016b R11: 000000000000075c R12: 0000000000000246
+[  966.430823] R13: 00000000ffffffff R14: 000000000000002c R15: 00000000ffffffff
+[  966.430823] FS:  000076530b242010(0000) GS:ffff8e697fc80000(0000) knlGS:000076530b08d000
+[  966.430823] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  966.430823] CR2: 0000765284383644 CR3: 0000000062b5e000 CR4: 00000000000006e0
+[  966.430823] Call Trace:
+[  966.430823]  vprintk_default+0x1a/0x20
+[  966.430823]  vprintk_func+0x1b5/0x210
+[  966.430823]  printk+0x5d/0x80
+[  966.430823]  binder_alloc_new_buf+0xc7/0x590
+[  966.430823]  ? selinux_binder_transaction+0x8f/0xa0
+[  966.430823]  ? kmem_cache_alloc_trace+0xd8/0x1d0
+[  966.430823]  ? preempt_count_add+0x68/0xc0
+[  966.430823]  binder_transaction+0x13e6/0x3030
+[  966.430823]  ? probe_sched_wakeup+0x31/0x40
+[  966.430823]  ? debug_smp_processor_id+0x17/0x20
+[  966.430823]  ? _raw_spin_unlock_irqrestore+0x1f/0x40
+[  966.430823]  ? do_task_dead+0x50/0x50
+[  966.430823]  ? _raw_spin_unlock_irqrestore+0x1f/0x40
+[  966.430823]  binder_thread_write+0x115/0x1c20
+[  966.430823]  ? lock_page_memcg+0x11/0x90
+[  966.430823]  binder_ioctl_write_read+0xb5/0x330
+[  966.430823]  binder_ioctl+0x20f/0x710
+[  966.430823]  do_vfs_ioctl+0x4db/0x710
+[  966.430823]  SyS_ioctl+0x7c/0x90
+[  966.430823]  do_syscall_64+0x6d/0xa0
+[  966.430823]  entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+[  966.430823] RIP: 0033:0x76530aa71a77
+[  966.430823] RSP: 002b:00007ffcc5d3ef18 EFLAGS: 00000206 ORIG_RAX: 0000000000000010
+[  966.430823] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 000076530aa71a77
+[  966.430823] RDX: 00007ffcc5d3f010 RSI: 00000000c0306201 RDI: 0000000000000008
+[  966.430823] RBP: 00000000fffffff7 R08: 0000000000000003 R09: 000076527ad13d80
+[  966.430823] R10: 0000000070471a90 R11: 0000000000000206 R12: 000076527b22f800
+[  966.430823] R13: 00007ffcc5d3f010 R14: 000076527b22f8a8 R15: 000076527b22f920
+[  966.430823] Code: c1 74 45 c6 05 37 c3 5d 01 01 48 c7 c7 98 ca eb 9d e8 a3 84 94 00 80 3d 24 c3 5d 01 00 74 15 66 2e 0f 1f 84 00 00 00 00 00 f3 90 <80> 3d 0f c3 5d 01 00 75 f5 e8 e0 27 00 00 48 89 df 57 9d 0f 1f 
+[  966.430823] Sending NMI from CPU 0 to CPUs 3:
+[  966.430823] NMI backtrace for cpu 3
+[  966.430823] CPU: 3 PID: 222 Comm: kworker/u8:4 Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  966.430823] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  966.430823] Workqueue: phy0 hw_scan_work
+[  966.430823] task: 0000000048ee7121 task.stack: 000000001f753032
+[  966.430823] RIP: 0010:delay_tsc+0x66/0xe0
+[  966.430823] RSP: 0018:ffffa9cac0667a38 EFLAGS: 00000046
+[  966.430823] RAX: 0000000000000000 RBX: 0000000000000044 RCX: 0000000005fbc520
+[  966.430823] RDX: 0000000000000275 RSI: ffffffff9da9825a RDI: 00000000ffffffff
+[  966.430823] RBP: ffffa9cac0667a58 R08: ffff0a1000000600 R09: 0000000000000000
+[  966.430823] R10: 00000000ffff0a00 R11: ffffffff9d220b40 R12: 000002753da353fc
+[  966.430823] R13: ffffffff9dedd430 R14: 00000000000007d8 R15: 0000000000000003
+[  966.430823] FS:  0000000000000000(0000) GS:ffff8e697fd80000(0000) knlGS:0000000000000000
+[  966.430823] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  966.430823] CR2: 00007733fcae5010 CR3: 00000000a1ee2000 CR4: 00000000000006e0
+[  966.430823] Call Trace:
+[  966.430823]  __const_udelay+0x39/0x40
+[  966.430823]  wait_for_xmitr+0x4e/0xd0
+[  966.430823]  serial8250_console_putchar+0x17/0x30
+[  966.430823]  ? serial8250_console_write+0x380/0x380
+[  966.430823]  uart_console_write+0x3e/0x80
+[  966.430823]  serial8250_console_write+0x2d6/0x380
+[  966.430823]  univ8250_console_write+0x1d/0x20
+[  966.430823]  call_console_drivers+0xa0/0x120
+[  966.430823]  console_unlock+0x2ee/0x4b0
+[  966.430823]  vprintk_emit+0xbf/0x1c0
+[  966.430823]  dev_vprintk_emit+0x1cd/0x210
+[  966.430823]  dev_printk_emit+0x53/0x70
+[  966.430823]  ? __switch_to_asm+0x41/0x70
+[  966.430823]  ? __switch_to_asm+0x35/0x70
+[  966.430823]  ? __switch_to_asm+0x41/0x70
+[  966.430823]  dev_printk+0xae/0xf0
+[  966.430823]  ? __switch_to_xtra+0x36/0x650
+[  966.430823]  ? __switch_to_asm+0x35/0x70
+[  966.430823]  ? __switch_to_asm+0x41/0x70
+[  966.430823]  hw_scan_work+0x74/0x2c0
+[  966.430823]  process_one_work+0x226/0x420
+[  966.430823]  worker_thread+0x26d/0x480
+[  966.430823]  kthread+0x131/0x140
+[  966.430823]  ? process_one_work+0x420/0x420
+[  966.430823]  ? kthread_destroy_worker+0xd0/0xd0
+[  966.430823]  ret_from_fork+0x35/0x40
+[  966.430823] Code: 48 09 c3 4c 29 e3 bf 01 00 00 00 e8 35 ef 68 ff 65 8b 05 02 41 df 62 85 c0 0f 94 c0 4c 39 f3 73 70 0f 1f 40 00 a8 01 75 45 f3 90 <bf> 01 00 00 00 e8 50 ee 68 ff e8 0b 41 a3 ff 41 39 c7 75 36 0f 
+[  966.430823] INFO: rcu_bh detected stalls on CPUs/tasks:
+[  966.430823] 	1-...: (1 GPs behind) idle=afa/140000000000000/0 softirq=12295/12451 fqs=11880 
+[  966.430823] 	3-...: (1 GPs behind) idle=946/140000000000000/0 softirq=17362/17363 fqs=11880 
+[  966.430823] 	(detected by 0, t=24007 jiffies, g=-291, c=-292, q=0)
+[  966.430823] Sending NMI from CPU 0 to CPUs 1:
+[  966.430823] NMI backtrace for cpu 1
+[  966.430823] CPU: 1 PID: 3074 Comm: m.android.phone Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  966.430823] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  966.430823] task: 000000008683b921 task.stack: 00000000e4ea7ccf
+[  966.430823] RIP: 0010:vprintk_emit+0x132/0x1c0
+[  966.430823] RSP: 0018:ffffa9cac0b9f8e8 EFLAGS: 00000002
+[  966.430823] RAX: 0000000080000001 RBX: 0000000000000246 RCX: ffff8e69278f8000
+[  966.430823] RDX: 0000000000000000 RSI: 0000000000000002 RDI: 00000000ffffffff
+[  966.430823] RBP: ffffa9cac0b9f930 R08: 0000000000000004 R09: ffffffff9dea1620
+[  966.430823] R10: 000000000000016b R11: 000000000000075c R12: 0000000000000246
+[  966.430823] R13: 00000000ffffffff R14: 000000000000002c R15: 00000000ffffffff
+[  966.430823] FS:  000076530b242010(0000) GS:ffff8e697fc80000(0000) knlGS:000076530b08d000
+[  966.430823] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  966.430823] CR2: 0000765284383644 CR3: 0000000062b5e000 CR4: 00000000000006e0
+[  966.430823] Call Trace:
+[  966.430823]  vprintk_default+0x1a/0x20
+[  966.430823]  vprintk_func+0x1b5/0x210
+[  966.430823]  printk+0x5d/0x80
+[  966.430823]  binder_alloc_new_buf+0xc7/0x590
+[  966.430823]  ? selinux_binder_transaction+0x8f/0xa0
+[  966.430823]  ? kmem_cache_alloc_trace+0xd8/0x1d0
+[  966.430823]  ? preempt_count_add+0x68/0xc0
+[  966.430823]  binder_transaction+0x13e6/0x3030
+[  966.430823]  ? probe_sched_wakeup+0x31/0x40
+[  966.430823]  ? debug_smp_processor_id+0x17/0x20
+[  966.430823]  ? _raw_spin_unlock_irqrestore+0x1f/0x40
+[  966.430823]  ? do_task_dead+0x50/0x50
+[  966.430823]  ? _raw_spin_unlock_irqrestore+0x1f/0x40
+[  966.430823]  binder_thread_write+0x115/0x1c20
+[  966.430823]  ? lock_page_memcg+0x11/0x90
+[  966.430823]  binder_ioctl_write_read+0xb5/0x330
+[  966.430823]  binder_ioctl+0x20f/0x710
+[  966.430823]  do_vfs_ioctl+0x4db/0x710
+[  966.430823]  SyS_ioctl+0x7c/0x90
+[  966.430823]  do_syscall_64+0x6d/0xa0
+[  966.430823]  entry_SYSCALL_64_after_hwframe+0x3d/0xa2
+[  966.430823] RIP: 0033:0x76530aa71a77
+[  966.430823] RSP: 002b:00007ffcc5d3ef18 EFLAGS: 00000206 ORIG_RAX: 0000000000000010
+[  966.430823] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 000076530aa71a77
+[  966.430823] RDX: 00007ffcc5d3f010 RSI: 00000000c0306201 RDI: 0000000000000008
+[  966.430823] RBP: 00000000fffffff7 R08: 0000000000000003 R09: 000076527ad13d80
+[  966.430823] R10: 0000000070471a90 R11: 0000000000000206 R12: 000076527b22f800
+[  966.430823] R13: 00007ffcc5d3f010 R14: 000076527b22f8a8 R15: 000076527b22f920
+[  966.430823] Code: c1 74 45 c6 05 37 c3 5d 01 01 48 c7 c7 98 ca eb 9d e8 a3 84 94 00 80 3d 24 c3 5d 01 00 74 15 66 2e 0f 1f 84 00 00 00 00 00 f3 90 <80> 3d 0f c3 5d 01 00 75 f5 e8 e0 27 00 00 48 89 df 57 9d 0f 1f 
+[  966.430823] Sending NMI from CPU 0 to CPUs 3:
+[  966.430823] NMI backtrace for cpu 3
+[  966.430823] CPU: 3 PID: 222 Comm: kworker/u8:4 Tainted: G             L  4.14.175-g6f3fc9538452 #1
+[  966.430823] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[  966.430823] Workqueue: phy0 hw_scan_work
+[  966.430823] task: 0000000048ee7121 task.stack: 000000001f753032
+[  966.430823] RIP: 0010:delay_tsc+0x66/0xe0
+[  966.430823] RSP: 0018:ffffa9cac0667a38 EFLAGS: 00000046
+[  966.430823] RAX: 0000000000000000 RBX: 0000000000000044 RCX: 0000000005fbc520
+[  966.430823] RDX: 0000000000000275 RSI: ffffffff9da9825a RDI: 00000000ffffffff
+[  966.430823] RBP: ffffa9cac0667a58 R08: ffff0a1000000600 R09: 0000000000000000
+[  966.430823] R10: 00000000ffff0a00 R11: ffffffff9d220b40 R12: 000002753e18beca
+[  966.430823] R13: ffffffff9dedd430 R14: 00000000000007d8 R15: 0000000000000003
+[  966.430823] FS:  0000000000000000(0000) GS:ffff8e697fd80000(0000) knlGS:0000000000000000
+[  966.430823] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  966.430823] CR2: 00007733fcae5010 CR3: 00000000a1ee2000 CR4: 00000000000006e0
+[  966.430823] Call Trace:
+[  966.430823]  __const_udelay+0x39/0x40
+[  966.430823]  wait_for_xmitr+0x4e/0xd0
+[  966.430823]  serial8250_console_putchar+0x17/0x30
+[  966.430823]  ? serial8250_console_write+0x380/0x380
+[  966.430823]  uart_console_write+0x3e/0x80
+[  966.430823]  serial8250_console_write+0x2d6/0x380
+[  966.430823]  univ8250_console_write+0x1d/0x20
+[  966.430823]  call_console_drivers+0xa0/0x120
+[  966.430823]  console_unlock+0x2ee/0x4b0
+[  966.430823]  vprintk_emit+0xbf/0x1c0
+[  966.430823]  dev_vprintk_emit+0x1cd/0x210
+[  966.430823]  dev_printk_emit+0x53/0x70
+[  966.430823]  ? __switch_to_asm+0x41/0x70
+[  966.430823]  ? __switch_to_asm+0x35/0x70
+[  966.430823]  ? __switch_to_asm+0x41/0x70
+[  966.430823]  dev_printk+0xae/0xf0
+[  966.430823]  ? __switch_to_xtra+0x36/0x650
+[  966.430823]  ? __switch_to_asm+0x35/0x70
+[  966.430823]  ? __switch_to_asm+0x41/0x70
+[  966.430823]  hw_scan_work+0x74/0x2c0
+[  966.430823]  process_one_work+0x226/0x420
+[  966.430823]  worker_thread+0x26d/0x480
+[  966.430823]  kthread+0x131/0x140
+[  966.430823]  ? process_one_work+0x420/0x420
+[  966.430823]  ? kthread_destroy_worker+0xd0/0xd0
+[  966.430823]  ret_from_fork+0x35/0x40
+[  966.430823] Code: 48 09 c3 4c 29 e3 bf 01 00 00 00 e8 35 ef 68 ff 65 8b 05 02 41 df 62 85 c0 0f 94 c0 4c 39 f3 73 70 0f 1f 40 00 a8 01 75 45 f3 90 <bf> 01 00 00 00 e8 50 ee 68 ff e8 0b 41 a3 ff 41 39 c7 75 36 0f 
+[  968.695822] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[  968.696152] init: Command 'write /sys/kernel/debug/tracing/instances/wifi/events/cfg80211/rdev_connect/enable 1' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:36) took 242829ms and succeeded
+[  968.745405] binder: 3074:3074 transaction failed 29189/-3, size 320-0 line 3274
+[  968.839735] init: Command 'write /sys/kernel/debug/tracing/instances/wifi/events/cfg80211/rdev_set_default_key/enable 1' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:37) took 101ms and succeeded
+[  968.851408] binder_alloc: 2676: binder_alloc_buf, no vma
+[  968.851496] binder: 2813:3337 transaction failed 29189/-3, size 220-0 line 3274
+[  968.861575] binder_alloc: 2676: binder_alloc_buf, no vma
+[  968.864582] init: Service 'exec 14 (/system/bin/bootstat --record_boot_complete --record_boot_reason --record_time_since_factory_reset -l)' (pid 3338) exited with status 0
+[  968.991748] init: Command 'write /sys/kernel/debug/tracing/instances/wifi/events/cfg80211/rdev_set_rekey_data/enable 1' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:39) took 61ms and succeeded
+[  968.999563] binder_alloc: 2676: binder_alloc_buf, no vma
+[  968.999625] binder: 2613:2653 transaction failed 29189/-3, size 188-0 line 3274
+[  968.999924] binder: 2813:2903 transaction failed 29189/-3, size 80-0 line 3274
+[  969.000848] binder_alloc: 2676: binder_alloc_buf, no vma
+[  969.000876] binder: 3074:3074 transaction failed 29189/-3, size 3000-8 line 3274
+[  969.105324] init: Async property child exited with status 0
+[  969.191015] init: Command 'write /sys/kernel/debug/tracing/instances/wifi/events/net/filter name==${wifi.interface:-wlan0}' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:46) took 85ms and succeeded
+[  969.359760] init: Async property child exited with status 0
+[  969.442851] init: Command 'write /sys/kernel/debug/tracing/instances/wifi/events/net/netif_rx/enable 1' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:49) took 60ms and succeeded
+[  969.505533] init: processing action (dev.bootcomplete=1) from (/vendor/etc/init/hw/init.ranchu.rc:81)
+[  969.556733] init: processing action (persist.sys.zram_enabled=1 && sys-boot-completed-set) from (/vendor/etc/init/hw/init.ranchu.rc:166)
+[  969.632874] init: Skip mounting partition: /product
+[  969.633141] init: Skip mounting partition: /product_services
+[  969.675374] zram0: detected capacity change from 0 to 2357243904
+[  969.768292] binder: 1855:2186 transaction failed 29189/-22, size 64-0 line 3128
+[  970.103010] binder_alloc: 2676: binder_alloc_buf, no vma
+[  970.106394] binder: 1620:2312 transaction failed 29189/-3, size 4-0 line 3274
+[  970.106671] binder: send failed reply for transaction 42324 to 2676:2695
+[  970.183671] mkswap: Swapspace size: 2301992k, UUID=9a899a36-549c-48ca-949c-382f565d62db
+[  970.196247] Adding 2301992k swap on dev/block/zram0.  Priority:-2 extents:1 across:2301992k SS
+[  970.198350] init: Command 'swapon_all /vendor/etc/fstab.${ro.hardware}' action=persist.sys.zram_enabled=1 && sys-boot-completed-set (/vendor/etc/init/hw/init.ranchu.rc:167) took 640ms and succeeded
+[  970.603799] binder_alloc: 2676: binder_alloc_buf, no vma
+[  970.604064] binder: 2614:2614 transaction failed 29189/-3, size 68-0 line 3274
+[  970.791362] binder: undelivered TRANSACTION_COMPLETE
+[  970.791527] binder: undelivered transaction 75889, process died.
+[  970.799637] binder: send failed reply for transaction 75897 to 1771:3034
+[  970.820717] binder: undelivered TRANSACTION_COMPLETE
+[  970.820873] binder: undelivered TRANSACTION_ERROR: 29189
+[  970.822108] binder: release 2676:3148 transaction 44089 in, still active
+[  970.822238] binder: send failed reply for transaction 44089 to 3334:3334
+[  971.021583] init: Received control message 'start' for 'bootanim' from pid: 1811 (/system/bin/surfaceflinger)
+[  971.023584] init: starting service 'bootanim'...
+[  971.108242] binder: 1811:1811 transaction failed 29189/-22, size 96-0 line 3128
+[  971.163988] init: Service 'zygote' (pid 2606) received signal 9
+[  971.164509] init: Sending signal 9 to service 'zygote' (pid 2606) process group...
+[  971.209423] libprocessgroup: Successfully killed process cgroup uid 0 pid 2606 in 43ms
+[  971.276452] init: Command 'write /sys/power/state on' action=onrestart (<Service 'zygote' onrestart>:2) took 2ms and failed: Unable to write to file '/sys/power/state': Unable to write file contents: Invalid argument
+[  971.276914] init: Sending signal 9 to service 'audioserver' (pid 2610) process group...
+[  971.648399] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2610 in 371ms
+[  971.649387] init: Command 'restart audioserver' action=onrestart (<Service 'zygote' onrestart>:3) took 372ms and succeeded
+[  971.649609] init: Sending signal 9 to service 'cameraserver' (pid 2611) process group...
+[  971.832347] libprocessgroup: Successfully killed process cgroup uid 1047 pid 2611 in 182ms
+[  971.833263] init: Command 'restart cameraserver' action=onrestart (<Service 'zygote' onrestart>:4) took 183ms and succeeded
+[  971.833832] init: Sending signal 9 to service 'media' (pid 2612) process group...
+[  972.065231] libprocessgroup: Successfully killed process cgroup uid 1013 pid 2612 in 228ms
+[  972.066491] init: Command 'restart media' action=onrestart (<Service 'zygote' onrestart>:5) took 232ms and succeeded
+[  972.066715] init: Sending signal 9 to service 'netd' (pid 2613) process group...
+[  972.334212] libprocessgroup: Successfully killed process cgroup uid 0 pid 2613 in 175ms
+[  972.335119] init: Command 'restart netd' action=onrestart (<Service 'zygote' onrestart>:6) took 268ms and succeeded
+[  972.335459] init: Sending signal 9 to service 'wificond' (pid 2614) process group...
+[  972.354730] libprocessgroup: Successfully killed process cgroup uid 1010 pid 2614 in 18ms
+[  972.383603] init: Service 'audioserver' (pid 2610) received signal 9
+[  972.383871] init: Sending signal 9 to service 'vendor.audio-hal-2-0' (pid 2615) process group...
+[  972.596352] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2615 in 207ms
+[  972.599543] init: Command 'restart vendor.audio-hal-2-0' action=onrestart (<Service 'audioserver' onrestart>:1) took 215ms and succeeded
+[  972.632303] init: Command 'restart vendor.audio-hal-4-0-msd' action=onrestart (<Service 'audioserver' onrestart>:2) took 32ms and failed: service vendor.audio-hal-4-0-msd not found
+[  972.632689] init: Command 'restart audio-hal-2-0' action=onrestart (<Service 'audioserver' onrestart>:3) took 0ms and failed: service audio-hal-2-0 not found
+[  972.655594] init: Service 'cameraserver' (pid 2611) received signal 9
+[  972.659774] init: Service 'media' (pid 2612) received signal 9
+[  972.685031] init: Service 'netd' (pid 2613) received signal 9
+[  972.713412] init: Sending signal 9 to service 'zygote_secondary' (pid 2609) process group...
+[  973.107765] libprocessgroup: Successfully killed process cgroup uid 0 pid 2609 in 392ms
+[  973.108690] init: Command 'restart zygote_secondary' action=onrestart (<Service 'netd' onrestart>:2) took 412ms and succeeded
+[  973.109719] init: Service 'zygote_secondary' (pid 2609) received signal 9
+[  973.123367] init: Service 'wificond' (pid 2614) received signal 9
+[  973.124226] init: Service 'vendor.audio-hal-2-0' (pid 2615) received signal 9
+[  973.125073] init: Untracked pid 2993 received signal 9
+[  973.125524] init: Untracked pid 3036 received signal 9
+[  973.125933] init: Untracked pid 3136 received signal 9
+[  973.126400] init: Untracked pid 3207 received signal 9
+[  973.126823] init: Untracked pid 3239 received signal 9
+[  973.127172] init: Untracked pid 3271 received signal 9
+[  973.127986] init: Untracked pid 2617 received signal 9
+[  973.128330] init: Untracked pid 2643 received signal 9
+[  973.148874] init: starting service 'zygote'...
+[  973.219134] init: Created socket '/dev/socket/zygote', mode 660, user 0, group 1000
+[  973.263467] init: Created socket '/dev/socket/usap_pool_primary', mode 660, user 0, group 1000
+[  973.312916] init: starting service 'zygote_secondary'...
+[  973.395706] init: Created socket '/dev/socket/zygote_secondary', mode 660, user 0, group 1000
+[  973.397536] init: Created socket '/dev/socket/usap_pool_secondary', mode 660, user 0, group 1000
+[  973.556090] init: starting service 'audioserver'...
+[  973.564288] init: starting service 'cameraserver'...
+[  973.564288] init: starting service 'media'...
+[  973.641898] init: couldn't write 3487 to /dev/cpuset/camera-daemon/tasks: No such file or directory
+[  974.087875] init: starting service 'netd'...
+[  974.433488] init: starting service 'wificond'...
+[  974.444495] init: Created socket '/dev/socket/dnsproxyd', mode 660, user 0, group 3003
+[  974.446410] init: Created socket '/dev/socket/mdns', mode 660, user 0, group 1000
+[  974.447929] init: Created socket '/dev/socket/fwmarkd', mode 660, user 0, group 3003
+[  974.604939] init: starting service 'vendor.audio-hal-2-0'...
+[  979.510775] init: Untracked pid 3495 received signal 1

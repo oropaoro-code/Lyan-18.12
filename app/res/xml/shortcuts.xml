@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:ns0="http://schemas.android.com/apk/res/android">
+    <shortcut ns0:icon="@drawable/ic_shortcut_last_page" ns0:enabled="true" ns0:shortcutId="lastPage" ns0:shortcutShortLabel="@string/menu_jump_last_page" ns0:shortcutLongLabel="@string/menu_jump_last_page">
+        <intent ns0:targetPackage="app.layan.quran" ns0:action="app.layan.quran.last_page" ns0:targetClass="app.layan.quran.ShortcutsActivity" />
+    </shortcut>
+    <shortcut ns0:icon="@drawable/ic_baseline_arrow_upright_black_24" ns0:enabled="true" ns0:shortcutId="jumpTo" ns0:shortcutShortLabel="@string/menu_jump" ns0:shortcutLongLabel="@string/menu_jump">
+        <intent ns0:targetPackage="app.layan.quran" ns0:action="app.layan.quran.jump_to" ns0:targetClass="app.layan.quran.ShortcutsActivity" />
+    </shortcut>
+</shortcuts>

@@ -1,0 +1,169 @@
+{
+  "result": "PASS",
+  "guides": [
+    {
+      "id": "abu-harith",
+      "sha256": "c130212a60296bae3c7c7ccddccd73568564931e926aa1a4b51b95c676e7f6be",
+      "paintKinds": 5,
+      "fullMeanings": true,
+      "pageCount": 604,
+      "unresolved": 0
+    },
+    {
+      "id": "buzzi",
+      "sha256": "6db211cc353ebec91ad9aa9b98aa2bd2c2af2b459f4be0d77e56ab9dff3f26af",
+      "paintKinds": 7,
+      "fullMeanings": true,
+      "pageCount": 604,
+      "unresolved": 0
+    },
+    {
+      "id": "duri-kisai",
+      "sha256": "555ab79f693ccfd4c958d01d3cd5ac4e6d5b25292907abe07927ed901fec42c8",
+      "paintKinds": 6,
+      "fullMeanings": true,
+      "pageCount": 604,
+      "unresolved": 0
+    },
+    {
+      "id": "duri",
+      "sha256": "6520cfff2a104efa20e0c9d504e9379341e5e041769ff5fc5ec166887cd48189",
+      "paintKinds": 4,
+      "fullMeanings": true,
+      "pageCount": 604,
+      "unresolved": 0
+    },
+    {
+      "id": "hafs",
+      "sha256": "e82c448398cf76ab2199a31f08d88af7a4ba1319c42dfb39fcf76d0c525fa8ed",
+      "paintKinds": 0,
+      "fullMeanings": true,
+      "pageCount": 604,
+      "unresolved": 0
+    },
+    {
+      "id": "hisham",
+      "sha256": "655507abc95e4d1267bf30e3f8435df7dc50b343ab9d239f074d78252a94f732",
+      "paintKinds": 4,
+      "fullMeanings": true,
+      "pageCount": 604,
+      "unresolved": 0
+    },
+    {
+      "id": "ibn-dhakwan",
+      "sha256": "978ab94d0cdb941e44741be49e9fa92a88bc76653e9a4eb8d29db6a2c99b123b",
+      "paintKinds": 5,
+      "fullMeanings": true,
+      "pageCount": 604,
+      "unresolved": 0
+    },
+    {
+      "id": "ibn-jammaz",
+      "sha256": "764c8d2e876eff87431cdd2196a6bdb1215ef035de6bd38b566a62eb22eeb022",
+      "paintKinds": 9,
+      "fullMeanings": true,
+      "pageCount": 604,
+      "unresolved": 0
+    },
+    {
+      "id": "ibn-wardan",
+      "sha256": "44ebb2ec612fce25d4ad0eeca9da6030da4b010e1a7c52b30c9fad467eac1a30",
+      "paintKinds": 9,
+      "fullMeanings": true,
+      "pageCount": 604,
+      "unresolved": 0
+    },
+    {
+      "id": "idris",
+      "sha256": "ac7deabe63c67d16246e6d43db5260081d88ae9ab16fb2ed739c7f720ae358e4",
+      "paintKinds": 8,
+      "fullMeanings": true,
+      "pageCount": 604,
+      "unresolved": 0
+    },
+    {
+      "id": "ishaq",
+      "sha256": "6a2e5a7d7a80a7bcfe8e308bb4284b7e6260d20d1a1234f39c1628f4a06fab90",
+      "paintKinds": 8,
+      "fullMeanings": true,
+      "pageCount": 604,
+      "unresolved": 0
+    },
+    {
+      "id": "khalaf",
+      "sha256": "fefe2f02b32495792d43c770c64fb1f1f47df44413684ce3a4d62ceb4186f395",
+      "paintKinds": 10,
+      "fullMeanings": true,
+      "pageCount": 604,
+      "unresolved": 0
+    },
+    {
+      "id": "khallad",
+      "sha256": "e0bd551ac848edf5de1c2ce7014341d3a3f964c82116156d15fe6d5a86e85dd1",
+      "paintKinds": 8,
+      "fullMeanings": true,
+      "pageCount": 604,
+      "unresolved": 0
+    },
+    {
+      "id": "qaloon",
+      "sha256": "8cade7cb68a790a4642d9537367e76c707e082c33329e39a1547dddadf1f651f",
+      "paintKinds": 6,
+      "fullMeanings": true,
+      "pageCount": 604,
+      "unresolved": 0
+    },
+    {
+      "id": "qunbul",
+      "sha256": "acd2b8f8772c468f9a8201bad11de1536634a1d33e2db8a4ffea27ca4bab8818",
+      "paintKinds": 4,
+      "fullMeanings": true,
+      "pageCount": 604,
+      "unresolved": 0
+    },
+    {
+      "id": "rawh",
+      "sha256": "ca64e6b49b00cae8d012b0ba27de1a5c02fd28d6268db914bdeb3aa4a2d5467d",
+      "paintKinds": 4,
+      "fullMeanings": true,
+      "pageCount": 604,
+      "unresolved": 0
+    },
+    {
+      "id": "ruways",
+      "sha256": "54a4c59c1166b0387609398c900e1447218c8956db356df72efe240a5621bca8",
+      "paintKinds": 5,
+      "fullMeanings": true,
+      "pageCount": 604,
+      "unresolved": 0
+    },
+    {
+      "id": "shubah",
+      "sha256": "80a72f2cffa26e497e16715253d19b853022862722a7536f819f2a46cc23ca39",
+      "paintKinds": 3,
+      "fullMeanings": true,
+      "pageCount": 604,
+      "unresolved": 0
+    },
+    {
+      "id": "susi",
+      "sha256": "bbcb0dbde822abb9ec299273b552a6e88033ad3415b80e381f418b0dd47ca53b",
+      "paintKinds": 5,
+      "fullMeanings": true,
+      "pageCount": 604,
+      "unresolved": 0
+    },
+    {
+      "id": "warsh",
+      "sha256": "822496b8571f20f568c8c39848d9631a19a19ccf00d45244a2a6ec7c57349b33",
+      "paintKinds": 12,
+      "fullMeanings": true,
+      "pageCount": 604,
+      "unresolved": 0
+    }
+  ],
+  "allGuidesComplete": true,
+  "allPaintsRepresented": 122,
+  "allPageInventories": 12080,
+  "basis": "Publisher colour keys, exact original glyph occurrence review and documented local word performance. This does not imply a new universal meaning for undeclared publisher shades."
+}

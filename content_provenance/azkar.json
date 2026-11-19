@@ -1,0 +1,29 @@
+{
+  "uploaded_archive_sha256": "05532e023a9a5afbf876453e9962ae73c27766659828cc7e3ba581d654ff9578",
+  "source_apk_sha256": "f1919ef218f99bddef7b5c75328458b74d83c73e1b290d9be89d8e1540adcb04",
+  "source_package": "com.simppro.azkar",
+  "source_version": "3.4",
+  "source_version_code": 34,
+  "sections": 26,
+  "items": 312,
+  "empty_section_ids": [],
+  "preserved_fields": [
+    "id",
+    "cat_id",
+    "name/text",
+    "repeat",
+    "hint",
+    "arrange"
+  ],
+  "sort": "Original cats ORDER BY arrange; items ORDER BY arrange",
+  "json_sha256": "14de4a6c225a3614dcb99506f48d4247239208f651068a20e7b46fe1bfefa84d",
+  "note": "Only content records extracted; no source application code, fonts, audio, SDKs, accounts, alarms or configuration are integrated.",
+  "original_sections": 27,
+  "excluded_sections": [
+    {
+      "id": 0,
+      "title": "أذكاري",
+      "reason": "Empty in reference; explicitly removed at user request."
+    }
+  ]
+}

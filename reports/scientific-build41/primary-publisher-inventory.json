@@ -1,0 +1,334 @@
+[
+  {
+    "code": "3",
+    "name": "قالون عن نافع",
+    "kind": "info",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/qaloon/info.pdf",
+    "path": "scientific-reference/publisher-3-info.pdf",
+    "sha256": "6a2bfe13a2ea71c78991d9a288a96a55d0c37f0c2c28d6eac4c56740244bc460",
+    "pages": 6,
+    "textCharacters": 6781
+  },
+  {
+    "code": "3",
+    "name": "قالون عن نافع",
+    "kind": "osol",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/qaloon/osol.pdf",
+    "path": "scientific-reference/publisher-3-osol.pdf",
+    "sha256": "ae416722fe603c8e1ac8b1325156b4e23be9cb191d1208185c3e737fa36f74b4",
+    "pages": 10,
+    "textCharacters": 16065
+  },
+  {
+    "code": "2",
+    "name": "ورش عن نافع",
+    "kind": "info",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/warsh/info.pdf",
+    "path": "scientific-reference/publisher-2-info.pdf",
+    "sha256": "42a93464e1d2fb3ae6f999bdc7529635d962f4eb4daaa5470e10adf53780dd68",
+    "pages": 6,
+    "textCharacters": 10339
+  },
+  {
+    "code": "2",
+    "name": "ورش عن نافع",
+    "kind": "osol",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/warsh/osol.pdf",
+    "path": "scientific-reference/publisher-2-osol.pdf",
+    "sha256": "1afc4ebc39fa46c9a5ae81bfe55e5c00ce7288dc89d14eb95a1943d48e2754db",
+    "pages": 16,
+    "textCharacters": 31430
+  },
+  {
+    "code": "19",
+    "name": "البزي عن ابن كثير",
+    "kind": "info",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/albuzi/info.pdf",
+    "path": "scientific-reference/publisher-19-info.pdf",
+    "sha256": "b40228b0989963c821524cdd088a9d9768849882dfd9d51c2fcebc6d52855795",
+    "pages": 8,
+    "textCharacters": 3306
+  },
+  {
+    "code": "28",
+    "name": "قنبل عن ابن كثير",
+    "kind": "info",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/qunbol/info.pdf",
+    "path": "scientific-reference/publisher-28-info.pdf",
+    "sha256": "8d1742ed90016a7ff6db2e98af249303edf98dfbe9cef450906ba7bd44bb6195",
+    "pages": 4,
+    "textCharacters": 5511
+  },
+  {
+    "code": "28",
+    "name": "قنبل عن ابن كثير",
+    "kind": "osol",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/qunbol/osol.pdf",
+    "path": "scientific-reference/publisher-28-osol.pdf",
+    "sha256": "5f1f00eeffa52ac1cbc312dc78d99d645cd6fcbfd9873262151d216480b9ba04",
+    "pages": 10,
+    "textCharacters": 16839
+  },
+  {
+    "code": "20",
+    "name": "الدوري عن أبي عمرو",
+    "kind": "info",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/Dori2/info.pdf",
+    "path": "scientific-reference/publisher-20-info.pdf",
+    "sha256": "bf1b75bacc32edd02cb89ae0af6619baa9e5ff48ce167b3361322fda12a37413",
+    "pages": 5,
+    "textCharacters": 6275
+  },
+  {
+    "code": "20",
+    "name": "الدوري عن أبي عمرو",
+    "kind": "osol",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/Dori2/osol.pdf",
+    "path": "scientific-reference/publisher-20-osol.pdf",
+    "sha256": "7392d387499ce5d31e249dd5b9ca5d321672859895f16191ac28fbfa43412776",
+    "pages": 12,
+    "textCharacters": 20854
+  },
+  {
+    "code": "4",
+    "name": "السوسي عن أبي عمرو",
+    "kind": "info",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/alsosi/info.pdf",
+    "path": "scientific-reference/publisher-4-info.pdf",
+    "sha256": "b981d3bdba153cb1b2682fc9d0eea4593c5f366cd48d0a78d1239c9895af9480",
+    "pages": 12,
+    "textCharacters": 6529
+  },
+  {
+    "code": "26",
+    "name": "هشام عن ابن عامر",
+    "kind": "info",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/hesham/info.pdf",
+    "path": "scientific-reference/publisher-26-info.pdf",
+    "sha256": "eca99e76c06578ab8415e8b4f48af913723a8d79532aea5ca23a3782c7b9c948",
+    "pages": 7,
+    "textCharacters": 8514
+  },
+  {
+    "code": "26",
+    "name": "هشام عن ابن عامر",
+    "kind": "osol",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/hesham/osol.pdf",
+    "path": "scientific-reference/publisher-26-osol.pdf",
+    "sha256": "6bd28fd1572308476137d2c05e075c0579fa216b39fe69af44276d17c36fc7b1",
+    "pages": 10,
+    "textCharacters": 11020
+  },
+  {
+    "code": "27",
+    "name": "ابن ذكوان عن ابن عامر",
+    "kind": "info",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/thakwaan/info.pdf",
+    "path": "scientific-reference/publisher-27-info.pdf",
+    "sha256": "9bc2d8407633c12c0107e2a48fda07271b0440b0a9ab46cae319aa49e99faa18",
+    "pages": 7,
+    "textCharacters": 2832
+  },
+  {
+    "code": "25",
+    "name": "شعبة عن عاصم",
+    "kind": "info",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/shuaba/info.pdf",
+    "path": "scientific-reference/publisher-25-info.pdf",
+    "sha256": "86fffdbcba74ccfc257a3bd697d360b9148bac0117ccba485c1e7e019e2ea963",
+    "pages": 3,
+    "textCharacters": 4808
+  },
+  {
+    "code": "25",
+    "name": "شعبة عن عاصم",
+    "kind": "osol",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/shuaba/osol.pdf",
+    "path": "scientific-reference/publisher-25-osol.pdf",
+    "sha256": "63a6db7f2e985b00fe633bf5d33866a19e9dd9e7b8b28b449d78ed6724960fc9",
+    "pages": 6,
+    "textCharacters": 8531
+  },
+  {
+    "code": "1",
+    "name": "حفص عن عاصم",
+    "kind": "info",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/hafs/info.pdf",
+    "path": "scientific-reference/publisher-1-info.pdf",
+    "sha256": "dad0eec8e26f54e17b61b36c00506f363f949c730388a4b2ca279cab46e6bdac",
+    "pages": 12,
+    "textCharacters": 11
+  },
+  {
+    "code": "13",
+    "name": "خلف عن حمزة",
+    "kind": "info",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/khalaf/info.pdf",
+    "path": "scientific-reference/publisher-13-info.pdf",
+    "sha256": "a969ea1827941b88766bf355ad923d18d14c21dd0a1be5e77d8add62520aa766",
+    "pages": 6,
+    "textCharacters": 7966
+  },
+  {
+    "code": "13",
+    "name": "خلف عن حمزة",
+    "kind": "osol",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/khalaf/osol.pdf",
+    "path": "scientific-reference/publisher-13-osol.pdf",
+    "sha256": "f14d5e5800df4c4a8421be7bc1e6e83bc30098f3a4870d4b8c536481b2d0e6a8",
+    "pages": 16,
+    "textCharacters": 25544
+  },
+  {
+    "code": "22",
+    "name": "خلاد عن حمزة",
+    "kind": "info",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/khallad/info.pdf",
+    "path": "scientific-reference/publisher-22-info.pdf",
+    "sha256": "581ab7d074cefd0a6f8e90ae2dbb5cdd9f2052dd0f2c59ab10f9a6964dc2ab87",
+    "pages": 3,
+    "textCharacters": 3609
+  },
+  {
+    "code": "22",
+    "name": "خلاد عن حمزة",
+    "kind": "osol",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/khallad/osol.pdf",
+    "path": "scientific-reference/publisher-22-osol.pdf",
+    "sha256": "d2430928ee9c5bdf029297d787ac56948fa161f4f4ba67ab30679be2b5238f02",
+    "pages": 16,
+    "textCharacters": 26253
+  },
+  {
+    "code": "15",
+    "name": "أبي الحارث عن الكسائي",
+    "kind": "info",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/alhareth/info.pdf",
+    "path": "scientific-reference/publisher-15-info.pdf",
+    "sha256": "fb4a0915f34067a7a89608ba826333b1ec768ebd7ec4d4cd10298a598f6a7b42",
+    "pages": 6,
+    "textCharacters": 6636
+  },
+  {
+    "code": "15",
+    "name": "أبي الحارث عن الكسائي",
+    "kind": "osol",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/alhareth/osol.pdf",
+    "path": "scientific-reference/publisher-15-osol.pdf",
+    "sha256": "d3000ad23efb227f12d43283539e8493a1a60e672068c3a051897cb05129e0b2",
+    "pages": 15,
+    "textCharacters": 17044
+  },
+  {
+    "code": "21",
+    "name": "الدوري عن الكسائي",
+    "kind": "info",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/Dori/info.pdf",
+    "path": "scientific-reference/publisher-21-info.pdf",
+    "sha256": "20a59c33210256e09be434e300efd7d6b3ed31130d7b52102fe86f6f31337c5b",
+    "pages": 10,
+    "textCharacters": 5145
+  },
+  {
+    "code": "29",
+    "name": "ابن وردان عن أبي جعفر",
+    "kind": "osol",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/wardan/osol.pdf",
+    "path": "scientific-reference/publisher-29-osol.pdf",
+    "sha256": "90f3b9abe1d06603473d6ab713c1e916e7e2557d8e3a283acb088de0d6522a4f",
+    "pages": 7,
+    "textCharacters": 10174
+  },
+  {
+    "code": "24",
+    "kind": "osol",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/ruwis/osol.pdf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "code": "23",
+    "name": "روح عن يعقوب الحضرمي",
+    "kind": "osol",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/rawh/osol.pdf",
+    "path": "scientific-reference/publisher-23-osol.pdf",
+    "sha256": "5a5450bace4ef4502a46d7bee5588cbf3a95a58dbe84cdf2c625ff60a3799bc0",
+    "pages": 7,
+    "textCharacters": 9156
+  },
+  {
+    "code": "16",
+    "name": "إدريس الحداد عن خلف البزار",
+    "kind": "osol",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/edris/osol.pdf",
+    "path": "scientific-reference/publisher-16-osol.pdf",
+    "sha256": "87d553fdc890e82ffecf25fc28ed775dcd26d6e4be68c18acadd30b57552dc3c",
+    "pages": 4,
+    "textCharacters": 4786
+  },
+  {
+    "code": "17",
+    "name": "إسحاق الوراق عن خلف البزار",
+    "kind": "osol",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/eshaq/osol.pdf",
+    "path": "scientific-reference/publisher-17-osol.pdf",
+    "sha256": "87d553fdc890e82ffecf25fc28ed775dcd26d6e4be68c18acadd30b57552dc3c",
+    "pages": 4,
+    "textCharacters": 4786
+  },
+  {
+    "code": "31",
+    "name": "ورش عن نافع من طريق الأصبهاني",
+    "kind": "info",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/WarshAsbahani/info.pdf",
+    "path": "scientific-reference/publisher-31-info.pdf",
+    "sha256": "7e065e916fd244c5d6a0ce091f12e616ff0aca28dc70fe21d2a8520c4bff3b04",
+    "pages": 3,
+    "textCharacters": 5571
+  },
+  {
+    "code": "31",
+    "name": "ورش عن نافع من طريق الأصبهاني",
+    "kind": "osol",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/WarshAsbahani/osol.pdf",
+    "path": "scientific-reference/publisher-31-osol.pdf",
+    "sha256": "f38eaad4daa6389678cb783cc1125fb412baacdfad0599196f07afe1a6ff9574",
+    "pages": 10,
+    "textCharacters": 14744
+  },
+  {
+    "code": "shared",
+    "name": "shared",
+    "kind": "qaryat1",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/qaryat1.xlsx",
+    "path": "scientific-reference/publisher-shared-qaryat1.xlsx",
+    "sha256": "f4281ea4f96ecf4be4c008760c5c0676bac2443b3dd739f9990222700396e27f"
+  },
+  {
+    "code": "shared",
+    "name": "shared",
+    "kind": "qaryat2",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/qaryat2.xlsx",
+    "path": "scientific-reference/publisher-shared-qaryat2.xlsx",
+    "sha256": "01c7da2c066f778887a898cda0d810c0bda9dd10ba5b152181e9b5b9454058d8"
+  },
+  {
+    "code": "shared",
+    "name": "shared",
+    "kind": "ya1",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/ya1.pdf",
+    "path": "scientific-reference/publisher-shared-ya1.pdf",
+    "sha256": "be21e887e286fde795e32a8497ed6b8a0e0ffbab34c55309a96811bd5f2bfef4",
+    "pages": 14,
+    "textCharacters": 44394
+  },
+  {
+    "code": "shared",
+    "name": "shared",
+    "kind": "ya2",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/ya2.pdf",
+    "path": "scientific-reference/publisher-shared-ya2.pdf",
+    "sha256": "1d9756b8bde8d529d34b70192fa6f6b7554c5dc98065be81dd15a48647bca078",
+    "pages": 8,
+    "textCharacters": 13286
+  }
+]

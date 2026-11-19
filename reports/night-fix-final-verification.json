@@ -1,0 +1,24 @@
+{
+  "versionName": "18.12",
+  "versionCode": 40,
+  "testedApi": 29,
+  "apkSha256": "cc04af54c3bed9233365aebb76f48c83ffa7dee1777f5bea9a326530eddb108a",
+  "allRequiredChecksPassed": true,
+  "requiredChecks": {
+    "corpus-install": "PASS",
+    "night-source": "PASS",
+    "night-tabs": "PASS",
+    "immersive": "PASS",
+    "bubble-preview": "PASS",
+    "full-guides": "PASS"
+  },
+  "initialCombinedCheck": {
+    "result": "FAIL",
+    "reason": "SystemUI ANR caused rejected injected input; replaced by independent source and focused tab runs, both passed on the same APK"
+  },
+  "colourPagesAudited": 12080,
+  "guidePaintStyles": 122,
+  "edgeSamples": 31110,
+  "titleColourEntries": 398,
+  "scientificEveryWordAndRouteReviewComplete": false
+}

@@ -1,0 +1,41 @@
+{
+  "versionName": "18.12",
+  "versionCode": 33,
+  "apkSha256": "5d93152f8d3a3af5dd9eb6e1a9609c3dd72f4c14f2aa9a313a430d4f0294269c",
+  "aabSha256": "121183286f4cf1c42a3468c3fd5a469c4f4e94c2fef95fe9a274fcce408bb81a",
+  "productionReady": false,
+  "nativeMatrixComplete": false,
+  "signingCertificateSha256": "9702d490a448abaa42e113f8b2f6c65915b9b8840d8cd0173d041389dc431474",
+  "checks": {
+    "signatureApi29": "PASS",
+    "signatureApi30": "PASS",
+    "signatureApi31": "PASS",
+    "signatureApi32": "PASS",
+    "signatureApi33": "PASS",
+    "signatureApi34": "PASS",
+    "signatureApi35": "PASS",
+    "signatureApi36": "PASS",
+    "alignment16KB": "PASS",
+    "bundleStructure": "PASS",
+    "bundleSignature": "PASS",
+    "expectedSigningCertificate": "PASS",
+    "expectedBundleSigningCertificate": "PASS",
+    "publishingRecordingUncompressedConfig": "PASS",
+    "compiledVersionAndSdk": "PASS",
+    "integrityAndNoPrivateKey": "PASS",
+    "testedApkMatchesPublishingBundle": "PASS",
+    "timezoneProviderAndData": "PASS",
+    "nativePackagingStrategy": "PASS",
+    "nativeLoadSegmentLayout": "PASS"
+  },
+  "nativePackaging": "Compressed native libraries with extraction; packaged ELF LOAD alignment checked",
+  "nativeLoadAlignment": {
+    "lib/arm64-v8a/libandroidx.graphics.path.so": 16384,
+    "lib/armeabi-v7a/libandroidx.graphics.path.so": 16384,
+    "lib/x86/libandroidx.graphics.path.so": 16384,
+    "lib/x86_64/libandroidx.graphics.path.so": 16384
+  },
+  "changeScope": "Only version name and About label restored to 18.12; internal build 33; same signing key and reminder implementation.",
+  "previousNativeEvidence": "Four genuine background cases on the preceding 18.13 build 32; not rerun for this version-label-only rebuild.",
+  "physicalInfinixVerification": "Pending"
+}

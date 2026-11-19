@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ns0:orientation="vertical" ns0:layout_width="fill_parent" ns0:layout_height="fill_parent"
+  xmlns:ns0="http://schemas.android.com/apk/res/android">
+    <LinearLayout ns0:orientation="vertical" ns0:layout_width="fill_parent" ns0:layout_height="fill_parent">
+        <app.layan.quran.view.QuranSpinner ns0:textSize="14.0sp" ns0:textStyle="bold" ns0:textColor="@color/accent_color" ns0:id="@id/translator" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" ns0:layout_marginLeft="@dimen/translation_left_right_margin" ns0:layout_marginTop="@dimen/translation_top_bottom_margin" ns0:layout_marginRight="@dimen/translation_left_right_margin" />
+        <app.layan.quran.view.InlineTranslationView ns0:id="@id/translation_view" ns0:layout_width="fill_parent" ns0:layout_height="fill_parent" />
+    </LinearLayout>
+    <app.layan.quran.view.LeftToRightLinearLayout ns0:layout_gravity="bottom" ns0:id="@id/controls" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content">
+        <ImageButton ns0:id="@id/next_ayah" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:src="@drawable/ic_translation_next" ns0:contentDescription="@string/next" />
+        <Space ns0:layout_width="0.0dip" ns0:layout_height="wrap_content" ns0:layout_weight="1.0" />
+        <ImageButton ns0:id="@id/previous_ayah" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:src="@drawable/ic_translation_previous" ns0:contentDescription="@string/previous" />
+    </app.layan.quran.view.LeftToRightLinearLayout>
+    <LinearLayout ns0:orientation="vertical" ns0:id="@id/empty_state" ns0:padding="8.0dip" ns0:visibility="gone" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content">
+        <TextView ns0:gravity="center_horizontal" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" ns0:layout_marginTop="8.0dip" ns0:text="@string/need_translation" />
+        <Button ns0:id="@id/get_translations_button" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" ns0:text="@string/get_translations" />
+    </LinearLayout>
+    <ProgressBar ns0:layout_gravity="center" ns0:id="@id/progress" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" />
+</FrameLayout>

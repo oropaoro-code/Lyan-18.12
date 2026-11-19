@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout ns0:layout_gravity="center_vertical" ns0:id="@id/widget_item" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" ns0:layout_marginTop="8.0dip" ns0:layout_marginBottom="8.0dip" ns0:layout_marginVertical="8.0dip"
+  xmlns:ns0="http://schemas.android.com/apk/res/android" xmlns:ns1="http://schemas.android.com/apk/res-auto">
+    <ImageView ns0:layout_gravity="center_vertical" ns0:id="@id/widget_favorite_icon" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:layout_marginLeft="8.0dip" ns0:layout_marginRight="8.0dip" ns0:layout_centerVertical="true" ns0:layout_marginHorizontal="8.0dip" ns1:srcCompat="@drawable/ic_favorite" />
+    <TextView ns0:textAppearance="@style/TitleText" ns0:textStyle="bold" ns0:textColor="#ff103f32" ns0:id="@id/sura_title" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:layout_marginBottom="4.0dip" ns0:fontFamily="sans-serif" ns0:layout_toEndOf="@id/widget_favorite_icon" />
+    <TextView ns0:textSize="14.0sp" ns0:textColor="#ff65756d" ns0:id="@id/sura_meta_data" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:layout_below="@id/sura_title" ns0:fontFamily="sans-serif" ns0:layout_toEndOf="@id/widget_favorite_icon" />
+</RelativeLayout>

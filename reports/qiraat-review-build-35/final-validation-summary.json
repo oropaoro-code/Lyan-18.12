@@ -1,0 +1,19 @@
+{
+  "finalApkSha256": "f9a598ceb2fdae2d081401df1492823e8394021ba0f48742b9878e090522be87",
+  "api": 29,
+  "nativeFinalResult": "PASS",
+  "verified": [
+    "install update with previous signing key",
+    "Arabic day page and Qaloon marked imala page",
+    "physical RTL touchscreen swipe",
+    "page number under permanent key",
+    "night exact source colours and actual brightness preference"
+  ],
+  "priorAttempts": [
+    "first full scan exceeded harness timeout",
+    "second scan passed twenty readers then failed because the input fixture lacked touchscreen event source; corrected fixture passed focused verification"
+  ],
+  "completeAllVersionMatrix": false,
+  "allQiraatMeaningsVerified": false,
+  "unverifiedPaintKinds": 33
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/prefs_category_advanced" android:key="@string/prefs_advanced_path"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference android:title="@string/prefs_import_title" android:key="@string/prefs_import" android:summary="@string/prefs_import_summary" app:iconSpaceReserved="false" />
+    <Preference android:title="@string/prefs_export_title" android:key="@string/prefs_export" android:summary="@string/prefs_export_summary" app:iconSpaceReserved="false" />
+    <Preference android:title="@string/prefs_export_csv_title" android:key="@string/prefs_export_csv" android:summary="@string/prefs_export_csv_summary" app:iconSpaceReserved="false" />
+    <app.layan.quran.ui.preference.DataListPreference android:title="@string/prefs_app_location_title" android:key="@string/prefs_app_location" android:summary="@string/prefs_app_location_summary" app:iconSpaceReserved="false" />
+    <Preference android:title="@string/prefs_send_logs_title" android:key="@string/prefs_send_logs" android:summary="@string/prefs_send_logs_summary" app:iconSpaceReserved="false" />
+</PreferenceScreen>

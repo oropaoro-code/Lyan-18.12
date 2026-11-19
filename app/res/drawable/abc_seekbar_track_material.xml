@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:ns0="http://schemas.android.com/apk/res/android">
+    <item ns0:id="@android:id/background" ns0:drawable="@drawable/abc_scrubber_track_mtrl_alpha" />
+    <item ns0:id="@android:id/secondaryProgress">
+        <scale ns0:scaleWidth="100%">
+            <selector>
+                <item ns0:state_enabled="false">
+                    <color ns0:color="@android:color/transparent" />
+                </item>
+                <item ns0:drawable="@drawable/abc_scrubber_primary_mtrl_alpha" />
+            </selector>
+        </scale>
+    </item>
+    <item ns0:id="@android:id/progress">
+        <scale ns0:scaleWidth="100%">
+            <selector>
+                <item ns0:state_enabled="false">
+                    <color ns0:color="@android:color/transparent" />
+                </item>
+                <item ns0:drawable="@drawable/abc_scrubber_primary_mtrl_alpha" />
+            </selector>
+        </scale>
+    </item>
+</layer-list>

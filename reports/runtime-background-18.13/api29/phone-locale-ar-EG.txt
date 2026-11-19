@@ -1,0 +1,18 @@
+console:/ $ console:/ $ 
+transport_2861ac468fe94743a0076822547b46d9
+console:/ $ 
+transport_f0a59973796c4f97af9162f75ab0643a
+console:/ $ [  552.307440] binder: release 4084:4084 transaction 194322 out, still active
+[  552.340997] binder: undelivered TRANSACTION_COMPLETE
+[  552.341260] binder: undelivered TRANSACTION_COMPLETE
+[  552.341419] binder: undelivered transaction 194422, process died.
+[  552.341530] binder: undelivered TRANSACTION_COMPLETE
+[  552.341580] binder: undelivered transaction 194420, process died.
+[  553.077166] binder: release 4071:4083 transaction 194415 in, still active
+[  553.077370] binder: send failed reply for transaction 194415 to 1982:4113
+[  553.951648] binder: 1982:3829 transaction failed 29189/0, size 8-0 line 3060
+[  553.952445] binder: send failed reply for transaction 194322, target dead
+INSTRUMENTATION_RESULT: result=PASS real phone locales: [ar_EG]
+INSTRUMENTATION_CODE: -1
+
+LYN_82a387c08c8c4a6195a80fa1e4f73ca2:0

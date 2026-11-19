@@ -1,0 +1,286 @@
+{
+  "upstreamCommit": "edd7afc0551d4bbbb14416a661534f595c97bb67",
+  "source": "Original Islamweb facsimile colour keys retained inside the exact PDF payloads used by the app. MediaBox restored for reading the key hidden by source CropBox.",
+  "originalKeyCount": 18,
+  "noColourKeyVerified": [
+    "hafs",
+    "qaloon"
+  ],
+  "sourceCrops": [
+    {
+      "id": "abu-harith",
+      "clip": [
+        40.0,
+        722.0999755859375,
+        555.0,
+        762.0599975585938
+      ],
+      "restoredMediaBox": [
+        0.0,
+        0.0,
+        595.0,
+        842.0
+      ]
+    },
+    {
+      "id": "buzzi",
+      "clip": [
+        40.0,
+        721.6799926757812,
+        555.0,
+        759.239990234375
+      ],
+      "restoredMediaBox": [
+        0.0,
+        0.0,
+        595.0,
+        842.0
+      ]
+    },
+    {
+      "id": "duri-kisai",
+      "clip": [
+        40.0,
+        726.780029296875,
+        555.0,
+        762.780029296875
+      ],
+      "restoredMediaBox": [
+        0.0,
+        0.0,
+        595.0,
+        842.0
+      ]
+    },
+    {
+      "id": "duri",
+      "clip": [
+        40.0,
+        721.3200073242188,
+        555.219970703125,
+        757.0199584960938
+      ],
+      "restoredMediaBox": [
+        0.0,
+        0.0,
+        595.219970703125,
+        842.0
+      ]
+    },
+    {
+      "id": "hisham",
+      "clip": [
+        40.0,
+        735.780029296875,
+        555.0,
+        771.780029296875
+      ],
+      "restoredMediaBox": [
+        0.0,
+        0.0,
+        595.0,
+        842.0
+      ]
+    },
+    {
+      "id": "ibn-dhakwan",
+      "clip": [
+        40.0,
+        724.0800170898438,
+        555.0,
+        760.0800170898438
+      ],
+      "restoredMediaBox": [
+        0.0,
+        0.0,
+        595.0,
+        842.0
+      ]
+    },
+    {
+      "id": "ibn-jammaz",
+      "clip": [
+        40.0,
+        735.5399780273438,
+        555.219970703125,
+        775.5599975585938
+      ],
+      "restoredMediaBox": [
+        0.0,
+        0.0,
+        595.219970703125,
+        842.0
+      ]
+    },
+    {
+      "id": "ibn-wardan",
+      "clip": [
+        40.0,
+        735.5399780273438,
+        555.219970703125,
+        775.5599975585938
+      ],
+      "restoredMediaBox": [
+        0.0,
+        0.0,
+        595.219970703125,
+        842.0
+      ]
+    },
+    {
+      "id": "idris",
+      "clip": [
+        40.0,
+        734.6398315429688,
+        555.0,
+        775.4398193359375
+      ],
+      "restoredMediaBox": [
+        0.0,
+        0.0,
+        595.0,
+        842.0
+      ]
+    },
+    {
+      "id": "ishaq",
+      "clip": [
+        40.0,
+        734.6398315429688,
+        555.0,
+        775.4398193359375
+      ],
+      "restoredMediaBox": [
+        0.0,
+        0.0,
+        595.0,
+        842.0
+      ]
+    },
+    {
+      "id": "khalaf",
+      "clip": [
+        40.0,
+        722.0399780273438,
+        555.0,
+        758.0399780273438
+      ],
+      "restoredMediaBox": [
+        0.0,
+        0.0,
+        595.0,
+        842.0
+      ]
+    },
+    {
+      "id": "khallad",
+      "clip": [
+        40.0,
+        727.4400024414062,
+        555.0,
+        763.4400024414062
+      ],
+      "restoredMediaBox": [
+        0.0,
+        0.0,
+        595.0,
+        842.0
+      ]
+    },
+    {
+      "id": "qunbul",
+      "clip": [
+        40.0,
+        737.280029296875,
+        555.0,
+        775.97998046875
+      ],
+      "restoredMediaBox": [
+        0.0,
+        0.0,
+        595.0,
+        842.0
+      ]
+    },
+    {
+      "id": "rawh",
+      "clip": [
+        40.0,
+        735.9000244140625,
+        555.219970703125,
+        774.4200439453125
+      ],
+      "restoredMediaBox": [
+        0.0,
+        0.0,
+        595.219970703125,
+        842.0
+      ]
+    },
+    {
+      "id": "ruways",
+      "clip": [
+        40.0,
+        734.6400146484375,
+        555.219970703125,
+        775.5
+      ],
+      "restoredMediaBox": [
+        0.0,
+        0.0,
+        595.219970703125,
+        842.0
+      ]
+    },
+    {
+      "id": "shubah",
+      "clip": [
+        40.0,
+        717.0,
+        555.0,
+        757.97998046875
+      ],
+      "restoredMediaBox": [
+        0.0,
+        0.0,
+        595.0,
+        842.0
+      ]
+    },
+    {
+      "id": "susi",
+      "clip": [
+        40.0,
+        729.780029296875,
+        555.219970703125,
+        768.1800537109375
+      ],
+      "restoredMediaBox": [
+        0.0,
+        0.0,
+        595.219970703125,
+        842.0
+      ]
+    },
+    {
+      "id": "warsh",
+      "clip": [
+        40.0,
+        710.4600219726562,
+        555.219970703125,
+        777.1799926757812
+      ],
+      "restoredMediaBox": [
+        0.0,
+        0.0,
+        595.219970703125,
+        842.0
+      ]
+    }
+  ],
+  "definitionReferences": [
+    "https://quranpedia.net/book/1644/1/2",
+    "https://quranpedia.net/book/545/2/8"
+  ],
+  "limitations": "Brief term explanations do not set one universal madd count or enumerate all tariq-dependent rules."
+}

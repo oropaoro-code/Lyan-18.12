@@ -1,0 +1,43 @@
+console:/ $ console:/ $ 
+transport_a18881701ded445aa211989673be3d18
+console:/ $ console:/ $ 
+transport_2fae39a147134395b871e69bfc6117a1
+console:/ $ [  356.759992] binder: release 2874:3399 transaction 90497 out, still active
+[  356.768003] binder: unexpected work type, 4, not freed
+[  356.768121] binder: undelivered TRANSACTION_COMPLETE
+[  356.768219] binder: release 2874:3500 transaction 96137 out, still active
+[  356.768276] binder: unexpected work type, 4, not freed
+[  356.768317] binder: undelivered TRANSACTION_COMPLETE
+[  356.768400] binder: release 2874:3557 transaction 98038 out, still active
+[  356.768463] binder: unexpected work type, 4, not freed
+[  356.768563] binder: undelivered TRANSACTION_COMPLETE
+[  356.768610] binder: release 2874:3574 transaction 99591 out, still active
+[  356.768662] binder: unexpected work type, 4, not freed
+[  356.768701] binder: undelivered TRANSACTION_COMPLETE
+[  358.932992] binder: 3462:3478 transaction failed 29189/0, size 4-0 line 3060
+[  358.967070] binder: send failed reply for transaction 99591, target dead
+[  359.075268] binder: 3462:3481 transaction failed 29189/0, size 4-0 line 3060
+[  359.076106] binder: send failed reply for transaction 90497, target dead
+[  359.083133] init: Received control message 'start' for 'gsid' from pid: 1984 (system_server)
+[  359.104767] binder: 3462:3540 transaction failed 29189/0, size 4-0 line 3060
+[  359.115906] init: starting service 'gsid'...
+[  359.121844] binder: send failed reply for transaction 98038, target dead
+[  359.358464] binder: 3462:3480 transaction failed 29189/0, size 4-0 line 3060
+[  359.359355] binder: send failed reply for transaction 96137, target dead
+[  360.517883] init: Received control message 'stop' for 'gsid' from pid: 1984 (system_server)
+[  360.518218] init: Sending signal 9 to service 'gsid' (pid 3655) process group...
+[  360.598249] libprocessgroup: Successfully killed process cgroup uid 0 pid 3655 in 78ms
+[  360.609068] init: Service 'gsid' (pid 3655) received signal 9
+[  361.595528] type=1400 audit(1791890645.449:23): avc: denied { read } for comm="DcHandlerThread" name="u:object_r:net_radio0_prop:s0" dev="tmpfs" ino=7308 scontext=u:r:radio:s0 tcontext=u:object_r:net_radio0_prop:s0 tclass=file permissive=0
+[  361.595905] type=1400 audit(1791890716.099:24): avc: granted { read } for comm="main" name="u:object_r:net_dns_prop:s0" dev="tmpfs" ino=7306 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:net_dns_prop:s0 tclass=file
+[  375.239433] binder: undelivered transaction 110931, process died.
+[  375.239723] binder: undelivered transaction 110967, process died.
+[  375.256297] binder: 1803:2243 transaction failed 29189/-22, size 64-0 line 3128
+[  378.658271] binder: 1984:1984 transaction failed 29189/-22, size 88-0 line 3128
+[  380.718431] binder: 2939:3014 transaction failed 29189/-22, size 124-0 line 3128
+[  385.899782] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+  Window #1 Window{e78b138 u0 Application Not Responding: com.android.systemui}:
+LAYAN_TEST_OS_RESTART_com.android.systemui
+LAYAN_UI_READY
+
+LYN_2986ab16a1374c3cbeeb6e7805acbf54:0

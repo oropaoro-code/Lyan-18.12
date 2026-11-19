@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:ns0="http://schemas.android.com/apk/res/android" xmlns:ns1="http://schemas.android.com/apk/res-auto">
+    <item ns0:icon="@drawable/ic_ab_search" ns0:id="@id/search" ns0:title="@string/menu_search" ns1:actionViewClass="androidx.appcompat.widget.SearchView" ns1:showAsAction="always|collapseActionView" />
+</menu>

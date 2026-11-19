@@ -1,0 +1,1 @@
+Command '['/tmp/layan-test-sdk/platform-tools/adb', '-s', 'emulator-5554', 'shell', 'getprop', 'sys.boot_completed']' timed out after 8 seconds

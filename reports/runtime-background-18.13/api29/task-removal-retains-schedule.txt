@@ -1,0 +1,17 @@
+console:/ $ console:/ $ 
+transport_b9d0c73211094f99b539a4edeaa12c83
+console:/ $ 
+transport_d2d371194ec644e6b183b5d6ec536699
+console:/ $ [  597.447655] type=1404 audit(1791784917.189:57): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295
+[  597.455369] type=1400 audit(1791785273.019:58): avc: denied { write } for comm="RenderThread" name="property_service" dev="tmpfs" ino=750 scontext=u:r:untrusted_app:s0:c116,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=app.layan.quran
+[  604.817595] binder: undelivered TRANSACTION_COMPLETE
+[  604.817723] binder: undelivered transaction 213285, process died.
+[  605.163855] binder: release 4221:4231 transaction 213277 in, still active
+[  605.164051] binder: send failed reply for transaction 213277 to 1982:4268
+INSTRUMENTATION_RESULT: actualRingerMode=0
+INSTRUMENTATION_RESULT: next=901875
+INSTRUMENTATION_RESULT: result=PASS real root task removed; persisted alarm deadline and token retained unchanged
+INSTRUMENTATION_RESULT: virtualVibratorAvailable=false
+INSTRUMENTATION_CODE: -1
+
+LYN_5a2c0703335f4549a12f44da9a3da666:0

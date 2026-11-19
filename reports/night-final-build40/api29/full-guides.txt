@@ -1,0 +1,2 @@
+INSTRUMENTATION_RESULT: result=PASS 24947 assertions: all twenty complete installed guides; 12080 source-page mappings; every full explanation dialog; basic and stop signs; actual Arabic day and night views
+INSTRUMENTATION_CODE: -1

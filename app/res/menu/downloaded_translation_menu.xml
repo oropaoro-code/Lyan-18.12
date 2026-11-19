@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:ns0="http://schemas.android.com/apk/res/android" xmlns:ns1="http://schemas.android.com/apk/res-auto">
+    <item ns0:icon="@drawable/arrow_circle_up" ns0:id="@id/dtm_move_up" ns0:title="@string/move_up" ns1:showAsAction="ifRoom" />
+    <item ns0:icon="@drawable/arrow_circle_down" ns0:id="@id/dtm_move_down" ns0:title="@string/move_down" ns1:showAsAction="ifRoom" />
+    <item ns0:icon="@drawable/ic_cancel" ns0:id="@id/dtm_delete" ns0:title="@string/delete_translation" ns1:showAsAction="ifRoom" />
+</menu>

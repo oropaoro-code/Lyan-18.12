@@ -1,0 +1,236 @@
+[  984.780742] init: Untracked pid 3511 received signal 1
+[  985.719090] init: Service 'bootanim' (pid 3478) exited with status 0
+[ 1009.343498] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 1009.375295] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 1014.166465] init: processing action (sys.sysctl.extra_free_kbytes=*) from (/init.rc:803)
+[ 1023.301685] binder: 2153:2153 transaction failed 29189/-22, size 196-16 line 3128
+[ 1023.351807] type=1400 audit(1791945710.390:10): avc: denied { read } for comm="Thread-6" name="pages_volatile" dev="sysfs" ino=1778 scontext=u:r:system_server:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[ 1023.352860] type=1400 audit(1791946241.030:11): avc: denied { search } for comm=73796E6320737663203230 name="oem" dev="dm-2" ino=47 scontext=u:r:adbd:s0 tcontext=u:object_r:oemfs:s0 tclass=dir permissive=0
+[ 1024.093831] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 1025.761315] selinux: avc:  denied  { set } for property=vendor.wlan.firmware.version pid=1785 uid=1010 gid=1010 scontext=u:r:hal_wifi_default:s0 tcontext=u:object_r:vendor_default_prop:s0 tclass=property_service permissive=0
+[ 1025.761315] 
+[ 1025.780870] init: Unable to set property 'vendor.wlan.firmware.version' to '1.0' from uid:1010 gid:1010 pid:1785: SELinux permission check failed
+[ 1025.821624] selinux: avc:  denied  { set } for property=vendor.wlan.driver.version pid=1785 uid=1010 gid=1010 scontext=u:r:hal_wifi_default:s0 tcontext=u:object_r:vendor_default_prop:s0 tclass=property_service permissive=0
+[ 1025.821624] 
+[ 1025.822195] init: Unable to set property 'vendor.wlan.driver.version' to '1.0' from uid:1010 gid:1010 pid:1785: SELinux permission check failed
+[ 1027.252803] init: Received control message 'start' for 'wpa_supplicant' from pid: 3572 (system_server)
+[ 1027.426155] selinux: avc:  denied  { set } for property=vendor.wlan.firmware.version pid=1785 uid=1010 gid=1010 scontext=u:r:hal_wifi_default:s0 tcontext=u:object_r:vendor_default_prop:s0 tclass=property_service permissive=0
+[ 1027.426155] 
+[ 1027.426886] init: Unable to set property 'vendor.wlan.firmware.version' to '1.0' from uid:1010 gid:1010 pid:1785: SELinux permission check failed
+[ 1027.436359] selinux: avc:  denied  { set } for property=vendor.wlan.driver.version pid=1785 uid=1010 gid=1010 scontext=u:r:hal_wifi_default:s0 tcontext=u:object_r:vendor_default_prop:s0 tclass=property_service permissive=0
+[ 1027.436359] 
+[ 1027.438310] init: Unable to set property 'vendor.wlan.driver.version' to '1.0' from uid:1010 gid:1010 pid:1785: SELinux permission check failed
+[ 1034.601864] binder: unexpected work type, 4, not freed
+[ 1034.602020] binder: undelivered TRANSACTION_COMPLETE
+[ 1034.602204] binder: undelivered transaction 90317, process died.
+[ 1037.623795] type=1400 audit(1791946241.030:11): avc: denied { search } for comm=73796E6320737663203230 name="oem" dev="dm-2" ino=47 scontext=u:r:adbd:s0 tcontext=u:object_r:oemfs:s0 tclass=dir permissive=0
+[ 1037.624129] type=1400 audit(1791946255.300:12): avc: denied { read } for comm="Thread-7" name="pages_shared" dev="sysfs" ino=1775 scontext=u:r:system_server:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[ 1037.624795] type=1400 audit(1791946255.300:12): avc: denied { read } for comm="Thread-7" name="pages_shared" dev="sysfs" ino=1775 scontext=u:r:system_server:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[ 1037.625025] type=1400 audit(1791946255.300:13): avc: denied { read } for comm="Thread-7" name="pages_sharing" dev="sysfs" ino=1776 scontext=u:r:system_server:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[ 1037.625531] type=1400 audit(1791946255.300:13): avc: denied { read } for comm="Thread-7" name="pages_sharing" dev="sysfs" ino=1776 scontext=u:r:system_server:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[ 1037.625832] type=1400 audit(1791946255.300:14): avc: denied { read } for comm="Thread-7" name="pages_unshared" dev="sysfs" ino=1777 scontext=u:r:system_server:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[ 1037.744438] type=1400 audit(1791946255.300:14): avc: denied { read } for comm="Thread-7" name="pages_unshared" dev="sysfs" ino=1777 scontext=u:r:system_server:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[ 1037.744722] type=1400 audit(1791946255.300:15): avc: denied { read } for comm="Thread-7" name="pages_volatile" dev="sysfs" ino=1778 scontext=u:r:system_server:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[ 1038.832587] selinux: avc:  denied  { set } for property=qemu.gles pid=3978 uid=1000 gid=1000 scontext=u:r:system_app:s0 tcontext=u:object_r:qemu_prop:s0 tclass=property_service permissive=0
+[ 1038.832587] 
+[ 1038.833150] init: Unable to set property 'qemu.gles' to '1' from uid:1000 gid:1000 pid:3978: SELinux permission check failed
+[ 1062.560992] selinux: avc:  denied  { set } for property=qemu.gles pid=3788 uid=10102 gid=10102 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:qemu_prop:s0 tclass=property_service permissive=0
+[ 1062.560992] 
+[ 1062.561374] init: Unable to set property 'qemu.gles' to '1' from uid:10102 gid:10102 pid:3788: SELinux permission check failed
+[ 1063.933556] init: Untracked pid 4154 exited with status 0
+[ 1063.934138] init: Untracked pid 4156 exited with status 0
+[ 1065.019908] init: Untracked pid 4161 exited with status 0
+[ 1065.035289] init: Untracked pid 4163 exited with status 0
+[ 1065.999598] init: Untracked pid 4167 exited with status 0
+[ 1066.006905] init: Untracked pid 4169 exited with status 0
+[ 1068.056035] init: Untracked pid 4172 exited with status 0
+[ 1068.058246] init: Untracked pid 4174 exited with status 0
+[ 1070.145863] init: Untracked pid 4179 exited with status 0
+[ 1070.148167] init: Untracked pid 4181 exited with status 0
+[ 1071.046164] init: Untracked pid 4186 exited with status 0
+[ 1071.055099] init: Untracked pid 4188 exited with status 0
+[ 1073.611597] init: Untracked pid 4194 exited with status 0
+[ 1073.612020] init: Untracked pid 4196 exited with status 0
+[ 1073.674112] init: processing action (sys.boot_completed=1) from (/init.rc:797)
+[ 1073.676283] init: processing action (sys.boot_completed=1) from (/vendor/etc/init/hw/init.ranchu.rc:163)
+[ 1073.806474] init: Command 'trigger sys-boot-completed-set' action=sys.boot_completed=1 (/vendor/etc/init/hw/init.ranchu.rc:164) took 129ms and succeeded
+[ 1073.807013] init: processing action (sys.boot_completed=1 && sys.logbootcomplete=1) from (/system/etc/init/bootstat.rc:78)
+[ 1074.242331] init: starting service 'exec 15 (/system/bin/bootstat --record_boot_complete --record_boot_reason --record_time_since_factory_reset -l)'...
+[ 1074.506234] init: Command 'exec_background - system log -- /system/bin/bootstat --record_boot_complete --record_boot_reason --record_time_since_factory_reset -l' action=sys.boot_completed=1 && sys.logbootcomplete=1 (/system/etc/init/bootstat.rc:83) took 698ms and succeeded
+[ 1074.538182] init: processing action (sys.boot_completed=1) from (/system/etc/init/flags_health_check.rc:7)
+[ 1074.708057] init: Command 'setprop persist.device_config.attempted_boot_count 0' action=sys.boot_completed=1 (/system/etc/init/flags_health_check.rc:8) took 169ms and succeeded
+[ 1074.982561] init: processing action (sys.boot_completed=1) from (/system/etc/init/logd.rc:32)
+[ 1074.984694] init: starting service 'logd-auditctl'...
+[ 1074.991580] selinux: SELinux: Skipping restorecon on directory(/data/system_ce/0)
+[ 1074.991580] 
+[ 1075.057851] type=1400 audit(1791946255.300:15): avc: denied { read } for comm="Thread-7" name="pages_volatile" dev="sysfs" ino=1778 scontext=u:r:system_server:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[ 1075.058911] type=1400 audit(1791946292.260:16): avc: denied { mounton } for comm="sdcard" path="/mnt/runtime/default/emulated" dev="sdcardfs" ino=106497 scontext=u:r:sdcardd:s0 tcontext=u:object_r:sdcardfs:s0 tclass=dir permissive=0
+[ 1075.209000] init: Command 'start logd-auditctl' action=sys.boot_completed=1 (/system/etc/init/logd.rc:33) took 225ms and succeeded
+[ 1075.227530] init: Async property child exited with status 0
+[ 1075.228760] init: processing action (dev.bootcomplete=1) from (/vendor/etc/init/hw/init.ranchu.rc:81)
+[ 1075.328535] init: Command 'setprop vendor.qemu.dev.bootcomplete 1' action=dev.bootcomplete=1 (/vendor/etc/init/hw/init.ranchu.rc:82) took 99ms and succeeded
+[ 1075.397414] init: processing action (persist.sys.zram_enabled=1 && sys-boot-completed-set) from (/vendor/etc/init/hw/init.ranchu.rc:166)
+[ 1075.504582] init: Skip mounting partition: /product
+[ 1075.504781] init: Skip mounting partition: /product_services
+[ 1075.506207] zram: Cannot change disksize for initialized device
+[ 1077.003425] mkswap: Swapspace size: 2301992k, UUID=52cc79e0-6f3d-444f-83f8-8dcb4944c513
+[ 1077.007815] init: [libfs_mgr]swapon failed for dev/block/zram0
+[ 1077.008462] init: Command 'swapon_all /vendor/etc/fstab.${ro.hardware}' action=persist.sys.zram_enabled=1 && sys-boot-completed-set (/vendor/etc/init/hw/init.ranchu.rc:167) took 1610ms and failed: fs_mgr_swapon_all() failed
+[ 1077.146163] init: Service 'exec 15 (/system/bin/bootstat --record_boot_complete --record_boot_reason --record_time_since_factory_reset -l)' (pid 4201) exited with status 0
+[ 1077.147664] init: Service 'logd-auditctl' (pid 4209) exited with status 0
+[ 1077.148690] init: Untracked pid 4217 exited with status 0
+[ 1077.148986] init: Untracked pid 4212 exited with status 0
+[ 1077.252794] selinux: SELinux: Skipping restorecon on directory(/data/vendor_ce/0)
+[ 1077.252794] 
+[ 1077.297091] init: Async property child exited with status 0
+[ 1077.414149] selinux: SELinux: Skipping restorecon on directory(/data/misc_ce/0)
+[ 1077.414149] 
+[ 1077.455554] init: Async property child exited with status 0
+[ 1077.988969] init: Untracked pid 4210 exited with status 0
+[ 1078.054646] init: Untracked pid 4214 exited with status 0
+[ 1078.467702] init: Untracked pid 4221 exited with status 0
+[ 1078.468137] init: Untracked pid 4223 exited with status 0
+[ 1083.307896] selinux: avc:  denied  { set } for property=qemu.gles pid=3572 uid=1000 gid=1000 scontext=u:r:system_server:s0 tcontext=u:object_r:qemu_prop:s0 tclass=property_service permissive=0
+[ 1083.307896] 
+[ 1083.308572] init: Unable to set property 'qemu.gles' to '1' from uid:1000 gid:1000 pid:3572: SELinux permission check failed
+[ 1084.007070] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 1107.695402] selinux: avc:  denied  { set } for property=qemu.gles pid=4425 uid=10066 gid=10066 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:qemu_prop:s0 tclass=property_service permissive=0
+[ 1107.695402] 
+[ 1107.695789] init: Unable to set property 'qemu.gles' to '1' from uid:10066 gid:10066 pid:4425: SELinux permission check failed
+[ 1110.761721] binder: undelivered TRANSACTION_COMPLETE
+[ 1110.761894] binder: undelivered transaction 124185, process died.
+[ 1112.165922] wlan0: authenticate with 02:15:b2:00:01:00
+[ 1112.266487] wlan0: send auth to 02:15:b2:00:01:00 (try 1/3)
+[ 1112.337303] wlan0: authenticated
+[ 1112.370506] wlan0: associate with 02:15:b2:00:01:00 (try 1/3)
+[ 1112.485248] wlan0: RX AssocResp from 02:15:b2:00:01:00 (capab=0x401 status=0 aid=1)
+[ 1112.486801] wlan0: associated
+[ 1114.595628] selinux: avc:  denied  { set } for property=qemu.gles pid=4488 uid=10093 gid=10093 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:qemu_prop:s0 tclass=property_service permissive=0
+[ 1114.595628] 
+[ 1114.596032] init: Unable to set property 'qemu.gles' to '1' from uid:10093 gid:10093 pid:4488: SELinux permission check failed
+[ 1126.239430] type=1400 audit(1791946292.260:20): avc: denied { mounton } for comm="sdcard" path="/mnt/runtime/default/emulated" dev="sdcardfs" ino=106497 scontext=u:r:sdcardd:s0 tcontext=u:object_r:sdcardfs:s0 tclass=dir permissive=0 duplicate messages suppressed
+[ 1126.459436] type=1400 audit(1791946343.840:21): avc: denied { write } for comm="RenderThread" name="property_service" dev="tmpfs" ino=440 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=com.android.launcher3
+[ 1135.547100] init: processing action (sys.sysctl.tcp_def_init_rwnd=*) from (/init.rc:807)
+[ 1140.924680] type=1400 audit(1791946343.840:21): avc: denied { write } for comm="RenderThread" name="property_service" dev="tmpfs" ino=440 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=com.android.launcher3
+[ 1140.925081] type=1400 audit(1791946358.600:22): avc: denied { read } for comm="DcHandlerThread" name="u:object_r:net_radio0_prop:s0" dev="tmpfs" ino=395 scontext=u:r:radio:s0 tcontext=u:object_r:net_radio0_prop:s0 tclass=file permissive=0
+[ 1144.038700] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 1180.646367] apexd: Can't open /product/apex for reading : No such file or directory
+[ 1200.956646] init: Received control message 'start' for 'gsid' from pid: 3572 (system_server)
+[ 1200.958297] init: starting service 'gsid'...
+[ 1202.204107] init: Received control message 'stop' for 'gsid' from pid: 3572 (system_server)
+[ 1202.204936] init: Sending signal 9 to service 'gsid' (pid 5029) process group...
+[ 1202.292416] libprocessgroup: Successfully killed process cgroup uid 0 pid 5029 in 86ms
+[ 1202.332576] init: Service 'gsid' (pid 5029) received signal 9
+[ 1203.304241] type=1400 audit(1791946358.600:23): avc: denied { read } for comm="DcHandlerThread" name="u:object_r:net_radio0_prop:s0" dev="tmpfs" ino=395 scontext=u:r:radio:s0 tcontext=u:object_r:net_radio0_prop:s0 tclass=file permissive=0
+[ 1203.314612] type=1400 audit(1791946420.990:24): avc: granted { read } for comm="main" name="u:object_r:net_dns_prop:s0" dev="tmpfs" ino=393 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:net_dns_prop:s0 tclass=file app=com.android.email
+[ 1204.049197] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 1234.297909] init: Untracked pid 3267 exited with status 0
+[ 1234.299125] init: Untracked pid 4197 received signal 6
+[ 1234.362303] init: Service 'vold' (pid 1620) received signal 9
+[ 1234.362697] init: Sending signal 9 to service 'vold' (pid 1620) process group...
+[ 1234.372871] libprocessgroup: Successfully killed process cgroup uid 0 pid 1620 in 1ms
+[ 1234.377881] init: starting service 'vold'...
+[ 1241.821732] binder: undelivered transaction 162775, process died.
+[ 1241.821880] binder: undelivered transaction 162777, process died.
+[ 1241.822170] binder: undelivered transaction 162732, process died.
+[ 1243.361743] sdcardfs version 2.0
+[ 1243.361882] sdcardfs: dev_name -> /data/media
+[ 1243.362180] sdcardfs: options -> fsuid=1023,fsgid=1023,multiuser,derive_gid,default_normal,unshared_obb,mask=6,userid=0,gid=1015
+[ 1243.362420] sdcardfs: mnt -> 00000000f48cfaa8
+[ 1243.363259] sdcardfs: mounted on top of /data/media type ext4
+[ 1243.367679] Remount options were mask=23,gid=9997 for vfsmnt 000000007506348a.
+[ 1243.368167] sdcardfs : options - debug:1
+[ 1243.368234] sdcardfs : options - gid:9997
+[ 1243.368290] sdcardfs : options - mask:23
+[ 1243.369637] Remount options were mask=7,gid=9997 for vfsmnt 00000000664eac47.
+[ 1243.391614] sdcardfs : options - debug:1
+[ 1243.391731] sdcardfs : options - gid:9997
+[ 1243.391777] sdcardfs : options - mask:7
+[ 1243.392792] Remount options were mask=7,gid=9997 for vfsmnt 000000001a89a83c.
+[ 1243.392917] sdcardfs : options - debug:1
+[ 1243.393001] sdcardfs : options - gid:9997
+[ 1243.393051] sdcardfs : options - mask:7
+[ 1264.042925] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 1324.049055] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 1371.965429] type=1400 audit(1791946420.990:24): avc: granted { read } for comm="main" name="u:object_r:net_dns_prop:s0" dev="tmpfs" ino=393 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:net_dns_prop:s0 tclass=file app=com.android.email
+[ 1372.134255] type=1400 audit(1791946589.620:25): avc: denied { search } for comm=73796E6320737663203436 name="oem" dev="dm-2" ino=47 scontext=u:r:adbd:s0 tcontext=u:object_r:oemfs:s0 tclass=dir permissive=0
+[ 1384.044551] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 1387.766428] type=1400 audit(1791946589.620:25): avc: denied { search } for comm=73796E6320737663203436 name="oem" dev="dm-2" ino=47 scontext=u:r:adbd:s0 tcontext=u:object_r:oemfs:s0 tclass=dir permissive=0
+[ 1387.766889] type=1400 audit(1791946605.450:26): avc: denied { read } for comm="app_process" name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=346 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+[ 1417.105073] binder: undelivered transaction 248483, process died.
+[ 1417.844142] binder: release 5567:5590 transaction 248481 in, still active
+[ 1417.844525] binder: send failed reply for transaction 248481 to 3572:5621
+[ 1417.844777] binder: undelivered transaction 248519, process died.
+[ 1443.578218] type=1400 audit(1791946653.930:37): avc: denied { read } for comm="app_process" name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=346 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0 duplicate messages suppressed
+[ 1443.811697] type=1400 audit(1791946661.240:38): avc: denied { write } for comm="RenderThread" name="property_service" dev="tmpfs" ino=440 scontext=u:r:untrusted_app:s0:c116,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=app.layan.quran
+[ 1444.065349] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 1504.006191] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 1564.001594] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 1573.465508] binder: release 5669:5690 transaction 386285 out, still active
+[ 1573.465769] binder: undelivered TRANSACTION_COMPLETE
+[ 1573.466743] binder: undelivered transaction 386331, process died.
+[ 1573.862050] binder: 3572:3953 transaction failed 29189/0, size 4-0 line 3060
+[ 1573.862677] binder: send failed reply for transaction 386285, target dead
+[ 1574.227541] binder: release 5655:5668 transaction 386308 in, still active
+[ 1574.227745] binder: send failed reply for transaction 386308 to 3572:5767
+[ 1585.374323] type=1400 audit(1791946661.240:38): avc: denied { write } for comm="RenderThread" name="property_service" dev="tmpfs" ino=440 scontext=u:r:untrusted_app:s0:c116,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=app.layan.quran
+[ 1585.376347] type=1400 audit(1791946803.000:39): avc: denied { read } for comm="app_process" name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=346 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+[ 1596.958428] binder: undelivered TRANSACTION_COMPLETE
+[ 1596.959197] binder: undelivered transaction 395229, process died.
+[ 1607.585339] binder: undelivered transaction 399307, process died.
+[ 1607.594458] binder: undelivered transaction 399234, process died.
+[ 1624.027258] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 1638.906830] type=1400 audit(1791946838.040:50): avc: denied { read } for comm="app_process" name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=346 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0 duplicate messages suppressed
+[ 1638.940557] type=1400 audit(1791946856.590:51): avc: denied { write } for comm="RenderThread" name="property_service" dev="tmpfs" ino=440 scontext=u:r:untrusted_app:s0:c116,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=app.layan.quran
+[ 1684.009984] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 1744.005408] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 1804.076599] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 1864.045358] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 1924.016383] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 1984.008423] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 2044.056083] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 2104.004990] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 2117.208456] type=1400 audit(1791946856.590:51): avc: denied { write } for comm="RenderThread" name="property_service" dev="tmpfs" ino=440 scontext=u:r:untrusted_app:s0:c116,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=app.layan.quran
+[ 2117.209528] type=1400 audit(1791947334.880:52): avc: denied { read } for comm="app_process" name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=346 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+[ 2137.443985] binder: undelivered TRANSACTION_COMPLETE
+[ 2137.444497] binder: undelivered transaction 578818, process died.
+[ 2137.701455] binder: 3572:3612 transaction failed 29189/-22, size 84-0 line 3128
+[ 2137.825379] binder: 3572:6142 transaction failed 29189/-22, size 292-0 line 3128
+[ 2145.248186] type=1400 audit(1791947349.860:57): avc: denied { read } for comm="app_process" name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=346 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0 duplicate messages suppressed
+[ 2145.271909] type=1400 audit(1791947362.930:58): avc: denied { write } for comm="RenderThread" name="property_service" dev="tmpfs" ino=440 scontext=u:r:untrusted_app:s0:c116,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=app.layan.quran
+[ 2164.038640] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 2203.754533] binder: undelivered TRANSACTION_COMPLETE
+[ 2203.754716] binder: undelivered transaction 603615, process died.
+[ 2203.755782] binder: undelivered transaction 603535, process died.
+[ 2214.848325] type=1400 audit(1791947362.930:58): avc: denied { write } for comm="RenderThread" name="property_service" dev="tmpfs" ino=440 scontext=u:r:untrusted_app:s0:c116,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=app.layan.quran
+[ 2214.849052] type=1400 audit(1791947432.530:59): avc: denied { read } for comm="app_process" name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=346 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+[ 2224.023173] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 2231.562395] binder: undelivered TRANSACTION_COMPLETE
+[ 2231.562606] binder: undelivered transaction 616347, process died.
+[ 2232.002469] type=1400 audit(1791947439.050:64): avc: denied { read } for comm="app_process" name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=346 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0 duplicate messages suppressed
+[ 2232.017427] type=1400 audit(1791947449.670:65): avc: denied { search } for comm=73796E6320737663203432 name="oem" dev="dm-2" ino=47 scontext=u:r:adbd:s0 tcontext=u:object_r:oemfs:s0 tclass=dir permissive=0
+[ 2284.001159] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 2344.005769] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 2394.181697] type=1400 audit(1791947449.670:65): avc: denied { search } for comm=73796E6320737663203432 name="oem" dev="dm-2" ino=47 scontext=u:r:adbd:s0 tcontext=u:object_r:oemfs:s0 tclass=dir permissive=0
+[ 2394.183845] type=1400 audit(1791947611.810:66): avc: denied { read } for comm="app_process" name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=346 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+[ 2404.072552] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 2413.585895] binder: undelivered transaction 711244, process died.
+[ 2413.965245] binder: release 6348:6361 transaction 711263 in, still active
+[ 2413.965472] binder: send failed reply for transaction 711263 to 3572:6393
+[ 2434.081401] type=1400 audit(1791947644.140:77): avc: denied { read } for comm="app_process" name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=346 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0 duplicate messages suppressed
+[ 2434.129089] type=1400 audit(1791947651.750:78): avc: denied { write } for comm="RenderThread" name="property_service" dev="tmpfs" ino=440 scontext=u:r:untrusted_app:s0:c116,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=app.layan.quran
+[ 2464.023200] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 2524.088532] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 2584.020893] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 2644.030114] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 2704.026416] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 2741.349133] binder: undelivered TRANSACTION_COMPLETE
+[ 2741.349315] binder: undelivered transaction 818725, process died.
+[ 2741.421417] binder: undelivered transaction 818640, process died.
+[ 2742.326721] binder: release 6421:6434 transaction 818609 in, still active
+[ 2742.326877] binder: send failed reply for transaction 818609 to 3572:6567
+[ 2753.712767] type=1400 audit(1791947651.750:78): avc: denied { write } for comm="RenderThread" name="property_service" dev="tmpfs" ino=440 scontext=u:r:untrusted_app:s0:c116,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=app.layan.quran
+[ 2753.716178] type=1400 audit(1791947971.380:79): avc: denied { read } for comm="app_process" name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=346 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+[ 2764.009605] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 2771.764311] binder: undelivered TRANSACTION_COMPLETE
+[ 2771.764504] binder: undelivered transaction 830930, process died.

@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "versionName": "18.12",
+  "versionCode": 38,
+  "apkSha256": "46566eacd255098da7d3d67d9b722a3a08fad8715cfe8db2b5a1435f500f0114",
+  "allTwentyActualGuideDialogs": "PASS",
+  "nativeAssertions": 24905,
+  "nativePageEdges": "Full-height original renderer; verified day/night odd/even",
+  "sourcePagesAudited": 12080,
+  "sourcePaintKinds": 122,
+  "missingGuideEntries": 0,
+  "originalCoreAndReminderUnchanged": true,
+  "physicalSwipeTested": false,
+  "allAndroidVersionsTested": false
+}

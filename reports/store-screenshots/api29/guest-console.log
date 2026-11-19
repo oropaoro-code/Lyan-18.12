@@ -1,0 +1,1538 @@
+early console in extract_kernel
+input_data: 0x0000000001609276
+input_len: 0x000000000074b54c
+output: 0x0000000000200000
+output_len: 0x0000000001b29024
+kernel_total_size: 0x0000000001732000
+booted via startup_32()
+Physical KASLR using RDTSC...
+Virtual KASLR using RDTSC...
+
+Decompressing Linux... Parsing ELF... Performing relocations... done.
+Booting the kernel.
+[    0.000000] Linux version 4.14.175-g6f3fc9538452 (android-build@abfarm903) (Android (5900059 based on r365631c) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 207d7abc1a2abf3ef8d4301736d6a7ebc224a290) (based on LLVM 9.0.8svn)) #1 SMP PREEMPT Wed Apr 8 17:38:09 UTC 2020
+[    0.000000] Command line: clocksource=pit no-kvmclock no_timer_check console=ttyS0,38400 earlyprintk=ttyS0 mac80211_hwsim.radios=2 mac80211_hwsim.channels=2 loop.max_part=7 ramoops.mem_address=0xff018000 ramoops.mem_size=0x10000 memmap=0x10000$0xff018000 printk.devkmsg=on android.bootanim=0 android.qemud=1 androidboot.boot_devices=pci0000:00/0000:00:03.0 pci0000:00/0000:00:06.0 androidboot.console=ttyS0 androidboot.hardware=ranchu androidboot.selinux=permissive androidboot.serialno=EMULATOR37X3X3X0 androidboot.vbmeta.digest=0893f0f3bac935802e7658f39b766acd7344cd0553606784a98cb6a38c2a8629 androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.size=4352 qemu=1 qemu.avd_name=layan-native-29 qemu.camera_hq_edge_processing=0 qemu.dalvik.vm.heapsize=576m qemu.encrypt=1 qemu.gles=1 qemu.gltransport=pipe qemu.gltransport.drawFlushInterval=800 qemu.opengles.version=196608 qemu.settings.system.screen_off_timeout=2147483647 qemu.skin=1080x1920 qemu.uirenderer=skiagl qemu.vsync=60 qemu.wifi=1 mac802
+[    0.000000] x86/fpu: x87 FPU will use FXSAVE
+[    0.000000] e820: BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000bffd3fff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000bffd4000-0x00000000bfffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+[    0.000000] bootconsole [earlyser0] enabled
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] e820: user-defined physical RAM map:
+[    0.000000] user: [mem 0x0000000000000000-0x000000000009fbff] usable
+[    0.000000] user: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+[    0.000000] user: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+[    0.000000] user: [mem 0x0000000000100000-0x00000000bffd3fff] usable
+[    0.000000] user: [mem 0x00000000bffd4000-0x00000000bfffffff] reserved
+[    0.000000] user: [mem 0x00000000ff018000-0x00000000ff027fff] reserved
+[    0.000000] user: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+[    0.000000] SMBIOS 2.8 present.
+[    0.000000] DMI: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.11.1-0-g0551a4be2c-prebuilt.qemu-project.org 04/01/2014
+[    0.000000] tsc: Fast TSC calibration failed
+[    0.000000] tsc: Unable to calibrate against PIT
+[    0.000000] tsc: No reference (HPET/PMTIMER) available
+[    0.000000] e820: last_pfn = 0xbffd4 max_arch_pfn = 0x400000000
+[    0.000000] x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  
+Memory KASLR using RDTSC...
+[    0.000000] found SMP MP-table at [mem 0x000f5ae0-0x000f5aef]
+[    0.000000] Kernel/User page tables isolation: disabled on command line.
+[    0.000000] RAMDISK: [mem 0x7ff24000-0x7fffffff]
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x00000000000F58E0 000014 (v00 BOCHS )
+[    0.000000] ACPI: RSDT 0x00000000BFFE1B46 000030 (v01 BOCHS  BXPCRSDT 00000001 BXPC 00000001)
+[    0.000000] ACPI: FACP 0x00000000BFFE1A1A 000074 (v01 BOCHS  BXPCFACP 00000001 BXPC 00000001)
+[    0.000000] ACPI: DSDT 0x00000000BFFE0040 0019DA (v01 BOCHS  BXPCDSDT 00000001 BXPC 00000001)
+[    0.000000] ACPI: FACS 0x00000000BFFE0000 000040
+[    0.000000] ACPI: APIC 0x00000000BFFE1A8E 000080 (v01 BOCHS  BXPCAPIC 00000001 BXPC 00000001)
+[    0.000000] ACPI: HPET 0x00000000BFFE1B0E 000038 (v01 BOCHS  BXPCHPET 00000001 BXPC 00000001)
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.000000]   DMA32    [mem 0x0000000001000000-0x00000000bffd3fff]
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.000000]   node   0: [mem 0x0000000000100000-0x00000000bffd3fff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000001000-0x00000000bffd3fff]
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+[    0.000000] IOAPIC[0]: apic_id 0, version 32, address 0xfec00000, GSI 0-23
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+[    0.000000] Using ACPI (MADT) for SMP configuration information
+[    0.000000] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.000000] smpboot: Allowing 2 CPUs, 0 hotplug CPUs
+[    0.000000] e820: [mem 0xc0000000-0xff017fff] available for PCI devices
+[    0.000000] Booting paravirtualized kernel on bare hardware
+[    0.000000] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.000000] random: get_random_bytes called from start_kernel+0x81/0x4e0 with crng_init=0
+[    0.000000] setup_percpu: NR_CPUS:64 nr_cpumask_bits:64 nr_cpu_ids:2 nr_node_ids:1
+[    0.000000] percpu: Embedded 42 pages/cpu s134424 r8192 d29416 u1048576
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 773980
+[    0.000000] Kernel command line: nopti clocksource=pit no-kvmclock no_timer_check console=ttyS0,38400 earlyprintk=ttyS0 mac80211_hwsim.radios=2 mac80211_hwsim.channels=2 loop.max_part=7 ramoops.mem_address=0xff018000 ramoops.mem_size=0x10000 memmap=0x10000$0xff018000 printk.devkmsg=on android.bootanim=0 android.qemud=1 androidboot.boot_devices=pci0000:00/0000:00:03.0 pci0000:00/0000:00:06.0 androidboot.console=ttyS0 androidboot.hardware=ranchu androidboot.selinux=permissive androidboot.serialno=EMULATOR37X3X3X0 androidboot.vbmeta.digest=0893f0f3bac935802e7658f39b766acd7344cd0553606784a98cb6a38c2a8629 androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.size=4352 qemu=1 qemu.avd_name=layan-native-29 qemu.camera_hq_edge_processing=0 qemu.dalvik.vm.heapsize=576m qemu.encrypt=1 qemu.gles=1 qemu.gltransport=pipe qemu.gltransport.drawFlushInterval=800 qemu.opengles.version=196608 qemu.settings.system.screen_off_timeout=2147483647 qemu.skin=1080x1920 qemu.uirenderer=skiagl qemu.vsync=60 qemu.
+[    0.000000] PID hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.000000] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes)
+[    0.000000] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes)
+[    0.000000] Memory: 3064844K/3145160K available (14348K kernel code, 1105K rwdata, 3548K rodata, 1320K init, 524K bss, 80316K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=2.
+[    0.000000] 	Tasks RCU enabled.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] NR_IRQS: 4352, nr_irqs: 440, preallocated irqs: 16
+[    0.000000] console [ttyS0] enabled
+[    0.000000] console [ttyS0] enabled
+[    0.000000] bootconsole [earlyser0] disabled
+[    0.000000] bootconsole [earlyser0] disabled
+[    0.000000] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604467 ns
+[    0.000000] tsc: Fast TSC calibration failed
+[    0.040000] tsc: Unable to calibrate against PIT
+[    0.040000] tsc: using HPET reference calibration
+[    0.040000] tsc: Detected 2298.675 MHz processor
+[    0.040000] Calibrating delay loop (skipped), value calculated using timer frequency.. 4597.35 BogoMIPS (lpj=22986750)
+[    0.040000] pid_max: default: 32768 minimum: 301
+[    0.040000] ACPI: Core revision 20170728
+[    0.052636] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    0.053287] Security Framework initialized
+[    0.053422] SELinux:  Initializing.
+[    0.054217] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.054372] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.069672] CPU: CPU feature xsave disabled, no CPUID level 0xd
+[    0.071223] Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+[    0.071299] Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+[    0.071447] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.071612] Spectre V2 : Mitigation: Full generic retpoline
+[    0.071668] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.071782] Speculative Store Bypass: Vulnerable
+[    0.072723] MDS: Vulnerable: Clear CPU buffers attempted, no microcode
+[    0.075475] Freeing SMP alternatives memory: 40K
+[    0.080000] smpboot: Max logical packages: 1
+[    0.080000] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.302947] smpboot: CPU0: Intel Android virtual processor (family: 0x6, model: 0x6, stepping: 0x3)
+[    0.340756] Performance Events: PMU not available due to virtualization, using software events only.
+[    0.360243] Hierarchical SRCU implementation.
+[    0.382766] NMI watchdog: Perf event create on CPU 0 failed with -2
+[    0.382869] NMI watchdog: Perf NMI watchdog permanently disabled
+[    0.420212] smp: Bringing up secondary CPUs ...
+[    0.500932] x86: Booting SMP configuration:
+[    0.501054] .... node  #0, CPUs:      #1
+[    0.010000] CPU: CPU feature xsave disabled, no CPUID level 0xd
+[    0.010000] calibrate_delay_direct() failed to get a good estimate for loops_per_jiffy.
+[    0.010000] Probably due to long platform interrupts. Consider using "lpj=" boot option.
+[    0.844968] smp: Brought up 1 node, 2 CPUs
+[    0.844968] smpboot: Total of 2 processors activated (4598.16 BogoMIPS)
+[    0.844968] CPU1: update max cpu_capacity 1024
+[    0.850318] CPU1: update max cpu_capacity 1024
+[    0.860792] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.860985] futex hash table entries: 512 (order: 3, 32768 bytes)
+[    0.863973] NET: Registered protocol family 16
+[    0.872142] schedtune: configured to support 5 boost groups
+[    0.873523] ramoops: using module parameters
+[    0.876581] pstore: using zlib compression
+[    0.877743] console [pstore-1] enabled
+[    0.877802] pstore: Registered ramoops as persistent store backend
+[    0.877881] ramoops: attached 0x10000@0xff018000, ecc: 0/0
+[    0.890904] cpuidle: using governor menu
+[    0.891638] ACPI: bus type PCI registered
+[    0.893047] PCI: Using configuration type 1 for base access
+[    1.001324] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    1.011196] ACPI: Added _OSI(Module Device)
+[    1.011196] ACPI: Added _OSI(Processor Device)
+[    1.011196] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    1.011196] ACPI: Added _OSI(Processor Aggregator Device)
+[    1.029486] ACPI: Interpreter enabled
+[    1.030544] ACPI: (supports S0 S3 S5)
+[    1.030624] ACPI: Using IOAPIC for interrupt routing
+[    1.031639] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    1.033016] ACPI: Enabled 2 GPEs in block 00 to 0F
+[    1.101322] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    1.101705] acpi PNP0A03:00: _OSC: OS supports [Segments MSI]
+[    1.101901] acpi PNP0A03:00: _OSC failed (AE_NOT_FOUND)
+[    1.102140] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+[    1.104228] PCI host bridge to bus 0000:00
+[    1.104411] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    1.104482] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    1.104545] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    1.104605] pci_bus 0000:00: root bus resource [mem 0xc0000000-0xfebfffff window]
+[    1.104671] pci_bus 0000:00: root bus resource [mem 0x400000000-0x80004bfff window]
+[    1.104823] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    1.123460] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+[    1.123579] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+[    1.123653] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+[    1.123756] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+[    1.125404] pci 0000:00:01.3: quirk: [io  0x0600-0x063f] claimed by PIIX4 ACPI
+[    1.125509] pci 0000:00:01.3: quirk: [io  0x0700-0x070f] claimed by PIIX4 SMB
+[    1.647831] ACPI: PCI Interrupt Link [LNKA] (IRQs 5 *10 11)
+[    1.648639] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 *10 11)
+[    1.649171] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 10 *11)
+[    1.650540] ACPI: PCI Interrupt Link [LNKD] (IRQs 5 10 *11)
+[    1.650861] ACPI: PCI Interrupt Link [LNKS] (IRQs *9)
+[    1.661323] SCSI subsystem initialized
+[    1.661537] ACPI: bus type USB registered
+[    1.662301] usbcore: registered new interface driver usbfs
+[    1.662743] usbcore: registered new interface driver hub
+[    1.663123] usbcore: registered new device driver usb
+[    1.671171] Advanced Linux Sound Architecture Driver Initialized.
+[    1.671832] PCI: Using ACPI for IRQ routing
+[    1.687416] NetLabel: Initializing
+[    1.687416] NetLabel:  domain hash size = 128
+[    1.687416] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    1.687416] NetLabel:  unlabeled traffic allowed by default
+[    1.690406] HPET: 3 timers in total, 0 timers will be used for per-cpu timer
+[    1.690998] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+[    1.692219] hpet0: 3 comparators, 64-bit 100.000000 MHz counter
+[    1.698053] clocksource: Switched to clocksource hpet
+[    1.807711] VFS: Disk quotas dquot_6.6.0
+[    1.808068] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    1.810804] pnp: PnP ACPI init
+[    1.817693] pnp: PnP ACPI: found 5 devices
+[    1.826030] NET: Registered protocol family 2
+[    1.831857] TCP established hash table entries: 32768 (order: 6, 262144 bytes)
+[    1.832329] TCP bind hash table entries: 32768 (order: 7, 524288 bytes)
+[    1.834297] TCP: Hash tables configured (established 32768 bind 32768)
+[    1.835057] UDP hash table entries: 2048 (order: 4, 65536 bytes)
+[    1.835292] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes)
+[    1.838586] NET: Registered protocol family 1
+[    1.838921] pci 0000:00:01.0: PIIX3: Enabling Passive Release
+[    1.839125] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+[    1.839231] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+[    1.843672] Trying to unpack rootfs image as initramfs...
+[    1.892814] Freeing initrd memory: 880K
+[    1.908207] audit: initializing netlink subsys (disabled)
+[    1.912972] audit: type=2000 audit(1791789226.900:1): state=initialized audit_enabled=0 res=1
+[    1.917761] workingset: timestamp_bits=45 max_order=20 bucket_order=0
+[    1.963363] Registering sdcardfs 0.1
+[    1.965029] fuse init (API version 7.26)
+[    2.617853] Key type asymmetric registered
+[    2.618409] Asymmetric key parser 'x509' registered
+[    2.619000] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)
+[    2.619144] io scheduler noop registered
+[    2.619216] io scheduler deadline registered
+[    2.619549] io scheduler cfq registered (default)
+[    2.619670] io scheduler mq-deadline registered
+[    2.619722] io scheduler kyber registered
+[    2.624963] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+[    2.626139] ACPI: Power Button [PWRF]
+[    2.871160] ACPI: PCI Interrupt Link [LNKC] enabled at IRQ 11
+[    2.960363] tsc: Refined TSC clocksource calibration: 2300.016 MHz
+[    2.961131] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x2127442937e, max_idle_ns: 440795203349 ns
+[    3.072441] ACPI: PCI Interrupt Link [LNKD] enabled at IRQ 10
+[    3.275068] ACPI: PCI Interrupt Link [LNKA] enabled at IRQ 10
+[    3.462483] ACPI: PCI Interrupt Link [LNKB] enabled at IRQ 11
+[    3.980154] clocksource: Switched to clocksource tsc
+[    6.396617] input: virtio_input_multi_touch_1 as /devices/pci0000:00/0000:00:0c.0/virtio8/input/input1
+[    6.398071] input: virtio_input_multi_touch_2 as /devices/pci0000:00/0000:00:0d.0/virtio9/input/input2
+[    6.399108] input: virtio_input_multi_touch_3 as /devices/pci0000:00/0000:00:0e.0/virtio10/input/input3
+[    6.400040] input: virtio_input_multi_touch_4 as /devices/pci0000:00/0000:00:0f.0/virtio11/input/input4
+[    6.403795] input: virtio_input_multi_touch_5 as /devices/pci0000:00/0000:00:10.0/virtio12/input/input5
+[    6.404557] input: virtio_input_multi_touch_6 as /devices/pci0000:00/0000:00:11.0/virtio13/input/input6
+[    6.405420] input: virtio_input_multi_touch_7 as /devices/pci0000:00/0000:00:12.0/virtio14/input/input7
+[    6.406556] input: virtio_input_multi_touch_8 as /devices/pci0000:00/0000:00:13.0/virtio15/input/input8
+[    6.407258] input: virtio_input_multi_touch_9 as /devices/pci0000:00/0000:00:14.0/virtio16/input/input9
+[    6.408187] input: virtio_input_multi_touch_10 as /devices/pci0000:00/0000:00:15.0/virtio17/input/input10
+[    6.409051] input: virtio_input_multi_touch_11 as /devices/pci0000:00/0000:00:16.0/virtio18/input/input11
+[    6.409996] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    6.437772] 00:04: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[    6.464910] random: fast init done
+[    6.470610] random: crng init done
+[    6.488690] brd: module loaded
+[    6.516318] loop: module loaded
+[    6.538416]  vda: vda1 vda2
+[    6.569488]  vde: vde1
+[    6.578039]  vdf:
+[    6.579902] zram: Added device: zram0
+[    6.772372] tun: Universal TUN/TAP device driver, 1.6
+[    6.776987] PPP generic driver version 2.4.2
+[    6.777356] PPP BSD Compression module registered
+[    6.777448] PPP Deflate Compression module registered
+[    6.777634] PPP MPPE Compression module registered
+[    6.777873] NET: Registered protocol family 24
+[    6.777931] PPTP driver version 0.8.5
+[    6.778612] mac80211_hwsim: initializing netlink
+[    6.805476] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    6.805640] ehci-pci: EHCI PCI platform driver
+[    6.806851] dummy_hcd dummy_hcd.0: USB Host+Gadget Emulator, driver 02 May 2005
+[    6.807067] dummy_hcd dummy_hcd.0: Dummy host controller
+[    6.807226] dummy_hcd dummy_hcd.0: new USB bus registered, assigned bus number 1
+[    6.812838] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    6.812932] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    6.813003] usb usb1: Product: Dummy host controller
+[    6.813056] usb usb1: Manufacturer: Linux 4.14.175-g6f3fc9538452 dummy_hcd
+[    6.813120] usb usb1: SerialNumber: dummy_hcd.0
+[    6.815095] hub 1-0:1.0: USB hub found
+[    6.815478] hub 1-0:1.0: 1 port detected
+[    6.819993] i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+[    6.826296] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    6.827981] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    6.836922] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input12
+[    6.843425] input: goldfish_rotary as /devices/platform/GFSH0008:00/input/input14
+[    6.843956] usbcore: registered new interface driver xpad
+[    6.844084] usbcore: registered new interface driver usb_acecad
+[    6.844197] usbcore: registered new interface driver aiptek
+[    6.844367] usbcore: registered new interface driver gtco
+[    6.844472] usbcore: registered new interface driver hanwang
+[    6.844602] usbcore: registered new interface driver kbtab
+[    6.845259] rtc_cmos 00:00: RTC can wake from S4
+[    6.846843] rtc_cmos 00:00: rtc core: registered rtc_cmos as rtc0
+[    6.847288] rtc_cmos 00:00: alarms up to one day, y3k, 114 bytes nvram, hpet irqs
+[    6.848263] IR NEC protocol handler initialized
+[    6.848325] IR RC5(x/sz) protocol handler initialized
+[    6.848380] IR RC6 protocol handler initialized
+[    6.848429] IR JVC protocol handler initialized
+[    6.848477] IR Sony protocol handler initialized
+[    6.848547] IR SANYO protocol handler initialized
+[    6.848598] IR Sharp protocol handler initialized
+[    6.848652] IR MCE Keyboard/mouse protocol handler initialized
+[    6.848707] IR XMP protocol handler initialized
+[    6.856099] device-mapper: uevent: version 1.0.3
+[    6.856932] device-mapper: ioctl: 4.37.0-ioctl (2017-09-20) initialised: dm-devel@redhat.com
+[    6.859919] hidraw: raw HID events driver (C) Jiri Kosina
+[    6.872046] usbcore: registered new interface driver usbhid
+[    6.872135] usbhid: USB HID core driver
+[    6.873190] ashmem: initialized
+[    7.096936] netem: version 1.3
+[    7.097062] u32 classifier
+[    7.097099]     Actions configured
+[    7.097283] Netfilter messages via NETLINK v0.30.
+[    7.100983] nf_conntrack version 0.5.0 (16384 buckets, 65536 max)
+[    7.102867] ctnetlink v0.93: registering with nfnetlink.
+[    7.107793] xt_time: kernel timezone is -0000
+[    7.108078] gre: GRE over IPv4 demultiplexor driver
+[    7.108145] IPv4 over IPsec tunneling driver
+[    7.114302] snd_hda_codec_generic hdaudioC0D0: autoconfig for Generic: line_outs=1 (0x3/0x0/0x0/0x0/0x0) type:line
+[    7.114426] snd_hda_codec_generic hdaudioC0D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+[    7.115215] snd_hda_codec_generic hdaudioC0D0:    hp_outs=0 (0x0/0x0/0x0/0x0/0x0)
+[    7.115310] snd_hda_codec_generic hdaudioC0D0:    mono: mono_out=0x0
+[    7.115376] snd_hda_codec_generic hdaudioC0D0:    inputs:
+[    7.115553] snd_hda_codec_generic hdaudioC0D0:      Line=0x5
+[    7.123314] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    7.144366] arp_tables: arp_tables: (C) 2002 David S. Miller
+[    7.146205] Initializing XFRM netlink socket
+[    7.146426] IPsec XFRM device driver
+[    7.147663] NET: Registered protocol family 10
+[    7.166934] Segment Routing with IPv6
+[    7.167902] mip6: Mobile IPv6
+[    7.168067] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    7.173442] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    7.176001] NET: Registered protocol family 17
+[    7.176221] NET: Registered protocol family 15
+[    7.176567] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[    7.176834] l2tp_core: L2TP core driver, V2.0
+[    7.176936] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    7.183474] mce: Using 10 MCE banks
+[    7.183940] SSE version of gcm_enc/dec engaged.
+[    7.231317] sched_clock: Marking stable (7231199267, 0)->(7462276715, -231077448)
+[    7.235470] registered taskstats version 1
+[    7.241424] console [netcon0] enabled
+[    7.241559] netconsole: network logging started
+[    7.243058] rtc_cmos 00:00: setting system clock to 2026-10-12 07:13:53 UTC (1791789233)
+[    7.247397] OF: Duplicate name in testcase-data, renamed to "duplicate-name#1"
+[    7.249839] ### dt-test ### start of unittest - you will see error messages
+[    7.252938] OF: /testcase-data/phandle-tests/consumer-a: could not get #phandle-cells-missing for /testcase-data/phandle-tests/provider1
+[    7.253079] OF: /testcase-data/phandle-tests/consumer-a: could not get #phandle-cells-missing for /testcase-data/phandle-tests/provider1
+[    7.253285] OF: /testcase-data/phandle-tests/consumer-a: could not find phandle
+[    7.253364] OF: /testcase-data/phandle-tests/consumer-a: could not find phandle
+[    7.253441] OF: /testcase-data/phandle-tests/consumer-a: arguments longer than property
+[    7.253558] OF: /testcase-data/phandle-tests/consumer-a: arguments longer than property
+[    7.267708] ### dt-test ### end of unittest - 149 passed, 0 failed
+[    7.267995] ALSA device list:
+[    7.268047]   #0: HDA Intel at 0xfebc0000 irq 61
+[    7.312254] Freeing unused kernel memory: 1320K
+[    7.312554] Write protecting the kernel read-only data: 20480k
+[    7.315273] Freeing unused kernel memory: 2024K
+[    7.318700] Freeing unused kernel memory: 548K
+[    7.388053] init: init first stage started!
+[    7.393466] init: [libfs_mgr]ReadFstabFromDt(): failed to read fstab from dt
+[    7.402947] init: Using Android DT directory /proc/device-tree/firmware/android/
+[    7.582651] init: [libfs_mgr]Created logical partition system on device /dev/block/dm-0
+[    7.597535] init: [libfs_mgr]Created logical partition vendor on device /dev/block/dm-1
+[    8.621231] init: [libfs_avb]Device path not found: /dev/block/by-name/system
+[    8.624091] init: [libfs_avb]Fallback to use logical device path: /dev/block/dm-0
+[    9.636927] init: [libfs_avb]Device path not found: /dev/block/by-name/system
+[    9.638115] init: [libfs_avb]Fallback to use logical device path: /dev/block/dm-0
+[    9.652702] init: [libfs_avb]Returning avb_handle with status: Success
+[    9.655839] init: [libfs_avb]Built verity table: '1 /dev/block/dm-0 /dev/block/dm-0 4096 4096 357169 357169 sha1 b7da532c6db1eb9094da927847069d1c5327072b 0852d013f45625d39d677046675ec71016196de0 10 use_fec_from_device /dev/block/dm-0 fec_roots 2 fec_blocks 359983 fec_start 359983 restart_on_corruption ignore_zero_blocks'
+[    9.659486] device-mapper: verity: sha1 using implementation "sha1-generic"
+[    9.714272] init: [libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/dm-2
+[    9.755183] EXT4-fs (dm-2): mounted filesystem without journal. Opts: barrier=1
+[    9.755980] init: [libfs_mgr]__mount(source=/dev/block/dm-2,target=/system,type=ext4)=0: Success
+[    9.762090] init: Switching root to '/system'
+[    9.786295] init: Skip mounting partition: /product
+[    9.786443] init: Skip mounting partition: /product_services
+[    9.790248] init: [libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/dm-1
+[    9.814398] EXT4-fs (dm-1): mounted filesystem without journal. Opts: barrier=1
+[    9.814769] init: [libfs_mgr]__mount(source=/dev/block/dm-1,target=/vendor,type=ext4)=0: Success
+[    9.830653] init: Skip mounting partition: /product
+[    9.830772] init: Skip mounting partition: /product_services
+[    9.832650] init: Skip mounting partition: /product
+[    9.832754] init: Skip mounting partition: /product_services
+[    9.834382] init: Skip mounting partition: /product
+[    9.834481] init: Skip mounting partition: /product_services
+[    9.835695] init: DM_DEV_STATUS failed for scratch: No such device or address
+[    9.836664] init: Skip mounting partition: /product
+[    9.836756] init: Skip mounting partition: /product_services
+[    9.837411] init: Skip mounting partition: /product
+[    9.837531] init: Skip mounting partition: /product_services
+[    9.838395] init: Skip mounting partition: /product
+[    9.838529] init: Skip mounting partition: /product_services
+[    9.839395] init: DM_DEV_STATUS failed for scratch: No such device or address
+[    9.845811] init: Skipped setting INIT_AVB_VERSION (not in recovery mode)
+[   10.439603] init: Loading SELinux policy
+[   10.521740] SELinux:  Permission nlmsg_readpriv in class netlink_route_socket not defined in policy.
+[   10.522347] SELinux: the above unknown classes and permissions will be denied
+[   10.522676] SELinux:  policy capability network_peer_controls=1
+[   10.522741] SELinux:  policy capability open_perms=1
+[   10.522794] SELinux:  policy capability extended_socket_class=1
+[   10.522849] SELinux:  policy capability always_check_network=0
+[   10.522904] SELinux:  policy capability cgroup_seclabel=0
+[   10.522954] SELinux:  policy capability nnp_nosuid_transition=1
+[   10.654748] selinux: SELinux: Loaded policy from /vendor/etc/selinux/precompiled_sepolicy
+[   10.654748] 
+[   10.660268] audit: type=1403 audit(1791789236.900:2): policy loaded auid=4294967295 ses=4294967295
+[   10.691871] selinux: SELinux: Loaded file_contexts
+[   10.691871] 
+[   10.857145] init: init second stage started!
+[   10.974308] init: Using Android DT directory /proc/device-tree/firmware/android/
+[   11.002983] selinux: SELinux: Loaded file_contexts
+[   11.002983] 
+[   11.004019] init: Running restorecon...
+[   11.047133] init: Overriding previous 'ro.' property 'ro.control_privapp_permissions':'disable' with new value 'enforce'
+[   11.051102] init: Overriding previous 'ro.' property 'ro.apex.updatable':'true' with new value 'false'
+[   11.051736] init: Overriding previous 'ro.' property 'ro.config.notification_sound':'OnTheHunt.ogg' with new value 'pixiedust.ogg'
+[   11.052614] init: Couldn't load property file '/product_services/build.prop': open() failed: No such file or directory: No such file or directory
+[   11.052871] init: Couldn't load property file '/factory/factory.prop': open() failed: No such file or directory: No such file or directory
+[   11.056970] init: Setting product property ro.product.brand to 'Android' (from ro.product.odm.brand)
+[   11.057257] init: Setting product property ro.product.device to 'generic_x86_64' (from ro.product.odm.device)
+[   11.057450] init: Setting product property ro.product.manufacturer to 'unknown' (from ro.product.odm.manufacturer)
+[   11.057792] init: Setting product property ro.product.model to 'Android SDK built for x86_64' (from ro.product.odm.model)
+[   11.057966] init: Setting product property ro.product.name to 'sdk_phone_x86_64' (from ro.product.odm.name)
+[   11.059148] init: Setting property 'ro.build.fingerprint' to 'Android/sdk_phone_x86_64/generic_x86_64:10/QSR1.210820.001/7663313:userdebug/test-keys'
+[   11.118521] init: Created socket '/dev/socket/property_service', mode 666, user 0, group 0
+[   11.122960] init: SetupMountNamespaces done
+[   11.165566] init: Forked subcontext for 'u:r:vendor_init:s0' with pid 1251
+[   11.217937] init: Forked subcontext for 'u:r:vendor_init:s0' with pid 1252
+[   11.238883] init: Parsing file /init.rc...
+[   11.262426] init: Added '/init.environ.rc' to import list
+[   11.262908] init: Added '/init.usb.rc' to import list
+[   11.263395] init: Added '/init.ranchu.rc' to import list
+[   11.263741] init: Added '/vendor/etc/init/hw/init.ranchu.rc' to import list
+[   11.263955] init: Added '/init.usb.configfs.rc' to import list
+[   11.264112] init: Added '/init.zygote64_32.rc' to import list
+[   11.322873] init: Parsing file /init.environ.rc...
+[   11.334950] init: Parsing file /init.usb.rc...
+[   11.363217] init: Parsing file /init.ranchu.rc...
+[   11.363547] init: Unable to read config file '/init.ranchu.rc': open() failed: No such file or directory
+[   11.380549] init: Parsing file /vendor/etc/init/hw/init.ranchu.rc...
+[   11.398122] init: Parsing file /init.usb.configfs.rc...
+[   11.402590] init: Parsing file /init.zygote64_32.rc...
+[   11.421731] init: Parsing directory /system/etc/init...
+[   11.424602] init: Parsing file /system/etc/init/android.hidl.allocator@1.0-service.rc...
+[   11.451487] init: Parsing file /system/etc/init/android.system.suspend@1.0-service.rc...
+[   11.463017] init: Parsing file /system/etc/init/apexd.rc...
+[   11.471981] init: Parsing file /system/etc/init/art_apex_boot_integrity.rc...
+[   11.481936] init: Parsing file /system/etc/init/ashmemd.rc...
+[   11.490969] init: Parsing file /system/etc/init/atrace.rc...
+[   11.502584] init: Parsing file /system/etc/init/atrace_userdebug.rc...
+[   11.522143] init: Parsing file /system/etc/init/audioserver.rc...
+[   11.532127] init: Parsing file /system/etc/init/blank_screen.rc...
+[   11.542474] init: Parsing file /system/etc/init/bootanim.rc...
+[   11.551419] init: Parsing file /system/etc/init/bootstat-debug.rc...
+[   11.560616] init: Parsing file /system/etc/init/bootstat.rc...
+[   11.570897] init: Parsing file /system/etc/init/bpfloader.rc...
+[   11.581307] init: Parsing file /system/etc/init/cameraserver.rc...
+[   11.590909] init: Parsing file /system/etc/init/cppreopts.rc...
+[   11.604549] init: Parsing file /system/etc/init/drmserver.rc...
+[   11.606228] init: Parsing file /system/etc/init/dumpstate.rc...
+[   11.609146] init: Parsing file /system/etc/init/flags_health_check.rc...
+[   11.611428] init: Parsing file /system/etc/init/gatekeeperd.rc...
+[   11.612685] init: Parsing file /system/etc/init/gpuservice.rc...
+[   11.631009] init: Parsing file /system/etc/init/gsid.rc...
+[   11.632553] init: Parsing file /system/etc/init/healthd.rc...
+[   11.633860] init: Parsing file /system/etc/init/heapprofd.rc...
+[   11.635256] init: Parsing file /system/etc/init/hwservicemanager.rc...
+[   11.636796] init: Parsing file /system/etc/init/idmap2d.rc...
+[   11.638183] init: Parsing file /system/etc/init/incidentd.rc...
+[   11.639539] init: Parsing file /system/etc/init/init-debug.rc...
+[   11.651123] init: Parsing file /system/etc/init/init.gsi.rc...
+[   11.652287] init: Parsing file /system/etc/init/installd.rc...
+[   11.656764] init: Parsing file /system/etc/init/iorapd.rc...
+[   11.658994] init: Parsing file /system/etc/init/keystore.rc...
+[   11.661478] init: Parsing file /system/etc/init/llkd-debuggable.rc...
+[   11.663830] init: Parsing file /system/etc/init/llkd.rc...
+[   11.671174] init: Parsing file /system/etc/init/lmkd.rc...
+[   11.672602] init: Parsing file /system/etc/init/logcatd.rc...
+[   11.674971] init: Parsing file /system/etc/init/logd.rc...
+[   11.677056] init: Parsing file /system/etc/init/logtagd.rc...
+[   11.679636] init: Parsing file /system/etc/init/lpdumpd.rc...
+[   11.692687] init: Parsing file /system/etc/init/mdnsd.rc...
+[   11.694985] init: Parsing file /system/etc/init/mediadrmserver.rc...
+[   11.696398] init: Parsing file /system/etc/init/mediaextractor.rc...
+[   11.702042] init: Parsing file /system/etc/init/mediametrics.rc...
+[   11.720648] init: Parsing file /system/etc/init/mediaserver.rc...
+[   11.722972] init: Parsing file /system/etc/init/mtpd.rc...
+[   11.724821] init: Parsing file /system/etc/init/netd.rc...
+[   11.726612] init: Parsing file /system/etc/init/otapreopt.rc...
+[   11.728063] init: Parsing file /system/etc/init/perfetto.rc...
+[   11.740597] init: Parsing file /system/etc/init/racoon.rc...
+[   11.742087] init: Parsing file /system/etc/init/recovery-persist.rc...
+[   11.743466] init: Parsing file /system/etc/init/recovery-refresh.rc...
+[   11.744859] init: Parsing file /system/etc/init/rss_hwm_reset.rc...
+[   11.746761] init: Parsing file /system/etc/init/servicemanager.rc...
+[   11.748373] init: Parsing file /system/etc/init/statsd.rc...
+[   11.749824] init: Parsing file /system/etc/init/storaged.rc...
+[   11.762006] init: Parsing file /system/etc/init/surfaceflinger.rc...
+[   11.772118] init: Parsing file /system/etc/init/tombstoned.rc...
+[   11.773577] init: Parsing file /system/etc/init/traceur.rc...
+[   11.774806] init: Parsing file /system/etc/init/uncrypt.rc...
+[   11.776571] init: Parsing file /system/etc/init/update_engine.rc...
+[   11.777991] init: Parsing file /system/etc/init/update_verifier.rc...
+[   11.779757] init: Parsing file /system/etc/init/usbd.rc...
+[   11.791355] init: Parsing file /system/etc/init/vdc.rc...
+[   11.792815] init: Parsing file /system/etc/init/vold.rc...
+[   11.794673] init: Parsing file /system/etc/init/wait_for_keymaster.rc...
+[   11.796077] init: Parsing file /system/etc/init/wifi-events.rc...
+[   11.798420] init: Parsing file /system/etc/init/wificond.rc...
+[   11.801977] init: Parsing file /product/etc/init...
+[   11.802176] init: Unable to read config file '/product/etc/init': open() failed: No such file or directory
+[   11.802755] init: Parsing file /product_services/etc/init...
+[   11.802906] init: Unable to read config file '/product_services/etc/init': open() failed: No such file or directory
+[   11.803637] init: Parsing file /odm/etc/init...
+[   11.803986] init: Unable to read config file '/odm/etc/init': open() failed: No such file or directory
+[   11.804442] init: Parsing directory /vendor/etc/init...
+[   11.805359] init: Parsing file /vendor/etc/init/android.hardware.audio@2.0-service.rc...
+[   11.810949] init: Parsing file /vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc...
+[   11.812549] init: Parsing file /vendor/etc/init/android.hardware.broadcastradio@1.1-service.rc...
+[   11.813597] init: Parsing file /vendor/etc/init/android.hardware.camera.provider@2.4-service.rc...
+[   11.815360] init: Parsing file /vendor/etc/init/android.hardware.cas@1.1-service.rc...
+[   11.816793] init: Parsing file /vendor/etc/init/android.hardware.configstore@1.1-service.rc...
+[   11.817805] init: Parsing file /vendor/etc/init/android.hardware.drm@1.0-service.rc...
+[   11.819645] init: Parsing file /vendor/etc/init/android.hardware.drm@1.2-service.clearkey.rc...
+[   11.833217] init: Parsing file /vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc...
+[   11.844112] init: Parsing file /vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc...
+[   11.845542] init: Parsing file /vendor/etc/init/android.hardware.gnss@1.0-service.rc...
+[   11.846737] init: Parsing file /vendor/etc/init/android.hardware.graphics.allocator@2.0-service.rc...
+[   11.848387] init: Parsing file /vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc...
+[   11.849637] init: Parsing file /vendor/etc/init/android.hardware.health@2.0-service.goldfish.rc...
+[   11.853614] init: Parsing file /vendor/etc/init/android.hardware.keymaster@3.0-service.rc...
+[   11.854795] init: Parsing file /vendor/etc/init/android.hardware.media.omx@1.0-service.rc...
+[   11.855877] init: Parsing file /vendor/etc/init/android.hardware.power@1.1-service.ranchu.rc...
+[   11.857402] init: Parsing file /vendor/etc/init/android.hardware.sensors@1.0-service.rc...
+[   11.859122] init: Parsing file /vendor/etc/init/android.hardware.thermal@2.0-service.rc...
+[   11.861152] init: Parsing file /vendor/etc/init/android.hardware.wifi@1.0-service.rc...
+[   11.862930] init: Parsing file /vendor/etc/init/hostapd.android.rc...
+[   11.865469] init: Parsing file /vendor/etc/init/rild.rc...
+[   11.866843] init: Parsing file /vendor/etc/init/vndservicemanager.rc...
+[   11.872705] init: processing action (SetupCgroups) from (<Builtin Action>:0)
+[   11.881058] libprocessgroup: Failed to mount blkio cgroup: No such file or directory
+[   11.881233] libprocessgroup: Failed to setup blkio cgroup
+[   11.902301] init: processing action (early-init) from (/init.rc:15)
+[   11.991319] init: Command 'write /proc/sys/kernel/sysrq 0' action=early-init (/init.rc:17) took 88ms and succeeded
+[   12.005376] init: starting service 'ueventd'...
+[   12.062175] init: starting service 'apexd-bootstrap'...
+[   12.151275] init: SVC_EXEC service 'apexd-bootstrap' pid 1255 (uid 0 gid 1000+0 context default) started; waiting...
+[   12.151691] init: Command 'exec_start apexd-bootstrap' action=early-init (/init.rc:40) took 104ms and succeeded
+[   12.424222] ueventd: ueventd started!
+[   12.446459] selinux: SELinux: Loaded file_contexts
+[   12.446459] 
+[   12.448884] ueventd: Parsing file /ueventd.rc...
+[   12.479904] ueventd: Parsing file /vendor/ueventd.rc...
+[   12.507617] ueventd: /vendor/ueventd.rc: 5: Invalid section keyword found
+[   12.508019] ueventd: Parsing file /odm/ueventd.rc...
+[   12.508721] ueventd: Unable to read config file '/odm/ueventd.rc': open() failed: No such file or directory
+[   12.508907] ueventd: Parsing file /ueventd.ranchu.rc...
+[   12.509031] ueventd: Unable to read config file '/ueventd.ranchu.rc': open() failed: No such file or directory
+[   12.697964] apexd: Bootstrap subcommand detected
+[   12.896702] apexd: Scanning /system/apex for embedded keys
+[   12.918255] apexd: Scanning /product/apex for embedded keys
+[   12.918854] apexd: ... does not exist. Skipping
+[   12.919365] apexd: Scanning /system/apex looking for APEX packages.
+[   12.931643] apexd: Found /system/apex/com.android.media.swcodec
+[   12.932950] apexd: Skipped when bootstrapping
+[   12.933443] apexd: Found /system/apex/com.android.tzdata
+[   12.951427] apexd: Successfully bind-mounted flattened package /system/apex/com.android.tzdata on /apex/com.android.tzdata@290000000
+[   12.953841] apexd: Found /system/apex/com.android.apex.cts.shim.apex
+[   12.957059] apexd: Skipping activation of non-flattened apex package /system/apex/com.android.apex.cts.shim.apex because device doesn't support it
+[   12.957587] apexd: Found /system/apex/com.android.runtime.debug
+[   12.959639] apexd: Successfully bind-mounted flattened package /system/apex/com.android.runtime.debug on /apex/com.android.runtime@1
+[   12.960539] apexd: Found /system/apex/com.android.conscrypt
+[   12.973050] apexd: Skipped when bootstrapping
+[   12.973854] apexd: Found /system/apex/com.android.resolv
+[   12.974860] apexd: Skipped when bootstrapping
+[   12.976243] apexd: Found /system/apex/com.android.media
+[   12.977291] apexd: Skipped when bootstrapping
+[   12.978201] apexd: Activated 6 packages. Skipped: 1
+[   12.978735] apexd: Bootstrapping done
+[   13.023750] init: Service 'apexd-bootstrap' (pid 1255) exited with status 0 waiting took 0.924000 seconds
+[   13.025306] init: processing action (early-init) from (/init.environ.rc:2)
+[   13.026062] init: processing action (early-init) from (/vendor/etc/init/hw/init.ranchu.rc:4)
+[   13.103745] init: processing action (wait_for_coldboot_done) from (<Builtin Action>:0)
+[   13.461854] init: wait for '/dev/.coldboot_done' took 357ms
+[   13.462582] init: Command 'wait_for_coldboot_done' action=wait_for_coldboot_done (<Builtin Action>:0) took 358ms and succeeded
+[   13.462876] init: processing action (MixHwrngIntoLinuxRng) from (<Builtin Action>:0)
+[   13.468670] ueventd: Coldboot took 0.924 seconds
+[   13.478935] init: Mixed 512 bytes from /dev/hw_random into /dev/urandom
+[   13.479376] init: processing action (SetMmapRndBits) from (<Builtin Action>:0)
+[   13.486855] init: processing action (SetKptrRestrict) from (<Builtin Action>:0)
+[   13.488002] init: processing action (KeychordInit) from (<Builtin Action>:0)
+[   13.491933] init: EVIOCSMASK not supported: Invalid argument
+[   14.461362] init: Command 'KeychordInit' action=KeychordInit (<Builtin Action>:0) took 972ms and succeeded
+[   14.461685] init: processing action (console_init) from (<Builtin Action>:0)
+[   14.461988] init: processing action (init) from (/init.rc:42)
+[   14.588190] init: property 'ro.bionic.cpu_variant' doesn't exist while expanding '${ro.bionic.cpu_variant}'
+[   14.588698] init: Command 'write /dev/cpu_variant:${ro.bionic.arch} ${ro.bionic.cpu_variant}' action=init (/init.rc:281) took 0ms and failed: cannot expand '${ro.bionic.cpu_variant}'
+[   14.589139] init: property 'ro.bionic.2nd_cpu_variant' doesn't exist while expanding '${ro.bionic.2nd_cpu_variant}'
+[   14.589328] init: Command 'write /dev/cpu_variant:${ro.bionic.2nd_arch} ${ro.bionic.2nd_cpu_variant}' action=init (/init.rc:283) took 0ms and failed: cannot expand '${ro.bionic.2nd_cpu_variant}'
+[   14.592433] init: starting service 'logd'...
+[   14.636421] init: starting service 'servicemanager'...
+[   14.641267] init: Created socket '/dev/socket/logd', mode 666, user 1036, group 1036
+[   14.643819] init: Created socket '/dev/socket/logdr', mode 666, user 1036, group 1036
+[   14.646092] init: Created socket '/dev/socket/logdw', mode 222, user 1036, group 1036
+[   14.646957] init: Opened file '/proc/kmsg', flags 0
+[   14.647254] init: Opened file '/dev/kmsg', flags 1
+[   14.709633] init: Command 'start servicemanager' action=init (/init.rc:295) took 74ms and succeeded
+[   14.712319] init: starting service 'hwservicemanager'...
+[   14.765452] init: Command 'start hwservicemanager' action=init (/init.rc:296) took 55ms and succeeded
+[   14.774139] init: starting service 'vndservicemanager'...
+[   14.878289] init: Command 'start vndservicemanager' action=init (/init.rc:297) took 111ms and succeeded
+[   14.878650] init: processing action (init) from (/vendor/etc/init/hw/init.ranchu.rc:8)
+[   14.997937] init: processing action (init) from (/system/etc/init/audioserver.rc:20)
+[   15.030900] init: processing action (StartBoringSslSelfTest) from (<Builtin Action>:0)
+[   15.099375] init: Command 'StartBoringSslSelfTest' action=StartBoringSslSelfTest (<Builtin Action>:0) took 67ms and succeeded
+[   15.145565] init: processing action (MixHwrngIntoLinuxRng) from (<Builtin Action>:0)
+[   15.210998] init: Mixed 512 bytes from /dev/hw_random into /dev/urandom
+[   15.211603] init: processing action (InitBinder) from (<Builtin Action>:0)
+[   15.214892] init: processing action (late-init) from (/init.rc:315)
+[   15.215202] init: processing action (late-init) from (/system/etc/init/atrace.rc:3)
+[   15.873564] logd.auditd: start
+[   15.873818] logd.klogd: 15873730266
+[   16.000847] init: Command 'write /proc/sys/kernel/sched_schedstats 1' action=late-init (/system/etc/init/atrace.rc:10) took 733ms and succeeded
+[   16.001753] init: Untracked pid 1586 exited with status 0
+[   16.038077] init: processing action (queue_property_triggers) from (<Builtin Action>:0)
+[   16.038586] init: processing action (early-fs) from (/init.rc:348)
+[   16.041012] init: starting service 'vold'...
+[   16.089436] init: processing action (fs) from (/vendor/etc/init/hw/init.ranchu.rc:1)
+[   16.158374] init: Skip mounting partition: /product
+[   16.158625] init: Skip mounting partition: /product_services
+[   16.171300] init: [libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/vdc
+[   16.191483] init: [libfs_mgr]Enabling quotas on /dev/block/vdc
+[   16.852609] tune2fs: tune2fs 1.44.4 (18-Aug-2018)
+[   16.852609] 
+[   16.855702] EXT4-fs (vdc): Ignoring removed nomblk_io_submit option
+[   16.870424] EXT4-fs (vdc): mounted filesystem with ordered data mode. Opts: errors=remount-ro,nomblk_io_submit
+[   16.871308] init: [libfs_mgr]check_fs(): mount(/dev/block/vdc,/data,ext4)=0: Success
+[   16.930228] init: [libfs_mgr]check_fs(): unmount(/data) succeeded
+[   16.931464] init: [libfs_mgr]Running /system/bin/e2fsck on /dev/block/vdc
+[   17.323335] e2fsck: e2fsck 1.44.4 (18-Aug-2018)
+[   17.323335] 
+[   17.323689] e2fsck: Pass 1: Checking inodes, blocks, and sizes
+[   17.323689] 
+[   17.323809] e2fsck: Pass 2: Checking directory structure
+[   17.323809] 
+[   17.323879] e2fsck: Pass 3: Checking directory connectivity
+[   17.323879] 
+[   17.323946] e2fsck: Pass 4: Checking reference counts
+[   17.323946] 
+[   17.324008] e2fsck: Pass 5: Checking group summary information
+[   17.324008] 
+[   17.324077] e2fsck: /dev/block/vdc: 17/393216 files (0.0% non-contiguous), 52342/1572864 blocks
+[   17.324077] 
+[   17.326129] init: [libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/vdc
+[   17.326609] init: [libfs_mgr]Reserved blocks 32768 is too large; capping to 31457
+[   17.327028] init: [libfs_mgr]Setting reserved block count on /dev/block/vdc to 31457
+[   17.498765] tune2fs: tune2fs 1.44.4 (18-Aug-2018)
+[   17.498765] 
+[   17.498931] tune2fs: Setting reserved blocks gid to 1065
+[   17.498931] 
+[   17.499001] tune2fs: Setting reserved blocks count to 31457
+[   17.499001] 
+[   17.499922] init: [libfs_mgr]Enabling ext4 encryption on /dev/block/vdc
+[   17.685958] tune2fs: tune2fs 1.44.4 (18-Aug-2018)
+[   17.685958] 
+[   17.687844] EXT4-fs (vdc): Ignoring removed nomblk_io_submit option
+[   17.694805] EXT4-fs (vdc): mounted filesystem with ordered data mode. Opts: nomblk_io_submit,errors=panic
+[   17.695955] init: [libfs_mgr]__mount(source=/dev/block/vdc,target=/data,type=ext4)=0: Success
+[   17.696824] init: [libfs_mgr]/data is file encrypted
+[   17.701976] init: Skip mounting partition: /product
+[   17.702126] init: Skip mounting partition: /product_services
+[   17.708148] init: Skip mounting partition: /product
+[   17.708598] init: Skip mounting partition: /product_services
+[   17.712314] init: Skip mounting partition: /product
+[   17.712422] init: Skip mounting partition: /product_services
+[   17.713624] init: Skip mounting partition: /product
+[   17.713724] init: Skip mounting partition: /product_services
+[   17.715179] init: Skip mounting partition: /product
+[   17.715280] init: Skip mounting partition: /product_services
+[   17.718158] init: Skip mounting partition: /product
+[   17.718823] init: Skip mounting partition: /product_services
+[   17.726446] init: DM_DEV_STATUS failed for scratch: No such device or address
+[   17.734304] init: Parsing file /product/etc/init...
+[   17.734931] init: Unable to read config file '/product/etc/init': open() failed: No such file or directory
+[   17.735466] init: Parsing file /product_services/etc/init...
+[   17.735661] init: Unable to read config file '/product_services/etc/init': open() failed: No such file or directory
+[   17.735928] init: Parsing file /odm/etc/init...
+[   17.736052] init: Unable to read config file '/odm/etc/init': open() failed: No such file or directory
+[   17.737395] init: Keyring created with id 394949883 in process 1
+[   17.739002] init: Command 'mount_all /vendor/etc/fstab.ranchu' action=fs (/vendor/etc/init/hw/init.ranchu.rc:2) took 1649ms and succeeded
+[   17.741365] init: processing action (fs) from (/system/etc/init/logd.rc:27)
+[   17.745578] init: processing action (fs) from (/system/etc/init/wifi-events.rc:17)
+[   17.746046] init: processing action (post-fs) from (/init.rc:352)
+[   17.747740] init: starting service 'exec 1 (/system/bin/vdc checkpoint markBootAttempt)'...
+[   17.778088] init: SVC_EXEC service 'exec 1 (/system/bin/vdc checkpoint markBootAttempt)' pid 1608 (uid 1000 gid 1000+0 context default) started; waiting...
+[   18.155634] init: Service 'exec 1 (/system/bin/vdc checkpoint markBootAttempt)' (pid 1608) exited with status 0 waiting took 0.379000 seconds
+[   18.172708] init: Command 'chown system cache /cache' action=post-fs (/init.rc:367) took 0ms and failed: lchown() failed: Read-only file system
+[   18.173447] init: Command 'chmod 0770 /cache' action=post-fs (/init.rc:368) took 0ms and failed: fchmodat() failed: Read-only file system
+[   18.177735] selinux: SELinux:  setxattr failed: /cache:  Read-only file system
+[   18.177735] 
+[   18.179042] init: Command 'mkdir /cache/recovery 0770 system cache' action=post-fs (/init.rc:374) took 1ms and failed: mkdir() failed: Read-only file system
+[   18.181078] init: Command 'mkdir /cache/backup_stage 0700 system system' action=post-fs (/init.rc:377) took 1ms and failed: mkdir() failed: Read-only file system
+[   18.182524] init: Command 'mkdir /cache/backup 0700 system system' action=post-fs (/init.rc:378) took 1ms and failed: mkdir() failed: Read-only file system
+[   18.186791] init: Command 'mkdir /cache/lost+found 0770 root root' action=post-fs (/init.rc:399) took 0ms and failed: mkdir() failed: Read-only file system
+[   18.188414] selinux: SELinux:  setxattr failed: /metadata:  Read-only file system
+[   18.188414] 
+[   18.189190] init: Command 'mkdir /metadata/vold' action=post-fs (/init.rc:402) took 0ms and failed: mkdir() failed: Read-only file system
+[   18.191411] init: Command 'mkdir /metadata/password_slots 0771 root system' action=post-fs (/init.rc:404) took 0ms and failed: mkdir() failed: Read-only file system
+[   18.192287] init: Command 'mkdir /metadata/apex 0700 root system' action=post-fs (/init.rc:406) took 0ms and failed: mkdir() failed: Read-only file system
+[   18.193258] init: processing action (post-fs) from (/system/etc/init/atrace_userdebug.rc:7)
+[   18.194995] init: processing action (post-fs) from (/system/etc/init/gsid.rc:6)
+[   18.195805] init: Command 'mkdir /metadata/gsi 0771 root system' action=post-fs (/system/etc/init/gsid.rc:7) took 0ms and failed: mkdir() failed: Read-only file system
+[   18.196417] init: processing action (post-fs) from (/system/etc/init/recovery-refresh.rc:1)
+[   18.197799] init: starting service 'exec 2 (/system/bin/recovery-refresh)'...
+[   18.236183] init: processing action (late-fs) from (/init.rc:408)
+[   18.242297] init: starting service 'vendor.keymaster-3-0'...
+[   18.323021] init: Command 'class_start early_hal' action=late-fs (/init.rc:414) took 84ms and succeeded
+[   18.323362] init: processing action (post-fs-data) from (/init.rc:416)
+[   18.324962] init: starting service 'exec 3 (/system/bin/vdc checkpoint prepareCheckpoint)'...
+[   18.402713] init: SVC_EXEC service 'exec 3 (/system/bin/vdc checkpoint prepareCheckpoint)' pid 1648 (uid 1000 gid 1000+0 context default) started; waiting...
+[   18.403638] init: Command 'exec - system system -- /system/bin/vdc checkpoint prepareCheckpoint' action=post-fs-data (/init.rc:421) took 78ms and succeeded
+[   18.589490] init: Service 'exec 2 (/system/bin/recovery-refresh)' (pid 1646) exited with status 254
+[   18.796102] init: Service 'exec 3 (/system/bin/vdc checkpoint prepareCheckpoint)' (pid 1648) exited with status 0 waiting took 0.394000 seconds
+[   18.840291] init: starting service 'exec 4 (/system/bin/vdc --wait cryptfs enablefilecrypto)'...
+[   18.920815] init: SVC_EXEC service 'exec 4 (/system/bin/vdc --wait cryptfs enablefilecrypto)' pid 1649 (uid 0 gid 0+0 context default) started; waiting...
+[   18.921531] init: Command 'installkey /data' action=post-fs-data (/init.rc:430) took 110ms and succeeded
+[   19.337047] init: Received control message 'interface_start' for 'android.hardware.keymaster@3.0::IKeymasterDevice/default' from pid: 1584 (/system/bin/hwservicemanager)
+[   19.337701] init: Could not find 'android.hardware.keymaster@3.0::IKeymasterDevice/default' for ctl.interface_start
+[   19.338859] init: Received control message 'interface_start' for 'android.hardware.keymaster@3.0::IKeymasterDevice/default' from pid: 1584 (/system/bin/hwservicemanager)
+[   19.339065] init: Could not find 'android.hardware.keymaster@3.0::IKeymasterDevice/default' for ctl.interface_start
+[   19.507736] init: Service 'exec 4 (/system/bin/vdc --wait cryptfs enablefilecrypto)' (pid 1649) exited with status 0 waiting took 0.598000 seconds
+[   19.518061] init: Setting policy on /data/bootchart
+[   19.521544] init: Policy for /data/bootchart set to dece1d4bd3122dbb modes 1/4
+[   19.529009] fscrypt: AES-256-CTS-CBC using implementation "cts(cbc-aes-aesni)"
+[   19.532083] init: starting service 'exec 5 (/system/bin/fsverity_init)'...
+[   19.575214] init: SVC_EXEC service 'exec 5 (/system/bin/fsverity_init)' pid 1657 (uid 0 gid 0+0 context default) started; waiting...
+[   20.154262] init: Service 'exec 5 (/system/bin/fsverity_init)' (pid 1657) exited with status 0 waiting took 0.595000 seconds
+[   20.155301] init: Switched to default mount namespace
+[   20.161252] init: Not setting policy on /data/apex
+[   20.168728] init: Not setting policy on /data/app-staging
+[   20.169764] init: starting service 'apexd'...
+[   20.224626] init: Command 'start apexd' action=post-fs-data (/init.rc:450) took 55ms and succeeded
+[   20.228725] init: Setting policy on /data/misc
+[   20.239242] type=1400 audit(1791789246.480:3): avc: denied { ioctl } for comm="init" path="/data/misc" dev="vdc" ino=12 ioctlcmd=0x6615 scontext=u:r:init:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+[   20.251173] init: Failed to get encryption policy for /data/misc: No data available
+[   20.526719] type=1400 audit(1791789246.480:3): avc: denied { ioctl } for comm="init" path="/data/misc" dev="vdc" ino=12 ioctlcmd=0x6615 scontext=u:r:init:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+[   20.527147] type=1400 audit(1791789246.740:4): avc: denied { getattr } for comm="ls" path="/data/misc" dev="vdc" ino=12 scontext=u:r:toolbox:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+[   20.536312] init: Setting ffffffdeffffffce1d4b policy on /data/misc failed!
+[   20.536682] init: Rebooting into recovery
+[   20.539467] init: Skip mounting partition: /product
+[   20.539868] init: Skip mounting partition: /product_services
+[   20.561444] init: Command 'mkdir /data/misc 01771 system misc' action=post-fs-data (/init.rc:456) took 335ms and failed: Failed to set bootloader message: failed to find /misc partition
+[   20.590833] type=1400 audit(1791789246.740:4): avc: denied { getattr } for comm="ls" path="/data/misc" dev="vdc" ino=12 scontext=u:r:toolbox:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+[   20.591144] type=1400 audit(1791789246.740:5): avc: denied { dac_read_search } for comm="ls" capability=2 scontext=u:r:toolbox:s0 tcontext=u:r:toolbox:s0 tclass=capability permissive=1
+[   20.591982] type=1400 audit(1791789246.740:5): avc: denied { dac_read_search } for comm="ls" capability=2 scontext=u:r:toolbox:s0 tcontext=u:r:toolbox:s0 tclass=capability permissive=1
+[   20.592158] type=1400 audit(1791789246.740:6): avc: denied { read } for comm="ls" name="misc" dev="vdc" ino=12 scontext=u:r:toolbox:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+[   20.592618] type=1400 audit(1791789246.740:6): avc: denied { read } for comm="ls" name="misc" dev="vdc" ino=12 scontext=u:r:toolbox:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+[   20.592780] type=1400 audit(1791789246.740:7): avc: denied { open } for comm="ls" path="/data/misc" dev="vdc" ino=12 scontext=u:r:toolbox:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+[   20.614084] apexd: Marking APEXd as starting
+[   20.630273] apexd: Scanning /system/apex for embedded keys
+[   20.685201] apexd: Scanning /product/apex for embedded keys
+[   20.685561] apexd: ... does not exist. Skipping
+[   20.685774] apexd: Populating APEX database from mounts...
+[   20.687929] apexd: Failed to walk /product/apex : Can't open /product/apex for reading : No such file or directory
+[   20.698281] apexd: Found "/apex/com.android.tzdata@290000000"
+[   20.699192] apexd: Found "/apex/com.android.runtime@1"
+[   20.702150] init: Setting policy on /data/local
+[   20.703139] init: Policy for /data/local set to dece1d4bd3122dbb modes 1/4
+[   20.720802] apexd: 2 packages restored.
+[   20.721887] apexd: Scanning /data/apex/sessions looking for sessions to be activated.
+[   20.732352] apexd: Scanning /data/apex/active looking for APEX packages.
+[   20.738190] apexd: Activated 0 packages. Skipped: 0
+[   20.738454] apexd: Scanning /system/apex looking for APEX packages.
+[   20.750307] apexd: Found /system/apex/com.android.media.swcodec
+[   20.754990] apexd: Successfully bind-mounted flattened package /system/apex/com.android.media.swcodec on /apex/com.android.media.swcodec@290000000
+[   20.756979] apexd: Found /system/apex/com.android.tzdata
+[   20.757891] apexd: Skipping activation of /system/apex/com.android.tzdata same package with higher version 290000000 is already active
+[   20.758201] apexd: Found /system/apex/com.android.apex.cts.shim.apex
+[   20.759975] apexd: Skipping activation of non-flattened apex package /system/apex/com.android.apex.cts.shim.apex because device doesn't support it
+[   20.769935] apexd: Found /system/apex/com.android.runtime.debug
+[   20.771175] init: Not setting policy on /data/preloads
+[   20.775177] init: Setting policy on /data/vendor
+[   20.776030] init: Policy for /data/vendor set to dece1d4bd3122dbb modes 1/4
+[   20.778974] apexd: Skipping activation of /system/apex/com.android.runtime.debug same package with higher version 1 is already active
+[   20.779176] apexd: Found /system/apex/com.android.conscrypt
+[   20.781216] init: Not setting policy on /data/vendor_ce
+[   20.783757] apexd: Successfully bind-mounted flattened package /system/apex/com.android.conscrypt on /apex/com.android.conscrypt@290000000
+[   20.784665] apexd: Found /system/apex/com.android.resolv
+[   20.785829] apexd: Successfully bind-mounted flattened package /system/apex/com.android.resolv on /apex/com.android.resolv@290000000
+[   20.786579] apexd: Found /system/apex/com.android.media
+[   20.787795] apexd: Successfully bind-mounted flattened package /system/apex/com.android.media on /apex/com.android.media@290000000
+[   20.788556] apexd: Activated 4 packages. Skipped: 3
+[   20.788720] apexd: Scanning /product/apex looking for APEX packages.
+[   20.789320] apexd: Failed to activate packages from /product/apex : Failed to scan /product/apex : Can't open /product/apex for reading : No such file or directory
+[   20.795953] init: Not setting policy on /data/vendor_de
+[   20.805233] apexd: Marking APEXd as ready
+[   20.831450] init: Not setting policy on /data/data
+[   20.844481] init: Setting policy on /data/app-private
+[   20.845371] init: Policy for /data/app-private set to dece1d4bd3122dbb modes 1/4
+[   20.849176] init: Setting policy on /data/app-ephemeral
+[   20.849883] init: Policy for /data/app-ephemeral set to dece1d4bd3122dbb modes 1/4
+[   20.857115] init: Setting policy on /data/app-asec
+[   20.857777] init: Policy for /data/app-asec set to dece1d4bd3122dbb modes 1/4
+[   20.861421] init: Setting policy on /data/app-lib
+[   20.862262] init: Policy for /data/app-lib set to dece1d4bd3122dbb modes 1/4
+[   20.867092] init: Setting policy on /data/app
+[   20.867914] init: Policy for /data/app set to dece1d4bd3122dbb modes 1/4
+[   20.872714] init: Setting policy on /data/property
+[   20.873364] init: Policy for /data/property set to dece1d4bd3122dbb modes 1/4
+[   20.876441] init: Setting policy on /data/tombstones
+[   20.877206] init: Policy for /data/tombstones set to dece1d4bd3122dbb modes 1/4
+[   20.888868] init: Setting policy on /data/dalvik-cache
+[   20.889432] init: Policy for /data/dalvik-cache set to dece1d4bd3122dbb modes 1/4
+[   20.893009] init: Setting policy on /data/ota
+[   20.893622] init: Policy for /data/ota set to dece1d4bd3122dbb modes 1/4
+[   20.896355] init: Setting policy on /data/ota_package
+[   20.897008] init: Policy for /data/ota_package set to dece1d4bd3122dbb modes 1/4
+[   20.899166] init: Setting policy on /data/resource-cache
+[   20.900644] init: Policy for /data/resource-cache set to dece1d4bd3122dbb modes 1/4
+[   20.902655] init: Not setting policy on /data/lost+found
+[   20.906416] init: Setting policy on /data/drm
+[   20.907665] init: Policy for /data/drm set to dece1d4bd3122dbb modes 1/4
+[   20.911127] init: Setting policy on /data/mediadrm
+[   20.911858] init: Policy for /data/mediadrm set to dece1d4bd3122dbb modes 1/4
+[   20.915185] init: Setting policy on /data/anr
+[   20.915870] init: Policy for /data/anr set to dece1d4bd3122dbb modes 1/4
+[   20.918584] init: Setting policy on /data/nfc
+[   20.919078] init: Policy for /data/nfc set to dece1d4bd3122dbb modes 1/4
+[   20.925884] init: Setting policy on /data/backup
+[   20.926644] init: Policy for /data/backup set to dece1d4bd3122dbb modes 1/4
+[   20.929475] init: Setting policy on /data/ss
+[   20.930011] init: Policy for /data/ss set to dece1d4bd3122dbb modes 1/4
+[   20.933004] init: Setting policy on /data/system
+[   20.933569] init: Policy for /data/system set to dece1d4bd3122dbb modes 1/4
+[   20.944858] init: Not setting policy on /data/system_de
+[   20.947132] init: Not setting policy on /data/system_ce
+[   20.949306] init: Not setting policy on /data/misc_de
+[   20.952263] init: Not setting policy on /data/misc_ce
+[   20.954904] init: Not setting policy on /data/user
+[   20.957251] init: Not setting policy on /data/user_de
+[   20.961746] init: Not setting policy on /data/media
+[   20.963879] init: Setting policy on /data/media/obb
+[   20.964566] init: Policy for /data/media/obb set to dece1d4bd3122dbb modes 1/4
+[   20.966910] init: Setting policy on /data/cache
+[   20.967448] init: Policy for /data/cache set to dece1d4bd3122dbb modes 1/4
+[   20.974073] init: start_waiting_for_property("apexd.status", "ready"): already set
+[   20.982817] init: Parsing file /apex/com.android.media.swcodec@290000000/etc/init.rc...
+[   20.987281] init: starting service 'exec 6 (/system/bin/vdc --wait cryptfs init_user0)'...
+[   21.043871] init: SVC_EXEC service 'exec 6 (/system/bin/vdc --wait cryptfs init_user0)' pid 1666 (uid 0 gid 0+0 context default) started; waiting...
+[   21.044304] init: Command 'init_user0' action=post-fs-data (/init.rc:603) took 58ms and succeeded
+[   21.633990] init: Service 'exec 6 (/system/bin/vdc --wait cryptfs init_user0)' (pid 1666) exited with status 0 waiting took 0.592000 seconds
+[   21.841576] init: Command 'restorecon --recursive --skip-ce /data' action=post-fs-data (/init.rc:606) took 206ms and succeeded
+[   21.843584] init: starting service 'exec 7 (/system/bin/tzdatacheck /apex/com.android.runtime/etc/tz /data/misc/zoneinfo)'...
+[   21.886655] init: SVC_EXEC service 'exec 7 (/system/bin/tzdatacheck /apex/com.android.runtime/etc/tz /data/misc/zoneinfo)' pid 1668 (uid 1000 gid 1000+0 context default) started; waiting...
+[   22.048365] init: Service 'exec 7 (/system/bin/tzdatacheck /apex/com.android.runtime/etc/tz /data/misc/zoneinfo)' (pid 1668) exited with status 0 waiting took 0.161000 seconds
+[   22.054452] init: processing action (post-fs-data) from (/init.usb.rc:6)
+[   22.062347] init: Setting policy on /data/adb
+[   22.063334] init: Policy for /data/adb set to dece1d4bd3122dbb modes 1/4
+[   22.063573] init: processing action (post-fs-data) from (/vendor/etc/init/hw/init.ranchu.rc:18)
+[   22.086081] init: starting service 'ranchu-net'...
+[   22.128438] init: processing action (post-fs-data) from (/system/etc/init/art_apex_boot_integrity.rc:19)
+[   22.130406] init: starting service 'exec 8 (/system/bin/art_apex_boot_integrity)'...
+[   22.150150] init: SVC_EXEC service 'exec 8 (/system/bin/art_apex_boot_integrity)' pid 1670 (uid 0 gid 0+0 context default) started; waiting...
+[   23.399960] init: Service 'exec 8 (/system/bin/art_apex_boot_integrity)' (pid 1670) exited with status 0 waiting took 1.251000 seconds
+[   23.401249] init: processing action (post-fs-data) from (/system/etc/init/bootstat.rc:9)
+[   23.406044] init: processing action (post-fs-data) from (/system/etc/init/gsid.rc:10)
+[   23.409887] init: Not setting policy on /data/gsi
+[   23.415422] init: processing action (post-fs-data) from (/system/etc/init/incidentd.rc:21)
+[   23.417581] init: processing action (post-fs-data) from (/system/etc/init/iorapd.rc:27)
+[   23.420876] init: processing action (post-fs-data) from (/system/etc/init/logtagd.rc:4)
+[   23.425746] init: processing action (post-fs-data) from (/system/etc/init/otapreopt.rc:3)
+[   23.428350] init: starting service 'exec 9 (/system/bin/otapreopt_slot)'...
+[   23.457020] init: SVC_EXEC service 'exec 9 (/system/bin/otapreopt_slot)' pid 1678 (uid 0 gid 0+0 context default) started; waiting...
+[   23.539333] fscrypt: AES-256-XTS using implementation "xts-aes-aesni"
+[   23.695556] init: Untracked pid 1689 exited with status 0
+[   24.139797] init: Service 'exec 9 (/system/bin/otapreopt_slot)' (pid 1678) exited with status 1 waiting took 0.684000 seconds
+[   24.152579] selinux: SELinux:  Could not stat /data/dalvik-cache/arm: No such file or directory.
+[   24.152579] 
+[   24.153302] selinux: SELinux:  Could not stat /data/dalvik-cache/arm64: No such file or directory.
+[   24.153302] 
+[   24.153568] selinux: SELinux:  Could not stat /data/dalvik-cache/mips: No such file or directory.
+[   24.153568] 
+[   24.154057] selinux: SELinux:  Could not stat /data/dalvik-cache/mips64: No such file or directory.
+[   24.154057] 
+[   24.154287] selinux: SELinux:  Could not stat /data/dalvik-cache/x86: No such file or directory.
+[   24.154287] 
+[   24.155061] selinux: SELinux:  Could not stat /data/dalvik-cache/x86_64: No such file or directory.
+[   24.155061] 
+[   24.155571] init: processing action (post-fs-data) from (/system/etc/init/recovery-persist.rc:1)
+[   24.159124] init: starting service 'exec 10 (/system/bin/recovery-persist)'...
+[   24.270840] init: Command 'exec_background - system log -- /system/bin/recovery-persist' action=post-fs-data (/system/etc/init/recovery-persist.rc:3) took 104ms and succeeded
+[   24.271263] init: processing action (post-fs-data) from (/system/etc/init/statsd.rc:25)
+[   24.279314] init: processing action (post-fs-data) from (/vendor/etc/init/hostapd.android.rc:9)
+[   24.341081] init: processing action (load_persist_props_action) from (/init.rc:305)
+[   24.341737] init: Couldn't load property file '/data/local.prop': open() failed: No such file or directory: No such file or directory
+[   24.342690] init: Could not load single persistent property file, trying legacy directory: Unable to read persistent property file: open() failed: No such file or directory
+[   24.414767] init: Command 'load_persist_props' action=load_persist_props_action (/init.rc:306) took 73ms and succeeded
+[   24.415941] init: starting service 'logd-reinit'...
+[   24.508459] init: Command 'start logd-reinit' action=load_persist_props_action (/init.rc:308) took 92ms and succeeded
+[   24.509650] init: processing action (load_persist_props_action) from (/system/etc/init/flags_health_check.rc:1)
+[   24.534030] init: Setting policy on /data/server_configurable_flags
+[   24.535155] init: Policy for /data/server_configurable_flags set to dece1d4bd3122dbb modes 1/4
+[   24.537210] init: starting service 'exec 11 (/system/bin/flags_health_check BOOT_FAILURE)'...
+[   24.648680] init: SVC_EXEC service 'exec 11 (/system/bin/flags_health_check BOOT_FAILURE)' pid 1707 (uid 1000 gid 1000+0 context default) started; waiting...
+[   24.649258] init: Command 'exec - system system -- /system/bin/flags_health_check BOOT_FAILURE' action=load_persist_props_action (/system/etc/init/flags_health_check.rc:5) took 113ms and succeeded
+[   24.652105] init: Service 'exec 10 (/system/bin/recovery-persist)' (pid 1697) exited with status 0
+[   24.947555] init: Service 'exec 11 (/system/bin/flags_health_check BOOT_FAILURE)' (pid 1707) exited with status 0 waiting took 0.317000 seconds
+[   24.948424] init: processing action (load_persist_props_action) from (/system/etc/init/logcatd.rc:31)
+[   24.965810] init: processing action (ro.crypto.state=encrypted && ro.crypto.type=file && zygote-start) from (/init.rc:642)
+[   24.968084] init: starting service 'update_verifier_nonencrypted'...
+[   24.997404] logd.daemon: reinit
+[   25.106300] init: SVC_EXEC service 'update_verifier_nonencrypted' pid 1708 (uid 0 gid 2001+1 context default) started; waiting...
+[   25.106737] init: Command 'exec_start update_verifier_nonencrypted' action=ro.crypto.state=encrypted && ro.crypto.type=file && zygote-start (/init.rc:644) took 140ms and succeeded
+[   25.107053] init: Service 'logd-reinit' (pid 1698) exited with status 0
+[   25.365728] init: Service 'update_verifier_nonencrypted' (pid 1708) exited with status 0 waiting took 0.317000 seconds
+[   25.368918] init: starting service 'netd'...
+[   25.439960] init: Created socket '/dev/socket/dnsproxyd', mode 660, user 0, group 3003
+[   25.456368] init: Command 'start netd' action=ro.crypto.state=encrypted && ro.crypto.type=file && zygote-start (/init.rc:645) took 89ms and succeeded
+[   25.458240] init: starting service 'zygote'...
+[   25.467689] init: Created socket '/dev/socket/mdns', mode 660, user 0, group 1000
+[   25.469643] init: Created socket '/dev/socket/fwmarkd', mode 660, user 0, group 3003
+[   25.526287] init: Created socket '/dev/socket/zygote', mode 660, user 0, group 1000
+[   25.544730] IPv6: ADDRCONF(NETDEV_UP): radio0-peer: link is not ready
+[   25.558442] init: Command 'start zygote' action=ro.crypto.state=encrypted && ro.crypto.type=file && zygote-start (/init.rc:646) took 100ms and succeeded
+[   25.561203] init: Created socket '/dev/socket/usap_pool_primary', mode 660, user 0, group 1000
+[   25.575977] init: starting service 'zygote_secondary'...
+[   25.706737] init: Command 'start zygote_secondary' action=ro.crypto.state=encrypted && ro.crypto.type=file && zygote-start (/init.rc:647) took 147ms and succeeded
+[   25.707143] init: processing action (zygote-start) from (/vendor/etc/init/hw/init.ranchu.rc:25)
+[   25.839150] init: Command 'mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi' action=zygote-start (/vendor/etc/init/hw/init.ranchu.rc:29) took 72ms and succeeded
+[   25.839743] init: processing action (zygote-start) from (/system/etc/init/bootstat.rc:72)
+[   25.843081] init: starting service 'exec 12 (/system/bin/bootstat --set_system_boot_reason)'...
+[   25.889470] init: Created socket '/dev/socket/zygote_secondary', mode 660, user 0, group 1000
+[   25.904770] init: Created socket '/dev/socket/usap_pool_secondary', mode 660, user 0, group 1000
+[   26.009146] init: Command 'exec_background - system log -- /system/bin/bootstat --set_system_boot_reason' action=zygote-start (/system/etc/init/bootstat.rc:75) took 168ms and succeeded
+[   26.037846] init: processing action (firmware_mounts_complete) from (/init.rc:311)
+[   26.038700] init: processing action (early-boot) from (/vendor/etc/init/hw/init.ranchu.rc:31)
+[   26.091574] init: Command 'mkdir /config/usb_gadget/g1 0770' action=early-boot (/vendor/etc/init/hw/init.ranchu.rc:33) took 52ms and succeeded
+[   26.106136] file system registered
+[   26.190666] init: processing action (early-boot) from (/system/etc/init/installd.rc:5)
+[   26.271058] init: Command 'mkdir /config/sdcardfs/extensions/1056/asx' action=early-boot (/system/etc/init/installd.rc:34) took 70ms and succeeded
+[   26.374125] init: Command 'mkdir /config/sdcardfs/extensions/1057/pcx' action=early-boot (/system/etc/init/installd.rc:46) took 94ms and succeeded
+[   26.477587] init: processing action (boot) from (/init.rc:649)
+[   26.575202] init: starting service 'hidl_memory'...
+[   26.672177] init: starting service 'system_suspend'...
+[   26.763311] init: starting service 'healthd'...
+[   26.872361] init: starting service 'vendor.audio-hal-2-0'...
+[   27.091213] init: starting service 'broadcastradio-hal'...
+[   27.331459] init: starting service 'vendor.camera-provider-2-4'...
+[   27.641045] init: couldn't write 1722 to /dev/cpuset/camera-daemon/tasks: No such file or directory
+[   27.664870] init: starting service 'vendor.cas-hal-1-1'...
+[   28.082827] init: starting service 'vendor.configstore-hal'...
+[   28.253642] init: starting service 'vendor.drm-hal-1-0'...
+[   28.428231] init: starting service 'vendor.drm-clearkey-hal-1-2'...
+[   28.595306] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[   28.734437] init: starting service 'vendor.drm-widevine-hal-1-2'...
+[   28.931601] IPv6: ADDRCONF(NETDEV_UP): radio0: link is not ready
+[   28.949745] IPv6: ADDRCONF(NETDEV_CHANGE): radio0: link becomes ready
+[   28.956894] IPv6: ADDRCONF(NETDEV_CHANGE): radio0-peer: link becomes ready
+[   29.008379] init: starting service 'vendor.gatekeeper-1-0'...
+[   29.384845] init: starting service 'vendor.gnss_service'...
+[   29.565138] init: starting service 'vendor.gralloc-2-0'...
+[   29.657166] init: starting service 'vendor.hwcomposer-2-1'...
+[   29.903375] init: starting service 'vendor.health-hal-2-0'...
+[   30.232133] init: Opened file '/dev/kmsg', flags 1
+[   30.370410] init: starting service 'vendor.power-hal-1-1'...
+[   31.004561] init: starting service 'vendor.sensors-hal-1-0'...
+[   31.403282] init: starting service 'vendor.thermal-hal-2-0-mock'...
+[   31.908004] init: starting service 'vendor.wifi_hal_legacy'...
+[   32.361579] init: Command 'class_start hal' action=boot (/init.rc:753) took 5806ms and succeeded
+[   32.385800] init: starting service 'ranchu-setup'...
+[   32.756434] init: starting service 'qemu-props'...
+[   33.014346] init: starting service 'ashmemd'...
+[   33.333775] init: starting service 'audioserver'...
+[   33.493025] init: starting service 'gpu'...
+[   33.875404] android.hardware.health@2.0-impl: wakealarm_init: timerfd_create failed
+[   33.931406] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[   33.965380] init: starting service 'lmkd'...
+[   34.218212] init: Created socket '/dev/socket/lmkd', mode 660, user 1000, group 1000
+[   34.356584] init: starting service 'surfaceflinger'...
+[   34.640061] init: Failed to bind socket 'pdx/system/vr/display/client': No such file or directory
+[   34.863576] init: Failed to bind socket 'pdx/system/vr/display/manager': No such file or directory
+[   34.865970] init: Failed to bind socket 'pdx/system/vr/display/vsync': No such file or directory
+[   35.023547] init: Command 'class_start core' action=boot (/init.rc:755) took 2638ms and succeeded
+[   35.110039] init: processing action (boot) from (/init.usb.rc:21)
+[   35.174855] init: processing action (persist.sys.usb.config=* && boot) from (/init.usb.rc:102)
+[   35.200015] init: processing action (boot) from (/vendor/etc/init/hw/init.ranchu.rc:50)
+[   35.432089] init: Service 'exec 12 (/system/bin/bootstat --set_system_boot_reason)' (pid 1714) exited with status 0
+[   35.495306] init: Command 'setprop ro.opengles.version ${ro.kernel.qemu.opengles.version}' action=boot (/vendor/etc/init/hw/init.ranchu.rc:54) took 62ms and succeeded
+[   35.641076] init: Command 'chown root system /sys/power/wake_unlock' action=boot (/vendor/etc/init/hw/init.ranchu.rc:60) took 58ms and succeeded
+[   35.697554] init: starting service 'goldfish-logcat'...
+[   36.232034] init: Command 'start goldfish-logcat' action=boot (/vendor/etc/init/hw/init.ranchu.rc:66) took 537ms and succeeded
+[   36.292617] init: Command 'setprop sys.usb.controller dummy_udc.0' action=boot (/vendor/etc/init/hw/init.ranchu.rc:68) took 59ms and succeeded
+[   36.351615] init: processing action (boot) from (/system/etc/init/bootstat.rc:63)
+[   36.352098] init: processing action (boot) from (/system/etc/init/dumpstate.rc:1)
+[   36.353219] init: processing action (boot) from (/system/etc/init/gsid.rc:14)
+[   36.357601] init: starting service 'exec 13 (/system/bin/gsid run-startup-tasks)'...
+[   36.657367] init: Command 'exec_background - root root -- /system/bin/gsid run-startup-tasks' action=boot (/system/etc/init/gsid.rc:15) took 303ms and succeeded
+[   36.657865] init: processing action (enable_property_trigger) from (<Builtin Action>:0)
+[   36.659168] init: processing action (security.perf_harden=1) from (/init.rc:816)
+[   36.813015] init: Command 'write /proc/sys/kernel/perf_event_paranoid 3' action=security.perf_harden=1 (/init.rc:817) took 153ms and succeeded
+[   36.813671] init: processing action (ro.debuggable=1) from (/init.rc:840)
+[   36.816839] type=1400 audit(1791789246.740:7): avc: denied { open } for comm="ls" path="/data/misc" dev="vdc" ino=12 scontext=u:r:toolbox:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+[   36.817201] type=1400 audit(1791789263.060:8): avc: denied { read write } for comm="init" name="ttyS0" dev="tmpfs" ino=7797 scontext=u:r:init:s0 tcontext=u:object_r:serial_device:s0 tclass=chr_file permissive=1
+[   36.818064] type=1400 audit(1791789263.060:8): avc: denied { read write } for comm="init" name="ttyS0" dev="tmpfs" ino=7797 scontext=u:r:init:s0 tcontext=u:object_r:serial_device:s0 tclass=chr_file permissive=1
+[   36.818258] type=1400 audit(1791789263.060:9): avc: denied { open } for comm="init" path="/dev/ttyS0" dev="tmpfs" ino=7797 scontext=u:r:init:s0 tcontext=u:object_r:serial_device:s0 tclass=chr_file permissive=1
+[   36.850777] init: starting service 'console'...
+[   37.057756] init: setpgid failed for console: Operation not permitted
+[   37.067154] type=1400 audit(1791789263.060:9): avc: denied { open } for comm="init" path="/dev/ttyS0" dev="tmpfs" ino=7797 scontext=u:r:init:s0 tcontext=u:object_r:serial_device:s0 tclass=chr_file permissive=1
+[   37.067704] type=1400 audit(1791789263.290:10): avc: denied { ioctl } for comm="init" path="/dev/ttyS0" dev="tmpfs" ino=7797 ioctlcmd=0x540e scontext=u:r:init:s0 tcontext=u:object_r:serial_device:s0 tclass=chr_file permissive=1
+[   37.158232] init: Command 'start console' action=ro.debuggable=1 (/init.rc:846) took 342ms and succeeded
+[   37.159008] init: processing action (sys.usb.config=adb && sys.usb.configfs=1) from (/vendor/etc/init/hw/init.ranchu.rc:169)
+[   37.262569] configfs-gadget dummy_udc.0: failed to start g1: -19
+[   37.264209] init: Command 'write /config/usb_gadget/g1/UDC ${sys.usb.controller}' action=sys.usb.config=adb && sys.usb.configfs=1 (/vendor/etc/init/hw/init.ranchu.rc:172) took 85ms and failed: Unable to write to file '/config/usb_gadget/g1/UDC': Unable to write file contents: No such device
+[   37.305807] init: processing action (sys.usb.config=adb && sys.usb.configfs=1) from (/init.usb.configfs.rc:17)
+[   37.306587] init: starting service 'adbd'...
+[   37.677091] init: Created socket '/dev/socket/adbd', mode 660, user 1000, group 1000
+[   37.861961] init: Command 'start adbd' action=sys.usb.config=adb && sys.usb.configfs=1 (/init.usb.configfs.rc:18) took 555ms and succeeded
+[   37.862425] init: processing action (ro.iorapd.enable=false) from (/system/etc/init/iorapd.rc:24)
+[   37.942286] init: processing action (ro.debuggable=1) from (/system/etc/init/llkd-debuggable.rc:1)
+[   37.945179] init: processing action (ro.debuggable=*) from (/system/etc/init/llkd.rc:2)
+[   37.981427] init: processing action (persist.traced.enable=1) from (/system/etc/init/perfetto.rc:50)
+[   38.003531] init: starting service 'traced'...
+[   38.298713] init: Created socket '/dev/socket/traced_consumer', mode 666, user 0, group 0
+[   38.317390] init: Command 'start traced' action=persist.traced.enable=1 (/system/etc/init/perfetto.rc:59) took 314ms and succeeded
+[   38.352854] init: Received control message 'start' for 'netmgr' from pid: 1766 (setprop ctl.start netmgr)
+[   38.354741] init: starting service 'netmgr'...
+[   38.512143] init: Created socket '/dev/socket/traced_producer', mode 666, user 0, group 0
+[   38.655267] init: starting service 'traced_probes'...
+[   38.818307] init: Command 'start traced_probes' action=persist.traced.enable=1 (/system/etc/init/perfetto.rc:60) took 235ms and succeeded
+[   38.818828] init: processing action (nonencrypted) from (/init.rc:757)
+[   38.819729] init: Could not start service 'flash_recovery' as part of class 'main': Cannot find '/system/bin/install-recovery.sh': No such file or directory
+[   38.883285] init: Opened file '/dev/kmsg', flags 1
+[   38.915396] init: starting service 'bpfloader'...
+[   39.202389] init: starting service 'cameraserver'...
+[   39.416346] init: couldn't write 1786 to /dev/cpuset/camera-daemon/tasks: No such file or directory
+[   39.425433] init: starting service 'drm'...
+console:/ $ set +o emacs; set +o vi; printf '%b' '\0163\0165\0040\0060\0040\[   39.653800] init: starting service 'idmap2d'...
+01 set +o vi; printf '%b' '\0163\0165\0040\0060\0040\01                         <63\0150\0040\0055\0143\00\0163\0165\0040\0060\0040\0163\0150\0040\0055\0143\00                         <40\0047\0163\0164\0164\01\0163\0150\0040\0055\0143\0040\0047\0163\0164\0164\01                         <71\0040\0055\0106\0040\00\0040\0047\0163\0164\0164\0171\0040\0055\0106\0040\00                         <57\0144\0145\0166\0057\01\0171\0040\0055\0106\0040\0057\0144\0145\0166\0057\01                         <64\0164\0171\0123\0060\00\0057\0144\0145\0166\0057\0164\0164\0171\0123\0060\00                         <40\0055\0145\0143\0150\01\0164\0164\0171\0123\0060\0040\0055\0145\0143\0150\01                         <57\0073\0040\0151\0146\00\0040\0055\0145\0143\0150\0157\0073\0040\0151\0146\00                         <40\0133\0040\0055\0172\00\0157\0073\0040\0151\0146\0040\0133\0040\0055\0172\00                         <40\0042\0044\0050\0147\01\0040\0133\0040\0055\0172\0040\0042\0044\0050\0147\01                         <45\0164\0160\0162\0157\01\0040\0042\0044\0050\0147\0145\0164\0160\0162\0157\01                         <60\0040\0162\0157\0056\01\0145\0164\0160\0162\0157\0160\0040\0162\0157\0056\01                         <50\0167\0137\0164\0151\01\0160\0040\0162\0157\0056\0150\0167\0137\0164\0151\01                         <55\0145\0157\0165\0164\01\0150\0167\0137\0164\0151\0155\0145\0157\0165\0164\01                         <37\0155\0165\0154\0164\01\0155\0145\0157\0165\0164\0137\0155\0165\0154\0164\01                         <51\0160\0154\0151\0145\01\0137\0155\0165\0154\0164\0151\0160\0154\0151\0145\01                         <62\0051\0042\0040\0135\00\0151\0160\0154\0151\0145\0162\0051\0042\0040\0135\00                         <73\0040\0164\0150\0145\01\0162\0051\0042\0040\0135\0073\0040\0164\0150\0145\01                         <56\00[   40.515149] init: starting service 'incidentd'...
+40\0163\0145\0164\01\0073\0040\0164\0150\0145\0156\0040\0163\0145\0164\01                         <60\0162\0157\0160\0040\01\0156\0040\0163\0145\0164\0160\0162\0157\0160\0040\01                         <62\0157\0056\0150\0167\01\0160\0162\0157\0160\0040\0162\0157\0056\0150\0167\01                         <37\0164\0151\0155\0145\01\0162\0157\0056\0150\0167\0137\0164\0151\0155\0145\01                         <57\0165\0164\0137\0155\01\0137\0164\0151\0155\0145\0157\0165\0164\0137\0155\01                         <65\0154\0164\0151\0160\01\0157\0165\0164\0137\0155\0165\0154\0164\0151\0160\01                         <54\0151\0145\0162\0040\00\0165\0154\0164\0151\0160\0154\0151\0145\0162\0040\00                         <61\0060\0073\0040\0146\01\0154\0151\0145\0162\0040\0061\0060\0073\0040\0146\01                         <51\0047\0073\0040\0145\01\0061\0060\0073\0040\0146\0151\0047\0073\0040\0145\01                         <43\0150\0157\0040\0114\01\0151\0047\0073\0040\0145\0143\0150\0157\0040\0114\01                         <01\0131\0101\0116\0137\01\0143\0150\0157\0040\0114\0101\0131\0101\0116\0137\01                         <02[   40.862734] init: starting service 'installd'...
+\0117\0117\0124\0073\00\0101\0131\0101\0116\0137\0102\0117\0117\0124\0073\00                         <40\0147\0145\0164\0160\01\0102\0117\0117\0124\0073\0040\0147\0145\0164\0160\01                         <62\0157\0160\0040\0163\01\0040\0147\0145\0164\0160\0162\0157\0160\0040\0163\01                         <71\0163\0056\0142\0157\01\0162\0157\0160\0040\0163\0171\0163\0056\0142\0157\01                         <57\0164\0137\0143\0157\01\0171\0163\0056\0142\0157\0157\0164\0137\0143\0157\01                         <55\0160\0154\0145\0164\01\0157\0164\0137\0143\0157\0155\0160\0154\0145\0164\01                         <45\0144\0073\0040\0163\01\0155\0160\0154\0145\0164\0145\0144\0073\0040\0163\01                         <45\0162\0166\0151\0143\01\0145\0144\0073\0040\0163\0145\0162\0166\0151\0143\01                         <45\0040\01[   41.131614] init: starting service 'keystore'...
+43\0150\0145\01\0145\0162\0166\0151\0143\0145\0040\0143\0150\0145\01                         <43\0153\0040\0160\0141\01\0145\0040\0143\0150\0145\0143\0153\0040\0160\0141\01                         <43\0153\0141\0147\0145\00\0143\0153\0040\0160\0141\0143\0153\0141\0147\0145\00                         <73\0040\0163\0164\0141\01\0143\0153\0141\0147\0145\0073\0040\0163\0164\0141\01                         <64\0165\0163\0075\0044\00\0073\0040\0163\0164\0141\0164\0165\0163\0075\0044\00                         <77\0073\0040\0160\0162\01\0164\0165\0163\0075\0044\0077\0073\0040\0160\0162\01                         <51\0156\0164\0146\0040\00\0077\0073\0040\0160\0162\0151\0156\0164\0146\0040\00                         <47\0134\0156\0114\0131\01\0151\0156\0164\0146\0040\0047\0134\0156\0114\0131\01                         <16[   41.451010] init: starting service 'mdnsd'...
+\0137\0146\0071\0142\00\0047\0134\0156\0114\0131\0116\0137\0146\0071\0142\00                         <62\0146\0061\0070\0063\00\0116\0137\0146\0071\0142\0062\0146\0061\0070\0063\00                         <66\0061\0062\0065\0064\00\0062\0146\0061\0070\0063\0066\0061\0062\0065\0064\00                         <62\0071\0142\0071\0071\00\0066\0061\0062\0065\0064\0062\0071\0142\0071\0071\00                         <62\0067\0145\0146\0146\00\0062\0071\0142\0071\0071\0062\0067\0145\0146\0146\00                         <65\0144\0062\0063\0063\01\0062\0067\0145\0146\0146\0065\0144\0062\0063\0063\01                         <46\0062\0064\0065\0072\00\0065\0144\0062\0063\0063\0146\0062\0064\0065\0072\00                         <45\0163\0134\0156\0047\00\0146\0062\0064\0065\0072\0045\0163\0134\0156\0047\00                         <40\0042\0044\[   41.678113] init: starting service 'mediadrm'...
+0163\0164\01\0045\0163\0134\0156\0047\0040\0042\0044\0163\0164\01                         <41\0164\0165\0163\0042\00\0040\0042\0044\0163\0164\0141\0164\0165\0163\0042\00                         <12' >/data/local/tmp/lyn_\0141\0164\0165\0163\0042\0012' >/data/local/tmp/lyn_                         <transport_7fea3[   41.818350] init: Created socket '/dev/socket/mdnsd', mode 660, user 1020, group 3003
+cc7a40c461\0012' >/data/local/tmp/lyn_transport_7fea3cc7a40c461                         <9be565dc165358552.sh; [ $yn_transport_7fea3cc7a40c4619be565dc165358552.sh; [ $                         <? = 0 ] || printf '\ntran4619be565dc165358552.sh; [ $? = 0 ] || printf '\ntran                         <sport_integrity_error\n';[ $? = 0 ] || printf '\ntransport_integrity_error\n';                         < printf '\ntransport_e973ransport_integrity_error\n'; printf '\ntransport_e973                         <e06f50b447b9bea55c484217an'; printf '\ntransport_e973e06f50b447b9bea55c484217a                         <c3a\n'
+[   41.969763] init: starting service 'mediaextractor'...
+[   42.619600] init: starting service 'mediametrics'...
+[   42.767717] br0: port 1(eth0) entered blocking state
+[   42.767918] br0: port 1(eth0) entered disabled state
+[   42.886892] init: starting service 'media'...
+[   42.955911] device eth0 entered promiscuous mode
+[   43.017449] br0: port 1(eth0) entered blocking state
+[   43.017675] br0: port 1(eth0) entered forwarding state
+[   43.058473] init: starting service 'statsd'...
+[   43.131341] br0: port 2(radio0-peer) entered blocking state
+[   43.131794] br0: port 2(radio0-peer) entered disabled state
+[   43.133196] device radio0-peer entered promiscuous mode
+[   43.133688] br0: port 2(radio0-peer) entered blocking state
+[   43.133752] br0: port 2(radio0-peer) entered forwarding state
+[   43.295463] init: starting service 'storaged'...
+[   43.360624] init: Created socket '/dev/socket/statsdw', mode 222, user 1066, group 1066
+[   43.373689] init: Failed to open file '/d/mmc0/mmc0:0001/ext_csd': No such file or directory
+[   43.431933] init: starting service 'wificond'...
+[   43.794619] init: starting service 'vendor.media.omx'...
+[   44.107348] init: starting service 'vendor.ril-daemon'...
+[   44.123099] read descriptors
+[   44.123616] read strings
+[   44.604596] init: starting service 'media.swcodec'...
+[   45.003976] type=1400 audit(1791789263.290:10): avc: denied { ioctl } for comm="init" path="/dev/ttyS0" dev="tmpfs" ino=7797 ioctlcmd=0x540e scontext=u:r:init:s0 tcontext=u:object_r:serial_device:s0 tclass=chr_file permissive=1
+[   45.004644] type=1400 audit(1791789271.210:11): avc: denied { module_request } for comm=73657276657220736F636B6574 kmod="net-pf-40" scontext=u:r:adbd:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[   45.419532] init: Command 'class_start main' action=nonencrypted (/init.rc:758) took 6600ms and succeeded
+[   45.635905] init: starting service 'gatekeeperd'...
+[   46.212838] init: starting service 'tombstoned'...
+[   46.860760] init: Created socket '/dev/socket/tombstoned_crash', mode 666, user 1000, group 1000
+[   46.865548] init: Created socket '/dev/socket/tombstoned_intercept', mode 666, user 1000, group 1000
+[   46.989565] init: Created socket '/dev/socket/tombstoned_java_trace', mode 666, user 1000, group 1000
+
+transport_e973e06f50b447b9bea55c484217ac3a
+set +o emacs; set +o vi; if [ "$[   47.661311] init: starting service 'usbd'...
+(sha256sum /data/local/tmp/lyn_transport_7fea3cc7a40c4619be565dc165358552.sh | cut -d " " -f 1)" = 9b028647cd30480c56ac0abd0a1e067b775e8324446ec669458880f700e49a6b ]; then sh /data/local/tmp/lyn_transport_7fea3cc7a40c4619be565dc165358552.sh; else printf '\ntransport_integrity_error\n'; fconsole:/ $ i; rm -f /data/local/tmp/lyn_transport_7fea3cc7a40c4619be565dc16[   48.154601] init: starting service 'vendor.fps_hal'...
+5358552.sh
+[   48.578298] init: Command 'class_start late_start' action=nonencrypted (/init.rc:759) took 2943ms and succeeded
+[   48.579798] init: Service 'exec 13 (/system/bin/gsid run-startup-tasks)' (pid 1767) exited with status 0
+[   48.775929] init: processing action (llk.enable=1) from (/system/etc/init/llkd.rc:9)
+[   49.021308] init: Received control message 'start' for 'wifi_forwarder' from pid: 1780 (setprop ctl.start wifi_forwarder)
+[   49.024617] init: starting service 'wifi_forwarder'...
+[   49.461163] init: processing action (khungtask.enable=1) from (/system/etc/init/llkd.rc:18)
+[   49.465723] init: processing action (llk.enable=0) from (/system/etc/init/llkd.rc:12)
+[   49.629494] init: processing action (khungtask.enable=0) from (/system/etc/init/llkd.rc:21)
+[   49.799251] init: processing action (init.svc.mediadrm=running) from (/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:1)
+[   50.531638] init: Command 'mkdir /data/vendor/mediadrm 0770 media mediadrm' action=init.svc.mediadrm=running (/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:2) took 731ms and succeeded
+[   50.532178] init: Service 'ranchu-setup' (pid 1748) exited with status 0
+[   50.581250] init: Service 'bpfloader' (pid 1783) exited with status 0
+[   50.801378] init: Command 'start vendor.move_data_sh' action=init.svc.mediadrm=running (/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:3) took 100ms and failed: Could not start service: Cannot find '/system/bin/move_widevine_data.sh': No such file or directory
+[   50.867349] read descriptors
+[   50.867869] read strings
+[   50.958243] init: processing action (vendor.qemu.android.bootanim=0) from (/vendor/etc/init/hw/init.ranchu.rc:78)
+[   51.042310] init: Command 'setprop debug.sf.nobootanimation 1' action=vendor.qemu.android.bootanim=0 (/vendor/etc/init/hw/init.ranchu.rc:79) took 83ms and succeeded
+[   51.131373] init: processing action (llk.enable=true) from (/system/etc/init/llkd.rc:34)
+[   51.272133] init: starting service 'llkd-1'...
+[   51.538235] init: Opened file '/dev/kmsg', flags 1
+[   51.539392] init: Opened file '/proc/sysrq-trigger', flags 1
+[   51.688864] init: Command 'start llkd-${ro.debuggable:-0}' action=llk.enable=true (/system/etc/init/llkd.rc:35) took 556ms and succeeded
+[   51.781287] init: processing action (khungtask.enable=true) from (/system/etc/init/llkd.rc:25)
+[   51.986603] init: Command 'write /proc/sys/kernel/hung_task_panic 1' action=khungtask.enable=true (/system/etc/init/llkd.rc:29) took 166ms and succeeded
+[   51.987447] init: processing action (vendor.network.bridged=1) from (/vendor/etc/init/hw/init.ranchu.rc:111)
+[   52.161388] read descriptors
+[   52.161559] read strings
+[   52.271474] init: starting service 'dhcpclient_rtr'...
+[   52.584244] init: Command 'start dhcpclient_rtr' action=vendor.network.bridged=1 (/vendor/etc/init/hw/init.ranchu.rc:112) took 596ms and succeeded
+[   52.586486] init: processing action (sys.usb.config=adb && sys.usb.configfs=1 && sys.usb.ffs.ready=1) from (/init.usb.configfs.rc:20)
+[   52.588229] init: Service 'usbd' (pid 1820) exited with status 0
+[   52.747383] init: Command 'write /config/usb_gadget/g1/UDC ${sys.usb.controller}' action=sys.usb.config=adb && sys.usb.configfs=1 && sys.usb.ffs.ready=1 (/init.usb.configfs.rc:23) took 157ms and succeeded
+[   52.748610] init: processing action (khungtask.enable=false) from (/system/etc/init/llkd.rc:31)
+[   52.802816] init: Command 'write /proc/sys/kernel/hung_task_panic 0' action=khungtask.enable=false (/system/etc/init/llkd.rc:32) took 53ms and succeeded
+[   52.805199] init: processing action (sys.usb.config=adb && sys.usb.configfs=1 && sys.usb.ffs.ready=1) from (/init.usb.configfs.rc:20)
+[   52.860895] android_work: did not send uevent (0 0           (null))
+[   52.881745] init: Command 'write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration adb' action=sys.usb.config=adb && sys.usb.configfs=1 && sys.usb.ffs.ready=1 (/init.usb.configfs.rc:21) took 75ms and succeeded
+[   52.883565] init: Command 'write /config/usb_gadget/g1/UDC ${sys.usb.controller}' action=sys.usb.config=adb && sys.usb.configfs=1 && sys.usb.ffs.ready=1 (/init.usb.configfs.rc:23) took 0ms and failed: Unable to write to file '/config/usb_gadget/g1/UDC': Unable to write file contents: Device or resource busy
+[   52.886097] init: processing action (sys.usb.config=adb && sys.usb.configfs=1 && sys.usb.ffs.ready=1) from (/init.usb.configfs.rc:20)
+[   52.888383] init: Command 'write /config/usb_gadget/g1/UDC ${sys.usb.controller}' action=sys.usb.config=adb && sys.usb.configfs=1 && sys.usb.ffs.ready=1 (/init.usb.configfs.rc:23) took 0ms and failed: Unable to write to file '/config/usb_gadget/g1/UDC': Unable to write file contents: Device or resource busy
+[   53.004785] usb 1-1: new high-speed USB device number 2 using dummy_hcd
+[   53.034750] android_work: did not send uevent (0 0           (null))
+[   53.263052] android_work: sent uevent USB_STATE=CONNECTED
+[   53.298606] usb 1-1: New USB device found, idVendor=0000, idProduct=0000
+[   53.298760] usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[   53.467477] configfs-gadget gadget: high-speed config #1: b
+[   53.483173] android_work: sent uevent USB_STATE=CONFIGURED
+[   57.859657] init: Received control message 'start' for 'bootanim' from pid: 1758 (/system/bin/surfaceflinger)
+[   57.935724] init: starting service 'bootanim'...
+[   61.461925] init: Received control message 'start' for 'emu_hostapd' from pid: 1880 (setprop ctl.start emu_hostapd)
+[   61.463024] init: starting service 'emu_hostapd'...
+[   66.173356] capability: warning: `hostapd_nohidl' uses 32-bit capabilities (legacy support in use)
+[   66.227018] init: Service 'ranchu-net' (pid 1669) exited with status 0
+LAYAN_BOOT
+[   66.669817] IPv6: ADDRCONF(NETDEV_UP): wlan1: link is not ready
+[   66.708836] br0: port 3(wlan1) entered blocking state
+[   66.708973] br0: port 3(wlan1) entered disabled state
+[   66.710216] device wlan1 entered promiscuous mode
+
+Service package: not found
+
+LYN_f9b2f1836125429b9927eff5d233f245:0
+console:/ $ [   72.086756] init: Service 'bootanim' (pid 1876) exited with status 0
+[   73.694647] IPv6: ADDRCONF(NETDEV_CHANGE): wlan1: link becomes ready
+[   73.696448] br0: port 3(wlan1) entered blocking state
+[   73.696564] br0: port 3(wlan1) entered forwarding state
+
+transport_1933982a25ae4de599ba6cb014754003
+console:/ $ [   74.358685] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+LAYAN_BOOT
+
+Service package: not found
+
+LYN_c8b704cac6f54faf935871b90a165db5:0
+console:/ $ 
+transport_28e879b798d04c76bfb660de2c0710f3
+console:/ $ LAYAN_BOOT
+
+Service package: not found
+
+LYN_1c97efecd1794718976fb24d54b8bc2c:0
+console:/ $ [   88.494395] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+
+transport_3845ef44ac994a9884ad0c0b29085846
+console:/ $ LAYAN_BOOT
+
+Service package: not found
+
+LYN_9e101d9bf1a345afb5accb1f831529c2:0
+console:/ $ [   95.669420] apexd: Can't open /product/apex for reading : No such file or directory
+
+transport_25ae6d10bbfe42b091511c185e28b7d9
+console:/ $ LAYAN_BOOT
+
+Service package: not found
+
+LYN_8ec428b4a46f48908ba7c9641090f10c:0
+console:/ $ 
+transport_a998a849bf934bdba3be913c5a4727c9
+console:/ $ LAYAN_BOOT
+
+Service package: found
+
+LYN_3f07133165f04e55b7d30392aa2d878e:0
+console:/ $ [  118.274066] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[  118.294858] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+
+transport_65c7aa89498343ada29dd5d920727761
+console:/ $ LAYAN_BOOT
+[  125.724687] init: processing action (sys.sysctl.extra_free_kbytes=*) from (/init.rc:803)
+[  125.846016] init: Command 'write /proc/sys/vm/extra_free_kbytes ${sys.sysctl.extra_free_kbytes}' action=sys.sysctl.extra_free_kbytes=* (/init.rc:804) took 118ms and succeeded
+
+Service package: found
+
+LYN_81611f1fcf25445fb60ec9f2af9079cf:0
+console:/ $ 
+transport_31380ade2d1542eaba24c1a0c0f6dd64
+console:/ $ LAYAN_BOOT
+
+Service package: found
+
+LYN_9c6fde47b50d43e8b52c6be2f9ac5090:0
+console:/ $ 
+transport_aeec10189abc41b4b05e954bbefaa05a
+console:/ $ LAYAN_BOOT
+
+Service package: found
+
+LYN_9c317ca929b7480a8b98c6971f4d7729:0
+console:/ $ [  148.574707] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[  149.381291] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[  149.485259] selinux: avc:  denied  { set } for property=vendor.wlan.firmware.version pid=1743 uid=1010 gid=1010 scontext=u:r:hal_wifi_default:s0 tcontext=u:object_r:vendor_default_prop:s0 tclass=property_service permissive=1
+[  149.485259] 
+
+transport_310e7762f8d546b38fef94a51253a60b
+console:/ $ [  151.693029] init: Received control message 'start' for 'wpa_supplicant' from pid: 1986 (system_server)
+[  151.697349] init: starting service 'wpa_supplicant'...
+[  151.876913] init: Created socket '/dev/socket/wpa_wlan0', mode 660, user 1010, group 1010
+[  153.837752] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+LAYAN_BOOT
+
+Service package: found
+
+LYN_f8ff7a16e9884c538c2fc4be5573d400:0
+console:/ $ 
+transport_29637692a16b49d1a4d459d52262d6e9
+console:/ $ LAYAN_BOOT
+
+Service package: found
+
+LYN_0d370e92905644f0bba728604ef39422:0
+console:/ $ 
+transport_54667c961cfb4cabbea728c59d5b2d6d
+console:/ $ LAYAN_BOOT
+
+Service package: found
+
+LYN_59addd027dd0453a95dc14b36e8d8e05:0
+console:/ $ [  189.794207] init: Untracked pid 2482 exited with status 0
+[  189.796005] init: Untracked pid 2484 exited with status 0
+[  191.372948] init: Untracked pid 2491 exited with status 0
+[  191.373455] init: Untracked pid 2493 exited with status 0
+
+transport_0cce1f01ad1c466b90e5bd42b5d52af6
+console:/ $ [  194.500748] init: Untracked pid 2503 exited with status 0
+[  194.501741] init: Untracked pid 2505 exited with status 0
+[  196.443378] init: Untracked pid 2526 exited with status 0
+[  196.443936] init: Untracked pid 2529 exited with status 0
+LAYAN_BOOT
+[  197.265613] init: Untracked pid 2534 exited with status 0
+[  197.270863] init: Untracked pid 2536 exited with status 0
+
+Service package: found
+[  198.349924] init: Untracked pid 2542 exited with status 0
+
+LYN_738842c793bb4077a7edd49598b3157d:0
+[  198.383188] init: Untracked pid 2544 exited with status 0
+console:/ $ [  199.982562] init: Untracked pid 2548 exited with status 0
+[  199.984428] init: Untracked pid 2552 exited with status 0
+[  200.291164] init: Untracked pid 2553 exited with status 0
+[  200.312459] init: Untracked pid 2557 exited with status 0
+[  200.927322] init: Untracked pid 2558 exited with status 0
+[  200.941081] init: Untracked pid 2562 exited with status 0
+[  201.522144] init: Untracked pid 2563 exited with status 0
+[  201.523341] init: Untracked pid 2565 exited with status 0
+[  201.722348] init: Untracked pid 2570 exited with status 0
+[  201.722805] init: Untracked pid 2568 exited with status 0
+[  202.400700] init: Untracked pid 2576 exited with status 0
+[  202.401243] init: Untracked pid 2578 exited with status 0
+[  202.755945] init: Untracked pid 2575 exited with status 0
+[  202.756577] init: Untracked pid 2580 exited with status 0
+
+transport_6360270031e041cdb0724c653f7c8bb9
+console:/ $ [  204.563360] init: Untracked pid 2592 exited with status 0
+[  204.563875] init: Untracked pid 2605 exited with status 0
+[  204.813392] selinux: avc:  denied  { set } for property=qemu.gles pid=2585 uid=1000 gid=1000 scontext=u:r:system_app:s0 tcontext=u:object_r:qemu_prop:s0 tclass=property_service permissive=1
+[  204.813392] 
+[  206.962911] init: Untracked pid 2618 exited with status 0
+[  206.963566] init: Untracked pid 2620 exited with status 0
+[  208.803642] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[  211.731221] init: Untracked pid 2652 exited with status 0
+[  211.731688] init: Untracked pid 2654 exited with status 0
+LAYAN_BOOT
+[  216.478362] init: Untracked pid 2672 exited with status 0
+[  216.546176] init: Untracked pid 2680 exited with status 0
+
+[  218.278829] init: Untracked pid 2673 exited with status 0
+[  218.279248] init: Untracked pid 2685 exited with status 0
+Service package: found
+
+LYN_75badd05af8f46aaa0743c1f1cb7b447:0
+console:/ $ [  221.435636] sdcardfs version 2.0
+[  221.435881] sdcardfs: dev_name -> /mnt/media_rw/0000-0000
+[  221.435941] sdcardfs: options -> fsuid=1023,fsgid=1023,mask=6,userid=0,gid=1015
+[  221.436129] sdcardfs: mnt -> 000000007761b3c5
+[  221.437400] sdcardfs: mounted on top of /mnt/media_rw/0000-0000 type vfat
+[  221.487443] Remount options were mask=18,gid=9997 for vfsmnt 00000000dc883936.
+[  221.488730] sdcardfs : options - debug:1
+[  221.488788] sdcardfs : options - gid:9997
+[  221.488833] sdcardfs : options - mask:18
+[  221.489510] Remount options were mask=18,gid=9997 for vfsmnt 00000000c8f3e09f.
+[  221.489737] sdcardfs : options - debug:1
+[  221.489781] sdcardfs : options - gid:9997
+[  221.489819] sdcardfs : options - mask:18
+[  221.492340] Remount options were mask=7,gid=9997 for vfsmnt 000000008230b823.
+[  221.492460] sdcardfs : options - debug:1
+[  221.492504] sdcardfs : options - gid:9997
+[  221.492580] sdcardfs : options - mask:7
+[  225.748391] selinux: avc:  denied  { set } for property=qemu.gles pid=1986 uid=1000 gid=1000 scontext=u:r:system_server:s0 tcontext=u:object_r:qemu_prop:s0 tclass=property_service permissive=1
+[  225.748391] 
+
+transport_94852403f3aa4fbeb96ee42e7adafba6
+console:/ $ LAYAN_BOOT
+
+Service package: found
+[  233.687483] selinux: avc:  denied  { set } for property=qemu.gles pid=2220 uid=10102 gid=10102 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:qemu_prop:s0 tclass=property_service permissive=1
+[  233.687483] 
+
+LYN_9081368d8b024d84b74f4c56f3acd7f3:0
+console:/ $ 
+transport_abdfc19cf1cb43c3bae66fcf980e1720
+console:/ $ [  245.254876] type=1400 audit(1791789271.210:11): avc: denied { module_request } for comm=73657276657220736F636B6574 kmod="net-pf-40" scontext=u:r:adbd:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1
+[  245.256000] type=1400 audit(1791789471.490:12): avc: denied { associate } for comm="Binder:1710_4" name="globalAlert" scontext=u:object_r:proc_net:s0 tcontext=u:object_r:proc:s0 tclass=filesystem permissive=1
+[  247.867162] init: processing action (sys.boot_completed=1) from (/init.rc:797)
+[  247.952653] init: processing action (sys.boot_completed=1) from (/vendor/etc/init/hw/init.ranchu.rc:163)
+[  248.242169] init: Command 'trigger sys-boot-completed-set' action=sys.boot_completed=1 (/vendor/etc/init/hw/init.ranchu.rc:164) took 288ms and succeeded
+[  248.242619] init: processing action (sys.boot_completed=1 && sys.logbootcomplete=1) from (/system/etc/init/bootstat.rc:78)
+[  248.391338] init: starting service 'exec 14 (/system/bin/bootstat --record_boot_complete --record_boot_reason --record_time_since_factory_reset -l)'...
+[  249.368893] init: Command 'exec_background - system log -- /system/bin/bootstat --record_boot_complete --record_boot_reason --record_time_since_factory_reset -l' action=sys.boot_completed=1 && sys.logbootcomplete=1 (/system/etc/init/bootstat.rc:83) took 1125ms and succeeded
+[  249.405955] init: processing action (sys.boot_completed=1) from (/system/etc/init/flags_health_check.rc:7)
+[  250.415474] init: Command 'setprop persist.device_config.attempted_boot_count 0' action=sys.boot_completed=1 (/system/etc/init/flags_health_check.rc:8) took 962ms and succeeded
+LAYAN_BOOT
+[  250.941257] init: processing action (sys.boot_completed=1) from (/system/etc/init/logd.rc:32)
+[  250.946573] init: starting service 'logd-auditctl'...
+[  251.369691] init: Command 'start logd-auditctl' action=sys.boot_completed=1 (/system/etc/init/logd.rc:33) took 427ms and succeeded
+[  251.531153] init: processing action (sys.boot_completed=1 && sys.wifitracing.started=0) from (/system/etc/init/wifi-events.rc:20)
+1
+[  254.277091] init: Command 'mkdir /sys/kernel/debug/tracing/instances/wifi 711' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:22) took 2745ms and succeeded
+[  254.294800] init: Async property child exited with status 0
+[  254.295291] init: Service 'logd-auditctl' (pid 2829) exited with status 0
+[  254.375064] init: Command 'restorecon_recursive /sys/kernel/debug/tracing/instances/wifi' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:23) took 78ms and succeeded
+Service package: found
+[  255.502425] init: Command 'write /sys/kernel/debug/tracing/instances/wifi/events/cfg80211/cfg80211_gtk_rekey_notify/enable 1' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:32) took 693ms and succeeded
+[  255.691333] init: Command 'write /sys/kernel/debug/tracing/instances/wifi/events/cfg80211/rdev_add_key/enable 1' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:33) took 139ms and succeeded
+[  255.691912] init: Service 'exec 14 (/system/bin/bootstat --record_boot_complete --record_boot_reason --record_time_since_factory_reset -l)' (pid 2807) exited with status 0
+[  255.713962] init: Async property child exited with status 0
+[  255.768475] init: Command 'write /sys/kernel/debug/tracing/instances/wifi/events/cfg80211/rdev_assoc/enable 1' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:34) took 53ms and succeeded
+[  256.141349] init: Command 'write /sys/kernel/debug/tracing/instances/wifi/events/cfg80211/rdev_connect/enable 1' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:36) took 136ms and succeeded
+[  256.271031] init: Async property child exited with status 0
+[  256.487066] init: Command 'write /sys/kernel/debug/tracing/instances/wifi/events/cfg80211/rdev_set_default_key/enable 1' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:37) took 215ms and succeeded
+[  256.601006] init: Command 'write /sys/kernel/debug/tracing/instances/wifi/events/cfg80211/rdev_set_rekey_data/enable 1' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:39) took 67ms and succeeded
+[  256.728233] init: Command 'write /sys/kernel/debug/tracing/instances/wifi/events/net/filter name==${wifi.interface:-wlan0}' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:46) took 126ms and succeeded
+[  256.883411] init: Command 'write /sys/kernel/debug/tracing/instances/wifi/events/net/net_dev_queue/enable 1' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:47) took 154ms and succeeded
+[  256.983564] init: Command 'write /sys/kernel/debug/tracing/instances/wifi/events/net/net_dev_xmit/enable 1' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:48) took 98ms and succeeded
+
+LYN_4eb425112afe41b69b62f7cd4620e1c3:0
+[  257.102586] init: Command 'write /sys/kernel/debug/tracing/instances/wifi/events/net/netif_receive_skb/enable 1' action=sys.boot_completed=1 && sys.wifitracing.started=0 (/system/etc/init/wifi-events.rc:50) took 100ms and succeeded
+[  257.121191] init: processing action (dev.bootcomplete=1) from (/vendor/etc/init/hw/init.ranchu.rc:81)
+[  257.191507] init: Command 'setprop vendor.qemu.dev.bootcomplete 1' action=dev.bootcomplete=1 (/vendor/etc/init/hw/init.ranchu.rc:82) took 69ms and succeeded
+[  257.193645] init: processing action (persist.sys.zram_enabled=1 && sys-boot-completed-set) from (/vendor/etc/init/hw/init.ranchu.rc:166)
+[  257.257032] init: Skip mounting partition: /product
+[  257.257226] init: Skip mounting partition: /product_services
+[  257.373570] zram0: detected capacity change from 0 to 2357493760
+console:/ $ [  259.064513] mkswap: Swapspace size: 2302236k, UUID=3af4b456-aa13-4f33-acea-737cc71bf6c1
+[  259.097464] Adding 2302236k swap on dev/block/zram0.  Priority:-2 extents:1 across:2302236k SS
+[  259.107261] init: Command 'swapon_all /vendor/etc/fstab.${ro.hardware}' action=persist.sys.zram_enabled=1 && sys-boot-completed-set (/vendor/etc/init/hw/init.ranchu.rc:167) took 1912ms and succeeded
+
+transport_39b1ff915f304b54981e70fe2640cc75
+console:/ $ [  265.592120] sdcardfs version 2.0
+[  265.592235] sdcardfs: dev_name -> /data/media
+[  265.592280] sdcardfs: options -> fsuid=1023,fsgid=1023,multiuser,derive_gid,default_normal,unshared_obb,mask=6,userid=0,gid=1015
+[  265.592368] sdcardfs: mnt -> 000000000b12786c
+[  265.592620] sdcardfs: mounted on top of /data/media type ext4
+[  265.593504] Remount options were mask=23,gid=9997 for vfsmnt 00000000e546fd4f.
+[  265.593629] sdcardfs : options - debug:1
+[  265.593670] sdcardfs : options - gid:9997
+[  265.593707] sdcardfs : options - mask:23
+[  265.594022] Remount options were mask=7,gid=9997 for vfsmnt 000000000c0dfb81.
+[  265.594093] sdcardfs : options - debug:1
+[  265.594131] sdcardfs : options - gid:9997
+[  265.594165] sdcardfs : options - mask:7
+[  265.594478] Remount options were mask=7,gid=9997 for vfsmnt 0000000027257318.
+[  265.594577] sdcardfs : options - debug:1
+[  265.594617] sdcardfs : options - gid:9997
+[  265.594653] sdcardfs : options - mask:7
+[  268.498408] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[  272.639382] sdcardfs version 2.0
+[  272.639498] sdcardfs: dev_name -> /mnt/media_rw/0000-0000
+[  272.639581] sdcardfs: options -> fsuid=1023,fsgid=1023,mask=6,userid=0,gid=1015
+[  272.639646] sdcardfs: mnt -> 0000000051a0c9ba
+[  272.639971] sdcardfs: mounted on top of /mnt/media_rw/0000-0000 type vfat
+[  272.699467] Remount options were mask=18,gid=9997 for vfsmnt 00000000dc635961.
+[  272.699795] sdcardfs : options - debug:1
+[  272.699868] sdcardfs : options - gid:9997
+[  272.699967] sdcardfs : options - mask:18
+[  272.775760] Remount options were mask=18,gid=9997 for vfsmnt 00000000479ae1bb.
+[  272.775954] sdcardfs : options - debug:1
+[  272.775997] sdcardfs : options - gid:9997
+[  272.776034] sdcardfs : options - mask:18
+[  272.776357] Remount options were mask=7,gid=9997 for vfsmnt 0000000007137da6.
+[  272.776431] sdcardfs : options - debug:1
+[  272.776469] sdcardfs : options - gid:9997
+[  272.776504] sdcardfs : options - mask:7
+[  274.761354] init: Untracked pid 2903 exited with status 0
+[  274.780790] init: Untracked pid 2905 exited with status 0
+[  276.561902] init: Untracked pid 2914 exited with status 0
+[  276.572227] init: Untracked pid 2916 exited with status 0
+[  279.517757] init: Untracked pid 2929 exited with status 0
+[  279.527324] init: Untracked pid 2932 exited with status 0
+[  280.539863] wlan0: authenticate with 02:15:b2:00:01:00
+[  280.613114] wlan0: send auth to 02:15:b2:00:01:00 (try 1/3)
+[  280.636669] wlan0: authenticated
+[  280.683208] wlan0: associate with 02:15:b2:00:01:00 (try 1/3)
+[  280.829441] wlan0: RX AssocResp from 02:15:b2:00:01:00 (capab=0x401 status=0 aid=1)
+[  281.256110] wlan0: associated
+[  290.068118] init: Untracked pid 2939 exited with status 0
+
+LYN_f87784f0ad244daa98ba1cebebee85aa:0
+[  290.399115] init: Untracked pid 2941 exited with status 0
+[  290.815012] init: Untracked pid 2944 exited with status 0
+[  290.815403] init: Untracked pid 2949 exited with status 0
+console:/ $ [  296.876980] init: processing action (sys.sysctl.tcp_def_init_rwnd=*) from (/init.rc:807)
+
+transport_1fd585bc28114919bda2b94f584128eb
+console:/ $ 
+transport_e661616b23b1427d92da7e0e5f812bff
+console:/ $ [  317.557026] type=1400 audit(1791789509.030:16): avc: denied { associate } for comm="Binder:1710_4" name="globalAlert" scontext=u:object_r:proc_net:s0 tcontext=u:object_r:proc:s0 tclass=filesystem permissive=1 duplicate messages suppressed
+[  317.558168] type=1404 audit(1791789543.800:17): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295
+[  320.862256] selinux: avc:  received setenforce notice (enforcing=1)
+[  320.862256] 
+[  320.867301] selinux: avc:  denied  { set } for property=qemu.gles pid=3086 uid=10093 gid=10093 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:qemu_prop:s0 tclass=property_service permissive=0
+[  320.867301] 
+[  320.870288] init: Unable to set property 'qemu.gles' to '1' from uid:10093 gid:10093 pid:3086: SELinux permission check failed
+Enforcing
+
+LYN_feae3de768194696b9d791bc5926e9b9:0
+[  327.623324] type=1404 audit(1791789543.800:17): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295
+[  327.728180] type=1400 audit(1791789553.860:18): avc: denied { write } for comm="RenderThread" name="property_service" dev="tmpfs" ino=6350 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=com.android.launcher3
+[  328.569103] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+console:/ $ 
+transport_dbc91fd730df427386147b9b928f454d
+console:/ $ 
+transport_4786f38df104435aa7ea3adb2f243891
+console:/ $ [  355.569434] type=1400 audit(1791789553.860:18): avc: denied { write } for comm="RenderThread" name="property_service" dev="tmpfs" ino=6350 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=com.android.launcher3
+[  355.569886] type=1400 audit(1791789581.780:19): avc: denied { read } for comm="DcHandlerThread" name="u:object_r:net_radio0_prop:s0" dev="tmpfs" ino=6305 scontext=u:r:radio:s0 tcontext=u:object_r:net_radio0_prop:s0 tclass=file permissive=0
+[  363.084547] binder: release 3243:3331 transaction 67006 out, still active
+[  363.084784] binder: undelivered TRANSACTION_COMPLETE
+[  371.478761] binder: 1986:2409 transaction failed 29189/0, size 2080-16 line 3060
+[  371.479177] binder: send failed reply for transaction 67006, target dead
+10
+
+LYN_8a7a5a26c6c048d6acb113a904d344d2:0
+console:/ $ 
+transport_7e84f34a0e3e4894ad27d5d5464d9242
+console:/ $ [  388.494293] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+
+transport_3c74addd0f2548cd8d58b70550a88509
+console:/ $ 
+transport_efc74a8544794db2ac1c16ba424144b9
+console:/ $ [  405.202477] binder: release 3281:3308 transaction 67049 in, still active
+[  405.202740] binder: send failed reply for transaction 67049 to 3143:3333
+[  405.202914] binder: release 3281:3312 transaction 64853 in, still active
+[  405.202977] binder: send failed reply for transaction 64853 to 3143:3201
+
+transport_7bac7d63d9be4053a2a66c784e868adc
+console:/ $ 
+transport_d553637ad43e4fb2953097318665e1ea
+console:/ $ [  416.481763] binder: release 3305:3326 transaction 87993 in, still active
+[  416.482858] binder: send failed reply for transaction 87993 to 3143:3333
+[  416.483057] binder: release 3305:3466 transaction 87996 in, still active
+[  416.483122] binder: send failed reply for transaction 87996 to 3143:3201
+[  416.488845] binder_alloc: 3305: binder_alloc_buf, no vma
+[  416.489075] binder: 1986:3392 transaction failed 29189/-3, size 0-0 line 3274
+
+transport_fb9ea5387f9040e49d61b8aa83a8ac8a
+console:/ $ 
+LYN_c92a128ea64d459590d115637d388900:0
+console:/ $ 
+transport_68f18899602147cfb1379db03e815f29
+console:/ $ 
+transport_6b53d1a6f25c40d0ae2e10152ad08c19
+console:/ $ [  448.579394] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[  451.029518] init: Received control message 'start' for 'gsid' from pid: 1986 (system_server)
+[  451.100698] init: starting service 'gsid'...
+[  453.625244] init: Received control message 'stop' for 'gsid' from pid: 1986 (system_server)
+[  453.625770] init: Sending signal 9 to service 'gsid' (pid 3719) process group...
+[  453.701690] libprocessgroup: Successfully killed process cgroup uid 0 pid 3719 in 74ms
+[  453.769482] init: Service 'gsid' (pid 3719) received signal 9
+[  454.862196] type=1400 audit(1791789581.820:20): avc: denied { read } for comm="DcHandlerThread" name="u:object_r:net_radio0_prop:s0" dev="tmpfs" ino=6305 scontext=u:r:radio:s0 tcontext=u:object_r:net_radio0_prop:s0 tclass=file permissive=0
+[  455.024266] type=1400 audit(1791789680.740:21): avc: granted { read } for comm="main" name="u:object_r:net_dns_prop:s0" dev="tmpfs" ino=6303 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:net_dns_prop:s0 tclass=file app=com.android.email
+[  469.414705] binder: undelivered transaction 111988, process died.
+[  469.446793] binder: 1796:2462 transaction failed 29189/-22, size 64-0 line 3128
+[  471.848615] binder: 3057:3114 transaction failed 29189/-22, size 124-0 line 3128
+[  476.142146] binder: 1986:1986 transaction failed 29189/-22, size 88-0 line 3128
+  Window #1 Window{b8536db u0 Application Not Responding: com.android.systemui}:
+LAYAN_TEST_OS_RESTART_com.android.systemui
+LAYAN_UI_READY
+
+LYN_4cabbcf5984f4528b6fc0b9ad63fff40:0
+console:/ $ [  508.530706] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+
+transport_d0f20de9c1f945f0bd95b1af88881da9
+console:/ $ [  514.085909] binder: 1986:2338 transaction failed 29189/-22, size 0-0 line 3128
+
+transport_4eaf2649c5a746308d59e9db5275a935
+console:/ $ [  519.518371] selinux: avc:  denied  { set } for property=qemu.gles pid=3802 uid=10102 gid=10102 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:qemu_prop:s0 tclass=property_service permissive=0
+[  519.518371] 
+[  519.519552] init: Unable to set property 'qemu.gles' to '1' from uid:10102 gid:10102 pid:3802: SELinux permission check failed
+[  522.675757] init: Unable to set property 'ro.hw_timeout_multiplier' to '10' from uid:0 gid:0 pid:4088: Read-only property was already set
+setprop: failed to set property 'ro.hw_timeout_multiplier' to '10'
+
+LYN_178ce2b3362940a1bf446f546ba26df2:0
+console:/ $ 
+transport_dae6a98b80704ba5ab0a58533634887e
+console:/ $ 
+transport_8b0aa8ae6ccd4b2ca28ac12a99e23402
+console:/ $ /mnt/media_rw/0000-0000/release.apk
+/mnt/media_rw/LYANTEST/release.apk
+
+LYN_1630a347be7d4268944d32f252f6cfbc:0
+console:/ $ 
+transport_bf63e9d273b2481384b96579dc16a65b
+console:/ $ [  568.525998] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+
+transport_a1b8d194c5904d8da9aa577e1e132672
+console:/ $ 
+transport_8a16697a2c9a4e8b8fec92d71be9179e
+console:/ $ [  628.507133] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+5d93152f8d3a3af5dd9eb6e1a9609c3dd72f4c14f2aa9a313a430d4f0294269c  /data/local/tmp/layan.apk
+Success
+Success
+
+LYN_4fcddc3675c247799f625b2ce511305e:0
+console:/ $ 
+transport_1b6e9dbf6c11429689d5f5fa1e43faaf
+console:/ $ 
+transport_51987a101a8d4d07a60f3f6662b852e9
+console:/ $ 5d93152f8d3a3af5dd9eb6e1a9609c3dd72f4c14f2aa9a313a430d4f0294269c  /data/app/app.layan.quran-RA60MYFdn8fB9PzP_K6BVg==/base.apk
+
+LYN_a1aa747eae3845c3b09096f79d9af7ba:0
+console:/ $ 
+transport_478604d6865f40cdaa1bc3caa3910e32
+console:/ $ 
+transport_1b1c1417efb545c299982773a7c97bcf
+console:/ $ [  688.644927] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+
+LYN_aefe59a467364fbbad34e20527635375:0

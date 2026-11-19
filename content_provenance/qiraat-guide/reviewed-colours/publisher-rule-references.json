@@ -1,0 +1,103 @@
+[
+  {
+    "riwayah": "قالون عن نافع",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/qaloon/osol.pdf",
+    "sha256": "ae416722fe603c8e1ac8b1325156b4e23be9cb191d1208185c3e737fa36f74b4",
+    "pages": 10,
+    "textCharacters": 16065
+  },
+  {
+    "riwayah": "ورش عن نافع",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/warsh/osol.pdf",
+    "sha256": "1afc4ebc39fa46c9a5ae81bfe55e5c00ce7288dc89d14eb95a1943d48e2754db",
+    "pages": 16,
+    "textCharacters": 31430
+  },
+  {
+    "riwayah": "قنبل عن ابن كثير",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/qunbol/osol.pdf",
+    "sha256": "5f1f00eeffa52ac1cbc312dc78d99d645cd6fcbfd9873262151d216480b9ba04",
+    "pages": 10,
+    "textCharacters": 16839
+  },
+  {
+    "riwayah": "الدوري عن أبي عمرو",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/Dori2/osol.pdf",
+    "sha256": "7392d387499ce5d31e249dd5b9ca5d321672859895f16191ac28fbfa43412776",
+    "pages": 12,
+    "textCharacters": 20854
+  },
+  {
+    "riwayah": "هشام عن ابن عامر",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/hesham/osol.pdf",
+    "sha256": "6bd28fd1572308476137d2c05e075c0579fa216b39fe69af44276d17c36fc7b1",
+    "pages": 10,
+    "textCharacters": 11020
+  },
+  {
+    "riwayah": "شعبة عن عاصم",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/shuaba/osol.pdf",
+    "sha256": "63a6db7f2e985b00fe633bf5d33866a19e9dd9e7b8b28b449d78ed6724960fc9",
+    "pages": 6,
+    "textCharacters": 8531
+  },
+  {
+    "riwayah": "خلف عن حمزة",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/khalaf/osol.pdf",
+    "sha256": "f14d5e5800df4c4a8421be7bc1e6e83bc30098f3a4870d4b8c536481b2d0e6a8",
+    "pages": 16,
+    "textCharacters": 25544
+  },
+  {
+    "riwayah": "خلاد عن حمزة",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/khallad/osol.pdf",
+    "sha256": "d2430928ee9c5bdf029297d787ac56948fa161f4f4ba67ab30679be2b5238f02",
+    "pages": 16,
+    "textCharacters": 26253
+  },
+  {
+    "riwayah": "أبي الحارث عن الكسائي",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/alhareth/osol.pdf",
+    "sha256": "d3000ad23efb227f12d43283539e8493a1a60e672068c3a051897cb05129e0b2",
+    "pages": 15,
+    "textCharacters": 17044
+  },
+  {
+    "riwayah": "ابن وردان عن أبي جعفر",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/wardan/osol.pdf",
+    "sha256": "90f3b9abe1d06603473d6ab713c1e916e7e2557d8e3a283acb088de0d6522a4f",
+    "pages": 7,
+    "textCharacters": 10174
+  },
+  {
+    "riwayah": "رويس عن يعقوب الحضرمي",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/ruwis/osol.pdf",
+    "error": "HTTP Error 404: Not Found",
+    "replacementReferences": [
+      "https://www.nquran.com/ar/view/16700/",
+      "https://quranpedia.net/book-attachment/19844/93452"
+    ],
+    "retrievalStatus": "Historical missing PDF endpoint replaced by accessible primary recitation references"
+  },
+  {
+    "riwayah": "روح عن يعقوب الحضرمي",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/rawh/osol.pdf",
+    "sha256": "5a5450bace4ef4502a46d7bee5588cbf3a95a58dbe84cdf2c625ff60a3799bc0",
+    "pages": 7,
+    "textCharacters": 9156
+  },
+  {
+    "riwayah": "إدريس الحداد عن خلف البزار",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/edris/osol.pdf",
+    "sha256": "87d553fdc890e82ffecf25fc28ed775dcd26d6e4be68c18acadd30b57552dc3c",
+    "pages": 4,
+    "textCharacters": 4786
+  },
+  {
+    "riwayah": "إسحاق الوراق عن خلف البزار",
+    "url": "https://dl2.islamweb.net/Audio_Path/quran_list/eshaq/osol.pdf",
+    "sha256": "87d553fdc890e82ffecf25fc28ed775dcd26d6e4be68c18acadd30b57552dc3c",
+    "pages": 4,
+    "textCharacters": 4786
+  }
+]

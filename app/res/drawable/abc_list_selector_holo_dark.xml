@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:ns0="http://schemas.android.com/apk/res/android">
+    <item ns0:state_window_focused="false" ns0:drawable="@android:color/transparent" />
+    <item ns0:state_focused="true" ns0:state_enabled="false" ns0:state_pressed="true" ns0:drawable="@drawable/abc_list_selector_disabled_holo_dark" />
+    <item ns0:state_focused="true" ns0:state_enabled="false" ns0:drawable="@drawable/abc_list_selector_disabled_holo_dark" />
+    <item ns0:state_focused="true" ns0:state_pressed="true" ns0:drawable="@drawable/abc_list_selector_background_transition_holo_dark" />
+    <item ns0:state_focused="false" ns0:state_pressed="true" ns0:drawable="@drawable/abc_list_selector_background_transition_holo_dark" />
+    <item ns0:state_focused="true" ns0:drawable="@drawable/abc_list_focused_holo" />
+</selector>

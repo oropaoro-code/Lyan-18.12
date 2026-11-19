@@ -1,0 +1,2 @@
+INSTRUMENTATION_RESULT: result=PASS 86869 assertions; 31110 alpha/shade samples; actual transparent PDF rendering in all twenty riwayat; 12080 guide mappings; scope=books
+INSTRUMENTATION_CODE: -1

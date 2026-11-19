@@ -1,0 +1,11 @@
+{
+  "source": "https://android.quran.com/data/databases/quran.ar.uthmani.v2.db.zip",
+  "table": "arabic_text",
+  "database_sha256": "82a2cfd9f56d051302056d96e6b9889665c91f713640093f87b04ca3bd4eee4b",
+  "metadata_source": "https://github.com/quran/quran_android/blob/main/pages/data/madani/src/main/kotlin/com/quran/labs/androidquran/pages/data/madani/MadaniDataSource.kt",
+  "asset_sha256": "42cdeb7754da28ecc989bae4c568510beeff60a6cb5bb86e07c6b49621d2d8b8",
+  "surahs": 114,
+  "ayahs": 6236,
+  "pages": 604,
+  "text_changed": false
+}

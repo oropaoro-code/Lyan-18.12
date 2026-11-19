@@ -1,0 +1,1 @@
+{"cores": 4, "ramMiB": 3072, "acceleration": "software TCG", "physicalDevice": false, "graphicsBackend": "swiftshader"}

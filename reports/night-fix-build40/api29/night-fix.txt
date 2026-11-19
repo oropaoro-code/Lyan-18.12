@@ -1,0 +1,7 @@
+INSTRUMENTATION_RESULT: error=java.lang.AssertionError: Actual app screenshot stayed blank after layout
+	at app.layan.test.NativeScreens.capture(NativeScreens.java:14)
+	at app.layan.test.NightFixRegression.home(NightFixRegression.java:17)
+	at app.layan.test.NightFixRegression.onStart(NightFixRegression.java:22)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2189)
+
+INSTRUMENTATION_CODE: 0

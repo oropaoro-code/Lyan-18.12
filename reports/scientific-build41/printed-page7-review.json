@@ -1,0 +1,906 @@
+{
+  "checks": 100,
+  "allWordsOnPageReviewed": false,
+  "features": [
+    {
+      "riwaya": "abu-harith",
+      "printedPage": 7,
+      "feature": "البقرة 48 — يقبل/تقبل",
+      "observed": "يقبل",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "abu-harith",
+      "printedPage": 7,
+      "feature": "البقرة 38 — خوف",
+      "observed": "خوفٌ",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "abu-harith",
+      "printedPage": 7,
+      "feature": "البقرة 38 — هاء عليهم",
+      "observed": "مكسورة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "abu-harith",
+      "printedPage": 7,
+      "feature": "البقرة 40 — فأرهبون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "abu-harith",
+      "printedPage": 7,
+      "feature": "البقرة 41 — فاتقون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "buzzi",
+      "printedPage": 7,
+      "feature": "البقرة 48 — يقبل/تقبل",
+      "observed": "تقبل",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "buzzi",
+      "printedPage": 7,
+      "feature": "البقرة 38 — خوف",
+      "observed": "خوفٌ",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "buzzi",
+      "printedPage": 7,
+      "feature": "البقرة 38 — هاء عليهم",
+      "observed": "مكسورة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "buzzi",
+      "printedPage": 7,
+      "feature": "البقرة 40 — فأرهبون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "buzzi",
+      "printedPage": 7,
+      "feature": "البقرة 41 — فاتقون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "duri",
+      "printedPage": 7,
+      "feature": "البقرة 48 — يقبل/تقبل",
+      "observed": "تقبل",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "duri",
+      "printedPage": 7,
+      "feature": "البقرة 38 — خوف",
+      "observed": "خوفٌ",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "duri",
+      "printedPage": 7,
+      "feature": "البقرة 38 — هاء عليهم",
+      "observed": "مكسورة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "duri",
+      "printedPage": 7,
+      "feature": "البقرة 40 — فأرهبون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "duri",
+      "printedPage": 7,
+      "feature": "البقرة 41 — فاتقون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "duri-kisai",
+      "printedPage": 7,
+      "feature": "البقرة 48 — يقبل/تقبل",
+      "observed": "يقبل",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "duri-kisai",
+      "printedPage": 7,
+      "feature": "البقرة 38 — خوف",
+      "observed": "خوفٌ",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "duri-kisai",
+      "printedPage": 7,
+      "feature": "البقرة 38 — هاء عليهم",
+      "observed": "مكسورة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "duri-kisai",
+      "printedPage": 7,
+      "feature": "البقرة 40 — فأرهبون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "duri-kisai",
+      "printedPage": 7,
+      "feature": "البقرة 41 — فاتقون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "hafs",
+      "printedPage": 7,
+      "feature": "البقرة 48 — يقبل/تقبل",
+      "observed": "يقبل",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "hafs",
+      "printedPage": 7,
+      "feature": "البقرة 38 — خوف",
+      "observed": "خوفٌ",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "hafs",
+      "printedPage": 7,
+      "feature": "البقرة 38 — هاء عليهم",
+      "observed": "مكسورة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "hafs",
+      "printedPage": 7,
+      "feature": "البقرة 40 — فأرهبون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "hafs",
+      "printedPage": 7,
+      "feature": "البقرة 41 — فاتقون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "hisham",
+      "printedPage": 7,
+      "feature": "البقرة 48 — يقبل/تقبل",
+      "observed": "يقبل",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "hisham",
+      "printedPage": 7,
+      "feature": "البقرة 38 — خوف",
+      "observed": "خوفٌ",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "hisham",
+      "printedPage": 7,
+      "feature": "البقرة 38 — هاء عليهم",
+      "observed": "مكسورة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "hisham",
+      "printedPage": 7,
+      "feature": "البقرة 40 — فأرهبون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "hisham",
+      "printedPage": 7,
+      "feature": "البقرة 41 — فاتقون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ibn-dhakwan",
+      "printedPage": 7,
+      "feature": "البقرة 48 — يقبل/تقبل",
+      "observed": "يقبل",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ibn-dhakwan",
+      "printedPage": 7,
+      "feature": "البقرة 38 — خوف",
+      "observed": "خوفٌ",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ibn-dhakwan",
+      "printedPage": 7,
+      "feature": "البقرة 38 — هاء عليهم",
+      "observed": "مكسورة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ibn-dhakwan",
+      "printedPage": 7,
+      "feature": "البقرة 40 — فأرهبون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ibn-dhakwan",
+      "printedPage": 7,
+      "feature": "البقرة 41 — فاتقون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ibn-jammaz",
+      "printedPage": 7,
+      "feature": "البقرة 48 — يقبل/تقبل",
+      "observed": "يقبل",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ibn-jammaz",
+      "printedPage": 7,
+      "feature": "البقرة 38 — خوف",
+      "observed": "خوفٌ",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ibn-jammaz",
+      "printedPage": 7,
+      "feature": "البقرة 38 — هاء عليهم",
+      "observed": "مكسورة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ibn-jammaz",
+      "printedPage": 7,
+      "feature": "البقرة 40 — فأرهبون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ibn-jammaz",
+      "printedPage": 7,
+      "feature": "البقرة 41 — فاتقون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ibn-wardan",
+      "printedPage": 7,
+      "feature": "البقرة 48 — يقبل/تقبل",
+      "observed": "يقبل",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ibn-wardan",
+      "printedPage": 7,
+      "feature": "البقرة 38 — خوف",
+      "observed": "خوفٌ",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ibn-wardan",
+      "printedPage": 7,
+      "feature": "البقرة 38 — هاء عليهم",
+      "observed": "مكسورة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ibn-wardan",
+      "printedPage": 7,
+      "feature": "البقرة 40 — فأرهبون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ibn-wardan",
+      "printedPage": 7,
+      "feature": "البقرة 41 — فاتقون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "idris",
+      "printedPage": 7,
+      "feature": "البقرة 48 — يقبل/تقبل",
+      "observed": "يقبل",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "idris",
+      "printedPage": 7,
+      "feature": "البقرة 38 — خوف",
+      "observed": "خوفٌ",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "idris",
+      "printedPage": 7,
+      "feature": "البقرة 38 — هاء عليهم",
+      "observed": "مكسورة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "idris",
+      "printedPage": 7,
+      "feature": "البقرة 40 — فأرهبون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "idris",
+      "printedPage": 7,
+      "feature": "البقرة 41 — فاتقون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ishaq",
+      "printedPage": 7,
+      "feature": "البقرة 48 — يقبل/تقبل",
+      "observed": "يقبل",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ishaq",
+      "printedPage": 7,
+      "feature": "البقرة 38 — خوف",
+      "observed": "خوفٌ",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ishaq",
+      "printedPage": 7,
+      "feature": "البقرة 38 — هاء عليهم",
+      "observed": "مكسورة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ishaq",
+      "printedPage": 7,
+      "feature": "البقرة 40 — فأرهبون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ishaq",
+      "printedPage": 7,
+      "feature": "البقرة 41 — فاتقون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "khalaf",
+      "printedPage": 7,
+      "feature": "البقرة 48 — يقبل/تقبل",
+      "observed": "يقبل",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "khalaf",
+      "printedPage": 7,
+      "feature": "البقرة 38 — خوف",
+      "observed": "خوفٌ",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "khalaf",
+      "printedPage": 7,
+      "feature": "البقرة 38 — هاء عليهم",
+      "observed": "مضمومة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "khalaf",
+      "printedPage": 7,
+      "feature": "البقرة 40 — فأرهبون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "khalaf",
+      "printedPage": 7,
+      "feature": "البقرة 41 — فاتقون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "khallad",
+      "printedPage": 7,
+      "feature": "البقرة 48 — يقبل/تقبل",
+      "observed": "يقبل",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "khallad",
+      "printedPage": 7,
+      "feature": "البقرة 38 — خوف",
+      "observed": "خوفٌ",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "khallad",
+      "printedPage": 7,
+      "feature": "البقرة 38 — هاء عليهم",
+      "observed": "مضمومة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "khallad",
+      "printedPage": 7,
+      "feature": "البقرة 40 — فأرهبون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "khallad",
+      "printedPage": 7,
+      "feature": "البقرة 41 — فاتقون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "qaloon",
+      "printedPage": 7,
+      "feature": "البقرة 48 — يقبل/تقبل",
+      "observed": "يقبل",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "qaloon",
+      "printedPage": 7,
+      "feature": "البقرة 38 — خوف",
+      "observed": "خوفٌ",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "qaloon",
+      "printedPage": 7,
+      "feature": "البقرة 38 — هاء عليهم",
+      "observed": "مكسورة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "qaloon",
+      "printedPage": 7,
+      "feature": "البقرة 40 — فأرهبون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "qaloon",
+      "printedPage": 7,
+      "feature": "البقرة 41 — فاتقون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "qunbul",
+      "printedPage": 7,
+      "feature": "البقرة 48 — يقبل/تقبل",
+      "observed": "تقبل",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "qunbul",
+      "printedPage": 7,
+      "feature": "البقرة 38 — خوف",
+      "observed": "خوفٌ",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "qunbul",
+      "printedPage": 7,
+      "feature": "البقرة 38 — هاء عليهم",
+      "observed": "مكسورة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "qunbul",
+      "printedPage": 7,
+      "feature": "البقرة 40 — فأرهبون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "qunbul",
+      "printedPage": 7,
+      "feature": "البقرة 41 — فاتقون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "rawh",
+      "printedPage": 7,
+      "feature": "البقرة 48 — يقبل/تقبل",
+      "observed": "تقبل",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "rawh",
+      "printedPage": 7,
+      "feature": "البقرة 38 — خوف",
+      "observed": "خوفَ بلا تنوين",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "rawh",
+      "printedPage": 7,
+      "feature": "البقرة 38 — هاء عليهم",
+      "observed": "مضمومة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "rawh",
+      "printedPage": 7,
+      "feature": "البقرة 40 — فأرهبون",
+      "observed": "ياء مثبتة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "rawh",
+      "printedPage": 7,
+      "feature": "البقرة 41 — فاتقون",
+      "observed": "ياء مثبتة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ruways",
+      "printedPage": 7,
+      "feature": "البقرة 48 — يقبل/تقبل",
+      "observed": "تقبل",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ruways",
+      "printedPage": 7,
+      "feature": "البقرة 38 — خوف",
+      "observed": "خوفَ بلا تنوين",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ruways",
+      "printedPage": 7,
+      "feature": "البقرة 38 — هاء عليهم",
+      "observed": "مضمومة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ruways",
+      "printedPage": 7,
+      "feature": "البقرة 40 — فأرهبون",
+      "observed": "ياء مثبتة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "ruways",
+      "printedPage": 7,
+      "feature": "البقرة 41 — فاتقون",
+      "observed": "ياء مثبتة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "shubah",
+      "printedPage": 7,
+      "feature": "البقرة 48 — يقبل/تقبل",
+      "observed": "يقبل",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "shubah",
+      "printedPage": 7,
+      "feature": "البقرة 38 — خوف",
+      "observed": "خوفٌ",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "shubah",
+      "printedPage": 7,
+      "feature": "البقرة 38 — هاء عليهم",
+      "observed": "مكسورة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "shubah",
+      "printedPage": 7,
+      "feature": "البقرة 40 — فأرهبون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "shubah",
+      "printedPage": 7,
+      "feature": "البقرة 41 — فاتقون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "susi",
+      "printedPage": 7,
+      "feature": "البقرة 48 — يقبل/تقبل",
+      "observed": "تقبل",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "susi",
+      "printedPage": 7,
+      "feature": "البقرة 38 — خوف",
+      "observed": "خوفٌ",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "susi",
+      "printedPage": 7,
+      "feature": "البقرة 38 — هاء عليهم",
+      "observed": "مكسورة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "susi",
+      "printedPage": 7,
+      "feature": "البقرة 40 — فأرهبون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "susi",
+      "printedPage": 7,
+      "feature": "البقرة 41 — فاتقون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "warsh",
+      "printedPage": 7,
+      "feature": "البقرة 48 — يقبل/تقبل",
+      "observed": "يقبل",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "warsh",
+      "printedPage": 7,
+      "feature": "البقرة 38 — خوف",
+      "observed": "خوفٌ",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "warsh",
+      "printedPage": 7,
+      "feature": "البقرة 38 — هاء عليهم",
+      "observed": "مكسورة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "warsh",
+      "printedPage": 7,
+      "feature": "البقرة 40 — فأرهبون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    },
+    {
+      "riwaya": "warsh",
+      "printedPage": 7,
+      "feature": "البقرة 41 — فاتقون",
+      "observed": "ياء محذوفة",
+      "reference": "https://quranpedia.app/books/b57/s4.html",
+      "result": "matches-specific-reference",
+      "verification": "visual contact sheets page7-1.png through page7-4.png; not automatic Unicode extraction"
+    }
+  ]
+}

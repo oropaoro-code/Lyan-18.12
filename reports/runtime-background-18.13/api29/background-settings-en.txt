@@ -1,0 +1,17 @@
+console:/ $ console:/ $ 
+transport_b1fb8a1de1094629848d3f42a5eacf39
+console:/ $ 
+transport_ee156e72098f4dc88e65d36f3e5f4aab
+console:/ $ [  678.942876] type=1400 audit(1791783961.740:24): avc: granted { read } for comm="main" name="u:object_r:net_dns_prop:s0" dev="tmpfs" ino=6781 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:net_dns_prop:s0 tclass=file
+[  679.128172] type=1400 audit(1791784271.380:25): avc: denied { write } for comm="RenderThread" name="property_service" dev="tmpfs" ino=6828 scontext=u:r:untrusted_app:s0:c116,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=app.layan.quran
+[  686.052207] binder: release 4585:4604 transaction 244630 out, still active
+[  686.052424] binder: undelivered TRANSACTION_COMPLETE
+[  686.052957] binder: undelivered transaction 244809, process died.
+[  686.168957] binder: 1984:2082 transaction failed 29189/0, size 4-0 line 3060
+[  686.198296] binder: send failed reply for transaction 244630, target dead
+[  686.821211] binder: release 4572:4584 transaction 244715 in, still active
+[  686.821463] binder: send failed reply for transaction 244715 to 1984:4621
+INSTRUMENTATION_RESULT: result=PASS actual localized background status and settings controls; native screenshot
+INSTRUMENTATION_CODE: -1
+
+LYN_613987bd706544eb9dffae8bc37c479f:0

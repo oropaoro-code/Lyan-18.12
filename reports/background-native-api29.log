@@ -1,0 +1,38 @@
+12:57:54 API29 native guest booting
+12:58:35 API29 console command: su 0 sh -c 'stty -F /dev/ttyS0 -echo; if [ -z "$(getprop ro.hw_timeout_multiplier)" ]; then setprop ro.hw_timeout_multiplier 10; fi'; echo L
+12:59:05 API29 console command: su 0 sh -c 'stty -F /dev/ttyS0 -echo; if [ -z "$(getprop ro.hw_timeout_multiplier)" ]; then setprop ro.hw_timeout_multiplier 10; fi'; echo L
+12:59:14 API29 console command: su 0 sh -c 'stty -F /dev/ttyS0 -echo; if [ -z "$(getprop ro.hw_timeout_multiplier)" ]; then setprop ro.hw_timeout_multiplier 10; fi'; echo L
+12:59:22 API29 console command: su 0 sh -c 'stty -F /dev/ttyS0 -echo; if [ -z "$(getprop ro.hw_timeout_multiplier)" ]; then setprop ro.hw_timeout_multiplier 10; fi'; echo L
+12:59:30 API29 console command: su 0 sh -c 'stty -F /dev/ttyS0 -echo; if [ -z "$(getprop ro.hw_timeout_multiplier)" ]; then setprop ro.hw_timeout_multiplier 10; fi'; echo L
+12:59:39 API29 console command: su 0 sh -c 'stty -F /dev/ttyS0 -echo; if [ -z "$(getprop ro.hw_timeout_multiplier)" ]; then setprop ro.hw_timeout_multiplier 10; fi'; echo L
+12:59:49 API29 console command: su 0 sh -c 'stty -F /dev/ttyS0 -echo; if [ -z "$(getprop ro.hw_timeout_multiplier)" ]; then setprop ro.hw_timeout_multiplier 10; fi'; echo L
+12:59:59 API29 console command: su 0 sh -c 'stty -F /dev/ttyS0 -echo; if [ -z "$(getprop ro.hw_timeout_multiplier)" ]; then setprop ro.hw_timeout_multiplier 10; fi'; echo L
+13:00:17 API29 console command: su 0 sh -c 'stty -F /dev/ttyS0 -echo; if [ -z "$(getprop ro.hw_timeout_multiplier)" ]; then setprop ro.hw_timeout_multiplier 10; fi'; echo L
+13:00:35 API29 console command: su 0 sh -c 'stty -F /dev/ttyS0 -echo; if [ -z "$(getprop ro.hw_timeout_multiplier)" ]; then setprop ro.hw_timeout_multiplier 10; fi'; echo L
+13:00:48 API29 console command: su 0 sh -c 'stty -F /dev/ttyS0 -echo; if [ -z "$(getprop ro.hw_timeout_multiplier)" ]; then setprop ro.hw_timeout_multiplier 10; fi'; echo L
+13:01:04 API29 console command: su 0 sh -c 'mkdir -p /mnt/media_rw/LYANTEST; for block in /dev/block/vd?; do type=$(blkid -s TYPE -o value "$block"); if [ "$type" = vfat ];
+13:01:46 API29 console command: setenforce 1; getenforce
+13:02:00 API29 console command: getprop ro.hw_timeout_multiplier
+13:02:15 API29 console command: printf '%s' cmVhZF93aW5kb3dzKCkgeyB3aW5kb3dfZHVtcD0kKHRpbWVvdXQgMzAgZHVtcHN5cyAtdCAyMCB3aW5kb3cgd2luZG93cyAyPiYxKTsgZHVtcF9zdGF0dXM9JD87IGlm
+13:02:52 API29 console command: [ "$(sha256sum /data/local/tmp/layan-ui-gate-488a51122b9f34730a692fc2d668cd9f54217e76cf3b077d4e5122afd5e8c465.sh | cut -d ' ' -f 1)" = 488a5
+13:03:30 API29 console command: setprop ro.hw_timeout_multiplier 10; settings put global hidden_api_policy 1; settings put global window_animation_scale 0; settings put glo
+13:04:00 API29 console command: find /mnt/media_rw -maxdepth 2 -name release.apk
+13:04:10 API29 console command: set -e; cp /mnt/media_rw/0000-0000/release.apk /data/local/tmp/layan.apk; cp /mnt/media_rw/0000-0000/tests.apk /data/local/tmp/tests.apk; cp
+13:05:29 API29 console command: p=$(pm path app.layan.quran); sha256sum "${p#package:}"
+13:05:39 API29 console command: pm grant app.layan.quran android.permission.ACCESS_COARSE_LOCATION; pm grant app.layan.quran android.permission.ACCESS_FINE_LOCATION; cmd no
+13:05:50 API29 console command: [ "$(sha256sum /data/local/tmp/layan-ui-gate-488a51122b9f34730a692fc2d668cd9f54217e76cf3b077d4e5122afd5e8c465.sh | cut -d ' ' -f 1)" = 488a5
+13:06:07 API29 console command: am instrument -w -r -e locale en-US app.layan.test/app.layan.test.PhoneLocaleRegression
+13:06:33 API29 background-settings-en: existing same-APK PASS
+13:06:33 API29 console command: am instrument -w -r -e locale ar-EG app.layan.test/app.layan.test.PhoneLocaleRegression
+13:07:13 API29 background-settings-ar: existing same-APK PASS
+13:07:13 API29 task-removal-retains-schedule
+13:07:13 API29 console command: input keyevent KEYCODE_WAKEUP; wm dismiss-keyguard
+13:07:13 API29 console command: [ "$(sha256sum /data/local/tmp/layan-ui-gate-488a51122b9f34730a692fc2d668cd9f54217e76cf3b077d4e5122afd5e8c465.sh | cut -d ' ' -f 1)" = 488a5
+13:07:39 API29 console command: am instrument -w -r app.layan.test/app.layan.test.TaskRemovalRegression
+13:08:02 API29 task-removal-retains-schedule: PASS
+13:08:02 API29 reminder-cold-five-minutes
+13:08:02 API29 console command: svc wifi disable; svc data disable; dumpsys battery unplug; dumpsys deviceidle enable; settings put global device_idle_constants min_time_to
+13:08:35 API29 console command: am instrument -w -r -e cycles 2 -e timeout 690000 app.layan.test/app.layan.test.DhikrRepeatProbe
+13:18:04 API29 reminder-cold-five-minutes: PASS
+13:18:04 API29 console command: am instrument -w -r app.layan.test/app.layan.test.ProofExport
+13:18:19 API29 native matrix complete: 4 PASS

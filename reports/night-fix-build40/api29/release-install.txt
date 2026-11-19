@@ -1,0 +1,3 @@
+/workspace/scratch/44e931097658/project/Lyan-18.12-source/releases/Lyan-18.12.apk: 1 file pushed, 0 skipped. 14.9 MB/s (15561252 bytes in 0.993s)
+Performing Push Install
+Success

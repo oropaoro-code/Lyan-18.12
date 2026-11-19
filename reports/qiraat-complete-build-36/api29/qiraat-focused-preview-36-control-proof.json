@@ -1,0 +1,8 @@
+{
+  "api": 29,
+  "installedSha256": "dd51e77130afa0fc26418b3d90524b8d04a21ead8c29d570dbb86bd118a18eab",
+  "expectedSha256": "dd51e77130afa0fc26418b3d90524b8d04a21ead8c29d570dbb86bd118a18eab",
+  "diagnostic": false,
+  "result": "FAIL",
+  "time": 1791918885.7604818
+}

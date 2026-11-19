@@ -1,0 +1,16 @@
+console:/ $ console:/ $ 
+transport_ddc2b7c84a014e0a8871a75de65c56b2
+console:/ $ 
+transport_7b22de47d0284b8ab1b5f3e2bc05d49c
+console:/ $ [  751.704551] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[  757.364090] binder_alloc: 4816: binder_alloc_buf, no vma
+[  757.364501] binder: 1984:2302 transaction failed 29189/-3, size 112-0 line 3274
+[  757.374702] binder: undelivered TRANSACTION_COMPLETE
+[  757.374906] binder: undelivered transaction 272195, process died.
+[  757.375164] binder: undelivered transaction 272050, process died.
+[  758.290023] binder: release 4805:4815 transaction 272015 in, still active
+[  758.309747] binder: send failed reply for transaction 272015 to 1984:4848
+INSTRUMENTATION_RESULT: result=PASS actual localized background status and settings controls; native screenshot
+INSTRUMENTATION_CODE: -1
+
+LYN_8e550e365a754b3686487fd6176b2937:0

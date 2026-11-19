@@ -1,0 +1,36 @@
+{
+  "version": "18.13",
+  "versionCode": 32,
+  "sourcePath": "/workspace/scratch/5d761eff258e/background-source/layan-18.13-source",
+  "apkSha256": "028cc134da6ed417dc1ff76d4f83d169d19dca287ca90e63f711344bca79f3a2",
+  "aabSha256": "4eb469b26f90fcebf7a34912acddc5ef89a9c39c163eac8ff5bf8ad44f2ca7d3",
+  "coordinatorSession": 14468,
+  "memorySession": 65087,
+  "nativeLog": "/workspace/scratch/5d761eff258e/background-source/layan-18.13-source/reports/background-native-api29.log",
+  "currentNativeScope": "API29 actual native task removal, verified muted ringer mode (actual enum recorded), offline locked-screen natural 2x5-minute recurrence, retained successful localized settings cases",
+  "currentNativeStatus": "PASS: four targeted API29 cases",
+  "infinixPhysicalSwipeRetest": "PENDING user Auto-start settings",
+  "previous154CasesVersion": "18.12",
+  "notificationVolumeChangeIncluded": false,
+  "sourceLibraryVersion": 97,
+  "updatedUtc": "2026-10-12T06:19:35.136638+00:00",
+  "coordinatorCompleted": true,
+  "actualRingerMode": 0,
+  "virtualVibratorAvailable": false,
+  "naturalAudioCycles": 2,
+  "naturalAudioStartElapsedMs": [
+    905328,
+    1204463
+  ],
+  "naturalAudioIntervalMs": 299135,
+  "physicalInfinixVerified": false,
+  "targetedCases": {
+    "background-settings-en": "PASS",
+    "background-settings-ar": "PASS",
+    "task-removal-retains-schedule": "PASS",
+    "reminder-cold-five-minutes": "PASS"
+  },
+  "generatedArm64ApkChecks": 5,
+  "fullNewVersionNativeMatrix": false,
+  "productionReady": false
+}

@@ -1,0 +1,24 @@
+{
+  "nonce": 4,
+  "replies": [
+    {
+      "type": "adb",
+      "args": [
+        "install",
+        "--no-streaming",
+        "-r",
+        "/workspace/scratch/44e931097658/layan-source/layan-18.12-source/build/instrumentation/layan-test.apk"
+      ],
+      "output": "/workspace/scratch/44e931097658/layan-source/layan-18.12-source/build/instrumentation/layan-test.apk: 1 file pushed, 0 skipped. 1114.1 MB/s (160147 bytes in 0.000s)\nPerforming Push Install\nSuccess\n"
+    },
+    {
+      "api": 29,
+      "installedSha256": "dd51e77130afa0fc26418b3d90524b8d04a21ead8c29d570dbb86bd118a18eab",
+      "expectedSha256": "dd51e77130afa0fc26418b3d90524b8d04a21ead8c29d570dbb86bd118a18eab",
+      "diagnostic": false,
+      "result": "PASS",
+      "time": 1791919182.7804542
+    }
+  ],
+  "quit": true
+}

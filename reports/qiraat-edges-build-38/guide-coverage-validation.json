@@ -1,0 +1,231 @@
+{
+  "result": "PASS",
+  "versionName": "18.12",
+  "versionCode": 38,
+  "apkSha256": "46566eacd255098da7d3d67d9b722a3a08fad8715cfe8db2b5a1435f500f0114",
+  "pages": 12080,
+  "paintKinds": 122,
+  "guides": [
+    {
+      "id": "hafs",
+      "guideSha256": "e82c448398cf76ab2199a31f08d88af7a4ba1319c42dfb39fcf76d0c525fa8ed",
+      "sourcePdfSha256": "71f40df25631accc642c49eaddfd79670c7f46210295b86b526eb3cfd72f3616",
+      "pages": 604,
+      "paintKinds": 0,
+      "missingPaints": [],
+      "emptyExplanations": 0,
+      "escapedGlyphSpans": 0,
+      "finalApkGuideMatchesSource": true
+    },
+    {
+      "id": "shubah",
+      "guideSha256": "db66434669d3283249b771cd2c25f0b2cb672f7e6b3d9cd0b498964752763360",
+      "sourcePdfSha256": "37c919f99c283bce98da9e4c9424bf54f730e3955609d9032c01c5e6dc0f06bb",
+      "pages": 604,
+      "paintKinds": 3,
+      "missingPaints": [],
+      "emptyExplanations": 0,
+      "escapedGlyphSpans": 0,
+      "finalApkGuideMatchesSource": true
+    },
+    {
+      "id": "warsh",
+      "guideSha256": "337ee950bd86daf451e8da38d27dfe1da3f3e48458dde53c3d3c1fb426e5ecd2",
+      "sourcePdfSha256": "fd2572b23d63c6da26dbac88f039ae4ef0de65aa6e184eeb26383d71541415c8",
+      "pages": 604,
+      "paintKinds": 12,
+      "missingPaints": [],
+      "emptyExplanations": 0,
+      "escapedGlyphSpans": 0,
+      "finalApkGuideMatchesSource": true
+    },
+    {
+      "id": "qaloon",
+      "guideSha256": "ac9ef8a9114928433249a4c1d56b5e84d73af57f53627b0a7c62bb3976300c18",
+      "sourcePdfSha256": "b54563b2de0c00c7d17cde18e708496afa2a0137085b603b62c1c7550e6c1d5d",
+      "pages": 604,
+      "paintKinds": 6,
+      "missingPaints": [],
+      "emptyExplanations": 0,
+      "escapedGlyphSpans": 0,
+      "finalApkGuideMatchesSource": true
+    },
+    {
+      "id": "buzzi",
+      "guideSha256": "86243a30d7a2488fdcf3531cd6a946f67efdfbcff9ce3543a01f5a21afa19038",
+      "sourcePdfSha256": "c6d144137adaf74cd98795947b3993e47aebdaf3489bb3ec90d18d142a04088e",
+      "pages": 604,
+      "paintKinds": 7,
+      "missingPaints": [],
+      "emptyExplanations": 0,
+      "escapedGlyphSpans": 0,
+      "finalApkGuideMatchesSource": true
+    },
+    {
+      "id": "qunbul",
+      "guideSha256": "be48fae6bd64ab3db7a7846316125d4ec72e5bcd9807486e8b2f17ca3aacce90",
+      "sourcePdfSha256": "daf4b49e557d2d01a833b592d619ae6ed14e5409b26e8a56f5a03273a2b55cca",
+      "pages": 604,
+      "paintKinds": 4,
+      "missingPaints": [],
+      "emptyExplanations": 0,
+      "escapedGlyphSpans": 0,
+      "finalApkGuideMatchesSource": true
+    },
+    {
+      "id": "duri",
+      "guideSha256": "d44ffeba25f99c90d8e91a1d5ddc75c405da22abdfaf5eef0d955cb81f08214f",
+      "sourcePdfSha256": "d60939b41e4855b76cc6c7a6eba4e91f24ee47577db18e05c6e754575dd7dbcb",
+      "pages": 604,
+      "paintKinds": 4,
+      "missingPaints": [],
+      "emptyExplanations": 0,
+      "escapedGlyphSpans": 0,
+      "finalApkGuideMatchesSource": true
+    },
+    {
+      "id": "susi",
+      "guideSha256": "67ad9ec0965e9a154869ffb22f5b8cdadaa5dc31dbd0112e6b17b2d76c0289ec",
+      "sourcePdfSha256": "1b66da8135473765488ce7240d6cf015b9ac402a456f6751083272bf107c69ce",
+      "pages": 604,
+      "paintKinds": 5,
+      "missingPaints": [],
+      "emptyExplanations": 0,
+      "escapedGlyphSpans": 0,
+      "finalApkGuideMatchesSource": true
+    },
+    {
+      "id": "hisham",
+      "guideSha256": "723a97d7393f4a43894147ed0272a2ccc55926d5722f5372fd578805629ad0d7",
+      "sourcePdfSha256": "67440097f8fbf8bb65ad2f96e204cddccd23d77c93bc0b347c988ee11c826310",
+      "pages": 604,
+      "paintKinds": 4,
+      "missingPaints": [],
+      "emptyExplanations": 0,
+      "escapedGlyphSpans": 0,
+      "finalApkGuideMatchesSource": true
+    },
+    {
+      "id": "ibn-dhakwan",
+      "guideSha256": "01b7c3162a87f896e9b0a31ca287bd4c3523a39402c0845ec252d62c262d7e72",
+      "sourcePdfSha256": "96df8a17f4614c6e5ac1e14e7ff5f3aec3bc909073aea8f3b9c780decf8233bc",
+      "pages": 604,
+      "paintKinds": 5,
+      "missingPaints": [],
+      "emptyExplanations": 0,
+      "escapedGlyphSpans": 0,
+      "finalApkGuideMatchesSource": true
+    },
+    {
+      "id": "khalaf",
+      "guideSha256": "7981ec816b0e4ea55157361d8343b6918fc963780e60202d2ce7488a883fe50e",
+      "sourcePdfSha256": "32036761caf1ff476006e56ef20f302f3125767a159225104d26f9ad2fbb8c6b",
+      "pages": 604,
+      "paintKinds": 10,
+      "missingPaints": [],
+      "emptyExplanations": 0,
+      "escapedGlyphSpans": 0,
+      "finalApkGuideMatchesSource": true
+    },
+    {
+      "id": "khallad",
+      "guideSha256": "adc03b3951165b934375395c578357f3592fd6f66a3d40c4afa7e981706ac8b2",
+      "sourcePdfSha256": "ccd8a282113e220934fd44c35ef60350e7fc64c0a17da2d417c3a49976635a60",
+      "pages": 604,
+      "paintKinds": 8,
+      "missingPaints": [],
+      "emptyExplanations": 0,
+      "escapedGlyphSpans": 0,
+      "finalApkGuideMatchesSource": true
+    },
+    {
+      "id": "abu-harith",
+      "guideSha256": "e84eda636f8819ef5a5f27311771ce5c8dd18d0c79b4128a7e8bb238535708cb",
+      "sourcePdfSha256": "9ec142486aff6b2b5f0a503c478345be6e9908c49a9fa1c70e60f01b7abc0ced",
+      "pages": 604,
+      "paintKinds": 5,
+      "missingPaints": [],
+      "emptyExplanations": 0,
+      "escapedGlyphSpans": 0,
+      "finalApkGuideMatchesSource": true
+    },
+    {
+      "id": "duri-kisai",
+      "guideSha256": "1828386f7ceeb44d25bd2e8f6eb4d1cf4b214fb63f51001f000790da1b87218b",
+      "sourcePdfSha256": "01be45c9eb1802f848505e884d8a0e1bff26cfdec4ea0aabb0ff0645ac1a24a3",
+      "pages": 604,
+      "paintKinds": 6,
+      "missingPaints": [],
+      "emptyExplanations": 0,
+      "escapedGlyphSpans": 0,
+      "finalApkGuideMatchesSource": true
+    },
+    {
+      "id": "ibn-wardan",
+      "guideSha256": "2a62643c023f4b55ef5bf9fa8077dcf31e33f3ea5f40add3f31755aa44cf8fba",
+      "sourcePdfSha256": "aac9066ed45ae3e9062236d43d8667f4848fc5467094fafd9012038f6241e255",
+      "pages": 604,
+      "paintKinds": 9,
+      "missingPaints": [],
+      "emptyExplanations": 0,
+      "escapedGlyphSpans": 0,
+      "finalApkGuideMatchesSource": true
+    },
+    {
+      "id": "ibn-jammaz",
+      "guideSha256": "e18c100ea7c86693663c616e9eeeeb8eff5c916493fd15f3d8ce6b03b676a88f",
+      "sourcePdfSha256": "d61b282fb7ebe1012885d3c497257bd0280f31e9b3ce3550eaa3e8e5e77a3f30",
+      "pages": 604,
+      "paintKinds": 9,
+      "missingPaints": [],
+      "emptyExplanations": 0,
+      "escapedGlyphSpans": 0,
+      "finalApkGuideMatchesSource": true
+    },
+    {
+      "id": "ruways",
+      "guideSha256": "4ab75bc4cc8ad5f3c9ba752e856f965b2eb2d271becad03a01feae305fe7077a",
+      "sourcePdfSha256": "4823222482363ff4aa1df6cf5e3d72fac2d01e42e2a75df974b7b75e2247acf8",
+      "pages": 604,
+      "paintKinds": 5,
+      "missingPaints": [],
+      "emptyExplanations": 0,
+      "escapedGlyphSpans": 0,
+      "finalApkGuideMatchesSource": true
+    },
+    {
+      "id": "rawh",
+      "guideSha256": "706cd0173dc68d54de3e23aa24d13ed1fa4aa22c21381883fe1afcfffd788420",
+      "sourcePdfSha256": "79f977fabb41bd08abbc6b1986d997ca44c59fbc74749fa9ca88c7461e14dc33",
+      "pages": 604,
+      "paintKinds": 4,
+      "missingPaints": [],
+      "emptyExplanations": 0,
+      "escapedGlyphSpans": 0,
+      "finalApkGuideMatchesSource": true
+    },
+    {
+      "id": "ishaq",
+      "guideSha256": "8b86105f407d01225f2c61e54a0438c8b7740bdd3bc1bf4e67f00308c47f96fa",
+      "sourcePdfSha256": "815bdd66154a5e070e96c4b2e8c101b4695baa17f0122c93f11c97e1632e1dc3",
+      "pages": 604,
+      "paintKinds": 8,
+      "missingPaints": [],
+      "emptyExplanations": 0,
+      "escapedGlyphSpans": 0,
+      "finalApkGuideMatchesSource": true
+    },
+    {
+      "id": "idris",
+      "guideSha256": "eb29a9deaf4f40bddf135a67d03579f3f23099f3067c8c2b38b7ba368b2a43fa",
+      "sourcePdfSha256": "5e526b46959686abee874ec3a161ac2b188e9db8435beb0c156d332726beb26e",
+      "pages": 604,
+      "paintKinds": 8,
+      "missingPaints": [],
+      "emptyExplanations": 0,
+      "escapedGlyphSpans": 0,
+      "finalApkGuideMatchesSource": true
+    }
+  ],
+  "scope": "Every printed font paint and page mapping in the twenty pinned source PDFs; does not certify every Quran word or every transmission route."
+}

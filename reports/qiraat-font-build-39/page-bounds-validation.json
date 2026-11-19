@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "pages": 12080,
+  "sharedReferenceWidthEm": 31.02,
+  "sharedReferenceHeightEm": 47.27,
+  "maxSourceHeightEm": 47.26897930276805,
+  "aspectRatioPreserved": true,
+  "allPageContentInsideSharedBodyBounds": true,
+  "originalLineBreaksPreserved": true,
+  "limitation": "Source typefaces and original line spacing remain different; the common body-font scale is normalized, not every glyph shape."
+}

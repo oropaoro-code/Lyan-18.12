@@ -1,0 +1,33 @@
+console:/ $ console:/ $ 
+transport_9989ce2a00284466b3a63f46433b1e97
+console:/ $ 
+transport_36f71ab841494bd9afbb40f2e990eaf0
+console:/ $ [  689.808007] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[  749.806662] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[  809.809757] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[  869.806619] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[  929.807739] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[  989.813155] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 1049.808696] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 1109.814388] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 1169.867116] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[ 1207.086559] binder: undelivered TRANSACTION_COMPLETE
+[ 1207.086752] binder: undelivered transaction 271813, process died.
+[ 1207.376627] binder: release 4371:4381 transaction 271837 in, still active
+[ 1207.376857] binder: send failed reply for transaction 271837 to 1982:4453
+INSTRUMENTATION_STATUS: audioEvent=start=905328
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: audioEvent=complete=1 duration=2239
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: audioEvent=start=1204463
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: audioEvent=complete=2 duration=2198
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: completed=2
+INSTRUMENTATION_RESULT: events=start=905328 stop=907567 duration=2239
+start=1204463 stop=1206661 duration=2198
+
+INSTRUMENTATION_RESULT: result=PASS 2 consecutive native audio playbacks without resetting schedule
+INSTRUMENTATION_CODE: -1
+
+LYN_3184e0bd9a5a41f28f1c486d3e8e0acd:0

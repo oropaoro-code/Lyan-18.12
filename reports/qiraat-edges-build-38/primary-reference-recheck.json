@@ -1,0 +1,64 @@
+{
+  "reviewDate": "2026-10-13",
+  "references": [
+    {
+      "topic": "قالون: إمالة هار وتقليل التوراة",
+      "url": "https://www.nquran.com/ar/view/16680/"
+    },
+    {
+      "topic": "ورش: البدل واللين والترقيق والتغليظ",
+      "url": "https://www.nquran.com/ar/view/16681/"
+    },
+    {
+      "topic": "البزي وقنبل: التسهيل والتاءات",
+      "url": "https://www.nquran.com/ar/view/16692/"
+    },
+    {
+      "topic": "الدوري والسوسي: عدم تعميم الإدغام الكبير",
+      "url": "https://www.nquran.com/ar/view/16698/"
+    },
+    {
+      "topic": "هشام وابن ذكوان: اختلاف الروايتين",
+      "url": "https://www.nquran.com/ar/view/16699/"
+    },
+    {
+      "topic": "شعبة وحفص: اختلاف الروايتين",
+      "url": "https://www.nquran.com/ar/view/16696/"
+    },
+    {
+      "topic": "خلف وخلاد: السكت والإشمام",
+      "url": "https://www.nquran.com/ar/view/16695/"
+    },
+    {
+      "topic": "أبو الحارث ودوري الكسائي: اختلاف مواضع الإمالة",
+      "url": "https://www.nquran.com/ar/view/16694/"
+    },
+    {
+      "topic": "أبو جعفر: الخاء والغين ومستثنياتهما والسكت",
+      "url": "https://www.nquran.com/ar/view/16682/"
+    },
+    {
+      "topic": "ابن وردان وابن جماز: عدم خلط الاختلافات",
+      "url": "https://www.nquran.com/ar/view/21655/"
+    },
+    {
+      "topic": "رويس وروح: اختلاف مواضع الإمالة وأنواع الإشمام",
+      "url": "https://www.nquran.com/ar/view/16700/"
+    },
+    {
+      "topic": "إسحاق وإدريس عن خلف العاشر",
+      "url": "https://www.nquran.com/ar/view/16683/"
+    },
+    {
+      "topic": "إشمام رويس في أصدق واختلاف طرقه",
+      "url": "https://shamela.ws/book/38740/302"
+    }
+  ],
+  "refinements": [
+    "Neutral colour wording for nonmagenta shade aliases",
+    "Qaloon Tawrah taqlil note",
+    "Ruways route-specific sad/zay and vowel ishmam distinction",
+    "Rawh imala limited to its printed locations"
+  ],
+  "scope": "Printed key meanings and documented performance notes; not a full word-by-word certification"
+}

@@ -1,0 +1,22 @@
+SELinux Enforcing before APK installation and every app regression. Console bootstrap permissive: True
+[  290.399115] init: Untracked pid 2941 exited with status 0
+[  290.815012] init: Untracked pid 2944 exited with status 0
+[  290.815403] init: Untracked pid 2949 exited with status 0
+console:/ $ [  290.399115] init: Untracked pid 2941 exited with status 0
+[  290.815012] init: Untracked pid 2944 exited with status 0
+[  290.815403] init: Untracked pid 2949 exited with status 0
+console:/ $ [  296.876980] init: processing action (sys.sysctl.tcp_def_init_rwnd=*) from (/init.rc:807)
+
+transport_1fd585bc28114919bda2b94f584128eb
+console:/ $ console:/ $ 
+transport_e661616b23b1427d92da7e0e5f812bff
+console:/ $ [  317.557026] type=1400 audit(1791789509.030:16): avc: denied { associate } for comm="Binder:1710_4" name="globalAlert" scontext=u:object_r:proc_net:s0 tcontext=u:object_r:proc:s0 tclass=filesystem permissive=1 duplicate messages suppressed
+[  317.558168] type=1404 audit(1791789543.800:17): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295
+[  320.862256] selinux: avc:  received setenforce notice (enforcing=1)
+[  320.862256] 
+[  320.867301] selinux: avc:  denied  { set } for property=qemu.gles pid=3086 uid=10093 gid=10093 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:qemu_prop:s0 tclass=property_service permissive=0
+[  320.867301] 
+[  320.870288] init: Unable to set property 'qemu.gles' to '1' from uid:10093 gid:10093 pid:3086: SELinux permission check failed
+Enforcing
+
+LYN_feae3de768194696b9d791bc5926e9b9:0

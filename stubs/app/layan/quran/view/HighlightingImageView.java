@@ -1,0 +1,1 @@
+package app.layan.quran.view;import android.content.Context;import android.graphics.RectF;public class HighlightingImageView extends android.widget.ImageView {public HighlightingImageView(Context c){super(c);}public void setPageBounds(RectF r){}public void setOverlayText(String a,String b,String c,String d,String e){}}

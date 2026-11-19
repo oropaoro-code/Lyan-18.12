@@ -1,0 +1,17 @@
+INSTRUMENTATION_RESULT: error=java.io.FileNotFoundException: /data/user/0/app.layan.quran/files/qiraat/hafs-71f40df25631accc.pdf.part: open failed: ENOENT (No such file or directory)
+	at libcore.io.IoBridge.open(IoBridge.java:496)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:186)
+	at app.layan.quran.QiraatDownload.install(Unknown Source:67)
+	at app.layan.test.UniformFontRegression.onStart(UniformFontRegression.java:7)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2189)
+Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+	at libcore.io.Linux.open(Native Method)
+	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:252)
+	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7255)
+	at libcore.io.IoBridge.open(IoBridge.java:482)
+	... 5 more
+
+INSTRUMENTATION_CODE: 0

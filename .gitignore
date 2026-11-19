@@ -1,0 +1,5 @@
+/build/
+/releases/
+*.jks
+*.keystore
+*.apk

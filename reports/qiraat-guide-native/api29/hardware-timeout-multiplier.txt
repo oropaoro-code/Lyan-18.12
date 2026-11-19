@@ -1,0 +1,22 @@
+[  261.654563] selinux: avc:  received setenforce notice (enforcing=1)
+[  261.654563] 
+console:/ $ [  261.654563] selinux: avc:  received setenforce notice (enforcing=1)
+[  261.654563] 
+console:/ $ [  265.882984] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+
+transport_77f12d0dcd5c4c9e94fda28d146b9a19
+console:/ $ console:/ $ [  271.549285] wlan0: authenticate with 02:15:b2:00:01:00
+[  271.649780] wlan0: send auth to 02:15:b2:00:01:00 (try 1/3)
+[  271.746879] wlan0: authenticated
+[  271.761929] wlan0: associate with 02:15:b2:00:01:00 (try 1/3)
+[  271.798226] wlan0: RX AssocResp from 02:15:b2:00:01:00 (capab=0x401 status=0 aid=1)
+[  271.822881] wlan0: associated
+
+transport_1f34789cfa26456d9dd1bc67fbb0db95
+console:/ $ [  282.235348] init: processing action (sys.sysctl.tcp_def_init_rwnd=*) from (/init.rc:807)
+[  286.031955] type=1400 audit(1791890607.039:17): avc: denied { write } for comm="RenderThread" name="property_service" dev="tmpfs" ino=7353 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=com.android.launcher3
+[  286.033584] type=1400 audit(1791890640.529:18): avc: denied { getpgid } for comm="ActivityManager" scontext=u:r:system_server:s0 tcontext=u:r:crash_dump:s0:c512,c768 tclass=process permissive=0 b/73128755
+[  286.038589] init: Untracked pid 3210 received signal 9
+10
+
+LYN_a09f7f09c1b3441abe6ddfab6e2dc89d:0

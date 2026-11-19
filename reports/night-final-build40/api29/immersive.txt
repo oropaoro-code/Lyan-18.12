@@ -1,0 +1,2 @@
+INSTRUMENTATION_RESULT: result=PASS reader opens full screen; real finger taps show status/navigation bars and toolbar, second click hides them; page navigation keeps full screen
+INSTRUMENTATION_CODE: -1

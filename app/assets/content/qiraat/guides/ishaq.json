@@ -1,0 +1,2701 @@
+{
+  "id": "ishaq",
+  "legendImage": "ishaq.png",
+  "intro": "مفتاح هذه الرواية يوضح معنى الألوان والعلامات أينما وردت في سورها. وجود الحكم في الدليل لا يعني أنه موجود في كل سورة.",
+  "items": [
+    {
+      "title": "المخالفة لحفص",
+      "meaning": "تشير العلامة الملونة في هذا المدخل إلى حرف أو حركة أو صورة كلمة تخالف حفصًا في هذا المصحف. اقرأ الحرف وحركته وتشديده وإثباته أو حذفه كما في الرواية المختارة. لا تنقل ضبط حفص إلى هذا الموضع. وقد يلوّن ترقيم الآية تبعًا لعدّ هذه النسخة؛ تلوين إطار الآية أو رقمها لا يضيف حكمًا صوتيًا إلى الكلمة.",
+      "short": "اقرأ ضبط الرواية الحالية",
+      "color": "#FF00FF",
+      "outlined": false,
+      "verified": true,
+      "verification": {
+        "method": "original printed colour key",
+        "legendImage": "ishaq.png"
+      }
+    },
+    {
+      "title": "الإدغام",
+      "meaning": "أدخل صوت الحرف الأول في الحرف التالي حتى يصيرا في الأداء حرفًا واحدًا مشددًا من جنس الثاني، وفق ضبط الرواية. قد يكون الأول ساكنًا، أو يكون الموضع من الإدغام الكبير للحرف المتحرك. يُعمل بالإدغام عند الوصل؛ وعند الوقف على الكلمة الأولى لا توصلها بالحرف التالي.",
+      "short": "أدخل الأول في الحرف التالي",
+      "color": "#0000FF",
+      "outlined": false,
+      "verified": true,
+      "verification": {
+        "method": "original printed colour key",
+        "legendImage": "ishaq.png"
+      }
+    },
+    {
+      "title": "الإمالة",
+      "meaning": "قرّب الفتحة من الكسرة والألف من الياء من غير تحويلهما إلى كسرة وياء خالصتين. الإمالة الكبرى أقوى من التقليل. اتبع مواضع الرواية المعلّمة، وميّز بين الإمالة في الوصل والوقف وبين المواضع المختصة بالوقف.",
+      "short": "ميل نحو الكسرة والياء",
+      "color": "#FF0000",
+      "outlined": false,
+      "verified": true,
+      "verification": {
+        "method": "original printed colour key",
+        "legendImage": "ishaq.png"
+      }
+    },
+    {
+      "title": "إشمام الصاد صوت الزاي",
+      "short": "صاد بصوت الزاي",
+      "meaning": "انطق الصاد بصوت ممزوج بالزاي مع المحافظة على خصائص الصاد؛ ليست زايًا خالصة. هذا إشمام يسمع في النطق، وليس ضمّ الشفتين بلا صوت في باب الوقف. مواضعه، مثل الصاد الساكنة قبل الدال في «أصدق»، تتبع الرواية وطريقها.",
+      "color": "#FF6500",
+      "outlined": false,
+      "verified": true,
+      "verification": {
+        "method": "marked source word matched to primary recitation reference",
+        "reference": "https://shamela.ws/book/38740/302",
+        "sourceEvidence": "p92 أصدق; p98 تصدية; marked صاد ساكنة before دال; follow the printed riwayah route"
+      }
+    },
+    {
+      "title": "حركات الضبط في الموضع",
+      "short": "اقرأ حركة الكلمة",
+      "meaning": "درجة خضراء في أجزاء متفرقة من حركات الكلمات وتنوينها. يفسر الدليل الكلمة والحركة في كل موضع أدناه، ولا ينسب إلى الدرجة حكمًا عامًا غير موجود في مفتاح الناشر. اتبع حكم التاء والتنوين بحسب الرواية؛ لا تنقل إمالة هاء التأنيث الخاصة بالكسائي إلى هذه الرواية لمجرد تشابه اللون.",
+      "occurrenceNotes": [
+        {
+          "page": 8,
+          "title": "ضبط «ليلةً»",
+          "short": "اقرأ حركة الكلمة",
+          "meaning": "فتحتا التنوين في «ليلةً» عند الوصل؛ لا يُنشئ هذا اللون إمالة. تلوين جزء الحركة لا يغيّر حكمها.",
+          "words": [
+            "ليلةً"
+          ],
+          "references": []
+        },
+        {
+          "page": 61,
+          "title": "ضبط «الآخرةِ»",
+          "short": "اقرأ حركة الكلمة",
+          "meaning": "كسرة تاء «الآخرةِ» عند الوصل. في خلف العاشر تفتح هاء التأنيث عند الوقف، ولا يؤخذ حكم الكسائي من اللون الأخضر. تلوين جزء الحركة لا يغيّر حكمها.",
+          "words": [
+            "الآخرةِ"
+          ],
+          "references": []
+        },
+        {
+          "page": 156,
+          "title": "ضبط «لعنةَ»",
+          "short": "اقرأ حركة الكلمة",
+          "meaning": "الفتحة في «أنَّ لعنةَ الله». اتبع نصب التاء وتشديد «أن» كما في المصحف؛ اللون الأخضر مكوّن طباعي من الكلمة. تلوين جزء الحركة لا يغيّر حكمها.",
+          "words": [
+            "لعنةَ"
+          ],
+          "references": []
+        },
+        {
+          "page": 270,
+          "title": "ضبط «الملائكةُ»",
+          "short": "اقرأ حركة الكلمة",
+          "meaning": "ضمة تاء «الملائكةُ» عند الوصل. تقف على تائها بالهاء من غير نقل حكم إمالة الكسائي إليها. تلوين جزء الحركة لا يغيّر حكمها.",
+          "words": [
+            "الملائكةُ"
+          ],
+          "references": []
+        },
+        {
+          "page": 294,
+          "title": "ضبط «فتيةٌ»",
+          "short": "اقرأ حركة الكلمة",
+          "meaning": "ضبط التنوين في «إنهم فتيةٌ آمنوا». عند الوصل تظهر النون الساكنة قبل الهمزة، وعند الوقف على التاء المربوطة تقف بالهاء. تلوين جزء الحركة لا يغيّر حكمها.",
+          "words": [
+            "فتيةٌ"
+          ],
+          "references": []
+        },
+        {
+          "page": 321,
+          "title": "ضبط «بآيةٍ»",
+          "short": "اقرأ حركة الكلمة",
+          "meaning": "كسرة وتنوين «بآيةٍ من ربه» عند الوصل؛ يعمل بحكم التنوين قبل الميم. لا يجعل هذا اللون التاء ممالة. تلوين جزء الحركة لا يغيّر حكمها.",
+          "words": [
+            "بآيةٍ"
+          ],
+          "references": []
+        },
+        {
+          "page": 356,
+          "title": "ضبط «لعبرةً»",
+          "short": "اقرأ حركة الكلمة",
+          "meaning": "ضبط «لعبرةً لأولي الأبصار»: التنوين قبل اللام يدغم بلا غنة عند الوصل، والتاء المربوطة هاء عند الوقف. تلوين جزء الحركة لا يغيّر حكمها.",
+          "words": [
+            "لعبرةً"
+          ],
+          "references": []
+        }
+      ],
+      "color": "#008000",
+      "outlined": false,
+      "verified": true,
+      "verification": {
+        "method": "per-occurrence printed vowels",
+        "reference": [
+          "https://dl2.islamweb.net/Audio_Path/quran_list/eshaq/osol.pdf",
+          "https://www.nquran.com/ar/index.php?ayano=85&group=tb1&sorano=3&tpath=2"
+        ],
+        "publisherLegendDefinesThisExactShade": false,
+        "allOccurrencePages": [
+          8,
+          61,
+          156,
+          270,
+          294,
+          321,
+          356
+        ],
+        "glyphComponentsReviewed": 14,
+        "sourceEvidence": "Pinned source glyphs and words, including all rare occurrences; see provenance/reviewed-colours/occurrences.json",
+        "scope": "Word performance is documented; no independent global publisher meaning is invented for an undeclared shade."
+      }
+    },
+    {
+      "title": "الإدغام",
+      "short": "ادمج الحرفين",
+      "meaning": "أدخل صوت الحرف الأول في الحرف التالي حتى يصيرا في الأداء حرفًا واحدًا مشددًا من جنس الثاني، وفق ضبط الرواية. قد يكون الأول ساكنًا، أو يكون الموضع من الإدغام الكبير للحرف المتحرك. يُعمل بالإدغام عند الوصل؛ وعند الوقف على الكلمة الأولى لا توصلها بالحرف التالي.",
+      "occurrenceNotes": [
+        {
+          "page": 14,
+          "title": "إدغام «اتخذتم»",
+          "short": "ادمج الذال في التاء",
+          "meaning": "أدغم الذال الساكنة في التاء من «اتخذتم». الدرجة الزرقاء الداكنة جزء من علامة الإدغام.",
+          "words": [
+            "اتخذتم"
+          ],
+          "references": []
+        },
+        {
+          "page": 105,
+          "title": "إدغام «قد جاءكم»",
+          "short": "ادمج الدال في الجيم",
+          "meaning": "أدغم الدال الساكنة في الجيم عند وصل «قد جاءكم» على قراءة خلف العاشر.",
+          "words": [
+            "قد جاءكم"
+          ],
+          "references": []
+        }
+      ],
+      "color": "#0000CC",
+      "outlined": false,
+      "verified": true,
+      "verification": {
+        "method": "source shade of documented rule",
+        "reference": [
+          "https://dl2.islamweb.net/Audio_Path/quran_list/eshaq/osol.pdf"
+        ],
+        "publisherLegendDefinesThisExactShade": false,
+        "allOccurrencePages": [
+          14,
+          105
+        ],
+        "glyphComponentsReviewed": 3,
+        "sourceEvidence": "Pinned source glyphs and words, including all rare occurrences; see provenance/reviewed-colours/occurrences.json",
+        "scope": "Word performance is documented; no independent global publisher meaning is invented for an undeclared shade."
+      }
+    },
+    {
+      "title": "الإدغام",
+      "short": "ادمج الحرفين",
+      "meaning": "أدخل صوت الحرف الأول في الحرف التالي حتى يصيرا في الأداء حرفًا واحدًا مشددًا من جنس الثاني، وفق ضبط الرواية. قد يكون الأول ساكنًا، أو يكون الموضع من الإدغام الكبير للحرف المتحرك. يُعمل بالإدغام عند الوصل؛ وعند الوقف على الكلمة الأولى لا توصلها بالحرف التالي.",
+      "occurrenceNotes": [
+        {
+          "page": 179,
+          "title": "إدغام «فقد جاءكم»",
+          "short": "ادمج الدال في الجيم",
+          "meaning": "أدغم الدال الساكنة في الجيم عند وصل «فقد جاءكم». هذه درجة فرعية من أزرق الإدغام.",
+          "words": [
+            "فقد جاءكم"
+          ],
+          "references": []
+        }
+      ],
+      "color": "#1912AE",
+      "outlined": false,
+      "verified": true,
+      "verification": {
+        "method": "source shade of documented rule",
+        "reference": [
+          "https://dl2.islamweb.net/Audio_Path/quran_list/eshaq/osol.pdf"
+        ],
+        "publisherLegendDefinesThisExactShade": false,
+        "allOccurrencePages": [
+          179
+        ],
+        "glyphComponentsReviewed": 1,
+        "sourceEvidence": "Pinned source glyphs and words, including all rare occurrences; see provenance/reviewed-colours/occurrences.json",
+        "scope": "Word performance is documented; no independent global publisher meaning is invented for an undeclared shade."
+      }
+    },
+    {
+      "title": "المخالفة لحفص",
+      "short": "اتبع ضبط الرواية",
+      "meaning": "تشير العلامة الملونة في هذا المدخل إلى حرف أو حركة أو صورة كلمة تخالف حفصًا في هذا المصحف. اقرأ الحرف وحركته وتشديده وإثباته أو حذفه كما في الرواية المختارة. لا تنقل ضبط حفص إلى هذا الموضع. وقد يلوّن ترقيم الآية تبعًا لعدّ هذه النسخة؛ تلوين إطار الآية أو رقمها لا يضيف حكمًا صوتيًا إلى الكلمة.",
+      "occurrenceNotes": [
+        {
+          "page": 532,
+          "title": "ياء «سيفرغ»",
+          "short": "ياء الغيبة",
+          "meaning": "اقرأ «سيفرغ» بياء الغيبة في رواية خلف العاشر بدل «سنفرغ» بنون المتكلم عند حفص.",
+          "words": [
+            "سيفرغ"
+          ],
+          "references": [
+            "https://www.nquran.com/ar/index.php?ayano=31&group=tb1&sorano=55&tpath=2"
+          ]
+        }
+      ],
+      "color": "#FF33CC",
+      "outlined": false,
+      "verified": true,
+      "verification": {
+        "method": "source shade of documented rule",
+        "reference": [],
+        "publisherLegendDefinesThisExactShade": false,
+        "allOccurrencePages": [
+          532
+        ],
+        "glyphComponentsReviewed": 1,
+        "sourceEvidence": "Pinned source glyphs and words, including all rare occurrences; see provenance/reviewed-colours/occurrences.json",
+        "scope": "Word performance is documented; no independent global publisher meaning is invented for an undeclared shade."
+      }
+    }
+  ],
+  "performanceNote": "هذا شرح مختصر للعلامات، وليس حصرًا لأصول الرواية وطرقها. تُضبط الإمالة والتقليل والإشمام ومقادير المدّ بالسماع والتلقي عن قارئ متقن للرواية.",
+  "paintMappings": {
+    "#FF0000:fill": 2,
+    "#008000:fill": 4,
+    "#0000FF:fill": 1,
+    "#FF00FF:fill": 0,
+    "#0000CC:fill": 5,
+    "#FF6500:fill": 3,
+    "#1912AE:fill": 6,
+    "#FF33CC:fill": 7
+  },
+  "pagePaints": [
+    [],
+    [],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [],
+    [
+      "#FF0000:fill",
+      "#008000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#0000CC:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [],
+    [
+      "#0000FF:fill",
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#0000FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#008000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF6500:fill",
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF6500:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#0000FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#0000CC:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF6500:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill",
+      "#FF6500:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#008000:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#0000FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#1912AE:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF6500:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#FF6500:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#FF6500:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF6500:fill",
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF6500:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#008000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#008000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#008000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#0000FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#0000FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#0000FF:fill",
+      "#FF0000:fill"
+    ],
+    [],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#008000:fill",
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#FF6500:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill"
+    ],
+    [],
+    [
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#0000FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF33CC:fill",
+      "#FF00FF:fill"
+    ],
+    [],
+    [],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [],
+    [
+      "#0000FF:fill",
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [],
+    [
+      "#FF00FF:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#0000FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#0000FF:fill",
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#0000FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#0000FF:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF00FF:fill"
+    ],
+    [
+      "#FF0000:fill",
+      "#FF6500:fill"
+    ],
+    [
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [],
+    [
+      "#FF00FF:fill",
+      "#FF0000:fill"
+    ],
+    [
+      "#FF00FF:fill"
+    ]
+  ],
+  "coverageAudit": {
+    "pdfSha256": "815bdd66154a5e070e96c4b2e8c101b4695baa17f0122c93f11c97e1632e1dc3",
+    "pages": 604,
+    "allPaintsRepresented": true,
+    "allMeaningsVerified": true,
+    "unresolved": [],
+    "allGuideExplanationsComplete": true,
+    "explanationScope": "Printed publisher keys plus local performance for rare undeclared shades; typography and verse numbering explicitly separated from recitation rules."
+  },
+  "nameArabic": "إِسحَاق عَن خَلَفٍ العَاشِر",
+  "basicDiacritics": [
+    {
+      "title": "الفتحة",
+      "symbol": "َ",
+      "short": "حرف مفتوح",
+      "meaning": "حركة قصيرة فوق الحرف، تدل على نطقه مفتوحًا. لا تزد مدًا من الفتحة وحدها.",
+      "verified": true
+    },
+    {
+      "title": "الضمة",
+      "symbol": "ُ",
+      "short": "حرف مضموم",
+      "meaning": "حركة قصيرة فوق الحرف، تدل على نطقه مضمومًا. الضمة وحدها ليست واو مد.",
+      "verified": true
+    },
+    {
+      "title": "الكسرة",
+      "symbol": "ِ",
+      "short": "حرف مكسور",
+      "meaning": "حركة قصيرة تحت الحرف، تدل على نطقه مكسورًا. الكسرة وحدها ليست ياء مد.",
+      "verified": true
+    },
+    {
+      "title": "السكون",
+      "symbol": "ْ",
+      "short": "حرف بلا حركة",
+      "meaning": "يُقرأ الحرف من غير فتحة أو ضمة أو كسرة. شكله في بعض الخطوط رأس خاء صغيرة، وتطبق عليه أحكام الرواية بحسب الحرف التالي.",
+      "verified": true
+    },
+    {
+      "title": "الشدة",
+      "symbol": "ّ",
+      "short": "حرف مشدّد",
+      "meaning": "تدل على حرفين من جنس واحد: الأول ساكن والثاني متحرك. أدّ التشديد وحركة الحرف معًا، مع الغنة حيث يقتضيها الموضع.",
+      "verified": true
+    },
+    {
+      "title": "التنوين",
+      "symbol": "ً ٍ ٌ",
+      "short": "نون ساكنة وصلاً",
+      "meaning": "نون ساكنة زائدة تلفظ عند الوصل ولا ترسم نونًا. أدّ حكمها مع الحرف التالي. عند الوقف يسقط التنوين؛ وتنوين الفتح يبدل ألفًا في مواضعه، وتاء التأنيث المربوطة يوقف عليها هاء.",
+      "verified": true
+    },
+    {
+      "title": "الألف الصغيرة",
+      "symbol": "ٰ",
+      "short": "ألف مدّ ثابتة",
+      "meaning": "الألف الخنجرية تدل على ألف ثابتة في التلاوة محذوفة من الرسم العثماني، فتقرأ حرف مد بحسب الموضع. أما الألف الصغيرة بين همزتين في ضبط بعض الروايات، ومنها قالون، فهي علامة إدخال ألف بينهما بمقدار حركتين؛ لا تخلط الوظيفتين.",
+      "verified": true
+    },
+    {
+      "title": "حرف الصلة الصغير",
+      "symbol": "ۥ ۦ",
+      "short": "صلة في الوصل",
+      "meaning": "واو أو ياء صغيرة لضبط الصلة الصوتية في موضعها. يراعى حكم هاء الضمير أو ميم الجمع في الرواية، وتسقط الصلة عند الوقف.",
+      "verified": true
+    },
+    {
+      "title": "علامة المد",
+      "symbol": "ٓ",
+      "short": "مدّ زائد بحسب السبب",
+      "meaning": "تلفت إلى مد يتجاوز المد الطبيعي بسبب همز أو سكون. مقداره يتبع نوع المد والرواية والطريق، ولا يحدد رسم العلامة وحده عدد الحركات.",
+      "verified": true
+    },
+    {
+      "title": "همزة الوصل",
+      "symbol": "ٱ",
+      "short": "تثبت بدءًا وتسقط وصلاً",
+      "meaning": "تُلفظ عند الابتداء بالكلمة بالحركة المناسبة، وتسقط في درج الكلام. لا تخلطها بهمزة القطع التي تثبت في الوصل والابتداء.",
+      "verified": true
+    },
+    {
+      "title": "الصفر المستدير",
+      "symbol": "۟",
+      "short": "حرف محذوف أداءً",
+      "meaning": "إذا وضع فوق حرف المد دل على عدم النطق بذلك الحرف في الوصل والوقف، بحسب ضبط المصحف؛ لا تقرأ الحرف لمجرد وجوده في الرسم.",
+      "verified": true
+    },
+    {
+      "title": "الصفر المستطيل",
+      "symbol": "۠",
+      "short": "حذف وصلاً وإثبات وقفًا",
+      "meaning": "إذا وضع فوق الألف دل على حذفها في الوصل وإثباتها عند الوقف على الوجه المضبوط. يختلف عن الصفر المستدير، ولا ينفي وجه حذف الألف وقفًا إذا ثبت للرواية، كما في «سلاسلا» لحفص.",
+      "verified": true
+    }
+  ],
+  "stopSigns": [
+    {
+      "symbol": "م",
+      "title": "الوقف اللازم",
+      "meaning": "علامة الوقف اللازم في اصطلاح الضبط: قف هنا دفعًا لإيهام معنى غير مراد عند الوصل، ثم ابتدئ ابتداءً صحيحًا. وصف الوقف باللازم اصطلاح أداء، ولا يعني أن كل وصل عند العلامة محرم شرعًا."
+    },
+    {
+      "symbol": "لا",
+      "title": "علامة «لا»",
+      "meaning": "راعِ اصطلاح الطبعة والسياق: توضع «لا» للوقف الممنوع في بعض المصاحف، وللوقف الحسن مع عدم صلاحية الابتداء بما بعده في اصطلاح آخر. إذا وقفت لحاجة فأعد من موضع يصح به المعنى والابتداء؛ لا تفصل ما بعد العلامة عما يتعلق به."
+    },
+    {
+      "symbol": "ج",
+      "title": "الوقف الجائز",
+      "meaning": "يجوز الوقف والوصل، مع مراعاة المعنى وحسن الابتداء."
+    },
+    {
+      "symbol": "صلى",
+      "title": "الوصل أولى",
+      "meaning": "الوقف جائز، والوصل أولى في هذا الموضع."
+    },
+    {
+      "symbol": "قلى",
+      "title": "الوقف أولى",
+      "meaning": "الوصل جائز، والوقف أولى في هذا الموضع."
+    },
+    {
+      "symbol": "∴ ∴",
+      "title": "تعانق الوقف",
+      "meaning": "إذا وقفت على أحد الموضعين المتعانقين فلا تقف على الآخر في السياق نفسه؛ ويجوز وصلهما."
+    },
+    {
+      "symbol": "س",
+      "title": "السكت",
+      "meaning": "قطع لطيف للصوت بلا نفس في الموضع المنقول في الرواية؛ لا تستبدله بوقف مع تنفس."
+    }
+  ],
+  "guideIntroduction": "دليل علامات إِسحَاق عَن خَلَفٍ العَاشِر. افتح الشرح من عنوان الدليل أو اضغط على أي علامة. يشرح كل لون ورسم وطريقة الأداء في هذه النسخة، ثم يبين علامات الضبط والوقف. الأوجه المنقولة تؤخذ مع الالتزام بطريق القراءة.",
+  "readingNotes": [],
+  "pageTypography": {}
+}

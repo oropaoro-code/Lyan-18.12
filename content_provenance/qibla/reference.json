@@ -1,0 +1,43 @@
+{
+  "reference_package": "com.jenos.qiblafinder_qibladirection_kaaba",
+  "reference_apk_sha256": "4a6f199456ce3d5501763798eee4230df4a254df65782d29f9dc6901d0f8214b",
+  "scope": "Qibla compass, 2D/3D, calibration guide, directional status and alignment vibration only",
+  "renderer_classes": [
+    {
+      "class": "CompassDialView",
+      "original_sha256": "5e922cd955f52f14051c2fcbcdaf7b3a561465d5f635cfe99657311e4140c865",
+      "new_sha256": "1132cd42202554f8442a48aaed22cfb0fce1579fc8b67a22871c4f99139f4a91",
+      "modified_operations": [
+        "package descriptors",
+        "AnimatorUpdateListener adapter",
+        "theme colour resolver"
+      ]
+    },
+    {
+      "class": "CalibrationGuideView",
+      "original_sha256": "43da060e2ef4b954c6b014eabf42b52ba6f3bce658aaac7fd34f6e96de41bb74",
+      "new_sha256": "ec4703a40bcf42e937d6f4dd11e3d7d1115b2e864aee4a0df4005a11829dd53b",
+      "modified_operations": [
+        "package descriptors",
+        "AnimatorUpdateListener adapter"
+      ]
+    },
+    {
+      "class": "AuroraView",
+      "original_sha256": "9fcaa768eb0adb556e20c81085744e6c749b08b1bd524cfa34f8e3caab8a0634",
+      "new_sha256": "81d58e36dd13eb4145b100272933b1580ad6ad20c7b6f3d715465e1bb743d408",
+      "modified_operations": [
+        "package descriptors",
+        "AnimatorUpdateListener adapter",
+        "theme colour resolver"
+      ]
+    }
+  ],
+  "bearing": "Android Location.distanceBetween to 21.4225,39.8262, initial WGS84 bearing",
+  "magnetic_heading": "accelerometer + magnetic field, low pass 0.97/0.029999971, GeomagneticField declination",
+  "alignment_tolerance_degrees": 5,
+  "alignment_vibration_ms": 35,
+  "global_reference_settings_imported": false,
+  "reference_cloud_services_imported": false,
+  "reference_reminders_imported": false
+}

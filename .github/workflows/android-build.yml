@@ -1,0 +1,80 @@
+name: Build Lyan APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'app/**'
+      - 'src/**'
+      - 'stubs/**'
+      - 'libs/**'
+      - 'scripts/build.py'
+      - 'security-r8.pro'
+      - '.github/workflows/android-build.yml'
+
+permissions:
+  contents: read
+
+env:
+  ANDROID_PLATFORM: 'android-36'
+  ANDROID_BUILD_TOOLS: '36.0.0'
+  APKTOOL_VERSION: '2.12.1'
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android platform and build tools
+        run: |
+          yes | sdkmanager --licenses >/dev/null
+          sdkmanager "platform-tools" "platforms;${ANDROID_PLATFORM}" "build-tools;${ANDROID_BUILD_TOOLS}"
+
+      - name: Download APKTool
+        run: |
+          curl --fail --location --retry 3 \
+            "https://github.com/iBotPeaches/Apktool/releases/download/v${APKTOOL_VERSION}/apktool_${APKTOOL_VERSION}.jar" \
+            --output "$RUNNER_TEMP/apktool.jar"
+          test -s "$RUNNER_TEMP/apktool.jar"
+
+      - name: Prepare signing key
+        env:
+          KEYSTORE_BASE64: ${{ secrets.LAYAN_KEYSTORE_BASE64 }}
+        run: |
+          if [ -z "$KEYSTORE_BASE64" ]; then
+            echo 'Missing GitHub secret LAYAN_KEYSTORE_BASE64. Follow README-GITHUB-AR.md.' >&2
+            exit 1
+          fi
+          printf '%s' "$KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/layan-release.jks"
+          test -s "$RUNNER_TEMP/layan-release.jks"
+
+      - name: Build and sign APK
+        env:
+          APKTOOL_JAR: ${{ runner.temp }}/apktool.jar
+          LAYAN_KEYSTORE: ${{ runner.temp }}/layan-release.jks
+          LAYAN_KEY_ALIAS: ${{ secrets.LAYAN_KEY_ALIAS }}
+          LAYAN_STORE_PASSWORD: ${{ secrets.LAYAN_STORE_PASSWORD }}
+          LAYAN_KEY_PASSWORD: ${{ secrets.LAYAN_KEY_PASSWORD }}
+        run: |
+          export ANDROID_SDK_ROOT="${ANDROID_HOME}"
+          python3 scripts/build.py
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Lyan-18.12-APK
+          path: releases/Lyan-18.12.apk
+          if-no-files-found: error
+          retention-days: 30

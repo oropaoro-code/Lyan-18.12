@@ -1,0 +1,22 @@
+console:/ $ console:/ $ 
+transport_68f18899602147cfb1379db03e815f29
+console:/ $ 
+transport_6b53d1a6f25c40d0ae2e10152ad08c19
+console:/ $ [  448.579394] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+[  451.029518] init: Received control message 'start' for 'gsid' from pid: 1986 (system_server)
+[  451.100698] init: starting service 'gsid'...
+[  453.625244] init: Received control message 'stop' for 'gsid' from pid: 1986 (system_server)
+[  453.625770] init: Sending signal 9 to service 'gsid' (pid 3719) process group...
+[  453.701690] libprocessgroup: Successfully killed process cgroup uid 0 pid 3719 in 74ms
+[  453.769482] init: Service 'gsid' (pid 3719) received signal 9
+[  454.862196] type=1400 audit(1791789581.820:20): avc: denied { read } for comm="DcHandlerThread" name="u:object_r:net_radio0_prop:s0" dev="tmpfs" ino=6305 scontext=u:r:radio:s0 tcontext=u:object_r:net_radio0_prop:s0 tclass=file permissive=0
+[  455.024266] type=1400 audit(1791789680.740:21): avc: granted { read } for comm="main" name="u:object_r:net_dns_prop:s0" dev="tmpfs" ino=6303 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:net_dns_prop:s0 tclass=file app=com.android.email
+[  469.414705] binder: undelivered transaction 111988, process died.
+[  469.446793] binder: 1796:2462 transaction failed 29189/-22, size 64-0 line 3128
+[  471.848615] binder: 3057:3114 transaction failed 29189/-22, size 124-0 line 3128
+[  476.142146] binder: 1986:1986 transaction failed 29189/-22, size 88-0 line 3128
+  Window #1 Window{b8536db u0 Application Not Responding: com.android.systemui}:
+LAYAN_TEST_OS_RESTART_com.android.systemui
+LAYAN_UI_READY
+
+LYN_4cabbcf5984f4528b6fc0b9ad63fff40:0

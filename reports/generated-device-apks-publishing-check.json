@@ -1,0 +1,57 @@
+{
+  "apkSha256": "028cc134da6ed417dc1ff76d4f83d169d19dca287ca90e63f711344bca79f3a2",
+  "aabSha256": "4eb469b26f90fcebf7a34912acddc5ef89a9c39c163eac8ff5bf8ad44f2ca7d3",
+  "allPassed": true,
+  "deviceSpec": {
+    "sdkVersion": 36,
+    "abi": "arm64-v8a",
+    "locales": [
+      "ar",
+      "en"
+    ],
+    "density": 480
+  },
+  "generatedApks": [
+    {
+      "apk": "splits/base-ar.apk",
+      "signature": "PASS",
+      "zipAlignment16KB": "PASS",
+      "nativePayloads": [],
+      "uncompressedOriginalRecordings": []
+    },
+    {
+      "apk": "splits/base-arm64_v8a.apk",
+      "signature": "PASS",
+      "zipAlignment16KB": "PASS",
+      "nativePayloads": [
+        "lib/arm64-v8a/libandroidx.graphics.path.so"
+      ],
+      "uncompressedOriginalRecordings": []
+    },
+    {
+      "apk": "splits/base-en.apk",
+      "signature": "PASS",
+      "zipAlignment16KB": "PASS",
+      "nativePayloads": [],
+      "uncompressedOriginalRecordings": []
+    },
+    {
+      "apk": "splits/base-master.apk",
+      "signature": "PASS",
+      "zipAlignment16KB": "PASS",
+      "nativePayloads": [],
+      "uncompressedOriginalRecordings": [
+        "res/raw/layan_salawat_one.mp3"
+      ]
+    },
+    {
+      "apk": "splits/base-xxhdpi.apk",
+      "signature": "PASS",
+      "zipAlignment16KB": "PASS",
+      "nativePayloads": [],
+      "uncompressedOriginalRecordings": []
+    }
+  ],
+  "nativeAppCasesAdded": 0,
+  "scope": "Actual official bundletool generation, production signatures, ZIP alignment and native payload parity; not physical ARM or 16KB device execution."
+}

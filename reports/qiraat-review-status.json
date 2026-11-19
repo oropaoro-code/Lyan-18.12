@@ -1,0 +1,306 @@
+{
+  "versionName": "18.12",
+  "versionCode": 39,
+  "totalPagesAudited": 12080,
+  "allPaintsRepresented": true,
+  "allMeaningsVerified": true,
+  "productionReady": false,
+  "commonCanvas": {
+    "normalizedWidth": 31.02,
+    "normalizedHeight": 47.27
+  },
+  "riwayat": [
+    {
+      "id": "abu-harith",
+      "nameArabic": "أَبُو الحَارِث عَنِ الكِسَائِي",
+      "paintKinds": 5,
+      "unresolved": [],
+      "guideItems": 5,
+      "fullMeanings": true,
+      "basicSigns": 12,
+      "stopSigns": 7
+    },
+    {
+      "id": "buzzi",
+      "nameArabic": "البَزِّي عَن ابنِ كَثِير",
+      "paintKinds": 7,
+      "unresolved": [],
+      "guideItems": 7,
+      "fullMeanings": true,
+      "basicSigns": 12,
+      "stopSigns": 7
+    },
+    {
+      "id": "duri-kisai",
+      "nameArabic": "الدُّورِي عَنِ الكِسَائِي",
+      "paintKinds": 6,
+      "unresolved": [],
+      "guideItems": 6,
+      "fullMeanings": true,
+      "basicSigns": 12,
+      "stopSigns": 7
+    },
+    {
+      "id": "duri",
+      "nameArabic": "الدُّورِي عَن أَبِي عَمرٍو",
+      "paintKinds": 4,
+      "unresolved": [],
+      "guideItems": 5,
+      "fullMeanings": true,
+      "basicSigns": 12,
+      "stopSigns": 7
+    },
+    {
+      "id": "hafs",
+      "nameArabic": "حَفص عَن عَاصِم",
+      "paintKinds": 0,
+      "unresolved": [],
+      "guideItems": 5,
+      "fullMeanings": true,
+      "basicSigns": 12,
+      "stopSigns": 7
+    },
+    {
+      "id": "hisham",
+      "nameArabic": "هِشَام عَن ابنِ عَامِر",
+      "paintKinds": 4,
+      "unresolved": [],
+      "guideItems": 4,
+      "fullMeanings": true,
+      "basicSigns": 12,
+      "stopSigns": 7
+    },
+    {
+      "id": "ibn-dhakwan",
+      "nameArabic": "ابنُ ذَكوَان عَن ابنِ عَامِر",
+      "paintKinds": 5,
+      "unresolved": [],
+      "guideItems": 5,
+      "fullMeanings": true,
+      "basicSigns": 12,
+      "stopSigns": 7
+    },
+    {
+      "id": "ibn-jammaz",
+      "nameArabic": "ابنُ جَمَّاز عَن أَبِي جَعفَر",
+      "paintKinds": 9,
+      "unresolved": [],
+      "guideItems": 9,
+      "fullMeanings": true,
+      "basicSigns": 12,
+      "stopSigns": 7
+    },
+    {
+      "id": "ibn-wardan",
+      "nameArabic": "ابنُ وَردَان عَن أَبِي جَعفَر",
+      "paintKinds": 9,
+      "unresolved": [],
+      "guideItems": 9,
+      "fullMeanings": true,
+      "basicSigns": 12,
+      "stopSigns": 7
+    },
+    {
+      "id": "idris",
+      "nameArabic": "إِدرِيس عَن خَلَفٍ العَاشِر",
+      "paintKinds": 8,
+      "unresolved": [],
+      "guideItems": 8,
+      "fullMeanings": true,
+      "basicSigns": 12,
+      "stopSigns": 7
+    },
+    {
+      "id": "ishaq",
+      "nameArabic": "إِسحَاق عَن خَلَفٍ العَاشِر",
+      "paintKinds": 8,
+      "unresolved": [],
+      "guideItems": 8,
+      "fullMeanings": true,
+      "basicSigns": 12,
+      "stopSigns": 7
+    },
+    {
+      "id": "khalaf",
+      "nameArabic": "خَلَف عَن حَمزَة",
+      "paintKinds": 10,
+      "unresolved": [],
+      "guideItems": 10,
+      "fullMeanings": true,
+      "basicSigns": 12,
+      "stopSigns": 7
+    },
+    {
+      "id": "khallad",
+      "nameArabic": "خَلَّاد عَن حَمزَة",
+      "paintKinds": 8,
+      "unresolved": [],
+      "guideItems": 8,
+      "fullMeanings": true,
+      "basicSigns": 12,
+      "stopSigns": 7
+    },
+    {
+      "id": "qaloon",
+      "nameArabic": "قَالُون عَن نَافِع",
+      "paintKinds": 6,
+      "unresolved": [],
+      "guideItems": 6,
+      "fullMeanings": true,
+      "basicSigns": 12,
+      "stopSigns": 7
+    },
+    {
+      "id": "qunbul",
+      "nameArabic": "قُنبُل عَن ابنِ كَثِير",
+      "paintKinds": 4,
+      "unresolved": [],
+      "guideItems": 4,
+      "fullMeanings": true,
+      "basicSigns": 12,
+      "stopSigns": 7
+    },
+    {
+      "id": "rawh",
+      "nameArabic": "رَوح عَن يَعقُوب",
+      "paintKinds": 4,
+      "unresolved": [],
+      "guideItems": 4,
+      "fullMeanings": true,
+      "basicSigns": 12,
+      "stopSigns": 7
+    },
+    {
+      "id": "ruways",
+      "nameArabic": "رُوَيس عَن يَعقُوب",
+      "paintKinds": 5,
+      "unresolved": [],
+      "guideItems": 5,
+      "fullMeanings": true,
+      "basicSigns": 12,
+      "stopSigns": 7
+    },
+    {
+      "id": "shubah",
+      "nameArabic": "شُعبَة عَن عَاصِم",
+      "paintKinds": 3,
+      "unresolved": [],
+      "guideItems": 3,
+      "fullMeanings": true,
+      "basicSigns": 12,
+      "stopSigns": 7
+    },
+    {
+      "id": "susi",
+      "nameArabic": "السُّوسِي عَن أَبِي عَمرٍو",
+      "paintKinds": 5,
+      "unresolved": [],
+      "guideItems": 6,
+      "fullMeanings": true,
+      "basicSigns": 12,
+      "stopSigns": 7
+    },
+    {
+      "id": "warsh",
+      "nameArabic": "وَرش عَن نَافِع",
+      "paintKinds": 12,
+      "unresolved": [],
+      "guideItems": 12,
+      "fullMeanings": true,
+      "basicSigns": 12,
+      "stopSigns": 7
+    }
+  ],
+  "references": {
+    "imala": "https://www.islamweb.net/ar/library/content/70/163/",
+    "qaloon": "https://nquran.net/ar/view/16680/",
+    "sakt": "https://www.nquran.com/ar/view/16682/",
+    "ishmam": "https://shamela.ws/book/38740/302",
+    "buzzi": "https://www.nquran.com/ar/index.php?ayano=90&group=tb1&sorano=2&tpath=2",
+    "hamzatayn": "https://www.nquran.com/ar/index.php?ayano=31&group=tb1&sorano=2&tpath=2",
+    "wasl": "https://www.nquran.com/ar/index.php?ayano=10&group=tb1&sorano=26&tpath=2",
+    "wasl2": "https://www.nquran.com/ar/index.php?ayano=32&group=tb1&sorano=8&tpath=2",
+    "abu-jafar": "https://www.nquran.com/ar/view/16682/",
+    "haa": "https://www.islamweb.net/ar/library/content/70/177/المتفق-على-إمالته-في-هاء-التأنيث",
+    "akhira": "https://www.nquran.com/ar/index.php?ayano=85&group=tb1&sorano=3&tpath=2",
+    "khalaf": "https://dl2.islamweb.net/Audio_Path/quran_list/khalaf/osol.pdf",
+    "warsh": "https://dl2.islamweb.net/Audio_Path/quran_list/warsh/osol.pdf",
+    "ishaq": "https://dl2.islamweb.net/Audio_Path/quran_list/eshaq/osol.pdf",
+    "idris": "https://dl2.islamweb.net/Audio_Path/quran_list/edris/osol.pdf"
+  },
+  "limits": [
+    "Completeness is for the printed-sign guides of the pinned twenty PDFs; it is not an all-words or all-turuq certification.",
+    "Undeclared source shades receive documented local-word explanations, not invented global publisher rules.",
+    "Native validation is tracked separately from explanatory-guide coverage."
+  ],
+  "allGuideExplanationsComplete": true,
+  "unresolvedPaintKinds": 0,
+  "rarePaintCasesCompleted": 33,
+  "rareGlyphComponentsReviewed": 350,
+  "fullGuideNativeValidation": {
+    "api": 29,
+    "installedSha256": "dd51e77130afa0fc26418b3d90524b8d04a21ead8c29d570dbb86bd118a18eab",
+    "expectedSha256": "dd51e77130afa0fc26418b3d90524b8d04a21ead8c29d570dbb86bd118a18eab",
+    "diagnostic": false,
+    "result": "PASS",
+    "time": 1791918820.4121265
+  },
+  "fullGuideNativeAssertions": 24905,
+  "auxiliaryTouchPreview": {
+    "result": "FAIL",
+    "reason": "Reader did not gain input focus in the software emulator after guide run",
+    "sourceRendererAndPagerChanged": false,
+    "previousBuildTouchProof": "reports/qiraat-review-build-35/api-runtime/api29/qiraat-final-preview-brightness-35-control-proof.json"
+  },
+  "nativeGuideValidationScope": "Twenty-guide native run on preceding APK; final package only corrects the close-button text colour to white. All reading assets match byte-for-byte.",
+  "buttonContrastCorrection": {
+    "nativeRunApkSha256": "dd51e77130afa0fc26418b3d90524b8d04a21ead8c29d570dbb86bd118a18eab",
+    "finalApkSha256": "2f60a41c3a88af79b9060951db55bcead6f9cbcb0717f48734c9e648448f5cd3",
+    "readingAssetsIdentical": true,
+    "textColor": "#FFFFFF",
+    "contrastRatio": 11.8,
+    "runtimeRerunAfterColourOnlyFix": false
+  },
+  "pageGuideLayout": "Rounded rectangular inset bubble, 22dp horizontal margins, native page background continued, page number below",
+  "apkSha256": "f756734965c9e5f7f52eca0550b38e2e36833d5008baa256ae967f7c5e08dd04",
+  "finalNativePreview": {
+    "versionCode": 39,
+    "apkSha256": "f756734965c9e5f7f52eca0550b38e2e36833d5008baa256ae967f7c5e08dd04",
+    "result": "PASS",
+    "pages": [
+      49,
+      50
+    ],
+    "modes": [
+      "day",
+      "night"
+    ]
+  },
+  "sourceReaudit": {
+    "result": "PASS",
+    "pages": 12080,
+    "paintKinds": 122,
+    "missingEntries": 0
+  },
+  "nativeCorpusViews": {
+    "versionCode": 38,
+    "result": "PASS",
+    "api": 29,
+    "assertions": 24905,
+    "riwayat": 20,
+    "apkSha256": "46566eacd255098da7d3d67d9b722a3a08fad8715cfe8db2b5a1435f500f0114"
+  },
+  "nativeLimits": [
+    "Native runtime checked on Android 10 only",
+    "No new physical touch swipe claim"
+  ],
+  "typography": {
+    "method": "explicit shared body matrix; automatic image bounds disabled",
+    "sourceLineBreaksUnchanged": true,
+    "originalTypefacesPreserved": true,
+    "allPageBoundsChecked": 12080,
+    "nativeUniformityStatus": "PASS",
+    "nativeChecks": 60,
+    "nativeSource": "reports/qiraat-font-build-39/final-validation-summary.json"
+  }
+}

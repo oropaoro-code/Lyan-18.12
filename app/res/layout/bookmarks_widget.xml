@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ns0:orientation="vertical" ns0:background="@drawable/search_widget_background" ns0:paddingTop="10.0dip" ns0:layout_width="fill_parent" ns0:layout_height="fill_parent"
+  xmlns:ns0="http://schemas.android.com/apk/res/android">
+    <LinearLayout ns0:orientation="horizontal" ns0:background="@drawable/search_widget_background" ns0:paddingBottom="10.0dip" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" ns0:layout_marginTop="0.0dip" ns0:layout_marginBottom="0.0dip" ns0:layout_marginVertical="0.0dip">
+        <ImageButton ns0:id="@id/widget_icon_button" ns0:background="@android:color/transparent" ns0:layout_width="0.0dip" ns0:layout_height="60.0dip" ns0:src="@drawable/layan_widget_brand" ns0:scaleType="fitCenter" ns0:layout_weight="1.0" ns0:contentDescription="@string/app_name" ns0:layout_marginStart="10.0dip" />
+        <ImageButton ns0:id="@id/widget_btn_search" ns0:background="@android:color/transparent" ns0:layout_width="0.0dip" ns0:layout_height="fill_parent" ns0:src="@drawable/ic_widget_search" ns0:layout_weight="1.0" />
+        <ImageButton ns0:id="@id/widget_btn_go_to_quran" ns0:background="@android:color/transparent" ns0:layout_width="0.0dip" ns0:layout_height="fill_parent" ns0:src="@drawable/ic_menu_book" ns0:layout_weight="1.0" />
+        <ImageButton ns0:id="@id/search_widget_btn_jump" ns0:background="@android:color/transparent" ns0:layout_width="0.0dip" ns0:layout_height="fill_parent" ns0:src="@drawable/ic_baseline_arrow_upright_24" ns0:layout_weight="1.0" />
+    </LinearLayout>
+    <ListView ns0:id="@id/list_view_widget" ns0:background="@drawable/bookmarks_widget_background" ns0:layout_width="fill_parent" ns0:layout_height="fill_parent" />
+    <TextView ns0:textSize="20.0sp" ns0:textColor="#ffffffff" ns0:gravity="center" ns0:id="@id/empty_view" ns0:visibility="gone" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" ns0:layout_marginLeft="8.0dip" ns0:layout_marginRight="8.0dip" ns0:text="@string/bookmarks_list_empty" ns0:layout_marginHorizontal="8.0dip" />
+</LinearLayout>

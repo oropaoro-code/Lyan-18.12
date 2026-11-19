@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout ns0:orientation="horizontal" ns0:background="@drawable/translation_row_background" ns0:paddingLeft="10.0dip" ns0:paddingTop="4.0dip" ns0:paddingRight="10.0dip" ns0:paddingBottom="4.0dip" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content"
+  xmlns:ns0="http://schemas.android.com/apk/res/android">
+    <ImageView ns0:id="@id/translation_icon" ns0:layout_width="48.0dip" ns0:layout_height="48.0dip" ns0:src="@drawable/ic_translation" ns0:scaleType="center" ns0:contentDescription="@null" />
+    <LinearLayout ns0:layout_gravity="center_vertical" ns0:orientation="vertical" ns0:id="@id/translation_area" ns0:layout_width="0.0dip" ns0:layout_height="wrap_content" ns0:layout_weight="1.0">
+        <TextView ns0:textSize="16.0sp" ns0:textColor="@color/title_color" ns0:id="@id/translation_title" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" />
+        <TextView ns0:textSize="12.0sp" ns0:gravity="left" ns0:id="@id/translation_info" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView ns0:id="@id/left_image" ns0:layout_width="48.0dip" ns0:layout_height="fill_parent" ns0:scaleType="center" ns0:contentDescription="@null" />
+    <ImageView ns0:id="@id/right_image" ns0:layout_width="48.0dip" ns0:layout_height="fill_parent" ns0:scaleType="center" />
+</LinearLayout>

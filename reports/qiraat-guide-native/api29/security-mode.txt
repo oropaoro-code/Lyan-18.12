@@ -1,0 +1,12 @@
+SELinux Enforcing before APK installation and every app regression. Console bootstrap permissive: True
+console:/ $ console:/ $ 
+transport_895df242a3034063bfd06607fd9f1e12
+console:/ $ console:/ $ 
+transport_af1a4263bce945a4a61615220287d2bb
+console:/ $ [  251.086371] type=1400 audit(1791890603.209:15): avc: denied { associate } for comm="Binder:1707_5" name="globalAlert" scontext=u:object_r:proc_net:s0 tcontext=u:object_r:proc:s0 tclass=filesystem permissive=1 duplicate messages suppressed
+[  251.086773] type=1404 audit(1791890605.589:16): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295
+[  252.551086] type=1404 audit(1791890605.589:16): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295
+[  252.810885] type=1400 audit(1791890607.039:17): avc: denied { write } for comm="RenderThread" name="property_service" dev="tmpfs" ino=7353 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=com.android.launcher3
+Enforcing
+
+LYN_07720c65f12b45ab977d8ab87c60b0ef:0

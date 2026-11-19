@@ -1,0 +1,6 @@
+package app.layan.test;
+import android.app.*;import android.os.*;import android.content.*;import app.layan.quran.*;import java.io.*;import java.nio.file.*;import org.json.*;
+public final class PreparedCorpusInstall extends Instrumentation {
+ public void onCreate(Bundle b){super.onCreate(b);start();}
+ public void onStart(){Bundle b=new Bundle();try{Context c=getTargetContext();QiraatData.directory(c).mkdirs();JSONArray all=QiraatData.catalog(c).getJSONArray("riwayat");int copied=0;for(int i=0;i<all.length();i++){String id=all.getJSONObject(i).getString("id");JSONObject m=QiraatData.metadata(c,id);File target=QiraatData.file(c,m);if(!target.exists()||target.length()!=m.getLong("bytes")){Files.copy(new File("/data/local/tmp/font-pdfs",id+".pdf").toPath(),target.toPath(),StandardCopyOption.REPLACE_EXISTING);copied++;}if(target.length()!=m.getLong("bytes"))throw new IOException("Original source size "+id);}b.putString("result","PASS all twenty original source PDFs prepared; copied "+copied+"; Book verifies SHA256 when opening each file");finish(Activity.RESULT_OK,b);}catch(Throwable e){b.putString("error",android.util.Log.getStackTraceString(e));finish(Activity.RESULT_CANCELED,b);}}
+}

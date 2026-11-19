@@ -1,0 +1,13 @@
+console:/ $ console:/ $ 
+transport_48af0ffdffb249088b659e233431bf91
+console:/ $ console:/ $ 
+transport_d454ffcfc5eb4d52bfddeeef1b6540f8
+console:/ $ [  508.534373] binder: undelivered TRANSACTION_COMPLETE
+[  508.535374] binder: undelivered transaction 181691, process died.
+[  509.794724] binder: release 3941:3950 transaction 181717 in, still active
+[  509.794947] binder: send failed reply for transaction 181717 to 1982:3980
+[  509.816886] healthd: battery l=100 v=5000 t=25.0 h=2 st=2 c=900 fc=300000 cc=10 chg=a
+INSTRUMENTATION_RESULT: result=PASS real phone locales: [en_US]
+INSTRUMENTATION_CODE: -1
+
+LYN_6619ae52b64148559f2bebc18f39a47c:0

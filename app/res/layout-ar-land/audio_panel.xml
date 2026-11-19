@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout ns0:paddingLeft="12.0dip" ns0:paddingRight="12.0dip" ns0:layout_width="fill_parent" ns0:layout_height="fill_parent"
+  xmlns:ns0="http://schemas.android.com/apk/res/android">
+    <ScrollView ns0:layout_width="fill_parent" ns0:layout_height="fill_parent" ns0:fadeScrollbars="false">
+        <LinearLayout ns0:orientation="vertical" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" ns0:layout_marginBottom="12.0dip">
+            <LinearLayout ns0:orientation="horizontal" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" ns0:layout_marginTop="8.0dip">
+                <TextView ns0:textAppearance="@style/PanelLabel" ns0:layout_width="0.0dip" ns0:layout_height="wrap_content" ns0:layout_marginBottom="4.0dip" ns0:text="@string/play_from" ns0:layout_weight="1.0" />
+                <TextView ns0:textAppearance="@style/PanelLabel" ns0:layout_width="0.0dip" ns0:layout_height="wrap_content" ns0:layout_marginBottom="4.0dip" ns0:text="@string/play_to" ns0:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout ns0:orientation="horizontal" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" ns0:layout_marginBottom="8.0dip" ns0:baselineAligned="false">
+                <LinearLayout ns0:orientation="horizontal" ns0:layout_width="0.0dip" ns0:layout_height="wrap_content" ns0:layout_weight="1.0">
+                    <app.layan.quran.view.QuranSpinner ns0:id="@id/start_sura_spinner" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" />
+                    <app.layan.quran.view.QuranSpinner ns0:id="@id/start_ayah_spinner" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout ns0:orientation="horizontal" ns0:layout_width="0.0dip" ns0:layout_height="wrap_content" ns0:layout_weight="1.0">
+                    <app.layan.quran.view.QuranSpinner ns0:id="@id/end_sura_spinner" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" />
+                    <app.layan.quran.view.QuranSpinner ns0:id="@id/end_ayah_spinner" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/play_set_of_verses" />
+            <include layout="@layout/play_each_verse" />
+            <include layout="@layout/playback_speed" />
+            <CheckBox ns0:id="@id/restrict_to_range" ns0:layout_width="fill_parent" ns0:layout_height="wrap_content" ns0:text="@string/play_restrict_range" />
+        </LinearLayout>
+    </ScrollView>
+    <Button ns0:layout_gravity="end|bottom" ns0:id="@id/apply" ns0:layout_width="wrap_content" ns0:layout_height="wrap_content" ns0:text="@string/play_apply" ns0:layout_marginEnd="12.0dip" />
+</FrameLayout>
