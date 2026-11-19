@@ -44,31 +44,25 @@ jobs:
       - name: Locate Android SDK
         shell: bash
         run: |
-          set -e
+          set -euo pipefail
 
-          if [ -z "${ANDROID_HOME:-}" ]; then
-            echo "ANDROID_HOME is not configured."
-            exit 1
-          fi
-
-          SDKMANAGER="$(find "${ANDROID_HOME}/cmdline-tools" -type f -name sdkmanager | sort -V | tail -n 1)"
+          SDK_ROOT="${ANDROID_HOME:-/usr/local/lib/android/sdk}"
+          SDKMANAGER="$(find "$SDK_ROOT/cmdline-tools" -type f -name sdkmanager | sort -V | tail -n 1)"
 
           if [ -z "$SDKMANAGER" ]; then
             echo "sdkmanager was not found."
             exit 1
           fi
 
+          echo "ANDROID_SDK_ROOT=$SDK_ROOT" >> "$GITHUB_ENV"
           echo "SDKMANAGER=$SDKMANAGER" >> "$GITHUB_ENV"
-          echo "ANDROID_SDK_ROOT=$ANDROID_HOME" >> "$GITHUB_ENV"
 
-      - name: Accept Android licenses and install packages
+      - name: Install Android packages
         shell: bash
         run: |
-          set -e
+          set -euo pipefail
 
-          yes | "$SDKMANAGER" --sdk_root="$ANDROID_HOME" --licenses >/dev/null
-
-          "$SDKMANAGER" --sdk_root="$ANDROID_HOME" \
+          "$SDKMANAGER" --sdk_root="$ANDROID_SDK_ROOT" \
             "platform-tools" \
             "platforms;${ANDROID_PLATFORM}" \
             "build-tools;${ANDROID_BUILD_TOOLS}"
@@ -76,7 +70,7 @@ jobs:
       - name: Download APKTool
         shell: bash
         run: |
-          set -e
+          set -euo pipefail
 
           curl --fail --location --retry 3 \
             "https://github.com/iBotPeaches/Apktool/releases/download/v${APKTOOL_VERSION}/apktool_${APKTOOL_VERSION}.jar" \
@@ -89,7 +83,7 @@ jobs:
         env:
           KEYSTORE_BASE64: ${{ secrets.LAYAN_KEYSTORE_BASE64 }}
         run: |
-          set -e
+          set -euo pipefail
 
           if [ -z "$KEYSTORE_BASE64" ]; then
             echo "Missing GitHub secret LAYAN_KEYSTORE_BASE64." >&2
@@ -108,8 +102,8 @@ jobs:
           LAYAN_STORE_PASSWORD: ${{ secrets.LAYAN_STORE_PASSWORD }}
           LAYAN_KEY_PASSWORD: ${{ secrets.LAYAN_KEY_PASSWORD }}
         run: |
-          set -e
-          export ANDROID_SDK_ROOT="${ANDROID_HOME}"
+          set -euo pipefail
+          export ANDROID_SDK_ROOT
           python3 scripts/build.py
 
       - name: Upload APK
