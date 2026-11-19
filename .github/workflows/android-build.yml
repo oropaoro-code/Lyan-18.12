@@ -41,29 +41,26 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Install Android SDK
+        uses: android-actions/setup-android@v3
+
       - name: Install Android platform and build tools
         shell: bash
         run: |
-          set -e
+          set -euo pipefail
 
-          export ANDROID_SDK_ROOT="${ANDROID_HOME}"
+          sdkmanager --sdk_root="${ANDROID_HOME}" --licenses </dev/null
 
-          SDKMANAGER="$(find "${ANDROID_HOME}/cmdline-tools" -type f -name sdkmanager | sort -V | tail -n 1)"
-
-          if [ -z "$SDKMANAGER" ]; then
-            echo "Android sdkmanager was not found."
-            exit 1
-          fi
-
-          yes | "$SDKMANAGER" --sdk_root="${ANDROID_HOME}" --licenses >/dev/null
-
-          "$SDKMANAGER" --sdk_root="${ANDROID_HOME}" \
+          sdkmanager --sdk_root="${ANDROID_HOME}" \
             "platform-tools" \
             "platforms;${ANDROID_PLATFORM}" \
             "build-tools;${ANDROID_BUILD_TOOLS}"
 
       - name: Download APKTool
+        shell: bash
         run: |
+          set -euo pipefail
+
           curl --fail --location --retry 3 \
             "https://github.com/iBotPeaches/Apktool/releases/download/v${APKTOOL_VERSION}/apktool_${APKTOOL_VERSION}.jar" \
             --output "$RUNNER_TEMP/apktool.jar"
@@ -71,13 +68,14 @@ jobs:
           test -s "$RUNNER_TEMP/apktool.jar"
 
       - name: Prepare signing key
+        shell: bash
         env:
           KEYSTORE_BASE64: ${{ secrets.LAYAN_KEYSTORE_BASE64 }}
         run: |
-          set -e
+          set -euo pipefail
 
           if [ -z "$KEYSTORE_BASE64" ]; then
-            echo 'Missing GitHub secret LAYAN_KEYSTORE_BASE64. Follow README-GITHUB-AR.md.' >&2
+            echo "Missing GitHub secret LAYAN_KEYSTORE_BASE64." >&2
             exit 1
           fi
 
@@ -86,6 +84,7 @@ jobs:
           test -s "$RUNNER_TEMP/layan-release.jks"
 
       - name: Build and sign APK
+        shell: bash
         env:
           APKTOOL_JAR: ${{ runner.temp }}/apktool.jar
           LAYAN_KEYSTORE: ${{ runner.temp }}/layan-release.jks
@@ -93,7 +92,8 @@ jobs:
           LAYAN_STORE_PASSWORD: ${{ secrets.LAYAN_STORE_PASSWORD }}
           LAYAN_KEY_PASSWORD: ${{ secrets.LAYAN_KEY_PASSWORD }}
         run: |
-          set -e
+          set -euo pipefail
+
           export ANDROID_SDK_ROOT="${ANDROID_HOME}"
           python3 scripts/build.py
 
